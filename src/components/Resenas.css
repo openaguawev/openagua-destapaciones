@@ -1,0 +1,78 @@
+.resenas-carousel {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  background-color: var(--color-bg-white);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-border);
+}
+
+.resena-content {
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stars {
+  color: #fbbf24;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.resena-text {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--color-text);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.resena-author {
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-border);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.dot.active {
+  background-color: var(--color-cta-green);
+  transform: scale(1.2);
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .resenas-carousel {
+    padding: 30px 20px;
+  }
+  .resena-text {
+    font-size: 1.125rem;
+  }
+}

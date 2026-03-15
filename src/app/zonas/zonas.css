@@ -1,0 +1,74 @@
+.zona-page {
+  background-color: var(--color-bg-white);
+}
+
+.zona-hero {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.back-link-zona {
+  display: inline-block;
+  color: #94a3b8;
+  margin-bottom: 24px;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+.back-link-zona:hover {
+  color: #fff;
+}
+
+.zona-hero h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.zona-subtitle {
+  font-size: 1.25rem;
+  color: #cbd5e1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.zona-content {
+  padding: 60px 20px;
+}
+
+.zona-content h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.barrios-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.barrio-chip {
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  color: var(--color-text);
+  transition: background-color 0.2s;
+}
+
+.barrio-chip:hover {
+  background-color: #e2e8f0;
+}
+
+@media (max-width: 768px) {
+  .zona-hero h1 {
+    font-size: 2.25rem;
+  }
+}

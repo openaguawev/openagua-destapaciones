@@ -1,0 +1,64 @@
+.zonas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.zona-card {
+  background-color: var(--color-bg-white);
+  padding: 32px 24px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.zona-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-cta-green);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.zona-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.zona-title {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: var(--color-primary);
+}
+
+.zona-barrios {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.zona-link-text {
+  color: var(--color-cta-green);
+  font-weight: 600;
+  display: inline-block;
+  margin-top: auto;
+  transition: transform 0.2s;
+}
+
+.zona-card:hover .zona-link-text {
+  transform: translateX(5px);
+}
+
+@media (max-width: 1024px) {
+  .zonas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .zonas-grid {
+    grid-template-columns: 1fr;
+  }
+}
