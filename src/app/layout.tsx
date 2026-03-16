@@ -46,7 +46,7 @@ export default function RootLayout({
       "addressRegion": "CABA",
       "addressCountry": "AR"
     },
-    "areaServed": ["CABA", "Zona Norte", "Zona Sur", "Zona Oeste"],
+    "areaServed": ["CABA", "Gran Buenos Aires"],
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],

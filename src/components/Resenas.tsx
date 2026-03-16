@@ -30,7 +30,7 @@ export default function Resenas() {
             <div className="stars">
               {"★".repeat(reviews[currentIndex].rating)}
             </div>
-            <p className="resena-text">"{reviews[currentIndex].text}"</p>
+            <p className="resena-text">&quot;{reviews[currentIndex].text}&quot;</p>
             <p className="resena-author">— {reviews[currentIndex].author}</p>
           </div>
           

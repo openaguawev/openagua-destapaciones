@@ -1,25 +1,28 @@
 import { MetadataRoute } from 'next';
+import { getZonas } from '@/data/zonas';
 import { getArticulos } from '@/data/blog';
+import { getServicios } from '@/data/servicios';
 
 // Reemplazar con URL de producción real
 const siteUrl = 'https://www.openagua.com.ar';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const articulos = getArticulos();
+  const servicios = getServicios();
   
-  const blogUrls = articulos.map((art) => ({
+  const articulosUrls = articulos.map((art) => ({
     url: `${siteUrl}/blog/${art.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: 0.8,
+    priority: 0.7,
   }));
 
-  const zonas = ['caba', 'zona-norte', 'zona-oeste', 'zona-sur'];
+  const zonas = getZonas();
   const zonasUrls = zonas.map((z) => ({
-    url: `${siteUrl}/zonas/${z}`,
+    url: `${siteUrl}/zonas/${z.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: 0.9,
+    priority: 0.8,
   }));
 
   return [
@@ -35,7 +38,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
-    ...blogUrls,
+    ...articulosUrls,
     ...zonasUrls,
+    ...servicios.map((s) => ({
+      url: `${siteUrl}/${s.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    })),
   ];
 }
