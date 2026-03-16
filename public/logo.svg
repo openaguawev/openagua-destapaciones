@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;display=swap');
+      .text { 
+        font-family: 'Poppins', sans-serif; 
+        font-weight: 700; 
+        font-size: 26px; 
+        fill: #FFFFFF; 
+      }
+    </style>
+  </defs>
+  <!-- Water Drop Icon -->
+  <path d="M18 40c-4.4 0-8-3.6-8-8 0-5.2 8-16.6 8-16.6s8 11.4 8 16.6c0 4.4-3.6 8-8 8z" fill="#16A34A"/>
+  <!-- Openagua Text -->
+  <text x="36" y="33" class="text" dominant-baseline="middle">Openagua</text>
+</svg>

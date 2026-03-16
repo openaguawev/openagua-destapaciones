@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   description: 'Servicio profesional de destapaciones de cloacas, cañerías e hidrojet en CABA y Gran Buenos Aires. Diagnóstico preciso. Atención de 8 a 19 hs.',
   alternates: {
     canonical: 'https://www.openagua.com.ar',
+  },
+  icons: {
+    icon: '/icon.svg',
   }
 };
 

@@ -1,73 +1,87 @@
 .servicios-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 32px 24px;
+  gap: 30px;
 }
 
 .servicio-card {
-  background: var(--color-bg-white);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s, box-shadow 0.3s;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
 }
 
 .servicio-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
-.servicio-img-container {
-  height: 200px;
-  overflow: hidden;
-  position: relative;
-}
-
-.servicio-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s;
-}
-
-.servicio-card:hover .servicio-img {
-  transform: scale(1.05);
-}
-
-.servicio-content {
-  padding: 24px;
+.servicio-icon-wrapper {
+  background: rgba(22, 163, 74, 0.1);
+  color: #16A34A;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.servicio-card:hover .servicio-icon-wrapper {
+  background-color: #16A34A;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.servicio-icon {
+  width: 40px;
+  height: 40px;
 }
 
 .servicio-title {
   font-size: 1.25rem;
+  font-weight: 600;
+  color: #0F172A;
   margin-bottom: 12px;
-  color: var(--color-primary);
 }
 
 .servicio-desc {
-  color: var(--color-text-light);
+  color: #64748B;
   font-size: 0.95rem;
-  margin-bottom: 24px;
+  line-height: 1.5;
+  margin-bottom: 28px;
   flex-grow: 1;
+  /* Truncate to maximum 2 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .servicio-btn {
   display: inline-block;
-  color: var(--color-cta-green);
+  background-color: #16A34A;
+  color: #ffffff;
   font-weight: 600;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 2px;
-  transition: border-color 0.2s;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  width: 100%;
 }
 
 .servicio-btn:hover {
-  border-color: var(--color-cta-green);
+  background-color: #15803D;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 1200px) {

@@ -6,71 +6,71 @@ export default function Servicios() {
   const servicios = [
     {
       title: "Destapación de Cloacas",
-      desc: "Limpieza profunda de redes cloacales obstruidas, eliminando tapones de papel, raíces o sedimentos.",
-      img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600",
-      link: "/destapaciones-cloacas"
+      desc: "Limpieza profunda de redes cloacales, eliminando tapones y sedimentos.",
+      link: "/destapaciones-cloacas",
+      icon: <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/>
     },
     {
-      title: "Destapaciones de Cañerías",
-      desc: "Rehabilitación del flujo de agua en baños, cocinas y lavaderos afectados por grasa o sarro.",
-      img: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&q=80&w=600",
-      link: "/destapaciones-canerias"
+      title: "Destapaciones Cañerías",
+      desc: "Rehabilitación del flujo de agua en baños y cocinas afectados por sarro.",
+      link: "/destapaciones-canerias",
+      icon: <><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.6 2 5 2 2.3 0 2.3-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.6 2 5 2 2.3 0 2.3-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.6 2 5 2 2.3 0 2.3-2 5-2 1.3 0 1.9.5 2.5 1"/></>
     },
     {
       title: "Destapaciones Pluviales",
-      desc: "Desatasco de rejillas, canaletas y caños de bajada afectados por barro y hojas antes de las tormentas.",
-      img: "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&q=80&w=600",
-      link: "/destapaciones-pluviales"
+      desc: "Desatasco de rejillas y canaletas afectadas por barro antes de las lluvias.",
+      link: "/destapaciones-pluviales",
+      icon: <><path d="M21.5 12H16c-.7 2-2 3-4 3s-3.3-1-4-3H2.5"/><path d="M5.5 5.1L2 12v6c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2v-6l-3.4-6.9A2 2 0 0 0 16.8 4H7.2a2 2 0 0 0-1.8 1.1z"/></>
     },
     {
       title: "Sistema Hidro Jet",
-      desc: "Lavado a presión extrema que remueve las calcificaciones sin dañar los caños de PVC o hierro.",
-      img: "https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&q=80&w=600",
-      link: "/sistema-hidrojets"
+      desc: "Lavado a presión extrema para remover calcificaciones difíciles sin romper.",
+      link: "/sistema-hidrojets",
+      icon: <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
     },
     {
-      title: "Video Inspección Cloacal",
-      desc: "Cámaras sumergibles para diagnosticar problemas crónicos sin necesidad de romper pisos.",
-      img: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=600",
-      link: "/video-inspeccion"
+      title: "Video Inspección",
+      desc: "Cámaras sumergibles para diagnósticos precisos sin romper pisos.",
+      link: "/video-inspeccion",
+      icon: <><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></>
     },
     {
       title: "Limpieza de Cámaras",
-      desc: "Mantenimiento y vaciado de cámaras sépticas e interceptoras de grasa para consorcios.",
-      img: "https://images.unsplash.com/photo-1508873535684-275a3048cb19?auto=format&fit=crop&q=80&w=600",
-      link: "/limpieza-camaras"
+      desc: "Mantenimiento preventivo y vaciado de cámaras sépticas de consorcios.",
+      link: "/limpieza-camaras",
+      icon: <><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></>
     },
     {
       title: "Desagote de Sótanos",
-      desc: "Evacuación ultra rápida de agua en subsuelos y fosos de ascensor inundados mediante bombas.",
-      img: "https://images.unsplash.com/photo-1585814521473-b31c40ab21e3?auto=format&fit=crop&q=80&w=600",
-      link: "/desagotes"
+      desc: "Evacuación ultra rápida de agua en subsuelos y fosos de ascensor inundados.",
+      link: "/desagotes",
+      icon: <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
     },
     {
-      title: "Mantenimiento Preventivo",
-      desc: "Planes anuales para edificios residenciales, evitando urgencias costosas en feriados y fines de semana.",
-      img: "https://images.unsplash.com/photo-1648714659424-69db9e6fd63b?auto=format&fit=crop&q=80&w=600",
-      link: "/mantenimiento-preventivo"
+      title: "Visitas de Prevención",
+      desc: "Planes de mantenimiento anuales para edificios residenciales comerciales.",
+      link: "/mantenimiento-preventivo",
+      icon: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></>
     }
   ];
 
   return (
     <section id="servicios" className="section bg-light">
       <div className="container">
-        <h2 className="section-title">Nuestros Servicios de Destapaciones</h2>
+        <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '3rem' }}>Nuestros Servicios</h2>
         <div className="servicios-grid">
           {servicios.map((s, idx) => (
             <div key={idx} className="servicio-card">
-              <div className="servicio-img-wrapper">
-                <img src={s.img} alt={s.title} className="servicio-img" loading="lazy" />
+              <div className="servicio-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="servicio-icon">
+                  {s.icon}
+                </svg>
               </div>
-              <div className="servicio-content">
-                <h3 className="servicio-title">{s.title}</h3>
-                <p className="servicio-desc">{s.desc}</p>
-                <Link href={s.link} className="servicio-link">
-                  Ver más sobre este servicio →
-                </Link>
-              </div>
+              <h3 className="servicio-title">{s.title}</h3>
+              <p className="servicio-desc">{s.desc}</p>
+              <Link href={s.link} className="servicio-btn">
+                Consultar
+              </Link>
             </div>
           ))}
         </div>

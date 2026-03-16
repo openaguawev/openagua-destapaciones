@@ -69,6 +69,10 @@ img {
   background-color: var(--color-bg-light);
 }
 
+main > section:nth-child(even) {
+  background-color: var(--color-bg-light);
+}
+
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -112,9 +116,26 @@ img {
 }
 
 .section-title {
-  font-size: 2.25rem;
-  margin-bottom: 3rem;
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 3.5rem;
   text-align: center;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--color-cta-green);
+  border-radius: 2px;
 }
 
 @media (max-width: 768px) {

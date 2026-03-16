@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -6,7 +7,7 @@ export default function Navbar() {
     <header className="navbar-container">
       <div className="container navbar-content">
         <Link href="/" className="logo">
-          Openagua
+          <Image src="/logo.svg" alt="Openagua Destapaciones" width={180} height={45} priority />
         </Link>
         <nav className="desktop-menu">
           <ul>
