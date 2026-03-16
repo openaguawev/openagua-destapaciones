@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { getZonas } from '@/data/zonas';
 import { getArticulos } from '@/data/blog';
 import { getServicios } from '@/data/servicios';
+import { barrios } from '@/data/barrios';
 
 export const dynamic = 'force-static';
 
@@ -28,6 +29,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const barriosUrls = barrios.map((b) => ({
+    url: `${siteUrl}/barrios/${b.slug}`,
+    lastModified: currentDate,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
   return [
     {
       url: siteUrl,
@@ -43,6 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...articulosUrls,
     ...zonasUrls,
+    ...barriosUrls,
     ...servicios.map((s) => ({
       url: `${siteUrl}/${s.slug}`,
       lastModified: currentDate,
