@@ -1,0 +1,35 @@
+Error occurred prerendering page "/barrios/destapaciones-san-justo". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: Event handlers cannot be passed to Client Component props.
+  {style: ..., onMouseEnter: function onMouseEnter, onMouseLeave: ..., children: ...}
+                             ^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>) {
+  digest: '3667885065'
+}
+Export encountered an error on /barrios/[slug]/page: /barrios/destapaciones-san-justo, exiting the build.
+Error occurred prerendering page "/barrios/destapaciones-villa-tesei". Read more: https://nextjs.org/docs/messages/prerender-error
+Error occurred prerendering page "/barrios/destapaciones-floresta". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: Event handlers cannot be passed to Client Component props.
+  {style: ..., onMouseEnter: function onMouseEnter, onMouseLeave: ..., children: ...}
+                             ^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>) {
+  digest: '3667885065'
+}
+Export encountered an error on /barrios/[slug]/page: /barrios/destapaciones-villa-tesei, exiting the build.
+Error: Event handlers cannot be passed to Client Component props.
+  {style: ..., onMouseEnter: function onMouseEnter, onMouseLeave: ..., children: ...}
+                             ^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>) {
+  digest: '3667885065'
+}
+Export encountered an error on /barrios/[slug]/page: /barrios/destapaciones-floresta, exiting the build.
+⨯ Next.js build worker exited with code: 1 and signal: null
+▲ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.0s
+  Running TypeScript ...
+  Collecting page data using 15 workers ...
+  Generating static pages using 15 workers (0/86) ...

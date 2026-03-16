@@ -59,6 +59,7 @@ export default async function BarrioPage({ params }: Props) {
             minHeight: '65vh', 
             display: 'flex', 
             alignItems: 'center', 
+            paddingTop: '80px',
             backgroundImage: 'url(https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -100,6 +101,43 @@ export default async function BarrioPage({ params }: Props) {
           </div>
         </section>
 
+        <style dangerouslySetInnerHTML={{__html: `
+          .service-card {
+            display: flex;
+            align-items: center;
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+            cursor: pointer;
+          }
+          .service-card:hover {
+            border-color: #16A34A;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+          }
+          .nearby-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+          }
+          .nearby-card:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border-color: #16A34A;
+          }
+          .faq-summary::-webkit-details-marker {
+            display: none;
+          }
+        `}} />
+
         {/* SECTION 2: Servicios */}
         <section className="section" style={{ padding: '6rem 0', backgroundColor: '#ffffff' }}>
           <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
@@ -115,10 +153,7 @@ export default async function BarrioPage({ params }: Props) {
                 { title: 'Desagote de Sótanos', link: '/desagotes' },
                 { title: 'Mantenimiento Preventivo', link: '/mantenimiento-preventivo' },
               ].map((s) => (
-                <li key={s.link} style={{ display: 'flex', alignItems: 'center', background: '#f8fafc', padding: '1.5rem', borderRadius: '12px', border: '1px solid #e2e8f0', transition: 'all 0.2s', cursor: 'pointer' }}
-                    onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#16A34A'; e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.05)' }}
-                    onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e2e8f0'; e.currentTarget.style.boxShadow = 'none' }}
-                >
+                <li key={s.link} className="service-card">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16A34A" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '1rem', flexShrink: 0 }}><polyline points="20 6 9 17 4 12"></polyline></svg>
                   <Link href={s.link} style={{ color: '#0f172a', fontWeight: 600, fontSize: '1.1rem', textDecoration: 'none', width: '100%' }}>
                     {s.title}
@@ -142,21 +177,7 @@ export default async function BarrioPage({ params }: Props) {
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '24px' }}>
               {nearbyBarrios.map((b) => (
-                <Link href={`/barrios/${b.slug}`} key={b.slug} style={{
-                  background: '#ffffff',
-                  border: '1px solid #e2e8f0',
-                  borderRadius: '12px',
-                  padding: '24px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '16px',
-                  textDecoration: 'none',
-                  color: 'inherit',
-                  transition: 'transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease'
-                }}
-                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-4px) scale(1.02)'; e.currentTarget.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.05)'; e.currentTarget.style.borderColor = '#16A34A'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0) scale(1)'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.borderColor = '#e2e8f0'; }}
-                >
+                <Link href={`/barrios/${b.slug}`} key={b.slug} className="nearby-card">
                   <div style={{ color: '#16A34A' }}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>

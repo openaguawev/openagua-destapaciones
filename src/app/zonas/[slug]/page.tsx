@@ -31,7 +31,7 @@ export default async function ZonaPage({ params }: Props) {
 
   return (
     <main className="zona-page">
-      <header className="zona-header">
+      <header className="zona-header" style={{ paddingTop: '80px' }}>
         <div className="zona-overlay"></div>
         <div className="container zona-header-content">
           <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>Destapaciones en {zona.name}</h1>
