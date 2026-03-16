@@ -1,78 +1,46 @@
-.resenas-carousel {
-  max-width: 800px;
+.resenas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
-  position: relative;
-  background-color: var(--color-bg-white);
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
-  border: 1px solid var(--color-border);
 }
 
-.resena-content {
-  min-height: 180px;
+.resena-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+.resena-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .stars {
   color: #fbbf24;
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   letter-spacing: 2px;
 }
 
 .resena-text {
-  font-size: 1.25rem;
-  font-style: italic;
-  color: var(--color-text);
-  margin-bottom: 24px;
+  font-size: 1rem;
   line-height: 1.6;
+  color: #475569;
+  font-style: italic;
+  margin-bottom: 24px;
+  flex-grow: 1;
 }
 
 .resena-author {
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-primary);
-  font-size: 1.1rem;
-}
-
-.carousel-dots {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 30px;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  background-color: var(--color-border);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.dot.active {
-  background-color: var(--color-cta-green);
-  transform: scale(1.2);
-}
-
-.fade-in {
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@media (max-width: 768px) {
-  .resenas-carousel {
-    padding: 30px 20px;
-  }
-  .resena-text {
-    font-size: 1.125rem;
-  }
+  font-size: 1.05rem;
+  margin-top: auto;
 }

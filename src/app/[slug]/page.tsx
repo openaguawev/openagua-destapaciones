@@ -6,7 +6,7 @@ import Contacto from '@/components/Contacto';
 import '../servicio-page.css';
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
@@ -17,7 +17,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const servicio = getServicios().find((s) => s.slug === params.slug);
+  const resolvedParams = await params;
+  const servicio = getServicios().find((s) => s.slug === resolvedParams.slug);
   if (!servicio) return { title: 'Servicio no encontrado' };
 
   return {
@@ -29,8 +30,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function ServicioPage({ params }: Props) {
-  const servicio = getServicios().find((s) => s.slug === params.slug);
+export default async function ServicioPage({ params }: Props) {
+  const resolvedParams = await params;
+  const servicio = getServicios().find((s) => s.slug === resolvedParams.slug);
   
   if (!servicio) {
     notFound();

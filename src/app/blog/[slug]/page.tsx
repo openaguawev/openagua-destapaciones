@@ -5,7 +5,7 @@ import Link from 'next/link';
 import '../blog.css';
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
@@ -16,7 +16,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const articulo = getArticulos().find((a) => a.slug === params.slug);
+  const resolvedParams = await params;
+  const articulo = getArticulos().find((a) => a.slug === resolvedParams.slug);
   if (!articulo) return { title: 'Artículo no encontrado' };
 
   return {
@@ -28,8 +29,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function BlogArticle({ params }: Props) {
-  const articulo = getArticulos().find((a) => a.slug === params.slug);
+export default async function BlogArticle({ params }: Props) {
+  const resolvedParams = await params;
+  const articulo = getArticulos().find((a) => a.slug === resolvedParams.slug);
   
   if (!articulo) {
     notFound();

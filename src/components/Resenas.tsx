@@ -12,37 +12,20 @@ export default function Resenas() {
     { text: "Muy eficientes, prolijos y amables. Super recomendables.", author: "Yolanda Maschio", rating: 5 }
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % reviews.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [reviews.length]);
-
   return (
-    <section className="section">
+    <section className="section bg-light">
       <div className="container">
         <h2 className="section-title">Lo que dicen nuestros clientes</h2>
-        <div className="resenas-carousel">
-          <div className="resena-content fade-in" key={currentIndex}>
-            <div className="stars">
-              {"★".repeat(reviews[currentIndex].rating)}
+        <div className="resenas-grid">
+          {reviews.map((review, idx) => (
+            <div className="resena-card" key={idx}>
+              <div className="stars">
+                {"★".repeat(review.rating)}
+              </div>
+              <p className="resena-text">&quot;{review.text}&quot;</p>
+              <p className="resena-author">— {review.author}</p>
             </div>
-            <p className="resena-text">&quot;{reviews[currentIndex].text}&quot;</p>
-            <p className="resena-author">— {reviews[currentIndex].author}</p>
-          </div>
-          
-          <div className="carousel-dots">
-            {reviews.map((_, idx) => (
-              <span 
-                key={idx} 
-                className={`dot ${idx === currentIndex ? 'active' : ''}`}
-                onClick={() => setCurrentIndex(idx)}
-              ></span>
-            ))}
-          </div>
+          ))}
         </div>
       </div>
     </section>
