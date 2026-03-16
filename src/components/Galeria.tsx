@@ -6,11 +6,11 @@ import './Galeria.css';
 export default function Galeria() {
   const images = [
     { src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800", alt: "Plomero trabajando en cañerías" },
-    { src: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800", alt: "Cámara de inspección cloacal" },
-    { src: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800", alt: "Cañerías industriales" },
+    { src: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800", alt: "Cámara de inspección cloacal" },
+    { src: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=800", alt: "Reparación de fontanería" },
     { src: "https://images.unsplash.com/photo-1542013936693-884638332954?w=800", alt: "Limpieza con agua a alta presión" },
-    { src: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800", alt: "Limpieza profunda de desagüe" },
-    { src: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800", alt: "Reparación de fontanería" }
+    { src: "https://images.unsplash.com/photo-1621905251189-08b45249b6c7?auto=format&fit=crop&q=80&w=800", alt: "Trabajos de plomería" },
+    { src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=800", alt: "Limpieza profunda de caños" }
   ];
 
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
