@@ -3,9 +3,6 @@ import { getZonas } from '@/data/zonas';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Script from 'next/script';
-import FloatingButtons from '@/components/FloatingButtons';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import '@/components/Zonas.css';
 
 export async function generateStaticParams() {
@@ -35,6 +32,8 @@ export default async function BarrioPage({ params }: Props) {
   const zonas = getZonas();
   const parentZone = zonas.find(z => z.slug === barrio.zoneSlug);
 
+  const nearbyBarrios = barrio.nearby.map(name => barrios.find(b => b.name === name)).filter(Boolean) as typeof barrios;
+
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -48,87 +47,180 @@ export default async function BarrioPage({ params }: Props) {
     }
   };
 
+  const whatsappLink = "https://wa.me/5491151797649";
+
   return (
     <>
-      <Navbar />
-      <main className="zona-page">
-        <header className="zona-header">
-          <div className="zona-overlay"></div>
-          <div className="container zona-header-content">
-            <h1>Destapaciones en {barrio.name} | Openagua</h1>
-            <p>Servicio profesional y rápido en tu barrio. Soluciones definitivas para hogares, consorcios y comercios.</p>
-            <a href="https://wa.me/5491151797649" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ marginTop: '2rem' }}>
+      <main className="barrio-page">
+        {/* HERO SECTION */}
+        <header 
+          style={{ 
+            position: 'relative', 
+            minHeight: '65vh', 
+            display: 'flex', 
+            alignItems: 'center', 
+            backgroundImage: 'url(https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            color: '#fff',
+            padding: '4rem 0'
+          }}
+        >
+          <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15, 23, 42, 0.75)' }}></div>
+          <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>
+            <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 700, marginBottom: '1.5rem', color: '#fff', lineHeight: 1.2 }}>
+              Destapaciones en {barrio.name} | Openagua
+            </h1>
+            <p style={{ fontSize: '1.25rem', maxWidth: '800px', margin: '0 auto 2.5rem', color: '#e2e8f0', lineHeight: 1.6 }}>
+              Servicio profesional de destapaciones en {barrio.name}. Cloacas, cañerías e hidrojet. Atención de 8 a 19 hs.
+            </p>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.1rem' }}>
+              <span style={{ marginRight: '8px' }}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffffff" style={{ verticalAlign: 'middle', marginTop: '-2px' }}>
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"></path>
+                </svg>
+              </span>
               Consultar por WhatsApp
             </a>
           </div>
         </header>
 
-        <section className="section">
-          <div className="container">
-            <div className="zona-content">
-              <h2>Especialistas en la zona de {barrio.name}</h2>
-              <p>
+        {/* SECTION 1: Intro */}
+        <section className="section bg-light" style={{ padding: '6rem 0' }}>
+          <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
+            <h2 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '2.5rem' }}>Especialistas en la zona de {barrio.name}</h2>
+            <div style={{ fontSize: '1.15rem', color: '#475569', lineHeight: 1.8 }}>
+              <p style={{ marginBottom: '1.5rem' }}>
                 Si estás buscando una empresa de confianza para realizar <strong>destapaciones en {barrio.name}</strong>, en Openagua contamos con técnicos especializados listos para asistirte. Entendemos la urgencia que requiere una obstrucción cloacal o de cañerías, por eso brindamos una respuesta rápida en todo <strong>{barrio.name}</strong> y alrededores.
               </p>
               <p>
-                Utilizamos tecnología de punta como máquinas de sonda rotativa y sistemas de hidrojet de alta presión para garantizar un trabajo impecable y sin roturas innecesarias en tu propiedad en {barrio.name}.
+                Nuestra meta es ofrecer soluciones sustentables. Utilizamos tecnología avanzada como máquinas de sonda rotativa y modernos sistemas de hidrojet de alta presión para garantizar un trabajo impecable y sin roturas innecesarias en tu propiedad ubicada en <strong>{barrio.name}</strong>.
               </p>
-
-              <h2 style={{ marginTop: '3rem' }}>Servicios que realizamos en {barrio.name}</h2>
-              <ul className="zona-services-list">
-                <li><Link href="/destapaciones-cloacas">Destapación de Cloacas</Link></li>
-                <li><Link href="/destapaciones-canerias">Destapaciones de Cañerías</Link></li>
-                <li><Link href="/destapaciones-pluviales">Destapaciones Pluviales</Link></li>
-                <li><Link href="/sistema-hidrojets">Sistema Hidro Jet</Link></li>
-                <li><Link href="/video-inspeccion">Video Inspección Cloacal</Link></li>
-                <li><Link href="/limpieza-camaras">Limpieza de Cámaras</Link></li>
-                <li><Link href="/desagotes">Desagote de Sótanos</Link></li>
-                <li><Link href="/mantenimiento-preventivo">Mantenimiento Preventivo</Link></li>
-              </ul>
-
-              <h2 style={{ marginTop: '3rem' }}>Zona de cobertura cercana a {barrio.name}</h2>
-              <p>
-                Además de operar intensivamente en {barrio.name}, nuestros equipos móviles se desplazan rápidamente por localidades vecinas como {barrio.nearby.join(', ')}. 
-                Formamos parte de la red de atención de la <strong>{barrio.zoneName}</strong>. 
-                <br /><br />
-                <Link href={`/zonas/${barrio.zoneSlug}`} style={{ color: 'var(--color-cta-green)', fontWeight: 'bold' }}>
-                  → Ver cobertura completa en {barrio.zoneName}
-                </Link>
-              </p>
-
-              <h2 style={{ marginTop: '3rem' }}>Preguntas Frecuentes en {barrio.name}</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1.5rem' }}>
-                <div style={{ background: '#f8fafc', padding: '1.5rem', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
-                  <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: '#0f172a' }}>¿Cuánto tardan en llegar a {barrio.name}?</h3>
-                  <p style={{ color: '#475569', margin: 0 }}>Al tener unidades móviles distribuidas estratégicamente, solemos llegar a {barrio.name} en poco tiempo tras coordinar la visita. Consultá disponibilidad por WhatsApp.</p>
-                </div>
-                <div style={{ background: '#f8fafc', padding: '1.5rem', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
-                  <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: '#0f172a' }}>¿El presupuesto tiene costo en {barrio.name}?</h3>
-                  <p style={{ color: '#475569', margin: 0 }}>Podemos brindarte un presupuesto preliminar sin cargo vía WhatsApp si nos detallás el problema. Si es necesario ir a tu domicilio en {barrio.name} a evaluar, te informaremos previamente.</p>
-                </div>
-                <div style={{ background: '#f8fafc', padding: '1.5rem', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
-                  <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: '#0f172a' }}>¿Atienden urgencias en edificios de {barrio.name}?</h3>
-                  <p style={{ color: '#475569', margin: 0 }}>Sí, trabajamos con consorcios y administraciones de consorcios en {barrio.name}, emitiendo presupuestos formales para la reparación de columnas de desagüe y colectoras.</p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
 
-        <section className="section bg-light" style={{ padding: '4rem 0' }}>
-          <div className="container" style={{ textAlign: 'center' }}>
-            <h2>¿Tenés una urgencia ahora mismo?</h2>
-            <p style={{ fontSize: '1.1rem', color: '#64748B', maxWidth: '600px', margin: '1rem auto 2rem' }}>
-              Atendemos tu consulta por WhatsApp de forma inmediata. Estamos listos para resolver tu problema en {barrio.name}.
-            </p>
-            <a href="https://wa.me/5491151797649" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }}>
-              Consultar por WhatsApp
-            </a>
+        {/* SECTION 2: Servicios */}
+        <section className="section" style={{ padding: '6rem 0', backgroundColor: '#ffffff' }}>
+          <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
+            <h2 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '4rem' }}>Servicios que realizamos en {barrio.name}</h2>
+            <ul style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.5rem', listStyle: 'none', padding: 0 }}>
+              {[
+                { title: 'Destapación de Cloacas', link: '/destapaciones-cloacas' },
+                { title: 'Destapaciones de Cañerías', link: '/destapaciones-canerias' },
+                { title: 'Destapaciones Pluviales', link: '/destapaciones-pluviales' },
+                { title: 'Sistema Hidro Jet', link: '/sistema-hidrojets' },
+                { title: 'Video Inspección Cloacal', link: '/video-inspeccion' },
+                { title: 'Limpieza de Cámaras', link: '/limpieza-camaras' },
+                { title: 'Desagote de Sótanos', link: '/desagotes' },
+                { title: 'Mantenimiento Preventivo', link: '/mantenimiento-preventivo' },
+              ].map((s) => (
+                <li key={s.link} style={{ display: 'flex', alignItems: 'center', background: '#f8fafc', padding: '1.5rem', borderRadius: '12px', border: '1px solid #e2e8f0', transition: 'all 0.2s', cursor: 'pointer' }}
+                    onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#16A34A'; e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.05)' }}
+                    onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#e2e8f0'; e.currentTarget.style.boxShadow = 'none' }}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16A34A" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '1rem', flexShrink: 0 }}><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <Link href={s.link} style={{ color: '#0f172a', fontWeight: 600, fontSize: '1.1rem', textDecoration: 'none', width: '100%' }}>
+                    {s.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            
+            <div style={{ textAlign: 'center', marginTop: '4rem' }}>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.1rem' }}>
+                <span style={{ marginRight: '8px' }}>💬</span> Pedir presupuesto en {barrio.name}
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* SECTION 3: Barrios Cercanos */}
+        <section className="section bg-light" style={{ padding: '6rem 0' }}>
+          <div className="container">
+            <h2 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '4rem' }}>Zonas de cobertura cercanas a {barrio.name}</h2>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '24px' }}>
+              {nearbyBarrios.map((b) => (
+                <Link href={`/barrios/${b.slug}`} key={b.slug} style={{
+                  background: '#ffffff',
+                  border: '1px solid #e2e8f0',
+                  borderRadius: '12px',
+                  padding: '24px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '16px',
+                  textDecoration: 'none',
+                  color: 'inherit',
+                  transition: 'transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease'
+                }}
+                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-4px) scale(1.02)'; e.currentTarget.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.05)'; e.currentTarget.style.borderColor = '#16A34A'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0) scale(1)'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.borderColor = '#e2e8f0'; }}
+                >
+                  <div style={{ color: '#16A34A' }}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 style={{ fontSize: '1.15rem', margin: 0, color: '#0f172a' }}>{b.name}</h3>
+                    <p style={{ margin: 0, fontSize: '0.9rem', color: '#64748b' }}>Destapaciones en {b.name}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+              <Link href={`/zonas/${parentZone?.slug}`} style={{ color: '#16A34A', fontWeight: 'bold', fontSize: '1.1rem', textDecoration: 'underline' }}>
+                Ver toda la cobertura en {barrio.zoneName}
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* SECTION 4: FAQ (Accordion) */}
+        <section className="section" style={{ padding: '6rem 0', backgroundColor: '#ffffff' }}>
+          <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
+            <h2 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '4rem' }}>Preguntas Frecuentes en {barrio.name}</h2>
+            
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              {[
+                {
+                  q: `¿Cuánto tardan en llegar a ${barrio.name}?`,
+                  a: `Al tener unidades móviles distribuidas estratégicamente, solemos llegar a ${barrio.name} en muy poco tiempo tras coordinar la visita. Consultá disponibilidad inmediata por WhatsApp.`
+                },
+                {
+                  q: `¿El presupuesto en ${barrio.name} tiene algún costo?`,
+                  a: `Brindamos un presupuesto preliminar sin cargo y muy preciso directamente por WhatsApp si nos enviás detalles o fotos del problema. Trabajamos con tarifas de mercado claras y planas.`
+                },
+                {
+                  q: `¿Atienden consorcios y administraciones en ${barrio.name}?`,
+                  a: `Totalmente. Trabajamos de manera formal con comercios y consorcios de edificios en ${barrio.name}, ofreciendo planes de mantenimiento mensual, abonos y limpieza preventiva de columnas.`
+                }
+              ].map((faq, idx) => (
+                <details key={idx} style={{ background: '#f8fafc', borderRadius: '12px', border: '1px solid #e2e8f0', overflow: 'hidden' }}>
+                  <summary className="faq-summary" style={{ padding: '1.5rem 1.5rem', fontSize: '1.15rem', fontWeight: 600, color: '#0f172a', cursor: 'pointer', outline: 'none', listStyle: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    {faq.q}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginLeft: '1rem' }}>
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </summary>
+                  <div style={{ padding: '0 1.5rem 1.5rem', color: '#475569', lineHeight: 1.6, borderTop: '1px solid #e2e8f0', paddingTop: '1.5rem' }}>
+                    {faq.a}
+                  </div>
+                </details>
+              ))}
+            </div>
+
+            <div style={{ textAlign: 'center', marginTop: '4rem' }}>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.1rem' }}>
+                <span style={{ marginRight: '8px' }}>💬</span> Contactar urgente a un técnico
+              </a>
+            </div>
           </div>
         </section>
       </main>
-      <Footer />
-      <FloatingButtons />
 
       <Script
         id={`schema-barrio-${barrio.slug}`}
