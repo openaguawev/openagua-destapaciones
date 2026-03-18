@@ -4,8 +4,10 @@ export interface ServicioData {
   image: string;
   excerpt: string;
   intro: string;
+  benefitsTitle: string;
   benefits: { title: string; desc: string }[];
-  steps: { title: string; desc: string }[];
+  equipment?: { title: string; desc: string }[];
+  steps: { title: string; desc: string; iconStr?: string }[];
   faqs: { q: string; a: string }[];
 }
 
@@ -15,7 +17,13 @@ const buildServicio = (
   image: string, 
   excerpt: string, 
   intro: string, 
-  faqs: {q: string; a: string}[]
+  faqs: {q: string; a: string}[],
+  custom?: {
+    benefitsTitle?: string;
+    benefits?: { title: string; desc: string }[];
+    equipment?: { title: string; desc: string }[];
+    steps?: { title: string; desc: string; iconStr?: string }[];
+  }
 ): ServicioData => {
   return {
     slug,
@@ -23,12 +31,14 @@ const buildServicio = (
     image,
     excerpt,
     intro,
-    benefits: [
+    benefitsTitle: custom?.benefitsTitle || "Beneficios del Servicio",
+    benefits: custom?.benefits || [
       { title: "Rapidez y Eficiencia", desc: "Respuesta inmediata con tecnología puntera sin demoras." },
       { title: "Cero Roturas Innecesarias", desc: "Soluciones focalizadas que preservan tus instalaciones." },
       { title: "Seguridad Garantizada", desc: "Técnicos calificados que operan bajo normativas estrictas." }
     ],
-    steps: [
+    equipment: custom?.equipment,
+    steps: custom?.steps || [
       { title: "1. Diagnóstico Inicial", desc: "Inspeccionamos el lugar del inconveniente para ubicar la obstrucción." },
       { title: "2. Acción Directa", desc: "Aplicamos maquinaria como sondas mecanizadas o hidrojets potentes." },
       { title: "3. Prueba de Flujo", desc: "Comprobamos que las aguas circulen libremente sin retorno alguno." }
@@ -41,15 +51,33 @@ export const getServicios = (): ServicioData[] => {
   return [
     buildServicio(
       'destapaciones-cloacas',
-      'Destapación de Cloacas',
+      'Destapación de Cloacas con Máquina e Hidrojet',
       'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1200',
-      'Realizamos destapaciones de cloacas con máquina de sonda y sistemas de alta presión. Eliminamos tapones profundos.',
+      'Recuperamos el drenaje de tu red cloacal de forma eficiente. Atendemos casas, edificios y comercios en CABA y GBA con equipos especializados.',
       'Cuando nos enfrentamos a problemas de redes cloacales, la intervención rápida es vital. Nuestro servicio destaca por resolver la acumulación de sedimentos y restos con herramientas mecánicas de alta precisión.',
       [
         { q: "¿Cuándo conviene usar hidrojet en lugar de sonda?", a: "El hidrojet es ideal para obstrucciones muy severas y adheridas, mientras que la sonda sirve para destapes rápidos mecanizados." },
         { q: "¿Trabajan en edificios y consorcios?", a: "Sí, trabajamos frecuentemente con administraciones y ofrecemos abonos especiales a consorcios." },
         { q: "¿Por qué se tapa la cloaca seguido?", a: "Las obstrucciones frecuentes ocurren cuando se arrojan al inodoro o pileta elementos que no corresponden: toallitas húmedas, papeles, restos de comida, aceite o grasa. Estos materiales no se disuelven y generan tapones. Nuestro trabajo es resolver la obstrucción — el uso correcto de las instalaciones es responsabilidad del propietario." }
-      ]
+      ],
+      {
+        benefitsTitle: "Nuestro Compromiso Profesional",
+        benefits: [
+          { title: "Diagnóstico Real", desc: "Si el caño está colapsado o tiene raíces, te lo decimos con total honestidad. No ocultamos fallas estructurales para que sepas el estado real de tu instalación." },
+          { title: "Prueba de Paso de Agua", desc: "Verificamos el caudal junto a vos para confirmar la limpieza del conducto. En caso de que el sistema no desagote por daños físicos en la cañería, brindamos un informe honesto sobre la necesidad de reparación o reemplazo del tramo afectado." },
+          { title: "Uso de Accesos", desc: "Trabajamos a través de cámaras de inspección o bocas de acceso existentes para evitar roturas innecesarias durante la tarea de limpieza." }
+        ],
+        equipment: [
+          { title: "Sonda Rotativa Eléctrica", desc: "Resortes de acero de alta resistencia para desobstruir objetos sólidos, restos de obra y sedimentos duros que bloquean el paso." },
+          { title: "Sistema Hidrojet (Alta Presión)", desc: "Limpieza con agua a presión que barre sarro y grasa acumulada, recuperando el diámetro interno del caño para un drenaje fluido." }
+        ],
+        steps: [
+          { title: "Contacto", desc: "Recibimos tu consulta para entender el problema y coordinar la visita.", iconStr: "📱" },
+          { title: "Evaluación", desc: "Ubicamos la obstrucción y definimos si corresponde el uso de sonda o hidrojet.", iconStr: "🔎" },
+          { title: "Ejecución", desc: "Aplicamos la maquinaria necesaria según la resistencia y dureza del tapón.", iconStr: "⚙️" },
+          { title: "Verificación", desc: "Realizamos una prueba de paso de agua para constatar la remoción del tapón o identificar daños estructurales que impidan el flujo normal.", iconStr: "✅" }
+        ]
+      }
     ),
     buildServicio(
       'destapaciones-canerias',
