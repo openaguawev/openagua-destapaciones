@@ -55,9 +55,9 @@ export default async function ServicioPage({ params }: Props) {
 
         <section style={{ marginBottom: '5rem' }}>
           <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2rem' }}>{servicio.benefitsTitle}</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2.5rem' }}>
             {servicio.benefits.map((b, i) => (
-              <div key={i} style={{ backgroundColor: '#f8fafc', padding: '2rem', borderRadius: '12px', textAlign: 'center', border: '1px solid #e2e8f0' }}>
+              <div key={i} style={{ backgroundColor: '#ffffff', padding: '2.5rem 1.5rem', borderRadius: '16px', textAlign: 'center', border: '1px solid #e2e8f0', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.05)' }}>
                 <div style={{ fontSize: '2.5rem', marginBottom: '1rem', color: '#16A34A' }}>✓</div>
                 <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a' }}>{b.title}</h3>
                 <p style={{ color: '#475569', fontSize: '1rem' }}>{b.desc}</p>
@@ -69,9 +69,9 @@ export default async function ServicioPage({ params }: Props) {
         {servicio.equipment && servicio.equipment.length > 0 && (
           <section style={{ marginBottom: '5rem' }}>
             <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2rem' }}>Equipamiento Técnico</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: `repeat(${servicio.equipment.length < 3 ? '2' : '3'}, 1fr)`, gap: '2rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2.5rem' }}>
               {servicio.equipment.map((eq, i) => (
-                <div key={i} style={{ backgroundColor: '#ffffff', padding: '2rem', borderRadius: '12px', textAlign: 'center', border: '1px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
+                <div key={i} style={{ backgroundColor: '#ffffff', padding: '2.5rem 1.5rem', borderRadius: '16px', textAlign: 'center', border: '1px solid #e2e8f0', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.05)' }}>
                   <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>⚙️</div>
                   <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a' }}>{eq.title}</h3>
                   <p style={{ color: '#475569', fontSize: '1rem' }}>{eq.desc}</p>

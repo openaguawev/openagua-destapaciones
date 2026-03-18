@@ -51,7 +51,7 @@ export const getServicios = (): ServicioData[] => {
   return [
     buildServicio(
       'destapaciones-cloacas',
-      'Destapación de Cloacas con Máquina e Hidrojet',
+      'Destapaciones de Cloacas',
       'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1200',
       'Recuperamos el drenaje de tu red cloacal de forma eficiente. Atendemos casas, edificios y comercios en CABA y GBA con equipos especializados.',
       'Cuando nos enfrentamos a problemas de redes cloacales, la intervención rápida es vital. Nuestro servicio destaca por resolver la acumulación de sedimentos y restos con herramientas mecánicas de alta precisión.',
