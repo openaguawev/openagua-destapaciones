@@ -4,26 +4,26 @@ export default function ComoTrabajamos() {
   const pasos = [
     {
       num: "1",
-      title: "Consulta",
-      desc: "Nos contactás y coordinamos la visita sin costo",
+      title: "Contacto",
+      desc: "Recibimos tu consulta por WhatsApp o teléfono para entender el problema.",
       icon: "💬"
     },
     {
       num: "2",
-      title: "Diagnóstico",
-      desc: "Evaluamos el problema con equipos profesionales",
+      title: "Evaluación",
+      desc: "Realizamos el diagnóstico y te brindamos un presupuesto claro y sin compromiso.",
       icon: "🔎"
     },
     {
       num: "3",
-      title: "Trabajo adecuado",
-      desc: "Aplicamos la solución correcta, no parches",
+      title: "Ejecución",
+      desc: "Trabajamos en el lugar con el equipamiento especializado (sonda o hidrojet).",
       icon: "🔧"
     },
     {
       num: "4",
-      title: "Explicación del resultado",
-      desc: "Te mostramos qué pasó y cómo quedó",
+      title: "Verificación",
+      desc: "Comprobamos que el drenaje sea el correcto y te explicamos el trabajo realizado.",
       icon: "✅"
     }
   ];

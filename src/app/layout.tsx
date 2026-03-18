@@ -39,9 +39,9 @@ export default function RootLayout({
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Openagua Destapaciones",
+    "name": "Openagua",
     "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1200",
-    "telephone": "+5491151797649",
+    "telephone": "15-5179-7649",
     "url": "https://www.openagua.com.ar",
     "address": {
       "@type": "PostalAddress",
@@ -49,7 +49,7 @@ export default function RootLayout({
       "addressRegion": "CABA",
       "addressCountry": "AR"
     },
-    "areaServed": ["CABA", "Gran Buenos Aires"],
+    "areaServed": "CABA y GBA",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],

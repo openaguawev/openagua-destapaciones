@@ -1,55 +1,64 @@
 import React from 'react';
 import Link from 'next/link';
+import Script from 'next/script';
 import './Servicios.css';
 
 export default function Servicios() {
   const servicios = [
     {
-      title: "Destapación de Cloacas",
-      desc: "Con sonda e hidrojet de alta presión.",
+      title: "Cloacas",
+      desc: "Solucionamos obstrucciones con sonda rotativa o hidrojet.",
       link: "/destapaciones-cloacas",
+      btnText: "Ver servicio de Cloacas",
       icon: <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/>
     },
     {
-      title: "Destapaciones Cañerías",
-      desc: "Rehabilitación de flujo en baños y cocinas.",
+      title: "Cañerías",
+      desc: "Limpieza de desagües de cocina, baño y lavadero con máquinas de resortes.",
       link: "/destapaciones-canerias",
+      btnText: "Ver servicio de Cañerías",
       icon: <><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.6 2 5 2 2.3 0 2.3-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.6 2 5 2 2.3 0 2.3-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.6 2 5 2 2.3 0 2.3-2 5-2 1.3 0 1.9.5 2.5 1"/></>
     },
     {
-      title: "Destapaciones Pluviales",
-      desc: "Desatasco de rejillas, canaletas y caños de lluvia.",
+      title: "Pluviales",
+      desc: "Desobstrucción de rejillas y terrazas. Evitá inundaciones por hojas y barro.",
       link: "/destapaciones-pluviales",
+      btnText: "Ver servicio de Pluviales",
       icon: <><path d="M21.5 12H16c-.7 2-2 3-4 3s-3.3-1-4-3H2.5"/><path d="M5.5 5.1L2 12v6c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2v-6l-3.4-6.9A2 2 0 0 0 16.8 4H7.2a2 2 0 0 0-1.8 1.1z"/></>
     },
     {
-      title: "Sistema Hidro Jet",
-      desc: "Lavado a presión para remover calcificaciones difíciles.",
+      title: "Hidrojet",
+      desc: "Limpieza técnica con agua a presión para sarro y sedimentos rebeldes.",
       link: "/sistema-hidrojets",
+      btnText: "Ver sistema Hidrojet",
       icon: <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
     },
     {
       title: "Video Inspección",
-      desc: "Diagnóstico preciso con cámaras sumergibles sin romper.",
+      desc: "Diagnóstico con cámara HD. Localizamos roturas o raíces sin romper.",
       link: "/video-inspeccion",
+      btnText: "Ver Video Inspección",
       icon: <><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></>
     },
     {
       title: "Limpieza de Cámaras",
-      desc: "Mantenimiento y vaciado de cámaras sépticas.",
+      desc: "Mantenimiento de cámaras de inspección y sépticas para evitar olores.",
       link: "/limpieza-camaras",
+      btnText: "Ver limpieza de Cámaras",
       icon: <><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></>
     },
     {
       title: "Desagote de Sótanos",
-      desc: "Evacuación ultra rápida en subsuelos y fosos.",
+      desc: "Vaciado con bombas sumergibles de gran caudal.",
       link: "/desagotes",
+      btnText: "Ver servicio de Desagotes",
       icon: <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
     },
     {
-      title: "Mantenimiento Preventivo",
-      desc: "Planes anuales para consorcios y comercios.",
+      title: "Abonos",
+      desc: "Planes preventivos para consorcios y empresas.",
       link: "/mantenimiento-preventivo",
+      btnText: "Ver Abonos de Mantenimiento",
       icon: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></>
     }
   ];
@@ -69,12 +78,31 @@ export default function Servicios() {
               <h3 className="servicio-title">{s.title}</h3>
               <p className="servicio-desc">{s.desc}</p>
               <Link href={s.link} className="servicio-btn">
-                Consultar
+                {s.btnText}
               </Link>
             </div>
           ))}
         </div>
       </div>
+      
+      <Script
+        id="services-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            servicios.map(s => ({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "name": s.title,
+              "description": s.desc,
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Openagua"
+              }
+            }))
+          )
+        }}
+      />
     </section>
   );
 }

@@ -3,24 +3,24 @@ import './Diferenciales.css';
 export default function Diferenciales() {
   const caracteristicas = [
     {
-      icon: "🔧",
-      title: "Equipamiento profesional",
-      description: "Hidrojet, cámara y máquina de sonda"
-    },
-    {
       icon: "🎯",
-      title: "Diagnóstico preciso",
+      title: "Diagnóstico Preciso",
       description: "Detectamos el origen real del problema"
     },
     {
-      icon: "💪",
-      title: "Soluciones duraderas",
-      description: "Sin parches ni trabajos temporales"
+      icon: "🔧",
+      title: "Equipamiento Profesional",
+      description: "Hidrojet, cámara y máquina de sonda"
     },
     {
-      icon: "🕐",
-      title: "Atención 8 a 19 hs",
-      description: "Lunes a sábado, sin sorpresas"
+      icon: "📍",
+      title: "Cobertura Amplia",
+      description: "CABA y Gran Buenos Aires"
+    },
+    {
+      icon: "💎",
+      title: "Presupuesto Transparente",
+      description: "Sin parches ni costos ocultos"
     }
   ];
 
