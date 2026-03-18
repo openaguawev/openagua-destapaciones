@@ -140,16 +140,34 @@ export const getServicios = (): ServicioData[] => {
       }
     ),
     buildServicio(
-      'sistema-hidrojets',
-      'Sistema Hidro Jet',
+      'destapaciones-hidrojet',
+      'Destapaciones con Hidrojet',
       'https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&q=80&w=1200',
-      'Lavado interno profundo de cañerías usando agua con presión regulada. Ideal para sarro crónico o grasa solidificada comercial.',
+      'Limpieza técnica con agua a alta presión. La solución definitiva para eliminar sarro, grasa y sedimentos rebeldes en CABA y GBA.',
       'El Hidrojet es una maravilla moderna; dispara un chorro radial que además de empujar al tapón, arranca de tajo la grasitud adherida por todo el diámetro y lo pule.',
       [
         { q: "¿El hidrojet daña las cañerías?", a: "No, la presión de agua es graduada por nuestros especialistas calibrándola exacto según el material y antigüedad de su tubería." },
         { q: "¿Para qué tipo de obstrucciones es ideal el hidrojet?", a: "Es la solución definitiva contra el sarro petrificado, grandes acumulaciones de grasa en restaurantes y tapones barrosos crónicos." },
         { q: "¿Es mejor que los productos químicos?", a: "Infinitamente mejor; el hidrojet remueve físicamente el tapón utilizando solo agua, a diferencia de los ácidos que deforman la cañería." }
-      ]
+      ],
+      {
+        benefitsTitle: "Nuestro Compromiso Profesional",
+        benefits: [
+          { title: "Recuperación de Diámetro", desc: "El Hidrojet no solo destapa, sino que barre las paredes del conducto devolviéndole su capacidad de drenaje original." },
+          { title: "Sin Químicos Dañinos", desc: "Utilizamos exclusivamente agua a presión controlada, cuidando la integridad de tus cañerías y el medio ambiente." },
+          { title: "Efectividad Prolongada", desc: "Al limpiar profundamente la grasa y el sarro, evitamos que los residuos vuelvan a acumularse en el corto plazo." }
+        ],
+        equipment: [
+          { title: "Bombas de Alta Presión", desc: "Equipos de última generación que regulan la fuerza del agua según el tipo y material de la cañería (PVC, Hierro o Cemento)." },
+          { title: "Boquillas Especializadas", desc: "Usamos diferentes cabezales (rotativos, de arrastre o de impacto) para atacar específicamente cada tipo de obstrucción." }
+        ],
+        steps: [
+          { title: "Inspección", desc: "Evaluamos el acceso y el grado de acumulación de residuos en la red.", iconStr: "🔎" },
+          { title: "Configuración", desc: "Seteamos la presión adecuada para limpiar sin poner en riesgo la estructura del caño.", iconStr: "⚙️" },
+          { title: "Barrido Técnico", desc: "Introducimos la manguera de alta presión para desprender toda la suciedad adherida.", iconStr: "💦" },
+          { title: "Prueba de Caudal", desc: "Verificamos junto al cliente que el agua corra libremente y sin obstáculos.", iconStr: "✅" }
+        ]
+      }
     ),
     buildServicio(
       'video-inspeccion',
