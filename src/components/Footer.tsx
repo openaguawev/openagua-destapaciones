@@ -16,7 +16,7 @@ export default function Footer() {
             <li><Link href="/destapaciones-canerias">Destapaciones de Cañerías</Link></li>
             <li><Link href="/destapaciones-pluviales">Destapaciones Pluviales</Link></li>
             <li><Link href="/destapaciones-hidrojet">Destapaciones con Hidrojet</Link></li>
-            <li><Link href="/video-inspeccion">Video Inspección Cloacal</Link></li>
+            <li><Link href="/video-inspeccion-canerias">Video Inspección de Cañerías</Link></li>
             <li><Link href="/limpieza-camaras">Limpieza de Cámaras</Link></li>
             <li><Link href="/desagotes">Desagote de Sótanos</Link></li>
             <li><Link href="/mantenimiento-preventivo">Mantenimiento Preventivo</Link></li>

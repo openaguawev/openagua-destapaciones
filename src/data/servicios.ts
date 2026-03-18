@@ -170,16 +170,34 @@ export const getServicios = (): ServicioData[] => {
       }
     ),
     buildServicio(
-      'video-inspeccion',
-      'Video Inspección Cloacal',
+      'video-inspeccion-canerias',
+      'Video Inspección de Cañerías',
       'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=1200',
-      'Diagnóstico preciso mediante micro cámara introducida en la cañería para encontrar problemas a ciegas.',
+      'Diagnóstico preciso con cámaras HD. Localizamos roturas, raíces y obstrucciones sin romper pisos ni paredes en CABA y GBA.',
       'Suelen existir roturas estructurales ocultas debajo del hormigón. En lugar de perforar el piso adivinando, optamos por introducir nuestra cámara CCTV sumergible.',
       [
         { q: "¿Qué problemas detecta la cámara de inspección?", a: "Detecta hundimientos del terreno, intrusión severa de raíces, fracturas a lo largo del encastre y objetos encallados." },
         { q: "¿Cuándo conviene hacer una video inspección?", a: "Cuando padecés destapaciones recurrentes mes a mes, garantizando que existe un daño estructural que debe visualizarse de raíz." },
         { q: "¿Se puede inspeccionar sin romper paredes ni pisos?", a: "Esa es la principal ventaja. Accedemos desde las cámaras de registro a ras de piso sin demoler una baldosa." }
-      ]
+      ],
+      {
+        benefitsTitle: "Nuestro Compromiso Profesional",
+        benefits: [
+          { title: "Localización Exacta", desc: "Identificamos el punto preciso del problema para que, si hay que reparar, la intervención sea mínima y en el lugar correcto." },
+          { title: "Informe con Evidencia", desc: "Te entregamos las fotos o el video del estado interno de la cañería para que tengas una prueba real del diagnóstico." },
+          { title: "Ahorro Garantizado", desc: "Evitamos excavaciones innecesarias. Conocer el estado del caño te permite planificar la solución más económica y eficiente." }
+        ],
+        equipment: [
+          { title: "Cámaras de Alta Resolución", desc: "Equipos sumergibles con iluminación LED que permiten ver con total claridad el interior de conductos de diversos diámetros." },
+          { title: "Sondas de Localización", desc: "Tecnología que permite rastrear la posición de la cámara desde la superficie para marcar el punto exacto donde se encuentra la falla." }
+        ],
+        steps: [
+          { title: "Acceso", desc: "Introducimos la cámara por una cámara de inspección, rejilla o boca de acceso existente.", iconStr: "🔎" },
+          { title: "Exploración", desc: "Recorremos el conducto grabando en tiempo real para detectar fisuras, hundimientos o bloqueos.", iconStr: "🎥" },
+          { title: "Diagnóstico", desc: "Analizamos las imágenes para determinar si el problema es de limpieza o una falla estructural.", iconStr: "📋" },
+          { title: "Entrega de Informe", desc: "Te brindamos el resultado técnico para que tomes la mejor decisión sobre la reparación necesaria.", iconStr: "📝" }
+        ]
+      }
     ),
     buildServicio(
       'limpieza-camaras',
