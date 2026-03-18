@@ -4,7 +4,6 @@ import Servicios from '@/components/Servicios';
 import Zonas from '@/components/Zonas';
 import ComoTrabajamos from '@/components/ComoTrabajamos';
 import NuestrosTrabajos from '@/components/NuestrosTrabajos';
-import Galeria from '@/components/Galeria';
 import Resenas from '@/components/Resenas';
 import FAQ from '@/components/FAQ';
 import Contacto from '@/components/Contacto';
@@ -18,7 +17,6 @@ export default function Home() {
       <Zonas />
       <ComoTrabajamos />
       <NuestrosTrabajos />
-      <Galeria />
       <Resenas />
       <FAQ />
       <Contacto />
