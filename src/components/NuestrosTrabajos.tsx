@@ -38,7 +38,7 @@ export default function NuestrosTrabajos() {
                 <polyline points="17 8 12 3 7 8"></polyline>
                 <line x1="12" y1="3" x2="12" y2="15"></line>
               </svg>
-              <span style={{ fontWeight: 600, fontSize: '1.1rem' }}>Foto prÃ³ximamente</span>
+              <span style={{ fontWeight: 600, fontSize: '1.1rem' }}>Foto próximamente</span>
             </div>
           ))}
         </div>
