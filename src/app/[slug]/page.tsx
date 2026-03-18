@@ -45,6 +45,7 @@ export default async function ServicioPage({ params }: Props) {
         <div className="container">
           <Link href="/#servicios" className="back-link-servicio">← Volver a Servicios</Link>
           <h1 className="hero-title">{servicio.title}</h1>
+          <p className="servicio-hero-desc" style={{ marginTop: '1rem' }}>{servicio.excerpt}</p>
         </div>
       </div>
 

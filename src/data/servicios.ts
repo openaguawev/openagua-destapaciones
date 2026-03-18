@@ -111,15 +111,33 @@ export const getServicios = (): ServicioData[] => {
     ),
     buildServicio(
       'destapaciones-pluviales',
-      'Destapaciones Pluviales',
+      'Destapación de Pluviales',
       'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&q=80&w=1200',
-      'Limpieza y destapación de desagües pluviales antes del clima rudo. Garantizamos el correcto drenaje del agua precipitada.',
+      'Desobstrucción de rejillas, terrazas y desagües de lluvia. Evitá inundaciones y filtraciones con limpieza técnica en CABA y GBA.',
       'Las hojas secas, el barro y la falta de supervisión logran que los balcones y terrazas colapsen repentinamente durante una tormenta.',
       [
         { q: "¿Con qué frecuencia limpiar desagües pluviales?", a: "Lo ideal es dos veces al año, particularmente antes de la temporada de otoño y primavera pesada." },
         { q: "¿Trabajan en terrazas y balcones?", a: "Sí, realizamos trabajos de altura e intervenimos terrazas, balcones y canaletas altas." },
         { q: "¿Qué pasa si no limpio los desagües antes de las lluvias?", a: "Se produce un taponamiento por arrastre de barro y hojas que termina desbordando el agua hacia el interior del hogar causando filtraciones severas." }
-      ]
+      ],
+      {
+        benefitsTitle: "Nuestro Compromiso Profesional",
+        benefits: [
+          { title: "Diagnóstico de Caída", desc: "Verificamos la pendiente y el estado de los desagües para asegurar que el agua de lluvia evacue correctamente." },
+          { title: "Remoción de Sedimentos", desc: "Eliminamos hojas, tierra y restos de obra que suelen tapar las rejillas y bajadas pluviales." },
+          { title: "Prevención de Filtraciones", desc: "Un pluvial libre de obstrucciones es la mejor defensa contra la humedad y las filtraciones en techos y paredes." }
+        ],
+        equipment: [
+          { title: "Sondas para Pluviales", desc: "Resortes reforzados diseñados para recorrer tramos largos de desagües de lluvia sin dañar los conductos." },
+          { title: "Hidrojet de Caudal", desc: "Sistema de agua a presión ideal para barrer el barro y las hojas acumuladas en las cañerías pluviales." }
+        ],
+        steps: [
+          { title: "Evaluación", desc: "Revisamos rejillas, canaletas y bajadas para identificar el punto crítico.", iconStr: "🔎" },
+          { title: "Desobstrucción", desc: "Aplicamos maquinaria rotativa o presión según la densidad del tapón.", iconStr: "⚙️" },
+          { title: "Prueba de Lluvia", desc: "Realizamos una prueba con abundante agua para simular una tormenta y verificar el drenaje.", iconStr: "🌧️" },
+          { title: "Informe Técnico", desc: "Si el caño está roto o mal diseñado, te informamos sobre la necesidad de reparación estructural.", iconStr: "📝" }
+        ]
+      }
     ),
     buildServicio(
       'sistema-hidrojets',
