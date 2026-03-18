@@ -7,15 +7,18 @@ export default function NuestrosTrabajos() {
   return (
     <section className="section bg-light" id="trabajos" style={{ padding: '5rem 0' }}>
       <div className="container">
-        <div style={{ textAlign: 'center', marginBottom: '3rem', margin: '0 auto', maxWidth: '800px' }}>
-          <h2 className="section-title" style={{ textAlign: 'center' }}>Nuestros Trabajos</h2>
-          <p style={{ color: '#64748b', fontSize: '1.25rem', textAlign: 'center' }}>Trabajos realizados por nuestro equipo en CABA y GBA</p>
+        <div style={{ textAlign: 'center', margin: '0 auto', maxWidth: '800px' }}>
+          <h2 className="section-title" style={{ textAlign: 'center', marginBottom: 0 }}>Nuestros Trabajos</h2>
+          <p style={{ color: '#64748b', fontSize: '1.25rem', textAlign: 'center', marginTop: '0.5rem', marginBottom: '2.5rem' }}>Trabajos realizados por nuestro equipo en CABA y GBA</p>
         </div>
         
         <div style={{ 
           display: 'grid', 
           gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', 
-          gap: '24px' 
+          gap: '24px',
+          margin: '0 auto',
+          width: '100%',
+          maxWidth: '1200px'
         }}>
           {placeholders.map((_, idx) => (
             <div key={idx} style={{
