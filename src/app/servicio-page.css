@@ -22,11 +22,13 @@
   color: #fff;
 }
 
-.servicio-hero h1 {
+.hero-title {
   color: #fff;
   font-size: 3rem;
-  margin-bottom: 16px;
+  font-weight: 700;
+  margin: 1rem 0;
   text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  line-height: 1.25;
 }
 
 .servicio-hero-desc {
@@ -64,7 +66,46 @@
 }
 
 @media (max-width: 768px) {
-  .servicio-hero h1 {
-    font-size: 2.25rem;
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.35;
+  }
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.benefit-card {
+  background-color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 1rem; /* rounded-2xl padding ample */
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+}
+
+.benefit-card p {
+  line-height: 1.8; /* Readability */
+  color: #475569;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 992px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem; /* Generous gap requested */
+  }
+  .benefit-card {
+    padding: 2.5rem 1.5rem; /* Sufficient lateral padding */
   }
 }

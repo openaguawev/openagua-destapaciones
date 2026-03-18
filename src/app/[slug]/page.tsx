@@ -44,7 +44,7 @@ export default async function ServicioPage({ params }: Props) {
       <div className="servicio-hero" style={{ backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url(${servicio.image})` }}>
         <div className="container">
           <Link href="/#servicios" className="back-link-servicio">← Volver a Servicios</Link>
-          <h1 style={{ color: '#ffffff', fontSize: '3rem', fontWeight: 700, margin: '1rem 0' }}>{servicio.title}</h1>
+          <h1 className="hero-title">{servicio.title}</h1>
         </div>
       </div>
 
@@ -55,12 +55,12 @@ export default async function ServicioPage({ params }: Props) {
 
         <section style={{ marginBottom: '5rem' }}>
           <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2rem' }}>{servicio.benefitsTitle}</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2.5rem' }}>
+          <div className="benefits-grid">
             {servicio.benefits.map((b, i) => (
-              <div key={i} style={{ backgroundColor: '#ffffff', padding: '2.5rem 1.5rem', borderRadius: '16px', textAlign: 'center', border: '1px solid #e2e8f0', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.05)' }}>
+              <div key={i} className="benefit-card">
                 <div style={{ fontSize: '2.5rem', marginBottom: '1rem', color: '#16A34A' }}>✓</div>
                 <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a' }}>{b.title}</h3>
-                <p style={{ color: '#475569', fontSize: '1rem' }}>{b.desc}</p>
+                <p>{b.desc}</p>
               </div>
             ))}
           </div>
@@ -69,12 +69,12 @@ export default async function ServicioPage({ params }: Props) {
         {servicio.equipment && servicio.equipment.length > 0 && (
           <section style={{ marginBottom: '5rem' }}>
             <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2rem' }}>Equipamiento Técnico</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2.5rem' }}>
+            <div className="benefits-grid">
               {servicio.equipment.map((eq, i) => (
-                <div key={i} style={{ backgroundColor: '#ffffff', padding: '2.5rem 1.5rem', borderRadius: '16px', textAlign: 'center', border: '1px solid #e2e8f0', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.05)' }}>
+                <div key={i} className="benefit-card">
                   <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>⚙️</div>
                   <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a' }}>{eq.title}</h3>
-                  <p style={{ color: '#475569', fontSize: '1rem' }}>{eq.desc}</p>
+                  <p>{eq.desc}</p>
                 </div>
               ))}
             </div>
