@@ -15,6 +15,7 @@ export default function Navbar() {
             <li><Link href="/#servicios">Servicios</Link></li>
             <li><Link href="/#zonas">Zonas</Link></li>
             <li><Link href="/#como-trabajamos">Cómo Trabajamos</Link></li>
+            <li><Link href="/#trabajos">Nuestros Trabajos</Link></li>
             <li><Link href="/blog">Blog</Link></li>
             <li><Link href="/#contacto">Contacto</Link></li>
           </ul>

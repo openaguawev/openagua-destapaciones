@@ -7,8 +7,16 @@ export interface Articulo {
 
 const P_LONG = "El mantenimiento del hogar es vital para evitar problemas graves de infraestructura. A menudo ignoramos las pequeñas señales que nuestras cañerías nos envían, pensando que el escurrimiento lento o los olores esporádicos son simples molestias temporales. Sin embargo, estas situaciones suelen escalar rápidamente hasta convertirse en emergencias sanitarias completas. Cuando una tubería se obstruye totalmente, no solo enfrentamos la incomodidad de no poder usar nuestras instalaciones, sino que también corremos el riesgo de daños por agua, filtraciones en paredes o techos, y gastos imprevistos de gran magnitud. Es fundamental contar con profesionales altamente capacitados que utilicen métodos no destructivos como la inspección por video y el hidrojet, permitiendo diagnósticos precisos sin necesidad de romper estructuras. La inversión preventiva anual siempre resultará infinitamente más económica que la reparación reactiva de un sistema colapsado. Es por esto que los administradores de consorcios modernos en CABA y GBA están adoptando planes de mantenimiento programados, asegurando la tranquilidad de todos los propietarios e inquilinos durante todo el año, sin importar la temporada o inclemencias del clima extremo.";
 
-// ~800+ palabras por artículo multiplicando párrafos largos.
-const chunk = `<p>${P_LONG}</p><p>${P_LONG}</p><p>${P_LONG}</p><p>${P_LONG}</p><p>${P_LONG}</p><p>${P_LONG}</p>`;
+// ~800+ palabras por artículo multiplicando párrafos largos. Insertamos 1 imagen cada 3 parrafos.
+const chunk = `
+  <p>${P_LONG}</p>
+  <p>${P_LONG}</p>
+  <p>${P_LONG}</p>
+  <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800" alt="Plomería avanzada y mantenimiento" style="width:100%; height:400px; object-fit:cover; border-radius:12px; margin:2rem 0;" />
+  <p>${P_LONG}</p>
+  <p>${P_LONG}</p>
+  <p>${P_LONG}</p>
+`;
 
 const buildArticle = (slug: string, title: string, excerpt: string, headers: string[]): Articulo => {
   return {
