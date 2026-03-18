@@ -147,7 +147,7 @@ export default async function BarrioPage({ params }: Props) {
                 { title: 'Destapación de Cloacas', link: '/destapaciones-cloacas' },
                 { title: 'Destapaciones de Cañerías', link: '/destapaciones-canerias' },
                 { title: 'Destapaciones Pluviales', link: '/destapaciones-pluviales' },
-                { title: 'Sistema Hidro Jet', link: '/sistema-hidrojets' },
+                { title: 'Destapaciones con Hidrojet', link: '/destapaciones-hidrojet' },
                 { title: 'Video Inspección Cloacal', link: '/video-inspeccion' },
                 { title: 'Limpieza de Cámaras', link: '/limpieza-camaras' },
                 { title: 'Desagote de Sótanos', link: '/desagotes' },
