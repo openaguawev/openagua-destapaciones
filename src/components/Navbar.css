@@ -58,3 +58,58 @@
     display: block;
   }
 }
+
+/* Mobile Menu Overlay Styles */
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-bg-dark, #0F172A); /* Deep blue dark bg */
+  z-index: 999; /* Extremely high z-index over hero */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+.mobile-overlay.open {
+  transform: translateX(0);
+}
+
+.mobile-close-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-weight: bold;
+}
+
+.mobile-overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mobile-overlay a {
+  font-size: 1.5rem;
+  color: #e2e8f0;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.mobile-overlay a:hover {
+  color: #fff;
+}
