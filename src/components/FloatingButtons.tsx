@@ -4,7 +4,7 @@ export default function FloatingButtons() {
   return (
     <>
       <a 
-        href="https://wa.me/5491151797649" 
+        href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20quiero%20consultar%20por%20un%20presupuesto" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="floating-btn fb-whatsapp"

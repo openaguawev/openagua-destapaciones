@@ -6,49 +6,49 @@ export default function Servicios() {
   const servicios = [
     {
       title: "Destapación de Cloacas",
-      desc: "Limpieza profunda de redes cloacales, eliminando tapones y sedimentos.",
+      desc: "Con sonda e hidrojet de alta presión.",
       link: "/destapaciones-cloacas",
       icon: <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/>
     },
     {
       title: "Destapaciones Cañerías",
-      desc: "Rehabilitación del flujo de agua en baños y cocinas afectados por sarro.",
+      desc: "Rehabilitación de flujo en baños y cocinas.",
       link: "/destapaciones-canerias",
       icon: <><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.6 2 5 2 2.3 0 2.3-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.6 2 5 2 2.3 0 2.3-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.6 2 5 2 2.3 0 2.3-2 5-2 1.3 0 1.9.5 2.5 1"/></>
     },
     {
       title: "Destapaciones Pluviales",
-      desc: "Desatasco de rejillas y canaletas afectadas por barro antes de las lluvias.",
+      desc: "Desatasco de rejillas, canaletas y caños de lluvia.",
       link: "/destapaciones-pluviales",
       icon: <><path d="M21.5 12H16c-.7 2-2 3-4 3s-3.3-1-4-3H2.5"/><path d="M5.5 5.1L2 12v6c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2v-6l-3.4-6.9A2 2 0 0 0 16.8 4H7.2a2 2 0 0 0-1.8 1.1z"/></>
     },
     {
       title: "Sistema Hidro Jet",
-      desc: "Lavado a presión extrema para remover calcificaciones difíciles sin romper.",
+      desc: "Lavado a presión para remover calcificaciones difíciles.",
       link: "/sistema-hidrojets",
       icon: <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
     },
     {
       title: "Video Inspección",
-      desc: "Cámaras sumergibles para diagnósticos precisos sin romper pisos.",
+      desc: "Diagnóstico preciso con cámaras sumergibles sin romper.",
       link: "/video-inspeccion",
       icon: <><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></>
     },
     {
       title: "Limpieza de Cámaras",
-      desc: "Mantenimiento preventivo y vaciado de cámaras sépticas de consorcios.",
+      desc: "Mantenimiento y vaciado de cámaras sépticas.",
       link: "/limpieza-camaras",
       icon: <><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></>
     },
     {
       title: "Desagote de Sótanos",
-      desc: "Evacuación ultra rápida de agua en subsuelos y fosos de ascensor inundados.",
+      desc: "Evacuación ultra rápida en subsuelos y fosos.",
       link: "/desagotes",
       icon: <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
     },
     {
       title: "Visitas de Prevención",
-      desc: "Planes de mantenimiento anuales para edificios residenciales comerciales.",
+      desc: "Planes anuales para consorcios y comercios.",
       link: "/mantenimiento-preventivo",
       icon: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></>
     }

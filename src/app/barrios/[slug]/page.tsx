@@ -47,7 +47,7 @@ export default async function BarrioPage({ params }: Props) {
     }
   };
 
-  const whatsappLink = "https://wa.me/5491151797649";
+  const whatsappLink = "https://wa.me/5491151797649?text=Hola%20Openagua%2C%20quiero%20consultar%20por%20un%20presupuesto";
 
   return (
     <>

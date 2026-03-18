@@ -20,7 +20,7 @@ export default function Navbar() {
           </ul>
         </nav>
         <div className="navbar-cta desktop-only">
-          <a href="https://wa.me/5491151797649" target="_blank" rel="noopener noreferrer" className="btn-primary">
+          <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20quiero%20consultar%20por%20un%20presupuesto" target="_blank" rel="noopener noreferrer" className="btn-primary">
             Consultar por WhatsApp
           </a>
         </div>

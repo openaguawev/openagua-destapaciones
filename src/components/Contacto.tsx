@@ -6,18 +6,27 @@ import './Contacto.css';
 export default function Contacto() {
   const [status, setStatus] = useState<'' | 'sending' | 'success'>('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('sending');
-    // Simulated submission for Mock backend
-    setTimeout(() => {
-      setStatus('success');
-      // Reset form visually
-      (e.target as HTMLFormElement).reset();
-      
-      // Clear success message after 5 seconds
-      setTimeout(() => setStatus(''), 5000);
-    }, 1500);
+    const formElements = e.target as HTMLFormElement;
+    const formData = new FormData(formElements);
+    
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/destapacionesopenagua@gmail.com', {
+        method: "POST",
+        body: formData,
+      });
+      if (response.ok) {
+        setStatus('success');
+        formElements.reset();
+        setTimeout(() => setStatus(''), 5000);
+      } else {
+        setStatus('');
+      }
+    } catch (error) {
+      setStatus('');
+    }
   };
 
   return (
@@ -27,6 +36,7 @@ export default function Contacto() {
         
         <div className="contacto-container">
           <form className="contacto-form" onSubmit={handleSubmit}>
+            <input type="hidden" name="_captcha" value="false" />
             <div className="form-group">
               <label htmlFor="nombre">Nombre</label>
               <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />

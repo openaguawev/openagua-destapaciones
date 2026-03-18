@@ -31,7 +31,7 @@ const buildServicio = (slug: string, title: string, image: string, excerpt: stri
       <div style="margin-top:40px;padding:30px;background:#16A34A;color:white;border-radius:12px;text-align:center">
         <h3>¿Precisás este servicio de forma urgente o programada?</h3>
         <p style="color:white;margin-bottom:20px">No esperes a que el problema empeore. Presupuestos sin cargo.</p>
-        <a href="https://wa.me/5491151797649" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 24px;background:white;color:#16A34A;font-weight:bold;border-radius:6px;text-decoration:none">
+        <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20quiero%20consultar%20por%20un%20presupuesto" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:12px 24px;background:white;color:#16A34A;font-weight:bold;border-radius:6px;text-decoration:none">
           Contactar por WhatsApp
         </a>
       </div>

@@ -56,6 +56,16 @@
   margin-right: 8px;
 }
 
+.btn-outline.hero-btn:hover {
+  background-color: #ffffff;
+  color: #0F172A;
+  border-color: #ffffff;
+}
+
+.btn-outline.hero-btn:hover .icon svg {
+  stroke: #0F172A;
+}
+
 @media (max-width: 768px) {
   .hero-section {
     min-height: 70vh;
