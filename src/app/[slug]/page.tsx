@@ -54,7 +54,7 @@ export default async function ServicioPage({ params }: Props) {
 
         <section style={{ marginBottom: '5rem' }}>
           <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2rem' }}>Beneficios del Servicio</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem' }}>
             {servicio.benefits.map((b, i) => (
               <div key={i} style={{ backgroundColor: '#f8fafc', padding: '2rem', borderRadius: '12px', textAlign: 'center', border: '1px solid #e2e8f0' }}>
                 <div style={{ fontSize: '2.5rem', marginBottom: '1rem', color: '#16A34A' }}>✓</div>

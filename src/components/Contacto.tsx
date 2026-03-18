@@ -32,7 +32,7 @@ export default function Contacto() {
   return (
     <section id="contacto" className="contacto-section">
       <div className="container">
-        <h2 className="contacto-title">Pedí tu presupuesto sin compromiso</h2>
+        <h2 className="contacto-title" style={{ color: '#ffffff', fontSize: '2.5rem', fontWeight: 700, textAlign: 'center', marginBottom: '1rem' }}>Pedí tu presupuesto sin compromiso</h2>
         
         <div className="contacto-container">
           <form className="contacto-form" onSubmit={handleSubmit}>

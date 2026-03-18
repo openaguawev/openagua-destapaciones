@@ -3,7 +3,16 @@ import { useState } from 'react';
 import './NuestrosTrabajos.css';
 
 export default function NuestrosTrabajos() {
-  const placeholders = Array.from({ length: 6 });
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const images = [
+    'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800', 
+    'https://images.unsplash.com/photo-1542013936693-884638332954?w=800', 
+    'https://images.unsplash.com/photo-1508873535684-275a3048cb19?w=800', 
+    'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=800', 
+    'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800', 
+    'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800', 
+  ];
 
   return (
     <section className="section bg-light" id="trabajos" style={{ padding: '5rem 0' }}>
@@ -13,35 +22,30 @@ export default function NuestrosTrabajos() {
           <p style={{ color: '#64748b', fontSize: '1.25rem' }}>Trabajos realizados por nuestro equipo en CABA y GBA</p>
         </div>
         
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', 
-          gap: '24px' 
-        }}>
-          {placeholders.map((_, idx) => (
-            <div key={idx} style={{
-              backgroundColor: '#ffffff',
-              border: '2px dashed #16A34A',
-              borderRadius: '12px',
-              aspectRatio: '4/3',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#16A34A',
-              padding: '2rem',
-              textAlign: 'center'
-            }}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: '1rem' }}>
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="17 8 12 3 7 8"></polyline>
-                <line x1="12" y1="3" x2="12" y2="15"></line>
-              </svg>
-              <span style={{ fontWeight: 600, fontSize: '1.1rem' }}>Foto próximamente</span>
+        <div className="trabajos-grid">
+          {images.map((img, idx) => (
+            <div key={idx} className="trabajo-card" onClick={() => setSelectedImage(img)}>
+              <div 
+                className="trabajo-img" 
+                style={{ backgroundImage: `url(${img})` }}
+              >
+                <div className="trabajo-overlay">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                </div>
+              </div>
             </div>
           ))}
         </div>
       </div>
+
+      {selectedImage && (
+        <div className="lightbox" onClick={() => setSelectedImage(null)}>
+          <div className="lightbox-content" onClick={e => e.stopPropagation()}>
+            <button className="lightbox-close" onClick={() => setSelectedImage(null)}>×</button>
+            <img src={selectedImage} alt="Trabajo realizado de destapación y plomería" />
+          </div>
+        </div>
+      )}
     </section>
   );
 }

@@ -4,43 +4,42 @@ import { useState } from 'react';
 import './Galeria.css';
 
 export default function Galeria() {
-  const images = [
-    { src: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800", alt: "Limpieza de desagües y cañerías" },
-    { src: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800", alt: "Cámara de inspección para caños" },
-    { src: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800", alt: "Plomero profesional destapando" },
-    { src: "https://images.unsplash.com/photo-1542013936693-884638332954?w=800", alt: "Sistema hidrojet alta presión" },
-    { src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800", alt: "Destapación de cloacas profundas" },
-    { src: "https://images.unsplash.com/photo-1621905251189-08b45249b6c7?w=800", alt: "Trabajo en sistema cloacal" }
-  ];
-
-  const [lightboxImg, setLightboxImg] = useState<string | null>(null);
+  const placeholders = Array.from({ length: 6 });
 
   return (
-    <section id="galeria" className="section section-alt">
+    <section id="galeria" className="section section-alt" style={{ padding: '5rem 0' }}>
       <div className="container">
-        <h2 className="section-title">Trabajos reales, resultados reales</h2>
-        <div className="galeria-grid">
-          {images.map((img, idx) => (
-            <div 
-              key={idx} 
-              className="galeria-item"
-              onClick={() => setLightboxImg(img.src)}
-            >
-              <img src={img.src} alt={img.alt} loading="lazy" />
-              <div className="galeria-overlay">
-                <span>🔍 Ver zoom</span>
-              </div>
+        <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '3rem' }}>Trabajos reales, resultados reales</h2>
+        
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', 
+          gap: '24px' 
+        }}>
+          {placeholders.map((_, idx) => (
+            <div key={idx} style={{
+              backgroundColor: '#ffffff',
+              border: '2px dashed #16A34A',
+              borderRadius: '12px',
+              aspectRatio: '4/3',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: '#16A34A',
+              padding: '2rem',
+              textAlign: 'center'
+            }}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: '1rem' }}>
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+              <span style={{ fontWeight: 600, fontSize: '1.1rem' }}>Foto próximamente</span>
             </div>
           ))}
         </div>
       </div>
-
-      {lightboxImg && (
-        <div className="lightbox" onClick={() => setLightboxImg(null)}>
-          <span className="lightbox-close">&times;</span>
-          <img src={lightboxImg} alt="Imagen ampliada" className="lightbox-content" onClick={(e) => e.stopPropagation()} />
-        </div>
-      )}
     </section>
   );
 }
