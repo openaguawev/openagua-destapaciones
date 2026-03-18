@@ -1,29 +1,27 @@
 import Link from 'next/link';
+import { barrios } from '@/data/barrios';
 import './Zonas.css';
 
 export default function Zonas() {
-  const zonas = [
-    {
-      title: "CABA",
-      link: "/zonas/caba",
-      barrios: "Palermo, Caballito, Belgrano, Recoleta, Villa Urquiza, Flores, Villa Devoto, Liniers, Almagro, Boedo, Chacarita, Colegiales, Floresta, La Boca, Mataderos, Núñez, Saavedra, San Telmo, Villa Crespo, Villa del Parque, Villa Luro, Villa Pueyrredón, Villa Santa Rita"
-    },
-    {
-      title: "Zona Norte",
-      link: "/zonas/zona-norte",
-      barrios: "San Isidro, Martínez, Olivos, Vicente López, San Fernando, Tigre, Florida, Munro, Villa Adelina, Boulogne, Beccar, La Lucila, Acassuso"
-    },
-    {
-      title: "Zona Oeste",
-      link: "/zonas/zona-oeste",
-      barrios: "Ramos Mejía, Haedo, Castelar, Morón, Ciudadela, San Martín, Hurlingham, Ituzaingó, Tres de Febrero, Caseros, El Palomar, Villa Tesei, Tapiales, Isidro Casanova, Rafael Castillo"
-    },
-    {
-      title: "Zona Sur",
-      link: "/zonas/zona-sur",
-      barrios: "Avellaneda, Lanús, Lomas de Zamora, Banfield, Temperley, San Justo, La Matanza"
-    }
+  const zonasDefinitions = [
+    { title: "CABA", slug: "caba" },
+    { title: "Zona Norte", slug: "zona-norte" },
+    { title: "Zona Oeste", slug: "zona-oeste" },
+    { title: "Zona Sur", slug: "zona-sur" }
   ];
+
+  const zonas = zonasDefinitions.map(zd => {
+    const zoneBarrios = barrios.filter(b => b.zoneSlug === zd.slug);
+    const first8 = zoneBarrios.slice(0, 8).map(b => b.name).join(', ');
+    const extraCount = zoneBarrios.length - 8;
+    const finalString = extraCount > 0 ? `${first8}... y ${extraCount} barrios más.` : first8;
+    
+    return {
+      title: zd.title,
+      link: `/zonas/${zd.slug}`,
+      barrios: finalString
+    };
+  });
 
   return (
     <section id="zonas" className="section section-alt">
