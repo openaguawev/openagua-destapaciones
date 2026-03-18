@@ -81,15 +81,33 @@ export const getServicios = (): ServicioData[] => {
     ),
     buildServicio(
       'destapaciones-canerias',
-      'Destapaciones de Cañerías',
+      'Destapación de Cañerías',
       'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&q=80&w=1200',
-      'Solucionamos obstrucciones en cañerías de cocina, baño, lavatorios e inodoros. Sin roturas innecesarias.',
+      'Soluciones para desagües de cocina, baño y lavadero. Eliminamos obstrucciones de grasa y sarro con tecnología de avanzada en CABA y GBA.',
       'El uso diario de bañeras, duchas y piletas acumula restos de jabón, fango y materiales diversos que terminan obturando la bajada.',
       [
         { q: "¿Pueden destapar sin romper paredes?", a: "Absolutamente, utilizamos maquinarias flexibles que circulan por los caños evitando grandes obras." },
         { q: "¿Qué causa las obstrucciones recurrentes en cañerías?", a: "Normalmente el jabón, el sarro, los pelos y la grasa acumulada a lo largo del tiempo van cerrando el diámetro progresivamente." },
         { q: "¿Trabajan en cocinas y baños?", a: "Sí, destapamos bachas de cocinas, lavatorios, bidets, inodoros y piletas de lavadero sin problema." }
-      ]
+      ],
+      {
+        benefitsTitle: "Nuestro Compromiso Profesional",
+        benefits: [
+          { title: "Diagnóstico Técnico", desc: "Evaluamos el estado de las conexiones internas para aplicar el método de limpieza adecuado según el material del caño." },
+          { title: "Limpieza de Paredes", desc: "No solo quitamos el tapón; nuestras máquinas barren la grasa adherida a las paredes para que el caño recupere su diámetro interno." },
+          { title: "Higiene en el Servicio", desc: "Trabajamos con métodos prolijos para mantener la limpieza en tu cocina o baño mientras realizamos la desobstrucción de los conductos." }
+        ],
+        equipment: [
+          { title: "Sondas Mecanizadas", desc: "Resortes flexibles de diferentes diámetros que recorren los codos y curvas de la cañería sin dañarla, extrayendo restos sólidos y sedimentos." },
+          { title: "Desengrase por Hidrojet", desc: "Para cañerías de cocina con alta acumulación de grasa, utilizamos presión de agua controlada que higieniza el conducto por completo." }
+        ],
+        steps: [
+          { title: "Contacto", desc: "Coordinamos una visita inmediata para evaluar el problema en tu domicilio.", iconStr: "📱" },
+          { title: "Identificación", desc: "Localizamos si el problema es en el sifón, el ramal o el desagüe principal.", iconStr: "🔎" },
+          { title: "Desobstrucción", desc: "Aplicamos la maquinaria específica para liberar el flujo de agua de forma efectiva.", iconStr: "⚙️" },
+          { title: "Prueba de Paso", desc: "Comprobamos la fluidez del conducto mediante pruebas de caudal. En caso de detectar fallas estructurales o caños colapsados, informamos el estado real para su debida reparación.", iconStr: "✅" }
+        ]
+      }
     ),
     buildServicio(
       'destapaciones-pluviales',
