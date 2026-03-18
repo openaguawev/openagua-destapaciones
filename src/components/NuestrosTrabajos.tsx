@@ -5,11 +5,11 @@ export default function NuestrosTrabajos() {
   const placeholders = Array.from({ length: 6 });
 
   return (
-    <section className="section bg-light" id="trabajos" style={{ padding: '5rem 0' }}>
-      <div className="container">
-        <div style={{ textAlign: 'center', margin: '0 auto', maxWidth: '800px' }}>
-          <h2 className="section-title" style={{ textAlign: 'center', marginBottom: 0 }}>Nuestros Trabajos</h2>
-          <p style={{ color: '#64748b', fontSize: '1.25rem', textAlign: 'center', marginTop: '0.5rem', marginBottom: '2.5rem' }}>Trabajos realizados por nuestro equipo en CABA y GBA</p>
+    <section className="section bg-light" id="trabajos" style={{ padding: '5rem 0', textAlign: 'center', width: '100%', margin: '0 auto' }}>
+      <div className="container" style={{ margin: '0 auto', maxWidth: '1200px', paddingLeft: 0, paddingRight: 0, textAlign: 'center' }}>
+        <div style={{ textAlign: 'center', margin: '0 auto', padding: 0 }}>
+          <h2 className="section-title" style={{ textAlign: 'center', margin: '0 auto', padding: 0 }}>Nuestros Trabajos</h2>
+          <p style={{ color: '#64748b', fontSize: '1.25rem', textAlign: 'center', marginTop: '1.2rem', marginBottom: '1.2rem', padding: 0 }}>Trabajos realizados por nuestro equipo en CABA y GBA</p>
         </div>
         
         <div style={{ 
@@ -17,8 +17,7 @@ export default function NuestrosTrabajos() {
           gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', 
           gap: '24px',
           margin: '0 auto',
-          width: '100%',
-          maxWidth: '1200px'
+          width: '100%'
         }}>
           {placeholders.map((_, idx) => (
             <div key={idx} style={{
