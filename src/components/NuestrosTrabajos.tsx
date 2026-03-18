@@ -6,7 +6,7 @@ export default function NuestrosTrabajos() {
 
   return (
     <section className="section bg-light" id="trabajos" style={{ padding: '5rem 0', textAlign: 'center', width: '100%', margin: '0 auto' }}>
-      <div className="container" style={{ margin: '0 auto', maxWidth: '1200px', paddingLeft: 0, paddingRight: 0, textAlign: 'center' }}>
+      <div style={{ width: "100%", maxWidth: "1200px", margin: "0 auto", padding: "0 2rem", textAlign: "center" }}>
         <div style={{ textAlign: 'center', margin: '0 auto', padding: 0 }}>
           <h2 className="section-title" style={{ textAlign: 'center', margin: '0 auto', padding: 0 }}>Nuestros Trabajos</h2>
           <p style={{ color: '#64748b', fontSize: '1.25rem', textAlign: 'center', marginTop: '1.2rem', marginBottom: '1.2rem', padding: 0 }}>Trabajos realizados por nuestro equipo en CABA y GBA</p>
@@ -46,3 +46,4 @@ export default function NuestrosTrabajos() {
     </section>
   );
 }
+
