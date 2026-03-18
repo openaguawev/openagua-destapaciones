@@ -6,42 +6,42 @@ import './Servicios.css';
 export default function Servicios() {
   const servicios = [
     {
-      title: "Cloacas",
+      title: "Destapación de Cloacas",
       desc: "Solucionamos obstrucciones con sonda rotativa o hidrojet.",
       link: "/destapaciones-cloacas",
       btnText: "Ver servicio de Cloacas",
       icon: <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/>
     },
     {
-      title: "Cañerías",
+      title: "Destapación de Cañerías",
       desc: "Limpieza de desagües de cocina, baño y lavadero con máquinas de resortes.",
       link: "/destapaciones-canerias",
       btnText: "Ver servicio de Cañerías",
       icon: <><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.6 2 5 2 2.3 0 2.3-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.6 2 5 2 2.3 0 2.3-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.6 2 5 2 2.3 0 2.3-2 5-2 1.3 0 1.9.5 2.5 1"/></>
     },
     {
-      title: "Pluviales",
+      title: "Destapación de Pluviales",
       desc: "Desobstrucción de rejillas y terrazas. Evitá inundaciones por hojas y barro.",
       link: "/destapaciones-pluviales",
       btnText: "Ver servicio de Pluviales",
       icon: <><path d="M21.5 12H16c-.7 2-2 3-4 3s-3.3-1-4-3H2.5"/><path d="M5.5 5.1L2 12v6c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2v-6l-3.4-6.9A2 2 0 0 0 16.8 4H7.2a2 2 0 0 0-1.8 1.1z"/></>
     },
     {
-      title: "Hidrojet",
+      title: "Destapación con Hidrojet",
       desc: "Limpieza técnica con agua a presión para sarro y sedimentos rebeldes.",
       link: "/sistema-hidrojets",
       btnText: "Ver sistema Hidrojet",
       icon: <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
     },
     {
-      title: "Video Inspección",
+      title: "Video Inspección de Cañerías",
       desc: "Diagnóstico con cámara HD. Localizamos roturas o raíces sin romper.",
       link: "/video-inspeccion",
       btnText: "Ver Video Inspección",
       icon: <><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></>
     },
     {
-      title: "Limpieza de Cámaras",
+      title: "Limpieza de Cámaras Sépticas",
       desc: "Mantenimiento de cámaras de inspección y sépticas para evitar olores.",
       link: "/limpieza-camaras",
       btnText: "Ver limpieza de Cámaras",
@@ -55,7 +55,7 @@ export default function Servicios() {
       icon: <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
     },
     {
-      title: "Abonos",
+      title: "Abonos Preventivos",
       desc: "Planes preventivos para consorcios y empresas.",
       link: "/mantenimiento-preventivo",
       btnText: "Ver Abonos de Mantenimiento",

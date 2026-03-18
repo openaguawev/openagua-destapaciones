@@ -94,11 +94,17 @@
   .servicios-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .servicio-title {
+    font-size: 1.15rem;
+  }
 }
 
 @media (max-width: 576px) {
   .servicios-grid {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+  .servicio-title {
+    font-size: 1.1rem;
   }
 }
