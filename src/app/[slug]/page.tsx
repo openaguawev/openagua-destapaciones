@@ -69,7 +69,7 @@ export default async function ServicioPage({ params }: Props) {
 
         {servicio.equipment && servicio.equipment.length > 0 && (
           <section style={{ marginBottom: '5rem' }}>
-            <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2rem' }}>Equipamiento Técnico</h2>
+            <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2rem' }}>{servicio.equipmentTitle || 'Equipamiento Técnico'}</h2>
             <div className="benefits-grid">
               {servicio.equipment.map((eq, i) => (
                 <div key={i} className="benefit-card">
@@ -82,20 +82,22 @@ export default async function ServicioPage({ params }: Props) {
           </section>
         )}
 
-        <section style={{ marginBottom: '5rem' }}>
-          <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2rem' }}>¿Cómo Trabajamos?</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
-            {servicio.steps.map((s, i) => (
-              <div key={i} style={{ textAlign: 'center' }}>
-                <div style={{ width: '60px', height: '60px', backgroundColor: '#16A34A', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem auto', fontSize: '1.5rem', fontWeight: 'bold' }}>
-                  {s.iconStr ? s.iconStr : i + 1}
+        {servicio.steps && servicio.steps.length > 0 && (
+          <section style={{ marginBottom: '5rem' }}>
+            <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2rem' }}>{servicio.stepsTitle || '¿Cómo Trabajamos?'}</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
+              {servicio.steps.map((s, i) => (
+                <div key={i} style={{ textAlign: 'center' }}>
+                  <div style={{ width: '60px', height: '60px', backgroundColor: '#16A34A', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem auto', fontSize: '1.5rem', fontWeight: 'bold' }}>
+                    {s.iconStr ? s.iconStr : i + 1}
+                  </div>
+                  <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a' }}>{s.title}</h3>
+                  <p style={{ color: '#475569', fontSize: '1rem' }}>{s.desc}</p>
                 </div>
-                <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a' }}>{s.title}</h3>
-                <p style={{ color: '#475569', fontSize: '1rem' }}>{s.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section>
+        )}
 
         <section style={{ textAlign: 'center', backgroundColor: '#0F172A', padding: '4rem 2rem', borderRadius: '16px', marginBottom: '5rem' }}>
           <h2 style={{ color: '#ffffff', marginBottom: '1rem', fontSize: '2rem' }}>¿Necesitás este servicio?</h2>
@@ -130,7 +132,7 @@ export default async function ServicioPage({ params }: Props) {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "name": servicio.title,
+            "name": servicio.schemaTitle || servicio.title,
             "description": servicio.excerpt,
             "provider": {
               "@type": "LocalBusiness",

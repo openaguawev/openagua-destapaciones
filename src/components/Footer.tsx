@@ -19,7 +19,7 @@ export default function Footer() {
             <li><Link href="/video-inspeccion-canerias">Video Inspección de Cañerías</Link></li>
             <li><Link href="/limpieza-camaras-septicas">Limpieza de Cámaras Sépticas</Link></li>
             <li><Link href="/desagotes">Desagote de Sótanos</Link></li>
-            <li><Link href="/mantenimiento-preventivo">Mantenimiento Preventivo</Link></li>
+            <li><Link href="/abonos-preventivos">Abonos Preventivos</Link></li>
           </ul>
         </div>
         <div className="footer-links">

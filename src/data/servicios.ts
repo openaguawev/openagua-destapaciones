@@ -9,6 +9,9 @@ export interface ServicioData {
   equipment?: { title: string; desc: string }[];
   steps: { title: string; desc: string; iconStr?: string }[];
   faqs: { q: string; a: string }[];
+  schemaTitle?: string;
+  equipmentTitle?: string;
+  stepsTitle?: string;
 }
 
 const buildServicio = (
@@ -23,6 +26,9 @@ const buildServicio = (
     benefits?: { title: string; desc: string }[];
     equipment?: { title: string; desc: string }[];
     steps?: { title: string; desc: string; iconStr?: string }[];
+    schemaTitle?: string;
+    equipmentTitle?: string;
+    stepsTitle?: string;
   }
 ): ServicioData => {
   return {
@@ -43,7 +49,10 @@ const buildServicio = (
       { title: "2. Acción Directa", desc: "Aplicamos maquinaria como sondas mecanizadas o hidrojets potentes." },
       { title: "3. Prueba de Flujo", desc: "Comprobamos que las aguas circulen libremente sin retorno alguno." }
     ],
-    faqs
+    faqs,
+    schemaTitle: custom?.schemaTitle,
+    equipmentTitle: custom?.equipmentTitle,
+    stepsTitle: custom?.stepsTitle
   };
 };
 
@@ -242,16 +251,37 @@ export const getServicios = (): ServicioData[] => {
       ]
     ),
     buildServicio(
-      'mantenimiento-preventivo',
-      'Mantenimiento Preventivo',
+      'abonos-preventivos',
+      'Abonos Preventivos',
       'https://images.unsplash.com/photo-1648714659424-69db9e6fd63b?auto=format&fit=crop&q=80&w=1200',
-      'Servicio programado semestral/anual para consorcios, previniendo taponamientos y expandiendo la vida sanitaria.',
+      'Mantenimiento programado para evitar urgencias y desbordes. La solución más económica para consorcios, empresas y gastronomía en CABA y GBA.',
       'Reaccionar solo cuando ha ocurrido el accidente significa enfrentar la furia de inquilinos y copropietarios con problemas mayúsculos. Ofrecemos abonos periódicos.',
       [
         { q: "¿Qué incluye el plan de mantenimiento?", a: "Verificación de pluviales, sondeo mecánico de las salidas a colector principal y el hidrolavado base de cámaras cloacales." },
         { q: "¿Para qué tipo de edificios es el mantenimiento preventivo?", a: "Resulta ideal para complejos habitacionales extensos, edificios torre, condominios, hoteles y grandes restaurantes." },
-        { q: "¿Con qué frecuencia se recomienda hacerlo?", a: "En edificios estándares logramos la máxima tranquilidad pautando visitas calendarizadas cada 6 meses." }
-      ]
+        { q: "¿Con qué frecuencia se recomienda hacerlo?", a: "En edificios estándares logramos la máxima tranquilidad pautando visitas calendarizadas cada 6 meses o mensual según tránsito." }
+      ],
+      {
+        schemaTitle: "Abonos Preventivos de Mantenimiento",
+        benefitsTitle: "Nuestro Compromiso Profesional",
+        benefits: [
+          { title: "Planificación Cíclica", desc: "Realizamos visitas periódicas para limpiar la red antes de que se produzca una obstrucción, garantizando un flujo constante." },
+          { title: "Prioridad de Atención", desc: "Los clientes con abono cuentan con respuesta inmediata y prioridad absoluta ante cualquier eventualidad fuera de agenda." },
+          { title: "Informes de Estado", desc: "Tras cada visita, entregamos un reporte sobre el estado de la red para anticipar reparaciones estructurales necesarias." }
+        ],
+        equipmentTitle: "¿A quiénes está dirigido?",
+        equipment: [
+          { title: "Consorcios y Edificios", desc: "Limpieza de columnas principales, sótanos y cámaras de inspección para evitar inundaciones en áreas comunes." },
+          { title: "Gastronomía e Industrias", desc: "Desengrase técnico de cañerías de cocina y redes de alto tránsito para cumplir con normas de higiene y evitar cierres por urgencias." }
+        ],
+        stepsTitle: "Beneficios del Abono",
+        steps: [
+          { title: "Costo Fijo", desc: "Eliminamos los gastos imprevistos por servicios de urgencia, que suelen ser mucho más costosos.", iconStr: "💰" },
+          { title: "Menos Roturas", desc: "Al mantener los caños limpios, evitamos que la presión de los tapones debilite las juntas y uniones.", iconStr: "🛡️" },
+          { title: "Higiene Permanente", desc: "Evitamos los malos olores y la aparición de plagas asociadas a los residuos estancados.", iconStr: "✨" },
+          { title: "Tranquilidad", desc: "Un profesional de Openagua supervisa tu red regularmente para que vos no tengas que preocuparte por nada.", iconStr: "😌" }
+        ]
+      }
     )
   ];
 };
