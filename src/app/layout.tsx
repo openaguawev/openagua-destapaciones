@@ -17,7 +17,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://destapacionesopenagua.com.ar'),
-  title: 'Destapaciones en CABA y GBA | Openagua',
+  title: 'Openagua | Destapaciones en CABA y GBA',
   description: 'Servicio profesional de destapaciones de cloacas, cañerías e hidrojet en CABA y Gran Buenos Aires. Diagnóstico preciso. Atención de 8 a 19 hs.',
   alternates: {
     canonical: 'https://destapacionesopenagua.com.ar',
