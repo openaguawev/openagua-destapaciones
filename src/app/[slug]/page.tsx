@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${servicio.title} en CABA y GBA | Openagua`,
     description: servicio.excerpt,
     alternates: {
-      canonical: `https://www.openagua.com.ar/${servicio.slug}`,
+      canonical: `https://destapacionesopenagua.com.ar/${servicio.slug}`,
     }
   };
 }

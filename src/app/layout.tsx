@@ -16,10 +16,11 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://destapacionesopenagua.com.ar'),
   title: 'Destapaciones en CABA y GBA | Openagua',
   description: 'Servicio profesional de destapaciones de cloacas, cañerías e hidrojet en CABA y Gran Buenos Aires. Diagnóstico preciso. Atención de 8 a 19 hs.',
   alternates: {
-    canonical: 'https://www.openagua.com.ar',
+    canonical: 'https://destapacionesopenagua.com.ar',
   },
   icons: {
     icon: '/icon.svg',
@@ -40,9 +41,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Openagua",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1200",
+    "image": "https://destapacionesopenagua.com.ar/img/home.jpg",
     "telephone": "15-5179-7649",
-    "url": "https://www.openagua.com.ar",
+    "url": "https://destapacionesopenagua.com.ar",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Ciudad Autónoma de Buenos Aires",

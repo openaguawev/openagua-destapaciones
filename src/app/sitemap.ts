@@ -7,7 +7,7 @@ import { barrios } from '@/data/barrios';
 export const dynamic = 'force-static';
 
 // Reemplazar con URL de producción real
-const siteUrl = 'https://www.openagua.com.ar';
+const siteUrl = 'https://destapacionesopenagua.com.ar';
 const currentDate = new Date();
 
 export default function sitemap(): MetadataRoute.Sitemap {

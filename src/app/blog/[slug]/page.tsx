@@ -1,6 +1,7 @@
 import { getArticulos } from '@/data/blog'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
+import { Metadata } from 'next'
 
 export async function generateStaticParams() {
   const posts = getArticulos()
@@ -8,6 +9,21 @@ export async function generateStaticParams() {
 }
 
 type Props = { params: Promise<{ slug: string }> }
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params
+  const posts = getArticulos()
+  const post = posts.find((p) => p.slug === slug)
+  if (!post) return { title: 'Artículo no encontrado' }
+
+  return {
+    title: `${post.title} | Openagua Blog`,
+    description: post.excerpt,
+    alternates: {
+      canonical: `https://destapacionesopenagua.com.ar/blog/${slug}`,
+    }
+  }
+}
 
 export default async function BlogPost({ params }: Props) {
   const { slug } = await params
