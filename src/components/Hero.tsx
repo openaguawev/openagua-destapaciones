@@ -1,8 +1,17 @@
+import Image from 'next/image';
 import './Hero.css';
 
 export default function Hero() {
   return (
     <section className="hero-section">
+      <Image 
+        src="/img/home.jpg" 
+        alt="Maquinaria especializada para Destapaciones en CABA y GBA - Openagua" 
+        fill 
+        priority 
+        style={{ objectFit: 'cover', zIndex: 0 }} 
+        quality={90}
+      />
       <div className="hero-overlay"></div>
       <div className="container hero-content">
         <h1>Destapaciones en CABA y Gran Buenos Aires | Openagua</h1>

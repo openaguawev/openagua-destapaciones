@@ -1,6 +1,8 @@
 export interface Articulo {
   slug: string;
   title: string;
+  image: string;
+  alt: string;
   excerpt: string;
   content: string;
 }
@@ -31,6 +33,8 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'por-que-cocina-huele-a-cloaca',
       title: '¿Por qué mi cocina huele a cloaca? 3 causas y soluciones definitivas',
+      image: '/img/destapacion cocina.jpg',
+      alt: 'Destapación de cocina y solución a olores de cloaca en CABA - Openagua',
       excerpt: 'Descubrí cómo eliminar definitivamente el mal olor de tus cañerías en CABA y GBA.',
       content: `
         <p>Sentir un fuerte olor a alcantarilla mientras cocinás es una pesadilla recurrente en todo <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong>. Las <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cañerías</a> suelen ser el final evitable de esta historia.</p>
@@ -54,6 +58,8 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'grasa-canerias-edificios-agua-hirviendo',
       title: 'Grasa en cañerías de edificios: Por qué el agua hirviendo no sirve',
+      image: '/img/caño con grasa.jpg',
+      alt: 'Grasa petrificada en cañerías de edificios de zona norte - Openagua',
       excerpt: 'El método definitivo para limpiar bajadas en consorcios sin usar ácido.',
       content: `
         <p>Cientos de edificios en <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong> cometen el mismo error: pedir a los inquilinos que vuelquen agua hirviendo para evitar tapones. Esto solo empuja temporalmente las masas de sebo.</p>
@@ -77,6 +83,8 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: '5-senales-columna-edificio-tapada',
       title: '5 señales de que la columna de tu edificio está por taparse',
+      image: '/img/maquina destapa cloacas.jpg',
+      alt: 'Mantenimiento preventivo de columnas en consorcios de Gran Buenos Aires - Openagua',
       excerpt: 'Guía para administradores: cómo anticipar la inundación de planta baja.',
       content: `
         <p>Para todo administrador en <strong>CABA</strong> o <strong>Gran Buenos Aires</strong>, el llamado nocturno de un inquilino inundado con aguas negras es terrorífico. Evitar el desborde preventivamente ahorra costos formidables a la administración y al consorcio entero.</p>
@@ -102,6 +110,8 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'resorte-vs-hidrojet-cual-es-mejor',
       title: 'Resorte vs. Hidrojet: ¿Cuál es mejor para tu destapación?',
+      image: '/img/maquina resortes.jpg',
+      alt: 'Comparativa técnica entre máquina de resortes y sistema hidrojet en CABA - Openagua',
       excerpt: 'Comparativa técnica para limpiar obstrucciones sin arruinar el material.',
       content: `
         <p>La disyuntiva constante al cotizar un trabajo en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong> se resume a elegir entre una herramienta manual mecanizada y una bomba hipertensora de agua.</p>
@@ -124,6 +134,8 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'video-inspeccion-saber-cano-roto-sin-romper',
       title: 'Video Inspección: Cómo saber si tu caño está roto sin romper el piso',
+      image: '/img/video inspeccion.jpg',
+      alt: 'Video inspección de cañerías rotas sin romper el piso en CABA y GBA - Openagua',
       excerpt: 'Evitá meses de albañilería cara usando cámaras cloacales.',
       content: `
         <p>Romper una docena de baldosas carísimas de un living ciegamente buscando la pérdida es una tragedia que ningún vecino de <strong>CABA</strong> ni del <strong>Gran Buenos Aires</strong> debería sufrir jamás.</p>

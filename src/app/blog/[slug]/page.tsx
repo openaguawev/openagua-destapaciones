@@ -1,5 +1,6 @@
 import { getArticulos } from '@/data/blog'
 import { notFound } from 'next/navigation'
+import Image from 'next/image'
 
 export async function generateStaticParams() {
   const posts = getArticulos()
@@ -16,7 +17,16 @@ export default async function BlogPost({ params }: Props) {
   return (
     <main style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
       <h1>{post.title}</h1>
-      <img src="https://images.unsplash.com/photo-1542013936693-884638332954?w=1200" alt={post.title} style={{ width: '100%', height: '400px', objectFit: 'cover', borderRadius: '12px', margin: '2rem 0' }} />
+      <div style={{ position: 'relative', width: '100%', height: '400px', margin: '2rem 0', borderRadius: '12px', overflow: 'hidden' }}>
+        <Image 
+          src={post.image} 
+          alt={post.alt} 
+          fill 
+          priority 
+          style={{ objectFit: 'cover' }} 
+          quality={85}
+        />
+      </div>
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
       <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20quiero%20consultar%20por%20un%20presupuesto" style={{ background: '#16A34A', color: 'white', padding: '1rem 2rem', borderRadius: '8px', textDecoration: 'none', display: 'inline-block', marginTop: '2rem' }}>
         💬 Consultar por WhatsApp

@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Script from 'next/script';
+import Image from 'next/image';
 import Contacto from '@/components/Contacto';
 import '../servicio-page.css';
 
@@ -41,8 +42,17 @@ export default async function ServicioPage({ params }: Props) {
 
   return (
     <main className="servicio-detail-page">
-      <div className="servicio-hero" style={{ backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url(${servicio.image})` }}>
-        <div className="container">
+      <div className="servicio-hero" style={{ position: 'relative', overflow: 'hidden' }}>
+        <Image 
+          src={servicio.image} 
+          alt={`${servicio.title} en CABA y GBA - Openagua`} 
+          fill 
+          priority 
+          style={{ objectFit: 'cover', zIndex: 0 }} 
+          quality={85}
+        />
+        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75))', zIndex: 1 }} />
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <Link href="/#servicios" className="back-link-servicio">← Volver a Servicios</Link>
           <h1 className="hero-title">{servicio.title}</h1>
           <p className="servicio-hero-desc" style={{ marginTop: '1rem' }}>{servicio.excerpt}</p>

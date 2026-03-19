@@ -61,7 +61,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'destapaciones-cloacas',
       'Destapaciones de Cloacas',
-      'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1200',
+      '/img/destapacion de cloaca.jpg',
       'Recuperamos el drenaje de tu red cloacal de forma eficiente. Atendemos casas, edificios y comercios en CABA y GBA con equipos especializados.',
       'Cuando nos enfrentamos a problemas de redes cloacales, la intervención rápida es vital. Nuestro servicio destaca por resolver la acumulación de sedimentos y restos con herramientas mecánicas de alta precisión.',
       [
@@ -91,7 +91,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'destapaciones-canerias',
       'Destapación de Cañerías',
-      'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&q=80&w=1200',
+      '/img/destapacion maquina.jpg',
       'Soluciones para desagües de cocina, baño y lavadero. Eliminamos obstrucciones de grasa y sarro con tecnología de avanzada en CABA y GBA.',
       'El uso diario de bañeras, duchas y piletas acumula restos de jabón, fango y materiales diversos que terminan obturando la bajada.',
       [
@@ -121,7 +121,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'destapaciones-pluviales',
       'Destapación de Pluviales',
-      'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&q=80&w=1200',
+      '/img/caño pluvial.jpg',
       'Desobstrucción de rejillas, terrazas y desagües de lluvia. Evitá inundaciones y filtraciones con limpieza técnica en CABA y GBA.',
       'Las hojas secas, el barro y la falta de supervisión logran que los balcones y terrazas colapsen repentinamente durante una tormenta.',
       [
@@ -151,7 +151,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'destapaciones-hidrojet',
       'Destapaciones con Hidrojet',
-      'https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&q=80&w=1200',
+      '/img/hidrojet cloaca.jpg',
       'Limpieza técnica con agua a alta presión. La solución definitiva para eliminar sarro, grasa y sedimentos rebeldes en CABA y GBA.',
       'El Hidrojet es una maravilla moderna; dispara un chorro radial que además de empujar al tapón, arranca de tajo la grasitud adherida por todo el diámetro y lo pule.',
       [
@@ -181,7 +181,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'video-inspeccion-canerias',
       'Video Inspección de Cañerías',
-      'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=1200',
+      '/img/video inspeccion.jpg',
       'Diagnóstico preciso con cámaras HD. Localizamos roturas, raíces y obstrucciones sin romper pisos ni paredes en CABA y GBA.',
       'Suelen existir roturas estructurales ocultas debajo del hormigón. En lugar de perforar el piso adivinando, optamos por introducir nuestra cámara CCTV sumergible.',
       [
@@ -211,7 +211,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'limpieza-camaras-septicas',
       'Limpieza de Cámaras Sépticas',
-      'https://images.unsplash.com/photo-1508873535684-275a3048cb19?auto=format&fit=crop&q=80&w=1200',
+      '/img/destapacion camara septica.jpg',
       'Vaciado y desobstrucción de sistemas de tratamiento primario. Servicio técnico especializado para hogares, quintas e industrias en CABA y GBA.',
       'La cámara de inspección es el núcleo del sistema sanitario en planta baja. Si la misma colapsa, todas las unidades del piso padecen el desborde.',
       [
@@ -241,7 +241,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'desagote-sotanos',
       'Desagote de Sótanos',
-      'https://images.unsplash.com/photo-1585814521473-b31c40ab21e3?auto=format&fit=crop&q=80&w=1200',
+      '/img/desagote sotano.jpg',
       'Extracción de agua por inundación en subsuelos, huecos de ascensor y cocheras. Servicio de emergencia con bombas de alto caudal en CABA y GBA.',
       'Una rotura accidental o una tormenta súbita pueden convertir tus huecos subterráneos como sótanos o fosos de ascensores en auténticos embalses.',
       [
@@ -275,7 +275,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'mantenimientos-preventivos',
       'Mantenimientos Preventivos',
-      'https://images.unsplash.com/photo-1648714659424-69db9e6fd63b?auto=format&fit=crop&q=80&w=1200',
+      '/img/manteniminto cloaca.jpg',
       'Mantenimiento programado para evitar urgencias y desbordes. La solución más económica para consorcios, empresas y gastronomía en CABA y GBA.',
       'Reaccionar solo cuando ha ocurrido el accidente significa enfrentar la furia de inquilinos y copropietarios con problemas mayúsculos. Ofrecemos mantenimientos preventivos periódicos.',
       [
