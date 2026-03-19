@@ -10,12 +10,18 @@ export default function Contacto() {
     e.preventDefault();
     setStatus('sending');
     const formElements = e.target as HTMLFormElement;
+    
+    // Convert FormData to JSON object for our Next.js API Route
     const formData = new FormData(formElements);
+    const data = Object.fromEntries(formData.entries());
     
     try {
-      const response = await fetch('https://formsubmit.co/ajax/destapacionesopenagua@gmail.com', {
+      const response = await fetch('/api/contact', {
         method: "POST",
-        body: formData,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
       });
       if (response.ok) {
         setStatus('success');
@@ -25,6 +31,7 @@ export default function Contacto() {
         setStatus('');
       }
     } catch (error) {
+      console.error(error);
       setStatus('');
     }
   };
@@ -78,7 +85,7 @@ export default function Contacto() {
             
             {status === 'success' && (
               <div className="form-success">
-                ¡Gracias por tu consulta! Te contactaremos a la brevedad.
+                ¡Mensaje enviado! Nos contactaremos a la brevedad.
               </div>
             )}
           </form>
