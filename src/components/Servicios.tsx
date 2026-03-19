@@ -52,7 +52,7 @@ export default function Servicios() {
       desc: "Vaciado con bombas sumergibles de gran caudal.",
       link: "/desagote-sotanos",
       btnText: "Ver servicio de Desagotes",
-      icon: <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+      icon: <><rect x="6" y="10" width="12" height="12" rx="2"/><path d="M12 10V2"/><path d="m8 6 4-4 4 4"/><circle cx="12" cy="16" r="3"/></>
     },
     {
       title: "Mantenimientos Preventivos",
