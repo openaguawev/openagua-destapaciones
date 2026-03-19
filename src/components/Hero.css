@@ -65,20 +65,28 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    min-height: 70vh;
+    min-height: auto;
+    padding: 7rem 0 5rem 0;
+  }
+  
+  .hero-content {
+    text-align: center;
   }
   
   .hero-content h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
+    line-height: 1.25;
   }
   
   .hero-subtitle {
     font-size: 1.125rem;
+    margin: 0 auto 32px auto;
   }
   
   .hero-ctas {
     flex-direction: column;
     width: 100%;
+    margin-bottom: 2rem;
   }
   
   .hero-btn {
