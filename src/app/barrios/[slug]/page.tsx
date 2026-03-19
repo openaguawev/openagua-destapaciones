@@ -149,7 +149,7 @@ export default async function BarrioPage({ params }: Props) {
                 { title: 'Destapaciones Pluviales', link: '/destapaciones-pluviales' },
                 { title: 'Destapaciones con Hidrojet', link: '/destapaciones-hidrojet' },
                 { title: 'Video Inspección de Cañerías', link: '/video-inspeccion-canerias' },
-                { title: 'Limpieza de Cámaras', link: '/limpieza-camaras' },
+                { title: 'Limpieza de Cámaras Sépticas', link: '/limpieza-camaras-septicas' },
                 { title: 'Desagote de Sótanos', link: '/desagotes' },
                 { title: 'Mantenimiento Preventivo', link: '/mantenimiento-preventivo' },
               ].map((s) => (

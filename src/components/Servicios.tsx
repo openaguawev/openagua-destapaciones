@@ -43,7 +43,7 @@ export default function Servicios() {
     {
       title: "Limpieza de Cámaras Sépticas",
       desc: "Mantenimiento de cámaras de inspección y sépticas para evitar olores.",
-      link: "/limpieza-camaras",
+      link: "/limpieza-camaras-septicas",
       btnText: "Ver limpieza de Cámaras",
       icon: <><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></>
     },

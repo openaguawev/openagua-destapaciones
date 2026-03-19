@@ -200,16 +200,34 @@ export const getServicios = (): ServicioData[] => {
       }
     ),
     buildServicio(
-      'limpieza-camaras',
-      'Limpieza de Cámaras',
+      'limpieza-camaras-septicas',
+      'Limpieza de Cámaras Sépticas',
       'https://images.unsplash.com/photo-1508873535684-275a3048cb19?auto=format&fit=crop&q=80&w=1200',
-      'Limpieza completa de cámaras sépticas con equipos mecánicos y limpieza a presión. Eliminamos sólidos, hedores y detritos densos.',
+      'Vaciado y desobstrucción de sistemas de tratamiento primario. Servicio técnico especializado para hogares, quintas e industrias en CABA y GBA.',
       'La cámara de inspección es el núcleo del sistema sanitario en planta baja. Si la misma colapsa, todas las unidades del piso padecen el desborde.',
       [
         { q: "¿Cada cuánto limpiar una cámara cloacal?", a: "El saneamiento recomendable depende del uso, pero para consorcios sugerimos entre 6 a 12 meses." },
         { q: "¿Por qué aparecen malos olores en la cámara?", a: "Debido a la fermentación anaeróbica de las costras de jabón y heces acumuladas que bloquean la respiración del sistema." },
         { q: "¿Trabajan con consorcios y edificios?", a: "Sí, nos especializamos en mantenimiento edilicio integral resolviendo urgencias cloacales estructurales." }
-      ]
+      ],
+      {
+        benefitsTitle: "Nuestro Compromiso Profesional",
+        benefits: [
+          { title: "Vaciado y Succión", desc: "Utilizamos equipos de alto vacío para la extracción completa de lodos y residuos acumulados en el fondo de la cámara." },
+          { title: "Desobstrucción de Entradas", desc: "Limpiamos los caños de entrada y salida (interceptoras) para asegurar que el sistema vuelva a funcionar por gravedad." },
+          { title: "Mantenimiento Higiénico", desc: "Aplicamos procesos que minimizan los olores y aseguran la limpieza del área tras finalizar el trabajo de succión." }
+        ],
+        equipment: [
+          { title: "Camiones Atmosféricos / Bombas de Succión", desc: "Equipos de gran potencia diseñados para el manejo de residuos densos y lodos cloacales." },
+          { title: "Herramientas de Limpieza Mecánica", desc: "Sondas y chorros de agua para remover las costras de grasa y sólidos adheridos a las paredes de la cámara." }
+        ],
+        steps: [
+          { title: "Inspección de Nivel", desc: "Verificamos el estado de llenado y la consistencia de los residuos en la cámara.", iconStr: "🔎" },
+          { title: "Succión Técnica", desc: "Realizamos la extracción controlada de los líquidos y sólidos acumulados.", iconStr: "💧" },
+          { title: "Limpieza de Conductos", desc: "Desobstruimos las cañerías que conectan con la cámara para evitar futuros retrocesos.", iconStr: "⚙️" },
+          { title: "Verificación Operativa", desc: "Comprobamos que el flujo de entrada y salida sea el correcto antes de dar por finalizado el servicio.", iconStr: "✅" }
+        ]
+      }
     ),
     buildServicio(
       'desagotes',
