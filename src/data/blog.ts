@@ -29,222 +29,118 @@ const getFaqHtml = (faqs: {q:string, a:string}[]) => `
 export const getArticulos = (): Articulo[] => {
   return [
     {
-      slug: 'como-detectar-obstruccion-cloaca',
-      title: 'Cómo detectar una obstrucción de cloaca antes de la inundación',
-      excerpt: 'Descubrí los signos clave para evitar daños costosos en tu hogar.',
+      slug: 'por-que-cocina-huele-a-cloaca',
+      title: '¿Por qué mi cocina huele a cloaca? 3 causas y soluciones definitivas',
+      excerpt: 'Descubrí cómo eliminar definitivamente el mal olor de tus cañerías en CABA y GBA.',
       content: `
-        <p>Prevenir <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cloacas</a> de urgencia es posible si prestás atención a las cañerías. En todo <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong>, los tapones cloacales no ocurren de un día para otro.</p>
-        <p>El primer síntoma siempre es el agua que tarda demasiado en drenar, acompañado de ruidos extraños.</p>
+        <p>Sentir un fuerte olor a alcantarilla mientras cocinás es una pesadilla recurrente en todo <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong>. Las <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cañerías</a> suelen ser el final evitable de esta historia.</p>
+        <p>Este hedor no desaparece con lavandina ni perfumadores; el problema es estructural y requiere atención técnica profunda.</p>
         ${getCtaHtml()}
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Señales Críticas de Alerta Cloacal en CABA</h2>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Causas Críticas del Mal Olor en la Cocina</h2>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Olor a cloaca:</strong> Gases sulfurados que escapan por las rejillas.</li>
-          <li><strong>Burbujeos (Gloops):</strong> El aire atrapado que intenta salir a la superficie.</li>
-          <li><strong>Agua que retorna:</strong> Líquidos oscuros retrocediendo por la ducha o inodoro.</li>
+          <li><strong>Grasa Acumulada:</strong> Restos orgánicos que se pudren lentamente en las paredes del conducto.</li>
+          <li><strong>Falla del Sifón:</strong> La falta de agua en el tubo en "U" permite que los gases cloacales ingresen al ambiente.</li>
+          <li><strong>Fisuras Invisibles:</strong> Pequeñas rajaduras donde se asientan bacterias emitiendo gases pestilentes.</li>
         </ul>
-        <p>Si notás alguno de estos síntomas, solicitar un sistema <a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">hidrojet preventivo</a> te ahorrará decenas de miles de pesos en cambios de piso y caños.</p>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cómo eliminar el olor a cloaca definitivamente?</h2>
+        <p>Volcar químicos caseros termina derritiendo tubos de PVC. La verdadera solución radica en una limpieza técnica con equipos especializados que retiren físicamente la masa putrefacta.</p>
         ${getFaqHtml([
-          {q: "¿Qué hago si sale mal olor de la rejilla?", a: "Es el primer síntoma de un bloqueo parcial. Contactá a un profesional en destapaciones para evitar rebalses líquidos."},
-          {q: "¿La lavandina destapa cloacas?", a: "No. La lavandina desinfecta pero no disuelve bloqueos sólidos incrustados como sarro o raíces."},
-          {q: "¿Atienden en Capital Federal?", a: "Sí, cubrimos urgencias en todo CABA y Gran Buenos Aires."}
+          {q: "¿El vinagre y bicarbonato quitan el olor?", a: "Solo actúan a un nivel superficial por algunas horas. Si tenés sarro y grasa calcificada, no logran disolverla."},
+          {q: "¿Pueden cambiar el sifón si está roto?", a: "Por supuesto, evaluamos la integridad de los accesorios bajo mesada y procedemos a su limpieza hermética."},
+          {q: "¿En cuánto tiempo se va el olor?", a: "La ventilación del gas acumulado en la vivienda es inmediata una vez finalizado el trabajo de limpieza."}
         ])}
       `
     },
     {
-      slug: 'sonda-vs-hidrojet-diferencias',
-      title: 'Diferencias entre Sonda e Hidrojet: Cuál elegir sin dañar tus caños',
-      excerpt: 'Elegí la tecnología correcta para tu tipo de obstrucción.',
+      slug: 'grasa-canerias-edificios-agua-hirviendo',
+      title: 'Grasa en cañerías de edificios: Por qué el agua hirviendo no sirve',
+      excerpt: 'El método definitivo para limpiar bajadas en consorcios sin usar ácido.',
       content: `
-        <p>Al momento de realizar <strong>destapaciones</strong> en CABA y Gran Buenos Aires, la elección de la herramienta dicta la vida útil de tus cañerías. La vieja escuela usaba ácidos, pero hoy el debate es mecánico.</p>
-        <p>Conocer tu infraestructura es vital antes de ingresar una máquina de arrastre.</p>
+        <p>Cientos de edificios en <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong> cometen el mismo error: pedir a los inquilinos que vuelquen agua hirviendo para evitar tapones. Esto solo empuja temporalmente las masas de sebo.</p>
+        <p>Con el paso de los pisos, la grasa se enfría, se petrifica como cemento y reduce drásticamente el diámetro del caño principal.</p>
         ${getCtaHtml()}
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Ventajas del Hidrojet frente a Sondas Mecánicas</h2>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Por qué se tapan repetitivamente las columnas?</h2>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Sonda Mecánica:</strong> Ideal para tapones blandos o elementos sueltos. Rompe el tapón físicamente con resortes.</li>
-          <li><strong>Sistema Hidrojet:</strong> Utiliza agua a extrema presión para <strong>"barrer"</strong> grasa y sarro, excelente para <a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones industriales</a>.</li>
-          <li><strong>Seguridad:</strong> El hidrojet no golpea ni quiebra caños de PVC viejos, preservando intacta la red cloacal.</li>
+          <li><strong>Saponificación:</strong> Las grasas calientes se mezclan con jabón frío creando una espuma sólida impenetrable.</li>
+          <li><strong>Estrangulación de la red:</strong> El agua hirviendo o química perfora un hueco de apenas centímetros, dejando la pared del tubo sucia.</li>
+          <li><strong>Riesgo de presión térmica:</strong> Los cambios extremos de temperatura pueden rajar los ductos tricapa.</li>
         </ul>
-        <p>Para cocinas comerciales e industrias en zona norte o el resto del conglomerado urbano, el lavado con agua a presión es la única garantía a largo plazo.</p>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cómo limpiar la grasa dura de los edificios?</h2>
+        <p>Solo las <a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones con hidrojet</a> garantizan recuperar el diámetro original. Sus boquillas eyectan agua hiperpresurizada que rasquetea la pared plástica barriendo todo el sarro solidificado hacia la calle.</p>
         ${getFaqHtml([
-          {q: "¿El hidrojet puede romper mis caños?", a: "No, el agua a hiperpresión limpia el contorno liso de la cañería sin hacer un impacto metálico cortante."},
-          {q: "¿Qué tan largo llega la sonda?", a: "Nuestros equipos pueden superar los 30 metros de trayecto sin dificultad."},
-          {q: "¿Qué zonas cubren con estos equipos?", a: "Todo CABA y el Gran Buenos Aires de lunes a lunes."}
+          {q: "¿El hidrojet sirve para caños de gastronomía?", a: "Es el estándar industrial obligatorio. Limpia de forma destructiva toda acumulación biológica o de frituras."},
+          {q: "¿La grasa tapona todo el caño?", a: "Así es, su acumulación es perimetral. Puede estrangular una cloaca de 110mm reduciéndola al tamaño de un dedo."},
+          {q: "¿Cubren servicios industriales en GBA?", a: "De hecho, contamos con furgones equipados y tanques para dar respuesta en fábricas industriales intensas."}
         ])}
       `
     },
     {
-      slug: 'mantenimiento-preventivo-consorcios',
-      title: 'Mantenimiento Preventivo en Edificios: Evitá expensas sorpresa',
-      excerpt: 'Por qué la prevención le gana siempre a los mantenimientos correctivos.',
+      slug: '5-senales-columna-edificio-tapada',
+      title: '5 señales de que la columna de tu edificio está por taparse',
+      excerpt: 'Guía para administradores: cómo anticipar la inundación de planta baja.',
       content: `
-        <p>Los grandes consorcios en <strong>CABA</strong> y <strong>Gran Buenos Aires</strong> suelen enfrentar quejas semanales por filtraciones. Las destapaciones de emergencia fuera de horario encarecen brutalmente las expensas.</p>
-        <p>La alternativa moderna es contratar servicios de <a href="/mantenimientos-preventivos" style="color:#16A34A;font-weight:bold;text-decoration:underline;">mantenimientos preventivos</a> programados.</p>
+        <p>Para todo administrador en <strong>CABA</strong> o <strong>Gran Buenos Aires</strong>, el llamado nocturno de un inquilino inundado con aguas negras es terrorífico. Evitar el desborde preventivamente ahorra costos formidables a la administración y al consorcio entero.</p>
+        <p>Estas alertas te indican que necesitás <a href="/mantenimientos-preventivos" style="color:#16A34A;font-weight:bold;text-decoration:underline;">mantenimientos preventivos</a> inminentes en la montante.</p>
         ${getCtaHtml()}
-        <h3 style="color:#0f172a;margin-bottom:1rem;font-size:1.35rem;">Beneficios de Contratar un Mantenimiento Preventivo en CABA</h3>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Señales Claves de Alerta en Columnas Principales</h2>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Costos fijos:</strong> Congelas el valor del mantenimiento sin sustos de guardia técnica.</li>
-          <li><strong>Hidrolavado Integral:</strong> Limpieza de <a href="/destapaciones-pluviales" style="color:#16A34A;font-weight:bold;text-decoration:underline;">desagües pluviales</a> antes del temporal.</li>
-          <li><strong>Informes escritos:</strong> Diagnóstico del estado del caño para presentar en asambleas.</li>
+          <li><strong>Ruidos cavernosos repentinos:</strong> Las cámaras y las bateas "respiran" o hacen gorgoteos ("Gloops") violentos en varios pisos.</li>
+          <li><strong>Escurrimiento colectivo muy lento:</strong> Los primeros tres pisos demoran eternidades en vaciar el lavarropas.</li>
+          <li><strong>Agua retrocediendo en Planta Baja:</strong> El aviso final. El tapón en planta baja empuja hacia arriba el agua que tiran los del piso 10.</li>
+          <li><strong>Malos olores crónicos:</strong> Quejas unificadas de todos los departamentos orientados al pozo de aire y luz central.</li>
+          <li><strong>Cámaras de inspección al límite:</strong> La tapa frente a la propiedad se encharca y expulsa humedad viscosa.</li>
         </ul>
-        <p>Prevenir la limpieza de cámaras y las montantes colectoras cloacales evita que los departamentos del primer piso sufran el temido retorno cloacal.</p>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cómo prevenir tapones en las columnas del consorcio?</h2>
+        <p>Una inspección inmediata e hidrolavado de las tuberías centrales liberará la congestión, eliminando meses de papeles húmedos, tierra y sedimento solidificado antes de que colapse.</p>
         ${getFaqHtml([
-          {q: "¿Cada cuánto se hace un mantenimiento preventivo?", a: "Dependiendo del edificio, sugerimos limpiezas semestrales de colectoras y limpieza de cámaras cada 3 meses."},
-          {q: "¿Entregan certificado para la administración?", a: "Absolutamente, cada trabajo incluye el remito descriptivo y los reportes de estado."},
-          {q: "¿Cubren todo el GBA?", a: "Sí, operamos en todos los partidos del Gran Buenos Aires y Capital Federal."}
+          {q: "¿Ofrecen abonos fijos a consorcios?", a: "Sí, creamos planes a medida de Limpieza Preventiva que eliminan de raíz las urgencias caras fuera de horario."},
+          {q: "¿Tienen alcance en los barrios cerrados de GBA?", a: "Damos mantenimiento programado en condominios desde Nordelta hasta Canning y CABA entero."},
+          {q: "¿Incluyen informes técnicos de estas revisiones?", a: "Otorgamos certificados detallados sobre el funcionamiento y salud estructural detectada para tranquilidad de asambleas."}
         ])}
       `
     },
     {
-      slug: 'cuanto-cuesta-destapar-cloaca',
-      title: '¿Cuánto cuesta realmente destapar una cloaca en CABA y GBA?',
-      excerpt: 'Transparencia de precios y qué variables afectan el presupuesto.',
+      slug: 'resorte-vs-hidrojet-cual-es-mejor',
+      title: 'Resorte vs. Hidrojet: ¿Cuál es mejor para tu destapación?',
+      excerpt: 'Comparativa técnica para limpiar obstrucciones sin arruinar el material.',
       content: `
-        <p>Muchos clientes se asustan por los presupuestos abiertos. En el rubro de las <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones</a> en <strong>CABA</strong> y <strong>Gran Buenos Aires</strong>, lo barato sale carísimo cuando el contratista inexperto rompe un caño.</p>
-        <p>Un servicio serio te ofrecerá un precio cerrado una vez diagnosticada la gravedad.</p>
+        <p>La disyuntiva constante al cotizar un trabajo en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong> se resume a elegir entre una herramienta manual mecanizada y una bomba hipertensora de agua.</p>
+        <p>Ambas son <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones cloacales</a> válidas, pero su eficacia final y protección estructural difieren enormemente.</p>
         ${getCtaHtml()}
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Variables que Modifican el Precio de una Destapación</h2>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Qué método limpia mejor las cañerías incrustadas?</h2>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Tecnología empleada:</strong> Las sondas comunes son económicas, mientras que un equipo de <a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">hidrojet de alta potencia</a> asegura resultados definitivos a otro valor.</li>
-          <li><strong>Urgencias:</strong> Las llamadas de madrugada en fines de semana poseen recargos logísticos.</li>
-          <li><strong>Complejidad oculta:</strong> Si el caño está partido, requiere primero una costosa video inspección.</li>
+          <li><strong>Resorte de Sondeo (Cable de 10mm-16mm):</strong> Es excelente para atascos de materiales blandos y trapos. <strong>Su debilidad:</strong> no limpia, solo abre un "tunel" a través de la suciedad base. Si hay grasa, la obstrucción regreserá pronto.</li>
+          <li><strong>Limpieza Hidrocinética (<a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">Hidrojet</a>):</strong> Propulsa enormes chorros cortantes en 360 grados exactos. <strong>Su fortaleza:</strong> Remueve al 100% todo sarro, cemento o aceite petrificado adhiriéndose a las paredes, dejándolas totalmente pulidas.</li>
         </ul>
-        <p>Exigí siempre garantía por escrito del trabajo realizado en tu localidad.</p>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cuál elegir para evitar romper pisos?</h2>
+        <p>Si tu casa es antigua y la cañería es frágil, el Hidrojet elimina los rebotes violentos del metal contra el PVC y los codos ciegos, evitando desgarros imprevistos. A nivel industrial y de hoteles, su utilización es la única opción higiénicamente aceptable a largo plazo.</p>
         ${getFaqHtml([
-          {q: "¿Cobran la visita de diagnóstico?", a: "Depende de la emergencia. Usualmente, ofrecemos un prespuesto aproximado transparente por fotos en WhatsApp."},
-          {q: "¿Aceptan transferencias y tarjetas?", a: "Aceptamos efectivo, transferencias bancarias y billeteras virtuales."},
-          {q: "¿Es el mismo precio en CABA que en GBA?", a: "El valor del servicio en sí es idéntico; solo puede variar el costo lógico de desplazamiento logístico a zonas alejadas."}
+          {q: "¿El hidrojet saca las raíces subterráneas?", a: "Absolutamente, instalamos picos rotadores especiales que talan rápidamente raíces medianas y gruesas encalladas."},
+          {q: "¿Dejan olor en el ambiente post-trabajo?", a: "Ninguno de nuestros procedimientos es tóxico; al lavar directamente con caudal perimetral, higienizamos también el área tratada."},
+          {q: "¿Tienen cobertura veloz de Resorte convencional?", a: "Manejamos motos con equipos sonda ultra compactos en toda el área de microcentro CABA y zonas periféricas."}
         ])}
       `
     },
     {
-      slug: 'video-inspeccion-canerias',
-      title: 'Cómo detectar caños partidos sin romper pisos ni paredes',
-      excerpt: 'La tecnología de cámaras sumergibles ahorra meses de albañilería.',
+      slug: 'video-inspeccion-saber-cano-roto-sin-romper',
+      title: 'Video Inspección: Cómo saber si tu caño está roto sin romper el piso',
+      excerpt: 'Evitá meses de albañilería cara usando cámaras cloacales.',
       content: `
-        <p>Antes de romper todo un patio buscando la obstrucción en una casa de <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong>, existe un método 100% no destructivo: la sonda con cámara.</p>
-        <p>Podés pedir una <a href="/video-inspeccion-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">video inspección de cañerías</a> para ver en tu pantalla el problema real.</p>
+        <p>Romper una docena de baldosas carísimas de un living ciegamente buscando la pérdida es una tragedia que ningún vecino de <strong>CABA</strong> ni del <strong>Gran Buenos Aires</strong> debería sufrir jamás.</p>
+        <p>Actualmente existe tecnología de <a href="/video-inspeccion-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">video inspección localizadora</a> que escanea tus metros de cloaca por dentro ahorrándote fortuna de refacciones y dolores de cabeza inmensos.</p>
         ${getCtaHtml()}
-        <h3 style="color:#0f172a;margin-bottom:1rem;font-size:1.35rem;">Ventajas Clave de la Video Inspección de Cloacas</h3>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Beneficios de inspeccionar tuberías con cámaras HD</h2>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Precisión milimétrica:</strong> Encontramos rajaduras exactas para cavar solo un pozo de 30x30cm, ideal para consorcios.</li>
-          <li><strong>Evidencia fotográfica:</strong> Te entregamos un pen-drive con el video de la obstrucción o rotura.</li>
-          <li><strong>Detección de raíces:</strong> Permite ver hasta dónde invadió el árbol vecino subterráneamente.</li>
+          <li><strong>Detección Exacta:</strong> Una sonda con iluminación LED transmite visuales nítidas a un monitor, revelando exactamente la grieta, codo suelto o raíz que causó la fuga.</li>
+          <li><strong>Diagnóstico sin Estrés:</strong> Desmitifica engañosos "trabajos de picado y excavación a ciegas" de falsos plomeros. Cortará directamente sobre los 40cm cuadrados afectados.</li>
+          <li><strong>Grabación y Remito:</strong> Es una prueba visual indeleble invaluable para reclamos hacia la administración del barrio o consorcio.</li>
         </ul>
-        <p>Es sumamente recomendada de forma preventiva antes de comprar propiedades viejas o realizar limpiezas con hidrojet.</p>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cómo me ahorra plata pagar una cámara cloacal?</h2>
+        <p>Al identificar un bloqueo inmenso de escombros de una obra ajena, evitas hacer constantes e inútiles pagos temporales por destapaciones fallidas. Sabrás, a centímetros del problema, donde aplicar con precisión microscópica la única reparación seria necesaria.</p>
         ${getFaqHtml([
-          {q: "¿La cámara ve a través del agua barrosa?", a: "Las cámaras de empuje tienen iluminación LED de alta potencia para atravesar turbiedades moderadas."},
-          {q: "¿Qué pasa si encuentran el caño roto?", a: "Te entregamos la distancia exacta métrica para que sepas dónde excavar tu plomero de confianza."},
-          {q: "¿Van al interior de Buenos Aires?", a: "Nuestra área de cobertura es CABA y todo el cordón de GBA. Localidades de interior tienen un recargo por traslado."}
-        ])}
-      `
-    },
-    {
-      slug: 'senales-caneria-cocina-tapada',
-      title: 'El peligro oculto en la cañería de tu cocina: Señales de bloqueo',
-      excerpt: 'Grasa y jabón: los peores enemigos del desagüe del fregadero.',
-      content: `
-        <p>El desecho diario de aceites y detergentes crea una costra sólida durísima. Las <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cañerías</a> en cocinas son el pedido sanitario estrella en departamentos de <strong>CABA</strong>.</p>
-        <p>Si la ignorás, el rebalse arruinará tus muebles MDF y pisos de parquet flotante de la sala.</p>
-        ${getCtaHtml()}
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Señales de que tu Cocina Colapsará en GBA</h2>
-        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Ruidos de burbujas:</strong> La bacha "eructa" aire por falta de ventilación o por un tapón incipiente de fideos.</li>
-          <li><strong>Hedor persistente:</strong> Sarro acumulado pudriéndose en el sifón plástico que no sale lavándolo artificialmente.</li>
-          <li><strong>Tarda horas en vaciar:</strong> Una pileta llena que demora más de 20 segundos pule el inicio de un tapón grueso de jabón.</li>
-        </ul>
-        <p>Nunca arrojes soda cáustica comprada suelta: derretirás rápidamente el codo de plástico sin matar el problema base.</p>
-        ${getFaqHtml([
-          {q: "¿El líquido destapacañerías sirve?", a: "Solo empuja la grasa superficial momentáneamente. Si el caño interno está calcificado, no funcionará."},
-          {q: "¿Destapan lavaderos unidos a cocinas?", a: "Sí, desobstruimos toda ramificación que comparta la cañería hasta la cámara principal."},
-          {q: "¿Atienden emergencias en cocina los domingos?", a: "Cubrimos guardias operativas en CABA y Gran Buenos Aires."}
-        ])}
-      `
-    },
-    {
-      slug: 'raices-en-canerias',
-      title: 'Invasión de raíces cloacales: Por qué ocurren y cómo eliminarlas',
-      excerpt: 'Los árboles buscan el calor y el agua subterránea destruyendo tubos.',
-      content: `
-        <p>Especialmente para quintas y residentes en el <strong>Gran Buenos Aires</strong>, las raíces son una pesadilla que busca la humedad de tus cloacas. Terminan penetrando las juntas plásticas de la red.</p>
-        <p>Destaparlo con resorte manual es momentáneo; la raíz agresiva volverá a tapar todo en 3 meses.</p>
-        ${getCtaHtml()}
-        <h3 style="color:#0f172a;margin-bottom:1rem;font-size:1.35rem;">Solución Definitiva a Raíces en Cañerías con Hidrojet</h3>
-        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Diagnóstico Visual:</strong> Introducimos la <a href="/video-inspeccion-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">cámara de inspección</a> para medir el bloque leñoso infiltrado.</li>
-          <li><strong>Remoción Hidráulica:</strong> Un cabezal metálico de corte especial en el hidrojet tala las raíces sin destruir el PVC del cliente.</li>
-          <li><strong>Cámaras Sépticas:</strong> Provemos la inmediata <a href="/limpieza-camaras-septicas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">limpieza de cámaras</a> que pudieron quedar saturadas por las fibras.</li>
-        </ul>
-        <p>Evitá plantar especies botánicas agresivas (ficus, palmeras, etc.) a menos de 5 metros de tu trayecto cloacal central, estés en GBA o en un PH en CABA.</p>
-        ${getFaqHtml([
-          {q: "¿Tengo que talar el árbol?", a: "Usualmente no, realizamos lavados de alta presión destructivos para arrancar la fibra introducida y que tarde años en volver a penetrar."},
-          {q: "¿La raíz rompe el caño entero?", a: "Sí. Si no se frena a tiempo, estallará por completo la junta del caño de desagüe."},
-          {q: "¿Hacen este trabajo en Zona Norte GBA?", a: "Absolutamente, es nuestro servicio más requerido en todas las quintas del conurbano."}
-        ])}
-      `
-    },
-    {
-      slug: 'destapaciones-pluviales-antes-lluvias',
-      title: 'Destapaciones de caños pluviales: Evitá cascadas en tu living',
-      excerpt: 'La urgencia principal después del otoño: hojas, tierra y palomas.',
-      content: `
-        <p>Cuando pronostican tormentas severas y alertas amarillas en <strong>CABA</strong> y <strong>Gran Buenos Aires</strong>, el teléfono estalla. Prevení el desastre revisando tu sistema superior.</p>
-        <p>Recomendamos firmemente aplicar <a href="/destapaciones-pluviales" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones pluviales</a> en terraza de manera calendarizada y preventiva.</p>
-        ${getCtaHtml()}
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Puntos Críticos de Inundación de Lluvia</h2>
-        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Atrapahojas de Techos:</strong> Rejillas superiores saturadas por sedimentos y nidos de aves urbanas.</li>
-          <li><strong>Bajadas y Montantes:</strong> Codos ciegos de la propiedad donde las hojas mojadas forman un tapón indestructible como el cemento.</li>
-          <li><strong>Huecos bajo nivel:</strong> Evitá tragedias contratando rápido un servicio de <a href="/desagote-sotanos" style="color:#16A34A;font-weight:bold;text-decoration:underline;">desagote de sótanos</a> si colapsaron la bomba y las rejillas veredales.</li>
-        </ul>
-        <p>Implementar mantenimientos anuales minimiza drásticamente las filtraciones oscuras que deforman tus placas de yeso o arruinan mercadería.</p>
-        ${getFaqHtml([
-          {q: "¿Suben a la terraza para desobstruir?", a: "Sí, llevamos sondas largas que bajan con gravedad por las cañerías pluviales desde la azotea."},
-          {q: "¿Limpiando la canaleta alcanza?", a: "Generalmente la hoja o mugre ya se atascó en los codos subterráneos que salen hacia la línea municipal."},
-          {q: "¿Van si ya está lloviendo en CABA/GBA?", a: "Acudimos lo más rápido posible, pero dependemos de las garantías de seguridad técnica que nos brinde el techo por el viento y el agua."}
-        ])}
-      `
-    },
-    {
-      slug: 'como-funciona-hidrojet',
-      title: 'Descubriendo el poder del Hidrojet de alta presión',
-      excerpt: 'Por qué la nueva tecnología desplazó para siempre a los resortes.',
-      content: `
-        <p>Mientras que una sonda de acero simplemente realiza un agujero pequeño, la excelencia de las <a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones con hidrojet</a> desintegra la totalidad solidificada de la pared cloacal.</p>
-        <p>En industrias del <strong>Gran Buenos Aires</strong> y la extensa red de <strong>CABA</strong>, este método arrasa con la obstrucción.</p>
-        ${getCtaHtml()}
-        <h3 style="color:#0f172a;margin-bottom:1rem;font-size:1.35rem;">Beneficios de Aplicar Presión Hídrica de Alta Gama</h3>
-        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Limpieza en 360 grados:</strong> Los picos a retropropulsión lavan el diámetro interior completo, devolviendo el calibre nativo.</li>
-          <li><strong>Sistema seguro y ecológico:</strong> No emplea corrosivos peligrosos; solo utiliza agua pura intensamente direccionada al bloqueo.</li>
-          <li><strong>Protección del plástico:</strong> No quiebra caños de PVC viejos, como sí puede suceder con herramientas de resorte rebotando a ciegas.</li>
-        </ul>
-        <p>Cualquier restaurante exige obligatoriamente la sanidad integral de sus desagües utilizando únicamente de estos equipos con agua presurizada.</p>
-        ${getFaqHtml([
-          {q: "¿El hidrojet sirve para pluviales también?", a: "Es la mejor decisión posible. Vuela por los aires bolsas, tierra apelmazada y raíces suaves."},
-          {q: "¿Piden instalación de agua in situ?", a: "Las grandes hidrolavadoras poseen sus propios tanques para abastecer la bomba, pero es bueno disponer de tomas genéricas de refuerzo."},
-          {q: "¿Hacen servicio en hoteles de Gran Buenos Aires?", a: "Sí, poseemos el equipamiento logístico para responder a complejos hoteleros e industriales en todo GBA y CABA."}
-        ])}
-      `
-    },
-    {
-      slug: 'sotano-inundado-que-hacer',
-      title: 'Mi sótano se inundó: Protocolo de emergencia inmediato',
-      excerpt: 'Pasos urgentes para evitar electrocuciones y daños a largo plazo.',
-      content: `
-        <p>Los subsuelos cocheras y depósitos por nivel bajo rasante son los primeros en sufrir el colapso urbano. Si superaste el nivel crítico en <strong>CABA</strong> o en casas bajas del <strong>Gran Buenos Aires</strong>, corrés enorme riesgo.</p>
-        <p>Se requiere urgentemente un <a href="/desagote-sotanos" style="color:#16A34A;font-weight:bold;text-decoration:underline;">desagote de sótanos</a> empleando camiones atmosféricos o super-bombas.</p>
-        ${getCtaHtml()}
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuidado Extremo ante Inundaciones y Filtraciones Mayores</h2>
-        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Desconexión Total:</strong> Cortá los fusibles eléctricos generales de las plantas inferiores para prevenir letales cortocircuitos en tu coopropiedad.</li>
-          <li><strong>Llamar a Alto Caudal:</strong> Contratá de urgencia equipos especializados para que aspiren sin importar la basura o el lodo espeso.</li>
-          <li><strong>Validar la Válvula:</strong> Si entró el líquido oscuro desde la calle, tu válvula antirretorno está vencida y requerirá cambio para frenar cloacas externas.</li>
-        </ul>
-        <p>Reaccionar en las primeras seis horas puede recuperar mercancía millonaria en depósitos industriales prevenidos.</p>
-        ${getFaqHtml([
-          {q: "¿Tardan mucho en venir por emergencias pluviales?", a: "Contamos con protocolos de prioridad máxima. En zonas céntricas y de gran acceso solemos dar respuesta inminente."},
-          {q: "¿Sacan barro, no solo agua?", a: "Las bombas robustas de vacío aspiran lodo condensado, agua lodosa y escombros pequeños dejados tras las inundaciones."},
-          {q: "¿Realizan extracciones las 24hs en CABA?", a: "Por supuesto, la flota cubre emergencias diurnas y nocturnas por filtraciones catastróficas."}
+          {q: "¿La cámara puede navegar por caños finos de 40mm?", a: "Contamos con miniaturas robóticas HD lo bastante flexibles para recorrer caños desde 40 milímetros sin trabarse."},
+          {q: "¿Graba video para entregar a la aseguradora?", a: "Efectivamente, capturamos toda la incursión y generamos un archivo exportable legal con las coordenadas métricas del atasco."},
+          {q: "¿El servicio llega rápido al GBA rural?", a: "Nuestros vehículos viajan totalmente instrumentados diariamente y abarcan radios suburbanos largos."}
         ])}
       `
     }
