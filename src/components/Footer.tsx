@@ -18,7 +18,7 @@ export default function Footer() {
             <li><Link href="/destapaciones-hidrojet">Destapaciones con Hidrojet</Link></li>
             <li><Link href="/video-inspeccion-canerias">Video Inspección de Cañerías</Link></li>
             <li><Link href="/limpieza-camaras-septicas">Limpieza de Cámaras Sépticas</Link></li>
-            <li><Link href="/desagotes">Desagote de Sótanos</Link></li>
+            <li><Link href="/desagote-sotanos">Desagote de Sótanos</Link></li>
             <li><Link href="/abonos-preventivos">Abonos Preventivos</Link></li>
           </ul>
         </div>

@@ -150,7 +150,7 @@ export default async function BarrioPage({ params }: Props) {
                 { title: 'Destapaciones con Hidrojet', link: '/destapaciones-hidrojet' },
                 { title: 'Video Inspección de Cañerías', link: '/video-inspeccion-canerias' },
                 { title: 'Limpieza de Cámaras Sépticas', link: '/limpieza-camaras-septicas' },
-                { title: 'Desagote de Sótanos', link: '/desagotes' },
+                { title: 'Desagote de Sótanos', link: '/desagote-sotanos' },
                 { title: 'Abonos Preventivos', link: '/abonos-preventivos' },
               ].map((s) => (
                 <li key={s.link} className="service-card">

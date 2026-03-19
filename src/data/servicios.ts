@@ -239,16 +239,38 @@ export const getServicios = (): ServicioData[] => {
       }
     ),
     buildServicio(
-      'desagotes',
+      'desagote-sotanos',
       'Desagote de Sótanos',
       'https://images.unsplash.com/photo-1585814521473-b31c40ab21e3?auto=format&fit=crop&q=80&w=1200',
-      'Extracción urgente de agua acumulada en sótanos, pozos ciegos y espacios inundados con bombas súper sumergibles.',
+      'Extracción de agua por inundación en subsuelos, huecos de ascensor y cocheras. Servicio de emergencia con bombas de alto caudal en CABA y GBA.',
       'Una rotura accidental o una tormenta súbita pueden convertir tus huecos subterráneos como sótanos o fosos de ascensores en auténticos embalses.',
       [
         { q: "¿Qué tipo de bombas usan para el desagote?", a: "Aplicamos bombas sumergibles profesionales de alto caudal diseñadas para arrastre de líquidos espesos e inundaciones rápidas." },
         { q: "¿Cuánto tarda el desagote de un sótano?", a: "Dependerá enteramente de los litros acumulados, pero nuestro equipamiento bombea miles de litros por hora asegurando máxima velocidad." },
         { q: "¿Qué hacer mientras esperan que llegue el equipo?", a: "Principalmente desconectar y aislar la energía eléctrica principal del sótano para resguardar la vida y prevenir electrocuciones." }
-      ]
+      ],
+      {
+        schemaTitle: "Desagote de Sótanos y Subsuelos",
+        benefitsTitle: "Nuestro Compromiso Profesional",
+        benefits: [
+          { title: "Respuesta Inmediata", desc: "Entendemos que una inundación no puede esperar. Priorizamos estos servicios para minimizar los daños materiales en tu propiedad." },
+          { title: "Equipos de Alto Caudal", desc: "Utilizamos bombas sumergibles de gran potencia que permiten evacuar grandes volúmenes de agua en tiempo récord." },
+          { title: "Vaciado y Limpieza", desc: "No solo sacamos el agua; nos aseguramos de retirar los sedimentos y lodos que quedan tras la inundación para higienizar el área." }
+        ],
+        equipmentTitle: "Casos de Aplicación",
+        equipment: [
+          { title: "Cocheras y Subsuelos", desc: "Vaciado rápido tras tormentas fuertes o rotura de cañerías principales." },
+          { title: "Huecos de Ascensor", desc: "Extracción técnica para permitir el mantenimiento y evitar daños en los sistemas eléctricos del edificio." },
+          { title: "Sótanos Particulares", desc: "Soluciones para inundaciones en depósitos o plantas bajas con problemas de drenaje." }
+        ],
+        stepsTitle: "¿Cómo trabajamos?",
+        steps: [
+          { title: "Urgencia", desc: "Recibimos tu llamado y despachamos el equipo con la bomba adecuada según el volumen de agua.", iconStr: "🚨" },
+          { title: "Instalación", desc: "Colocamos las mangueras de expulsión hacia los puntos de vertido habilitados más cercanos.", iconStr: "🔧" },
+          { title: "Succión Continua", desc: "Operamos las bombas hasta lograr el vaciado total del recinto afectado.", iconStr: "💧" },
+          { title: "Secado Técnico", desc: "Retiramos los restos de humedad y sólidos para que el espacio vuelva a ser habitable o funcional.", iconStr: "✨" }
+        ]
+      }
     ),
     buildServicio(
       'abonos-preventivos',

@@ -50,7 +50,7 @@ export default function Servicios() {
     {
       title: "Desagote de Sótanos",
       desc: "Vaciado con bombas sumergibles de gran caudal.",
-      link: "/desagotes",
+      link: "/desagote-sotanos",
       btnText: "Ver servicio de Desagotes",
       icon: <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
     },
