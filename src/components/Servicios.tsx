@@ -55,10 +55,10 @@ export default function Servicios() {
       icon: <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
     },
     {
-      title: "Abonos Preventivos",
+      title: "Mantenimientos Preventivos",
       desc: "Planes preventivos para consorcios y empresas.",
-      link: "/abonos-preventivos",
-      btnText: "Ver Abonos de Mantenimiento",
+      link: "/mantenimientos-preventivos",
+      btnText: "Ver Mantenimientos Preventivos",
       icon: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></>
     }
   ];

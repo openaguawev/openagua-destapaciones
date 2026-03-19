@@ -151,7 +151,7 @@ export default async function BarrioPage({ params }: Props) {
                 { title: 'Video Inspección de Cañerías', link: '/video-inspeccion-canerias' },
                 { title: 'Limpieza de Cámaras Sépticas', link: '/limpieza-camaras-septicas' },
                 { title: 'Desagote de Sótanos', link: '/desagote-sotanos' },
-                { title: 'Abonos Preventivos', link: '/abonos-preventivos' },
+                { title: 'Mantenimientos Preventivos', link: '/mantenimientos-preventivos' },
               ].map((s) => (
                 <li key={s.link} className="service-card">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16A34A" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '1rem', flexShrink: 0 }}><polyline points="20 6 9 17 4 12"></polyline></svg>
