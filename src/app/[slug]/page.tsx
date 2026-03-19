@@ -56,12 +56,12 @@ export default async function ServicioPage({ params }: Props) {
 
         <section style={{ marginBottom: '5rem' }}>
           <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2rem' }}>{servicio.benefitsTitle}</h2>
-          <div className="benefits-grid">
+          <div className={`grid grid-cols-1 md:grid-cols-2 ${servicio.benefits.length >= 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-2'} gap-8 max-w-6xl mx-auto px-4`}>
             {servicio.benefits.map((b, i) => (
-              <div key={i} className="benefit-card">
-                <div style={{ fontSize: '2.5rem', marginBottom: '1rem', color: '#16A34A' }}>✓</div>
-                <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a' }}>{b.title}</h3>
-                <p>{b.desc}</p>
+              <div key={i} className="benefit-card" style={{ height: '100%' }}>
+                <div style={{ fontSize: '2.5rem', marginBottom: '1rem', color: '#16A34A', textAlign: 'center' }}>✓</div>
+                <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a', textAlign: 'center' }}>{b.title}</h3>
+                <p style={{ textAlign: 'center' }}>{b.desc}</p>
               </div>
             ))}
           </div>
@@ -70,12 +70,12 @@ export default async function ServicioPage({ params }: Props) {
         {servicio.equipment && servicio.equipment.length > 0 && (
           <section style={{ marginBottom: '5rem' }}>
             <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2rem' }}>{servicio.equipmentTitle || 'Equipamiento Técnico'}</h2>
-            <div className="benefits-grid">
+            <div className={`grid grid-cols-1 md:grid-cols-2 ${servicio.equipment.length >= 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-2'} gap-8 max-w-6xl mx-auto px-4 justify-center`}>
               {servicio.equipment.map((eq, i) => (
-                <div key={i} className="benefit-card">
-                  <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>⚙️</div>
-                  <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a' }}>{eq.title}</h3>
-                  <p>{eq.desc}</p>
+                <div key={i} className="benefit-card" style={{ height: '100%', maxWidth: servicio.equipment && servicio.equipment.length < 3 ? '500px' : 'none', margin: '0 auto', width: '100%' }}>
+                  <div style={{ fontSize: '2.5rem', marginBottom: '1rem', textAlign: 'center' }}>⚙️</div>
+                  <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a', textAlign: 'center' }}>{eq.title}</h3>
+                  <p style={{ textAlign: 'center' }}>{eq.desc}</p>
                 </div>
               ))}
             </div>

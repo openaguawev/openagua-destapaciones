@@ -227,7 +227,7 @@ export const getServicios = (): ServicioData[] => {
           { title: "Mantenimiento Higiénico", desc: "Aplicamos procesos que minimizan los olores y aseguran la limpieza del área tras finalizar el trabajo de succión." }
         ],
         equipment: [
-          { title: "Camiones Atmosféricos / Bombas de Succión", desc: "Equipos de gran potencia diseñados para el manejo de residuos densos y lodos cloacales." },
+          { title: "Equipos Atmosféricos de Succión", desc: "Bombas de vacío de gran potencia para la extracción eficiente de lodoscloacales y residuos densos." },
           { title: "Herramientas de Limpieza Mecánica", desc: "Sondas y chorros de agua para remover las costras de grasa y sólidos adheridos a las paredes de la cámara." }
         ],
         steps: [
