@@ -39,7 +39,8 @@ export default function Contacto() {
   return (
     <section id="contacto" className="contacto-section">
       <div className="container">
-        <h2 className="contacto-title" style={{ color: '#ffffff', fontSize: '2.5rem', fontWeight: 700, textAlign: 'center', marginBottom: '2rem', textShadow: '0 0 0 #fff' }}>Pedí tu presupuesto sin compromiso</h2>
+        <h2 className="contacto-title" style={{ color: '#ffffff', fontSize: '2.5rem', fontWeight: 700, textAlign: 'center', marginBottom: '1rem', textShadow: '0 0 0 #fff' }}>Pedí tu presupuesto sin compromiso</h2>
+        <p style={{ textAlign: 'center', color: '#cbd5e1', fontSize: '1.25rem', marginBottom: '2.5rem' }}>Servicio garantizado en CABA y el Gran Buenos Aires (GBA).</p>
         
         <div className="contacto-container">
           {status === 'success' ? (

@@ -25,7 +25,29 @@ export const metadata: Metadata = {
   icons: {
     icon: '/icon.svg',
     apple: '/favicon.ico',
-  }
+  },
+  openGraph: {
+    title: 'Openagua | Destapaciones en CABA y GBA',
+    description: 'Servicio profesional de destapaciones de cloacas, cañerías e hidrojet en CABA y Gran Buenos Aires. Diagnóstico preciso. Atención de 8 a 19 hs.',
+    url: 'https://www.destapacionesopenagua.com.ar',
+    siteName: 'Openagua',
+    images: [
+      {
+        url: 'https://www.destapacionesopenagua.com.ar/logo.svg',
+        width: 800,
+        height: 600,
+        alt: 'Openagua Destapaciones',
+      },
+    ],
+    locale: 'es_AR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Openagua | Destapaciones en CABA y GBA',
+    description: 'Servicio profesional de destapaciones de cloacas, cañerías e hidrojet en CABA y Gran Buenos Aires.',
+    images: ['https://www.destapacionesopenagua.com.ar/logo.svg'],
+  },
 };
 
 import Navbar from '@/components/Navbar';
@@ -40,7 +62,7 @@ export default function RootLayout({
 }) {
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "PlumbingService",
     "name": "Openagua",
     "image": "https://destapacionesopenagua.com.ar/img/home.jpg",
     "telephone": "15-5179-7649",

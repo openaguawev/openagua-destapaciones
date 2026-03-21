@@ -7,28 +7,28 @@ export default function Footer() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <div className="logo">Openagua Destapaciones</div>
-          <p className="slogan">Trabajos bien hechos, explicados y sin soluciones temporales.</p>
+          <p className="slogan">Trabajos bien hechos en CABA y GBA, explicados y sin soluciones temporales.</p>
         </div>
         <div className="footer-links">
           <div className="footer-heading" style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1.5rem', color: '#fff' }}>Servicios</div>
           <ul>
-            <li><Link href="/destapaciones-cloacas">Destapación de Cloacas</Link></li>
-            <li><Link href="/destapaciones-canerias">Destapaciones de Cañerías</Link></li>
-            <li><Link href="/destapaciones-pluviales">Destapaciones Pluviales</Link></li>
-            <li><Link href="/destapaciones-hidrojet">Destapaciones con Hidrojet</Link></li>
-            <li><Link href="/video-inspeccion-canerias">Video Inspección de Cañerías</Link></li>
-            <li><Link href="/limpieza-camaras-septicas">Limpieza de Cámaras Sépticas</Link></li>
-            <li><Link href="/desagote-sotanos">Desagote de Sótanos</Link></li>
-            <li><Link href="/mantenimientos-preventivos">Mantenimientos Preventivos</Link></li>
+            <li><Link href="/destapaciones-cloacas" title="Destapación de Cloacas">Destapación de Cloacas</Link></li>
+            <li><Link href="/destapaciones-canerias" title="Destapaciones de Cañerías">Destapaciones de Cañerías</Link></li>
+            <li><Link href="/destapaciones-pluviales" title="Destapaciones Pluviales">Destapaciones Pluviales</Link></li>
+            <li><Link href="/destapaciones-hidrojet" title="Sistema Hidrojet">Destapaciones con Hidrojet</Link></li>
+            <li><Link href="/video-inspeccion-canerias" title="Video Inspección">Video Inspección de Cañerías</Link></li>
+            <li><Link href="/limpieza-camaras-septicas" title="Limpieza de Cámaras">Limpieza de Cámaras Sépticas</Link></li>
+            <li><Link href="/desagote-sotanos" title="Desagotes">Desagote de Sótanos</Link></li>
+            <li><Link href="/mantenimientos-preventivos" title="Mantenimientos">Mantenimientos Preventivos</Link></li>
           </ul>
         </div>
         <div className="footer-links">
           <div className="footer-heading" style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1.5rem', color: '#fff' }}>Zonas de Cobertura</div>
           <ul>
-            <li><Link href="/zonas/caba">CABA</Link></li>
-            <li><Link href="/zonas/zona-norte">Zona Norte</Link></li>
-            <li><Link href="/zonas/zona-oeste">Zona Oeste</Link></li>
-            <li><Link href="/zonas/zona-sur">Zona Sur</Link></li>
+            <li><Link href="/zonas/caba" title="Cobertura en CABA">CABA</Link></li>
+            <li><Link href="/zonas/zona-norte" title="Cobertura en Zona Norte">Zona Norte</Link></li>
+            <li><Link href="/zonas/zona-oeste" title="Cobertura en Zona Oeste">Zona Oeste</Link></li>
+            <li><Link href="/zonas/zona-sur" title="Cobertura en Zona Sur">Zona Sur</Link></li>
           </ul>
         </div>
         <div className="footer-links">
@@ -46,13 +46,13 @@ export default function Footer() {
           <p>Teléfono: <a href="tel:+5491151797649">15-5179-7649</a></p>
           <p>Horario: Lunes a Sábado 8 a 19 hs</p>
           <div className="social-icons">
-            <a href="https://facebook.com/openagua" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a href="https://facebook.com/openagua" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Visitanos en Facebook">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
             </a>
-            <a href="https://www.instagram.com/destapaciones_openagua/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/destapaciones_openagua/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Visitanos en Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             </a>
-            <a href="https://www.youtube.com/@openagua/videos" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <a href="https://www.youtube.com/@openagua/videos" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="Mirá nuestros trabajos en YouTube">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.16 1 12 1 12s0 3.84.46 5.58a2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.84 23 12 23 12s0-3.84-.46-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg>
             </a>
           </div>

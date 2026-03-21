@@ -20,17 +20,17 @@ export default function Navbar() {
           </Link>
           <nav className="desktop-menu">
             <ul>
-              <li><Link href="/">Inicio</Link></li>
-              <li><Link href="/#servicios">Servicios</Link></li>
-              <li><Link href="/#zonas">Zonas</Link></li>
-              <li><Link href="/#como-trabajamos">Cómo Trabajamos</Link></li>
-              <li><Link href="/#trabajos">Nuestros Trabajos</Link></li>
-              <li><Link href="/blog">Blog</Link></li>
-              <li><Link href="/#contacto">Contacto</Link></li>
+              <li><Link href="/" title="Inicio de Openagua" onClick={closeMenu}>Inicio</Link></li>
+              <li><Link href="/#servicios" title="Nuestros Servicios de Destapaciones" onClick={closeMenu}>Servicios</Link></li>
+              <li><Link href="/#zonas" title="Zonas de Cobertura en CABA y GBA" onClick={closeMenu}>Zonas</Link></li>
+              <li><Link href="/#como-trabajamos" title="Cómo Trabajamos" onClick={closeMenu}>Cómo Trabajamos</Link></li>
+              <li><Link href="/#trabajos" title="Galería de Nuestros Trabajos" onClick={closeMenu}>Nuestros Trabajos</Link></li>
+              <li><Link href="/blog" title="Blog de Consejos y Destapaciones" onClick={closeMenu}>Blog</Link></li>
+              <li><Link href="/#contacto" title="Formulario de Contacto" onClick={closeMenu}>Contacto</Link></li>
             </ul>
           </nav>
           <div className="navbar-cta desktop-only">
-            <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20quiero%20consultar%20por%20un%20presupuesto" target="_blank" rel="noopener noreferrer" className="btn-primary">
+            <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20quiero%20consultar%20por%20un%20presupuesto" target="_blank" rel="noopener noreferrer" className="btn-primary" title="Contactanos por WhatsApp">
               Consultar por WhatsApp
             </a>
           </div>
@@ -58,7 +58,7 @@ export default function Navbar() {
           </ul>
         </nav>
         <div style={{ marginTop: '2rem' }}>
-          <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20quiero%20consultar%20por%20un%20presupuesto" target="_blank" rel="noopener noreferrer" className="btn-primary" onClick={closeMenu}>
+          <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20quiero%20consultar%20por%20un%20presupuesto" target="_blank" rel="noopener noreferrer" className="btn-primary" title="Contactanos por WhatsApp" onClick={closeMenu}>
             Consultar por WhatsApp
           </a>
         </div>
