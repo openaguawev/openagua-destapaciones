@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Script from 'next/script';
 import Image from 'next/image';
 import Contacto from '@/components/Contacto';
+import { handleLegacyRedirect } from '@/utils/legacyRedirect';
 import '../servicio-page.css';
 
 interface Props {
@@ -37,7 +38,7 @@ export default async function ServicioPage({ params }: Props) {
   const servicio = getServicios().find((s) => s.slug === resolvedParams.slug);
 
   if (!servicio) {
-    notFound();
+    handleLegacyRedirect([resolvedParams.slug]);
   }
 
   return (

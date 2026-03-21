@@ -2,7 +2,8 @@ import { getZonas } from '@/data/zonas'
 import { barrios } from '@/data/barrios'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import '@/components/Zonas.css' // We can reuse some globals or keep inline styles for the grid
+import '@/components/Zonas.css'
+import { handleLegacyRedirect } from '@/utils/legacyRedirect'
 
 export async function generateStaticParams() {
   const zonas = getZonas()
@@ -31,7 +32,7 @@ export default async function ZonaPage({ params }: Props) {
   const zonas = getZonas()
   const zona = zonas.find((z) => z.slug === slug)
   
-  if (!zona) return notFound()
+  if (!zona) return handleLegacyRedirect([slug])
   
   const barriosZona = barrios.filter((b) => b.zoneSlug === slug)
 

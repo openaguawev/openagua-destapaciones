@@ -2,6 +2,7 @@ import { getArticulos } from '@/data/blog'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import { Metadata } from 'next'
+import { handleLegacyRedirect } from '@/utils/legacyRedirect'
 
 export async function generateStaticParams() {
   const posts = getArticulos()
@@ -29,7 +30,7 @@ export default async function BlogPost({ params }: Props) {
   const { slug } = await params
   const posts = getArticulos()
   const post = posts.find((p) => p.slug === slug)
-  if (!post) return notFound()
+  if (!post) return handleLegacyRedirect([slug])
   return (
     <main style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
       <h1>{post.title}</h1>

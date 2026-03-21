@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Script from 'next/script';
 import '@/components/Zonas.css';
+import { handleLegacyRedirect } from '@/utils/legacyRedirect';
 
 export async function generateStaticParams() {
   return barrios.map((b) => ({ slug: b.slug }));
@@ -38,7 +39,7 @@ export default async function BarrioPage({ params }: Props) {
   const { slug } = await params;
   const barrio = barrios.find((b) => b.slug === slug);
   
-  if (!barrio) return notFound();
+  if (!barrio) return handleLegacyRedirect([slug]);
 
   const zonas = getZonas();
   const parentZone = zonas.find(z => z.slug === barrio.zoneSlug);
