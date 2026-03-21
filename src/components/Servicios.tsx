@@ -75,7 +75,7 @@ export default function Servicios() {
                   {s.icon}
                 </svg>
               </div>
-              <h3 className="servicio-title">{s.title}</h3>
+              <div className="servicio-title" style={{ fontWeight: 'bold' }}>{s.title}</div>
               <p className="servicio-desc">{s.desc}</p>
               <Link href={s.link} className="servicio-btn">
                 {s.btnText}

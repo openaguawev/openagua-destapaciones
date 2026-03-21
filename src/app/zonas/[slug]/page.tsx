@@ -9,6 +9,21 @@ export async function generateStaticParams() {
   return zonas.map((zona) => ({ slug: zona.slug }))
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const zonas = getZonas()
+  const zona = zonas.find((z) => z.slug === slug)
+  if (!zona) return { title: 'Zona no encontrada' }
+
+  return {
+    title: `Destapaciones en ${zona.name} | Openagua`,
+    description: zona.description,
+    alternates: {
+      canonical: `https://www.destapacionesopenagua.com.ar/zonas/${slug}`,
+    }
+  }
+}
+
 type Props = { params: Promise<{ slug: string }> }
 
 export default async function ZonaPage({ params }: Props) {
@@ -94,13 +109,14 @@ export default async function ZonaPage({ params }: Props) {
               color: var(--color-cta-green);
               flex-shrink: 0;
             }
-            .barrio-info h3 {
+            .barrio-info .barrio-name {
               font-size: 1.25rem;
               margin-bottom: 4px;
               color: var(--color-primary);
               transition: color 0.2s ease;
+              font-weight: bold;
             }
-            .barrio-card:hover .barrio-info h3 {
+            .barrio-card:hover .barrio-info .barrio-name {
               color: var(--color-cta-green);
             }
             .barrio-info p {
@@ -126,7 +142,7 @@ export default async function ZonaPage({ params }: Props) {
                   </svg>
                 </div>
                 <div className="barrio-info">
-                  <h3>{b.name}</h3>
+                  <div className="barrio-name">{b.name}</div>
                   <p>Destapaciones en {b.name}</p>
                 </div>
               </Link>

@@ -37,7 +37,7 @@ export default function ComoTrabajamos() {
             <div className="paso-card" key={index}>
               <div className="paso-num">{paso.num}</div>
               <div className="paso-icon">{paso.icon}</div>
-              <h3 className="paso-title">{paso.title}</h3>
+              <div className="paso-title" style={{ fontWeight: 'bold' }}>{paso.title}</div>
               <p className="paso-desc">{paso.desc}</p>
               {index < pasos.length - 1 && <div className="paso-connector"></div>}
             </div>

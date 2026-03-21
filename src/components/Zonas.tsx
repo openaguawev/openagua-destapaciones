@@ -31,7 +31,7 @@ export default function Zonas() {
           {zonas.map((zona, idx) => (
             <Link href={zona.link} key={idx} className="zona-card">
               <div className="zona-icon">📍</div>
-              <h3 className="zona-title">{zona.title}</h3>
+              <div className="zona-title" style={{ fontWeight: 'bold' }}>{zona.title}</div>
               <p className="zona-barrios">{zona.barrios}</p>
               <span className="zona-link-text">Ver cobertura →</span>
             </Link>

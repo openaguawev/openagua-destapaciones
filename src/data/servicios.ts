@@ -217,7 +217,7 @@ export const getServicios = (): ServicioData[] => {
       [
         { q: "¿Cada cuánto limpiar una cámara cloacal?", a: "El saneamiento recomendable depende del uso, pero para consorcios sugerimos entre 6 a 12 meses." },
         { q: "¿Por qué aparecen malos olores en la cámara?", a: "Debido a la fermentación anaeróbica de las costras de jabón y heces acumuladas que bloquean la respiración del sistema." },
-        { q: "¿Trabajan con consorcios y edificios?", a: "Sí, nos especializamos en mantenimiento edilicio integral resolviendo urgencias cloacales estructurales." }
+        { q: "¿Trabajan con consorcios y edificios?", a: "Sí, nos especializamos en mantenimiento edilicio integral resolviendo problemas cloacales estructurales." }
       ],
       {
         benefitsTitle: "Nuestro Compromiso Profesional",
@@ -265,7 +265,7 @@ export const getServicios = (): ServicioData[] => {
         ],
         stepsTitle: "¿Cómo trabajamos?",
         steps: [
-          { title: "Urgencia", desc: "Recibimos tu llamado y despachamos el equipo con la bomba adecuada según el volumen de agua.", iconStr: "🚨" },
+          { title: "Asistencia Rápida", desc: "Recibimos tu llamado y despachamos el equipo con la bomba adecuada según el volumen de agua.", iconStr: "🚨" },
           { title: "Instalación", desc: "Colocamos las mangueras de expulsión hacia los puntos de vertido habilitados más cercanos.", iconStr: "🔧" },
           { title: "Succión Continua", desc: "Operamos las bombas hasta lograr el vaciado total del recinto afectado.", iconStr: "💧" },
           { title: "Secado Técnico", desc: "Retiramos los restos de humedad y sólidos para que el espacio vuelva a ser habitable o funcional.", iconStr: "✨" }
@@ -276,7 +276,7 @@ export const getServicios = (): ServicioData[] => {
       'mantenimientos-preventivos',
       'Mantenimientos Preventivos',
       '/img/manteniminto cloaca.jpg',
-      'Mantenimiento programado para evitar urgencias y desbordes. La solución más económica para consorcios, empresas y gastronomía en CABA y GBA.',
+      'Mantenimiento programado para evitar problemas y desbordes. La solución más económica para consorcios, empresas y gastronomía en CABA y GBA.',
       'Reaccionar solo cuando ha ocurrido el accidente significa enfrentar la furia de inquilinos y copropietarios con problemas mayúsculos. Ofrecemos mantenimientos preventivos periódicos.',
       [
         { q: "¿Qué incluye el plan de mantenimiento?", a: "Verificación de pluviales, sondeo mecánico de las salidas a colector principal y el hidrolavado base de cámaras cloacales." },
@@ -294,11 +294,11 @@ export const getServicios = (): ServicioData[] => {
         equipmentTitle: "¿A quiénes está dirigido?",
         equipment: [
           { title: "Consorcios y Edificios", desc: "Limpieza de columnas principales, sótanos y cámaras de inspección para evitar inundaciones en áreas comunes." },
-          { title: "Gastronomía e Industrias", desc: "Desengrase técnico de cañerías de cocina y redes de alto tránsito para cumplir con normas de higiene y evitar cierres por urgencias." }
+          { title: "Gastronomía e Industrias", desc: "Desengrase técnico de cañerías de cocina y redes de alto tránsito para cumplir con normas de higiene y evitar cierres imprevistos." }
         ],
         stepsTitle: "Beneficios del Mantenimiento Preventivo",
         steps: [
-          { title: "Costo Fijo", desc: "Eliminamos los gastos imprevistos por servicios de urgencia, que suelen ser mucho más costosos.", iconStr: "💰" },
+          { title: "Costo Fijo", desc: "Eliminamos los gastos imprevistos por servicios no planificados, que suelen ser mucho más costosos.", iconStr: "💰" },
           { title: "Menos Roturas", desc: "Al mantener los caños limpios, evitamos que la presión de los tapones debilite las juntas y uniones.", iconStr: "🛡️" },
           { title: "Higiene Permanente", desc: "Evitamos los malos olores y la aparición de plagas asociadas a los residuos estancados.", iconStr: "✨" },
           { title: "Tranquilidad", desc: "Un profesional de Openagua supervisa tu red regularmente para que vos no tengas que preocuparte por nada.", iconStr: "😌" }

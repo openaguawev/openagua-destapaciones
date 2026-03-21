@@ -17,9 +17,20 @@ export async function generateMetadata({ params }: Props) {
   
   if (!barrio) return {};
 
+  const descriptionTemplates = [
+    `${barrio.name}: Soluciones profesionales en destapaciones de cloacas y cañerías. Empresa familiar con experiencia técnica garantizada.`,
+    `${barrio.name}: Expertos en destapaciones y limpieza profunda de cañerías. Servicio especializado con modernas máquinas. Consultá sin cargo.`,
+    `${barrio.name}: Servicio especializado en destapaciones con hidrojet y máquinas de sonda. Resolvemos el problema de forma profesional.`,
+    `${barrio.name}: Limpieza profunda y desobstrucción de cañerías. Técnicos expertos dedicados a brindarte la mejor solución.`
+  ];
+  const templateIndex = slug.length % descriptionTemplates.length;
+
   return {
     title: `Destapaciones en ${barrio.name}, ${barrio.zoneName} | Openagua`,
-    description: `Servicio profesional de destapaciones en ${barrio.name}. Cloacas, cañerías e hidrojet. Atención de 8 a 19 hs. Consultá sin cargo.`,
+    description: descriptionTemplates[templateIndex],
+    alternates: {
+      canonical: `https://www.destapacionesopenagua.com.ar/barrios/${slug}`
+    }
   };
 }
 
@@ -185,7 +196,7 @@ export default async function BarrioPage({ params }: Props) {
                     </svg>
                   </div>
                   <div>
-                    <h3 style={{ fontSize: '1.15rem', margin: 0, color: '#0f172a' }}>{b.name}</h3>
+                    <div style={{ fontSize: '1.15rem', margin: 0, color: '#0f172a', fontWeight: 'bold' }}>{b.name}</div>
                     <p style={{ margin: 0, fontSize: '0.9rem', color: '#64748b' }}>Destapaciones en {b.name}</p>
                   </div>
                 </Link>

@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${post.title} | Openagua Blog`,
     description: post.excerpt,
     alternates: {
-      canonical: `https://destapacionesopenagua.com.ar/blog/${slug}`,
+      canonical: `https://www.destapacionesopenagua.com.ar/blog/${slug}`,
     }
   }
 }

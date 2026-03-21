@@ -6,6 +6,9 @@ import './blog.css';
 export const metadata: Metadata = {
   title: 'Blog de Destapaciones y Consejos | Openagua',
   description: 'Todo lo que necesitás saber sobre obstrucciones, mantenimiento de cañerías, limpieza cloacal y soluciones profesionales.',
+  alternates: {
+    canonical: 'https://www.destapacionesopenagua.com.ar/blog',
+  }
 };
 
 export default function BlogIndex() {
@@ -21,7 +24,7 @@ export default function BlogIndex() {
           {articulos.map((art) => (
             <article key={art.slug} className="blog-card">
               <div className="blog-card-content">
-                <h2>{art.title}</h2>
+                <div className="article-title" style={{ fontWeight: 'bold', fontSize: '1.25rem', marginBottom: '0.5rem', color: '#0f172a' }}>{art.title}</div>
                 <p>{art.excerpt}</p>
                 <Link href={`/blog/${art.slug}`} className="blog-read-more">
                   Leer artículo completo →

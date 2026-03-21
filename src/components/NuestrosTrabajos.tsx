@@ -76,7 +76,7 @@ export default function NuestrosTrabajos() {
                 />
               </div>
               <div style={{ padding: '1.25rem', backgroundColor: '#fff', textAlign: 'center', borderTop: '4px solid #16A34A' }}>
-                <h3 style={{ fontSize: '1.15rem', fontWeight: 600, color: '#0f172a', margin: 0 }}>{trabajo.title}</h3>
+                <div style={{ fontSize: '1.15rem', fontWeight: 600, color: '#0f172a', margin: 0 }}>{trabajo.title}</div>
               </div>
             </div>
           ))}

@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${servicio.title} en CABA y GBA | Openagua`,
     description: servicio.excerpt,
     alternates: {
-      canonical: `https://destapacionesopenagua.com.ar/${servicio.slug}`,
+      canonical: `https://www.destapacionesopenagua.com.ar/${servicio.slug}`,
     }
   };
 }
@@ -70,7 +70,7 @@ export default async function ServicioPage({ params }: Props) {
             {servicio.benefits.map((b, i) => (
               <div key={i} className="benefit-card" style={{ height: '100%' }}>
                 <div style={{ fontSize: '2.5rem', marginBottom: '1rem', color: '#16A34A', textAlign: 'center' }}>✓</div>
-                <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a', textAlign: 'center' }}>{b.title}</h3>
+                <div style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a', textAlign: 'center', fontWeight: 'bold' }}>{b.title}</div>
                 <p style={{ textAlign: 'center' }}>{b.desc}</p>
               </div>
             ))}
@@ -84,7 +84,7 @@ export default async function ServicioPage({ params }: Props) {
               {servicio.equipment.map((eq, i) => (
                 <div key={i} className="benefit-card" style={{ height: '100%', maxWidth: servicio.equipment && servicio.equipment.length < 3 ? '500px' : 'none', margin: '0 auto', width: '100%' }}>
                   <div style={{ fontSize: '2.5rem', marginBottom: '1rem', textAlign: 'center' }}>⚙️</div>
-                  <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a', textAlign: 'center' }}>{eq.title}</h3>
+                  <div style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a', textAlign: 'center', fontWeight: 'bold' }}>{eq.title}</div>
                   <p style={{ textAlign: 'center' }}>{eq.desc}</p>
                 </div>
               ))}
@@ -101,7 +101,7 @@ export default async function ServicioPage({ params }: Props) {
                   <div style={{ width: '60px', height: '60px', backgroundColor: '#16A34A', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem auto', fontSize: '1.5rem', fontWeight: 'bold' }}>
                     {s.iconStr ? s.iconStr : i + 1}
                   </div>
-                  <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a' }}>{s.title}</h3>
+                  <div style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a', fontWeight: 'bold' }}>{s.title}</div>
                   <p style={{ color: '#475569', fontSize: '1rem' }}>{s.desc}</p>
                 </div>
               ))}

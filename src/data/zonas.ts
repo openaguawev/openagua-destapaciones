@@ -23,7 +23,7 @@ export const getZonas = (): ZonaData[] => {
       slug: "zona-oeste",
       name: "Zona Oeste",
       barrios: ["Ramos Mejía", "Haedo", "Castelar", "Morón", "Ciudadela", "San Martín", "Hurlingham", "Ituzaingó", "Tres de Febrero", "Caseros", "El Palomar", "Villa Tesei", "Tapiales", "Isidro Casanova", "Rafael Castillo"],
-      description: "Nuestra flota atiende urgencias programadas en toda la Zona Oeste. Destapación con máquina de sonda y limpieza a alta presión garantizada."
+      description: "Nuestra flota atiende servicios programados en toda la Zona Oeste. Destapación con máquina de sonda y limpieza a alta presión garantizada."
     },
     {
       slug: "zona-sur",

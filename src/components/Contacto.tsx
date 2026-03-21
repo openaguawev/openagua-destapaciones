@@ -45,7 +45,7 @@ export default function Contacto() {
           {status === 'success' ? (
             <div style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#ecfdf5', borderRadius: '16px', border: '1px solid #34d399', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)', maxWidth: '600px', margin: '0 auto' }}>
               <div style={{ fontSize: '4rem', color: '#10b981', marginBottom: '1.5rem' }}>✓</div>
-              <h3 style={{ fontSize: '1.75rem', color: '#065f46', marginBottom: '1rem', fontWeight: 700 }}>¡Gracias por contactarnos!</h3>
+              <div style={{ fontSize: '1.75rem', color: '#065f46', marginBottom: '1rem', fontWeight: 700 }}>¡Gracias por contactarnos!</div>
               <p style={{ color: '#047857', fontSize: '1.15rem', lineHeight: 1.6 }}>Hemos recibido tu mensaje y nos comunicaremos a la brevedad.</p>
               <button 
                 onClick={() => setStatus('')} 

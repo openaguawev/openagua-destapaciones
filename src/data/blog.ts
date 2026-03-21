@@ -10,8 +10,8 @@ export interface Articulo {
 const getCtaHtml = () => `
   <div style="margin: 2rem 0; padding: 1.5rem; background: #f0fdf4; border-left: 4px solid #16A34A; border-radius: 8px;">
     <p style="margin-bottom: 1rem; font-weight: 600; color: #166534; font-size: 1.1rem;">¿Necesitás resolver tu problema hidráulico hoy mismo?</p>
-    <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20necesito%20ayuda%20urgente" target="_blank" rel="noopener noreferrer" style="background: #25D366; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 6px -1px rgba(37, 211, 102, 0.4);">
-      <span>💬 Consultar urgencia por WhatsApp</span>
+    <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20necesito%20ayuda%20t%C3%A9cnica" target="_blank" rel="noopener noreferrer" style="background: #25D366; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 6px -1px rgba(37, 211, 102, 0.4);">
+      <span>💬 Consultar servicio por WhatsApp</span>
     </a>
   </div>
 `;
@@ -101,7 +101,7 @@ export const getArticulos = (): Articulo[] => {
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cómo prevenir tapones en las columnas del consorcio?</h2>
         <p>Una inspección inmediata e hidrolavado de las tuberías centrales liberará la congestión, eliminando meses de papeles húmedos, tierra y sedimento solidificado antes de que colapse.</p>
         ${getFaqHtml([
-          {q: "¿Ofrecen abonos fijos a consorcios?", a: "Sí, creamos planes a medida de Limpieza Preventiva que eliminan de raíz las urgencias caras fuera de horario."},
+          {q: "¿Ofrecen abonos fijos a consorcios?", a: "Sí, creamos planes a medida de Limpieza Preventiva que eliminan de raíz los problemas caros fuera de horario."},
           {q: "¿Tienen alcance en los barrios cerrados de GBA?", a: "Damos mantenimiento programado en condominios desde Nordelta hasta Canning y CABA entero."},
           {q: "¿Incluyen informes técnicos de estas revisiones?", a: "Otorgamos certificados detallados sobre el funcionamiento y salud estructural detectada para tranquilidad de asambleas."}
         ])}

@@ -31,7 +31,7 @@ export default function Diferenciales() {
           {caracteristicas.map((item, index) => (
             <div className="diferencial-card" key={index}>
               <div className="diferencial-icon">{item.icon}</div>
-              <h3 className="diferencial-title">{item.title}</h3>
+              <div className="diferencial-title" style={{ fontWeight: 'bold' }}>{item.title}</div>
               <p className="diferencial-desc">{item.description}</p>
             </div>
           ))}

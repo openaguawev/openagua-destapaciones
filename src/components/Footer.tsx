@@ -10,7 +10,7 @@ export default function Footer() {
           <p className="slogan">Trabajos bien hechos, explicados y sin soluciones temporales.</p>
         </div>
         <div className="footer-links">
-          <h3>Servicios</h3>
+          <div className="footer-heading" style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1.5rem', color: '#fff' }}>Servicios</div>
           <ul>
             <li><Link href="/destapaciones-cloacas">Destapación de Cloacas</Link></li>
             <li><Link href="/destapaciones-canerias">Destapaciones de Cañerías</Link></li>
@@ -23,7 +23,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="footer-links">
-          <h3>Zonas de Cobertura</h3>
+          <div className="footer-heading" style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1.5rem', color: '#fff' }}>Zonas de Cobertura</div>
           <ul>
             <li><Link href="/zonas/caba">CABA</Link></li>
             <li><Link href="/zonas/zona-norte">Zona Norte</Link></li>
@@ -32,7 +32,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="footer-links">
-          <h3>Blog</h3>
+          <div className="footer-heading" style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1.5rem', color: '#fff' }}>Blog</div>
           <ul>
             <li><Link href="/blog/como-detectar-obstruccion-cloaca">Cómo detectar una obstrucción</Link></li>
             <li><Link href="/blog/sonda-vs-hidrojet-diferencias">Sonda vs Hidrojet</Link></li>
@@ -42,7 +42,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="footer-contact">
-          <h3>Contacto</h3>
+          <div className="footer-heading" style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1.5rem', color: '#fff' }}>Contacto</div>
           <p>Teléfono: <a href="tel:+5491151797649">15-5179-7649</a></p>
           <p>Horario: Lunes a Sábado 8 a 19 hs</p>
           <div className="social-icons">
