@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: Props) {
   const templateIndex = slug.length % descriptionTemplates.length;
 
   return {
-    title: `Destapaciones en ${barrio.name}, ${barrio.zoneName} | Openagua`,
-    description: descriptionTemplates[templateIndex],
+    title: `🥇 Destapaciones en ${barrio.name} | Máquinas de Sonda | Openagua 🏆`,
+    description: `✅ Destapaciones en ${barrio.name}. Solución hoy mismo con máquinas de sonda. Cloacas y pluviales. 📞 Llamanos al 11 5179-7649 o escribinos por WhatsApp. 🏆`,
     alternates: {
       canonical: `https://www.destapacionesopenagua.com.ar/barrios/${slug}`
     }

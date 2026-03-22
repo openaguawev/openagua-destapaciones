@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!zona) return { title: 'Zona no encontrada' }
 
   return {
-    title: `Destapaciones en ${zona.name} | Openagua`,
-    description: zona.description,
+    title: `🥇 Destapaciones en ${zona.name} | Máquinas de Sonda | Openagua 🏆`,
+    description: `✅ Destapaciones en ${zona.name}. Solución hoy mismo con máquinas de sonda. Cloacas y pluviales. 📞 Llamanos al 11 5179-7649 o escribinos por WhatsApp. 🏆`,
     alternates: {
       canonical: `https://www.destapacionesopenagua.com.ar/zonas/${slug}`,
     }

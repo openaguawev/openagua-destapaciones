@@ -17,8 +17,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.destapacionesopenagua.com.ar'),
-  title: 'Openagua | Destapaciones en CABA y GBA',
-  description: 'Servicio profesional de destapaciones de cloacas, cañerías e hidrojet en CABA y Gran Buenos Aires. Diagnóstico preciso. Atención de 8 a 19 hs.',
+  title: '🥇 Destapaciones en CABA y GBA | Máquinas de Sonda | Openagua 🏆',
+  description: '✅ Destapaciones en CABA y GBA. Solución hoy mismo con máquinas de sonda. Cloacas y pluviales. 📞 Llamanos al 11 5179-7649 o escribinos por WhatsApp. 🏆',
   alternates: {
     canonical: 'https://www.destapacionesopenagua.com.ar',
   },
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     apple: '/favicon.ico',
   },
   openGraph: {
-    title: 'Openagua | Destapaciones en CABA y GBA',
-    description: 'Servicio profesional de destapaciones de cloacas, cañerías e hidrojet en CABA y Gran Buenos Aires. Diagnóstico preciso. Atención de 8 a 19 hs.',
+    title: '🥇 Destapaciones en CABA y GBA | Máquinas de Sonda | Openagua 🏆',
+    description: '✅ Destapaciones en CABA y GBA. Solución hoy mismo con máquinas de sonda. Cloacas y pluviales. 📞 Llamanos al 11 5179-7649 o escribinos por WhatsApp. 🏆',
     url: 'https://www.destapacionesopenagua.com.ar',
     siteName: 'Openagua',
     images: [
@@ -44,8 +44,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Openagua | Destapaciones en CABA y GBA',
-    description: 'Servicio profesional de destapaciones de cloacas, cañerías e hidrojet en CABA y Gran Buenos Aires.',
+    title: '🥇 Destapaciones en CABA y GBA | Máquinas de Sonda | Openagua 🏆',
+    description: '✅ Destapaciones en CABA y GBA. Solución hoy mismo con máquinas de sonda. Cloacas y pluviales. 📞 Llamanos al 11 5179-7649 o escribinos por WhatsApp. 🏆',
     images: ['https://www.destapacionesopenagua.com.ar/logo.svg'],
   },
 };

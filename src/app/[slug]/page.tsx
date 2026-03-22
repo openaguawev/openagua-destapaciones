@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!servicio) return { title: 'Servicio no encontrado' };
 
   return {
-    title: `${servicio.title} en CABA y GBA | Openagua`,
-    description: servicio.excerpt,
+    title: `🥇 ${servicio.title} en CABA y GBA | Máquinas de Sonda | Openagua 🏆`,
+    description: `✅ ${servicio.title} en CABA y GBA. Solución hoy mismo con máquinas de sonda. Cloacas y pluviales. 📞 Llamanos al 11 5179-7649 o escribinos por WhatsApp. 🏆`,
     alternates: {
       canonical: `https://www.destapacionesopenagua.com.ar/${servicio.slug}`,
     }
