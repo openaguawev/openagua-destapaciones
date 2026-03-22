@@ -23,8 +23,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.destapacionesopenagua.com.ar',
   },
   icons: {
-    icon: '/icon.svg',
-    apple: '/favicon.ico',
+    icon: '/icon.png',
+    apple: '/apple-icon.png',
   },
   openGraph: {
     title: '🥇 Destapaciones en CABA y GBA | Máquinas de Sonda | Openagua 🏆',
