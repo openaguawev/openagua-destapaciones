@@ -187,6 +187,9 @@ export default async function BarrioPage({ params }: Props) {
                   <p style={{ marginBottom: '1.5rem' }}>
                     En Openagua, brindamos respuesta rápida en todo <strong>{barrio.name}</strong>. Nuestros móviles recorren las principales avenidas y calles de la zona garantizando que cada vivienda, comercio local o consorcio recupere el normal flujo de agua <strong>sin provocar roturas innecesarias</strong>.
                   </p>
+                  <p style={{ marginBottom: '1.5rem' }}>
+                    Ya sea que necesites <strong>destapar caños en {barrio.name}</strong> o tengas problemas de pisos inundados por <strong>cloacas tapadas en {barrio.name}</strong>, entendemos que tu sistema de tuberías no puede esperar. Asistencia técnica inmediata, sin intermediarios.
+                  </p>
                   <ul style={{ listStyle: 'none', padding: 0, marginTop: '2rem' }}>
                     {[
                       { icon: '🚽', text: `Cloacas tapadas en ${barrio.name}` },
