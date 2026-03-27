@@ -1,0 +1,50 @@
+import { MetadataRoute } from 'next';
+import { barrios } from '@/data/barrios';
+import { getServicios } from '@/data/servicios';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://www.destapacionesopenagua.com.ar';
+
+  const homeSitemaps: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/servicios/destapaciones`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    }
+  ];
+
+  const servicios = getServicios();
+  const serviciosSitemaps: MetadataRoute.Sitemap = servicios.map((servicio) => ({
+    url: `${baseUrl}/${servicio.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.9,
+  }));
+
+  const barriosSitemaps: MetadataRoute.Sitemap = barrios.map((barrio) => ({
+    url: `${baseUrl}/barrios/${barrio.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'yearly',
+    priority: 0.7,
+  }));
+
+  // Add blog posts optionally? The static xml had blog posts. Let's add the basic blog hub and static blog posts mentioned in the XML if they still exist.
+  // We can just add `/blog` for now as priority 0.8
+  const blogSitemap: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    }
+  ];
+
+  return [...homeSitemaps, ...serviciosSitemaps, ...barriosSitemaps, ...blogSitemap];
+}

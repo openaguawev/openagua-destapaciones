@@ -24,6 +24,11 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
     }
   }
 
-  // 3. Catch-all: default to Home with permanent redirect (301)
+  // 3. Match generic 'destapaciones' for untreated zones
+  if (path.includes('destapac')) {
+    permanentRedirect('/servicios/destapaciones');
+  }
+
+  // 4. Catch-all: default to Home with permanent redirect (301)
   permanentRedirect('/');
 }
