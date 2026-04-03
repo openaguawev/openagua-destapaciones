@@ -22,15 +22,15 @@ export default function BlogIndex() {
         
         <div className="blog-grid">
           {articulos.map((art) => (
-            <article key={art.slug} className="blog-card">
+            <Link href={`/blog/${art.slug}`} key={art.slug} className="blog-card" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="blog-card-content">
                 <div className="article-title" style={{ fontWeight: 'bold', fontSize: '1.25rem', marginBottom: '0.5rem', color: '#0f172a' }}>{art.title}</div>
-                <p>{art.excerpt}</p>
-                <Link href={`/blog/${art.slug}`} className="blog-read-more">
+                <p style={{ color: '#475569', marginBottom: '1rem' }}>{art.excerpt}</p>
+                <div className="blog-read-more" style={{ color: '#16A34A', fontWeight: 'bold' }}>
                   Leer artículo completo →
-                </Link>
+                </div>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>

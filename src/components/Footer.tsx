@@ -55,11 +55,19 @@ export default function Footer() {
             <a href="https://www.youtube.com/@openagua/videos" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="Mirá nuestros trabajos en YouTube">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.16 1 12 1 12s0 3.84.46 5.58a2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.84 23 12 23 12s0-3.84-.46-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg>
             </a>
+            <a href="https://www.tiktok.com/@destapacionesopenagua" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="Seguinos en TikTok">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512" fill="currentColor">
+                <path d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25V349.38A162.55 162.55 0 1 1 185 188.31V278.2a74.62 74.62 0 1 0 52.23 71.18V0l88 0a121.18 121.18 0 0 0 1.86 22.17h0A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14z"/>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
       <div className="footer-bottom">
-        <div className="container">
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <div className="footer-final-cta" style={{ marginBottom: '1.5rem', fontSize: '1.25rem', fontWeight: 'bold', color: '#fff' }}>
+            <a href="tel:+5491151797649" style={{ color: 'inherit', textDecoration: 'none' }}>📞 ¿Necesitás una destapación ahora? 11 5179-7649</a>
+          </div>
           <p>&copy; 2026 Openagua Destapaciones. Todos los derechos reservados.</p>
         </div>
       </div>
