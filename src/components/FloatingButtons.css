@@ -13,6 +13,11 @@
   bottom: 24px;
 }
 
+.floating-btn svg {
+  width: 26px !important;
+  height: 26px !important;
+}
+
 .floating-btn:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);

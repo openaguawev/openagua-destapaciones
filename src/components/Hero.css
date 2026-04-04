@@ -21,6 +21,7 @@
   position: relative;
   z-index: 2;
   max-width: 800px;
+  transform: translateY(-24px);
 }
 
 .hero-content h1 {
@@ -42,38 +43,44 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 
 .hero-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 1rem 2rem;
+  padding: 14px 22px;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   transition: all 0.3s ease;
   min-width: 220px;
   justify-content: center;
   text-decoration: none;
 }
 
-/* Botón Llamar ahora: fondo oscuro por defecto en desktop */
+.hero-btn .icon svg {
+  width: 26px !important;
+  height: 26px !important;
+}
+
+/* FASE 3 - Botón Llamar global usando azul */
 .hero-btn-call {
-  background-color: #0f172a !important;
-  border-color: #0f172a !important;
+  background-color: #1D4ED8 !important;
+  border-color: #1D4ED8 !important;
   color: #ffffff !important;
 }
 
 .hero-btn-call:hover {
-  background-color: #1e3a5f !important;
-  border-color: #1e3a5f !important;
+  background-color: #1e40af !important;
+  border-color: #1e40af !important;
 }
 
 @media (max-width: 768px) {
   .hero-section {
     min-height: auto;
-    padding: 5rem 0 7rem 0; /* Desplazar hacia arriba aprox 30px reduciendo padding superior */
+    padding: 5rem 0 7rem 0;
   }
   
   .hero-content {
@@ -90,36 +97,19 @@
     margin: 0 auto 32px auto;
   }
   
-  /* CORRECCIÓN MOBILE: stack vertical, sin superposición */
   .hero-ctas {
     flex-direction: column;
     gap: 16px;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 60px;
   }
   
   .hero-btn {
     width: 100%;
     min-width: unset;
-    padding: 18px 24px; /* Aumentado 15-20% */
-    font-size: 1.2rem; /* Aumentado texto */
-    border-radius: 10px;
-  }
-  
-  .hero-btn .icon svg {
-    width: 24px; /* Icono más grande */
-    height: 24px;
-  }
-
-  /* FASE 2 - Botón Llamar en mobile usa el azul del flotante */
-  .hero-btn-call {
-    background-color: #1D4ED8 !important;
-    border-color: #1D4ED8 !important;
-  }
-  
-  .hero-btn-call:hover {
-    background-color: #1e40af !important;
-    border-color: #1e40af !important;
+    padding: 14px 22px;
+    font-size: 1rem;
+    border-radius: 8px;
   }
 }
 
@@ -130,7 +120,7 @@
   }
   
   .hero-btn {
-    padding: 16px 20px;
-    font-size: 1.1rem;
+    padding: 12px 20px;
+    font-size: 0.95rem;
   }
 }
