@@ -124,3 +124,14 @@
     font-size: 0.95rem;
   }
 }
+
+/* FASE 1 y 2 - Ajustes exclusivos para Desktop */
+@media (min-width: 769px) {
+  .hero-content {
+    transform: translateY(24px);
+  }
+  .hero-ctas {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
