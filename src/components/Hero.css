@@ -38,73 +38,36 @@
   max-width: 600px;
 }
 
-.hero-top-info {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-}
-
-.hero-badge {
-  background: #16A34A;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.hero-phone-link {
-  color: white;
-  font-weight: 700;
-  font-size: 1.25rem;
-  text-decoration: none;
-  border-bottom: 2px solid #166534;
-}
-
 .hero-ctas {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-.hero-btn-main {
-  background: #25D366;
-  color: white;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 1.1rem;
-  border: none;
+.hero-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
-  transition: transform 0.2s;
-}
-
-.btn-call-hero {
-  background: #0f172a;
-  color: white;
-  padding: 14px 28px;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
   border-radius: 8px;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.1rem;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+  transition: all 0.3s ease;
+  min-width: 220px;
+  justify-content: center;
   text-decoration: none;
-  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.4);
-  transition: transform 0.2s;
 }
 
-.hero-btn-main:hover, .btn-call-hero:hover {
-  transform: translateY(-2px);
+/* Botón Llamar ahora: fondo azul oscuro / negro */
+.hero-btn-call {
+  background-color: #0f172a !important;
+  border-color: #0f172a !important;
+  color: #ffffff !important;
+}
+
+.hero-btn-call:hover {
+  background-color: #1e3a5f !important;
+  border-color: #1e3a5f !important;
 }
 
 @media (max-width: 768px) {
@@ -114,27 +77,43 @@
   }
   
   .hero-content {
-    text-align: left; /* Consistencia mobile-first */
+    text-align: center;
   }
   
   .hero-content h1 {
-    font-size: 2.25rem;
-    line-height: 1.2;
+    font-size: 2rem;
+    line-height: 1.25;
   }
   
-  .hero-top-info {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+  .hero-subtitle {
+    font-size: 1.125rem;
+    margin: 0 auto 32px auto;
   }
   
+  /* CORRECCIÓN MOBILE: stack vertical, sin superposición */
   .hero-ctas {
     flex-direction: column;
+    gap: 12px;
     width: 100%;
+    margin-bottom: 2rem;
   }
   
-  .hero-btn-main, .btn-call-hero {
+  .hero-btn {
     width: 100%;
-    justify-content: center;
+    min-width: unset;
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* iPhone SE y pantallas muy pequeñas */
+@media (max-width: 375px) {
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+  
+  .hero-btn {
+    padding: 12px 16px;
+    font-size: 0.95rem;
   }
 }

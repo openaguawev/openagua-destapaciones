@@ -34,11 +34,10 @@ export default function Footer() {
         <div className="footer-links">
           <div className="footer-heading" style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1.5rem', color: '#fff' }}>Blog</div>
           <ul>
-            <li><Link href="/blog/como-detectar-obstruccion-cloaca">Cómo detectar una obstrucción</Link></li>
-            <li><Link href="/blog/sonda-vs-hidrojet-diferencias">Sonda vs Hidrojet</Link></li>
-            <li><Link href="/blog/cuanto-cuesta-destapar-cloaca">¿Cuánto cuesta destapar?</Link></li>
-            <li><Link href="/blog/raices-en-canerias">Raíces en cañerías</Link></li>
-            <li><Link href="/blog/como-funciona-hidrojet">Cómo funciona el hidrojet</Link></li>
+            <li><Link href="/blog/inodoro-rebalsa-que-hacer">🚽 Inodoro rebalsa: qué hacer</Link></li>
+            <li><Link href="/blog/rejilla-patio-tapada-lluvia">🌧 Rejilla del patio tapada</Link></li>
+            <li><Link href="/blog/problema-departamento-o-columna">🏢 ¿Depto o columna del edificio?</Link></li>
+            <li><Link href="/blog/ducha-desagota-lento">🚿 La ducha desagota lento</Link></li>
           </ul>
         </div>
         <div className="footer-contact">
