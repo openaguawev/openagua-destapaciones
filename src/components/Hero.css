@@ -58,7 +58,7 @@
   text-decoration: none;
 }
 
-/* Botón Llamar ahora: fondo azul oscuro / negro */
+/* Botón Llamar ahora: fondo oscuro por defecto en desktop */
 .hero-btn-call {
   background-color: #0f172a !important;
   border-color: #0f172a !important;
@@ -73,7 +73,7 @@
 @media (max-width: 768px) {
   .hero-section {
     min-height: auto;
-    padding: 7rem 0 5rem 0;
+    padding: 5rem 0 7rem 0; /* Desplazar hacia arriba aprox 30px reduciendo padding superior */
   }
   
   .hero-content {
@@ -93,7 +93,7 @@
   /* CORRECCIÓN MOBILE: stack vertical, sin superposición */
   .hero-ctas {
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
     width: 100%;
     margin-bottom: 2rem;
   }
@@ -101,8 +101,25 @@
   .hero-btn {
     width: 100%;
     min-width: unset;
-    padding: 14px 20px;
-    font-size: 1rem;
+    padding: 18px 24px; /* Aumentado 15-20% */
+    font-size: 1.2rem; /* Aumentado texto */
+    border-radius: 10px;
+  }
+  
+  .hero-btn .icon svg {
+    width: 24px; /* Icono más grande */
+    height: 24px;
+  }
+
+  /* FASE 2 - Botón Llamar en mobile usa el azul del flotante */
+  .hero-btn-call {
+    background-color: #1D4ED8 !important;
+    border-color: #1D4ED8 !important;
+  }
+  
+  .hero-btn-call:hover {
+    background-color: #1e40af !important;
+    border-color: #1e40af !important;
   }
 }
 
@@ -113,7 +130,7 @@
   }
   
   .hero-btn {
-    padding: 12px 16px;
-    font-size: 0.95rem;
+    padding: 16px 20px;
+    font-size: 1.1rem;
   }
 }
