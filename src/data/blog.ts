@@ -159,8 +159,8 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'inodoro-rebalsa-que-hacer',
       title: 'El inodoro rebalsa: qué hacer en los primeros 5 minutos',
-      image: '/img/inodoro-tapado.jpg',
-      alt: 'Qué hacer cuando el inodoro rebalsa en CABA y GBA - Openagua',
+      image: '/img/inodoro tapado.jpg',
+      alt: 'Cómo destapar un inodoro rebalsado en CABA y GBA',
       excerpt: 'Guía de emergencia: pasos críticos para evitar una inundación sanitaria en tu baño.',
       content: `
         <p>Entrar al baño y ver que el agua del inodoro sube peligrosamente después de tirar la cadena es una de las situaciones más estresantes que podés vivir en tu casa o departamento de <strong>CABA</strong> o <strong>GBA</strong>. Esos primeros 5 minutos son determinantes para evitar daños mayores, malos olores persistentes y filtraciones hacia los pisos inferiores.</p>
@@ -197,8 +197,8 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'rejilla-patio-tapada-lluvia',
       title: 'Rejilla del patio tapada: cómo evitar inundaciones cuando llueve',
-      image: '/img/rejilla-patio.jpg',
-      alt: 'Limpieza de rejillas de patio para evitar inundaciones en GBA y CABA - Openagua',
+      image: '/img/rejilla patio.jpg',
+      alt: 'Rejilla de patio tapada por hojas y suciedad',
       excerpt: 'No esperes a la tormenta. Descubrí cómo mantener tus desagües pluviales libres de sedimentos.',
       content: `
         <p>Las tormentas fuertes en <strong>Buenos Aires</strong> son cada vez más frecuentes, y para quienes tienen patios o terrazas, la rejilla es el único alivio. Sin embargo, cuando la rejilla del patio está tapada, el agua comienza a acumularse rápidamente, amenazando con entrar al living o al lavadero.</p>
@@ -233,8 +233,8 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'problema-departamento-o-columna',
       title: '¿El problema está en tu depto o en la columna del edificio?',
-      image: '/img/columna-edificio.jpg',
-      alt: 'Diferencia entre cañería interna y columna de edificio - Openagua',
+      image: '/img/edificio.jpg',
+      alt: 'Inspección profesional de cañerías en edificio',
       excerpt: 'Aprendé a identificar quién debe pagar la destapación en un consorcio de CABA.',
       content: `
         <p>Vivir en un edificio en <strong>CABA</strong> tiene sus ventajas, pero las cañerías compartidas no son una de ellas. Cuando la bacha de la cocina o el inodoro se tapan, surge la gran duda: ¿Es un problema mío o es responsabilidad del consorcio? La respuesta define quién paga la factura de la destapación.</p>
@@ -268,8 +268,8 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'ducha-desagota-lento',
       title: 'La ducha desagota lento: causas y cómo solucionarlo',
-      image: '/img/ducha-desague.jpg',
-      alt: 'Causas de la ducha tapada y soluciones en Buenos Aires - Openagua',
+      image: '/img/rejilla.jpg',
+      alt: 'Cabellos tapando rejilla de ducha',
       excerpt: '¿Terminás de bañarte con el agua por los tobillos? Descubrí cómo limpiar tu drenaje de forma efectiva.',
       content: `
         <p>Nada arruina más una ducha relajante que descubrir que estás parado en una pileta de agua estancada. Si la ducha desagota lento, el problema rara vez se soluciona solo; al contrario, empeora con cada uso hasta que el tapón es total.</p>
