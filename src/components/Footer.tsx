@@ -34,10 +34,14 @@ export default function Footer() {
         <div className="footer-links">
           <div className="footer-heading" style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1.5rem', color: '#fff' }}>Blog</div>
           <ul>
-            <li><Link href="/blog/inodoro-rebalsa-que-hacer">🚽 Inodoro rebalsa: qué hacer</Link></li>
-            <li><Link href="/blog/rejilla-patio-tapada-lluvia">🌧 Rejilla del patio tapada</Link></li>
-            <li><Link href="/blog/problema-departamento-o-columna">🏢 ¿Depto o columna del edificio?</Link></li>
-            <li><Link href="/blog/ducha-desagota-lento">🚿 La ducha desagota lento</Link></li>
+            <li><Link href="/blog/por-que-cocina-huele-a-cloaca">Por qué la cocina huele a cloaca</Link></li>
+            <li><Link href="/blog/5-senales-columna-edificio-tapada">Cómo detectar obstrucción en columna</Link></li>
+            <li><Link href="/blog/resorte-vs-hidrojet-cual-es-mejor">Sonda vs Hidrojet</Link></li>
+            <li><Link href="/blog/video-inspeccion-saber-cano-roto-sin-romper">Video Inspección de cañerías</Link></li>
+            <li><Link href="/blog/inodoro-rebalsa-que-hacer">Inodoro rebalsa: qué hacer</Link></li>
+            <li><Link href="/blog/rejilla-patio-tapada-lluvia">Rejilla del patio tapada</Link></li>
+            <li><Link href="/blog/problema-departamento-o-columna">¿El problema está en tu depto o columna?</Link></li>
+            <li><Link href="/blog/ducha-desagota-lento">La ducha desagota lento</Link></li>
           </ul>
         </div>
         <div className="footer-contact">
@@ -65,7 +69,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div className="footer-final-cta" style={{ marginBottom: '1.5rem', fontSize: '1.25rem', fontWeight: 'bold', color: '#fff' }}>
-            <a href="tel:+5491151797649" style={{ color: 'inherit', textDecoration: 'none' }}>📞 ¿Necesitás una destapación ahora? 11 5179-7649</a>
+            <a href="tel:+5491151797649" style={{ color: 'inherit', textDecoration: 'none' }}>¿Necesitás una destapación ahora? 11 5179-7649</a>
           </div>
           <p>&copy; 2026 Openagua Destapaciones. Todos los derechos reservados.</p>
         </div>

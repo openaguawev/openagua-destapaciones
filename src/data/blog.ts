@@ -11,7 +11,7 @@ const getCtaHtml = () => `
   <div style="margin: 2rem 0; padding: 1.5rem; background: #f0fdf4; border-left: 4px solid #16A34A; border-radius: 8px;">
     <p style="margin-bottom: 1rem; font-weight: 600; color: #166534; font-size: 1.1rem;">¿Necesitás resolver tu problema hidráulico hoy mismo?</p>
     <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20necesito%20ayuda%20t%C3%A9cnica" target="_blank" rel="noopener noreferrer" style="background: #25D366; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 6px -1px rgba(37, 211, 102, 0.4);">
-      <span>💬 Consultar servicio por WhatsApp</span>
+      <span>Consultar servicio por WhatsApp</span>
     </a>
   </div>
 `;
@@ -158,7 +158,7 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'inodoro-rebalsa-que-hacer',
-      title: '🚽 El inodoro rebalsa: qué hacer en los primeros 5 minutos',
+      title: 'El inodoro rebalsa: qué hacer en los primeros 5 minutos',
       image: '/img/inodoro-tapado.jpg',
       alt: 'Qué hacer cuando el inodoro rebalsa en CABA y GBA - Openagua',
       excerpt: 'Guía de emergencia: pasos críticos para evitar una inundación sanitaria en tu baño.',
@@ -196,7 +196,7 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'rejilla-patio-tapada-lluvia',
-      title: '🌧 Rejilla del patio tapada: cómo evitar inundaciones cuando llueve',
+      title: 'Rejilla del patio tapada: cómo evitar inundaciones cuando llueve',
       image: '/img/rejilla-patio.jpg',
       alt: 'Limpieza de rejillas de patio para evitar inundaciones en GBA y CABA - Openagua',
       excerpt: 'No esperes a la tormenta. Descubrí cómo mantener tus desagües pluviales libres de sedimentos.',
@@ -232,7 +232,7 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'problema-departamento-o-columna',
-      title: '🏢 ¿El problema está en tu depto o en la columna del edificio?',
+      title: '¿El problema está en tu depto o en la columna del edificio?',
       image: '/img/columna-edificio.jpg',
       alt: 'Diferencia entre cañería interna y columna de edificio - Openagua',
       excerpt: 'Aprendé a identificar quién debe pagar la destapación en un consorcio de CABA.',
@@ -267,7 +267,7 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'ducha-desagota-lento',
-      title: '🚿 La ducha desagota lento: causas y cómo solucionarlo',
+      title: 'La ducha desagota lento: causas y cómo solucionarlo',
       image: '/img/ducha-desague.jpg',
       alt: 'Causas de la ducha tapada y soluciones en Buenos Aires - Openagua',
       excerpt: '¿Terminás de bañarte con el agua por los tobillos? Descubrí cómo limpiar tu drenaje de forma efectiva.',
