@@ -181,15 +181,55 @@ export default async function BarrioPage({ params }: Props) {
                   ¿Problemas para destapar caños en {barrio.name}?
                 </h2>
                 <div style={{ fontSize: '1.15rem', color: '#475569', lineHeight: 1.8 }}>
-                  <p style={{ marginBottom: '1.5rem' }}>
-                    Si notás que el agua no baja en la bacha, el inodoro rebalsa o la cámara séptica colapsó, <strong>estás frente a una emergencia cloacal</strong>. Las grasas acumuladas y restos de jabón solidifican y exigen limpieza profesional prioritaria.
-                  </p>
-                  <p style={{ marginBottom: '1.5rem' }}>
-                    En Openagua, brindamos respuesta rápida en todo <strong>{barrio.name}</strong>. Nuestros móviles recorren las principales avenidas y calles de la zona garantizando que cada vivienda, comercio local o consorcio recupere el normal flujo de agua <strong>sin provocar roturas innecesarias</strong>.
-                  </p>
-                  <p style={{ marginBottom: '1.5rem' }}>
-                    Ya sea que necesites <strong>destapar caños en {barrio.name}</strong> o tengas problemas de pisos inundados por <strong>cloacas tapadas en {barrio.name}</strong>, entendemos que tu sistema de tuberías no puede esperar. Asistencia técnica inmediata, sin intermediarios.
-                  </p>
+                  {(() => {
+                    const isComercialRoute = ['destapaciones-palermo', 'destapaciones-recoleta', 'destapaciones-liniers', 'destapaciones-belgrano', 'destapaciones-san-nicolas', 'destapaciones-puerto-madero'].some(c => barrio.slug === c);
+                    const isCabaRoute = barrio.zoneSlug === 'caba';
+                    const nearbyStr = nearbyBarrios.length > 0 ? nearbyBarrios.map(b => b.name).join(', ') : 'barrios cercanos';
+
+                    if (isComercialRoute) {
+                      return (
+                        <>
+                          <p style={{ marginBottom: '1.5rem' }}>
+                            En la constante actividad comercial de <strong>{barrio.name}</strong>, trabajamos asiduamente con restaurantes y supermercados que sufren bloqueos de cañerías por el acopio continuo de aceites y grasas.
+                          </p>
+                          <p style={{ marginBottom: '1.5rem' }}>
+                            Entendemos que un local no puede frenar sus ventas ni recibir clientela con malos olores. Por eso accionamos velozmente enviando nuestros técnicos para desobstruir desagües y rejillas industriales, retornando a la higiene total.
+                          </p>
+                          <p style={{ marginBottom: '1.5rem' }}>
+                            Como transitamos rutinariamente el área, nuestros equipos también cubren por goteo cualquier urgencia y problema de plomería domiciliaria en casas o departamentos de vecinos en {nearbyStr}.
+                          </p>
+                        </>
+                      );
+                    } else if (isCabaRoute) {
+                      return (
+                        <>
+                          <p style={{ marginBottom: '1.5rem' }}>
+                            En <strong>{barrio.name}</strong> solemos trabajar junto a consorcios y particulares en edificios donde son comunes los atascos crónicos por sarro, jabón y grasa vieja en cañerías de muchos años.
+                          </p>
+                          <p style={{ marginBottom: '1.5rem' }}>
+                            Atendemos desde inodoros que rebalsan repentinamente hasta columnas troncales. Nuestros técnicos cuidan minuciosamente de destapar los caños sin necesidad de romper cerámicas o ensuciar tu departamento.
+                          </p>
+                          <p style={{ marginBottom: '1.5rem' }}>
+                            Conocemos las calles del barrio a la perfección. Es natural para nosotros que, una vez resuelta tu urgencia, nuestros móviles continúen prestando servicio técnico hacia áreas lindantes como {nearbyStr}.
+                          </p>
+                        </>
+                      );
+                    } else {
+                      return (
+                        <>
+                          <p style={{ marginBottom: '1.5rem' }}>
+                            En gran parte de las propiedades y viviendas de <strong>{barrio.name}</strong> resulta habitual que las cloacas principales se tapen con barro profundo o raíces de árboles del jardín.
+                          </p>
+                          <p style={{ marginBottom: '1.5rem' }}>
+                            Contamos con hidrojet y sondas gruesas ideales para que nuestros equipos puedan seccionar raíces y despejar desagües pluviales a cero, permitiendo que el agua de lluvia fluya sin riesgo de anegamientos.
+                          </p>
+                          <p style={{ marginBottom: '1.5rem' }}>
+                            Nuestros móviles recorren las avenidas de la zona todos los días, dándonos el margen veloz para llegar a tu domicilio en el día o seguir cubriendo urgencias sanitarias en {nearbyStr}.
+                          </p>
+                        </>
+                      );
+                    }
+                  })()}
                   <ul style={{ listStyle: 'none', padding: 0, marginTop: '2rem' }}>
                     {[
                       { icon: '🚽', text: `Cloacas tapadas en ${barrio.name}` },

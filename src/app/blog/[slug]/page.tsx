@@ -69,9 +69,32 @@ export default async function BlogPost({ params }: Props) {
       </div>
       
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
-      <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20quiero%20consultar%20por%20un%20presupuesto" style={{ background: '#16A34A', color: 'white', padding: '1rem 2rem', borderRadius: '8px', textDecoration: 'none', display: 'inline-block', marginTop: '2rem', fontWeight: 'bold' }}>
-        Consultar por WhatsApp
-      </a>
+      
+      <div style={{ marginTop: '3.5rem', paddingTop: '2.5rem', borderTop: '2px solid #e2e8f0', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+        <h3 style={{ fontSize: '1.35rem', color: '#0f172a', fontWeight: 800 }}>Soluciones profesionales recomendadas</h3>
+        <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '1.05rem', margin: 0 }}>Si el problema persiste, es vital contar con asistencia técnica de inmediato para evitar daños estructurales en cañerías o desbordes sanitarios.</p>
+        
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
+          <a href="/destapaciones-cloacas" style={{ padding: '1rem', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', textDecoration: 'none', color: '#0f172a', transition: 'border-color 0.2s', display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <span style={{ fontSize: '1.5rem' }}>🔧</span>
+            <span style={{ fontWeight: 600 }}>Destapación de Cloacas</span>
+          </a>
+          <a href="/video-inspeccion-canerias" style={{ padding: '1rem', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', textDecoration: 'none', color: '#0f172a', transition: 'border-color 0.2s', display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <span style={{ fontSize: '1.5rem' }}>📹</span>
+            <span style={{ fontWeight: 600 }}>Inspección por Cámara</span>
+          </a>
+          <a href="/barrios/destapaciones-palermo" style={{ padding: '1rem', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', textDecoration: 'none', color: '#0f172a', transition: 'border-color 0.2s', display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <span style={{ fontSize: '1.5rem' }}>📍</span>
+            <span style={{ fontWeight: 600 }}>Ver Coberturas en CABA</span>
+          </a>
+        </div>
+      </div>
+
+      <div style={{ marginTop: '2.5rem' }}>
+        <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20quiero%20consultar%20por%20un%20presupuesto" style={{ background: '#16A34A', color: 'white', padding: '1rem 2rem', borderRadius: '8px', textDecoration: 'none', display: 'inline-block', fontWeight: 'bold', boxShadow: '0 4px 6px -1px rgba(22, 163, 74, 0.4)' }}>
+          Consultar urgencia por WhatsApp
+        </a>
+      </div>
     </main>
   )
 }
