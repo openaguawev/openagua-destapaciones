@@ -26,6 +26,7 @@ export default function DestapacionesHubPage() {
           priority 
           style={{ objectFit: 'cover', zIndex: 0 }} 
           quality={85}
+          sizes="100vw"
         />
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75))', zIndex: 1 }} />
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>

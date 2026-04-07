@@ -61,6 +61,7 @@ export default async function BlogPost({ params }: Props) {
           alt={post.alt} 
           width={1200}
           height={630}
+          sizes="(max-width: 768px) 100vw, 800px"
           priority={true}
           style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} 
           quality={85}

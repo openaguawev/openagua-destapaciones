@@ -71,8 +71,10 @@ export default function NuestrosTrabajos() {
                   src={trabajo.src} 
                   alt={trabajo.alt} 
                   fill 
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{ objectFit: 'cover' }} 
                   quality={85}
+                  loading="lazy"
                 />
               </div>
               <div style={{ padding: '1.25rem', backgroundColor: '#fff', textAlign: 'center', borderTop: '4px solid #16A34A' }}>

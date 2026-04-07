@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getArticulos } from '@/data/blog';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import './blog.css';
 
 export const metadata: Metadata = {
@@ -23,6 +24,16 @@ export default function BlogIndex() {
         <div className="blog-grid">
           {articulos.map((art) => (
             <Link href={`/blog/${art.slug}`} key={art.slug} className="blog-card" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <div style={{ position: 'relative', width: '100%', aspectRatio: '16/9', overflow: 'hidden' }}>
+                <Image 
+                  src={art.image} 
+                  alt={art.alt} 
+                  fill 
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ objectFit: 'cover' }}
+                  loading="lazy"
+                />
+              </div>
               <div className="blog-card-content">
                 <div className="article-title" style={{ fontWeight: 'bold', fontSize: '1.25rem', marginBottom: '0.5rem', color: '#0f172a' }}>{art.title}</div>
                 <p style={{ color: '#475569', marginBottom: '1rem' }}>{art.excerpt}</p>

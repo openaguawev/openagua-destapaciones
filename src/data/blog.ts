@@ -33,7 +33,7 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'por-que-cocina-huele-a-cloaca',
       title: '¿Por qué mi cocina huele a cloaca? 3 causas y soluciones definitivas',
-      image: '/img/destapacion cocina.jpg',
+      image: '/img/cocina huele cloaca.jpg',
       alt: 'Destapación de cocina y solución a olores de cloaca en CABA - Openagua',
       excerpt: 'Descubrí cómo eliminar definitivamente el mal olor de tus cañerías en CABA y GBA.',
       content: `
@@ -83,7 +83,7 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: '5-senales-columna-edificio-tapada',
       title: '5 señales de que la columna de tu edificio está por taparse',
-      image: '/img/maquina destapa cloacas.jpg',
+      image: '/img/caño columna.jpg',
       alt: 'Mantenimiento preventivo de columnas en consorcios de Gran Buenos Aires - Openagua',
       excerpt: 'Guía para administradores: cómo anticipar la inundación de planta baja.',
       content: `
@@ -197,8 +197,8 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'rejilla-patio-tapada-lluvia',
       title: 'Rejilla del patio tapada: cómo evitar inundaciones cuando llueve',
-      image: '/img/rejilla patio.jpg',
-      alt: 'Rejilla de patio tapada por hojas y suciedad',
+      image: '/img/rejilla pluvial.jpg',
+      alt: 'Rejilla pluvial tapada en patio por sedimentos de lluvia - Openagua',
       excerpt: 'No esperes a la tormenta. Descubrí cómo mantener tus desagües pluviales libres de sedimentos.',
       content: `
         <p>Las tormentas fuertes en <strong>Buenos Aires</strong> son cada vez más frecuentes, y para quienes tienen patios o terrazas, la rejilla es el único alivio. Sin embargo, cuando la rejilla del patio está tapada, el agua comienza a acumularse rápidamente, amenazando con entrar al living o al lavadero.</p>
@@ -268,8 +268,8 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'ducha-desagota-lento',
       title: 'La ducha desagota lento: causas y cómo solucionarlo',
-      image: '/img/rejilla.jpg',
-      alt: 'Cabellos tapando rejilla de ducha',
+      image: '/img/limpieza sifon baño.jpg',
+      alt: 'Cabellos tapando rejilla de ducha y limpieza de sifón',
       excerpt: '¿Terminás de bañarte con el agua por los tobillos? Descubrí cómo limpiar tu drenaje de forma efectiva.',
       content: `
         <p>Nada arruina más una ducha relajante que descubrir que estás parado en una pileta de agua estancada. Si la ducha desagota lento, el problema rara vez se soluciona solo; al contrario, empeora con cada uso hasta que el tapón es total.</p>
@@ -302,8 +302,8 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'como-destapar-inodoro',
       title: 'Cómo destapar un inodoro: soluciones caseras y cuidados urgentes',
-      image: '/img/inodoro tapado.jpg',
-      alt: 'Destapación de inodoro rápida y segura - Openagua',
+      image: '/img/destapacion de cloaca.jpg',
+      alt: 'Servicio de destapación de inodoro y cloacas con equipo especializado - Openagua',
       excerpt: 'Conocé los métodos más efectivos para destapar tu inodoro tapado rápidamente y sin llamar a un plomero a la primera.',
       content: `
         <p>Tener un inodoro tapado es la emergencia sanitaria más estresante que un hogar en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong> puede enfrentar. Un simple bollo de papel higiénico de más, restos sanitarios incorrectos, y de repente, el agua sube amenazantemente hacia los bordes del sanitario.</p>
@@ -334,7 +334,7 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'como-destapar-rejillas',
       title: 'Cómo destapar rejillas de patio, baños y terrazas obstruidas',
-      image: '/img/rejilla patio.jpg',
+      image: '/img/destapando rejilla.jpg',
       alt: 'Destapación de rejilla bloqueada en patio o terraza - Openagua',
       excerpt: 'Hojas, tierra o cabellos bloquean tu rejilla. Pasos vitales para evitar inundaciones.',
       content: `
@@ -366,7 +366,7 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'como-destapar-pileta-cocina',
       title: 'Cómo destapar la pileta de cocina sin dañar los caños',
-      image: '/img/destapacion cocina.jpg',
+      image: '/img/destapando cocina.jpg',
       alt: 'Pileta de cocina tapada y llena de agua esperando ayuda técnica - Openagua',
       excerpt: 'Tu bacha expulsa mal olor y no traga el agua: descubrí por qué los palos de escoba rompen todo y cómo abordarlo seguro.',
       content: `
@@ -399,7 +399,7 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'diferencias-canerias-cloacales-pluviales',
       title: 'Diferencias entre cañerías cloacales y pluviales | Openagua',
-      image: '/img/maquina destapa cloacas.jpg',
+      image: '/img/Cañerías cloacales vs pluviales .jpg',
       alt: 'Diferencias entre tuberías cloacales y pluviales - Openagua',
       excerpt: 'Descubrí qué transporta cada sistema, cómo detectar cuál está tapado y cuándo conviene llamar a un profesional.',
       content: `

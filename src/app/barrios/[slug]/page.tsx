@@ -3,6 +3,7 @@ import { getZonas } from '@/data/zonas';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Script from 'next/script';
+import Image from 'next/image';
 import '@/components/Zonas.css';
 import { handleLegacyRedirect } from '@/utils/legacyRedirect';
 
@@ -98,16 +99,20 @@ export default async function BarrioPage({ params }: Props) {
             minHeight: '75vh', 
             display: 'flex', 
             alignItems: 'center', 
-            paddingTop: '60px',
-            backgroundImage: 'url(/img/destapacion%20de%20cloaca.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            color: '#fff',
-            padding: '4rem 0'
+            overflow: 'hidden'
           }}
         >
-          <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15, 23, 42, 0.85)' }}></div>
-          <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>
+          <Image 
+            src="/img/destapacion de cloaca.jpg" 
+            alt={`Servicio de destapaciones en ${barrio.name} - Openagua`} 
+            fill 
+            priority 
+            style={{ objectFit: 'cover', zIndex: 0 }} 
+            quality={85}
+            sizes="100vw"
+          />
+          <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15, 23, 42, 0.85)', zIndex: 1 }}></div>
+          <div className="container" style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
             <div style={{ display: 'inline-block', backgroundColor: '#f59e0b', color: '#000', padding: '0.5rem 1rem', borderRadius: '30px', fontWeight: 'bold', fontSize: '0.9rem', marginBottom: '1.5rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
               Servicio Activo en tu Zona
             </div>
