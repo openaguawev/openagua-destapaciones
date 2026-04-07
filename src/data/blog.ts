@@ -197,8 +197,8 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'rejilla-patio-tapada-lluvia',
       title: 'Rejilla del patio tapada: cómo evitar inundaciones cuando llueve',
-      image: '/img/rejilla pluvial.jpg',
-      alt: 'Rejilla pluvial tapada en patio por sedimentos de lluvia - Openagua',
+      image: '/img/rejilla patio.jpg',
+      alt: 'Destapación de rejilla de patio inundada tras tormenta - Openagua',
       excerpt: 'No esperes a la tormenta. Descubrí cómo mantener tus desagües pluviales libres de sedimentos.',
       content: `
         <p>Las tormentas fuertes en <strong>Buenos Aires</strong> son cada vez más frecuentes, y para quienes tienen patios o terrazas, la rejilla es el único alivio. Sin embargo, cuando la rejilla del patio está tapada, el agua comienza a acumularse rápidamente, amenazando con entrar al living o al lavadero.</p>
@@ -268,8 +268,8 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'ducha-desagota-lento',
       title: 'La ducha desagota lento: causas y cómo solucionarlo',
-      image: '/img/limpieza sifon baño.jpg',
-      alt: 'Cabellos tapando rejilla de ducha y limpieza de sifón',
+      image: '/img/rejilla.jpg',
+      alt: 'Limpieza de rejilla de ducha obstruida por cabellos y jabón - Openagua',
       excerpt: '¿Terminás de bañarte con el agua por los tobillos? Descubrí cómo limpiar tu drenaje de forma efectiva.',
       content: `
         <p>Nada arruina más una ducha relajante que descubrir que estás parado en una pileta de agua estancada. Si la ducha desagota lento, el problema rara vez se soluciona solo; al contrario, empeora con cada uso hasta que el tapón es total.</p>
@@ -302,8 +302,8 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'como-destapar-inodoro',
       title: 'Cómo destapar un inodoro: soluciones caseras y cuidados urgentes',
-      image: '/img/destapacion de cloaca.jpg',
-      alt: 'Servicio de destapación de inodoro y cloacas con equipo especializado - Openagua',
+      image: '/img/destapando_un_inodoro.jpg',
+      alt: 'Destapación de inodoro con máquina de sonda electromecánica - Openagua',
       excerpt: 'Conocé los métodos más efectivos para destapar tu inodoro tapado rápidamente y sin llamar a un plomero a la primera.',
       content: `
         <p>Tener un inodoro tapado es la emergencia sanitaria más estresante que un hogar en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong> puede enfrentar. Un simple bollo de papel higiénico de más, restos sanitarios incorrectos, y de repente, el agua sube amenazantemente hacia los bordes del sanitario.</p>
