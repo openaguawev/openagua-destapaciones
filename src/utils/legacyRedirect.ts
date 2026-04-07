@@ -38,7 +38,8 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
     'grasa-canerias': 'grasa-canerias-edificios-agua-hirviendo',
     'como-destapar-inodoro': 'como-destapar-inodoro',
     'como-destapar-rejillas': 'como-destapar-rejillas',
-    'como-destapar-pileta-cocina': 'como-destapar-pileta-cocina'
+    'como-destapar-pileta-cocina': 'como-destapar-pileta-cocina',
+    'diferencias-canerias-cloacales-pluviales': 'diferencias-canerias-cloacales-pluviales'
   };
   for (const [key, slug] of Object.entries(blogMap)) {
     if (path.includes(key)) permanentRedirect(`/blog/${slug}`);
