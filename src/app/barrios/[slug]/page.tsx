@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: Props) {
   if (!barrio) return {};
 
   return {
-    title: `🥇 Destapaciones en ${barrio.name} | Urgencias 24hs | Máquinas de Sonda 🏆`,
-    description: `✅ ¿Buscas destapación de cloacas y cañerías en ${barrio.name}? Expertos con hidrojet y máquinas de sonda. 📞 ¡Llamanos ahora al 11 5179-7649! Presupuestos sin cargo.`,
+    title: `Destapaciones en ${barrio.name} | Atención en el día | Openagua`,
+    description: `Expertos en destapación de cloacas y cañerías en ${barrio.name}. Máquinas de sonda e hidrojet. Coordinamos tu visita en el día. 📞 11 5179-7649`,
     alternates: {
       canonical: `https://www.destapacionesopenagua.com.ar/barrios/${slug}`
     }
@@ -190,13 +190,13 @@ export default async function BarrioPage({ params }: Props) {
                       return (
                         <>
                           <p style={{ marginBottom: '1.5rem' }}>
-                            En la constante actividad comercial de <strong>{barrio.name}</strong>, trabajamos asiduamente con restaurantes y supermercados que sufren bloqueos de cañerías por el acopio continuo de aceites y grasas.
+                            Trabajamos frecuentemente con comercios y restaurantes de <strong>{barrio.name}</strong>, donde es muy común que las cañerías se tapen por la acumulación constante de grasa y restos de comida diarios.
                           </p>
                           <p style={{ marginBottom: '1.5rem' }}>
-                            Entendemos que un local no puede frenar sus ventas ni recibir clientela con malos olores. Por eso accionamos velozmente enviando nuestros técnicos para desobstruir desagües y rejillas industriales, retornando a la higiene total.
+                            Sabemos que un negocio no puede perder clientes por problemas de mal olor o desbordes en un baño. Por eso, respondemos rápido y enviamos a nuestros técnicos para destapar las rejillas y dejar todo funcionando impecable.
                           </p>
                           <p style={{ marginBottom: '1.5rem' }}>
-                            Como transitamos rutinariamente el área, nuestros equipos también cubren por goteo cualquier urgencia y problema de plomería domiciliaria en casas o departamentos de vecinos en {nearbyStr}.
+                            Como recorremos la zona todos los días, coordinamos visitas en el día y también atendemos casas particulares y departamentos en {nearbyStr}.
                           </p>
                         </>
                       );
@@ -204,13 +204,13 @@ export default async function BarrioPage({ params }: Props) {
                       return (
                         <>
                           <p style={{ marginBottom: '1.5rem' }}>
-                            En <strong>{barrio.name}</strong> solemos trabajar junto a consorcios y particulares en edificios donde son comunes los atascos crónicos por sarro, jabón y grasa vieja en cañerías de muchos años.
+                            En <strong>{barrio.name}</strong> solemos trabajar bastante con consorcios y vecinos en edificios antiguos, donde es muy normal que las cañerías viejas se tapen con jabón y sarro.
                           </p>
                           <p style={{ marginBottom: '1.5rem' }}>
-                            Atendemos desde inodoros que rebalsan repentinamente hasta columnas troncales. Nuestros técnicos cuidan minuciosamente de destapar los caños sin necesidad de romper cerámicas o ensuciar tu departamento.
+                            Atendemos desde inodoros tapados hasta columnas principales de departamentos. Nuestros técnicos hacen el trabajo con mucho cuidado para evitar romper pisos o ensuciar tu casa innecesariamente.
                           </p>
                           <p style={{ marginBottom: '1.5rem' }}>
-                            Conocemos las calles del barrio a la perfección. Es natural para nosotros que, una vez resuelta tu urgencia, nuestros móviles continúen prestando servicio técnico hacia áreas lindantes como {nearbyStr}.
+                            Conocemos muy bien todo el barrio. Una vez solucionado el problema, solemos continuar nuestro recorrido atendiendo zonas cercanas como {nearbyStr}.
                           </p>
                         </>
                       );
@@ -218,13 +218,13 @@ export default async function BarrioPage({ params }: Props) {
                       return (
                         <>
                           <p style={{ marginBottom: '1.5rem' }}>
-                            En gran parte de las propiedades y viviendas de <strong>{barrio.name}</strong> resulta habitual que las cloacas principales se tapen con barro profundo o raíces de árboles del jardín.
+                            En muchas de las casas y propiedades de <strong>{barrio.name}</strong> es súper común que los caños y desagües se tapen con raíces del jardín o barro y hojas secas.
                           </p>
                           <p style={{ marginBottom: '1.5rem' }}>
-                            Contamos con hidrojet y sondas gruesas ideales para que nuestros equipos puedan seccionar raíces y despejar desagües pluviales a cero, permitiendo que el agua de lluvia fluya sin riesgo de anegamientos.
+                            Pasamos máquinas con resortes y mangueras a presión que cortan el problema de raíz, dejando los pluviales limpios para que el agua de lluvia baje bien y no haya riesgo de inundarse.
                           </p>
                           <p style={{ marginBottom: '1.5rem' }}>
-                            Nuestros móviles recorren las avenidas de la zona todos los días, dándonos el margen veloz para llegar a tu domicilio en el día o seguir cubriendo urgencias sanitarias en {nearbyStr}.
+                            Nuestros móviles andan por la zona todos los días, lo que nos permite coordinar la visita en el día y llegar a tu casa rápido. También atendemos zonas cercanas como {nearbyStr}.
                           </p>
                         </>
                       );
