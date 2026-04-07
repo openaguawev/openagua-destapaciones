@@ -395,6 +395,92 @@ export const getArticulos = (): Articulo[] => {
           {q: "¿Cuánto demanda destapar una cocina estandar?", a: "Es veloz: diagnosticamos y en cuestion de pocos minutos de operación sobre rejillas o sifón limpiamos la pared interior tapada cruzada asegurando paso veloz y flujo sonoro natural (vuelve a tragar fuerte rápido)." }
         ])}
       `
+    },
+    {
+      slug: 'diferencias-canerias-cloacales-pluviales',
+      title: 'Diferencias entre cañerías cloacales y pluviales | Openagua',
+      image: '/img/maquina destapa cloacas.jpg',
+      alt: 'Diferencias entre tuberías cloacales y pluviales - Openagua',
+      excerpt: 'Descubrí qué transporta cada sistema, cómo detectar cuál está tapado y cuándo conviene llamar a un profesional.',
+      content: `
+        <p>Muchas veces el problema no está en la misma cañería. Sentir mal olor, presenciar un rebalse o notar agua estancada no siempre tiene el mismo origen. Las cloacales y las pluviales cumplen funciones completamente distintas, y entender la diferencia te ayudará a detectar mejor dónde está la obstrucción y solicitar la solución técnica correcta.</p>
+        
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Qué transportan las cañerías cloacales?</h2>
+        <p>El sistema cloacal o "aguas negras y grises" está diseñado estrictamente para evacuar fluidos y materia de las instalaciones internas del hogar. Transporta:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li>El agua de descarga del inodoro y el bidet.</li>
+          <li>Los fluidos llenos de restos orgánicos, grasa y jabón provenientes de la pileta de cocina.</li>
+          <li>El líquido jabonoso y restos capilares o corporales de la ducha o bañera.</li>
+          <li>El agua con detergentes proveniente del lavarropas.</li>
+        </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Qué transportan las cañerías pluviales?</h2>
+        <p>Por otro lado, la red pluvial está pensada enteramente para capturar y derivar el exceso de agua proveniente de precipitaciones hacia la calle, evitando la saturación del suelo. Transporta:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li>Agua de lluvia pura recolectada de los techos y terrazas.</li>
+          <li>El agua capturada por canaletas y bajadas verticales aéreas.</li>
+          <li>El caudal acumulado en las rejillas de patio exteriores.</li>
+          <li>Desagües perimetrales de parques o pulmones de manzana.</li>
+        </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Tabla Comparativa de Sistemas</h2>
+        <div style="overflow-x: auto; margin-bottom: 2rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Característica</th>
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">Sistema Cloacal</th>
+                <th style="padding: 1rem; font-weight: 800; color: #0284c7;">Sistema Pluvial</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Qué transporta</td>
+                <td style="padding: 1rem; color: #475569;">Aguas negras, jabón, materia u orgánica, grasa</td>
+                <td style="padding: 1rem; color: #475569;">Exclusivamente agua de lluvia, hojas y tierra</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Orígenes primarios</td>
+                <td style="padding: 1rem; color: #475569;">Inodoros, bachas de cocina, duchas y lavaderos</td>
+                <td style="padding: 1rem; color: #475569;">Techos, canaletas áreas, terrazas y patios</td>
+              </tr>
+              <tr>
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Síntomas de bloqueo</td>
+                <td style="padding: 1rem; color: #475569;">Olor insoportable, gorgoteo en bachas o desbordes al tirar cadena</td>
+                <td style="padding: 1rem; color: #475569;">Inundación de superficie severa exclusiva durante días lluviosos</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        ${getCtaHtml()}
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cómo identificar cuál sistema se tapó</h2>
+        <p>El diagnóstico rápido se reduce a asociar el evento que detona el problema:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Si rebalsa el inodoro o el bidet:</strong> la obstrucción recae indiscutiblemente sobre la línea cloacal primaria. (<a href="/blog/como-destapar-inodoro" style="color:#16A34A;text-decoration:underline;">Ver post sobre inodoros</a>).</li>
+          <li><strong>Si se inunda el patio o terraza cada vez que llueve:</strong> el cuello de botella vive en el ramal pluvial, probablemente obturado por hojas o tierra.</li>
+          <li><strong>Si el ambiente de la cocina o baño apesta a gas de pantano (olor a alcantarilla):</strong> el problema es casi siempre cloacal debido a fermentación de grasas o pérdida del sifón. (<a href="/blog/por-que-cocina-huele-a-cloaca" style="color:#16A34A;text-decoration:underline;">Saber más de olores</a>).</li>
+        </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Problemas compartidos en CABA y GBA</h2>
+        <p>Las redes de los edificios antiguos suelen compartir la antigüedad de sus materiales. Las cañerías de ambas redes de vez en cuando sufren obstrucciones severas:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Raíces usurpadoras:</strong> Comunes en fondos del GBA y frentes de CABA, aplastan y fisuran ductos ciegos buscando humedad pluvial o cloacal.</li>
+          <li><strong>Grasa acumulada:</strong> El colesterol letal de la columna cloacal del consorcio.</li>
+          <li><strong>Hojas, barro y sedimentos:</strong> Los enemigos silenciosos del pluvial y dueños absolutos de la rejilla empantanada.</li>
+        </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuándo conviene solicitar evaluación profesional</h2>
+        <p>Si no sabés a ciencia cierta si el problema recae sobre la red cloacal o pluvial —ya que en infraestructura rústica a veces corren paralelamente o poseen conexiones erróneas mixtas—, nuestro equipo puede identificar la anomalía y resolverla sin efectuar roturas agresivas.</p>
+        
+        <p style="margin-top: 2rem;">Contamos con diagnósticos avanzados por <a href="/video-inspeccion" style="color:#16A34A;font-weight:bold;text-decoration:underline;">video inspección</a> que radiografían interiormente para certificar si precisás <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">asistencia cloacal</a> técnica o depuración estacional de <a href="/destapaciones-pluviales" style="color:#16A34A;font-weight:bold;text-decoration:underline;">redes pluviales</a>.</p>
+
+        ${getFaqHtml([
+          {q: "¿Qué sucede si el problema persiste luego de limpieza superficial?", a: "Usualmente indica fallas en las curvas del ramal central lejos del alcance superficial, lo que demanda destapaciones mecánicas con resortes rotativos de alta resistencia para triturar los tapones."},
+          {q: "¿Tirar aceites puede afectar a la vía pluvial?", a: "No debería. Sin embargo, en edificaciones no reglamentarias el aceite puede derivar a conductos no procesados agravando la contaminación general." }
+        ])}
+      `
     }
   ];
 }
