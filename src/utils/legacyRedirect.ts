@@ -1,4 +1,4 @@
-import { permanentRedirect } from 'next/navigation';
+import { permanentRedirect, notFound } from 'next/navigation';
 import { barrios } from '@/data/barrios';
 
 export function handleLegacyRedirect(pathSegments: string[]): never {
@@ -13,7 +13,16 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
     'destapaciones-con-hidrojet': 'destapaciones-hidrojet',
     'desagote-de-sotanos': 'desagote-sotanos',
     'limpieza-de-camaras': 'limpieza-camaras-septicas',
-    'mantenimiento-edificios': 'mantenimientos-preventivos'
+    'mantenimiento-edificios': 'mantenimientos-preventivos',
+    'destapaciones-de-canerias': 'destapaciones-canerias',
+    'destapaciones-de-pluviales': 'destapaciones-pluviales',
+    'destapaciones-maquinas': 'destapaciones-hidrojet',
+    'destapaciones-inodoros': 'destapaciones-cloacas',
+    'sistema-hidrojets': 'destapaciones-hidrojet',
+    'limpieza-columnas-edificios': 'mantenimientos-preventivos',
+    'zona-norte': 'zonas/zona-norte',
+    'zona-sur': 'zonas/zona-sur',
+    'zona-oeste': 'zonas/zona-oeste'
   };
   for (const [key, slug] of Object.entries(serviceMap)) {
     if (path.includes(key)) permanentRedirect(`/${slug}`);
@@ -26,7 +35,10 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
     'ducha-desagota': 'ducha-desagota-lento',
     'rejilla-patio': 'rejilla-patio-tapada-lluvia',
     'columna-cloacal': '5-senales-columna-edificio-tapada',
-    'grasa-canerias': 'grasa-canerias-edificios-agua-hirviendo'
+    'grasa-canerias': 'grasa-canerias-edificios-agua-hirviendo',
+    'como-destapar-inodoro': 'como-destapar-inodoro',
+    'como-destapar-rejillas': 'como-destapar-rejillas',
+    'como-destapar-pileta-cocina': 'como-destapar-pileta-cocina'
   };
   for (const [key, slug] of Object.entries(blogMap)) {
     if (path.includes(key)) permanentRedirect(`/blog/${slug}`);
@@ -57,6 +69,6 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
     permanentRedirect('/servicios/destapaciones');
   }
 
-  // 4. Catch-all: default to Home with permanent redirect (301)
-  permanentRedirect('/');
+  // 4. Muerte al Soft 404: Cualquier legacy string que llegue hasta este punto y no tenga matcheo, va a error duro.
+  notFound();
 }

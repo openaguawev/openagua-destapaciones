@@ -298,6 +298,103 @@ export const getArticulos = (): Articulo[] => {
           {q: "¿El mal olor de la ducha es por el tapón?", a: "Sí, la acumulación orgánica en descomposición genera gases que huelen a alcantarilla."}
         ])}
       `
+    },
+    {
+      slug: 'como-destapar-inodoro',
+      title: 'Cómo destapar un inodoro: soluciones caseras y cuidados urgentes',
+      image: '/img/inodoro tapado.jpg',
+      alt: 'Destapación de inodoro rápida y segura - Openagua',
+      excerpt: 'Conocé los métodos más efectivos para destapar tu inodoro tapado rápidamente y sin llamar a un plomero a la primera.',
+      content: `
+        <p>Tener un inodoro tapado es la emergencia sanitaria más estresante que un hogar en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong> puede enfrentar. Un simple bollo de papel higiénico de más, restos sanitarios incorrectos, y de repente, el agua sube amenazantemente hacia los bordes del sanitario.</p>
+        
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Causas más comunes por las que se tapa el inodoro</h2>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Exceso de papel o toallas femeninas:</strong> Se apelmazan y forman un tapón elástico casi imbatible.</li>
+          <li><strong>Toallitas desmaquillantes (Wet Wipes):</strong> Están fabricadas en polímeros que nunca se degradan, creando tapones sintéticos que estrangulan el ducto entero.</li>
+          <li><strong>Juguetes o Plásticos:</strong> Un clásico si tienes niños pequeños, y muy difícil de solucionar con métodos caseros, ya que los plásticos se encallan a nivel sifón.</li>
+        </ul>
+        
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Pasos seguros y caseros para intentar solucionarlo</h2>
+        <p>Lo primero y crítico: <strong>No vuelvas a tirar del botón</strong>. Intentá primero usar una <strong>sopapa de goma tradicional</strong>: colócala sellando todo el perímetro y con agua cubriendo la copa de goma, ejerce movimientos rítmicos vigorosos hacia abajo y hacia arriba de 10 a 15 veces buscando soltar la presión en vacío del objeto.</p>
+        <p>Otra opción rápida para obstrucciones ligeras (sólo materiales orgánicos) es volcar 3 litros de agua bien caliente acompañada de detergente lavavajillas. El jabón empujará e intentará romper la tensíon del atasco leve.</p>
+        
+        ${getCtaHtml()}
+        
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuándo llamar urgentemente al servicio profesional</h2>
+        <p>Si luego de estos intentos el nivel del agua sigue igual y notas que si abres la bacha del lavamanos empuja aire y huele feo, la obstrucción ya bajó al troncal principal o ramal cruzado. Aquí es donde los plomeros certificados como nuestro servicio de <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">Destapaciones de Cloacas</a> intervienen. Usamos maquinaria de sondas que desarma y arranca por rotación todo el atasco de raíz, en minutos.</p>
+        
+        ${getFaqHtml([
+          {q: "¿Qué pasa si meto una percha metálica armada?", a: "Muy desaconsejado. Una percha rayará de forma permanente y muy notoria toda la porcelana cara de tu sanitario por la base interior u orificio de descarga."},
+          {q: "¿Por qué huelen a cloaca los otros desagües del baño?", a: "Es indicador de una columna obstruida o ramal completo saturado en tu casa afectando respiración pluvial de zonas comunes."},
+          {q: "¿Tienen visita de destapaciones el mismo día?", a: "Contamos con brigadas recorriendo incesantemente las rutas y asistencias con unidades móviles llegando rapidisimo a tu hogar en el dia."}
+        ])}
+      `
+    },
+    {
+      slug: 'como-destapar-rejillas',
+      title: 'Cómo destapar rejillas de patio, baños y terrazas obstruidas',
+      image: '/img/rejilla patio.jpg',
+      alt: 'Destapación de rejilla bloqueada en patio o terraza - Openagua',
+      excerpt: 'Hojas, tierra o cabellos bloquean tu rejilla. Pasos vitales para evitar inundaciones.',
+      content: `
+        <p>El estancamiento crónico de agua superficial tras una lluvia ligera es el síntoma definitivo de que tu sistema pluvial tiene los días contados. Ya sea en un balcón, una terraza de edificio en <strong>CABA</strong> o la pileta de lavadero del fondo de una casa en todo el cordón de <strong>GBA</strong>.</p>
+        
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Qué compone un tapón pluvial?</h2>
+        <p>A diferencia del drenaje interno, las rejillas de patio y terraza deben tragar:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Hojas, Polvillo y Escombros:</strong> Tras 4 o 5 tormentas fuertes arrastrando barro sucio, se conforma "cemento de hojas" debajo de las tapas y codos intermedios.</li>
+          <li><strong>Pelo y jabón en flor de ducha:</strong> Las rejillas de boxes de ducha aglutinan enjambres fibrosos casi impenetrables mezclados a esencias grasosas jabonosas.</li>
+          <li><strong>Raíces internas:</strong> Lo más grave. Las enredaderas se alimentan de la humedad rompiendo caños subterráneos y ahorcando la luz de caudal del caño pluvial por dentro.</li>
+        </ul>
+        
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Estrategia casera para mantenimiento leve</h2>
+        <p>Primero usa protección mecánica ocular básica (gafas), levanta la placa cromada / acrílico o reja metálica usando un destornillador por las ranuras. Si ves residuos superficiales, saca los restos podridos usando guantes largos plásticos con gancho simple, tirando en una bolsa para tirar a la calle en horas correspondientes a la recolección.</p>
+        <p>Aplica fuertes tiradas en "chorro limpio directo" con manguera a presión buscando desatascar la base del embudo pluvial. Si el agua se reitera a no bajar ni un nivel en minutos... es un diagnóstico de atasco profundo ciego.</p>
+        
+        ${getCtaHtml()}
+        
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Destapación mecanizada de cañerías para pluviales estancados</h2>
+        <p>Lamentablemente si el nido radica bajo metros incrustado cruzando el jardín hacia la calle o el pulmón ciego bajo pasto de su casa a calle final exterior, recomendamos que nos deriven su incidencia para un procedimiento de hidrojet en redes urbanas, brindado en nuestra solución de <a href="/destapaciones-pluviales" style="color:#16A34A;font-weight:bold;text-decoration:underline;">Destapaciones Pluviales</a>. Realizamos limpiezas completas de codo a codo destrozando tapones ciegos endurecidos de la cañería.</p>
+        
+        ${getFaqHtml([
+          {q: "¿Tienen límite de largo de cañería pluvial al trabajar?", a: "Cubrimos caños de muchisimos metros de longitud de fondos extensos o loteos desde entrada cruzando hacia calle sin roturas hasta limpiar al máximo todo arrastre de elementos trabados en los empalmes subterráneos comunes."},
+          {q: "¿Destruyen los cables de raíce superficiales?", a: "Usamos punteras dentadas devoradoras por rotación y corte por choque hidráulico de las motobombas hasta limpiar y perforar los ovillos biológicos."}
+        ])}
+      `
+    },
+    {
+      slug: 'como-destapar-pileta-cocina',
+      title: 'Cómo destapar la pileta de cocina sin dañar los caños',
+      image: '/img/destapacion cocina.jpg',
+      alt: 'Pileta de cocina tapada y llena de agua esperando ayuda técnica - Openagua',
+      excerpt: 'Tu bacha expulsa mal olor y no traga el agua: descubrí por qué los palos de escoba rompen todo y cómo abordarlo seguro.',
+      content: `
+        <p>La bacha tapada, agua estancada a mitad del escurridor y una baranda espantosa a cloaca inundando tu living... La pileta de la cocina colapsada es un freno catastrófico para la vida hogareña en toda gran ciudad moderna del <strong>AMBA</strong>.</p>
+        
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Causas Críticas: Por qué se tapa la Bacha de Cocina</h2>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Grasa Fría y Aceite:</strong> Aceite de frituras mezclado con jabón líquido frío de las ollas. Actúa como arterias saturadas por colesterol solidificado dentro de las paredes de los sifones debajo mesadas o curvas plásticas chicas iniciales.</li>
+          <li><strong>Café y Yerba:</strong> Extremadamente arenoso. Arrastra partículas sumamente minúsculas pesadas que se aposentan abajo y limitan la velocidad natural de declive, arrastrando a tapón general cruzado luego para aglutinamiento ciego.</li>
+          <li><strong>Fideos o Arroz:</strong> Todo carbohidrato se expande bajo el agua absorbiéndola, bloqueando caños instantáneamente.</li>
+        </ul>
+        
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Prácticas del Peligro Absoluto que NO debes hacer jamás</h2>
+        <p>Destruir el mueble del lavabo bajo mesada es muy sencillo. <strong>El error de meter el palo de escoba o alambres punzantes:</strong> Rompe, perfora las uniones frágiles o codos de plomo blando viejos obligando al uso destructivo y cambio de pieza total perdiendo garantías de material. Además desellando roscas provocándote perdidas fantasma microscópicas pudriendo pisos de muebles oscuros. El químico de "destapañeria magico", puede calentar a niveles que fracturen tu bajada y dañar terriblemente para el cuerpo (respiración tóxica). </p>
+        
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Método Seguro para tu Pileta Obstruida</h2>
+        <p>Vacia con jarras las aguas de la pileta para un secado superficial (hacia baldes cruzados). Luego puedes probar limpiar desenroscando por debajo, poniendo fuentones debajo de la trampa del sifón U. Allí se saca el vaso general atrapador para depurarlo a base simple física.</p>
+        
+        ${getCtaHtml()}
+        
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuando el tapón es de Pared Profunda</h2>
+        <p>Si debajo la bacha o la U baja fluye libremente pero se traba todo el canal interno o rebalsa por otra rejilla continua cruzada de planta, el estancamiento excede la reparación casera; necesita de asistencia seria y calificada provista en base firme con nuestras maquinarias de sistema para las <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">Destapaciones Cañerias</a> y ductos hogareños chicos. Un desparramador especial retira desde cocinas hacia exterior tramos ciegos imposibles.</p>
+        
+        ${getFaqHtml([
+          {q: "¿Tiran acido muriático o industrial al limpiar para hacer desobstrucción?", a: "Jamás y prohibido terminantemente. Nuestras resoluciones técnicas abocan 100% de fuerza cinético o hìdrica con sondas acero, cortantes físicas o chorros hiperpresurizados cuidando tu estructura en su integridad absoluta libre de tóxicos químicos perennes."},
+          {q: "¿Cuánto demanda destapar una cocina estandar?", a: "Es veloz: diagnosticamos y en cuestion de pocos minutos de operación sobre rejillas o sifón limpiamos la pared interior tapada cruzada asegurando paso veloz y flujo sonoro natural (vuelve a tragar fuerte rápido)." }
+        ])}
+      `
     }
   ];
 }
