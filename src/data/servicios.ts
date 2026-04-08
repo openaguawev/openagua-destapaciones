@@ -64,7 +64,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'destapaciones-maquinas',
       'Destapaciones con máquinas en CABA y Zona Oeste',
-      '/img/maquina-destapa-cloacas.jpg',
+      '/img/maquina destapa cloacas.jpg',
       'Servicio profesional de destapaciones con máquinas de última generación. Destapa cañerías con máquina de resortes, hidrojet y video inspección para hogares y empresas.',
       'En Openagua somos especialistas en destapaciones con máquinas. Contamos con tecnología de punta para resolver cualquier obstrucción en cloacas, pluviales y cañerías internas sin necesidad de romper pisos ni paredes.',
       [
