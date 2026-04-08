@@ -6,6 +6,13 @@ import './Servicios.css';
 export default function Servicios() {
   const servicios = [
     {
+      title: "Destapaciones con máquinas",
+      desc: "Destapación de cañerías, cloacas, inodoros y pluviales con máquina de resortes e hidrojet sin romper.",
+      link: "/destapaciones-maquinas",
+      btnText: "Ver servicio",
+      icon: <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+    },
+    {
       title: "Destapación de Cloacas",
       desc: "Solucionamos obstrucciones con sonda rotativa o hidrojet.",
       link: "/destapaciones-cloacas",
@@ -66,7 +73,10 @@ export default function Servicios() {
   return (
     <section id="servicios" className="section bg-light">
       <div className="container">
-        <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '3rem' }}>Nuestros Servicios</h2>
+        <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '1rem' }}>Nuestros Servicios</h2>
+        <p style={{ textAlign: 'center', marginBottom: '3rem', color: '#475569', fontSize: '1.1rem', maxWidth: '800px', margin: '0 auto 3rem auto' }}>
+          Realizamos destapaciones con máquinas, hidrojet y video inspección en CABA, Zona Oeste y alrededores.
+        </p>
         <div className="servicios-grid">
           {servicios.map((s, idx) => (
             <div key={idx} className="servicio-card">

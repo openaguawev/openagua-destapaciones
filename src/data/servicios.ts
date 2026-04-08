@@ -59,6 +59,37 @@ const buildServicio = (
 export const getServicios = (): ServicioData[] => {
   return [
     buildServicio(
+      'destapaciones-maquinas',
+      'Destapaciones con máquinas en CABA y Zona Oeste',
+      '/img/destapacion maquina.jpg',
+      'Servicio profesional de destapaciones con máquinas de última generación. Destapa cañerías con máquina de resortes, hidrojet y video inspección para hogares y empresas.',
+      'En Openagua somos especialistas en destapaciones con máquinas. Contamos con tecnología de punta para resolver cualquier obstrucción en cloacas, pluviales y cañerías internas sin necesidad de romper pisos ni paredes.',
+      [
+        { q: "¿Cuándo se debe usar una máquina de resortes?", a: "La máquina de resortes es ideal para destapa cañerías con máquina en obstrucciones sólidas como restos de comida, pelos o pequeños objetos en baños y cocinas." },
+        { q: "¿Qué beneficios tiene la máquina de resortes contra el hidrojet?", a: "La máquina de resortes es perfecta para espacios reducidos y cañerías internas, mientras que el hidrojet se recomienda para destapaciones de cloacas con máquina donde hay grasa o raíces." },
+        { q: "¿Realizan trabajos en Zona Oeste?", a: "Sí, brindamos servicios de destapaciones con máquinas en toda la Zona Oeste, CABA y alrededores con atención inmediata." }
+      ],
+      {
+        benefitsTitle: "Especialistas en Destapaciones con Máquinas",
+        benefits: [
+          { title: "Máquina con Resorte", desc: "Desobstrucción mecánica con resortes rotativos de acero que eliminan bloqueos rígidos en cocinas y baños." },
+          { title: "Limpieza Hidrojet", desc: "Agua a alta presión para un barrido total de grasas y sarro, ideal para diámetros mayores y redes cloacales." },
+          { title: "Video Inspección HD", desc: "Diagnóstico visual para localizar el punto exacto del problema y verificar el estado real de la cañería." }
+        ],
+        equipmentTitle: "Zonas de Cobertura",
+        equipment: [
+          { title: "CABA", desc: "Atención prioritaria en todos los barrios de la Ciudad Autónoma de Buenos Aires." },
+          { title: "Zona Oeste", desc: "Servicios programados y de urgencia en Ramos Mejía, Morón, Castelar, Ituzaingó y aledaños." }
+        ],
+        stepsTitle: "¿Cuándo usar cada método?",
+        steps: [
+          { title: "Obstrucción en Bacha/Baño", desc: "Se utiliza la máquina de resortes para recorrer las curvas del sifón y ramales internos.", iconStr: "⚙️" },
+          { title: "Tapón de Grasa o Raíces", desc: "El Hidrojet es la herramienta definitiva para lavar las paredes del caño y expulsar sedimentos.", iconStr: "💦" },
+          { title: "Duda Estructural", desc: "La video inspección se activa cuando hay sospecha de caño roto o hundimiento del terreno.", iconStr: "🎥" }
+        ]
+      }
+    ),
+    buildServicio(
       'destapaciones-cloacas',
       'Destapaciones de Cloacas',
       '/img/destapacion de cloaca.jpg',
