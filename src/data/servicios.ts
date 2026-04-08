@@ -12,6 +12,7 @@ export interface ServicioData {
   schemaTitle?: string;
   equipmentTitle?: string;
   stepsTitle?: string;
+  imageAlt?: string;
 }
 
 const buildServicio = (
@@ -29,6 +30,7 @@ const buildServicio = (
     schemaTitle?: string;
     equipmentTitle?: string;
     stepsTitle?: string;
+    imageAlt?: string;
   }
 ): ServicioData => {
   return {
@@ -52,7 +54,8 @@ const buildServicio = (
     faqs,
     schemaTitle: custom?.schemaTitle,
     equipmentTitle: custom?.equipmentTitle,
-    stepsTitle: custom?.stepsTitle
+    stepsTitle: custom?.stepsTitle,
+    imageAlt: custom?.imageAlt
   };
 };
 
@@ -61,7 +64,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'destapaciones-maquinas',
       'Destapaciones con máquinas en CABA y Zona Oeste',
-      '/img/destapacion maquina.jpg',
+      '/img/maquina-destapa-cloacas.jpg',
       'Servicio profesional de destapaciones con máquinas de última generación. Destapa cañerías con máquina de resortes, hidrojet y video inspección para hogares y empresas.',
       'En Openagua somos especialistas en destapaciones con máquinas. Contamos con tecnología de punta para resolver cualquier obstrucción en cloacas, pluviales y cañerías internas sin necesidad de romper pisos ni paredes.',
       [
@@ -86,7 +89,8 @@ export const getServicios = (): ServicioData[] => {
           { title: "Obstrucción en Bacha/Baño", desc: "Se utiliza la máquina de resortes para recorrer las curvas del sifón y ramales internos.", iconStr: "⚙️" },
           { title: "Tapón de Grasa o Raíces", desc: "El Hidrojet es la herramienta definitiva para lavar las paredes del caño y expulsar sedimentos.", iconStr: "💦" },
           { title: "Duda Estructural", desc: "La video inspección se activa cuando hay sospecha de caño roto o hundimiento del terreno.", iconStr: "🎥" }
-        ]
+        ],
+        imageAlt: "Destapación de cloacas con máquina profesional en Zona Oeste"
       }
     ),
     buildServicio(

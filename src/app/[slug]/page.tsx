@@ -46,9 +46,10 @@ export default async function ServicioPage({ params }: Props) {
       <div className="servicio-hero" style={{ position: 'relative', overflow: 'hidden' }}>
         <Image 
           src={servicio.image} 
-          alt={`${servicio.title} en CABA y GBA - Openagua`} 
+          alt={servicio.imageAlt || `${servicio.title} en CABA y GBA - Openagua`} 
           fill 
           priority 
+          sizes="100vw"
           style={{ objectFit: 'cover', zIndex: 0 }} 
           quality={85}
         />
