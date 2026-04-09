@@ -2,7 +2,9 @@ import { permanentRedirect, notFound } from 'next/navigation';
 import { barrios } from '@/data/barrios';
 
 export function handleLegacyRedirect(pathSegments: string[]): never {
-  const path = pathSegments.join('-').toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  // Limpiar segmentos vacíos para manejar trailing slashes y normalizar
+  const cleanSegments = pathSegments.filter(s => s.length > 0);
+  const path = cleanSegments.join('-').toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
   // 1. Mapeo específico de Servicios (Prioridad Alta para evitar Fallback Falso Genérico)
   const serviceMap: Record<string, string> = {
@@ -14,6 +16,7 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
     'desagote-de-sotanos': 'desagote-sotanos',
     'limpieza-de-camaras': 'limpieza-camaras-septicas',
     'mantenimiento-edificios': 'mantenimientos-preventivos',
+    'mantenimiento-preventivo': 'mantenimientos-preventivos',
     'destapaciones-de-canerias': 'destapaciones-canerias',
     'destapaciones-de-pluviales': 'destapaciones-pluviales',
     'destapaciones-maquinas': 'destapaciones-maquinas',
@@ -27,11 +30,12 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
     'zona-oeste': 'zonas/zona-oeste'
   };
   for (const [key, slug] of Object.entries(serviceMap)) {
-    if (path.includes(key)) permanentRedirect(`/${slug}`);
+    if (path === key || path.includes(key)) permanentRedirect(`/${slug}`);
   }
 
   // 2. Mapeo específico de Guías del Blog
   const blogMap: Record<string, string> = {
+    'cocina-huele-a-cloaca': 'por-que-cocina-huele-a-cloaca',
     'por-que-cocina-huele': 'por-que-cocina-huele-a-cloaca',
     'inodoro-rebalsa': 'inodoro-rebalsa-que-hacer',
     'ducha-desagota': 'ducha-desagota-lento',
@@ -45,6 +49,11 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
   };
   for (const [key, slug] of Object.entries(blogMap)) {
     if (path.includes(key)) permanentRedirect(`/blog/${slug}`);
+  }
+
+  // REGLA ESPECÍFICA: Rincon del Milberg (Legacy con "del")
+  if (path.includes('rincon-del-milberg')) {
+    permanentRedirect('/barrios/destapaciones-rincon-de-milberg');
   }
 
   const sortedBarrios = [...barrios].sort((a, b) => b.name.length - a.name.length);
