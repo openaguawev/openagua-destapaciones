@@ -5,12 +5,17 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: '/(.*)',
+        source: '/img/(.*)',
         headers: [
           {
             key: 'Cache-Control',
-            value: 'no-cache, no-store, max-age=0, must-revalidate',
+            value: 'public, max-age=31536000, immutable',
           },
+        ],
+      },
+      {
+        source: '/(.*)',
+        headers: [
           {
             key: 'X-Robots-Tag',
             value: 'all',

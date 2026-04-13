@@ -145,14 +145,45 @@ export default async function ServicioPage({ params }: Props) {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": servicio.schemaTitle || servicio.title,
+            "serviceType": "Destapaciones Técnicas",
             "description": servicio.excerpt,
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Openagua"
-            }
+              "name": "Openagua",
+              "url": "https://www.destapacionesopenagua.com.ar",
+              "logo": "https://www.destapacionesopenagua.com.ar/logo.svg",
+              "image": "https://www.destapacionesopenagua.com.ar/img/home.jpg",
+              "telephone": "+5491151797649"
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Ciudad Autónoma de Buenos Aires" },
+              { "@type": "AdministrativeArea", "name": "Zona Norte" },
+              { "@type": "AdministrativeArea", "name": "Zona Oeste" },
+              { "@type": "AdministrativeArea", "name": "Zona Sur" }
+            ]
           })
         }}
       />
+      {servicio.faqs && servicio.faqs.length > 0 && (
+        <Script
+          id="faq-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": servicio.faqs.map(f => ({
+                "@type": "Question",
+                "name": f.q,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": f.a
+                }
+              }))
+            })
+          }}
+        />
+      )}
     </main>
   );
 }

@@ -2,6 +2,7 @@ import { getZonas } from '@/data/zonas'
 import { barrios } from '@/data/barrios'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import '@/components/Zonas.css'
 import { handleLegacyRedirect } from '@/utils/legacyRedirect'
 
@@ -54,15 +55,22 @@ export default async function ZonaPage({ params }: Props) {
           display: 'flex', 
           alignItems: 'center', 
           paddingTop: '80px',
-          backgroundImage: 'url(https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
           color: '#fff',
-          padding: '4rem 0'
+          padding: '4rem 0',
+          overflow: 'hidden'
         }}
       >
-        <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15, 23, 42, 0.80)' }}></div>
-        <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>
+        <Image 
+          src="/img/limpieza de alcantarilla.jpg" 
+          alt="Limpieza profesional de alcantarilla y desagües pluviales en zona urbana" 
+          fill 
+          priority 
+          style={{ objectFit: 'cover', zIndex: 0 }} 
+          quality={85}
+          sizes="100vw"
+        />
+        <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15, 23, 42, 0.80)', zIndex: 1 }}></div>
+        <div className="container" style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
           <h1 style={{ fontSize: '3rem', fontWeight: 700, marginBottom: '1rem', color: '#fff' }}>Destapaciones en {zona.name}</h1>
           <p style={{ fontSize: '1.25rem', color: '#e2e8f0', maxWidth: '700px', margin: '0 auto 2rem' }}>
             {zona.description}

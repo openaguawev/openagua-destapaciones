@@ -64,22 +64,36 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "PlumbingService",
     "name": "Openagua",
-    "image": "https://destapacionesopenagua.com.ar/img/home.jpg",
-    "telephone": "15-5179-7649",
-    "url": "https://destapacionesopenagua.com.ar",
+    "image": "https://www.destapacionesopenagua.com.ar/img/home.jpg",
+    "logo": "https://www.destapacionesopenagua.com.ar/logo.svg",
+    "telephone": "+5491151797649",
+    "url": "https://www.destapacionesopenagua.com.ar",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Ciudad Autónoma de Buenos Aires",
-      "addressRegion": "CABA",
+      "addressRegion": "CABA / GBA",
       "addressCountry": "AR"
     },
-    "areaServed": "CABA y GBA",
+    "areaServed": [
+      "Ciudad Autónoma de Buenos Aires",
+      "Zona Norte",
+      "Zona Oeste",
+      "Zona Sur"
+    ],
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
       "opens": "08:00",
       "closes": "19:00"
-    }
+    },
+    "sameAs": [
+      "https://facebook.com/openagua",
+      "https://www.instagram.com/destapaciones_openagua/",
+      "https://www.youtube.com/@openagua/videos",
+      "https://www.tiktok.com/@destapacionesopenagua"
+    ],
+    "hasMap": "https://www.google.com/maps/search/Openagua+Destapaciones"
   };
 
   return (

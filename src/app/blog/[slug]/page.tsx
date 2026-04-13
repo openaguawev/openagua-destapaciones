@@ -43,7 +43,22 @@ export default async function BlogPost({ params }: Props) {
     "description": post.excerpt,
     "author": {
       "@type": "Organization",
-      "name": "Openagua Destapaciones"
+      "name": "Openagua Destapaciones",
+      "url": "https://www.destapacionesopenagua.com.ar"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Openagua",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.destapacionesopenagua.com.ar/logo.svg"
+      }
+    },
+    "datePublished": "2026-04-13T08:00:00-03:00",
+    "dateModified": "2026-04-13T08:00:00-03:00",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://www.destapacionesopenagua.com.ar/blog/${slug}`
     }
   };
 
