@@ -15,10 +15,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const posts = getArticulos()
   const post = posts.find((p) => p.slug === slug)
-  if (!post) return { title: 'Artículo no encontrado' }
+  if (!post) return { title: 'Artículo no encontrado | Openagua' }
 
+  const seoTitle = post.seoTitle || post.title
   return {
-    title: `${post.title} | Openagua Blog`,
+    title: `${seoTitle} | Openagua`,
     description: post.excerpt,
     alternates: {
       canonical: `https://www.destapacionesopenagua.com.ar/blog/${slug}`,
@@ -35,7 +36,7 @@ export default async function BlogPost({ params }: Props) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": post.title,
+    "headline": post.h1 || post.title,
     "image": [
       `https://www.destapacionesopenagua.com.ar${post.image}`
     ],
@@ -53,7 +54,7 @@ export default async function BlogPost({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       
-      <h1 style={{ marginBottom: '1.5rem', color: '#0f172a', lineHeight: 1.2 }}>{post.title}</h1>
+      <h1 style={{ marginBottom: '1.5rem', color: '#0f172a', lineHeight: 1.2 }}>{post.h1 || post.title}</h1>
       
       <div style={{ position: 'relative', width: '100%', margin: '0 0 2.5rem 0', overflow: 'hidden', borderRadius: '16px', boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)' }}>
         <Image 

@@ -1,6 +1,8 @@
 export interface Articulo {
   slug: string;
   title: string;
+  seoTitle?: string;
+  h1?: string;
   image: string;
   alt: string;
   excerpt: string;
@@ -479,6 +481,115 @@ export const getArticulos = (): Articulo[] => {
         ${getFaqHtml([
           {q: "¿Qué sucede si el problema persiste luego de limpieza superficial?", a: "Usualmente indica fallas en las curvas del ramal central lejos del alcance superficial, lo que demanda destapaciones mecánicas con resortes rotativos de alta resistencia para triturar los tapones."},
           {q: "¿Tirar aceites puede afectar a la vía pluvial?", a: "No debería. Sin embargo, en edificaciones no reglamentarias el aceite puede derivar a conductos no procesados agravando la contaminación general." }
+        ])}
+      `
+    },
+    {
+      slug: 'raices-en-canerias-como-detectarlas-y-solucionarlo',
+      title: 'Raíces en cañerías: cómo detectarlas y solucionarlo',
+      seoTitle: 'Raíces en cañerías: cómo detectarlas y solucionarlo',
+      h1: 'Raíces en cañerías: señales, causas y solución definitiva',
+      image: '/img/raiz.jpg',
+      alt: 'Raíces obstruyendo una cañería cloacal detectadas por video inspección',
+      excerpt: 'Descubrí cómo detectar raíces en cañerías y cloacas, síntomas comunes y cuál es la solución definitiva con video inspección e hidrojet.',
+      content: `
+        <p>En barrios con arboledas frondosas como <strong>Palermo</strong>, <strong>Belgrano</strong>, <strong>Devoto</strong> o en las quintas de <strong>Zona Norte</strong>, el problema de las raíces en las cañerías es mucho más común de lo que se cree. Lo que comienza como un drenaje apenas lento puede terminar en un colapso total del sistema cloacal o pluvial, con consecuencias costosas tanto para la estructura como para la higiene del hogar.</p>
+        
+        <p>Las raíces tienen una capacidad asombrosa para detectar la humedad y los nutrientes. Incluso la fisura más microscópica en un caño de cemento antiguo o una unión mal sellada en PVC moderno es suficiente para que una raíz capilar ingrese. Una vez adentro, la raíz encuentra un ambiente ideal: agua constante, temperatura estable y nutrientes en abundancia. Lo que sigue es un crecimiento exponencial que termina por estrangular el conducto.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cómo saber si las raíces están tapando la cañería</h2>
+        <p>A diferencia de un tapón por grasa o papel, el bloqueo por raíces suele ser progresivo. Existen señales claras que nos indican que la naturaleza está ganando terreno bajo nuestros pies:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Gorgoteos constantes (Gloops):</strong> Si escuchás ruidos extraños en las rejillas o el inodoro después de vaciar la bacha, es probable que el aire no esté circulando bien debido a un "ovillo" de raíces.</li>
+          <li><strong>Retroceso de agua:</strong> El agua tarda cada vez más en bajar, y eventualmente, al usar un artefacto, el agua sale por otro (por ejemplo, al tirar la cadena del inodoro, el agua rebalsa en la rejilla de la ducha).</li>
+          <li><strong>Olores a alcantarilla:</strong> Las raíces atrapan restos de comida, cabellos y otros desechos, creando una masa en descomposición que emite gases hacia el interior de la casa.</li>
+        </ul>
+
+        ${getCtaHtml()}
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Síntomas frecuentes en patios y jardines</h2>
+        <p>Si vivís en una casa en <strong>GBA</strong> o tenés un patio en <strong>CABA</strong>, el entorno exterior también te da pistas. Prestá atención a estas anomalías:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Zonas de césped excesivamente verdes:</strong> Si una sección de tu jardín está mucho más vibrante y crece más rápido que el resto, justo sobre la línea de la cloaca, tenés una fuga que está fertilizando esa zona.</li>
+          <li><strong>Hundimientos en el terreno:</strong> Cuando una raíz rompe un caño, el agua que se escapa empieza a lavar la tierra alrededor, creando baches o hundimientos que pueden ser peligrosos.</li>
+          <li><strong>Humedad persistente en baldosas:</strong> En patios cementados, la rotura del caño por raíces puede manifestarse como manchas de humedad que nunca se secan, incluso en días de sol.</li>
+        </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Por qué vuelve a taparse (El error del método tradicional)</h2>
+        <p>Muchos propietarios cometen el error de llamar a un servicio que solo utiliza resortes convencionales sin una limpieza técnica profunda. Si bien el resorte puede "abrir una luz" en el tapón de raíces permitiendo que el agua corra temporalmente, la raíz sigue allí. De hecho, al ser cortadas parcialmente, muchas especies de árboles (como el Ficus o el Sauce) reaccionan creciendo con más fuerza, como si hubieran sido podadas.</p>
+        <p>Para eliminar el problema de raíz, es necesario realizar una limpieza hidrocinética que barra no solo la masa central, sino que limpie las paredes del caño, eliminando las raíces que están "colgando" de las juntas.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuándo hace falta video inspección</h2>
+        <p>Sin tecnología, estamos adivinando. La <a href="/video-inspeccion-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">video inspección de cañerías</a> es la única forma de certificar qué árbol está causando el daño, en qué punto exacto se encuentra la rotura y cuál es la gravedad de la infiltración.</p>
+        <p>En <strong>Openagua</strong>, utilizamos cámaras HD con cabezales rotativos que nos permiten ver por dentro de las uniones. Esto es vital para decidir si solo hace falta una limpieza o si la raíz ya ha fracturado el caño de tal manera que requiere una reparación puntual.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cómo se eliminan con hidrojet</h2>
+        <p>El estándar de oro para este problema son las <a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones con hidrojet</a>. A diferencia de un cable metálico que puede trabarse o romper un caño viejo de cerámica, el hidrojet utiliza boquillas especiales que disparan agua a una presión de hasta 200 bar.</p>
+        <p>Existen boquillas "corta-raíces" con cuchillas hidráulicas rotativas que literalmente talan la intrusión biológica y la expulsan hacia afuera de la red, devolviéndole al caño el 100% de su capacidad de transporte original.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cómo prevenir futuras obstrucciones</h2>
+        <p>Una vez que el sistema está limpio, la prevención es la clave para no volver a pasar por lo mismo:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Barreras físicas:</strong> Si vas a plantar un árbol nuevo, usá barreras de polietileno de alta densidad para dirigir las raíces hacia abajo y lejos de las tuberías.</li>
+          <li><strong>Elección de especies:</strong> Evitá árboles de raíces agresivas cerca de las líneas de servicios. Los expertos recomiendan especies de raíz pivotante para zonas urbanas.</li>
+          <li><strong>Mantenimientos preventivos:</strong> En propiedades antiguas con árboles grandes, realizar una limpieza técnica anual evita que las raíces se asienten y causen daños estructurales irreversibles.</li>
+        </ul>
+
+        ${getFaqHtml([
+          {q: "¿Cómo saber si hay raíces en la cloaca?", a: "Los síntomas principales son el drenaje lento persistente, olores desagradables y ruidos de 'gorgoteo' en los sifones. La confirmación definitiva se da mediante una video inspección puntual."},
+          {q: "¿Las raíces pueden romper el caño?", a: "Sí, especialmente en cañerías de fibrocemento, cerámica o hierro fundido antiguo. Las raíces ejercen una presión mecánica constante que termina por fracturar el material."},
+          {q: "¿Se puede solucionar sin romper el piso?", a: "Absolutamente. Gracias al sistema hidrojet con boquillas rotativas, podemos eliminar las raíces desde la cámara de inspección sin necesidad de excavar en la mayoría de los casos."},
+          {q: "¿Cada cuánto conviene inspeccionar?", a: "Si vivís en una zona con mucha vegetación o árboles añejos, lo ideal es realizar una revisión preventiva cada 12 o 18 meses para evitar colapsos inesperados."}
+        ])}
+      `
+    },
+    {
+      slug: 'que-no-tirar-en-la-pileta-de-cocina',
+      title: 'Qué no tirar en la pileta de cocina para evitar obstrucciones',
+      seoTitle: 'Qué no tirar en la pileta de cocina para evitar obstrucciones',
+      h1: 'Qué no tirar en la pileta de cocina para evitar que se tape',
+      image: '/img/mugre.jpg',
+      alt: 'Mugre y grasa acumulada tapando la pileta de cocina',
+      excerpt: 'Conocé qué elementos no debés tirar en la pileta de cocina para evitar cañerías tapadas, malos olores y destapaciones costosas.',
+      content: `
+        <p>La cocina es el corazón de cualquier hogar en <strong>CABA</strong> y <strong>GBA</strong>, pero también es el lugar donde más abusamos de las cañerías. Muchas veces, por comodidad o desconocimiento, tratamos a la bacha de la cocina como si fuera un tacho de basura secundario. El problema es que las tuberías de desagüe no están diseñadas para transportar sólidos, grasas pesadas ni químicos agresivos.</p>
+        
+        <p>Una pileta tapada no solo es una molestia logística que nos impide lavar los platos; es un foco de bacterias y malos olores que pueden contaminar el ambiente donde preparamos nuestros alimentos. Evitar una <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> de urgencia es posible si cambiamos algunos hábitos fundamentales.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Los errores más comunes en la cocina</h2>
+        <p>El error más grave es creer que, si el objeto "desaparece" por el desagüe, el problema terminó. En realidad, el viaje apenas comienza. La mayoría de las obstrucciones en edificios de departamentos en zonas como <strong>Caballito</strong> o <strong>Almagro</strong> ocurren varios metros después del sifón, en las curvas o en la conexión con la columna principal, donde el flujo pierde velocidad.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Aceite y grasa: el principal problema</h2>
+        <p>Si tuviéramos que señalar al "enemigo público número uno" de la plomería de cocina, sería sin duda el aceite de fritura y la grasa animal. Cuando volcás aceite caliente por la bacha, parece que fluye sin problemas. Sin embargo, apenas toma contacto con el agua fría o las paredes de los caños subterráneos, se enfría y se solidifica.</p>
+        <p>Este proceso se conoce técnicamente como <strong>saponificación</strong>. El aceite se mezcla con los restos de detergente y minerales del agua, creando una masa blanca y dura, similar al jabón o al sebo, que se pega a las paredes del caño. Con el tiempo, esta capa reduce el diámetro interno del tubo hasta que un simple grano de arroz es suficiente para causar el tapón total.</p>
+
+        ${getCtaHtml()}
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Restos de comida que tapan la pileta</h2>
+        <p>Aunque parezcan inofensivos, ciertos restos orgánicos son "trampas" mortales para tus cañerías:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Yerba y café:</strong> Las partículas de borra de café y yerba mate no se disuelven. Actúan como arena fina que se asienta en el fondo del sifón y las curvas, creando un sedimento pesado que atrapa la grasa.</li>
+          <li><strong>Arroz y pasta:</strong> Estos alimentos están llenos de almidón y tienen una propiedad crítica: siguen absorbiendo agua incluso dentro del caño. Un puñado de fideos puede hincharse hasta triplicar su tamaño, bloqueando el paso por completo.</li>
+          <li><strong>Cáscaras de huevo:</strong> Al romperse, crean pequeños fragmentos filosos que se enganchan en cualquier irregularidad del caño (como rebabas de PVC), donde empiezan a recolectar pelos, hilos y otros desechos.</li>
+          <li><strong>Harina:</strong> Al mezclarse con agua, la harina se convierte en engrudo. Literalmente pegamento dentro de tus tuberías.</li>
+        </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Productos que generan obstrucciones</h2>
+        <p>Irónicamente, algunos productos destinados a limpiar pueden terminar arruinando todo. Hablamos de la <strong>soda cáustica</strong> comprada en ferreterías. Si no se usa con abundante agua hirviendo y el tapón ya es total, la soda se enfría y se cristaliza. El resultado es una piedra blanca dentro de la tubería que solo se puede sacar rompiendo el piso.</p>
+        <p>Además, el uso excesivo de detergentes de baja calidad con alto contenido de sal puede corroer las juntas y favorecer la acumulación de sarro.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cómo prevenir malos olores</h2>
+        <p>Si tu <a href="/blog/por-que-cocina-huele-a-cloaca" style="color:#16A34A;font-weight:bold;text-decoration:underline;">cocina huele a cloaca</a>, es porque hay materia orgánica pudriéndose en el sifón. Un hábito saludable es volcar una olla de agua hirviendo con una taza de sal gruesa una vez por semana. La sal actúa como un abrasivo suave y el agua caliente ayuda a que las grasas ligeras sigan su camino hacia la alcantarilla.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuándo llamar a un profesional</h2>
+        <p>Si escuchás ruidos de aire (gorgoteos) cuando se vacía el lavarropas o si el agua de la bacha tarda más de 30 segundos en irse por completo, tenés una obstrucción parcial. No esperes a que el agua se detenga totalmente, ya que en ese momento la presión puede causar filtraciones en las uniones.</p>
+        <p>En <strong>Openagua</strong>, utilizamos sistemas de <a href="/blog/como-destapar-pileta-cocina" style="color:#16A34A;font-weight:bold;text-decoration:underline;">limpieza técnica de bachas</a> que no solo destapan, sino que desengrasan el tramo completo de la cocina hacia la cámara de inspección, garantizando que el problema no regrese al mes siguiente.</p>
+
+        ${getFaqHtml([
+          {q: "¿Se puede tirar aceite por la pileta?", a: "Nunca. Lo ideal es recolectarlo en una botella de plástico y llevarlo a un punto de reciclaje verde. El aceite es la causa número uno de reparaciones costosas en edificios."},
+          {q: "¿Qué hacer si sale mal olor?", a: "Revisá que el sifón tenga agua (trampa hidráulica) y limpialo periódicamente. Si el olor persiste, puede haber una fisura en el caño de ventilación o grasa acumulada en la pared profunda."},
+          {q: "¿Cómo evitar que se tape?", a: "La regla de oro es usar siempre un filtro de malla metálica fina en la bacha para atrapar todos los restos sólidos por más pequeños que sean."},
+          {q: "¿Cuándo usar servicio profesional?", a: "Cuando los métodos mecánicos caseros (sopapa) fallan o cuando el agua rebalsa por otra rejilla cercana al usar la bacha de la cocina."}
         ])}
       `
     }
