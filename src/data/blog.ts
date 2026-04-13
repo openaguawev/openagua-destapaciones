@@ -592,6 +592,142 @@ export const getArticulos = (): Articulo[] => {
           {q: "¿Cuándo usar servicio profesional?", a: "Cuando los métodos mecánicos caseros (sopapa) fallan o cuando el agua rebalsa por otra rejilla cercana al usar la bacha de la cocina."}
         ])}
       `
+    },
+    {
+      slug: 'que-es-una-camara-cloacal-y-como-detectar-problemas',
+      title: 'Qué es una cámara cloacal y cómo detectar problemas',
+      seoTitle: 'Qué es una cámara cloacal y cómo detectar problemas',
+      h1: 'Qué es una cámara cloacal y cómo detectar problemas en tu casa o edificio',
+      image: '/img/camara info.jpg',
+      alt: 'Cámara cloacal con tapa abierta mostrando inspección de cañerías',
+      excerpt: 'Conocé qué es una cámara cloacal, para qué sirve y cómo identificar fallas antes de que afecten todo el sistema de desagüe.',
+      content: `
+        <p>En el complejo mundo de las instalaciones sanitarias de <strong>CABA</strong> y <strong>GBA</strong>, existe un elemento fundamental que suele pasar desapercibido hasta que algo falla: la <strong>cámara cloacal</strong> o cámara de inspección. Este componente es el nexo vital entre los desagües internos de tu vivienda y la red pública de alcantarillado.</p>
+        
+        <p>Entender su funcionamiento no es solo una cuestión técnica; es una herramienta de prevención que puede ahorrarte miles de pesos en reparaciones de emergencia y evitarte momentos de estrés extremo por desbordes sanitarios. En <strong>Openagua</strong>, vemos a diario cómo un mantenimiento preventivo de la cámara puede extender por décadas la vida útil de toda la instalación.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Qué es una cámara cloacal y cuál es su función?</h2>
+        <p>Técnicamente, una cámara cloacal es un receptáculo de mampostería, hormigón o polipropileno que permite el acceso a las tuberías de desagüe. Su función principal es doble: por un lado, actúa como un punto de convergencia donde se unen los distintos ramales de la casa (cocina, baño, lavadero) y, por otro, sirve como punto de acceso para tareas de limpieza y desobstrucción.</p>
+        <p>En las construcciones modernas, estas cámaras suelen tener medidas estandarizadas de 60x60 centímetros y cuentan con una profundidad variable dependiendo de la cota de la red externa. Poseen una tapa hermética que impide la salida de gases y olores hacia el exterior.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Dónde se encuentra la cámara de inspección?</h2>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>En casas particulares:</strong> Suele estar ubicada en el patio delantero, cerca de la línea municipal, o en el garage.</li>
+          <li><strong>En edificios (CABA):</strong> Generalmente se encuentra en el subsuelo, en las áreas de servicios o incluso bajo el nivel de la vereda.</li>
+          <li><strong>En PHs:</strong> Es común encontrar una cámara principal compartida en el pasillo común o en el patio de la unidad de planta baja.</li>
+        </ul>
+
+        ${getCtaHtml()}
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Partes fundamentales de una cámara</h2>
+        <p>Si alguna vez levantás la tapa (con precaución), verás elementos clave como el <strong>cojinete</strong>, que es la base con forma de canal por donde circula el agua de forma fluida. También notarás los <strong>caños de acometida</strong> (donde entra el agua de la casa) y el <strong>caño de salida</strong> (el más importante, que va hacia la red urbana).</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Síntomas de problemas en la cámara cloacal</h2>
+        <p>Detectar un problema a tiempo es la diferencia entre una limpieza sencilla y una obra mayor. Prestá atención a estas señales:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Agua estancada en la base:</strong> Normalmente, el agua debe fluir sin detenerse. Si ves líquido acumulado sobre el nivel de los caños, hay una obstrucción en el tramo de salida.</li>
+          <li><strong>Malos olores cerca de la tapa:</strong> Indica que el sellado no es hermético o que hay materia orgánica fermentando en las paredes de la cámara.</li>
+          <li><strong>Fisuras o humedad perimetral:</strong> Una cámara con fisuras permite que el líquido cloacal se filtre al suelo, debilitando cimientos y atrayendo plagas.</li>
+          <li><strong>Presencia de raíces:</strong> Un problema crítico, especialmente si hay árboles en la vereda. Para saber más, leé nuestro post sobre <a href="/blog/raices-en-canerias-como-detectarlas-y-solucionarlo" style="color:#16A34A;font-weight:bold;text-decoration:underline;">cómo detectar raíces en cañerías</a>.</li>
+        </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuándo llamar a un servicio profesional</h2>
+        <p>No intentes meter palos de escoba o alambres para mover la suciedad de la cámara; podés dañar el cojinete o empujar el tapón a un lugar inalcanzable. El servicio técnico profesional utiliza equipamiento de alta potencia para limpiar no solo la cámara, sino los tramos que entran y salen de ella.</p>
+        <p>En <strong>Openagua</strong>, recomendamos una inspección visual de la cámara cada 12 meses. Esto permite detectar desprendimientos de mampostería o inicios de obstrucciones por grasa antes de que se conviertan en una emergencia de madrugada.</p>
+
+        ${getFaqHtml([
+          {q: "¿Es normal que la cámara tenga un poco de agua?", a: "No. El diseño del cojinete está hecho para que el agua pase de largo. Cualquier acumulación indica un drenaje lento o un principio de tapón."},
+          {q: "¿Qué materiales se recomiendan para las cámaras nuevas?", a: "Hoy en día el polipropileno inyectado es el estándar por su hermeticidad y resistencia a los químicos, reemplazando a la vieja mampostería de ladrillo."},
+          {q: "¿Se puede sellar la tapa con cemento?", a: "Nunca se debe sellar de forma permanente. Debe quedar accesible. En su lugar, se usan marcos de bronce o acero con burletes de goma para asegurar la hermeticidad."}
+        ])}
+      `
+    },
+    {
+      slug: 'que-productos-no-usar-para-destapar-canos',
+      title: 'Qué productos NO usar para destapar caños',
+      seoTitle: 'Qué productos NO usar para destapar caños',
+      h1: 'Qué productos NO usar para destapar caños sin dañar las cañerías',
+      image: '/img/acido.jpg',
+      alt: 'Producto químico ácido para destapar caños que puede dañar las cañerías',
+      excerpt: 'Descubrí los peligros ocultos de los químicos agresivos y por qué la soda cáustica o el ácido muriático pueden ser el fin de tu instalación sanitaria.',
+      content: `
+        <p>Frente a una pileta de cocina que no traga agua o un baño tapado, la desesperación suele llevarnos a la ferretería más cercana en busca de una "solución mágica". Sin embargo, lo que parece un remedio rápido en <strong>CABA</strong> y <strong>GBA</strong> puede terminar en una catástrofe económica y estructural para tu hogar.</p>
+        
+        <p>En <strong>Openagua</strong>, realizamos cientos de reparaciones al año donde el problema original (un simple tapón de grasa) se convirtió en una rotura total de cañerías debido al uso irresponsable de químicos. Saber qué productos NO usar es tan importante como saber cuándo llamar a un profesional.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">El enemigo número uno: Ácido Muriático</h2>
+        <p>Este es, quizás, el producto más peligroso de todos. El ácido muriático es extremadamente corrosivo. Si bien puede disolver materia orgánica, también ataca los metales de las rejillas, los tornillos de los sifones y, sobre todo, las uniones de las cañerías antiguas de plomo o hierro fundido.</p>
+        <p>Además, al entrar en contacto con el agua, genera vapores altamente tóxicos que pueden causar quemaduras en las vías respiratorias y los ojos en ambientes cerrados como baños y lavaderos.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Los riesgos de la Soda Cáustica (Hidróxido de Sodio)</h2>
+        <p>La soda cáustica es el "clásico" de las ferreterías, pero su uso es un arma de doble filo. Cuando se vierte soda cáustica en un caño con grasa, se produce una reacción química llamada saponificación: la grasa se convierte literalmente en jabón duro. </p>
+        <p>Si la soda no se disuelve perfectamente con agua hirviendo circulando, se solidifica dentro del caño, creando un tapón similar al mármol que es imposible de sacar con métodos mecánicos. La única solución en estos casos suele ser romper el piso y cambiar el caño completo.</p>
+
+        ${getCtaHtml()}
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Peligros para las tuberías de PVC modernas</h2>
+        <p>Muchos creen que las cañerías plásticas son "inmunes", pero la realidad es distinta. La reacción química de los destapacañerías industriales genera temperaturas superiores a los 80°C dentro del conducto. El PVC de baja calidad o las uniones pegadas con adhesivo pueden deformarse o despegarse bajo este estrés térmico, provocando filtraciones invisibles dentro de las paredes.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Mezclas prohibidas: Un peligro mortal</h2>
+        <p>Nunca, bajo ninguna circunstancia, mezcles productos químicos. La mezcla de lavandina con amoníaco o con vinagre produce gas cloro, que es letal en concentraciones pequeñas. Si ya tiraste un producto y no funcionó, no tires otro encima; llamá a un técnico y avisale qué químicos vertiste para que pueda trabajar con la protección adecuada.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Qué hacer en lugar de usar químicos?</h2>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Prevención:</strong> Leé nuestro artículo sobre <a href="/blog/que-no-tirar-en-la-pileta-de-cocina" style="color:#16A34A;font-weight:bold;text-decoration:underline;">qué no tirar en la pileta de cocina</a> para evitar llegar a esta situación.</li>
+          <li><strong>Métodos mecánicos:</strong> Una sopapa o una cinta pasacables (sonda) de ferretería suelen ser más seguras y efectivas para tapones superficiales.</li>
+          <li><strong>Agua caliente y detergente:</strong> Para grasas ligeras, es el método más seguro y económico disponible.</li>
+        </ul>
+
+        ${getFaqHtml([
+          {q: "¿Los productos 'Magic' que venden en TV dañan los caños?", a: "Muchos son a base de enzimas y son seguros, pero también son muy lentos y rara vez funcionan en tapones totales. Los que prometen resultados inmediatos suelen ser ácidos camuflados."},
+          {q: "¿Qué hago si ya tiré soda cáustica y se tapó más?", a: "Dejá de tirar agua. No metas las manos. Abrí las ventanas y llamá a un servicio profesional aclarando que hay químicos presentes."},
+          {q: "¿El vinagre y bicarbonato daña el caño?", a: "No, es una mezcla segura para mantenimiento preventivo, pero no tiene la fuerza necesaria para eliminar una obstrucción profunda de pelo o grasa petrificada."}
+        ])}
+      `
+    },
+    {
+      slug: 'como-detectar-una-camara-cloacal-tapada',
+      title: 'Cómo detectar una cámara cloacal tapada',
+      seoTitle: 'Cómo detectar una cámara cloacal tapada',
+      h1: 'Cómo detectar una cámara cloacal tapada antes de que rebalse',
+      image: '/img/camara tapada.jpg',
+      alt: 'Cámara cloacal tapada con acumulación de agua y residuos',
+      excerpt: 'Evitá una inundación en tu hogar. Aprendé a identificar las señales de alerta de una cámara de inspección colapsada y cómo actuar a tiempo.',
+      content: `
+        <p>Una <strong>cámara cloacal tapada</strong> es probablemente la peor pesadilla para cualquier propietario en <strong>Buenos Aires</strong>. A diferencia de una bacha tapada, el colapso de la cámara principal afecta a todos los servicios de la casa: inodoros, duchas y cocinas dejan de funcionar simultáneamente, y el riesgo de retroceso de aguas negras hacia el interior de la vivienda es inminente.</p>
+        
+        <p>Saber identificar las señales de alerta antes del desborde final puede ahorrarte días de limpieza profunda y roturas de cañerías. En <strong>Openagua</strong>, somos especialistas en <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cloacas</a> y diagnóstico por video inspección, lo que nos permite resolver estos problemas de raíz.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Señales tempranas de una cámara colapsada</h2>
+        <p>El sistema cloacal rara vez se tapa de un momento para otro; suele avisar con días de antelación. Estas son las alertas críticas:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Gorgoteos en varios artefactos:</strong> Si al vaciar la bacha de la cocina escuchás ruidos en la rejilla del baño, es señal de que el aire no está circulando porque la cámara principal está llena de líquido.</li>
+          <li><strong>Mal olor persistente en el patio o garage:</strong> Si sentís olor a alcantarilla cerca de donde se ubica la tapa de la cámara, es muy probable que haya filtraciones o rebalses internos dentro de la misma.</li>
+          <li><strong>Drenaje lento "colectivo":</strong> Cuando todos los desagües de la casa tardan más de lo habitual, el problema no es un caño individual, sino el punto de salida común: la cámara.</li>
+        </ul>
+
+        ${getCtaHtml()}
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Inspección visual: Qué buscar al abrir la tapa</h2>
+        <p>Si te animás a levantar la tapa de inspección (usando siempre guantes y protección), el diagnóstico es simple:</p>
+        <ol style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Cámara inundada:</strong> Si no ves el fondo (el cojinete) y solo ves agua gris o negra, la salida hacia la calle está tapada.</li>
+          <li><strong>Acumulación de grasas:</strong> Si ves una capa blanca y sólida en las paredes, la cámara está reduciendo su capacidad y pronto se tapará por completo.</li>
+          <li><strong>Suciedad en el borde superior:</strong> Si el fondo está vacío pero ves restos de papel o suciedad cerca del marco de la tapa, significa que la cámara está rebalsando intermitentemente (por ejemplo, cuando usás el lavarropas).</li>
+        </ol>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Causas comunes del bloqueo en la cámara</h2>
+        <p>En el <strong>GBA</strong>, la causa número uno son las raíces de árboles cercanos que perforan las paredes de ladrillo. En departamentos de <strong>CABA</strong>, suele ser el exceso de toallitas húmedas y restos de grasa cementada que vienen de las cocinas de los edificios.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Soluciones definitivas: Hidrojet y Video Inspección</h2>
+        <p>Cuando el tapón es severo, un resorte manual no es suficiente. El método de <strong>hidrojet</strong> es el más efectivo: inyecta agua a altísima presión que rompe el tapón y lava las paredes de la cámara, dejándola como nueva. Si el problema es recurrente, recomendamos una video inspección para detectar fisuras o roturas estructurales que estén facilitando el atasco.</p>
+
+        ${getFaqHtml([
+          {q: "¿Qué hago si la cámara de la vereda está llena?", a: "Si la cámara externa (de AySA o pre-calle) está llena, el problema es de la red pública. Debés hacer el reclamo a la empresa prestataria, aunque a veces una limpieza privada desde adentro ayuda a liberar tu tramo particular."},
+          {q: "¿Puedo tirar baldes de agua con lavandina para destapar?", a: "No. La lavandina no disuelve sólidos. Solo estarás agregando más líquido a un sistema que ya no puede evacuar."},
+          {q: "¿Es peligroso el gas que sale de la cámara?", a: "Sí, el gas metano es inflamable y tóxico en altas concentraciones. Siempre ventilá bien el área antes de inspeccionar una cámara cerrada por mucho tiempo."}
+        ])}
+      `
     }
   ];
 }
