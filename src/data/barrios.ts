@@ -4,13 +4,18 @@ export interface Barrio {
   zoneSlug: string;
   zoneName: string;
   nearby: string[];
+  pois?: string[]; // Puntos de interés para PSEO uniqueness
 }
 
 export const barrios: Barrio[] = [
   // CABA
+  { slug: 'destapaciones-palermo', name: 'Palermo', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Belgrano","Recoleta","Villa Crespo","Almagro"], pois: ["Av. Santa Fe", "Av. Juan B. Justo", "Plaza Italia", "Bosques de Palermo", "Av. Córdoba"] },
+  { slug: 'destapaciones-recoleta', name: 'Recoleta', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Caballito","Villa Real","Floresta"], pois: ["Av. Las Heras", "Av. Callao", "Cementerio de la Recoleta", "Facultad de Derecho"] },
+  { slug: 'destapaciones-belgrano', name: 'Belgrano', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Nuñez","Colegiales","Palermo","Saavedra"], pois: ["Av. Cabildo", "Av. del Libertador", "Barrancas de Belgrano", "Barrio Chino"] },
+  { slug: 'destapaciones-caballito', name: 'Caballito', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Almagro","Flores","Parque Chacabuco","Villa Crespo"], pois: ["Av. Rivadavia", "Parque Rivadavia", "Acoyte y Rivadavia", "Parque Centenario"] },
   { slug: 'destapaciones-capital-federal', name: 'Capital Federal', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Villa Luro","Chacarita","Villa Pueyrredon"] },
-  { slug: 'destapaciones-boedo', name: 'Boedo', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Montserrat","Villa Real","Barrio Norte"] },
-  { slug: 'destapaciones-floresta', name: 'Floresta', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Once","Almagro","Las Cañitas"] },
+  { slug: 'destapaciones-boedo', name: 'Boedo', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Montserrat","Villa Real","Barrio Norte"], pois: ["Av. Boedo", "Av. San Juan", "Café Margot", "Esquina Homero Manzi"] },
+  { slug: 'destapaciones-floresta', name: 'Floresta', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Once","Almagro","Las Cañitas"], pois: ["Av. Rivadavia", "Av. Gaona", "Av. Segurola", "Plaza Vélez Sarsfield"] },
   { slug: 'destapaciones-montserrat', name: 'Montserrat', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["San Cristobal","Villa Luro","Recoleta"] },
   { slug: 'destapaciones-parque-chacabuco', name: 'Parque Chacabuco', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Saavedra","Villa Riachuelo","Capital Federal"] },
   { slug: 'destapaciones-saavedra', name: 'Saavedra', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Agronomia","Montserrat","Colegiales"] },
@@ -62,17 +67,9 @@ export const barrios: Barrio[] = [
   { slug: 'destapaciones-caseros', name: 'Caseros', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["La Tablada","Saenz Peña","Tapiales"] },
   { slug: 'destapaciones-hurlingham', name: 'Hurlingham', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Pablo Podesta","Tres de Febrero","Villa Udaondo"] },
   { slug: 'destapaciones-martin-coronado', name: 'Martin Coronado', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Tres de Febrero","William Morris","Lomas del Mirador"] },
-  { slug: 'destapaciones-ramos-mejia', name: 'Ramos Mejia', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Lomas del Mirador","San Justo","Ciudadela","Haedo"] },
-  { slug: 'destapaciones-villa-luzuriaga', name: 'Villa Luzuriaga', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["La Matanza","Ciudadela","Villa Tesei"] },
-  { slug: 'destapaciones-aldo-bonzi', name: 'Aldo Bonzi', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Caseros","Pablo Podesta","Ramos Mejia"] },
-  { slug: 'destapaciones-lomas-del-mirador', name: 'Lomas del Mirador', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Hurlingham","Libertad","Parque Leloir"] },
-  { slug: 'destapaciones-tapiales', name: 'Tapiales', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Hurlingham","Villa Luzuriaga","Paso del Rey"] },
-  { slug: 'destapaciones-castelar', name: 'Castelar', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["El Palomar","Pablo Podesta","Ituzaingo"] },
-  { slug: 'destapaciones-moreno', name: 'Moreno', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Lomas del Mirador","Pablo Podesta","Martin Coronado"] },
-  { slug: 'destapaciones-villa-sarmiento', name: 'Villa Sarmiento', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Saenz Peña","Aldo Bonzi","Tres de Febrero"] },
-  { slug: 'destapaciones-villa-bosch', name: 'Villa Bosch', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Caseros","Parque Leloir","Tapiales"] },
-  { slug: 'destapaciones-ituzaingo', name: 'Ituzaingo', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Villa Bosch","La Tablada","Martin Coronado"] },
-  { slug: 'destapaciones-moron', name: 'Moron', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Haedo","Castelar","Ituzaingo"] },
+  { slug: 'destapaciones-ramos-mejia', name: 'Ramos Mejia', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Lomas del Mirador","San Justo","Ciudadela","Haedo"], pois: ["Av. de Mayo", "Av. Rivadavia", "Estación Ramos Mejía", "Colegio Don Bosco"] },
+  { slug: 'destapaciones-moron', name: 'Moron', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Haedo","Castelar","Ituzaingo"], pois: ["Av. Rivadavia", "Plaza San Martín Morón", "Catedral de Morón", "Estación Morón"] },
+  { slug: 'destapaciones-castelar', name: 'Castelar', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["El Palomar","Pablo Podesta","Ituzaingo"], pois: ["Av. Santa Rosa", "Arias y Carlos Casares", "Estación Castelar"] },
   { slug: 'destapaciones-saenz-pena', name: 'Saenz Peña', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["San Antonio de Padua","Villa Luzuriaga","San Martin"] },
   { slug: 'destapaciones-villa-udaondo', name: 'Villa Udaondo', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Tres de Febrero","Villa Sarmiento","Lomas del Mirador"] },
   { slug: 'destapaciones-villa-madero', name: 'Villa Madero', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Haedo","Ciudadela","Libertad"] },
@@ -97,11 +94,9 @@ export const barrios: Barrio[] = [
   { slug: 'destapaciones-san-martin', name: 'San Martin', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Villa Ballester","San Andres","Villa Lynch","Caseros"] },
   // ZONA NORTE
   { slug: 'destapaciones-escobar', name: 'Escobar', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Garin","Vicente Lopez","San Isidro"] },
-  { slug: 'destapaciones-san-isidro', name: 'San Isidro', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Martinez","Acassuso","Beccar","Boulogne"] },
-  { slug: 'destapaciones-bella-vista', name: 'Bella Vista', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Benavidez","Villa Maipu","General Pacheco"] },
-  { slug: 'destapaciones-general-pacheco', name: 'General Pacheco', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Nordelta","San Isidro","Carapachay"] },
-  { slug: 'destapaciones-la-lucila', name: 'La Lucila', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Villa Martelli","Escobar","Vicente Lopez"] },
-  { slug: 'destapaciones-martinez', name: 'Martinez', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Villa Adelina","Escobar","Muñiz"] },
+  { slug: 'destapaciones-san-isidro', name: 'San Isidro', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Martinez","Acassuso","Beccar","Boulogne"], pois: ["Av. Centenario", "Catedral de San Isidro", "Hipódromo de San Isidro", "Calle Belgrano"] },
+  { slug: 'destapaciones-olivos', name: 'Olivos', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["General Pacheco","Bella Vista","Pablo Nogues"], pois: ["Av. del Libertador Olivos", "Quinta de Olivos", "Puerto de Olivos", "Av. Maipú"] },
+  { slug: 'destapaciones-martinez', name: 'Martinez', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Villa Adelina","Escobar","Muñiz"], pois: ["Unicenter Shopping", "Av. Santa Fe Martinez", "Calle Alvear"] },
   { slug: 'destapaciones-rincon-de-milberg', name: 'Rincon de Milberg', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Benavidez","General San Martin","Carapachay"] },
   { slug: 'destapaciones-villa-ballester', name: 'Villa Ballester', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["San Miguel","Garin","Don Torcuato"] },
   { slug: 'destapaciones-benavidez', name: 'Benavidez', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Grand Bourg","General Pacheco","San Fernando"] },
@@ -139,14 +134,9 @@ export const barrios: Barrio[] = [
   { slug: 'destapaciones-don-torcuato', name: 'Don Torcuato', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Villa Ballester","Tortuguitas","Villa Martelli"] },
   // ZONA SUR
   { slug: 'destapaciones-adrogue', name: 'Adrogué', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Lanus","Burzaco","Longchamps"] },
-  { slug: 'destapaciones-quilmes', name: 'Quilmes', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Adrogué","Avellaneda","Burzaco"] },
-  { slug: 'destapaciones-avellaneda', name: 'Avellaneda', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Lanus","Banfield","Ezeiza"] },
-  { slug: 'destapaciones-burzaco', name: 'Burzaco', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Adrogué","Lomas de Zamora","Quilmes"] },
-  { slug: 'destapaciones-ezeiza', name: 'Ezeiza', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Lomas de Zamora","Longchamps","Banfield"] },
-  { slug: 'destapaciones-lanus', name: 'Lanus', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Banfield","Adrogué","Longchamps"] },
-  { slug: 'destapaciones-wilde', name: 'Wilde', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Banfield","Lanus","Adrogué"] },
-  { slug: 'destapaciones-banfield', name: 'Banfield', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Adrogué","Lomas de Zamora","Quilmes"] },
-  { slug: 'destapaciones-lomas-de-zamora', name: 'Lomas de Zamora', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Avellaneda","Quilmes","Lanus"] },
+  { slug: 'destapaciones-quilmes', name: 'Quilmes', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Adrogué","Avellaneda","Burzaco"], pois: ["Av. Mitre", "Peatonal Rivadavia", "Cervecería Quilmes", "Ribera de Quilmes"] },
+  { slug: 'destapaciones-lanus', name: 'Lanus', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Banfield","Adrogué","Longchamps"], pois: ["Av. 25 de Mayo", "Av. Hipólito Yrigoyen Lanús", "Estación Lanús"] },
+  { slug: 'destapaciones-lomas-de-zamora', name: 'Lomas de Zamora', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Avellaneda","Quilmes","Lanus"], pois: ["Av. Meeks", "Av. Hipólito Yrigoyen Lomas", "Calle Laprida", "Plaza Grigera"] },
   { slug: 'destapaciones-longchamps', name: 'Longchamps', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Adrogué","Ezeiza","Wilde"] },
   { slug: 'destapaciones-temperley', name: 'Temperley', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Quilmes","Lanus","Banfield"] },
 ];

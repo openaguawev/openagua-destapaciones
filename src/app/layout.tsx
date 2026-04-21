@@ -23,9 +23,18 @@ export const metadata: Metadata = {
     canonical: 'https://www.destapacionesopenagua.com.ar',
   },
   icons: {
-    icon: '/icon.png',
-    apple: '/apple-icon.png',
+    icon: [
+      { url: '/img/favicon-16.png?v=2', sizes: '16x16', type: 'image/png' },
+      { url: '/img/favicon-32.png?v=2', sizes: '32x32', type: 'image/png' },
+      { url: '/img/favicon-48.png?v=2', sizes: '48x48', type: 'image/png' },
+      { url: '/img/favicon.svg?v=2', type: 'image/svg+xml' },
+    ],
+    shortcut: ['/img/favicon-32.png?v=2'],
+    apple: [
+      { url: '/img/apple-touch-icon.png?v=2', sizes: '180x180' },
+    ],
   },
+  manifest: '/manifest.json',
   openGraph: {
     title: '🥇 Destapaciones en CABA y GBA | Máquinas de Sonda | Openagua 🏆',
     description: '✅ Destapaciones en CABA y GBA. Solución hoy mismo con máquinas de sonda. Cloacas y pluviales. 📞 Llamanos al 11 5179-7649 o escribinos por WhatsApp. 🏆',
@@ -60,9 +69,26 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.destapacionesopenagua.com.ar/#organization",
+    "name": "Openagua",
+    "url": "https://www.destapacionesopenagua.com.ar",
+    "logo": "https://www.destapacionesopenagua.com.ar/logo.svg",
+    "sameAs": [
+      "https://facebook.com/openagua",
+      "https://www.instagram.com/destapaciones_openagua/",
+      "https://www.youtube.com/@openagua/videos",
+      "https://www.tiktok.com/@destapacionesopenagua"
+    ]
+  };
+
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "PlumbingService",
+    "@id": "https://www.destapacionesopenagua.com.ar/#localbusiness",
+    "parentOrganization": { "@id": "https://www.destapacionesopenagua.com.ar/#organization" },
     "name": "Openagua",
     "image": "https://www.destapacionesopenagua.com.ar/img/home.jpg",
     "logo": "https://www.destapacionesopenagua.com.ar/logo.svg",
@@ -103,6 +129,11 @@ export default function RootLayout({
         {children}
         <Footer />
         <FloatingButtons />
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         <Script
           id="local-business-schema"
           type="application/ld+json"

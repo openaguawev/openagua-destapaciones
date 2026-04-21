@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import './Contacto.css';
 
-export default function Contacto() {
+export default function Contacto({ initialService = '' }: { initialService?: string }) {
   const [status, setStatus] = useState<'' | 'sending' | 'success'>('');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -77,7 +77,7 @@ export default function Contacto() {
               
               <div className="form-group">
                 <label htmlFor="servicio">Servicio a consultar</label>
-                <select id="servicio" name="servicio" required defaultValue="">
+                <select id="servicio" name="servicio" required defaultValue={initialService}>
                   <option value="" disabled>Seleccioná una opción...</option>
                   <option value="Destapación de Cloacas">Destapación de Cloacas</option>
                   <option value="Destapación de Cañerías">Destapaciones de Cañerías</option>

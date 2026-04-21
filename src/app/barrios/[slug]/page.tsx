@@ -6,6 +6,7 @@ import Script from 'next/script';
 import Image from 'next/image';
 import '@/components/Zonas.css';
 import { handleLegacyRedirect } from '@/utils/legacyRedirect';
+import Resenas from '@/components/Resenas';
 
 export async function generateStaticParams() {
   return barrios.map((b) => ({ slug: b.slug }));
@@ -341,6 +342,8 @@ export default async function BarrioPage({ params }: Props) {
             </div>
           </div>
         </section>
+
+        <Resenas />
 
         {/* SECTION 4: FAQ Optimizada SEO Local */}
         <section className="section" style={{ padding: '6rem 0', backgroundColor: '#ffffff' }}>

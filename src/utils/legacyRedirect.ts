@@ -6,22 +6,20 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
   const cleanSegments = pathSegments.filter(s => s.length > 0);
   const path = cleanSegments.join('-').toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
-  // 1. Mapeo específico de Servicios (Prioridad Alta para evitar Fallback Falso Genérico)
+  // 1. Mapeo específico de Servicios (Prioridad Alta)
   const serviceMap: Record<string, string> = {
     'video-inspeccion': 'video-inspeccion-canerias',
     'videoinspeccion': 'video-inspeccion-canerias',
-    'destapaciones-cloacas': 'destapaciones-cloacas',
-    'destapaciones-pluviales': 'destapaciones-pluviales',
+    'destapaciones-de-cloacas': 'destapaciones-cloacas',
+    'destapaciones-de-pluviales': 'destapaciones-pluviales',
     'destapaciones-con-hidrojet': 'destapaciones-hidrojet',
     'desagote-de-sotanos': 'desagote-sotanos',
     'limpieza-de-camaras': 'limpieza-camaras-septicas',
     'mantenimiento-edificios': 'mantenimientos-preventivos',
     'mantenimiento-preventivo': 'mantenimientos-preventivos',
     'destapaciones-de-canerias': 'destapaciones-canerias',
-    'destapaciones-de-pluviales': 'destapaciones-pluviales',
     'destapaciones-maquinas': 'destapaciones-maquinas',
     'destapaciones-con-maquina': 'destapaciones-maquinas',
-    'destapaciones con maquina': 'destapaciones-maquinas',
     'destapaciones-inodoros': 'destapaciones-cloacas',
     'sistema-hidrojets': 'destapaciones-hidrojet',
     'limpieza-columnas-edificios': 'mantenimientos-preventivos',
@@ -29,7 +27,10 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
     'zona-sur': 'zonas/zona-sur',
     'zona-oeste': 'zonas/zona-oeste'
   };
+  
+  // Evitar bucles: si el path ya coincide con un slug de servicio de destino, no redirigir.
   for (const [key, slug] of Object.entries(serviceMap)) {
+    if (path === slug) continue;
     if (path === key || path.includes(key)) permanentRedirect(`/${slug}`);
   }
 
@@ -48,6 +49,9 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
     'diferencias-canerias-cloacales-pluviales': 'diferencias-canerias-cloacales-pluviales'
   };
   for (const [key, slug] of Object.entries(blogMap)) {
+    // Si ya estamos en una ruta de blog con este slug, ignorar para evitar bucle
+    if (pathSegments.includes('blog') && pathSegments.includes(slug)) continue;
+    
     if (path.includes(key)) permanentRedirect(`/blog/${slug}`);
   }
 
@@ -58,8 +62,10 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
 
   const sortedBarrios = [...barrios].sort((a, b) => b.name.length - a.name.length);
 
-  // 3. Try to match full slug part or normalized name
   for (const barrio of sortedBarrios) {
+    // Evitar bucle si ya estamos en la ruta correcta
+    if (pathSegments.includes('barrios') && pathSegments.includes(barrio.slug)) continue;
+
     const slugPart = barrio.slug.replace('destapaciones-', '');
     const nameNormalized = barrio.name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '-');
     if (path.includes(slugPart) || path.includes(nameNormalized)) {
@@ -67,8 +73,10 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
     }
   }
   
-  // 2. Try to match significant word (without "Villa", "Parque", etc.)
   for (const barrio of sortedBarrios) {
+    // Evitar bucle
+    if (pathSegments.includes('barrios') && pathSegments.includes(barrio.slug)) continue;
+
     const nameNormalized = barrio.name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     const cleanName = nameNormalized.replace(/^(villa|parque|san|general|ciudad|barrio)\s+/i, '').trim();
     if (cleanName.length > 3 && path.includes(cleanName.replace(/\s+/g, '-'))) {
