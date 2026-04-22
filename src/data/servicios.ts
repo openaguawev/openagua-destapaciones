@@ -133,53 +133,44 @@ export const getServicios = (): ServicioData[] => {
     ),
     buildServicio(
       'destapaciones-cloacas',
-      'Destapaciones de Cloacas',
+      'Destapaciones de Cloacas Urgentes',
       '/img/destapacion de cloaca.jpg',
-      'Recuperamos el drenaje de tu red cloacal de forma eficiente. Atendemos casas, edificios y comercios en CABA y GBA con equipos especializados.',
-      'Cuando nos enfrentamos a problemas de redes cloacales, la intervención rápida es vital. Nuestro servicio destaca por resolver la acumulación de sedimentos y restos con herramientas mecánicas de alta precisión.',
+      'Atención inmediata para cloaca tapada urgente. Si el inodoro rebalsa o hay olores insoportables, llegamos en 60 min. Solución definitiva sin romper.',
+      'Tener la cloaca tapada es una de las peores urgencias en casa. Los olores invaden todo, el agua no baja y el riesgo de rebalse es real. En Openagua entendemos esa desesperación. Por eso, nuestro servicio de destapaciones de cloacas se enfoca en resolver el problema de raíz hoy mismo, usando tecnología que cuida tus cañerías. No somos simplemente destapadores; somos técnicos especialistas que te devuelven la tranquilidad sin vueltas.',
       [
-        { q: "¿Cuándo conviene usar hidrojet en lugar de sonda?", a: "El hidrojet es ideal para obstrucciones muy severas y adheridas, mientras que la sonda sirve para destapes rápidos mecanizados." },
-        { q: "¿Trabajan en edificios y consorcios?", a: "Sí, trabajamos frecuentemente con administraciones y ofrecemos abonos especiales a consorcios." },
-        { q: "¿Por qué se tapa la cloaca seguido?", a: "Las obstrucciones frecuentes ocurren cuando se arrojan al inodoro o pileta elementos que no corresponden: toallitas húmedas, papeles, restos de comida, aceite o grasa. Estos materiales no se disuelven y generan tapones. Nuestro trabajo es resolver la obstrucción — el uso correcto de las instalaciones es responsabilidad del propietario." },
-        { q: "¿Cómo sé si el problema es de mi casa o de la calle?", a: "Si el agua retrocede por todas las bocas de tormenta y piletas de patio de la casa simultáneamente, es probable que la cámara de inspección o la salida a la red pública esté bloqueada." },
-        { q: "¿El servicio de destapación cloacal tiene garantía?", a: "Garantizamos que dejamos la cañería circulando libremente al finalizar el trabajo. Si el caño tiene fallas estructurales, te lo informamos en el momento." },
-        { q: "¿Atienden urgencias los fines de semana?", a: "Sí, nuestro equipo de guardia está disponible las 24 horas, incluyendo sábados, domingos y feriados." }
+        { q: "¿Cuánto cuesta destapar una cloaca en Argentina?", a: "El precio de destapar una cloaca depende de la complejidad y la distancia de la obstrucción. Ofrecemos presupuestos transparentes en el momento. Consultanos por WhatsApp para un estimado rápido." },
+        { q: "¿Atienden urgencias de cloacas las 24 horas?", a: "Sí, tenemos equipos de guardia para destapaciones 24 horas zona oeste y CABA. Entendemos que un rebalse no puede esperar a mañana." },
+        { q: "¿La máquina de destapar puede romper los caños?", a: "Nuestras sondas rotativas y el sistema de destapaciones con hidrojet están diseñados para limpiar sin dañar. Son métodos seguros para cañerías de PVC, hierro o cemento." },
+        { q: "¿Qué garantía tengo de que no se vuelva a tapar?", a: "Brindamos garantía por escrito sobre la limpieza realizada. Además, verificamos el flujo de agua junto a vos para asegurar que el conducto quedó 100% libre." },
+        { q: "¿Qué zonas cubren con el servicio urgente?", a: "Cubrimos CABA y toda la Zona Oeste: Morón, Ituzaingó, Hurlingham, Ramos Mejía, Castelar y alrededores con respuesta inmediata." },
+        { q: "¿Es necesario romper el piso para destapar?", a: "En el 98% de los casos resolvemos todo sin romper. Usamos máquinas que ingresan por las bocas de inspección o rejillas existentes." }
       ],
       {
-        benefitsTitle: "Nuestro Compromiso Profesional",
+        benefitsTitle: "Por qué elegir Openagua para tu cloaca",
         benefits: [
-          { title: "Diagnóstico Real", desc: "Si el caño está colapsado o tiene raíces, te lo decimos con total honestidad. No ocultamos fallas estructurales para que sepas el estado real de tu instalación." },
-          { title: "Prueba de Paso de Agua", desc: "Verificamos el caudal junto a vos para confirmar la limpieza del conducto. En caso de que el sistema no desagote por daños físicos en la cañería, brindamos un informe honesto sobre la necesidad de reparación o reemplazo del tramo afectado." },
-          { title: "Uso de Accesos", desc: "Trabajamos a través de cámaras de inspección o bocas de acceso existentes para evitar roturas innecesarias durante la tarea de limpieza." }
+          { title: "Respuesta en 60 minutos", desc: "Sabemos que una cloaca rebalsada es un caos. Por eso priorizamos las urgencias en CABA y GBA para estar ahí antes de que el problema pase a mayores." },
+          { title: "Tecnología Sin Roturas", desc: "Olvidate de romper pisos. Usamos destapaciones de cañerías con máquinas de resortes que recorren el conducto eliminando el tapón sin dañar la estructura." },
+          { title: "Especialistas en Casos Críticos", desc: "Si ya intentaste de todo y sigue tapado, nuestro equipo utiliza video inspección de cañerías para ver qué pasa adentro y resolverlo de una vez." }
         ],
         equipment: [
-          { title: "Sonda Rotativa Eléctrica", desc: "Resortes de acero de alta resistencia para desobstruir objetos sólidos, restos de obra y sedimentos duros que bloquean el paso." },
-          { title: "Sistema Hidrojet (Alta Presión)", desc: "Limpieza con agua a presión que barre sarro y grasa acumulada, recuperando el diámetro interno del caño para un drenaje fluido." }
-        ],
-        steps: [
-          { title: "Contacto", desc: "Recibimos tu consulta para entender el problema y coordinar la visita.", iconStr: "📱" },
-          { title: "Evaluación", desc: "Ubicamos la obstrucción y definimos si corresponde el uso de sonda o hidrojet.", iconStr: "🔎" },
-          { title: "Ejecución", desc: "Aplicamos la maquinaria necesaria según la resistencia y dureza del tapón.", iconStr: "⚙️" },
-          { title: "Verificación", desc: "Realizamos una prueba de paso de agua para constatar la remoción del tapón o identificar daños estructurales que impidan el flujo normal.", iconStr: "✅" }
+          { title: "Sondas Rotativas Mecanizadas", desc: "Máquinas de alta potencia que destruyen raíces, restos de obra y sedimentos duros que bloquean el paso de la cloaca." },
+          { title: "Equipos de Hidrojet", desc: "Agua a ultra alta presión para un lavado total. Es el método ideal si necesitás limpieza de cámaras sépticas o desengrase profundo." }
         ],
         problemasComunes: [
-          { title: "Sifones Obstruidos", desc: "Acumulación de pelos y restos de jabón que frenan el desagüe del baño." },
-          { title: "Cámaras de Inspección Llenas", desc: "Cuando la cámara se llena de lodo, el retroceso de agua es inminente en toda la planta baja." },
-          { title: "Pendientes Negativas", desc: "Problemas estructurales donde el agua se estanca y genera sedimentos rápidamente." }
+          { title: "Inodoro que rebalsa", desc: "El signo más claro de que el caño maestro está obstruido. Evitá tirar más agua y llamanos urgente." },
+          { title: "Olores de cloaca en casa", desc: "Suele ocurrir por falta de ventilación o acumulación de gases en cámaras de inspección tapadas." },
+          { title: "Desagües pluviales cruzados", desc: "A veces las destapaciones pluviales fallan porque el agua de lluvia termina saturando la red cloacal por conexiones mal hechas." }
         ],
         comoTrabajamos: [
-          { title: "Diagnóstico con Cámara", desc: "Si es necesario, usamos video inspección para ver el interior.", icon: "🎥" },
-          { title: "Hidrojet de Alta Potencia", desc: "Lavamos las paredes del caño con agua a presión.", icon: "💧" },
-          { title: "Certificado de Servicio", desc: "Garantizamos nuestro trabajo por escrito.", icon: "📄" }
+          { title: "Diagnóstico Inmediato", desc: "Llegamos y evaluamos dónde está el tapón sin adivinar.", icon: "📍" },
+          { title: "Intervención Técnica", desc: "Aplicamos máquinas de resortes o hidrojet según la dureza del bloqueo.", icon: "⚙️" },
+          { title: "Prueba de Flujo", desc: "Tiramos abundante agua para que veas que el drenaje volvió a la normalidad.", icon: "🚰" },
+          { title: "Limpieza y Garantía", desc: "Dejamos todo prolijo y te damos tu certificado de garantía por escrito.", icon: "📄" }
         ],
-        tiposDeDestapacion: [
-          { title: "Sondeo con Resortes", desc: "Ideal para obstrucciones sólidas en tramos cortos." },
-          { title: "Limpieza Hidrolavado", desc: "Para eliminar grasas y sarro en redes de mayor diámetro." }
-        ],
-        zonas: ["CABA", "San Isidro", "Vicente López", "Olivos", "Martínez", "Tigre", "San Fernando"],
+        zonas: ["CABA", "Morón", "Ituzaingó", "Hurlingham", "Ramos Mejía", "Castelar", "Haedo", "San Justo"],
         casosReales: [
-          { title: "Edificio en Belgrano", desc: "Destapamos la columna principal de un edificio de 15 pisos que afectaba a todos los departamentos." },
-          { title: "Sótano inundado en Olivos", desc: "Vaciamos y destapamos el sistema de desagüe tras una tormenta severa." }
+          { title: "Urgencia en un PH de Morón", desc: "Un cliente tenía el baño inundado un domingo a la noche. Llegamos en 40 minutos y con una sonda mecanizada extrajimos un bloque de trapos que impedía el flujo. Se fue a dormir con el problema resuelto." },
+          { title: "Consorcio en Ramos Mejía", desc: "La cloaca principal rebalsaba en el sótano. Aplicamos hidrojet para barrer años de grasa acumulada y evitamos una obra costosa de recambio de caños." }
         ]
       }
     ),
