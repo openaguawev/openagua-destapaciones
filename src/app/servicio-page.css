@@ -125,6 +125,33 @@
   opacity: 0.8;
 }
 
+/* Bloque SEO Estratégico */
+.seo-text-block {
+  margin: 2.5rem auto;
+  max-width: 900px;
+  text-align: center;
+  color: #334155;
+  line-height: 1.7;
+  padding: 0 1rem;
+}
+
+.seo-text-block p {
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+}
+
+.seo-text-block strong {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .seo-text-block {
+    text-align: left;
+    margin: 2rem 0;
+  }
+}
+
 /* Links de Barrios - Interlinking */
 .links-barrios {
   display: flex;

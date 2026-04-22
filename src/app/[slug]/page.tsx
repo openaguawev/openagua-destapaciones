@@ -153,21 +153,25 @@ export default async function ServicioPage({ params }: Props) {
           </div>
         </section>
 
-        {/* Equipamiento */}
-        {servicio.equipment && servicio.equipment.length > 0 && (
-          <section className="section-block compact">
-            <h2 className="section-title">{servicio.equipmentTitle || 'Equipamiento Técnico'}</h2>
-            <div className="benefits-grid">
-              {servicio.equipment.map((eq, i) => (
-                <div key={i} className="benefit-card">
-                  <div className="benefit-icon">⚙️</div>
-                  <h3 className="benefit-title">{eq.title}</h3>
-                  <p>{eq.desc}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
+        {/* Bloque SEO Estratégico */}
+        <section className="seo-text-block">
+          <p>
+            En Openagua realizamos <strong>destapaciones urgentes en CABA y todo el Gran Buenos Aires</strong>, 
+            trabajando en Zona Oeste, Zona Norte y Zona Sur con equipos profesionales como máquinas de resorte, hidrojet 
+            y video inspección de cañerías.
+          </p>
+
+          <p>
+            Atendemos problemas como <strong>cloacas tapadas, cañerías obstruidas, grasa acumulada y raíces en tuberías</strong>, 
+            brindando soluciones en el día sin necesidad de romper pisos ni paredes.
+          </p>
+
+          <p>
+            Si necesitás una solución inmediata, podés consultar por <strong>destapaciones de cloacas</strong>, 
+            <strong>destapaciones con máquina</strong> o solicitar una 
+            <strong>video inspección de cañerías</strong> para detectar el problema exacto.
+          </p>
+        </section>
 
         {/* Pasos */}
         {servicio.steps && servicio.steps.length > 0 && (
