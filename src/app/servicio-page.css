@@ -5,7 +5,7 @@
   color: #1e293b;
 }
 
-/* 🔧 FASE 2 — FIX HERO */
+/* 🔧 FASE 2 & 10 — HERO Y UX */
 .servicio-hero {
   position: relative;
   min-height: 60vh;
@@ -39,7 +39,7 @@
   line-height: 1.2;
   margin-bottom: 1rem;
   color: #ffffff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .servicio-hero-desc {
@@ -47,33 +47,35 @@
   max-width: 800px;
   margin: 0 auto;
   color: #ffffff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   line-height: 1.5;
+  font-weight: 500;
 }
 
 .back-link-servicio {
   display: inline-block;
   margin-bottom: 2rem;
   color: #ffffff;
-  opacity: 0.8;
+  opacity: 0.85;
   font-weight: 600;
   text-decoration: none;
-  transition: opacity 0.2s;
+  transition: opacity 0.2s, transform 0.2s;
 }
 
 .back-link-servicio:hover {
   opacity: 1;
+  transform: translateX(-4px);
 }
 
 /* Espaciado y Contenido */
 .servicio-content {
-  padding: 3rem 1rem;
+  padding: 2.5rem 1rem;
   max-width: 1100px;
   margin: 0 auto;
 }
 
 .intro-section {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   text-align: center;
   max-width: 850px;
   margin-left: auto;
@@ -82,39 +84,40 @@
 
 .intro-section p {
   font-size: 1.25rem;
-  color: #475569;
+  color: #334155;
   line-height: 1.7;
 }
 
 .section-divider {
-  width: 50px;
-  height: 3px;
+  width: 60px;
+  height: 4px;
   background-color: #16a34a;
-  margin: 2rem auto 0 auto;
-  border-radius: 2px;
+  margin: 1.5rem auto 0 auto;
+  border-radius: 4px;
 }
 
 .section-block {
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
 }
 
 .section-block.compact {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #0f172a;
+  letter-spacing: -0.025em;
 }
 
 /* Grid de Beneficios / Equipamiento */
 .benefits-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .benefit-card {
@@ -122,21 +125,22 @@
   padding: 1.75rem;
   border-radius: 16px;
   border: 1px solid #e2e8f0;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
 }
 
 .benefit-card.small {
-  padding: 1.25rem 1.5rem;
+  padding: 1.15rem 1.4rem;
 }
 
 .benefit-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  transform: scale(1.02);
+  box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e1;
 }
 
 .benefit-icon {
   font-size: 1.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   color: #16a34a;
 }
 
@@ -150,8 +154,8 @@
 /* Steps Grid */
 .steps-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
 }
 
 .step-card {
@@ -167,36 +171,42 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 1.25rem auto;
+  margin: 0 auto 1rem auto;
   font-size: 1.15rem;
   font-weight: 800;
+  box-shadow: 0 4px 6px -1px rgba(22, 163, 74, 0.3);
 }
 
-/* CTA Block - FASE 2 FIX */
+/* CTA Block - FASE 9 FIX */
 .cta-block {
   background-color: #0f172a;
   color: #ffffff;
   padding: 3.5rem 2rem;
-  border-radius: 20px;
+  border-radius: 24px;
   text-align: center;
-  margin-bottom: 4rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 3.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .cta-block.compact-top {
-  margin-top: 40px;
+  margin-top: 2rem;
 }
 
 .cta-title {
-  font-size: 2rem;
+  font-size: 2.25rem;
   margin-bottom: 0.75rem;
   font-weight: 800;
+  letter-spacing: -0.025em;
 }
 
 .cta-desc {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2rem;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cta-button {
@@ -207,14 +217,14 @@
   border-radius: 12px;
   font-weight: 800;
   text-decoration: none;
-  font-size: 1.15rem;
-  transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .cta-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 15px -3px rgba(22, 163, 74, 0.4);
+  transform: scale(1.05);
+  box-shadow: 0 20px 25px -5px rgba(22, 163, 74, 0.4);
 }
 
 /* FAQ Section */
@@ -231,6 +241,11 @@
   padding: 1.25rem 1.5rem;
   border-radius: 12px;
   border: 1px solid #e2e8f0;
+  transition: border-color 0.2s;
+}
+
+.faq-item:hover {
+  border-color: #cbd5e1;
 }
 
 .faq-summary {
@@ -241,7 +256,7 @@
   justify-content: space-between;
   align-items: center;
   color: #0f172a;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
 }
 
 .faq-summary::-webkit-details-marker {
@@ -251,23 +266,28 @@
 .faq-answer {
   margin-top: 1rem;
   color: #475569;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .faq-arrow {
   color: #16a34a;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
+  transition: transform 0.2s;
+}
+
+details[open] .faq-arrow {
+  transform: rotate(180deg);
 }
 
 /* Final CTA */
 .final-cta {
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .final-cta h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 0.5rem;
   color: #0f172a;
   font-weight: 800;
@@ -275,6 +295,7 @@
 
 .final-cta p {
   color: #64748b;
+  font-size: 1.05rem;
 }
 
 @media (max-width: 768px) {
@@ -285,9 +306,13 @@
     font-size: 1.75rem;
   }
   .cta-block {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.25rem;
+    border-radius: 16px;
   }
   .servicio-content {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
+  }
+  .cta-title {
+    font-size: 1.75rem;
   }
 }

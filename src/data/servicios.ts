@@ -135,39 +135,39 @@ export const getServicios = (): ServicioData[] => {
       'destapaciones-cloacas',
       'Destapaciones de Cloacas Urgentes',
       '/img/destapacion de cloaca.jpg',
-      'Si la cloaca está tapada o rebalsa, lo resolvemos hoy mismo sin romper pisos. Atención inmediata en CABA y Zona Oeste.',
-      'Tener una cloaca tapada urgente es un problema crítico que requiere acción inmediata. El mal olor y el riesgo de rebalse sanitario afectan la higiene de tu hogar. En Openagua realizamos destapaciones de cloacas con tecnología de punta que elimina la obstrucción de raíz. Atendemos emergencias en CABA, Morón, Ituzaingó y Hurlingham con técnicos especializados y respuesta en menos de 60 minutos.',
+      'Cloaca tapada o rebalsando. Solución rápida hoy mismo sin romper nada. Solución en el día. Llegamos en menos de 60 minutos.',
+      'Tener una cloaca tapada es una emergencia que no puede esperar. El riesgo de rebalse sanitario y los olores persistentes afectan tu salud y la de tu familia. En Openagua realizamos destapaciones de cloacas con maquinaria de última generación que elimina la obstrucción de raíz sin romper un solo piso. Atendemos en CABA, Morón, Ituzaingó y Hurlingham con respuesta inmediata las 24 horas.',
       [
-        { q: "¿Cuánto tiempo demoran en llegar?", a: "Llegamos en menos de 60 minutos a CABA, Ramos Mejía o Castelar. Nuestra prioridad es resolver tu urgencia lo antes posible." },
-        { q: "¿Cuál es el precio de una destapación?", a: "El precio depende de la dificultad y metros de cañería. Ofrecemos presupuestos honestos y transparentes por WhatsApp." },
-        { q: "¿Es necesario romper el piso?", a: "No. En el 98% de los casos usamos máquinas de resortes o destapaciones con hidrojet que limpian el caño a través de las bocas de acceso." },
-        { q: "¿Qué garantía tienen los trabajos?", a: "Todos nuestros servicios cuentan con garantía por escrito. Verificamos el drenaje junto a vos antes de retirarnos." },
-        { q: "¿Atienden obstrucciones por raíces?", a: "Sí, nuestras sondas rotativas eliminan raíces y sedimentos duros que bloquean el paso del agua cloacal." },
-        { q: "¿Cómo detectan una rotura interna?", a: "Si la obstrucción es recurrente, realizamos una video inspección de cañerías para ver el estado real del conducto sin romper una sola baldosa." }
+        { q: "¿Cuánto demoran en llegar?", a: "Llegamos en menos de 60 minutos a CABA, Ramos Mejía, Morón o Castelar. Nuestra prioridad es resolver tu urgencia hoy mismo." },
+        { q: "¿Cuál es el costo del servicio?", a: "El precio depende de la obstrucción y los metros de cañería. Consultanos por WhatsApp para un presupuesto transparente y sin compromiso." },
+        { q: "¿Es necesario romper para destapar?", a: "No. En el 98% de los casos usamos máquinas de resortes o destapaciones con hidrojet que limpian el caño a través de las bocas de acceso existentes." },
+        { q: "¿Dan garantía por el trabajo?", a: "Sí, entregamos garantía real por escrito. Verificamos el flujo de agua junto a vos para asegurar que la cañería quedó 100% limpia." },
+        { q: "¿Qué pasa si hay raíces?", a: "Nuestras sondas rotativas eliminan raíces y sedimentos duros que bloquean el paso del agua cloacal de forma definitiva." },
+        { q: "¿Cómo ven el estado del caño?", a: "Si el problema es recurrente, realizamos una video inspección de cañerías para detectar roturas o fallas estructurales sin necesidad de excavar." }
       ],
       {
         benefitsTitle: "Especialistas en Destapaciones de Cloacas",
         benefits: [
-          { title: "Solución Hoy Mismo", desc: "No esperes a mañana. Resolvemos tu cloaca rebalsada en el día con equipos de guardia permanente." },
-          { title: "Tecnología Sin Roturas", desc: "Cuidamos tu propiedad. Nuestras destapaciones de cañerías evitan obras costosas e innecesarias." },
-          { title: "Atención 24 Horas", desc: "Estamos disponibles cuando más nos necesitás en Zona Oeste y Capital Federal para urgencias sanitarias." }
+          { title: "No esperes días. Lo resolvemos hoy.", desc: "Recuperá la normalidad de tu baño y cocina en pocas horas con nuestro servicio de urgencias 24hs." },
+          { title: "Solución definitiva sin romper.", desc: "Olvidate de las obras costosas. Nuestras destapaciones de cañerías cuidan tus instalaciones y tu bolsillo." },
+          { title: "Resultados garantizados.", desc: "Limpieza total de conductos con certificación de trabajo. Si no drena correctamente, no nos retiramos." }
         ],
         equipment: [
-          { title: "Sondas Rotativas", desc: "Eliminan restos de grasa, jabón y objetos sólidos acumulados en el tiempo." },
-          { title: "Máquinas de Alta Potencia", desc: "Capaces de limpiar desde caños de cocina hasta la salida cloacal principal." }
+          { title: "Sondas Mecanizadas", desc: "Elimina obstrucciones profundas de grasa, jabón y objetos sólidos de forma rápida y segura." },
+          { title: "Máquinas de Alta Potencia", desc: "Evita romper cañerías gracias a la precisión del movimiento rotativo que limpia sin dañar el PVC o hierro." }
         ],
         steps: [
-          { title: "Llamado Urgente", desc: "Contactanos por WhatsApp y recibí prioridad inmediata.", iconStr: "📞" },
-          { title: "Arribo Técnico", desc: "Llegamos rápido a Morón, Ituzaingó, Ramos Mejía o CABA.", iconStr: "📍" },
-          { title: "Limpieza Total", desc: "Aplicamos maquinaria especializada hasta liberar el paso por completo.", iconStr: "⚙️" },
-          { title: "Garantía Real", desc: "Certificamos el trabajo y verificamos el funcionamiento final.", iconStr: "✅" }
+          { title: "Contacto Inmediato", desc: "Escribinos y recibí prioridad técnica al instante.", iconStr: "📞" },
+          { title: "Diagnóstico en el Momento", desc: "Evaluamos el tapón y te damos la solución exacta.", iconStr: "📍" },
+          { title: "Solución en el Día", desc: "Limpiamos el conducto con maquinaria profesional.", iconStr: "⚙️" },
+          { title: "Garantía Final", desc: "Comprobamos el drenaje y te entregamos tu garantía.", iconStr: "✅" }
         ],
         problemasComunes: [
-          { title: "Cloaca rebalsada", desc: "Si el agua retrocede por el inodoro o rejillas, es una emergencia clara que resolvemos hoy." },
-          { title: "Mal olor persistente", desc: "Indica acumulación de sedimentos o fallas en la ventilación cloacal que deben sanearse." },
-          { title: "Agua que no drena", desc: "Cuando la bacha o el baño tardan en bajar, el tapón está cerrando el caño progresivamente." },
-          { title: "Raíces en cañerías", desc: "Un problema común en casas con árboles cerca que requiere corte mecánico con sondas." },
-          { title: "Obstrucciones por grasa", desc: "Típico en cocinas, donde el hidrojet es la única solución definitiva para lavar el caño." }
+          { title: "Cloaca rebalsada", desc: "Emergencia crítica: el agua retrocede por inodoros o rejillas inundando el ambiente." },
+          { title: "Olor a cloaca", desc: "Indica gases acumulados por sedimentos o falta de ventilación en la red." },
+          { title: "Agua estancada", desc: "La bacha o el baño tardan en bajar, señal de un tapón que crece día a día." },
+          { title: "Raíces en cañerías", desc: "Obstrucción mecánica que requiere corte con sonda para liberar el paso." },
+          { title: "Grasa acumulada", desc: "Sedimento duro que estrecha el caño hasta taparlo por completo. Requiere lavado profundo." }
         ]
       }
     ),

@@ -121,7 +121,7 @@ export default async function ServicioPage({ params }: Props) {
           <div className="section-divider" />
         </section>
 
-        {/* FASE 4 — BLOQUE NUEVO: Problemas frecuentes */}
+        {/* Problemas frecuentes */}
         {servicio.problemasComunes && (
           <section className="section-block compact">
             <h2 className="section-title">Problemas frecuentes que resolvemos</h2>
@@ -133,6 +133,9 @@ export default async function ServicioPage({ params }: Props) {
                 </div>
               ))}
             </div>
+            <p style={{ textAlign: 'center', marginTop: '1.5rem', color: '#64748b', fontSize: '0.9rem', fontStyle: 'italic' }}>
+              Actuar a tiempo evita daños mayores en su propiedad.
+            </p>
           </section>
         )}
 
@@ -182,12 +185,12 @@ export default async function ServicioPage({ params }: Props) {
           </section>
         )}
 
-        {/* FASE 2 & 6 — CTA OPTIMIZADO */}
+        {/* CTA OPTIMIZADO */}
         <section className="cta-block compact-top">
           <h2 className="cta-title">¿Necesitás una solución ahora?</h2>
-          <p className="cta-desc">Escribinos y lo solucionamos hoy. Atención inmediata 24hs.</p>
+          <p className="cta-desc">Resolución inmediata por WhatsApp. Atención urgente 24hs.</p>
           <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20necesito%20resolver%20una%20urgencia%20ahora" target="_blank" rel="noopener noreferrer" className="cta-button">
-            Resolver ahora por WhatsApp
+            Escribinos ahora y lo resolvemos hoy
           </a>
         </section>
 
@@ -209,10 +212,11 @@ export default async function ServicioPage({ params }: Props) {
           </div>
         </section>
 
-        {/* Final CTA */}
+        {/* Final CTA con Microcopy */}
         <div className="final-cta">
           <h3>¿Listo para empezar?</h3>
-          <p>Completá el formulario debajo y te contactaremos en minutos.</p>
+          <p style={{ color: '#16a34a', fontWeight: '700', marginBottom: '0.5rem' }}>Te respondemos en minutos. Sin compromiso.</p>
+          <p>Completá el formulario debajo y te contactaremos de inmediato.</p>
         </div>
 
       </div>
