@@ -37,23 +37,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const serviceMap: Record<string, string> = {
+  'destapaciones-cloacas': 'Destapación de Cloacas',
+  'destapaciones-canerias': 'Destapación de Cañerías',
+  'destapaciones-pluviales': 'Destapaciones Pluviales',
+  'destapaciones-hidrojet': 'Sistema Hidro Jet',
+  'video-inspeccion-canerias': 'Video Inspección',
+  'limpieza-camaras-septicas': 'Limpieza de Cámaras',
+  'desagote-sotanos': 'Desagote de Sótanos',
+  'mantenimientos-preventivos': 'Mantenimiento Preventivo',
+  'destapaciones-maquinas': 'Destapación con Máquinas'
+};
+
 export default async function ServicioPage({ params }: Props) {
   const resolvedParams = await params;
   const servicios = getServicios();
   const servicio = servicios.find((s) => s.slug === resolvedParams.slug);
 
-  // DEBUG LOG (REQUERIDO)
-  console.log("SLUG PROD:", resolvedParams.slug);
-  console.log("SERVICIO PROD:", servicio);
-
   if (!servicio) {
-    // LOG REQUERIDO SI NO ENCUENTRA RESULTADO
-    console.log("LOG: Slug no encontrado:", resolvedParams.slug);
-    console.log("LOG: Array servicios disponibles:", servicios.map(s => s.slug));
-    
     handleLegacyRedirect([resolvedParams.slug]);
-    
-    // FALLBACK VISIBLE REQUERIDO
     return (
       <div style={{ color: "red", padding: "4rem", textAlign: "center", minHeight: "60vh" }}>
         <h1>ERROR: servicio no encontrado</h1>
@@ -65,10 +67,6 @@ export default async function ServicioPage({ params }: Props) {
 
   return (
     <main className="servicio-detail-page">
-      {/* DEBUG VISIBLE EN PROD (TEMPORAL) */}
-      <div style={{ background: 'yellow', color: 'black', padding: '5px', fontSize: '10px', textAlign: 'center' }}>
-        DEBUG: Renderizando {resolvedParams.slug} - Encontrado: {servicio ? 'SI' : 'NO'}
-      </div>
       <div className="servicio-hero" style={{ position: 'relative', overflow: 'hidden' }}>
         <Image 
           src={servicio.image} 
@@ -87,16 +85,16 @@ export default async function ServicioPage({ params }: Props) {
         </div>
       </div>
 
-      <div className="container servicio-content" style={{ padding: '4rem 0' }}>
+      <div className="container servicio-content" style={{ padding: '4rem 0', maxWidth: '1200px' }}>
         <section style={{ marginBottom: '4rem', textAlign: 'center', maxWidth: '800px', margin: '0 auto 4rem auto' }}>
           <p style={{ fontSize: '1.25rem', color: '#475569', lineHeight: 1.6 }}>{servicio.intro}</p>
         </section>
 
         <section style={{ marginBottom: '5rem' }}>
           <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2rem' }}>{servicio.benefitsTitle}</h2>
-          <div className={`grid grid-cols-1 md:grid-cols-2 ${servicio.benefits.length >= 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-2'} gap-8 max-w-6xl mx-auto px-4`}>
+          <div className="benefits-grid">
             {servicio.benefits.map((b, i) => (
-              <div key={i} className="benefit-card" style={{ height: '100%' }}>
+              <div key={i} className="benefit-card">
                 <div style={{ fontSize: '2.5rem', marginBottom: '1rem', color: '#16A34A', textAlign: 'center' }}>✓</div>
                 <div style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a', textAlign: 'center', fontWeight: 'bold' }}>{b.title}</div>
                 <p style={{ textAlign: 'center' }}>{b.desc}</p>
@@ -108,9 +106,9 @@ export default async function ServicioPage({ params }: Props) {
         {servicio.equipment && servicio.equipment.length > 0 && (
           <section style={{ marginBottom: '5rem' }}>
             <h2 style={{ textAlign: 'center', marginBottom: '3rem', fontSize: '2rem' }}>{servicio.equipmentTitle || 'Equipamiento Técnico'}</h2>
-            <div className={`grid grid-cols-1 md:grid-cols-2 ${servicio.equipment.length >= 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-2'} gap-8 max-w-6xl mx-auto px-4 justify-center`}>
+            <div className="benefits-grid" style={{ justifyContent: 'center' }}>
               {servicio.equipment.map((eq, i) => (
-                <div key={i} className="benefit-card" style={{ height: '100%', maxWidth: servicio.equipment && servicio.equipment.length < 3 ? '500px' : 'none', margin: '0 auto', width: '100%' }}>
+                <div key={i} className="benefit-card" style={{ maxWidth: servicio.equipment && servicio.equipment.length < 3 ? '500px' : 'none', margin: '0 auto', width: '100%' }}>
                   <div style={{ fontSize: '2.5rem', marginBottom: '1rem', textAlign: 'center' }}>⚙️</div>
                   <div style={{ fontSize: '1.25rem', marginBottom: '1rem', color: '#0f172a', textAlign: 'center', fontWeight: 'bold' }}>{eq.title}</div>
                   <p style={{ textAlign: 'center' }}>{eq.desc}</p>
@@ -162,9 +160,9 @@ export default async function ServicioPage({ params }: Props) {
         </section>
 
       </div>
-      <Contacto />
+      <Contacto initialService={serviceMap[servicio.slug] || ''} />
       <Script
-        id="service-schema"
+        id={`service-schema-${servicio.slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -179,6 +177,26 @@ export default async function ServicioPage({ params }: Props) {
           })
         }}
       />
+      {servicio.faqs && servicio.faqs.length > 0 && (
+        <Script
+          id={`faq-schema-${servicio.slug}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": servicio.faqs.map(f => ({
+                "@type": "Question",
+                "name": f.q,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": f.a
+                }
+              }))
+            })
+          }}
+        />
+      )}
     </main>
   );
 }
