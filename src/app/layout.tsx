@@ -24,17 +24,16 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/img/favicon-16.png?v=2', sizes: '16x16', type: 'image/png' },
-      { url: '/img/favicon-32.png?v=2', sizes: '32x32', type: 'image/png' },
-      { url: '/img/favicon-48.png?v=2', sizes: '48x48', type: 'image/png' },
-      { url: '/img/favicon.svg?v=2', type: 'image/svg+xml' },
+      { url: '/img/favicon16.png?v=4', sizes: '16x16', type: 'image/png' },
+      { url: '/img/favicon32.png?v=4', sizes: '32x32', type: 'image/png' },
+      { url: '/img/favicon48.png?v=4', sizes: '48x48', type: 'image/png' },
     ],
-    shortcut: ['/img/favicon-32.png?v=2'],
+    shortcut: ['/img/favicon32.png?v=4'],
     apple: [
-      { url: '/img/apple-touch-icon.png?v=2', sizes: '180x180' },
+      { url: '/img/apple-touch-icon.png?v=4', sizes: '180x180' },
     ],
   },
-  manifest: '/manifest.json',
+  manifest: '/manifest.json?v=4',
   openGraph: {
     title: '🥇 Destapaciones en CABA y GBA | Máquinas de Sonda | Openagua 🏆',
     description: '✅ Destapaciones en CABA y GBA. Solución hoy mismo con máquinas de sonda. Cloacas y pluviales. 📞 Llamanos al 11 5179-7649 o escribinos por WhatsApp. 🏆',
