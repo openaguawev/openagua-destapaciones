@@ -125,6 +125,52 @@
   opacity: 0.8;
 }
 
+/* Links de Barrios - Interlinking */
+.links-barrios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.links-barrios a {
+  font-size: 0.875rem;
+  color: #16a34a;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.links-barrios a:hover {
+  text-decoration: underline;
+}
+
+.links-barrios span {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+/* Grid de 4 columnas para Zonas */
+.zones-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .zones-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .zones-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Grid de Beneficios / Equipamiento */
 .benefits-grid {
   display: grid;
