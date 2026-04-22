@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `🥇 ${servicio.title} en CABA y GBA | Máquinas de Sonda | Openagua 🏆`,
-    description: `✅ ${servicio.title} en CABA y GBA. Solución hoy mismo sin romper. 📞 Llamanos al 11 5179-7649.`,
+    description: `✅ ${servicio.title} en CABA y GBA. Solución rápida hoy mismo sin romper. 📞 Llamanos al 11 5179-7649.`,
     alternates: {
       canonical: `https://www.destapacionesopenagua.com.ar/${servicio.slug}`,
     }
@@ -39,7 +39,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 // Interlinking manual controlado (Máximo 2-3 links por página)
 const renderTextWithLinks = (text: string, slug: string) => {
-  // Solo aplicamos interlinking si no estamos ya en ese servicio
   const links = [
     { kw: 'video inspección de cañerías', to: 'video-inspeccion-canerias' },
     { kw: 'destapaciones con hidrojet', to: 'destapaciones-hidrojet' },
@@ -55,10 +54,10 @@ const renderTextWithLinks = (text: string, slug: string) => {
       if (typeof part === 'string') {
         const regex = new RegExp(`(${link.kw})`, 'i');
         const split = part.split(regex);
-        split.forEach(s => {
+        split.forEach((s, i) => {
           if (s.toLowerCase() === link.kw.toLowerCase()) {
-            newResult.push(<Link key={s} href={`/${link.to}`} style={{ color: 'inherit', fontWeight: '600', textDecoration: 'underline' }}>{s}</Link>);
-          } else {
+            newResult.push(<Link key={s + i} href={`/${link.to}`} style={{ color: 'inherit', fontWeight: '600', textDecoration: 'underline' }}>{s}</Link>);
+          } else if (s !== '') {
             newResult.push(s);
           }
         });
@@ -96,7 +95,7 @@ export default async function ServicioPage({ params }: Props) {
 
   return (
     <main className="servicio-detail-page">
-      {/* Hero Section - Restaurado y Legible */}
+      {/* Hero Section */}
       <div className="servicio-hero">
         <Image 
           src={servicio.image} 
@@ -107,7 +106,6 @@ export default async function ServicioPage({ params }: Props) {
           style={{ objectFit: 'cover', zIndex: 0 }} 
           quality={85}
         />
-        {/* Overlay optimizado para legibilidad */}
         <div className="hero-overlay" />
         <div className="container hero-content">
           <Link href="/#servicios" className="back-link-servicio">← Volver a Servicios</Link>
@@ -118,17 +116,33 @@ export default async function ServicioPage({ params }: Props) {
 
       <div className="container servicio-content">
         {/* Intro */}
-        <section className="intro-section">
+        <section className="intro-section compact">
           <p>{renderTextWithLinks(servicio.intro, servicio.slug)}</p>
+          <div className="section-divider" />
         </section>
 
+        {/* FASE 4 — BLOQUE NUEVO: Problemas frecuentes */}
+        {servicio.problemasComunes && (
+          <section className="section-block compact">
+            <h2 className="section-title">Problemas frecuentes que resolvemos</h2>
+            <div className="benefits-grid compact">
+              {servicio.problemasComunes.map((p, i) => (
+                <div key={i} className="benefit-card small">
+                  <h3 className="benefit-title">{p.title}</h3>
+                  <p style={{ fontSize: '0.95rem' }}>{p.desc}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Beneficios */}
-        <section className="section-block">
+        <section className="section-block compact">
           <h2 className="section-title">{servicio.benefitsTitle}</h2>
           <div className="benefits-grid">
             {servicio.benefits.map((b, i) => (
               <div key={i} className="benefit-card">
-                <div className="benefit-icon">✓</div>
+                <div className="benefit-icon">✅</div>
                 <h3 className="benefit-title">{b.title}</h3>
                 <p>{b.desc}</p>
               </div>
@@ -138,7 +152,7 @@ export default async function ServicioPage({ params }: Props) {
 
         {/* Equipamiento */}
         {servicio.equipment && servicio.equipment.length > 0 && (
-          <section className="section-block">
+          <section className="section-block compact">
             <h2 className="section-title">{servicio.equipmentTitle || 'Equipamiento Técnico'}</h2>
             <div className="benefits-grid">
               {servicio.equipment.map((eq, i) => (
@@ -154,7 +168,7 @@ export default async function ServicioPage({ params }: Props) {
 
         {/* Pasos */}
         {servicio.steps && servicio.steps.length > 0 && (
-          <section className="section-block">
+          <section className="section-block compact">
             <h2 className="section-title">{servicio.stepsTitle || '¿Cómo Trabajamos?'}</h2>
             <div className="steps-grid">
               {servicio.steps.map((s, i) => (
@@ -168,17 +182,17 @@ export default async function ServicioPage({ params }: Props) {
           </section>
         )}
 
-        {/* CTA Principal */}
-        <section className="cta-block">
+        {/* FASE 2 & 6 — CTA OPTIMIZADO */}
+        <section className="cta-block compact-top">
           <h2 className="cta-title">¿Necesitás una solución ahora?</h2>
-          <p className="cta-desc">Atención inmediata 24hs. Sin romper pisos ni cañerías.</p>
-          <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20quiero%20consultar%20por%20un%20presupuesto" target="_blank" rel="noopener noreferrer" className="cta-button">
-            Consultar por WhatsApp
+          <p className="cta-desc">Escribinos y lo solucionamos hoy. Atención inmediata 24hs.</p>
+          <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20necesito%20resolver%20una%20urgencia%20ahora" target="_blank" rel="noopener noreferrer" className="cta-button">
+            Resolver ahora por WhatsApp
           </a>
         </section>
 
         {/* FAQ */}
-        <section className="section-block">
+        <section className="section-block compact">
           <h2 className="section-title">Preguntas Frecuentes</h2>
           <div className="faq-list">
             {servicio.faqs.map((f, i) => (
@@ -195,7 +209,7 @@ export default async function ServicioPage({ params }: Props) {
           </div>
         </section>
 
-        {/* CTA Final */}
+        {/* Final CTA */}
         <div className="final-cta">
           <h3>¿Listo para empezar?</h3>
           <p>Completá el formulario debajo y te contactaremos en minutos.</p>
