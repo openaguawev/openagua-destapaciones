@@ -187,8 +187,9 @@ export default async function ServicioPage({ params }: Props) {
 
         {/* CTA OPTIMIZADO */}
         <section className="cta-block compact-top">
-          <h2 className="cta-title">¿Necesitás una solución ahora?</h2>
-          <p className="cta-desc">Resolución inmediata por WhatsApp. Atención urgente 24hs.</p>
+          <span className="cta-badge">Urgencias 24hs</span>
+          <h2 className="cta-title">¿Necesitás una solución urgente?</h2>
+          <p className="cta-desc">Resolución inmediata por WhatsApp. Atendemos emergencias hoy mismo.</p>
           <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20necesito%20resolver%20una%20urgencia%20ahora" target="_blank" rel="noopener noreferrer" className="cta-button">
             Escribinos ahora y lo resolvemos hoy
           </a>
