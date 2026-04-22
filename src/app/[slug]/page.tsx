@@ -185,6 +185,25 @@ export default async function ServicioPage({ params }: Props) {
           </section>
         )}
 
+        {/* INTERLINKING LOCAL: Zonas de atención */}
+        <section className="section-block compact">
+          <h2 className="section-title">Trabajamos en tu zona</h2>
+          <p style={{ textAlign: 'center', marginBottom: '2rem', color: '#64748b' }}>
+            Atendemos urgencias en CABA, Zona Oeste, Norte y Sur con móviles propios.
+          </p>
+          <div className="zonas-grid">
+            <Link href="/barrios/destapaciones-moron">Destapaciones en Morón</Link>
+            <Link href="/zonas/zona-oeste">Servicio en Ituzaingó</Link>
+            <Link href="/barrios/destapaciones-ramos-mejia">Destapaciones en Ramos Mejía</Link>
+            <Link href="/barrios/destapaciones-castelar">Destapaciones en Castelar</Link>
+            <Link href="/barrios/destapaciones-san-isidro">Destapaciones en San Isidro</Link>
+            <Link href="/barrios/destapaciones-lanus">Destapaciones en Lanús</Link>
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+            <Link href="/zonas" className="ver-todas-zonas">Ver todas las zonas de cobertura</Link>
+          </div>
+        </section>
+
         {/* CTA OPTIMIZADO */}
         <section className="cta-block compact-top">
           <span className="cta-badge">Urgencias 24hs</span>
