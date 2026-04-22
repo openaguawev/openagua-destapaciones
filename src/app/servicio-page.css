@@ -113,40 +113,16 @@
   letter-spacing: -0.025em;
 }
 
-/* Zonas Grid - Interlinking */
-.zonas-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.75rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.zonas-grid a {
-  background: #f8fafc;
-  padding: 0.75rem;
-  border-radius: 10px;
-  text-align: center;
-  font-weight: 600;
-  color: #334155;
-  text-decoration: none;
-  border: 1px solid #e2e8f0;
-  font-size: 0.95rem;
-  transition: all 0.2s ease;
-}
-
-.zonas-grid a:hover {
-  border-color: #16a34a;
-  color: #16a34a;
-  background: #f0fdf4;
-  transform: translateY(-2px);
-}
-
 .ver-todas-zonas {
   font-weight: 700;
   color: #16a34a;
   text-decoration: underline;
-  font-size: 1rem;
+  font-size: 1.05rem;
+  transition: opacity 0.2s;
+}
+
+.ver-todas-zonas:hover {
+  opacity: 0.8;
 }
 
 /* Grid de Beneficios / Equipamiento */
@@ -366,12 +342,5 @@ details[open] .faq-arrow {
   }
   .cta-title {
     font-size: 1.75rem;
-  }
-  .zonas-grid {
-    grid-template-columns: 1fr;
-  }
-  .zonas-grid a {
-    text-align: left;
-    padding: 1rem;
   }
 }
