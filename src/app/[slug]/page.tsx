@@ -202,12 +202,12 @@ export default async function ServicioPage({ params }: Props) {
               <h3 className="benefit-title">CABA</h3>
               <p style={{ fontSize: '0.9rem' }}>Servicio de destapaciones en CABA con atención inmediata, sin romper y garantía por escrito.</p>
               <div className="links-barrios">
-                <strong><Link href="/barrios/destapaciones-palermo">Palermo</Link></strong>
-                <strong><Link href="/barrios/destapaciones-caballito">Caballito</Link></strong>
-                <strong><Link href="/barrios/destapaciones-belgrano">Belgrano</Link></strong>
-                <Link href="/barrios/destapaciones-almagro">Almagro</Link>
-                <Link href="/barrios/destapaciones-villa-urquiza">Villa Urquiza</Link>
-                <Link href="/barrios/destapaciones-flores">Flores</Link>
+                <strong><Link href="/barrios/destapaciones-palermo" className="link-barrio">Palermo</Link></strong>
+                <strong><Link href="/barrios/destapaciones-caballito" className="link-barrio">Caballito</Link></strong>
+                <strong><Link href="/barrios/destapaciones-belgrano" className="link-barrio">Belgrano</Link></strong>
+                <Link href="/barrios/destapaciones-almagro" className="link-barrio">Almagro</Link>
+                <Link href="/barrios/destapaciones-villa-urquiza" className="link-barrio">Villa Urquiza</Link>
+                <Link href="/barrios/destapaciones-flores" className="link-barrio">Flores</Link>
               </div>
             </div>
 
@@ -217,12 +217,12 @@ export default async function ServicioPage({ params }: Props) {
               <h3 className="benefit-title">Zona Oeste</h3>
               <p style={{ fontSize: '0.9rem' }}>Destapaciones urgentes en Zona Oeste con máquinas profesionales, hidrojet y diagnóstico preciso.</p>
               <div className="links-barrios">
-                <strong><Link href="/barrios/destapaciones-moron">Morón</Link></strong>
-                <strong><Link href="/barrios/destapaciones-ramos-mejia">Ramos Mejía</Link></strong>
-                <strong><Link href="/barrios/destapaciones-castelar">Castelar</Link></strong>
-                <Link href="/barrios/destapaciones-haedo">Haedo</Link>
-                <span>Ituzaingó</span>
-                <span>Merlo</span>
+                <strong><Link href="/barrios/destapaciones-moron" className="link-barrio">Morón</Link></strong>
+                <strong><Link href="/barrios/destapaciones-ramos-mejia" className="link-barrio">Ramos Mejía</Link></strong>
+                <strong><Link href="/barrios/destapaciones-castelar" className="link-barrio">Castelar</Link></strong>
+                <Link href="/barrios/destapaciones-haedo" className="link-barrio">Haedo</Link>
+                <Link href="/barrios/destapaciones-ituzaingo" className="link-barrio">Ituzaingó</Link>
+                <Link href="/barrios/destapaciones-merlo" className="link-barrio">Merlo</Link>
               </div>
             </div>
 
@@ -232,12 +232,12 @@ export default async function ServicioPage({ params }: Props) {
               <h3 className="benefit-title">Zona Norte</h3>
               <p style={{ fontSize: '0.9rem' }}>Atención en Zona Norte para cloacas y cañerías con equipos de última generación.</p>
               <div className="links-barrios">
-                <strong><Link href="/barrios/destapaciones-san-isidro">San Isidro</Link></strong>
-                <strong><Link href="/barrios/destapaciones-vicente-lopez">Vicente López</Link></strong>
-                <strong><Link href="/barrios/destapaciones-san-fernando">San Fernando</Link></strong>
-                <Link href="/barrios/destapaciones-martinez">Martínez</Link>
-                <Link href="/barrios/destapaciones-olivos">Olivos</Link>
-                <span>Tigre</span>
+                <strong><Link href="/barrios/destapaciones-san-isidro" className="link-barrio">San Isidro</Link></strong>
+                <strong><Link href="/barrios/destapaciones-vicente-lopez" className="link-barrio">Vicente López</Link></strong>
+                <strong><Link href="/barrios/destapaciones-san-fernando" className="link-barrio">San Fernando</Link></strong>
+                <Link href="/barrios/destapaciones-martinez" className="link-barrio">Martínez</Link>
+                <Link href="/barrios/destapaciones-olivos" className="link-barrio">Olivos</Link>
+                <Link href="/barrios/destapaciones-tigre" className="link-barrio">Tigre</Link>
               </div>
             </div>
 
@@ -247,12 +247,12 @@ export default async function ServicioPage({ params }: Props) {
               <h3 className="benefit-title">Zona Sur</h3>
               <p style={{ fontSize: '0.9rem' }}>Destapaciones en Zona Sur con respuesta rápida y soluciones definitivas en el día.</p>
               <div className="links-barrios">
-                <strong><Link href="/barrios/destapaciones-lanus">Lanús</Link></strong>
-                <strong><Link href="/barrios/destapaciones-lomas-de-zamora">Lomas de Zamora</Link></strong>
-                <strong><Link href="/barrios/destapaciones-quilmes">Quilmes</Link></strong>
-                <Link href="/barrios/destapaciones-temperley">Temperley</Link>
-                <span>Avellaneda</span>
-                <span>Banfield</span>
+                <strong><Link href="/barrios/destapaciones-lanus" className="link-barrio">Lanús</Link></strong>
+                <strong><Link href="/barrios/destapaciones-lomas-de-zamora" className="link-barrio">Lomas de Zamora</Link></strong>
+                <strong><Link href="/barrios/destapaciones-quilmes" className="link-barrio">Quilmes</Link></strong>
+                <Link href="/barrios/destapaciones-temperley" className="link-barrio">Temperley</Link>
+                <Link href="/barrios/destapaciones-avellaneda" className="link-barrio">Avellaneda</Link>
+                <Link href="/barrios/destapaciones-banfield" className="link-barrio">Banfield</Link>
               </div>
             </div>
           </div>

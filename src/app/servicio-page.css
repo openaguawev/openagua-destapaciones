@@ -163,14 +163,17 @@
 }
 
 .links-barrios a {
-  font-size: 0.875rem;
-  color: #16a34a;
-  font-weight: 600;
-  text-decoration: none;
   transition: all 0.2s;
 }
 
-.links-barrios a:hover {
+.link-barrio {
+  color: #16a34a;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.link-barrio:hover {
   text-decoration: underline;
 }
 

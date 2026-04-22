@@ -92,6 +92,8 @@ export const barrios: Barrio[] = [
   { slug: 'destapaciones-san-justo', name: 'San Justo', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Ciudad Jardin","La Matanza","Caseros"] },
   { slug: 'destapaciones-san-antonio-de-padua', name: 'San Antonio de Padua', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Moron","El Palomar","Parque Leloir"] },
   { slug: 'destapaciones-san-martin', name: 'San Martin', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Villa Ballester","San Andres","Villa Lynch","Caseros"] },
+  { slug: 'destapaciones-ituzaingo', name: 'Ituzaingó', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Moron","Castelar","Merlo"] },
+  { slug: 'destapaciones-merlo', name: 'Merlo', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Ituzaingo","Moreno","Paso del Rey"] },
   // ZONA NORTE
   { slug: 'destapaciones-escobar', name: 'Escobar', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Garin","Vicente Lopez","San Isidro"] },
   { slug: 'destapaciones-san-isidro', name: 'San Isidro', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Martinez","Acassuso","Beccar","Boulogne"], pois: ["Av. Centenario", "Catedral de San Isidro", "Hipódromo de San Isidro", "Calle Belgrano"] },
@@ -132,6 +134,7 @@ export const barrios: Barrio[] = [
   { slug: 'destapaciones-villa-adelina', name: 'Villa Adelina', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Bella Vista","Loma Hermosa","Vicente Lopez"] },
   { slug: 'destapaciones-san-miguel', name: 'San Miguel', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Villa Martelli","Jose Leon Suarez","Benavidez"] },
   { slug: 'destapaciones-don-torcuato', name: 'Don Torcuato', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Villa Ballester","Tortuguitas","Villa Martelli"] },
+  { slug: 'destapaciones-tigre', name: 'Tigre', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["San Fernando","Nordelta","General Pacheco"] },
   // ZONA SUR
   { slug: 'destapaciones-adrogue', name: 'Adrogué', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Lanus","Burzaco","Longchamps"] },
   { slug: 'destapaciones-quilmes', name: 'Quilmes', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Adrogué","Avellaneda","Burzaco"], pois: ["Av. Mitre", "Peatonal Rivadavia", "Cervecería Quilmes", "Ribera de Quilmes"] },
@@ -139,4 +142,6 @@ export const barrios: Barrio[] = [
   { slug: 'destapaciones-lomas-de-zamora', name: 'Lomas de Zamora', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Avellaneda","Quilmes","Lanus"], pois: ["Av. Meeks", "Av. Hipólito Yrigoyen Lomas", "Calle Laprida", "Plaza Grigera"] },
   { slug: 'destapaciones-longchamps', name: 'Longchamps', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Adrogué","Ezeiza","Wilde"] },
   { slug: 'destapaciones-temperley', name: 'Temperley', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Quilmes","Lanus","Banfield"] },
+  { slug: 'destapaciones-avellaneda', name: 'Avellaneda', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Lanus","Quilmes","Wilde"] },
+  { slug: 'destapaciones-banfield', name: 'Banfield', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Lomas de Zamora","Lanus","Temperley"] },
 ];
