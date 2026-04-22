@@ -196,11 +196,11 @@ export default async function ServicioPage({ params }: Props) {
             <div className="benefit-card">
               <div className="benefit-icon">📍</div>
               <h3 className="benefit-title">CABA</h3>
-              <p style={{ fontSize: '0.9rem' }}>Servicio rápido y garantizado en todos los barrios de Capital Federal. Especialistas en edificios, consorcios y PH.</p>
+              <p style={{ fontSize: '0.9rem' }}>Servicio de destapaciones en CABA con atención inmediata, sin romper y garantía por escrito.</p>
               <div className="links-barrios">
-                <Link href="/barrios/destapaciones-palermo">Palermo</Link>
-                <Link href="/barrios/destapaciones-caballito">Caballito</Link>
-                <Link href="/barrios/destapaciones-belgrano">Belgrano</Link>
+                <strong><Link href="/barrios/destapaciones-palermo">Palermo</Link></strong>
+                <strong><Link href="/barrios/destapaciones-caballito">Caballito</Link></strong>
+                <strong><Link href="/barrios/destapaciones-belgrano">Belgrano</Link></strong>
                 <Link href="/barrios/destapaciones-almagro">Almagro</Link>
                 <Link href="/barrios/destapaciones-villa-urquiza">Villa Urquiza</Link>
                 <Link href="/barrios/destapaciones-flores">Flores</Link>
@@ -211,11 +211,11 @@ export default async function ServicioPage({ params }: Props) {
             <div className="benefit-card">
               <div className="benefit-icon">📍</div>
               <h3 className="benefit-title">Zona Oeste</h3>
-              <p style={{ fontSize: '0.9rem' }}>Atendemos en Morón, Ituzaingó, Ramos Mejía, Castelar y alrededores. Destapaciones con máquina e hidrojet.</p>
+              <p style={{ fontSize: '0.9rem' }}>Destapaciones urgentes en Zona Oeste con máquinas profesionales, hidrojet y diagnóstico preciso.</p>
               <div className="links-barrios">
-                <Link href="/barrios/destapaciones-moron">Morón</Link>
-                <Link href="/barrios/destapaciones-ramos-mejia">Ramos Mejía</Link>
-                <Link href="/barrios/destapaciones-castelar">Castelar</Link>
+                <strong><Link href="/barrios/destapaciones-moron">Morón</Link></strong>
+                <strong><Link href="/barrios/destapaciones-ramos-mejia">Ramos Mejía</Link></strong>
+                <strong><Link href="/barrios/destapaciones-castelar">Castelar</Link></strong>
                 <Link href="/barrios/destapaciones-haedo">Haedo</Link>
                 <span>Ituzaingó</span>
                 <span>Merlo</span>
@@ -226,11 +226,11 @@ export default async function ServicioPage({ params }: Props) {
             <div className="benefit-card">
               <div className="benefit-icon">📍</div>
               <h3 className="benefit-title">Zona Norte</h3>
-              <p style={{ fontSize: '0.9rem' }}>Atención rápida en Zona Norte, incluyendo San Isidro, Vicente López, Tigre y alrededores.</p>
+              <p style={{ fontSize: '0.9rem' }}>Atención en Zona Norte para cloacas y cañerías con equipos de última generación.</p>
               <div className="links-barrios">
-                <Link href="/barrios/destapaciones-san-isidro">San Isidro</Link>
-                <Link href="/barrios/destapaciones-vicente-lopez">Vicente López</Link>
-                <Link href="/barrios/destapaciones-san-fernando">San Fernando</Link>
+                <strong><Link href="/barrios/destapaciones-san-isidro">San Isidro</Link></strong>
+                <strong><Link href="/barrios/destapaciones-vicente-lopez">Vicente López</Link></strong>
+                <strong><Link href="/barrios/destapaciones-san-fernando">San Fernando</Link></strong>
                 <Link href="/barrios/destapaciones-martinez">Martínez</Link>
                 <Link href="/barrios/destapaciones-olivos">Olivos</Link>
                 <span>Tigre</span>
@@ -241,11 +241,11 @@ export default async function ServicioPage({ params }: Props) {
             <div className="benefit-card">
               <div className="benefit-icon">📍</div>
               <h3 className="benefit-title">Zona Sur</h3>
-              <p style={{ fontSize: '0.9rem' }}>Cobertura en Zona Sur como Lanús, Lomas de Zamora, Avellaneda y Quilmes. Llegamos en el día.</p>
+              <p style={{ fontSize: '0.9rem' }}>Destapaciones en Zona Sur con respuesta rápida y soluciones definitivas en el día.</p>
               <div className="links-barrios">
-                <Link href="/barrios/destapaciones-lanus">Lanús</Link>
-                <Link href="/barrios/destapaciones-lomas-de-zamora">Lomas de Zamora</Link>
-                <Link href="/barrios/destapaciones-quilmes">Quilmes</Link>
+                <strong><Link href="/barrios/destapaciones-lanus">Lanús</Link></strong>
+                <strong><Link href="/barrios/destapaciones-lomas-de-zamora">Lomas de Zamora</Link></strong>
+                <strong><Link href="/barrios/destapaciones-quilmes">Quilmes</Link></strong>
                 <Link href="/barrios/destapaciones-temperley">Temperley</Link>
                 <span>Avellaneda</span>
                 <span>Banfield</span>
