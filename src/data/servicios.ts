@@ -13,6 +13,12 @@ export interface ServicioData {
   equipmentTitle?: string;
   stepsTitle?: string;
   imageAlt?: string;
+  // NUEVAS PROPIEDADES SEO
+  problemasComunes?: { title: string; desc: string }[];
+  comoTrabajamos?: { title: string; desc: string; icon?: string }[];
+  tiposDeDestapacion?: { title: string; desc: string }[];
+  zonas?: string[];
+  casosReales?: { title: string; desc: string }[];
 }
 
 const buildServicio = (
@@ -31,6 +37,11 @@ const buildServicio = (
     equipmentTitle?: string;
     stepsTitle?: string;
     imageAlt?: string;
+    problemasComunes?: { title: string; desc: string }[];
+    comoTrabajamos?: { title: string; desc: string; icon?: string }[];
+    tiposDeDestapacion?: { title: string; desc: string }[];
+    zonas?: string[];
+    casosReales?: { title: string; desc: string }[];
   }
 ): ServicioData => {
   return {
@@ -55,7 +66,12 @@ const buildServicio = (
     schemaTitle: custom?.schemaTitle,
     equipmentTitle: custom?.equipmentTitle,
     stepsTitle: custom?.stepsTitle,
-    imageAlt: custom?.imageAlt
+    imageAlt: custom?.imageAlt,
+    problemasComunes: custom?.problemasComunes,
+    comoTrabajamos: custom?.comoTrabajamos,
+    tiposDeDestapacion: custom?.tiposDeDestapacion,
+    zonas: custom?.zonas,
+    casosReales: custom?.casosReales,
   };
 };
 
@@ -70,7 +86,10 @@ export const getServicios = (): ServicioData[] => {
       [
         { q: "¿Cuándo se debe usar una máquina de resortes?", a: "La máquina de resortes es ideal para destapa cañerías con máquina en obstrucciones sólidas como restos de comida, pelos o pequeños objetos en baños y cocinas." },
         { q: "¿Qué beneficios tiene la máquina de resortes contra el hidrojet?", a: "La máquina de resortes es perfecta para espacios reducidos y cañerías internas, mientras que el hidrojet se recomienda para destapaciones de cloacas con máquina donde hay grasa o raíces." },
-        { q: "¿Realizan trabajos en Zona Oeste?", a: "Sí, brindamos servicios de destapaciones con máquinas en toda la Zona Oeste, CABA y alrededores con atención inmediata." }
+        { q: "¿Realizan trabajos en Zona Oeste?", a: "Sí, brindamos servicios de destapaciones con máquinas en toda la Zona Oeste, CABA y alrededores con atención inmediata." },
+        { q: "¿Cuánto tiempo demoran en llegar?", a: "Contamos con unidades móviles equipadas para llegar a tu domicilio en menos de 60 minutos en casos de urgencia." },
+        { q: "¿Qué formas de pago aceptan?", a: "Podés abonar el servicio en efectivo, por transferencia bancaria o a través de Mercado Pago con todas las tarjetas." },
+        { q: "¿Entregan factura y garantía?", a: "Sí, emitimos factura por todos nuestros trabajos y brindamos garantía por escrito sobre la desobstrucción realizada." }
       ],
       {
         benefitsTitle: "Especialistas en Destapaciones con Máquinas",
@@ -90,7 +109,26 @@ export const getServicios = (): ServicioData[] => {
           { title: "Tapón de Grasa o Raíces", desc: "El Hidrojet es la herramienta definitiva para lavar las paredes del caño y expulsar sedimentos.", iconStr: "💦" },
           { title: "Duda Estructural", desc: "La video inspección se activa cuando hay sospecha de caño roto o hundimiento del terreno.", iconStr: "🎥" }
         ],
-        imageAlt: "Destapación de cloacas con máquina profesional en Zona Oeste"
+        imageAlt: "Destapación de cloacas con máquina profesional en Zona Oeste",
+        problemasComunes: [
+          { title: "Raíces en Cañerías", desc: "La intrusión de raíces de árboles es común en cloacas antiguas, generando bloqueos persistentes." },
+          { title: "Grasa Petrificada", desc: "En cocinas, la acumulación de grasa se endurece como piedra, impidiendo el paso del agua." },
+          { title: "Objetos Extraños", desc: "Juguetes, trapos o restos de obra que caen accidentalmente y obstruyen el flujo." }
+        ],
+        comoTrabajamos: [
+          { title: "Despacho Inmediato", desc: "Salimos hacia tu domicilio en menos de 60 minutos.", icon: "🚗" },
+          { title: "Sondeo Mecánico", desc: "Introducimos máquinas de resortes para romper el tapón.", icon: "⚙️" },
+          { title: "Limpieza Final", desc: "Aseguramos que el conducto quede libre de sedimentos.", icon: "✨" }
+        ],
+        tiposDeDestapacion: [
+          { title: "Destapación Preventiva", desc: "Mantenimiento periódico para evitar urgencias inesperadas." },
+          { title: "Destapación de Urgencia", desc: "Atención inmediata las 24 horas para desbordes cloacales." }
+        ],
+        zonas: ["CABA", "Ramos Mejía", "Morón", "Castelar", "Ituzaingó", "Lomas del Mirador", "Haedo"],
+        casosReales: [
+          { title: "Urgencia en Ramos Mejía", desc: "Resolvimos un desborde en un restaurante en hora pico en solo 45 minutos." },
+          { title: "Red de Cloacas en Haedo", desc: "Extrajimos raíces de más de 3 metros que bloqueaban la salida principal de una vivienda." }
+        ]
       }
     ),
     buildServicio(
@@ -102,7 +140,10 @@ export const getServicios = (): ServicioData[] => {
       [
         { q: "¿Cuándo conviene usar hidrojet en lugar de sonda?", a: "El hidrojet es ideal para obstrucciones muy severas y adheridas, mientras que la sonda sirve para destapes rápidos mecanizados." },
         { q: "¿Trabajan en edificios y consorcios?", a: "Sí, trabajamos frecuentemente con administraciones y ofrecemos abonos especiales a consorcios." },
-        { q: "¿Por qué se tapa la cloaca seguido?", a: "Las obstrucciones frecuentes ocurren cuando se arrojan al inodoro o pileta elementos que no corresponden: toallitas húmedas, papeles, restos de comida, aceite o grasa. Estos materiales no se disuelven y generan tapones. Nuestro trabajo es resolver la obstrucción — el uso correcto de las instalaciones es responsabilidad del propietario." }
+        { q: "¿Por qué se tapa la cloaca seguido?", a: "Las obstrucciones frecuentes ocurren cuando se arrojan al inodoro o pileta elementos que no corresponden: toallitas húmedas, papeles, restos de comida, aceite o grasa. Estos materiales no se disuelven y generan tapones. Nuestro trabajo es resolver la obstrucción — el uso correcto de las instalaciones es responsabilidad del propietario." },
+        { q: "¿Cómo sé si el problema es de mi casa o de la calle?", a: "Si el agua retrocede por todas las bocas de tormenta y piletas de patio de la casa simultáneamente, es probable que la cámara de inspección o la salida a la red pública esté bloqueada." },
+        { q: "¿El servicio de destapación cloacal tiene garantía?", a: "Garantizamos que dejamos la cañería circulando libremente al finalizar el trabajo. Si el caño tiene fallas estructurales, te lo informamos en el momento." },
+        { q: "¿Atienden urgencias los fines de semana?", a: "Sí, nuestro equipo de guardia está disponible las 24 horas, incluyendo sábados, domingos y feriados." }
       ],
       {
         benefitsTitle: "Nuestro Compromiso Profesional",
@@ -120,6 +161,25 @@ export const getServicios = (): ServicioData[] => {
           { title: "Evaluación", desc: "Ubicamos la obstrucción y definimos si corresponde el uso de sonda o hidrojet.", iconStr: "🔎" },
           { title: "Ejecución", desc: "Aplicamos la maquinaria necesaria según la resistencia y dureza del tapón.", iconStr: "⚙️" },
           { title: "Verificación", desc: "Realizamos una prueba de paso de agua para constatar la remoción del tapón o identificar daños estructurales que impidan el flujo normal.", iconStr: "✅" }
+        ],
+        problemasComunes: [
+          { title: "Sifones Obstruidos", desc: "Acumulación de pelos y restos de jabón que frenan el desagüe del baño." },
+          { title: "Cámaras de Inspección Llenas", desc: "Cuando la cámara se llena de lodo, el retroceso de agua es inminente en toda la planta baja." },
+          { title: "Pendientes Negativas", desc: "Problemas estructurales donde el agua se estanca y genera sedimentos rápidamente." }
+        ],
+        comoTrabajamos: [
+          { title: "Diagnóstico con Cámara", desc: "Si es necesario, usamos video inspección para ver el interior.", icon: "🎥" },
+          { title: "Hidrojet de Alta Potencia", desc: "Lavamos las paredes del caño con agua a presión.", icon: "💧" },
+          { title: "Certificado de Servicio", desc: "Garantizamos nuestro trabajo por escrito.", icon: "📄" }
+        ],
+        tiposDeDestapacion: [
+          { title: "Sondeo con Resortes", desc: "Ideal para obstrucciones sólidas en tramos cortos." },
+          { title: "Limpieza Hidrolavado", desc: "Para eliminar grasas y sarro en redes de mayor diámetro." }
+        ],
+        zonas: ["CABA", "San Isidro", "Vicente López", "Olivos", "Martínez", "Tigre", "San Fernando"],
+        casosReales: [
+          { title: "Edificio en Belgrano", desc: "Destapamos la columna principal de un edificio de 15 pisos que afectaba a todos los departamentos." },
+          { title: "Sótano inundado en Olivos", desc: "Vaciamos y destapamos el sistema de desagüe tras una tormenta severa." }
         ]
       }
     ),
@@ -132,7 +192,10 @@ export const getServicios = (): ServicioData[] => {
       [
         { q: "¿Pueden destapar sin romper paredes?", a: "Absolutamente, utilizamos maquinarias flexibles que circulan por los caños evitando grandes obras." },
         { q: "¿Qué causa las obstrucciones recurrentes en cañerías?", a: "Normalmente el jabón, el sarro, los pelos y la grasa acumulada a lo largo del tiempo van cerrando el diámetro progresivamente." },
-        { q: "¿Trabajan en cocinas y baños?", a: "Sí, destapamos bachas de cocinas, lavatorios, bidets, inodoros y piletas de lavadero sin problema." }
+        { q: "¿Trabajan en cocinas y baños?", a: "Sí, destapamos bachas de cocinas, lavatorios, bidets, inodoros y piletas de lavadero sin problema." },
+        { q: "¿Cuánto demoran en destapar una bacha de cocina?", a: "Normalmente el trabajo toma entre 30 y 60 minutos, dependiendo de la dureza del tapón de grasa y la distancia de la obstrucción." },
+        { q: "¿Los productos químicos sirven para destapar?", a: "No recomendamos el uso de ácidos o soda cáustica ya que pueden derretir los caños de plástico o cristalizar la grasa, empeorando el problema." },
+        { q: "¿Tengo que desarmar el mueble bajo mesada?", a: "No es necesario. Nuestros técnicos trabajan con cuidado y solo necesitan acceso al sifón o a la boca de acceso más cercana." }
       ],
       {
         benefitsTitle: "Nuestro Compromiso Profesional",
@@ -150,6 +213,25 @@ export const getServicios = (): ServicioData[] => {
           { title: "Identificación", desc: "Localizamos si el problema es en el sifón, el ramal o el desagüe principal.", iconStr: "🔎" },
           { title: "Desobstrucción", desc: "Aplicamos la maquinaria específica para liberar el flujo de agua de forma efectiva.", iconStr: "⚙️" },
           { title: "Prueba de Paso", desc: "Comprobamos la fluidez del conducto mediante pruebas de caudal. En caso de detectar fallas estructurales o caños colapsados, informamos el estado real para su debida reparación.", iconStr: "✅" }
+        ],
+        problemasComunes: [
+          { title: "Grasa de Cocina", desc: "El aceite y los restos de comida crean un tapón sólido difícil de remover sin máquinas." },
+          { title: "Sarro Calcáreo", desc: "El agua dura genera incrustaciones que reducen el diámetro del caño hasta taparlo." },
+          { title: "Restos de Obra", desc: "Cemento y arena que caen durante remodelaciones y se asientan en los codos." }
+        ],
+        comoTrabajamos: [
+          { title: "Localización", desc: "Detectamos el punto exacto de la obstrucción.", icon: "📍" },
+          { title: "Acción Mecánica", desc: "Máquinas rotativas que eliminan el 100% de los residuos.", icon: "⚙️" },
+          { title: "Prueba de Carga", desc: "Llenamos la bacha para verificar un desagote rápido.", icon: "🚰" }
+        ],
+        tiposDeDestapacion: [
+          { title: "Destapación de Cocinas", desc: "Especialistas en bachas y bajadas de cocina con grasa." },
+          { title: "Destapación de Baños", desc: "Inodoros, bidets y rejillas de ducha con acumulación de pelos y jabón." }
+        ],
+        zonas: ["CABA", "Caballito", "Flores", "Palermo", "Recoleta", "Almagro", "Villa Urquiza"],
+        casosReales: [
+          { title: "Casa en Caballito", desc: "Destapamos una cocina que llevaba 3 días sin poder usarse, resolviéndolo en 30 minutos." },
+          { title: "Local Gastronómico", desc: "Limpieza profunda de cañerías de cocina industrial con hidrojet para evitar clausuras." }
         ]
       }
     ),
@@ -162,7 +244,10 @@ export const getServicios = (): ServicioData[] => {
       [
         { q: "¿Con qué frecuencia limpiar desagües pluviales?", a: "Lo ideal es dos veces al año, particularmente antes de la temporada de otoño y primavera pesada." },
         { q: "¿Trabajan en terrazas y balcones?", a: "Sí, realizamos trabajos de altura e intervenimos terrazas, balcones y canaletas altas." },
-        { q: "¿Qué pasa si no limpio los desagües antes de las lluvias?", a: "Se produce un taponamiento por arrastre de barro y hojas que termina desbordando el agua hacia el interior del hogar causando filtraciones severas." }
+        { q: "¿Qué pasa si no limpio los desagües antes de las lluvias?", a: "Se produce un taponamiento por arrastre de barro y hojas que termina desbordando el agua hacia el interior del hogar causando filtraciones severas." },
+        { q: "¿Destapan rejillas de patio y terraza?", a: "Sí, limpiamos todo el sistema pluvial desde la rejilla superficial hasta la salida a la calle o conexión principal." },
+        { q: "¿La máquina puede romper el caño pluvial?", a: "Nuestras sondas son flexibles y están diseñadas para no dañar los conductos, incluso si son de materiales antiguos como barro cocido o hierro." },
+        { q: "¿Tienen equipos para trabajar en altura?", a: "Contamos con escaleras y herramientas de seguridad para acceder a canaletas en techos y balcones de difícil acceso." }
       ],
       {
         benefitsTitle: "Nuestro Compromiso Profesional",
@@ -180,6 +265,25 @@ export const getServicios = (): ServicioData[] => {
           { title: "Desobstrucción", desc: "Aplicamos maquinaria rotativa o presión según la densidad del tapón.", iconStr: "⚙️" },
           { title: "Prueba de Lluvia", desc: "Realizamos una prueba con abundante agua para simular una tormenta y verificar el drenaje.", iconStr: "🌧️" },
           { title: "Informe Técnico", desc: "Si el caño está roto o mal diseñado, te informamos sobre la necesidad de reparación estructural.", iconStr: "📝" }
+        ],
+        problemasComunes: [
+          { title: "Hojas y Barro", desc: "La acumulación de sedimentos tras las tormentas es la causa #1 de inundaciones en terrazas." },
+          { title: "Nidos de Aves", desc: "Es común encontrar obstrucciones por nidos en las salidas de aire y pluviales de edificios." },
+          { title: "Pelotas y Juguetes", desc: "Objetos que caen en las rejillas de patios y quedan encallados en los codos." }
+        ],
+        comoTrabajamos: [
+          { title: "Limpieza de Rejillas", desc: "Removemos la suciedad superficial antes de sondear.", icon: "🧹" },
+          { title: "Barrido de Bajadas", desc: "Limpiamos toda la columna pluvial de punta a punta.", icon: "🌊" },
+          { title: "Prueba de Inundación", desc: "Simulamos lluvia para garantizar el drenaje correcto.", icon: "🌧️" }
+        ],
+        tiposDeDestapacion: [
+          { title: "Destapación de Balcones", desc: "Servicio rápido para evitar filtraciones hacia los pisos inferiores." },
+          { title: "Mantenimiento de Canaletas", desc: "Limpieza integral de sistemas de recolección de agua de lluvia." }
+        ],
+        zonas: ["CABA", "Belgrano", "Nuñez", "Saavedra", "Colegiales", "Villa del Parque", "Devoto"],
+        casosReales: [
+          { title: "Terraza en Nuñez", desc: "Evitamos que una inundación llegara al interior del living durante una tormenta fuerte." },
+          { title: "Edificio en Villa del Parque", desc: "Destapamos 4 bajadas pluviales que estaban selladas con restos de obra antiguos." }
         ]
       }
     ),
@@ -192,7 +296,10 @@ export const getServicios = (): ServicioData[] => {
       [
         { q: "¿El hidrojet daña las cañerías?", a: "No, la presión de agua es graduada por nuestros especialistas calibrándola exacto según el material y antigüedad de su tubería." },
         { q: "¿Para qué tipo de obstrucciones es ideal el hidrojet?", a: "Es la solución definitiva contra el sarro petrificado, grandes acumulaciones de grasa en restaurantes y tapones barrosos crónicos." },
-        { q: "¿Es mejor que los productos químicos?", a: "Infinitamente mejor; el hidrojet remueve físicamente el tapón utilizando solo agua, a diferencia de los ácidos que deforman la cañería." }
+        { q: "¿Es mejor que los productos químicos?", a: "Infinitamente mejor; el hidrojet remueve físicamente el tapón utilizando solo agua, a diferencia de los ácidos que deforman la cañería." },
+        { q: "¿El hidrojet hace mucha suciedad?", a: "No, el sistema trabaja dentro de la cañería. Nuestros técnicos utilizan protectores para asegurar que el área de trabajo quede impecable." },
+        { q: "¿Se puede usar hidrojet en cañerías internas de una casa?", a: "Sí, disponemos de equipos portátiles calibrados para diámetros pequeños de 40mm a 63mm (cocinas y baños)." },
+        { q: "¿Elimina el sarro por completo?", a: "Sí, el hidrojet es el único método capaz de desprender las incrustaciones de sarro más duras en cañerías de hierro y cemento." }
       ],
       {
         benefitsTitle: "Nuestro Compromiso Profesional",
@@ -210,6 +317,25 @@ export const getServicios = (): ServicioData[] => {
           { title: "Configuración", desc: "Seteamos la presión adecuada para limpiar sin poner en riesgo la estructura del caño.", iconStr: "⚙️" },
           { title: "Barrido Técnico", desc: "Introducimos la manguera de alta presión para desprender toda la suciedad adherida.", iconStr: "💦" },
           { title: "Prueba de Caudal", desc: "Verificamos junto al cliente que el agua corra libremente y sin obstáculos.", iconStr: "✅" }
+        ],
+        problemasComunes: [
+          { title: "Sarro en Redes Viejas", desc: "El sarro reduce el diámetro efectivo del caño hasta un 10% de su capacidad original." },
+          { title: "Grasa Industrial", desc: "En locales comerciales, la grasa se solidifica creando bloqueos impenetrables para sondas comunes." },
+          { title: "Obstrucciones por Arena", desc: "Típico en zonas de obra o tras roturas de caños de cemento." }
+        ],
+        comoTrabajamos: [
+          { title: "Cálculo de Presión", desc: "Ajustamos los PSI según el material del caño.", icon: "⚖️" },
+          { title: "Lavado Rotativo", desc: "Usamos boquillas que giran para limpiar 360 grados.", icon: "🔄" },
+          { title: "Inspección Final", desc: "Confirmamos que las paredes del caño queden lisas.", icon: "✅" }
+        ],
+        tiposDeDestapacion: [
+          { title: "Hidrolavado de Cloacas", desc: "El método más efectivo para redes domiciliarias y comerciales." },
+          { title: "Limpieza de Pluviales", desc: "Elimina el barro y sedimentos pesados de forma definitiva." }
+        ],
+        zonas: ["CABA", "Microcentro", "Puerto Madero", "San Telmo", "Barracas", "La Boca", "Constitución"],
+        casosReales: [
+          { title: "Restaurante en Palermo", desc: "Limpieza nocturna programada para no afectar el servicio del local." },
+          { title: "Fábrica en Barracas", desc: "Desobstrucción de red industrial con hidrojet de alto caudal en tiempo récord." }
         ]
       }
     ),
@@ -222,7 +348,10 @@ export const getServicios = (): ServicioData[] => {
       [
         { q: "¿Qué problemas detecta la cámara de inspección?", a: "Detecta hundimientos del terreno, intrusión severa de raíces, fracturas a lo largo del encastre y objetos encallados." },
         { q: "¿Cuándo conviene hacer una video inspección?", a: "Cuando padecés destapaciones recurrentes mes a mes, garantizando que existe un daño estructural que debe visualizarse de raíz." },
-        { q: "¿Se puede inspeccionar sin romper paredes ni pisos?", a: "Esa es la principal ventaja. Accedemos desde las cámaras de registro a ras de piso sin demoler una baldosa." }
+        { q: "¿Se puede inspeccionar sin romper paredes ni pisos?", a: "Esa es la principal ventaja. Accedemos desde las cámaras de registro a ras de piso sin demoler una baldosa." },
+        { q: "¿Entregan el video de la inspección?", a: "Sí, podemos enviarte el archivo de video por WhatsApp o e-mail para que lo compartas con tu plomero o administración." },
+        { q: "¿La cámara detecta filtraciones de agua?", a: "La cámara detecta roturas físicas y juntas abiertas por donde se escapa el agua, lo cual es la causa principal de las filtraciones." },
+        { q: "¿Hasta cuántos metros llega la cámara?", a: "Nuestros equipos tienen sondas de hasta 30 metros de longitud, cubriendo la mayoría de las redes domiciliarias y comerciales." }
       ],
       {
         benefitsTitle: "Nuestro Compromiso Profesional",
@@ -240,6 +369,25 @@ export const getServicios = (): ServicioData[] => {
           { title: "Exploración", desc: "Recorremos el conducto grabando en tiempo real para detectar fisuras, hundimientos o bloqueos.", iconStr: "🎥" },
           { title: "Diagnóstico", desc: "Analizamos las imágenes para determinar si el problema es de limpieza o una falla estructural.", iconStr: "📋" },
           { title: "Entrega de Informe", desc: "Te brindamos el resultado técnico para que tomes la mejor decisión sobre la reparación necesaria.", iconStr: "📝" }
+        ],
+        problemasComunes: [
+          { title: "Caños Rotos u Ovalados", desc: "Detectamos hundimientos del terreno que deforman la cañería." },
+          { title: "Objetos Encallados", desc: "Localizamos el punto exacto de un objeto que la sonda no puede mover." },
+          { title: "Fisuras por Raíces", desc: "Identificamos por dónde están entrando las raíces a la red." }
+        ],
+        comoTrabajamos: [
+          { title: "Introducción de Sonda", desc: "Llevamos la cámara hasta el punto del conflicto.", icon: "🎥" },
+          { title: "Localización Digital", desc: "Usamos un sensor para marcar el punto en el piso.", icon: "📡" },
+          { title: "Grabación HD", desc: "Registramos todo el recorrido para entregarte la evidencia.", icon: "💾" }
+        ],
+        tiposDeDestapacion: [
+          { title: "Inspección Preventiva", desc: "Ideal antes de comprar una propiedad o tras una obra." },
+          { title: "Diagnóstico de Falla", desc: "Para saber exactamente por qué se tapa el caño seguido." }
+        ],
+        zonas: ["CABA", "Villa Luro", "Mataderos", "Liniers", "Versalles", "Monte Castro", "Villa Real"],
+        casosReales: [
+          { title: "Inmueble en Venta", desc: "Ayudamos a un comprador a detectar una rotura grave antes de concretar la operación." },
+          { title: "Consorcio en Versalles", desc: "Encontramos una botella de plástico que bloqueaba la salida del edificio a 10 metros de profundidad." }
         ]
       }
     ),
@@ -252,7 +400,10 @@ export const getServicios = (): ServicioData[] => {
       [
         { q: "¿Cada cuánto limpiar una cámara cloacal?", a: "El saneamiento recomendable depende del uso, pero para consorcios sugerimos entre 6 a 12 meses." },
         { q: "¿Por qué aparecen malos olores en la cámara?", a: "Debido a la fermentación anaeróbica de las costras de jabón y heces acumuladas que bloquean la respiración del sistema." },
-        { q: "¿Trabajan con consorcios y edificios?", a: "Sí, nos especializamos en mantenimiento edilicio integral resolviendo problemas cloacales estructurales." }
+        { q: "¿Trabajan con consorcios y edificios?", a: "Sí, nos especializamos en mantenimiento edilicio integral resolviendo problemas cloacales estructurales." },
+        { q: "¿Qué pasa si la cámara séptica está muy profunda?", a: "Contamos con mangueras de extensión y bombas de succión potentes que permiten trabajar en cámaras de gran profundidad." },
+        { q: "¿Hacen limpieza de pozos ciegos?", a: "Realizamos la succión y el saneamiento de pozos ciegos, recuperando la capacidad de absorción del terreno en la medida de lo posible." },
+        { q: "¿El servicio incluye el retiro de los residuos?", a: "Sí, nos encargamos de la extracción y limpieza del sistema sanitario de forma higiénica." }
       ],
       {
         benefitsTitle: "Nuestro Compromiso Profesional",
@@ -270,6 +421,25 @@ export const getServicios = (): ServicioData[] => {
           { title: "Succión Técnica", desc: "Realizamos la extracción controlada de los líquidos y sólidos acumulados.", iconStr: "💧" },
           { title: "Limpieza de Conductos", desc: "Desobstruimos las cañerías que conectan con la cámara para evitar futuros retrocesos.", iconStr: "⚙️" },
           { title: "Verificación Operativa", desc: "Comprobamos que el flujo de entrada y salida sea el correcto antes de dar por finalizado el servicio.", iconStr: "✅" }
+        ],
+        problemasComunes: [
+          { title: "Grasa Solidificada", desc: "La grasa se convierte en una costra blanca que bloquea los conductos de salida." },
+          { title: "Lodos Excesivos", desc: "La falta de mantenimiento genera lodos pesados que reducen la capacidad de tratamiento." },
+          { title: "Invasión de Raíces", desc: "Las raíces rompen las paredes de la cámara buscando humedad y nutrientes." }
+        ],
+        comoTrabajamos: [
+          { title: "Apertura Técnica", desc: "Abrimos la tapa con cuidado sin dañar los marcos.", icon: "🔓" },
+          { title: "Succión de Sólidos", desc: "Vaciamos la cámara con bombas de alto vacío.", icon: "🚛" },
+          { title: "Desinfección", desc: "Lavamos y aplicamos productos para reducir olores.", icon: "✨" }
+        ],
+        tiposDeDestapacion: [
+          { title: "Vaciado de Pozos", desc: "Limpieza profunda de pozos ciegos y cámaras sépticas." },
+          { title: "Mantenimiento de Cámaras", desc: "Limpieza de cámaras de inspección en edificios y casas." }
+        ],
+        zonas: ["CABA", "Pilar", "Escobar", "Tigre", "San Isidro", "Vicente López", "San Fernando"],
+        casosReales: [
+          { title: "Quinta en Pilar", desc: "Vaciamos una cámara séptica colapsada tras un evento social masivo." },
+          { title: "Barrio Cerrado en Tigre", desc: "Mantenimiento preventivo de red cloacal completa en un complejo habitacional." }
         ]
       }
     ),
@@ -282,7 +452,10 @@ export const getServicios = (): ServicioData[] => {
       [
         { q: "¿Qué tipo de bombas usan para el desagote?", a: "Aplicamos bombas sumergibles profesionales de alto caudal diseñadas para arrastre de líquidos espesos e inundaciones rápidas." },
         { q: "¿Cuánto tarda el desagote de un sótano?", a: "Dependerá enteramente de los litros acumulados, pero nuestro equipamiento bombea miles de litros por hora asegurando máxima velocidad." },
-        { q: "¿Qué hacer mientras esperan que llegue el equipo?", a: "Principalmente desconectar y aislar la energía eléctrica principal del sótano para resguardar la vida y prevenir electrocuciones." }
+        { q: "¿Qué hacer mientras esperan que llegue el equipo?", a: "Principalmente desconectar y aislar la energía eléctrica principal del sótano para resguardar la vida y prevenir electrocuciones." },
+        { q: "¿El desagote incluye la limpieza del barro?", a: "Sí, tras retirar el agua, procedemos a succionar los sedimentos y lodos que suelen quedar acumulados en el piso." },
+        { q: "¿Atienden inundaciones por lluvia en la madrugada?", a: "Nuestro servicio de emergencias por inundación está disponible las 24 horas para casos críticos de sótanos y cocheras." },
+        { q: "¿Tienen bombas para sacar mucha agua rápido?", a: "Contamos con bombas de alto caudal que evacuan hasta 10.000 litros por hora, resolviendo la inundación en tiempo récord." }
       ],
       {
         schemaTitle: "Desagote de Sótanos y Subsuelos",
@@ -304,6 +477,25 @@ export const getServicios = (): ServicioData[] => {
           { title: "Instalación", desc: "Colocamos las mangueras de expulsión hacia los puntos de vertido habilitados más cercanos.", iconStr: "🔧" },
           { title: "Succión Continua", desc: "Operamos las bombas hasta lograr el vaciado total del recinto afectado.", iconStr: "💧" },
           { title: "Secado Técnico", desc: "Retiramos los restos de humedad y sólidos para que el espacio vuelva a ser habitable o funcional.", iconStr: "✨" }
+        ],
+        problemasComunes: [
+          { title: "Rotura de Caño Principal", desc: "Inundaciones súbitas por fallas en la red de agua potable." },
+          { title: "Falta de Mantenimiento en Bombas", desc: "Las bombas sumergibles propias fallan durante la tormenta por falta de uso." },
+          { title: "Filtraciones por Napa", desc: "Subida del nivel freático que inunda subsuelos en zonas bajas." }
+        ],
+        comoTrabajamos: [
+          { title: "Asistencia 24hs", desc: "Atendemos urgencias de inundación en cualquier momento.", icon: "⏰" },
+          { title: "Gran Caudal", desc: "Bombas que sacan 10.000 litros por hora.", icon: "🚀" },
+          { title: "Higiene Post-Inundación", desc: "Limpiamos el barro y desinfectamos el área.", icon: "🧴" }
+        ],
+        tiposDeDestapacion: [
+          { title: "Desagote de Emergencia", desc: "Para inundaciones accidentales o por clima extremo." },
+          { title: "Mantenimiento de Subsuelos", desc: "Limpieza de fosas de ascensor y cocheras subterráneas." }
+        ],
+        zonas: ["CABA", "Caballito", "Villa Crespo", "Paternal", "Villa del Parque", "Devoto", "Chacarita"],
+        casosReales: [
+          { title: "Consorcio en Caballito", desc: "Vaciamos la fosa de un ascensor en solo 2 horas tras una rotura de caño." },
+          { title: "Cochera en Villa Crespo", desc: "Desagotamos 30cm de agua acumulada tras una sudestada fuerte." }
         ]
       }
     ),
@@ -316,7 +508,10 @@ export const getServicios = (): ServicioData[] => {
       [
         { q: "¿Qué incluye el plan de mantenimiento?", a: "Verificación de pluviales, sondeo mecánico de las salidas a colector principal y el hidrolavado base de cámaras cloacales." },
         { q: "¿Para qué tipo de edificios es el mantenimiento preventivo?", a: "Resulta ideal para complejos habitacionales extensos, edificios torre, condominios, hoteles y grandes restaurantes." },
-        { q: "¿Con qué frecuencia se recomienda hacerlo?", a: "En edificios estándares logramos la máxima tranquilidad pautando visitas calendarizadas cada 6 meses o mensual según tránsito." }
+        { q: "¿Con qué frecuencia se recomienda hacerlo?", a: "En edificios estándares logramos la máxima tranquilidad pautando visitas calendarizadas cada 6 meses o mensual según tránsito." },
+        { q: "¿El abono de mantenimiento cubre las urgencias?", a: "Sí, nuestros planes de mantenimiento preventivo suelen incluir visitas de urgencia bonificadas o con descuento prioritario." },
+        { q: "¿Hacen mantenimiento en restaurantes?", a: "Somos especialistas en gastronomía, realizando hidrolavados de cañerías de cocina para evitar tapones de grasa en pleno despacho." },
+        { q: "¿Qué validez tiene el informe de estado que entregan?", a: "El informe sirve como auditoría técnica para la administración o dueño del inmueble, detallando el estado real de la red cloacal." }
       ],
       {
         schemaTitle: "Mantenimientos Preventivos de Redes Cloacales y Pluviales",
@@ -337,6 +532,25 @@ export const getServicios = (): ServicioData[] => {
           { title: "Menos Roturas", desc: "Al mantener los caños limpios, evitamos que la presión de los tapones debilite las juntas y uniones.", iconStr: "🛡️" },
           { title: "Higiene Permanente", desc: "Evitamos los malos olores y la aparición de plagas asociadas a los residuos estancados.", iconStr: "✨" },
           { title: "Tranquilidad", desc: "Un profesional de Openagua supervisa tu red regularmente para que vos no tengas que preocuparte por nada.", iconStr: "😌" }
+        ],
+        problemasComunes: [
+          { title: "Obstrucciones Crónicas", desc: "Cañerías que se tapan todos los meses por mal uso o diseño." },
+          { title: "Malos Olores", desc: "Gases cloacales que invaden el ambiente por falta de limpieza en las cámaras." },
+          { title: "Desbordes en Días de Lluvia", desc: "Redes pluviales tapadas que generan inundaciones en el hall del edificio." }
+        ],
+        comoTrabajamos: [
+          { title: "Abonos Mensuales", desc: "Planes a medida para consorcios y empresas.", icon: "📅" },
+          { title: "Visitas Programadas", desc: "Coordinamos el servicio para no interrumpir tu actividad.", icon: "🏢" },
+          { title: "Reporte de Estado", desc: "Te informamos sobre posibles fallas estructurales a futuro.", icon: "📝" }
+        ],
+        tiposDeDestapacion: [
+          { title: "Limpieza Preventiva", desc: "Sondeo de columnas y colectores antes de que se tapen." },
+          { title: "Control de Cámaras", desc: "Saneamiento semestral de cámaras de inspección y rejillas." }
+        ],
+        zonas: ["CABA", "Centro", "Retiro", "Constitución", "Balvanera", "Boedo", "Parque Patricios"],
+        casosReales: [
+          { title: "Cadena de Restaurantes", desc: "Mantenemos 5 locales gastronómicos libres de grasa desde hace 3 años." },
+          { title: "Edificio Torre en Retiro", desc: "Abono de mantenimiento que redujo las urgencias de 10 a 0 por año." }
         ]
       }
     )
