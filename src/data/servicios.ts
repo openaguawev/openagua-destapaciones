@@ -135,42 +135,32 @@ export const getServicios = (): ServicioData[] => {
       'destapaciones-cloacas',
       'Destapaciones de Cloacas Urgentes',
       '/img/destapacion de cloaca.jpg',
-      'Atención inmediata para cloaca tapada urgente. Si el inodoro rebalsa o hay olores insoportables, llegamos en 60 min. Solución definitiva sin romper.',
-      'Tener la cloaca tapada es una de las peores urgencias en casa. Los olores invaden todo, el agua no baja y el riesgo de rebalse es real. En Openagua entendemos esa desesperación. Por eso, nuestro servicio de destapaciones de cloacas se enfoca en resolver el problema de raíz hoy mismo, usando tecnología que cuida tus cañerías. No somos simplemente destapadores; somos técnicos especialistas que te devuelven la tranquilidad sin vueltas.',
+      'Si la cloaca está tapada o rebalsa, lo resolvemos en el día sin romper pisos. Atención inmediata en CABA y Zona Oeste.',
+      'Tener una cloaca tapada urgente es un problema serio que no puede esperar. El mal olor y el riesgo de rebalse afectan tu hogar y tu salud. En Openagua realizamos destapaciones de cloacas con máquinas de última generación que eliminan el tapón de raíz sin necesidad de romper paredes ni pisos. Atendemos en CABA, Morón, Ituzaingó y Hurlingham con respuesta inmediata.',
       [
-        { q: "¿Cuánto cuesta destapar una cloaca en Argentina?", a: "El precio de destapar una cloaca depende de la complejidad y la distancia de la obstrucción. Ofrecemos presupuestos transparentes en el momento. Consultanos por WhatsApp para un estimado rápido." },
-        { q: "¿Atienden urgencias de cloacas las 24 horas?", a: "Sí, tenemos equipos de guardia para destapaciones 24 horas zona oeste y CABA. Entendemos que un rebalse no puede esperar a mañana." },
-        { q: "¿La máquina de destapar puede romper los caños?", a: "Nuestras sondas rotativas y el sistema de destapaciones con hidrojet están diseñados para limpiar sin dañar. Son métodos seguros para cañerías de PVC, hierro o cemento." },
-        { q: "¿Qué garantía tengo de que no se vuelva a tapar?", a: "Brindamos garantía por escrito sobre la limpieza realizada. Además, verificamos el flujo de agua junto a vos para asegurar que el conducto quedó 100% libre." },
-        { q: "¿Qué zonas cubren con el servicio urgente?", a: "Cubrimos CABA y toda la Zona Oeste: Morón, Ituzaingó, Hurlingham, Ramos Mejía, Castelar y alrededores con respuesta inmediata." },
-        { q: "¿Es necesario romper el piso para destapar?", a: "En el 98% de los casos resolvemos todo sin romper. Usamos máquinas que ingresan por las bocas de inspección o rejillas existentes." }
+        { q: "¿Cuánto tiempo demoran en llegar por una urgencia?", a: "Contamos con unidades móviles equipadas para llegar a tu domicilio en menos de 60 minutos en CABA, Ramos Mejía o Castelar." },
+        { q: "¿Cuál es el precio de destapar una cloaca?", a: "El presupuesto depende de la distancia y el tipo de obstrucción. Ofrecemos precios competitivos y transparentes. Consultanos ahora para un estimado." },
+        { q: "¿Es necesario romper para solucionar una cloaca rebalsada?", a: "No. En el 98% de los casos, nuestras máquinas de resortes o el sistema de destapaciones con hidrojet resuelven el problema a través de las bocas de acceso existentes." },
+        { q: "¿Qué garantía ofrecen por el servicio?", a: "Entregamos garantía por escrito. Verificamos el flujo de agua junto a vos para asegurar que la cañería quedó 100% limpia." },
+        { q: "¿Atienden casos de raíces en los caños?", a: "Sí, nuestras sondas rotativas están diseñadas para cortar raíces y limpiar sedimentos duros que bloquean el paso del agua." },
+        { q: "¿Qué pasa si el problema es estructural?", a: "Si la máquina detecta una rotura, te informamos en el momento. En casos complejos, realizamos una video inspección de cañerías para ver el estado interno del conducto." }
       ],
       {
-        benefitsTitle: "Por qué elegir Openagua para tu cloaca",
+        benefitsTitle: "Especialistas en Destapaciones de Cloacas",
         benefits: [
-          { title: "Respuesta en 60 minutos", desc: "Sabemos que una cloaca rebalsada es un caos. Por eso priorizamos las urgencias en CABA y GBA para estar ahí antes de que el problema pase a mayores." },
-          { title: "Tecnología Sin Roturas", desc: "Olvidate de romper pisos. Usamos destapaciones de cañerías con máquinas de resortes que recorren el conducto eliminando el tapón sin dañar la estructura." },
-          { title: "Especialistas en Casos Críticos", desc: "Si ya intentaste de todo y sigue tapado, nuestro equipo utiliza video inspección de cañerías para ver qué pasa adentro y resolverlo de una vez." }
+          { title: "Solución en el Día", desc: "No esperes a mañana. Resolvemos tu cloaca rebalsada solución hoy mismo para que recuperes la higiene en tu casa." },
+          { title: "Sin Romper Nada", desc: "Nuestras destapaciones de cañerías se realizan con métodos no invasivos, cuidando tus instalaciones y evitando obras costosas." },
+          { title: "Atención 24 Horas", desc: "Equipos de guardia permanente en Zona Oeste y Capital Federal para atender emergencias sanitarias en cualquier momento." }
         ],
         equipment: [
-          { title: "Sondas Rotativas Mecanizadas", desc: "Máquinas de alta potencia que destruyen raíces, restos de obra y sedimentos duros que bloquean el paso de la cloaca." },
-          { title: "Equipos de Hidrojet", desc: "Agua a ultra alta presión para un lavado total. Es el método ideal si necesitás limpieza de cámaras sépticas o desengrase profundo." }
+          { title: "Sondas Mecanizadas", desc: "Equipos que recorren el caño eliminando restos de grasa, jabón, pelos y objetos sólidos." },
+          { title: "Máquinas de Alta Potencia", desc: "Potencia graduada para destapar desde un inodoro hasta la salida principal de la propiedad." }
         ],
-        problemasComunes: [
-          { title: "Inodoro que rebalsa", desc: "El signo más claro de que el caño maestro está obstruido. Evitá tirar más agua y llamanos urgente." },
-          { title: "Olores de cloaca en casa", desc: "Suele ocurrir por falta de ventilación o acumulación de gases en cámaras de inspección tapadas." },
-          { title: "Desagües pluviales cruzados", desc: "A veces las destapaciones pluviales fallan porque el agua de lluvia termina saturando la red cloacal por conexiones mal hechas." }
-        ],
-        comoTrabajamos: [
-          { title: "Diagnóstico Inmediato", desc: "Llegamos y evaluamos dónde está el tapón sin adivinar.", icon: "📍" },
-          { title: "Intervención Técnica", desc: "Aplicamos máquinas de resortes o hidrojet según la dureza del bloqueo.", icon: "⚙️" },
-          { title: "Prueba de Flujo", desc: "Tiramos abundante agua para que veas que el drenaje volvió a la normalidad.", icon: "🚰" },
-          { title: "Limpieza y Garantía", desc: "Dejamos todo prolijo y te damos tu certificado de garantía por escrito.", icon: "📄" }
-        ],
-        zonas: ["CABA", "Morón", "Ituzaingó", "Hurlingham", "Ramos Mejía", "Castelar", "Haedo", "San Justo"],
-        casosReales: [
-          { title: "Urgencia en un PH de Morón", desc: "Un cliente tenía el baño inundado un domingo a la noche. Llegamos en 40 minutos y con una sonda mecanizada extrajimos un bloque de trapos que impedía el flujo. Se fue a dormir con el problema resuelto." },
-          { title: "Consorcio en Ramos Mejía", desc: "La cloaca principal rebalsaba en el sótano. Aplicamos hidrojet para barrer años de grasa acumulada y evitamos una obra costosa de recambio de caños." }
+        steps: [
+          { title: "Llamado Urgente", desc: "Nos contás el problema y te damos prioridad de atención.", iconStr: "📞" },
+          { title: "Arribo y Diagnóstico", desc: "Llegamos en menos de 1 hora a Morón, Ituzaingó o Ramos Mejía.", iconStr: "📍" },
+          { title: "Limpieza Profunda", desc: "Pasamos las máquinas necesarias hasta liberar el conducto por completo.", iconStr: "⚙️" },
+          { title: "Garantía", desc: "Dejamos todo funcionando y te entregamos la garantía oficial.", iconStr: "✅" }
         ]
       }
     ),
