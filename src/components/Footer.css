@@ -173,3 +173,26 @@
     font-size: 1.6rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .footer-final-cta {
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 24px 48px;
+  }
+  
+  .footer-final-cta-text {
+    gap: 32px;
+    white-space: nowrap;
+  }
+  
+  .footer-final-cta-text span {
+    font-size: 1.25rem;
+  }
+
+  .footer-final-cta-text strong {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+}
