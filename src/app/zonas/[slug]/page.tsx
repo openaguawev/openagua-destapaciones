@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import '@/components/Zonas.css'
+import Breadcrumbs from '@/components/Breadcrumbs'
 import { handleLegacyRedirect } from '@/utils/legacyRedirect'
 
 export async function generateStaticParams() {
@@ -71,6 +72,9 @@ export default async function ZonaPage({ params }: Props) {
         />
         <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15, 23, 42, 0.80)', zIndex: 1 }}></div>
         <div className="container" style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
+            <Breadcrumbs tipo="zona" zona={{ nombre: zona.name, slug: zona.slug }} />
+          </div>
           <h1 style={{ fontSize: '3rem', fontWeight: 700, marginBottom: '1rem', color: '#fff' }}>Destapaciones en {zona.name}</h1>
           <p style={{ fontSize: '1.25rem', color: '#e2e8f0', maxWidth: '700px', margin: '0 auto 2rem' }}>
             {zona.description}

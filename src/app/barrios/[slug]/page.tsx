@@ -7,6 +7,7 @@ import Image from 'next/image';
 import '@/components/Zonas.css';
 import { handleLegacyRedirect } from '@/utils/legacyRedirect';
 import Resenas from '@/components/Resenas';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export async function generateStaticParams() {
   return barrios.map((b) => ({ slug: b.slug }));
@@ -114,6 +115,9 @@ export default async function BarrioPage({ params }: Props) {
           />
           <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15, 23, 42, 0.85)', zIndex: 1 }}></div>
           <div className="container" style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
+              {parentZone && <Breadcrumbs tipo="barrio" zona={{ nombre: parentZone.name, slug: parentZone.slug }} barrio={{ nombre: barrio.name, slug: barrio.slug }} />}
+            </div>
             <div style={{ display: 'inline-block', backgroundColor: '#f59e0b', color: '#000', padding: '0.5rem 1rem', borderRadius: '30px', fontWeight: 'bold', fontSize: '0.9rem', marginBottom: '1.5rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
               Servicio Activo en tu Zona
             </div>
