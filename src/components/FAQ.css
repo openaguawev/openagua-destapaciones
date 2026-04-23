@@ -7,42 +7,51 @@
 }
 
 .faq-item {
-  border-radius: 12px;
-  border: 1px solid #e5e7eb;
-  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
   overflow: hidden;
   transition: all 0.25s ease;
 }
 
 .faq-item:hover {
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  background: #ffffff;
+  border-color: #16a34a;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   transform: translateY(-2px);
+}
+
+.faq-item.open {
+  background: #ffffff;
+  border-color: #16a34a;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
 }
 
 .faq-question {
   width: 100%;
   text-align: left;
   background-color: transparent;
-  padding: 24px 12px;
+  padding: 24px 20px;
   font-size: 1.15rem;
   font-weight: 600;
-  color: var(--color-primary);
+  color: #0f172a;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: color 0.2s ease;
   cursor: pointer;
+  border: none;
 }
 
-.faq-question:hover,
-.faq-item:hover .faq-question {
-  color: var(--color-cta-green);
+.faq-item:hover .faq-question,
+.faq-item.open .faq-question {
+  color: #16a34a;
 }
 
 .faq-toggle {
   font-size: 1.75rem;
-  color: var(--color-text-light);
-  transition: transform 0.3s ease, color 0.2s ease;
+  color: #64748b;
+  transition: all 0.3s ease;
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -50,31 +59,32 @@
   width: 30px;
 }
 
-.faq-item.open .faq-question {
-  color: var(--color-cta-green);
+.faq-item:hover .faq-toggle,
+.faq-item.open .faq-toggle {
+  color: #16a34a;
 }
 
 .faq-item.open .faq-toggle {
-  color: var(--color-cta-green);
   transform: rotate(45deg);
 }
 
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out, padding 0.4s ease, opacity 0.4s ease;
+  transition: all 0.3s ease;
   opacity: 0;
-  padding: 0 12px;
+  padding: 0 20px;
 }
 
 .faq-item.open .faq-answer {
   max-height: 500px; 
-  padding: 0 12px 24px 12px;
+  padding: 0 20px 24px 20px;
   opacity: 1;
 }
 
 .faq-answer p {
-  color: var(--color-text-light);
+  color: #64748b;
   font-size: 1rem;
   line-height: 1.6;
+  margin: 0;
 }
