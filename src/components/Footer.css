@@ -186,11 +186,11 @@
 
 @media (min-width: 1024px) {
   .footer-final-cta {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: center;
     padding: 24px 48px;
-    gap: 0;
+    gap: 20px;
   }
   
   .footer-final-cta-left {
@@ -198,13 +198,13 @@
   }
   
   .footer-final-cta-icon {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
   }
 
   .footer-final-cta-icon svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
   }
   
   .cta-text-mobile {
