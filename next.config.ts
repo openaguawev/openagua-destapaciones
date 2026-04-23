@@ -3,6 +3,55 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   trailingSlash: false,
+  async redirects() {
+    return [
+      {
+        source: '/destapaciones-en-:slug',
+        destination: '/barrios/destapaciones-:slug',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-ezpeleta',
+        destination: '/destapaciones-cloacas',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-en-ezpeleta',
+        destination: '/destapaciones-cloacas',
+        permanent: true,
+      },
+      {
+        source: '/solucion-problemas-cloacas-buenos-aires',
+        destination: '/destapaciones-cloacas',
+        permanent: true,
+      },
+      {
+        source: '/wp-content/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/wp-admin/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/wp-includes/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/wp-login.php',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/index.html',
+        destination: '/',
+        permanent: true,
+      }
+    ];
+  },
   async headers() {
     return [
       {

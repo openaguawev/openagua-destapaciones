@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { barrios } from '@/data/barrios';
 import { getServicios } from '@/data/servicios';
 import { getArticulos } from '@/data/blog';
+import { getZonas } from '@/data/zonas';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.destapacionesopenagua.com.ar';
@@ -12,12 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1.0,
-    },
-    {
-      url: `${baseUrl}/servicios/destapaciones`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
     }
   ];
 
@@ -33,7 +28,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/barrios/${barrio.slug}`,
     lastModified: new Date(),
     changeFrequency: 'yearly',
-    priority: 0.7,
+    priority: 0.6,
+  }));
+
+  const zonas = getZonas();
+  const zonasSitemaps: MetadataRoute.Sitemap = zonas.map((zona) => ({
+    url: `${baseUrl}/zonas/${zona.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.8,
   }));
 
   // Add blog posts optionally? The static xml had blog posts. Let's add the basic blog hub and static blog posts mentioned in the XML if they still exist.
@@ -55,5 +58,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   ];
 
-  return [...homeSitemaps, ...serviciosSitemaps, ...barriosSitemaps, ...blogHubSitemap, ...blogSitemaps];
+  return [...homeSitemaps, ...serviciosSitemaps, ...zonasSitemaps, ...barriosSitemaps, ...blogHubSitemap, ...blogSitemaps];
 }

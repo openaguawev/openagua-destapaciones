@@ -86,7 +86,7 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
 
   // 3. Match generic 'destapaciones' for untreated zones
   if (path.includes('destapac')) {
-    permanentRedirect('/servicios/destapaciones');
+    permanentRedirect('/destapaciones-cloacas');
   }
 
   // 4. Muerte al Soft 404: Cualquier legacy string que llegue hasta este punto y no tenga matcheo, va a error duro.

@@ -128,6 +128,8 @@ export default async function BarrioPage({ params }: Props) {
             
             <p style={{ fontSize: '1.25rem', maxWidth: '700px', margin: '0 auto 3rem', color: '#cbd5e1', lineHeight: 1.6 }}>
               Especialistas en desagües tapados. Destapamos caños, bajadas pluviales y cloacas sin romper pisos. Presupuesto previo 100% online y visitas inmediatas a <strong>{barrio.name}</strong>.
+              <br /><br />
+              En {barrio.name}, es frecuente encontrar problemas de cloacas por acumulación de grasa o cañerías antiguas. También trabajamos en zonas cercanas como {nearbyBarrios.map(b => b.name).join(', ')}.
             </p>
             
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '1.1rem 3rem', fontSize: '1.25rem', boxShadow: '0 10px 25px -5px rgba(22, 163, 74, 0.5)', transition: 'transform 0.2s', display: 'inline-flex', alignItems: 'center', gap: '12px' }}>
@@ -238,13 +240,13 @@ export default async function BarrioPage({ params }: Props) {
                   })()}
                   <ul style={{ listStyle: 'none', padding: 0, marginTop: '2rem' }}>
                     {[
-                      { icon: '🚽', text: `Cloacas tapadas en ${barrio.name}` },
-                      { icon: '🍳', text: 'Limpieza de rejillas e intermedios de cocina' },
-                      { icon: '🌧️', text: 'Bajadas pluviales y terrazas bloqueadas' }
+                      { icon: '🚽', text: `Cloacas tapadas en ${barrio.name}`, link: '/destapaciones-cloacas' },
+                      { icon: '🍳', text: 'Limpieza de rejillas e intermedios de cocina', link: '/destapaciones-canerias' },
+                      { icon: '🌧️', text: 'Bajadas pluviales y terrazas bloqueadas', link: '/destapaciones-pluviales' }
                     ].map((item, idx) => (
                       <li key={idx} style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem', fontWeight: 600, color: '#1e293b' }}>
                         <span style={{ fontSize: '1.5rem', marginRight: '1rem', backgroundColor: '#e2e8f0', width: '40px', height: '40px', borderRadius: '50%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>{item.icon}</span>
-                        {item.text}
+                        {item.link ? <Link href={item.link} style={{ color: 'inherit', textDecoration: 'none' }}>{item.text}</Link> : item.text}
                       </li>
                     ))}
                   </ul>
@@ -356,15 +358,15 @@ export default async function BarrioPage({ params }: Props) {
               {[
                 {
                   q: `¿Cuánto tardan en llegar a solucionar una urgencia en ${barrio.name}?`,
-                  a: `Al contar con móviles en la zona, solemos llegar a ${barrio.name} rápidamente. Para mayor precisión, contactanos por WhatsApp indicándonos tu dirección transversal y coordinaremos la visita de la cuadrilla más cercana.`
+                  a: <>Al contar con móviles en la zona, solemos llegar a {barrio.name} rápidamente. Para mayor precisión, contactanos por WhatsApp indicándonos tu dirección transversal y coordinaremos la visita de la cuadrilla más cercana.</>
                 },
                 {
                   q: `¿Qué utilizan para destapar cloacas y caños en ${barrio.name}?`,
-                  a: `Utilizamos exclusivamente equipo profesional importado: máquinas de sonda electromecánica para barrer raíces o tapones celulósicos endurecidos, e Hidrojet de alta presión para eliminar grasa y sarro profundo, garantizando que tus cañerías queden sanas.`
+                  a: <>Utilizamos exclusivamente equipo profesional importado: máquinas de sonda electromecánica para barrer raíces o tapones celulósicos endurecidos, e Hidrojet de alta presión para eliminar grasa y sarro profundo. Recomendamos una <Link href="/video-inspeccion-canerias" style={{ color: '#16A34A', textDecoration: 'underline' }}>video inspección de cañerías</Link> previa para diagnosticar mejor.</>
                 },
                 {
                   q: `¿Atienden comercios, gastronomía y consorcios en ${barrio.name}?`,
-                  a: `¡Totalmente! Somos líderes en mantenimientos preventivos y destapaciones comerciales para cocinas industriales, clínicas y columnas principales de consorcios de edificios (verticales/horizontales) en todo ${barrio.name}. Brindamos reportes de sistema, facturación y plenas garantías.`
+                  a: <>¡Totalmente! Somos líderes en <Link href="/mantenimientos-preventivos" style={{ color: '#16A34A', textDecoration: 'underline' }}>mantenimientos preventivos</Link> y destapaciones comerciales para cocinas industriales, clínicas y columnas principales de consorcios de edificios en todo {barrio.name}. Brindamos reportes de sistema, facturación y plenas garantías.</>
                 }
               ].map((faq, idx) => (
                 <details key={idx} style={{ background: '#ffffff', borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', overflow: 'hidden' }}>
