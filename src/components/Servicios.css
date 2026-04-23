@@ -1,7 +1,16 @@
+.servicios-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 .servicios-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 32px;
+}
+
+.servicios-title {
+  margin-bottom: 40px;
 }
 
 .servicio-card {
@@ -15,6 +24,8 @@
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .servicio-card:hover {
@@ -79,7 +90,7 @@
   width: 100%;
 }
 
-.servicio-btn:hover {
+.servicio-card:hover .servicio-btn {
   background-color: #15803D;
   transform: translateY(-2px);
 }
@@ -99,10 +110,20 @@
   }
 }
 
+@media (max-width: 768px) {
+  .servicios-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .servicios-grid {
+    gap: 20px;
+  }
+}
+
 @media (max-width: 576px) {
   .servicios-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 20px;
   }
   .servicio-title {
     font-size: 1.1rem;

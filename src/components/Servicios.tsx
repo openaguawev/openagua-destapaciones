@@ -71,15 +71,15 @@ export default function Servicios() {
   ];
 
   return (
-    <section id="servicios" className="section bg-light">
+    <section id="servicios" className="section bg-light servicios-section">
       <div className="container">
-        <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '1rem' }}>Nuestros Servicios</h2>
+        <h2 className="section-title servicios-title" style={{ textAlign: 'center' }}>Nuestros Servicios</h2>
         <p style={{ textAlign: 'center', marginBottom: '3rem', color: '#475569', fontSize: '1.1rem', maxWidth: '800px', margin: '0 auto 3rem auto' }}>
           Realizamos destapaciones con máquinas, hidrojet y video inspección en CABA, Zona Oeste y alrededores.
         </p>
         <div className="servicios-grid">
           {servicios.map((s, idx) => (
-            <div key={idx} className="servicio-card">
+            <Link href={s.link} key={idx} className="servicio-card">
               <div className="servicio-icon-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="servicio-icon">
                   {s.icon}
@@ -87,10 +87,10 @@ export default function Servicios() {
               </div>
               <div className="servicio-title" style={{ fontWeight: 'bold' }}>{s.title}</div>
               <p className="servicio-desc">{s.desc}</p>
-              <Link href={s.link} className="servicio-btn">
+              <span className="servicio-btn">
                 {s.btnText}
-              </Link>
-            </div>
+              </span>
+            </Link>
           ))}
         </div>
       </div>
