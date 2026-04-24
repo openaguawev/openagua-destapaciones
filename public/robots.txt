@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://destapacionesopenagua.com.ar/sitemap.xml
+Sitemap: https://www.destapacionesopenagua.com.ar/sitemap.xml
