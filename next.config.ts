@@ -37,26 +37,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/wp-content/:path*',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/wp-admin/:path*',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/wp-includes/:path*',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/wp-login.php',
-        destination: '/',
-        permanent: true,
-      },
-      {
         source: '/index.html',
         destination: '/',
         permanent: true,
