@@ -6,6 +6,17 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'destapacionesopenagua.com.ar',
+          },
+        ],
+        destination: 'https://www.destapacionesopenagua.com.ar/:path*',
+        permanent: true,
+      },
+      {
         source: '/destapaciones-en-:slug',
         destination: '/barrios/destapaciones-:slug',
         permanent: true,
