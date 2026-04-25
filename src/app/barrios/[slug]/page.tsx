@@ -8,6 +8,8 @@ import '@/components/Zonas.css';
 import { handleLegacyRedirect } from '@/utils/legacyRedirect';
 import Resenas from '@/components/Resenas';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { barriosSeo } from '@/data/barriosSeo';
+import { generarTextoBarrio } from '@/utils/generarTextoBarrio';
 
 export async function generateStaticParams() {
   return barrios.map((b) => ({ slug: b.slug }));
@@ -182,7 +184,21 @@ export default async function BarrioPage({ params }: Props) {
           .faq-summary::-webkit-details-marker {
             display: none;
           }
+          .seo-link {
+            color: #16A34A;
+            text-decoration: underline;
+            font-weight: 600;
+          }
         `}} />
+
+        {/* CONTENIDO SEO LOCAL ÚNICO */}
+        {barriosSeo[barrio.slug] && (
+          <div className="container" style={{ maxWidth: '1000px', margin: '0 auto', paddingTop: '4rem', paddingBottom: '0' }}>
+            <p style={{ backgroundColor: '#ffffff', padding: '2rem', borderRadius: '12px', borderLeft: '4px solid #16A34A', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', fontSize: '1.1rem', color: '#475569', lineHeight: 1.8, margin: 0 }}>
+              {generarTextoBarrio(barrio.name, barriosSeo[barrio.slug])}
+            </p>
+          </div>
+        )}
 
         {/* SECTION 1: Problemas Comunes y Contexto Geo */}
         <section className="section bg-light" style={{ padding: '6rem 0', backgroundColor: '#f8fafc' }}>
