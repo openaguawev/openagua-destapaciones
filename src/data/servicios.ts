@@ -19,6 +19,8 @@ export interface ServicioData {
   tiposDeDestapacion?: { title: string; desc: string }[];
   zonas?: string[];
   casosReales?: { title: string; desc: string }[];
+  seoTitle?: string;
+  seoDescription?: string;
 }
 
 const buildServicio = (
@@ -42,6 +44,8 @@ const buildServicio = (
     tiposDeDestapacion?: { title: string; desc: string }[];
     zonas?: string[];
     casosReales?: { title: string; desc: string }[];
+    seoTitle?: string;
+    seoDescription?: string;
   }
 ): ServicioData => {
   return {
@@ -72,6 +76,8 @@ const buildServicio = (
     tiposDeDestapacion: custom?.tiposDeDestapacion,
     zonas: custom?.zonas,
     casosReales: custom?.casosReales,
+    seoTitle: custom?.seoTitle,
+    seoDescription: custom?.seoDescription,
   };
 };
 
@@ -146,6 +152,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Cómo ven el estado del caño?", a: "Si el problema es recurrente, realizamos una video inspección de cañerías para detectar roturas o fallas estructurales sin necesidad de excavar." }
       ],
       {
+        seoTitle: "Destapaciones de cloacas en CABA y GBA | Openagua",
+        seoDescription: "Destapaciones de cloacas en CABA y GBA con diagnóstico preciso y sin romper. Soluciones reales y rápidas. Llamanos al 11 5179-7649.",
         benefitsTitle: "Especialistas en Destapaciones de Cloacas",
         benefits: [
           { title: "No esperes días. Lo resolvemos hoy.", desc: "Recuperá la normalidad de tu baño y cocina en pocas horas con nuestro servicio de urgencias 24hs." },
@@ -186,6 +194,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Tengo que desarmar el mueble bajo mesada?", a: "No es necesario. Nuestros técnicos trabajan con cuidado y solo necesitan acceso al sifón o a la boca de acceso más cercana." }
       ],
       {
+        seoTitle: "Destapaciones de cañerías en CABA y GBA | Openagua",
+        seoDescription: "Destapaciones de cañerías en CABA y GBA con herramientas profesionales. Solucionamos bloqueos sin romper. Contactanos al 11 5179-7649.",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
           { title: "Diagnóstico Técnico", desc: "Evaluamos el estado de las conexiones internas para aplicar el método de limpieza adecuado según el material del caño." },
@@ -238,6 +248,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Tienen equipos para trabajar en altura?", a: "Contamos con escaleras y herramientas de seguridad para acceder a canaletas en techos y balcones de difícil acceso." }
       ],
       {
+        seoTitle: "Destapaciones pluviales en CABA y GBA | Openagua",
+        seoDescription: "Destapaciones pluviales en CABA y GBA para patios, terrazas y desagües. Eliminamos obstrucciones sin dañar cañerías. Llamanos al 11 5179-7649.",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
           { title: "Diagnóstico de Caída", desc: "Verificamos la pendiente y el estado de los desagües para asegurar que el agua de lluvia evacue correctamente." },
@@ -290,6 +302,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Elimina el sarro por completo?", a: "Sí, el hidrojet es el único método capaz de desprender las incrustaciones de sarro más duras en cañerías de hierro y cemento." }
       ],
       {
+        seoTitle: "Destapaciones con hidrojet en CABA y GBA | Openagua",
+        seoDescription: "Destapaciones con hidrojet en CABA y GBA para cañerías con grasa o sarro. Limpieza profunda sin romper. Llamanos al 11 5179-7649.",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
           { title: "Recuperación de Diámetro", desc: "El Hidrojet no solo destapa, sino que barre las paredes del conducto devolviéndole su capacidad de drenaje original." },
@@ -342,6 +356,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Hasta cuántos metros llega la cámara?", a: "Nuestros equipos tienen sondas de hasta 30 metros de longitud, cubriendo la mayoría de las redes domiciliarias y comerciales." }
       ],
       {
+        seoTitle: "Video inspección de cañerías en CABA y GBA | Openagua",
+        seoDescription: "Video inspección de cañerías en CABA y GBA para detectar problemas sin romper. Diagnóstico exacto en el momento. Llamanos al 11 5179-7649.",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
           { title: "Localización Exacta", desc: "Identificamos el punto preciso del problema para que, si hay que reparar, la intervención sea mínima y en el lugar correcto." },
@@ -394,6 +410,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿El servicio incluye el retiro de los residuos?", a: "Sí, nos encargamos de la extracción y limpieza del sistema sanitario de forma higiénica." }
       ],
       {
+        seoTitle: "Limpieza de cámaras sépticas en CABA y GBA | Openagua",
+        seoDescription: "Limpieza de cámaras sépticas en CABA y GBA con equipos profesionales. Evitá desbordes y malos olores. Llamanos al 11 5179-7649.",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
           { title: "Vaciado y Succión", desc: "Utilizamos equipos de alto vacío para la extracción completa de lodos y residuos acumulados en el fondo de la cámara." },
@@ -446,6 +464,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Tienen bombas para sacar mucha agua rápido?", a: "Contamos con bombas de alto caudal que evacuan hasta 10.000 litros por hora, resolviendo la inundación en tiempo récord." }
       ],
       {
+        seoTitle: "Desagote de sótanos en CABA y GBA | Openagua",
+        seoDescription: "Desagote de sótanos y espacios inundados en CABA y GBA. Intervención rápida con bombas profesionales. Llamanos al 11 5179-7649.",
         schemaTitle: "Desagote de Sótanos y Subsuelos",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
@@ -502,6 +522,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Qué validez tiene el informe de estado que entregan?", a: "El informe sirve como auditoría técnica para la administración o dueño del inmueble, detallando el estado real de la red cloacal." }
       ],
       {
+        seoTitle: "Mantenimiento de cañerías en CABA y GBA | Openagua",
+        seoDescription: "Mantenimiento preventivo de cañerías en CABA y GBA para evitar obstrucciones. Ideal para edificios y comercios. Llamanos al 11 5179-7649.",
         schemaTitle: "Mantenimientos Preventivos de Redes Cloacales y Pluviales",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [

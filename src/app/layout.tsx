@@ -17,8 +17,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.destapacionesopenagua.com.ar'),
-  title: '🥇 Destapaciones en CABA y GBA | Máquinas de Sonda | Openagua 🏆',
-  description: '✅ Destapaciones en CABA y GBA. Solución hoy mismo con máquinas de sonda. Cloacas y pluviales. 📞 Llamanos al 11 5179-7649 o escribinos por WhatsApp. 🏆',
+  title: 'Openagua | Destapaciones de cañerías en CABA y GBA',
+  description: 'Destapaciones de cañerías en CABA y GBA con atención profesional y soluciones reales. Diagnóstico claro y sin romper. Llamanos al 11 5179-7649.',
   alternates: {
     canonical: 'https://www.destapacionesopenagua.com.ar',
   },
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json?v=4',
   openGraph: {
-    title: '🥇 Destapaciones en CABA y GBA | Máquinas de Sonda | Openagua 🏆',
-    description: '✅ Destapaciones en CABA y GBA. Solución hoy mismo con máquinas de sonda. Cloacas y pluviales. 📞 Llamanos al 11 5179-7649 o escribinos por WhatsApp. 🏆',
+    title: 'Openagua | Destapaciones de cañerías en CABA y GBA',
+    description: 'Destapaciones de cañerías en CABA y GBA con atención profesional y soluciones reales. Diagnóstico claro y sin romper. Llamanos al 11 5179-7649.',
     url: 'https://www.destapacionesopenagua.com.ar',
     siteName: 'Openagua',
     images: [
@@ -52,8 +52,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '🥇 Destapaciones en CABA y GBA | Máquinas de Sonda | Openagua 🏆',
-    description: '✅ Destapaciones en CABA y GBA. Solución hoy mismo con máquinas de sonda. Cloacas y pluviales. 📞 Llamanos al 11 5179-7649 o escribinos por WhatsApp. 🏆',
+    title: 'Openagua | Destapaciones de cañerías en CABA y GBA',
+    description: 'Destapaciones de cañerías en CABA y GBA con atención profesional y soluciones reales. Diagnóstico claro y sin romper. Llamanos al 11 5179-7649.',
     images: ['https://www.destapacionesopenagua.com.ar/logo.svg'],
   },
 };

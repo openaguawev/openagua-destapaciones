@@ -29,8 +29,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `🥇 ${servicio.title} en CABA y GBA | Máquinas de Sonda | Openagua 🏆`,
-    description: `✅ ${servicio.title} en CABA y GBA. Solución rápida hoy mismo sin romper. 📞 Llamanos al 11 5179-7649.`,
+    title: servicio.seoTitle || `🥇 ${servicio.title} en CABA y GBA | Máquinas de Sonda | Openagua 🏆`,
+    description: servicio.seoDescription || `✅ ${servicio.title} en CABA y GBA. Solución rápida hoy mismo sin romper. 📞 Llamanos al 11 5179-7649.`,
     alternates: {
       canonical: `https://www.destapacionesopenagua.com.ar/${servicio.slug}`,
     }
