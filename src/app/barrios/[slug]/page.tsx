@@ -23,9 +23,18 @@ export async function generateMetadata({ params }: Props) {
   
   if (!barrio) return {};
 
+  // Descriptions variadas por hash del nombre
+  const dHash = barrio.name.split('').reduce((a, c) => a + c.charCodeAt(0), 0);
+  const descriptions = [
+    `Destapaciones en ${barrio.name} con diagnóstico preciso y sin romper. Sonda e hidrojet. 📞 11 5179-7649`,
+    `Solucionamos cloacas y cañerías en ${barrio.name} con herramientas profesionales. Visitas en el día. 📞 11 5179-7649`,
+    `Servicio de destapaciones en ${barrio.name} para casas y edificios. Trabajo limpio y efectivo. 📞 11 5179-7649`,
+    `Destapamos caños, cloacas y pluviales en ${barrio.name}. Presupuesto online y atención inmediata. 📞 11 5179-7649`,
+  ];
+
   return {
-    title: `Destapaciones en ${barrio.name} | Atención en el día | Openagua`,
-    description: `Expertos en destapación de cloacas y cañerías en ${barrio.name}. Máquinas de sonda e hidrojet. Coordinamos tu visita en el día. 📞 11 5179-7649`,
+    title: `Destapaciones en ${barrio.name} | Openagua`,
+    description: descriptions[dHash % descriptions.length],
     alternates: {
       canonical: `https://www.destapacionesopenagua.com.ar/barrios/${slug}`
     }
@@ -60,35 +69,72 @@ export default async function BarrioPage({ params }: Props) {
     }
   };
 
+  // Pool de FAQs — se seleccionan 3 por barrio de forma determinista
+  const faqPool = [
+    {
+      q: `¿Cuánto tardan en llegar a ${barrio.name}?`,
+      a: `Nuestros móviles recorren la zona permanentemente, por lo que solemos llegar a ${barrio.name} en poco tiempo. Contactanos al 11 5179-7649 con tu dirección para coordinar.`,
+      aJsx: <>Nuestros móviles recorren la zona permanentemente, por lo que solemos llegar a {barrio.name} en poco tiempo. Contactanos al 11 5179-7649 con tu dirección para coordinar.</>
+    },
+    {
+      q: `¿Qué máquinas usan para destapar en ${barrio.name}?`,
+      a: `Trabajamos con sonda electromecánica para raíces y tapones duros, e Hidrojet de alta presión para grasa y sarro. Todo el equipo es profesional e importado.`,
+      aJsx: <>Trabajamos con sonda electromecánica para raíces y tapones duros, e Hidrojet de alta presión para grasa y sarro. Todo el equipo es profesional e importado.</>
+    },
+    {
+      q: `¿Atienden comercios y consorcios en ${barrio.name}?`,
+      a: `Sí, realizamos mantenimientos preventivos y destapaciones para cocinas comerciales, clínicas y columnas de edificios en ${barrio.name}. Emitimos factura y garantía.`,
+      aJsx: <>Sí, realizamos <Link href="/mantenimientos-preventivos" style={{ color: '#16A34A', textDecoration: 'underline' }}>mantenimientos preventivos</Link> y destapaciones para cocinas comerciales, clínicas y columnas de edificios en {barrio.name}. Emitimos factura y garantía.</>
+    },
+    {
+      q: `¿Se puede hacer una inspección con cámara en ${barrio.name}?`,
+      a: `Sí, ofrecemos video inspección de cañerías con cámara CCTV para diagnosticar el estado interno de los caños antes de intervenir.`,
+      aJsx: <>Sí, ofrecemos <Link href="/video-inspeccion-canerias" style={{ color: '#16A34A', textDecoration: 'underline' }}>video inspección de cañerías</Link> con cámara CCTV para diagnosticar el estado interno de los caños antes de intervenir.</>
+    },
+    {
+      q: `¿Trabajan los fines de semana en ${barrio.name}?`,
+      a: `Atendemos urgencias los 7 días de la semana, incluyendo feriados. Coordinamos por WhatsApp al 11 5179-7649.`,
+      aJsx: <>Atendemos urgencias los 7 días de la semana, incluyendo feriados. Coordinamos por WhatsApp al 11 5179-7649.</>
+    },
+    {
+      q: `¿Cuánto cuesta una destapación en ${barrio.name}?`,
+      a: `El presupuesto depende del tipo de obstrucción y el acceso. Ofrecemos diagnóstico previo sin cargo y precios competitivos.`,
+      aJsx: <>El presupuesto depende del tipo de obstrucción y el acceso. Ofrecemos diagnóstico previo sin cargo y precios competitivos.</>
+    },
+    {
+      q: `¿Hacen mantenimiento preventivo en ${barrio.name}?`,
+      a: `Sí, realizamos planes de mantenimiento para consorcios y comercios que buscan evitar emergencias y reducir costos a largo plazo.`,
+      aJsx: <>Sí, realizamos planes de <Link href="/mantenimientos-preventivos" style={{ color: '#16A34A', textDecoration: 'underline' }}>mantenimiento preventivo</Link> para consorcios y comercios que buscan evitar emergencias y reducir costos a largo plazo.</>
+    },
+    {
+      q: `¿Destapan pluviales y terrazas en ${barrio.name}?`,
+      a: `Por supuesto. Limpiamos bajadas pluviales, canaletas y desagües de terraza para prevenir filtraciones e inundaciones.`,
+      aJsx: <>Por supuesto. Realizamos <Link href="/destapaciones-pluviales" style={{ color: '#16A34A', textDecoration: 'underline' }}>destapaciones pluviales</Link>, limpieza de canaletas y desagües de terraza para prevenir filtraciones e inundaciones.</>
+    },
+  ];
+
+  const faqHash = barrio.name.split('').reduce((a, c) => a + c.charCodeAt(0), 0);
+  const selectedFaqIndices = [
+    faqHash % faqPool.length,
+    (faqHash + 3) % faqPool.length,
+    (faqHash + 5) % faqPool.length,
+  ];
+  // Ensure no duplicates
+  const uniqueIndices = [...new Set(selectedFaqIndices)];
+  while (uniqueIndices.length < 3) {
+    const next = (uniqueIndices[uniqueIndices.length - 1] + 1) % faqPool.length;
+    if (!uniqueIndices.includes(next)) uniqueIndices.push(next);
+  }
+  const selectedFaqs = uniqueIndices.slice(0, 3).map(i => faqPool[i]);
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": `¿Cuánto tardan en llegar a solucionar una urgencia en ${barrio.name}?`,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": `Al contar con móviles en la zona, solemos llegar a ${barrio.name} rápidamente. Para mayor precisión, contactanos por WhatsApp al 11 5179-7649 indicándonos tu dirección.`
-        }
-      },
-      {
-        "@type": "Question",
-        "name": `¿Qué utilizan para destapar cloacas y caños en ${barrio.name}?`,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": `Utilizamos máquinas de sonda electromecánica para barrer raíces o papeles endurecidos, e Hidrojet de alta presión para grasa y sarro profundo, garantizando que tus cañerías en ${barrio.name} queden impecables.`
-        }
-      },
-      {
-        "@type": "Question",
-        "name": `¿Atienden comercios, gastronomía y consorcios en ${barrio.name}?`,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": `Absolutamente. Somos líderes en mantenimientos preventivos y destapaciones comerciales para cocinas y columnas principales de consorcios ubicados en ${barrio.name}. Brindamos facturación y garantía.`
-        }
-      }
-    ]
+    "mainEntity": selectedFaqs.map(f => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a }
+    }))
   };
 
   const whatsappLink = "https://wa.me/5491151797649?text=Hola%20Openagua%2C%20necesito%20urgente%20un%20presupuesto%20de%20destapacion";
@@ -195,7 +241,7 @@ export default async function BarrioPage({ params }: Props) {
         {barriosSeo[barrio.slug] && (
           <div className="container" style={{ maxWidth: '1000px', margin: '0 auto', paddingTop: '4rem', paddingBottom: '0' }}>
             <p style={{ backgroundColor: '#ffffff', padding: '2rem', borderRadius: '12px', borderLeft: '4px solid #16A34A', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', fontSize: '1.1rem', color: '#475569', lineHeight: 1.8, margin: 0 }}>
-              {generarTextoBarrio(barrio.name, barriosSeo[barrio.slug])}
+              {generarTextoBarrio(barrio.name, barriosSeo[barrio.slug], barrio.pois)}
             </p>
           </div>
         )}
@@ -375,20 +421,7 @@ export default async function BarrioPage({ params }: Props) {
             </h2>
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-              {[
-                {
-                  q: `¿Cuánto tardan en llegar a solucionar una urgencia en ${barrio.name}?`,
-                  a: <>Al contar con móviles en la zona, solemos llegar a {barrio.name} rápidamente. Para mayor precisión, contactanos por WhatsApp indicándonos tu dirección transversal y coordinaremos la visita de la cuadrilla más cercana.</>
-                },
-                {
-                  q: `¿Qué utilizan para destapar cloacas y caños en ${barrio.name}?`,
-                  a: <>Utilizamos exclusivamente equipo profesional importado: máquinas de sonda electromecánica para barrer raíces o tapones celulósicos endurecidos, e Hidrojet de alta presión para eliminar grasa y sarro profundo. Recomendamos una <Link href="/video-inspeccion-canerias" style={{ color: '#16A34A', textDecoration: 'underline' }}>video inspección de cañerías</Link> previa para diagnosticar mejor.</>
-                },
-                {
-                  q: `¿Atienden comercios, gastronomía y consorcios en ${barrio.name}?`,
-                  a: <>¡Totalmente! Somos líderes en <Link href="/mantenimientos-preventivos" style={{ color: '#16A34A', textDecoration: 'underline' }}>mantenimientos preventivos</Link> y destapaciones comerciales para cocinas industriales, clínicas y columnas principales de consorcios de edificios en todo {barrio.name}. Brindamos reportes de sistema, facturación y plenas garantías.</>
-                }
-              ].map((faq, idx) => (
+              {selectedFaqs.map((faq, idx) => (
                 <details key={idx} style={{ background: '#ffffff', borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)', overflow: 'hidden' }}>
                   <summary className="faq-summary" style={{ padding: '1.5rem', fontSize: '1.15rem', fontWeight: 700, color: '#0f172a', cursor: 'pointer', outline: 'none', listStyle: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     {faq.q}
@@ -397,7 +430,7 @@ export default async function BarrioPage({ params }: Props) {
                     </svg>
                   </summary>
                   <div style={{ padding: '0 1.5rem 1.5rem', color: '#475569', lineHeight: 1.7, borderTop: '1px solid #e2e8f0', paddingTop: '1.5rem', fontSize: '1.05rem' }}>
-                    {faq.a}
+                    {faq.aJsx}
                   </div>
                 </details>
               ))}
