@@ -62,21 +62,29 @@ export default async function BarrioPage({ params }: Props) {
   const zonas = getZonas();
   const parentZone = zonas.find(z => z.slug === barrio.zoneSlug);
 
-  // Obtener barrios cercanos del mapeo geográfico real
-  let selectedNearbySlugs = barriosCercanos[barrio.slug] || [];
+  // FORZAR EXACTAMENTE 3 BARRIOS CERCANOS
+  let finalNearbySlugs = [...new Set(barriosCercanos[barrio.slug] || [])];
   
-  // Si hay menos de 3, completar con barrios de la misma zona
-  if (selectedNearbySlugs.length < 3) {
-    const additionalSlugs = barrios
-      .filter(b => b.zoneSlug === barrio.zoneSlug && b.slug !== barrio.slug && !selectedNearbySlugs.includes(b.slug))
-      .map(b => b.slug)
-      .slice(0, 3 - selectedNearbySlugs.length);
+  // 1. Completar con barrios de la misma zona
+  if (finalNearbySlugs.length < 3) {
+    const zonaCandidatos = barrios
+      .filter(b => b.zoneSlug === barrio.zoneSlug && b.slug !== barrio.slug && !finalNearbySlugs.includes(b.slug))
+      .map(b => b.slug);
     
-    selectedNearbySlugs = [...selectedNearbySlugs, ...additionalSlugs];
+    finalNearbySlugs = [...finalNearbySlugs, ...zonaCandidatos.slice(0, 3 - finalNearbySlugs.length)];
   }
 
-  // Limitar a los 3 primeros para un grid limpio de 3 columnas en desktop
-  const nearbyBarrios = selectedNearbySlugs
+  // 2. Si todavía falta (último recurso), completar con cualquier barrio
+  if (finalNearbySlugs.length < 3) {
+    const globalCandidatos = barrios
+      .filter(b => b.slug !== barrio.slug && !finalNearbySlugs.includes(b.slug))
+      .map(b => b.slug);
+    
+    finalNearbySlugs = [...finalNearbySlugs, ...globalCandidatos.slice(0, 3 - finalNearbySlugs.length)];
+  }
+
+  // FORZAR EXACTAMENTE 3 para un grid balanceado
+  const nearbyBarrios = finalNearbySlugs
     .slice(0, 3)
     .map(s => barrios.find(b => b.slug === s))
     .filter((b): b is typeof barrios[0] => !!b);
