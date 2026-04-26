@@ -10,6 +10,7 @@ import Resenas from '@/components/Resenas';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { barriosSeo } from '@/data/barriosSeo';
 import { generarTextoBarrio, generarTextoBarrioSecundario } from '@/utils/generarTextoBarrio';
+import { barriosCercanos } from '@/data/barriosCercanos';
 
 export async function generateStaticParams() {
   return barrios.map((b) => ({ slug: b.slug }));
@@ -61,11 +62,18 @@ export default async function BarrioPage({ params }: Props) {
   const zonas = getZonas();
   const parentZone = zonas.find(z => z.slug === barrio.zoneSlug);
 
-  // Seleccionar máximo 5 zonas cercanas para SEO distribution
-  const nearbyBarrios = barrio.nearby
-    .map(name => barrios.find(b => b.name === name))
-    .filter(Boolean)
-    .slice(0, 5) as typeof barrios;
+  // Obtener barrios cercanos del mapeo geográfico real
+  const nearbySlugs = barriosCercanos[barrio.slug] || [];
+  const nearbyBarrios = nearbySlugs
+    .map(s => barrios.find(b => b.slug === s))
+    .filter((b): b is typeof barrios[0] => !!b);
+
+  // Fallback si no hay mapeo: barrios de la misma zona (limitado a 3)
+  if (nearbyBarrios.length === 0) {
+    nearbyBarrios.push(...barrios
+      .filter(b => b.zoneSlug === barrio.zoneSlug && b.slug !== barrio.slug)
+      .slice(0, 3));
+  }
 
   const schemaData = {
     "@context": "https://schema.org",
