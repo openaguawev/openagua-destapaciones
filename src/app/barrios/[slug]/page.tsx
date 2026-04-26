@@ -64,37 +64,38 @@ export default async function BarrioPage({ params }: Props) {
 
   // UNIFICACIÓN TOTAL: EXACTAMENTE 3 BARRIOS CERCANOS (Fuente única de verdad)
   const nearbyFinal = (() => {
-    let slugs = [...new Set(barriosCercanos[barrio.slug] || [])];
+    // 1. Obtener mapeo manual
+    let manualSlugs = [...new Set(barriosCercanos[barrio.slug] || [])];
     
-    // 1. Prioridad: Misma zona
-    if (slugs.length < 3) {
-      const zonaCandidatos = barrios
-        .filter(b => b.zoneSlug === barrio.zoneSlug && b.slug !== barrio.slug && !slugs.includes(b.slug))
-        .map(b => b.slug);
-      slugs = [...slugs, ...zonaCandidatos];
-    }
-
-    // 2. Fallback: Global (si aún falta para llegar a 3)
-    if (slugs.length < 3) {
-      const globalCandidatos = barrios
-        .filter(b => b.slug !== barrio.slug && !slugs.includes(b.slug))
-        .map(b => b.slug);
-      slugs = [...slugs, ...globalCandidatos];
-    }
-
-    // Convertir a objetos y filtrar inválidos ANTES del slice
-    let result = slugs
+    // 2. Resolver objetos válidos del mapeo manual
+    let result = manualSlugs
       .map(s => barrios.find(b => b.slug === s))
       .filter((b): b is typeof barrios[0] => !!b);
 
-    // Seguridad extra: Si después de filtrar perdimos elementos y hay menos de 3
+    // 3. Si faltan para llegar a 3, completar con barrios de la MISMA ZONA
     if (result.length < 3) {
-      const faltantes = barrios
-        .filter(b => b.slug !== barrio.slug && !result.some(r => r.slug === b.slug))
-        .slice(0, 3 - result.length);
-      result = [...result, ...faltantes];
+      const zonaCandidatos = barrios
+        .filter(b => 
+          b.zoneSlug === barrio.zoneSlug && 
+          b.slug !== barrio.slug && 
+          !result.some(r => r.slug === b.slug)
+        );
+      
+      result = [...result, ...zonaCandidatos].slice(0, 3);
     }
 
+    // 4. Si aún faltan (extremadamente raro), completar con cualquier barrio
+    if (result.length < 3) {
+      const globalCandidatos = barrios
+        .filter(b => 
+          b.slug !== barrio.slug && 
+          !result.some(r => r.slug === b.slug)
+        );
+      
+      result = [...result, ...globalCandidatos].slice(0, 3);
+    }
+
+    // Retornar exactamente 3
     return result.slice(0, 3);
   })() as typeof barrios;
 
