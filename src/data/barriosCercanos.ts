@@ -85,7 +85,7 @@ export const barriosCercanos: Record<string, string[]> = {
   // ZONA NORTE
   "destapaciones-escobar": ["destapaciones-ingeniero-maschwitz", "destapaciones-garin", "destapaciones-benavidez"],
   "destapaciones-san-isidro": ["destapaciones-martinez", "destapaciones-acassuso", "destapaciones-beccar"],
-  "destapaciones-olivos": ["destapaciones-vicente-lopez", "destapaciones-florida", "destapaciones-la-lucila"],
+  "destapaciones-olivos": ["destapaciones-vicente-lopez", "destapaciones-florida", "destapaciones-martinez"],
   "destapaciones-martinez": ["destapaciones-olivos", "destapaciones-acassuso", "destapaciones-san-isidro"],
   "destapaciones-rincon-de-milberg": ["destapaciones-tigre", "destapaciones-nordelta", "destapaciones-benavidez"],
   "destapaciones-villa-ballester": ["destapaciones-san-martin", "destapaciones-san-andres", "destapaciones-munro"],
@@ -113,7 +113,7 @@ export const barriosCercanos: Record<string, string[]> = {
   "destapaciones-campo-de-mayo": ["destapaciones-muniz", "destapaciones-san-miguel", "destapaciones-don-torcuato"],
   "destapaciones-garin": ["destapaciones-ingeniero-maschwitz", "destapaciones-escobar", "destapaciones-benavidez"],
   "destapaciones-victoria": ["destapaciones-san-fernando", "destapaciones-beccar", "destapaciones-tigre"],
-  "destapaciones-san-fernando": ["destapaciones-victoria", "destapaciones-tigre", "destapaciones-virreyes"],
+  "destapaciones-san-fernando": ["destapaciones-victoria", "destapaciones-tigre", "destapaciones-beccar"],
   "destapaciones-beccar": ["destapaciones-san-isidro", "destapaciones-victoria", "destapaciones-boulogne"],
   "destapaciones-carapachay": ["destapaciones-munro", "destapaciones-villa-adelina", "destapaciones-martinez"],
   "destapaciones-jose-leon-suarez": ["destapaciones-villa-ballester", "destapaciones-boulogne", "destapaciones-san-martin"],

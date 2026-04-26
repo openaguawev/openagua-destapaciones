@@ -64,15 +64,24 @@ export default async function BarrioPage({ params }: Props) {
 
   // UNIFICACIÓN TOTAL: EXACTAMENTE 3 BARRIOS CERCANOS (Fuente única de verdad)
   const nearbyFinal = (() => {
-    // 1. Obtener mapeo manual
-    let manualSlugs = [...new Set(barriosCercanos[barrio.slug] || [])];
+    // 1. Obtener mapeo manual (slugs)
+    const manualSlugs = barriosCercanos[barrio.slug] || [];
     
-    // 2. Resolver objetos válidos del mapeo manual
-    let result = manualSlugs
+    // 2. Obtener mapeo de data (nombres de barrios.ts -> slugs)
+    const dataSlugs = (barrio.nearby || [])
+      .map(name => barrios.find(b => b.name === name)?.slug)
+      .filter((s): s is string => !!s);
+
+    // Combinar y eliminar duplicados manteniendo el orden
+    const combinedSlugs = [...new Set([...manualSlugs, ...dataSlugs])];
+    
+    // Resolver objetos válidos
+    let result = combinedSlugs
       .map(s => barrios.find(b => b.slug === s))
-      .filter((b): b is typeof barrios[0] => !!b);
+      .filter((b): b is typeof barrios[0] => !!b && b.slug !== barrio.slug);
 
     // 3. Si faltan para llegar a 3, completar con barrios de la MISMA ZONA
+    // Pero priorizando los que sobran del mapeo original si los hubiera (ya están en result)
     if (result.length < 3) {
       const zonaCandidatos = barrios
         .filter(b => 
@@ -81,7 +90,7 @@ export default async function BarrioPage({ params }: Props) {
           !result.some(r => r.slug === b.slug)
         );
       
-      result = [...result, ...zonaCandidatos].slice(0, 3);
+      result = [...result, ...zonaCandidatos];
     }
 
     // 4. Si aún faltan (extremadamente raro), completar con cualquier barrio
@@ -92,7 +101,7 @@ export default async function BarrioPage({ params }: Props) {
           !result.some(r => r.slug === b.slug)
         );
       
-      result = [...result, ...globalCandidatos].slice(0, 3);
+      result = [...result, ...globalCandidatos];
     }
 
     // Retornar exactamente 3
