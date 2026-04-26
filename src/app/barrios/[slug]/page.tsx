@@ -63,17 +63,23 @@ export default async function BarrioPage({ params }: Props) {
   const parentZone = zonas.find(z => z.slug === barrio.zoneSlug);
 
   // Obtener barrios cercanos del mapeo geográfico real
-  const nearbySlugs = barriosCercanos[barrio.slug] || [];
-  const nearbyBarrios = nearbySlugs
+  let selectedNearbySlugs = barriosCercanos[barrio.slug] || [];
+  
+  // Si hay menos de 3, completar con barrios de la misma zona
+  if (selectedNearbySlugs.length < 3) {
+    const additionalSlugs = barrios
+      .filter(b => b.zoneSlug === barrio.zoneSlug && b.slug !== barrio.slug && !selectedNearbySlugs.includes(b.slug))
+      .map(b => b.slug)
+      .slice(0, 3 - selectedNearbySlugs.length);
+    
+    selectedNearbySlugs = [...selectedNearbySlugs, ...additionalSlugs];
+  }
+
+  // Limitar a los 3 primeros para un grid limpio de 3 columnas en desktop
+  const nearbyBarrios = selectedNearbySlugs
+    .slice(0, 3)
     .map(s => barrios.find(b => b.slug === s))
     .filter((b): b is typeof barrios[0] => !!b);
-
-  // Fallback si no hay mapeo: barrios de la misma zona (limitado a 3)
-  if (nearbyBarrios.length === 0) {
-    nearbyBarrios.push(...barrios
-      .filter(b => b.zoneSlug === barrio.zoneSlug && b.slug !== barrio.slug)
-      .slice(0, 3));
-  }
 
   const schemaData = {
     "@context": "https://schema.org",
