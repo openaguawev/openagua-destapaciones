@@ -303,7 +303,7 @@ export default async function BarrioPage({ params }: Props) {
                   {(() => {
                     const isComercialRoute = ['destapaciones-palermo', 'destapaciones-recoleta', 'destapaciones-liniers', 'destapaciones-belgrano', 'destapaciones-san-nicolas', 'destapaciones-puerto-madero'].some(c => barrio.slug === c);
                     const isCabaRoute = barrio.zoneSlug === 'caba';
-                    const nearbyStr = nearbyBarrios.length > 0 ? nearbyBarrios.map(b => b.name).join(', ') : 'barrios cercanos';
+                    const nearbyStr = nearbyFinal.length > 0 ? nearbyFinal.map(b => b.name).join(', ') : 'barrios cercanos';
 
                     if (isComercialRoute) {
                       return (
