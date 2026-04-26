@@ -71,18 +71,31 @@ export default async function BarrioPage({ params }: Props) {
       const zonaCandidatos = barrios
         .filter(b => b.zoneSlug === barrio.zoneSlug && b.slug !== barrio.slug && !slugs.includes(b.slug))
         .map(b => b.slug);
-      slugs = [...slugs, ...zonaCandidatos.slice(0, 3 - slugs.length)];
+      slugs = [...slugs, ...zonaCandidatos];
     }
 
-    // 2. Fallback: Global
+    // 2. Fallback: Global (si aún falta para llegar a 3)
     if (slugs.length < 3) {
       const globalCandidatos = barrios
         .filter(b => b.slug !== barrio.slug && !slugs.includes(b.slug))
         .map(b => b.slug);
-      slugs = [...slugs, ...globalCandidatos.slice(0, 3 - slugs.length)];
+      slugs = [...slugs, ...globalCandidatos];
     }
 
-    return slugs.slice(0, 3).map(s => barrios.find(b => b.slug === s)).filter(Boolean);
+    // Convertir a objetos y filtrar inválidos ANTES del slice
+    let result = slugs
+      .map(s => barrios.find(b => b.slug === s))
+      .filter((b): b is typeof barrios[0] => !!b);
+
+    // Seguridad extra: Si después de filtrar perdimos elementos y hay menos de 3
+    if (result.length < 3) {
+      const faltantes = barrios
+        .filter(b => b.slug !== barrio.slug && !result.some(r => r.slug === b.slug))
+        .slice(0, 3 - result.length);
+      result = [...result, ...faltantes];
+    }
+
+    return result.slice(0, 3);
   })() as typeof barrios;
 
   const schemaData = {
