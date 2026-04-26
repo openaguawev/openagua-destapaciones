@@ -255,7 +255,7 @@ export default async function BarrioPage({ params }: Props) {
               justify-content: center;
             }
           }
-        `}} />,StartLine:244,TargetContent:
+        `}} />
 
         {/* CONTENIDO SEO LOCAL ÚNICO */}
         {barriosSeo[barrio.slug] && (
