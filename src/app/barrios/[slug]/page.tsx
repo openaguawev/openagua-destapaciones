@@ -155,6 +155,7 @@ export default async function BarrioPage({ params }: Props) {
       <main className="barrio-page">
         {/* HERO SECTION - UX Focalizada */}
         <header 
+          className="barrio-hero"
           style={{ 
             position: 'relative', 
             minHeight: '75vh', 
@@ -250,6 +251,9 @@ export default async function BarrioPage({ params }: Props) {
             margin: 0 auto 2rem auto;
           }
           @media (min-width: 768px) {
+            .barrio-hero {
+              padding-bottom: 56px;
+            }
             .hero-description {
               margin-bottom: 40px;
             }
