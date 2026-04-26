@@ -13,7 +13,6 @@ export const barrios: Barrio[] = [
   { slug: 'destapaciones-recoleta', name: 'Recoleta', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Caballito","Villa Real","Floresta"], pois: ["Av. Las Heras", "Av. Callao", "Cementerio de la Recoleta", "Facultad de Derecho"] },
   { slug: 'destapaciones-belgrano', name: 'Belgrano', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Nuñez","Colegiales","Palermo","Saavedra"], pois: ["Av. Cabildo", "Av. del Libertador", "Barrancas de Belgrano", "Barrio Chino"] },
   { slug: 'destapaciones-caballito', name: 'Caballito', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Almagro","Flores","Parque Chacabuco","Villa Crespo"], pois: ["Av. Rivadavia", "Parque Rivadavia", "Acoyte y Rivadavia", "Parque Centenario"] },
-  { slug: 'destapaciones-capital-federal', name: 'Capital Federal', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Villa Luro","Chacarita","Villa Pueyrredon"] },
   { slug: 'destapaciones-boedo', name: 'Boedo', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Montserrat","Villa Real","Barrio Norte"], pois: ["Av. Boedo", "Av. San Juan", "Café Margot", "Esquina Homero Manzi"] },
   { slug: 'destapaciones-floresta', name: 'Floresta', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Once","Almagro","Las Cañitas"], pois: ["Av. Rivadavia", "Av. Gaona", "Av. Segurola", "Plaza Vélez Sarsfield"] },
   { slug: 'destapaciones-montserrat', name: 'Montserrat', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["San Cristobal","Villa Luro","Recoleta"] },

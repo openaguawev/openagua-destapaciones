@@ -98,6 +98,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Entregan factura y garantía?", a: "Sí, emitimos factura por todos nuestros trabajos y brindamos garantía por escrito sobre la desobstrucción realizada." }
       ],
       {
+        seoTitle: "Destapaciones con máquinas en CABA y GBA | Openagua",
+        seoDescription: "Destapaciones con máquinas profesionales en CABA y GBA. Sonda rotativa, hidrojet y video inspección sin romper nada. Atendemos hoy mismo. Llamanos al 11 5179-7649.",
         benefitsTitle: "Especialistas en Destapaciones con Máquinas",
         benefits: [
           { title: "Máquina con Resorte", desc: "Desobstrucción mecánica con resortes rotativos de acero que eliminan bloqueos rígidos en cocinas y baños." },
@@ -303,7 +305,7 @@ export const getServicios = (): ServicioData[] => {
       ],
       {
         seoTitle: "Destapaciones con hidrojet en CABA y GBA | Openagua",
-        seoDescription: "Destapaciones con hidrojet en CABA y GBA para cañerías con grasa o sarro. Limpieza profunda sin romper. Llamanos al 11 5179-7649.",
+        seoDescription: "Destapaciones con hidrojet en CABA y GBA para cañerías con grasa, sarro o raíces. Limpieza profunda y barrido total sin romper. Consultanos al 11 5179-7649.",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
           { title: "Recuperación de Diámetro", desc: "El Hidrojet no solo destapa, sino que barre las paredes del conducto devolviéndole su capacidad de drenaje original." },

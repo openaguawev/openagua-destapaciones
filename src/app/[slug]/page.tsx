@@ -5,6 +5,7 @@ import Script from 'next/script';
 import Image from 'next/image';
 import Contacto from '@/components/Contacto';
 import { handleLegacyRedirect } from '@/utils/legacyRedirect';
+import { generarTextoServicio } from '@/utils/generarTextoServicio';
 import '../servicio-page.css';
 
 interface Props {
@@ -28,12 +29,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: 'Servicio no encontrado | Openagua' };
   }
 
+  const seoTitle = servicio.seoTitle || `${servicio.title} en CABA y GBA | Openagua`;
+  const seoDescription = servicio.seoDescription || `${servicio.title} en CABA y GBA con diagnóstico preciso y sin romper. Solución profesional. Llamanos al 11 5179-7649.`;
+
   return {
-    title: servicio.seoTitle || `🥇 ${servicio.title} en CABA y GBA | Máquinas de Sonda | Openagua 🏆`,
-    description: servicio.seoDescription || `✅ ${servicio.title} en CABA y GBA. Solución rápida hoy mismo sin romper. 📞 Llamanos al 11 5179-7649.`,
+    title: seoTitle,
+    description: seoDescription,
     alternates: {
       canonical: `https://www.destapacionesopenagua.com.ar/${servicio.slug}`,
-    }
+    },
+    openGraph: {
+      title: seoTitle,
+      description: seoDescription,
+      url: `https://www.destapacionesopenagua.com.ar/${servicio.slug}`,
+      siteName: 'Openagua',
+      locale: 'es_AR',
+      type: 'website',
+    },
   };
 }
 
@@ -153,24 +165,9 @@ export default async function ServicioPage({ params }: Props) {
           </div>
         </section>
 
-        {/* Bloque SEO Estratégico */}
+        {/* Bloque SEO Dinámico — contenido único por servicio */}
         <section className="seo-text-block">
-          <p>
-            En Openagua realizamos <strong>destapaciones urgentes en CABA y todo el Gran Buenos Aires</strong>, 
-            trabajando en Zona Oeste, Zona Norte y Zona Sur con equipos profesionales como máquinas de resorte, hidrojet 
-            y video inspección de cañerías.
-          </p>
-
-          <p>
-            Atendemos problemas como <strong>cloacas tapadas, cañerías obstruidas, grasa acumulada y raíces en tuberías</strong>, 
-            brindando soluciones en el día sin necesidad de romper pisos ni paredes.
-          </p>
-
-          <p>
-            Si necesitás una solución inmediata, podés consultar por <strong>destapaciones de cloacas</strong>, 
-            <strong>destapaciones con máquina</strong> o solicitar una 
-            <strong>video inspección de cañerías</strong> para detectar el problema exacto.
-          </p>
+          <p>{generarTextoServicio({ slug: servicio.slug, title: servicio.title, excerpt: servicio.excerpt })}</p>
         </section>
 
         {/* Pasos */}

@@ -10,8 +10,13 @@ export function proxy(request: NextRequest) {
     '/wp-admin/',
     '/wp-includes/',
     '/wp-login.php',
+    '/wp-json/',
+    '/xmlrpc.php',
     '/category/',
-    '/tag/'
+    '/tag/',
+    '/feed/',
+    '/comments/',
+    '/trackback/',
   ];
 
   // Verificar si el pathname actual comienza con alguna de las rutas legacy
@@ -19,7 +24,7 @@ export function proxy(request: NextRequest) {
 
   if (isLegacyPath) {
     // Retornar una respuesta directa con estado 410 (Gone)
-    return new NextResponse('Gone', { status: 410 });
+    return new NextResponse(null, { status: 410, statusText: 'Gone' });
   }
 
   // Continuar con la petición normal para el resto de rutas
@@ -33,7 +38,12 @@ export const config = {
     '/wp-admin/:path*',
     '/wp-includes/:path*',
     '/wp-login.php',
+    '/wp-json/:path*',
+    '/xmlrpc.php',
     '/category/:path*',
-    '/tag/:path*'
+    '/tag/:path*',
+    '/feed/:path*',
+    '/comments/:path*',
+    '/trackback/:path*',
   ],
 };

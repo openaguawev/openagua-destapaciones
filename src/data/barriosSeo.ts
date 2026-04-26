@@ -30,12 +30,6 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     problemas: ['cloacas tapadas por raíces que ingresan en juntas', 'cañerías antiguas con pérdida de pendiente', 'inodoros con retorno de agua'],
     propiedades: ['departamentos en edificios de más de 30 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
   },
-  'destapaciones-capital-federal': {
-    nombre: 'Capital Federal',
-    tipo: 'zona residencial consolidada con infraestructura sanitaria de larga data',
-    problemas: ['tapones de jabón y pelo en duchas y bañeras', 'cámaras de inspección con sedimento compactado', 'caños de PVC fisurados por asentamiento'],
-    propiedades: ['departamentos en edificios de más de 30 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
-  },
   'destapaciones-boedo': {
     nombre: 'Boedo',
     tipo: 'barrio urbano con edificios, PH y viviendas unifamiliares',

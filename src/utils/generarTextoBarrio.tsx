@@ -30,13 +30,13 @@ export function generarTextoBarrio(
     <>La cercanía de nuestros móviles a <strong>{nombre}</strong> nos permite responder con agilidad y llegar en poco tiempo.</>,
   ];
 
-  // Contexto urbano (sin "una/un {tipo}" — reformulado)
+  // Contexto urbano (reformulado para evitar errores gramaticales)
   const contextos: React.ReactNode[] = [
-    <>En este sector, donde predominan {data.tipo}, los inconvenientes más comunes son {data.problemas[0]} y {data.problemas[1]}.</>,
+    <>En este sector, caracterizado por ser {data.tipo}, los inconvenientes más comunes son {data.problemas[0]} y {data.problemas[1]}.</>,
     <>Por tratarse de {data.tipo}, es habitual encontrar situaciones como {data.problemas[0]} o {data.problemas[2]}.</>,
-    <>Las propiedades de la zona suelen presentar {data.problemas[1]} y también {data.problemas[2]}, especialmente en instalaciones con varios años de uso.</>,
-    <>Los desafíos más frecuentes aquí van desde {data.problemas[0]} hasta {data.problemas[2]}, propios de {data.tipo}.</>,
-    <>En {data.tipo} como las de esta zona, el desgaste genera problemas típicos: {data.problemas[1]} y {data.problemas[0]}.</>,
+    <>Dada la configuración de {data.tipo}, las propiedades suelen presentar {data.problemas[1]} y también {data.problemas[2]}, especialmente en instalaciones antiguas.</>,
+    <>Los desafíos más frecuentes en este tipo de {data.tipo.includes('zona') ? 'áreas' : 'entornos'} van desde {data.problemas[0]} hasta {data.problemas[2]}.</>,
+    <>Al ser {data.tipo}, el desgaste habitual genera problemas típicos como {data.problemas[1]} y {data.problemas[0]}.</>,
   ];
 
   // Clientes

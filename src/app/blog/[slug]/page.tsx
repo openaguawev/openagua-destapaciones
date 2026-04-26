@@ -17,13 +17,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = posts.find((p) => p.slug === slug)
   if (!post) return { title: 'Artículo no encontrado | Openagua' }
 
-  const seoTitle = post.seoTitle || post.title
+  const seoTitle = `${post.seoTitle || post.title} | Openagua`
   return {
-    title: `${seoTitle} | Openagua`,
+    title: seoTitle,
     description: post.excerpt,
     alternates: {
       canonical: `https://www.destapacionesopenagua.com.ar/blog/${slug}`,
-    }
+    },
+    openGraph: {
+      title: seoTitle,
+      description: post.excerpt,
+      url: `https://www.destapacionesopenagua.com.ar/blog/${slug}`,
+      siteName: 'Openagua',
+      locale: 'es_AR',
+      type: 'article',
+      images: [
+        {
+          url: `https://www.destapacionesopenagua.com.ar${post.image}`,
+          width: 1200,
+          height: 630,
+          alt: post.alt,
+        },
+      ],
+    },
   }
 }
 
