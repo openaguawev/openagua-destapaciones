@@ -47,7 +47,12 @@ export default function Footer() {
         <div className="footer-contact">
           <div className="footer-heading" style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1.5rem', color: '#fff' }}>Contacto</div>
           <p>Teléfono: <a href="tel:+5491151797649">15-5179-7649</a></p>
-          <p>Horario: Lunes a Sábado 8 a 19 hs</p>
+          <p>Horario: Lunes a Domingo 8 a 19 hs</p>
+          <p style={{ fontSize: '0.85rem', color: '#94a3b8', marginTop: '0.25rem' }}>Urgencias 24hs los 7 días</p>
+          <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#cbd5e1' }}>
+            <strong>Base operativa:</strong> Zona Oeste, Buenos Aires<br />
+            <strong>Cobertura:</strong> CABA y Gran Buenos Aires
+          </p>
           <div className="social-icons">
             <a href="https://facebook.com/openagua" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Visitanos en Facebook">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>

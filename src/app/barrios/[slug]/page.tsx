@@ -9,7 +9,7 @@ import { handleLegacyRedirect } from '@/utils/legacyRedirect';
 import Resenas from '@/components/Resenas';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { barriosSeo } from '@/data/barriosSeo';
-import { generarTextoBarrio } from '@/utils/generarTextoBarrio';
+import { generarTextoBarrio, generarTextoBarrioSecundario } from '@/utils/generarTextoBarrio';
 
 export async function generateStaticParams() {
   return barrios.map((b) => ({ slug: b.slug }));
@@ -32,12 +32,23 @@ export async function generateMetadata({ params }: Props) {
     `Destapamos caños, cloacas y pluviales en ${barrio.name}. Presupuesto online y atención inmediata. 📞 11 5179-7649`,
   ];
 
+  const seoTitle = `Destapaciones en ${barrio.name} | Openagua`;
+  const seoDescription = descriptions[dHash % descriptions.length];
+
   return {
-    title: `Destapaciones en ${barrio.name} | Openagua`,
-    description: descriptions[dHash % descriptions.length],
+    title: seoTitle,
+    description: seoDescription,
     alternates: {
       canonical: `https://www.destapacionesopenagua.com.ar/barrios/${slug}`
-    }
+    },
+    openGraph: {
+      title: seoTitle,
+      description: seoDescription,
+      url: `https://www.destapacionesopenagua.com.ar/barrios/${slug}`,
+      siteName: 'Openagua',
+      locale: 'es_AR',
+      type: 'website',
+    },
   };
 }
 
@@ -412,6 +423,22 @@ export default async function BarrioPage({ params }: Props) {
         </section>
 
         <Resenas />
+
+        {/* SEGUNDO BLOQUE SEO DINÁMICO — aumenta ratio contenido único */}
+        {barriosSeo[barrio.slug] && (
+          <section className="section" style={{ padding: '4rem 0', backgroundColor: '#ffffff' }}>
+            <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
+              <h2 style={{ fontSize: '1.8rem', fontWeight: 700, color: '#0f172a', marginBottom: '1.5rem', lineHeight: 1.3 }}>
+                ¿Por qué elegir Openagua en {barrio.name}?
+              </h2>
+              <div style={{ fontSize: '1.1rem', color: '#475569', lineHeight: 1.8 }}>
+                <p style={{ margin: 0 }}>
+                  {generarTextoBarrioSecundario(barrio.name, barriosSeo[barrio.slug], parentZone?.name)}
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* SECTION 4: FAQ Optimizada SEO Local */}
         <section className="section" style={{ padding: '6rem 0', backgroundColor: '#ffffff' }}>

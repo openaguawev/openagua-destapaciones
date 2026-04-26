@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     siteName: 'Openagua',
     images: [
       {
-        url: 'https://www.destapacionesopenagua.com.ar/logo.svg',
-        width: 800,
-        height: 600,
-        alt: 'Openagua Destapaciones',
+        url: 'https://www.destapacionesopenagua.com.ar/img/home.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Openagua - Destapaciones profesionales en CABA y GBA',
       },
     ],
     locale: 'es_AR',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Openagua | Destapaciones de cañerías en CABA y GBA',
     description: 'Destapaciones de cañerías en CABA y GBA con atención profesional y soluciones reales. Diagnóstico claro y sin romper. Llamanos al 11 5179-7649.',
-    images: ['https://www.destapacionesopenagua.com.ar/logo.svg'],
+    images: ['https://www.destapacionesopenagua.com.ar/img/home.jpg'],
   },
 };
 
@@ -106,12 +106,21 @@ export default function RootLayout({
       "Zona Oeste",
       "Zona Sur"
     ],
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "08:00",
-      "closes": "19:00"
-    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday"],
+        "opens": "08:00",
+        "closes": "19:00",
+        "description": "Urgencias disponibles las 24 horas, los 7 días de la semana"
+      }
+    ],
     "sameAs": [
       "https://facebook.com/openagua",
       "https://www.instagram.com/destapaciones_openagua/",

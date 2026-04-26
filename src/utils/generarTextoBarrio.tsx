@@ -115,3 +115,66 @@ export function generarTextoBarrio(
       return <>{apertura}{' '}{contexto}{' '}{cliente}{' '}{cierre}</>;
   }
 }
+
+/**
+ * Genera un SEGUNDO bloque de texto SEO para cada barrio.
+ * Complementa al primer bloque con contenido sobre experiencia, confianza y metodología.
+ * Hash offset diferente para evitar correlación con el primer bloque.
+ */
+export function generarTextoBarrioSecundario(
+  nombre: string,
+  data: BarrioSeoData,
+  zonaNombre?: string
+): React.ReactNode {
+  const hash = nombre.split('').reduce((acc, c) => acc + c.charCodeAt(0) * 3, 0);
+  const h = (offset: number, mod: number) => (hash + offset) % mod;
+
+  // --- BLOQUES DIFERENCIADOS (no repetir temas del primer bloque) ---
+
+  const experiencia: React.ReactNode[] = [
+    <>Llevamos años atendiendo consultas en <strong>{nombre}</strong> y alrededores, lo que nos permitió desarrollar un conocimiento muy preciso del tipo de instalaciones y materiales que predominan en la zona.</>,
+    <>La experiencia acumulada en <strong>{nombre}</strong> nos enseñó que cada propiedad tiene particularidades únicas, y que el diagnóstico previo es clave para evitar trabajos innecesarios.</>,
+    <>En <strong>{nombre}</strong>, la combinación de {data.tipo} genera desafíos específicos que solo se resuelven con técnicos que conozcan bien el terreno.</>,
+    <>Nuestros técnicos conocen de cerca las instalaciones típicas de <strong>{nombre}</strong>, lo que nos permite anticipar problemas y ofrecer soluciones más rápidas.</>,
+  ];
+
+  const confianza: React.ReactNode[] = [
+    <>Cada trabajo incluye diagnóstico previo sin cargo, presupuesto claro y garantía escrita sobre la intervención realizada.</>,
+    <>No cobramos viáticos adicionales y emitimos factura para consorcios, administraciones y comercios que lo requieran.</>,
+    <>Nuestro compromiso es resolver el problema de raíz, no aplicar parches temporales. Por eso garantizamos cada destapación.</>,
+    <>Trabajamos con transparencia: primero diagnosticamos, explicamos el problema y recién después intervenimos con el equipo adecuado.</>,
+  ];
+
+  const metodologia: React.ReactNode[] = [
+    <>Utilizamos sonda electromecánica para obstrucciones sólidas y sistema <Link href="/destapaciones-hidrojet" style={linkStyle}>hidrojet</Link> para incrustaciones de grasa, eligiendo la técnica según cada caso.</>,
+    <>Nuestro equipo incluye <Link href="/video-inspeccion-canerias" style={linkStyle}>cámaras de inspección CCTV</Link> que permiten ver el estado interno de los caños antes de intervenir, evitando roturas innecesarias.</>,
+    <>Combinamos máquinas de sonda de distintos calibres con <Link href="/destapaciones-hidrojet" style={linkStyle}>hidrojet de alta presión</Link>, adaptando la herramienta al diámetro y tipo de obstrucción.</>,
+    <>El proceso siempre empieza con un relevamiento visual y, cuando es necesario, usamos <Link href="/video-inspeccion-canerias" style={linkStyle}>video inspección</Link> para confirmar el diagnóstico antes de actuar.</>,
+  ];
+
+  const cierre: React.ReactNode[] = [
+    <>Si tenés un problema de cañerías en <strong>{nombre}</strong>{zonaNombre ? ` o cualquier punto de ${zonaNombre}` : ''}, escribinos al 11 5179-7649 y coordinamos en el día.</>,
+    <>Contactanos ahora al 11 5179-7649 para una evaluación sin compromiso en <strong>{nombre}</strong>{zonaNombre ? ` y toda ${zonaNombre}` : ''}.</>,
+    <>Coordinamos visitas en el día para <strong>{nombre}</strong>{zonaNombre ? ` y alrededores de ${zonaNombre}` : ''}. Llamanos al 11 5179-7649.</>,
+  ];
+
+  const pattern = h(0, 4);
+  const exp = experiencia[h(1, experiencia.length)];
+  const conf = confianza[h(2, confianza.length)];
+  const met = metodologia[h(3, metodologia.length)];
+  const cierreSeleccionado = cierre[h(4, cierre.length)];
+
+  switch (pattern) {
+    case 0: // experiencia → metodología → confianza → cierre
+      return <>{exp}{' '}{met}{' '}{conf}{' '}{cierreSeleccionado}</>;
+    case 1: // confianza → experiencia → cierre
+      return <>{conf}{' '}{exp}{' '}{cierreSeleccionado}</>;
+    case 2: // experiencia → confianza → metodología → cierre
+      return <>{exp}{' '}{conf}{' '}{met}{' '}{cierreSeleccionado}</>;
+    case 3: // metodología → experiencia → confianza → cierre
+      return <>{met}{' '}{exp}{' '}{conf}{' '}{cierreSeleccionado}</>;
+    default:
+      return <>{exp}{' '}{met}{' '}{cierreSeleccionado}</>;
+  }
+}
+

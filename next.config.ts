@@ -40,6 +40,11 @@ const nextConfig: NextConfig = {
         source: '/index.html',
         destination: '/',
         permanent: true,
+      },
+      {
+        source: '/barrios/destapaciones-capital-federal',
+        destination: '/zonas/caba',
+        permanent: true,
       }
     ];
   },
