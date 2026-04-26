@@ -189,7 +189,7 @@ export default async function BarrioPage({ params }: Props) {
               📞 11 5179-7649
             </div>
             
-            <p style={{ fontSize: '1.25rem', maxWidth: '700px', margin: '0 auto 3rem', color: '#cbd5e1', lineHeight: 1.6 }}>
+            <p className="hero-description" style={{ fontSize: '1.25rem', maxWidth: '700px', color: '#cbd5e1', lineHeight: 1.6 }}>
               Especialistas en desagües tapados. Destapamos caños, bajadas pluviales y cloacas sin romper pisos. Presupuesto previo 100% online y visitas inmediatas a <strong>{barrio.name}</strong>.
               <br /><br />
               En {barrio.name}, es frecuente encontrar problemas de cloacas por acumulación de grasa o cañerías antiguas. También trabajamos en zonas cercanas como {nearbyBarrios.map(b => b.name).join(', ')}.
@@ -246,9 +246,12 @@ export default async function BarrioPage({ params }: Props) {
             text-decoration: underline;
             font-weight: 600;
           }
+          .hero-description {
+            margin: 0 auto 2rem auto;
+          }
           @media (min-width: 768px) {
-            .hero-whatsapp-btn {
-              margin-top: 32px;
+            .hero-description {
+              margin-bottom: 40px;
             }
             .barrio-servicios-grid {
               grid-template-columns: repeat(3, 1fr) !important;
