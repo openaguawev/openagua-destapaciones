@@ -62,32 +62,28 @@ export default async function BarrioPage({ params }: Props) {
   const zonas = getZonas();
   const parentZone = zonas.find(z => z.slug === barrio.zoneSlug);
 
-  // FORZAR EXACTAMENTE 3 BARRIOS CERCANOS
-  let finalNearbySlugs = [...new Set(barriosCercanos[barrio.slug] || [])];
-  
-  // 1. Completar con barrios de la misma zona
-  if (finalNearbySlugs.length < 3) {
-    const zonaCandidatos = barrios
-      .filter(b => b.zoneSlug === barrio.zoneSlug && b.slug !== barrio.slug && !finalNearbySlugs.includes(b.slug))
-      .map(b => b.slug);
+  // UNIFICACIÓN TOTAL: EXACTAMENTE 3 BARRIOS CERCANOS (Fuente única de verdad)
+  const nearbyFinal = (() => {
+    let slugs = [...new Set(barriosCercanos[barrio.slug] || [])];
     
-    finalNearbySlugs = [...finalNearbySlugs, ...zonaCandidatos.slice(0, 3 - finalNearbySlugs.length)];
-  }
+    // 1. Prioridad: Misma zona
+    if (slugs.length < 3) {
+      const zonaCandidatos = barrios
+        .filter(b => b.zoneSlug === barrio.zoneSlug && b.slug !== barrio.slug && !slugs.includes(b.slug))
+        .map(b => b.slug);
+      slugs = [...slugs, ...zonaCandidatos.slice(0, 3 - slugs.length)];
+    }
 
-  // 2. Si todavía falta (último recurso), completar con cualquier barrio
-  if (finalNearbySlugs.length < 3) {
-    const globalCandidatos = barrios
-      .filter(b => b.slug !== barrio.slug && !finalNearbySlugs.includes(b.slug))
-      .map(b => b.slug);
-    
-    finalNearbySlugs = [...finalNearbySlugs, ...globalCandidatos.slice(0, 3 - finalNearbySlugs.length)];
-  }
+    // 2. Fallback: Global
+    if (slugs.length < 3) {
+      const globalCandidatos = barrios
+        .filter(b => b.slug !== barrio.slug && !slugs.includes(b.slug))
+        .map(b => b.slug);
+      slugs = [...slugs, ...globalCandidatos.slice(0, 3 - slugs.length)];
+    }
 
-  // FORZAR EXACTAMENTE 3 para un grid balanceado
-  const nearbyBarrios = finalNearbySlugs
-    .slice(0, 3)
-    .map(s => barrios.find(b => b.slug === s))
-    .filter((b): b is typeof barrios[0] => !!b);
+    return slugs.slice(0, 3).map(s => barrios.find(b => b.slug === s)).filter(Boolean);
+  })() as typeof barrios;
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -215,7 +211,7 @@ export default async function BarrioPage({ params }: Props) {
             <p className="hero-description" style={{ fontSize: '1.25rem', maxWidth: '700px', color: '#cbd5e1', lineHeight: 1.6 }}>
               Especialistas en desagües tapados. Destapamos caños, bajadas pluviales y cloacas sin romper pisos. Presupuesto previo 100% online y visitas inmediatas a <strong>{barrio.name}</strong>.
               <br /><br />
-              En {barrio.name}, es frecuente encontrar problemas de cloacas por acumulación de grasa o cañerías antiguas. También trabajamos en zonas cercanas como {nearbyBarrios.map(b => b.name).join(', ')}.
+              En {barrio.name}, es frecuente encontrar problemas de cloacas por acumulación de grasa o cañerías antiguas. También trabajamos en zonas cercanas como {nearbyFinal.map(b => b.name).join(', ')}.
             </p>
             
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary hero-whatsapp-btn" style={{ padding: '1.1rem 3rem', fontSize: '1.25rem', boxShadow: '0 10px 25px -5px rgba(22, 163, 74, 0.5)', transition: 'transform 0.2s', display: 'inline-flex', alignItems: 'center', gap: '12px' }}>
@@ -436,7 +432,7 @@ export default async function BarrioPage({ params }: Props) {
             </p>
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '24px', maxWidth: '1100px', margin: '0 auto' }}>
-              {nearbyBarrios.map((b) => (
+              {nearbyFinal.map((b) => (
                 <Link href={`/barrios/${b.slug}`} key={b.slug} className="nearby-card">
                   <div style={{ color: '#16A34A', backgroundColor: '#ecfdf5', padding: '12px', borderRadius: '50%' }}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
