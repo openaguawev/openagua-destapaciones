@@ -39,7 +39,7 @@ export default function PreciosPage() {
 
       <div className="container servicio-content">
         {/* TABLA DE PRECIOS */}
-        <section className="section-block compact" style={{ paddingBottom: '6rem' }}>
+        <section className="section-block compact" style={{ paddingBottom: '1rem' }}>
           <p style={{ textAlign: 'center', marginBottom: '2rem', fontStyle: 'italic', color: '#64748b' }}>
             Precios orientativos en pesos argentinos. Pueden variar según complejidad y accesibilidad del trabajo.
           </p>
