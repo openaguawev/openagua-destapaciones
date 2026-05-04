@@ -3,37 +3,79 @@ import { barrios } from '@/data/barrios'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
+import Script from 'next/script'
 import '@/components/Zonas.css'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import { handleLegacyRedirect } from '@/utils/legacyRedirect'
 
-// Contenido SEO por zona — texto real, no template
-const zonaSeoContent: Record<string, { intro: string; problemas: string; clientes: string; cierre: string }> = {
+// Contenido SEO expandido por zona — 400-500 palabras reales por zona
+const zonaSeoContent: Record<string, {
+  intro: string[];
+  problemas: string[];
+  servicios: string;
+  clientes: string;
+  cierre: string;
+}> = {
   caba: {
-    intro: 'La Ciudad Autónoma de Buenos Aires concentra una enorme diversidad de construcciones: desde edificios antiguos con cañerías de plomo hasta torres modernas con instalaciones de PVC. Cada barrio tiene particularidades que afectan directamente el sistema cloacal y pluvial.',
-    problemas: 'Los problemas más frecuentes que atendemos en CABA incluyen columnas de edificios obstruidas por grasa y jabón acumulado durante años, bajadas pluviales tapadas por hojas de árboles que caen sobre terrazas, y cámaras de inspección con sedimento compactado en PH y casas tipo chorizo.',
-    clientes: 'Nuestros clientes en CABA son tanto consorcios con columnas compartidas como vecinos particulares que necesitan resolver una urgencia en el baño o la cocina. También trabajamos con locales gastronómicos de barrios como Palermo, San Telmo y Recoleta, donde la acumulación de grasa en las bajadas es un problema constante.',
-    cierre: 'Recorremos los barrios de CABA todos los días, lo que nos permite coordinar visitas en el mismo día y llegar rápido ante cualquier emergencia sanitaria.'
+    intro: [
+      'En la Ciudad Autónoma de Buenos Aires, la densidad edilicia y la antigüedad de las instalaciones sanitarias generan desafíos únicos. La mayoría de los edificios porteños tienen cañerías de entre 30 y 60 años de antigüedad, construidas con materiales que hoy ya no se utilizan como plomo, hierro fundido y fibrocemento. Estas tuberías son propensas a la acumulación de sarro, raíces y deformaciones que generan obstrucciones crónicas.',
+      'En Openagua trabajamos en todos los barrios de CABA desde nuestra base operativa en Ciudadela. Conocemos de memoria la infraestructura cloacal de barrios como Palermo, Belgrano, Caballito, Recoleta y San Telmo. Eso nos permite diagnosticar más rápido y resolver más eficientemente que servicios sin experiencia local.',
+    ],
+    problemas: [
+      'Los problemas más frecuentes en CABA son la acumulación de grasa en las columnas de edificios — especialmente en los pisos bajos que reciben todo el peso del flujo — y la invasión de raíces de árboles en las cámaras de inspección de las veredas. También es muy común en departamentos el taponamiento por toallitas húmedas y materiales no biodegradables.',
+      'En edificios de más de 10 pisos, el diagnóstico correcto requiere saber si el problema es del ramal individual del departamento o de la columna general del consorcio. Esta distinción determina quién paga y qué herramienta usar. Nuestra experiencia con consorcios de CABA nos permite hacer ese diagnóstico sin necesidad de romper ni una sola baldosa.',
+    ],
+    servicios: 'Los servicios más solicitados en CABA son las destapaciones de cloacas urgentes, la limpieza de columnas con hidrojet para edificios y consorcios, y la video inspección de cañerías para detectar roturas sin obra. También realizamos mantenimientos preventivos programados para administraciones de consorcios que quieren evitar emergencias costosas.',
+    clientes: 'Atendemos particulares, inquilinos, propietarios, administradores de consorcios, comercios gastronómicos, hoteles y empresas en toda CABA. Nuestro tiempo de respuesta promedio en Capital Federal es de 45 a 90 minutos desde el primer contacto.',
+    cierre: 'Si tenés un problema cloacal en CABA, no esperes a que se agrave. Contactanos por WhatsApp y te damos un diagnóstico inicial sin cargo. Llegamos el mismo día.',
   },
   'zona-norte': {
-    intro: 'Zona Norte abarca desde Vicente López y Olivos hasta San Isidro, Tigre y Escobar, con un perfil que combina casas con jardín, barrios cerrados y edificios de departamentos. La vegetación abundante y los terrenos con napas altas generan desafíos específicos en las cañerías.',
-    problemas: 'En esta zona, los problemas más comunes son las raíces que penetran las juntas de los caños cloacales, los pluviales que colapsan en temporada de lluvias por la cantidad de árboles, y las cámaras sépticas de casas que no están conectadas a la red cloacal.',
-    clientes: 'Atendemos desde casas unifamiliares en barrios como Martínez y Acassuso hasta countries y barrios cerrados en Nordelta, Benavidez e Ingeniero Maschwitz. También damos servicio a edificios de departamentos en Olivos, Florida y Munro.',
-    cierre: 'Nuestros móviles recorren Zona Norte de forma permanente, con equipo de sonda e hidrojet disponible para resolver urgencias en el día sin demoras ni viáticos adicionales.'
+    intro: [
+      'La Zona Norte del Gran Buenos Aires — que comprende municipios como San Isidro, Vicente López, San Fernando, Tigre y Pilar — tiene características muy distintas a CABA. Las propiedades son en su mayoría casas con jardín, quintas y countries, donde el principal enemigo de las cañerías son las raíces de los árboles.',
+      'En barrios arbolados como Olivos, Martínez, Acassuso y Beccar, las raíces de tipas, jacarandás y plátanos pueden recorrer decenas de metros buscando humedad. Cuando encuentran una fisura en un caño de cemento o una unión mal sellada en PVC, ingresan y crecen hasta colapsar completamente el conducto. Es el problema número uno que atendemos en esta zona.',
+    ],
+    problemas: [
+      'Además de las raíces, en Zona Norte es frecuente encontrar cámaras sépticas colapsadas en propiedades más antiguas que no están conectadas a la red de AySA. Estas cámaras necesitan limpieza periódica y muchas veces reparación estructural cuando las paredes de ladrillo se fisuran por la presión del suelo.',
+      'Otro problema característico de la zona son los desagotes de sótanos y espacios inundados después de las tormentas. Las propiedades con jardín y subsuelo acumulan agua rápidamente cuando el sistema pluvial se satura, generando emergencias que requieren respuesta inmediata con bombas sumergibles.',
+    ],
+    servicios: 'En Zona Norte nuestros servicios más demandados son la video inspección y limpieza con hidrojet para detectar y eliminar raíces, el desagote de sótanos y espacios inundados, y la limpieza de cámaras sépticas. También realizamos mantenimientos preventivos anuales para propiedades con árboles grandes cerca de las líneas de servicio.',
+    clientes: 'Atendemos familias, countries, clubes de campo, empresas y comercios en toda la Zona Norte. Cubrimos desde Vicente López hasta Pilar y desde la costa del Río de la Plata hasta el segundo cordón del GBA.',
+    cierre: 'Si vivís en Zona Norte y notás que el drenaje es cada vez más lento o hay olores extraños en el jardín, puede ser señal de raíces en la cañería. Contactanos para una inspección sin cargo.',
   },
   'zona-oeste': {
-    intro: 'Zona Oeste es una de las áreas con mayor demanda de destapaciones en el conurbano bonaerense. Abarca localidades como Morón, Ramos Mejía, Castelar, Ituzaingó, Hurlingham y Ciudadela, donde conviven casas antiguas con barrios nuevos en expansión.',
-    problemas: 'Los inconvenientes más habituales en esta zona incluyen cloacas con barro y sedimento acumulado, cañerías antiguas de fibrocemento que se fisuran con el asentamiento del terreno, y pluviales de casas que desbordan por falta de mantenimiento.',
-    clientes: 'Trabajamos con consorcios, administraciones de edificios, comercios y familias de toda la Zona Oeste. En localidades como Haedo, Castelar y Morón atendemos tanto casas con fondo y jardín como departamentos en edificios de varias plantas.',
-    cierre: 'Tenemos presencia diaria en Zona Oeste con técnicos especializados y el equipamiento necesario para resolver cualquier tipo de obstrucción en el mismo día.'
+    intro: [
+      'La Zona Oeste del Gran Buenos Aires es nuestra área de operación principal. Con base en Ciudadela, cubrimos Ramos Mejía, Haedo, Castelar, Morón, Hurlingham, Ituzaingó, San Martín y todos los municipios del corredor oeste con tiempos de respuesta de 20 a 45 minutos.',
+      'Esta zona combina barrios residenciales tradicionales con alta densidad de comercios, industrias livianas y edificios de departamentos. Esa combinación genera una demanda constante de servicios de destapación tanto para uso doméstico como para establecimientos gastronómicos y comerciales.',
+    ],
+    problemas: [
+      'En Zona Oeste, los problemas más frecuentes son las obstrucciones por grasa en locales de comida y cocinas industriales, el taponamiento de columnas en edificios de los años 70 y 80 — época en que se construyó la mayor parte del parque edilicio de Morón y Ramos Mejía — y las inundaciones de patios y garajes por sistemas pluviales colapsados.',
+      'Las cañerías de esta zona son en su mayoría de PVC y polipropileno, pero en propiedades de más de 40 años es común encontrar ramales de plomo o hierro fundido que necesitan mantenimiento especial para no dañarlos durante la destapación.',
+    ],
+    servicios: 'Los servicios más solicitados en Zona Oeste son las destapaciones de cloacas y cañerías para uso doméstico, el mantenimiento de graseras para restaurantes y comercios gastronómicos, y la limpieza preventiva con hidrojet para consorcios y edificios. También somos el servicio de referencia para urgencias en toda la zona.',
+    clientes: 'Atendemos particulares, inquilinos, comercios, restaurantes, industrias livianas y administraciones de edificios en toda la Zona Oeste. Somos el servicio de destapaciones más conocido del corredor oeste gracias a más de 30 años de trabajo en la zona.',
+    cierre: 'En Zona Oeste somos locales. Conocemos cada barrio, cada tipo de construcción y cada problema típico de la zona. Contactanos y te resolvemos el problema el mismo día.',
   },
   'zona-sur': {
-    intro: 'Zona Sur comprende partidos como Avellaneda, Lanús, Lomas de Zamora, Banfield y La Matanza, una región con alta densidad poblacional y construcciones que van desde casas con décadas de antigüedad hasta complejos habitacionales modernos.',
-    problemas: 'Los problemas más frecuentes en esta zona son las cloacas obstruidas por raíces y sedimento en casas con instalaciones antiguas, los pluviales colapsados por la falta de limpieza periódica, y las cañerías de cocina tapadas por grasa en locales comerciales.',
-    clientes: 'Atendemos hogares, comercios y consorcios en toda la Zona Sur. En localidades como San Justo, Banfield y Temperley trabajamos frecuentemente con familias que necesitan resolver urgencias de desagüe sin romper pisos ni paredes.',
-    cierre: 'Nuestro equipo llega a Zona Sur en poco tiempo gracias a la distribución estratégica de nuestros móviles. Coordinamos visitas en el día y ofrecemos presupuesto sin compromiso.'
-  }
+    intro: [
+      'La Zona Sur del Gran Buenos Aires — Avellaneda, Lanús, Lomas de Zamora, Banfield, Temperley y alrededores — tiene una infraestructura cloacal que en muchos casos supera los 50 años de antigüedad. Los barrios industriales y residenciales del sur metropolitano presentan desafíos específicos que requieren experiencia y equipamiento especializado.',
+      'En Openagua extendimos nuestra cobertura a Zona Sur respondiendo a la demanda de clientes que necesitaban un servicio confiable con equipos modernos. Hoy atendemos regularmente en Avellaneda, Lanús, Lomas de Zamora y municipios cercanos.',
+    ],
+    problemas: [
+      'En Zona Sur es frecuente encontrar cañerías de cerámica y fibrocemento en propiedades industriales y residenciales antiguas. Estos materiales son frágiles y propensos a fracturarse bajo la presión del suelo o por las raíces. Cuando se rompen, generan filtraciones que contaminan el suelo y pueden afectar los cimientos de la propiedad.',
+      'También es característica de esta zona la alta demanda de destapaciones en locales industriales y depósitos, donde los sistemas cloacales reciben cargas muy superiores a las domésticas y requieren mantenimiento más frecuente.',
+    ],
+    servicios: 'En Zona Sur los servicios más demandados son la video inspección para detectar roturas en cañerías antiguas, la destapación con hidrojet para limpiar conductos industriales, y la destapación de cloacas urgentes para uso doméstico. También realizamos diagnósticos completos para propiedades en venta o alquiler.',
+    clientes: 'Atendemos particulares, inquilinos, comercios, industrias y administraciones de edificios en toda la Zona Sur. Nuestro tiempo de respuesta en esta zona es de 60 a 90 minutos desde el contacto inicial.',
+    cierre: 'Si tenés un problema cloacal en Zona Sur, contactanos por WhatsApp. Te damos presupuesto sin cargo y llegamos el mismo día para resolver.',
+  },
 };
+
+const serviciosZona = [
+  { href: '/destapaciones-cloacas', icon: '🚽', label: 'Destapación de Cloacas', sub: 'Urgencias y columnas de edificios' },
+  { href: '/destapaciones-canerias', icon: '🔧', label: 'Destapación de Cañerías', sub: 'Cocina, baño y lavadero' },
+  { href: '/destapaciones-hidrojet', icon: '💦', label: 'Destapación con Hidrojet', sub: 'Limpieza profunda a alta presión' },
+  { href: '/video-inspeccion-canerias', icon: '📷', label: 'Video Inspección', sub: 'Diagnóstico sin romper pisos' },
+];
 
 export async function generateStaticParams() {
   const zonas = getZonas()
@@ -72,32 +114,51 @@ export default async function ZonaPage({ params }: Props) {
   const { slug } = await params
   const zonas = getZonas()
   const zona = zonas.find((z) => z.slug === slug)
-  
+
   if (!zona) return handleLegacyRedirect([slug])
-  
+
   const barriosZona = barrios.filter((b) => b.zoneSlug === slug)
   const seoContent = zonaSeoContent[slug];
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Inicio',
+        item: 'https://www.destapacionesopenagua.com.ar',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: `Destapaciones en ${zona.name}`,
+        item: `https://www.destapacionesopenagua.com.ar/zonas/${zona.slug}`,
+      },
+    ],
+  };
+
   return (
     <main className="zona-page">
-      <header 
-        style={{ 
-          position: 'relative', 
-          minHeight: '50vh', 
-          display: 'flex', 
-          alignItems: 'center', 
+      <header
+        style={{
+          position: 'relative',
+          minHeight: '50vh',
+          display: 'flex',
+          alignItems: 'center',
           paddingTop: '80px',
           color: '#fff',
           padding: '4rem 0',
           overflow: 'hidden'
         }}
       >
-        <Image 
-          src="/img/limpieza de alcantarilla.jpg" 
-          alt="Limpieza profesional de alcantarilla y desagües pluviales en zona urbana" 
-          fill 
-          priority 
-          style={{ objectFit: 'cover', zIndex: 0 }} 
+        <Image
+          src="/img/limpieza de alcantarilla.jpg"
+          alt="Limpieza profesional de alcantarilla y desagües pluviales en zona urbana"
+          fill
+          priority
+          style={{ objectFit: 'cover', zIndex: 0 }}
           quality={85}
           sizes="100vw"
         />
@@ -121,26 +182,95 @@ export default async function ZonaPage({ params }: Props) {
         </div>
       </header>
 
-      {/* CONTENIDO SEO ENRIQUECIDO DE LA ZONA */}
+      {/* CONTENIDO SEO EXPANDIDO */}
       {seoContent && (
         <section className="section" style={{ padding: '4rem 0', backgroundColor: '#ffffff' }}>
           <div className="container" style={{ maxWidth: '900px', margin: '0 auto' }}>
             <div style={{ fontSize: '1.1rem', color: '#475569', lineHeight: 1.8 }}>
-              <p style={{ marginBottom: '1.5rem' }}>{seoContent.intro}</p>
-              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#0f172a', marginBottom: '1rem' }}>Problemas frecuentes en {zona.name}</h2>
-              <p style={{ marginBottom: '1.5rem' }}>{seoContent.problemas}</p>
-              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#0f172a', marginBottom: '1rem' }}>¿A quiénes atendemos?</h2>
+
+              {/* Intro */}
+              {seoContent.intro.map((p, i) => (
+                <p key={i} style={{ marginBottom: '1.5rem' }}>{p}</p>
+              ))}
+
+              {/* Problemas */}
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#0f172a', marginBottom: '1rem', marginTop: '2rem' }}>
+                Problemas frecuentes en {zona.name}
+              </h2>
+              {seoContent.problemas.map((p, i) => (
+                <p key={i} style={{ marginBottom: '1.5rem' }}>{p}</p>
+              ))}
+
+              {/* Servicios */}
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#0f172a', marginBottom: '1rem', marginTop: '2rem' }}>
+                Servicios más solicitados en {zona.name}
+              </h2>
+              <p style={{ marginBottom: '1.5rem' }}>{seoContent.servicios}</p>
+
+              {/* Clientes */}
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#0f172a', marginBottom: '1rem', marginTop: '2rem' }}>
+                ¿A quiénes atendemos en {zona.name}?
+              </h2>
               <p style={{ marginBottom: '1.5rem' }}>{seoContent.clientes}</p>
-              <p style={{ marginBottom: 0, fontWeight: 600, color: '#0f172a' }}>{seoContent.cierre}</p>
+
+              {/* Cierre */}
+              <p style={{ marginBottom: 0, fontWeight: 600, color: '#0f172a', borderLeft: '4px solid #16A34A', paddingLeft: '1rem', backgroundColor: '#f0fdf4', padding: '1rem 1rem 1rem 1.25rem', borderRadius: '0 8px 8px 0' }}>
+                {seoContent.cierre}
+              </p>
             </div>
           </div>
         </section>
       )}
 
-      <section className="section" style={{ minHeight: '60vh', backgroundColor: '#f8fafc' }}>
+      {/* INTERLINKING SERVICIOS */}
+      <section className="section" style={{ padding: '3rem 0', backgroundColor: '#f8fafc', borderTop: '1px solid #e2e8f0' }}>
+        <div className="container" style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <h2 className="section-title" style={{ marginBottom: '2rem' }}>
+            Servicios disponibles en {zona.name}
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '1.25rem' }}>
+            {serviciosZona.map((s) => (
+              <Link
+                key={s.label}
+                href={s.href}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '1rem',
+                  padding: '1.25rem',
+                  backgroundColor: '#ffffff',
+                  border: '1px solid #e2e8f0',
+                  borderRadius: '12px',
+                  textDecoration: 'none',
+                  color: '#0f172a',
+                  boxShadow: '0 1px 3px 0 rgba(0,0,0,0.06)',
+                  transition: 'border-color 0.2s, box-shadow 0.2s, transform 0.2s',
+                }}
+                className="zona-servicio-card"
+              >
+                <span style={{ fontSize: '1.75rem', lineHeight: 1 }}>{s.icon}</span>
+                <div>
+                  <div style={{ fontWeight: 700, fontSize: '1rem', marginBottom: '2px' }}>{s.label}</div>
+                  <div style={{ fontSize: '0.85rem', color: '#64748b' }}>{s.sub}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <style dangerouslySetInnerHTML={{ __html: `
+            .zona-servicio-card:hover {
+              border-color: #16A34A;
+              box-shadow: 0 4px 12px rgba(22, 163, 74, 0.15);
+              transform: translateY(-2px);
+            }
+          ` }} />
+        </div>
+      </section>
+
+      {/* GRID DE BARRIOS */}
+      <section className="section" style={{ minHeight: '60vh', backgroundColor: '#ffffff' }}>
         <div className="container">
           <h2 className="section-title">Barrios y Localidades en {zona.name}</h2>
-          
+
           <style dangerouslySetInnerHTML={{__html: `
             .barrios-grid {
               display: grid;
@@ -208,9 +338,15 @@ export default async function ZonaPage({ params }: Props) {
               </Link>
             ))}
           </div>
-          
         </div>
       </section>
+
+      {/* BREADCRUMB SCHEMA */}
+      <Script
+        id={`breadcrumb-zona-${zona.slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
     </main>
   )
 }
