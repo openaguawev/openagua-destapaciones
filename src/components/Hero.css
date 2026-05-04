@@ -105,11 +105,12 @@
   }
   
   .hero-btn {
-    width: 100%;
-    min-width: unset;
-    padding: 14px 22px;
-    font-size: 1rem;
-    border-radius: 8px;
+    width: 100% !important;
+    min-width: unset !important;
+    padding: 12px 18px !important;
+    font-size: 15px !important;
+    border-radius: 10px !important;
+    height: 54px !important;
   }
 }
 
