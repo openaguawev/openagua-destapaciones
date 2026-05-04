@@ -91,6 +91,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const seoTitle = zona.seoTitle || `Destapaciones en ${zona.name} | Openagua`;
   const seoDescription = zona.seoDescription || `Destapaciones en ${zona.name} con atención profesional. Llamanos al 11 5179-7649.`;
 
+  const imagenesZona: Record<string, string> = {
+    'caba': '/img/destapacion de cloaca.jpg',
+    'zona-norte': '/img/caño columna.jpg',
+    'zona-oeste': '/img/maquina destapa cloacas.jpg',
+    'zona-sur': '/img/rejilla patio.jpg',
+  };
+
+  const imagenZona = imagenesZona[slug] || '/img/home.jpg';
+
   return {
     title: seoTitle,
     description: seoDescription,
@@ -104,6 +113,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       siteName: 'Openagua',
       locale: 'es_AR',
       type: 'website',
+      images: [
+        {
+          url: imagenZona,
+          width: 1200,
+          height: 630,
+          alt: `Destapaciones en ${zona.name} - Openagua`,
+        }
+      ],
     },
   }
 }

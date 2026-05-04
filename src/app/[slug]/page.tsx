@@ -46,6 +46,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: 'Openagua',
       locale: 'es_AR',
       type: 'website',
+      images: [
+        {
+          url: servicio.image,
+          width: 1200,
+          height: 630,
+          alt: servicio.imageAlt || servicio.title,
+        }
+      ],
     },
   };
 }
