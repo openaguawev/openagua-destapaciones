@@ -39,24 +39,79 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Destapación de cocina y solución a olores de cloaca en CABA - Openagua',
       excerpt: 'Descubrí cómo eliminar definitivamente el mal olor de tus cañerías en CABA y GBA.',
       content: `
-        <p>Sentir un fuerte olor a alcantarilla mientras cocinás es una pesadilla recurrente en todo <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong>. Las <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cañerías</a> suelen ser el final evitable de esta historia.</p>
-        <p>Este hedor no desaparece con lavandina ni perfumadores; el problema es estructural y requiere atención técnica profunda.</p>
+
+        <p>Sentir un fuerte olor a alcantarilla mientras cocinás o lavas los platos es una de las situaciones más desagradables que puede experimentar un hogar. Esta pesadilla, recurrente en miles de casas y departamentos a lo largo de todo <strong>CABA</strong> (especialmente en barrios de construcciones antiguas como Palermo, Belgrano o Caballito) y el <strong>Gran Buenos Aires</strong>, no es un simple problema de limpieza superficial que se solucione con desodorantes de ambiente. Detrás de ese tufo insoportable que inunda tu cocina se esconde una falla técnica o un bloqueo severo en tu red de desagüe primario, y realizar <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cañerías</a> profesionales suele ser el paso definitivo para recuperar la salubridad y la normalidad en tu vivienda.</p>
+        
+        <p>El impacto de este problema va mucho más allá de la incomodidad olfativa. Los gases cloacales están compuestos por una mezcla tóxica de metano, sulfuro de hidrógeno y amoníaco. Respirar estos vapores de forma continua en un ambiente cerrado, donde además manipulamos alimentos diarios, no solo representa un riesgo para la salud respiratoria de tu familia, sino que también indica que el aislamiento sanitario de tu propiedad se ha vulnerado. Si el gas puede entrar, también pueden hacerlo las bacterias y los insectos vectores de enfermedades, como las temidas cucarachas de alcantarilla.</p>
+        
+        <p>Lamentablemente, la respuesta inmediata de muchos vecinos suele ser volcar litros de lavandina o productos químicos abrasivos por la bacha, esperando que el poder cáustico elimine el origen del problema. Sin embargo, este hedor pestilente rara vez desaparece con químicos comerciales, ya que el problema real es estructural y mecánico. Requiere una evaluación y atención técnica profunda que permita identificar en qué tramo de la red de conductos plásticos (que generalmente operan con caños de PVC de 40mm a 50mm de diámetro) se encuentra la materia orgánica en descomposición o la falla del cierre hidráulico.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Causas Críticas y Estructurales del Mal Olor</h2>
+        <p>Para entender por qué tu cocina huele literalmente a cloaca, es fundamental comprender la anatomía del sistema de desagüe debajo de tu mesada. El agua sucia que expulsas no viaja por arte de magia; recorre un sistema de caños, codos y sifones antes de llegar a la columna principal o a la cámara de inspección de tu vereda. Cuando este ecosistema hidráulico se altera, los olores emergen rápidamente. Las fallas más comunes suelen concentrarse en el área del bajo mesada o en el primer tramo del caño empotrado en la pared.</p>
+
         ${getCtaHtml()}
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Causas Críticas del Mal Olor en la Cocina</h2>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">El Peligro Oculto de la Grasa Acumulada</h2>
+        <p>Si te preguntas por qué se genera este olor a pantano, el responsable principal en el 90% de los casos es la grasa animal y vegetal. Cada vez que lavas una sartén con aceite, este fluido ingresa a la tubería a una temperatura cálida. Al avanzar por el caño y chocar con las paredes frías de PVC, el aceite experimenta un choque térmico y se solidifica casi de inmediato. Esto crea una película pegajosa que, con el paso de los meses, se engrosa y actúa como una trampa mortal para cualquier otro residuo.</p>
+        
+        <p>Si leíste nuestra guía sobre <a href="/blog/que-no-tirar-en-la-pileta-de-cocina" style="color:#16A34A;font-weight:bold;text-decoration:underline;">qué no tirar en la pileta de cocina</a>, sabrás que la yerba mate, los restos de arroz y la borra del café se adhieren tenazmente a esta capa de grasa. Lo que ocurre después es un proceso de putrefacción bacteriana anaeróbica. Esta masa de desechos orgánicos se pudre literalmente dentro del caño, a centímetros de donde preparas la comida, emitiendo gases sulfurosos que suben por el desagüe cada vez que hay variaciones de presión atmosférica o cuando el clima se vuelve pesado en Buenos Aires.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Señales Críticas de Cañerías Muy Sucias</h2>
+        <p>Existen indicadores clave que te avisan que tu red interna está gravemente comprometida antes de que el caño colapse por completo. Prestá atención a estas 5 señales críticas:</p>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Grasa Acumulada:</strong> Restos orgánicos que se pudren lentamente en las paredes del conducto.</li>
-          <li><strong>Falla del Sifón:</strong> La falta de agua en el tubo en "U" permite que los gases cloacales ingresen al ambiente.</li>
-          <li><strong>Fisuras Invisibles:</strong> Pequeñas rajaduras donde se asientan bacterias emitiendo gases pestilentes.</li>
+          <li><strong>Drenaje excesivamente lento:</strong> El agua ya no forma el clásico remolino al irse; en cambio, se estanca en la bacha y tarda minutos en bajar, indicando que el diámetro interno del caño de 50mm se ha reducido por la grasa a menos de la mitad.</li>
+          <li><strong>Gorgoteos profundos (efecto "gloop"):</strong> Escuchás burbujas o ruidos cavernosos provenientes de la rejilla después de que el agua se ha ido. Esto significa que el aire atrapado en la cañería está luchando por salir a través del agua debido a una obstrucción que no lo deja fluir hacia la ventilación.</li>
+          <li><strong>Insectos en el bajo mesada:</strong> La aparición repentina de pequeñas moscas de drenaje (psicódidos) o cucarachas que se alimentan del biofilm bacteriano adherido a las tuberías sucias de tu cocina.</li>
+          <li><strong>Olor que empeora con el agua caliente:</strong> Si al volcar agua de hervor el olor a podrido se intensifica de forma insoportable, estás cocinando literalmente la masa de grasa y bacterias alojada en el sifón profundo.</li>
+          <li><strong>Humedad fantasma en la pared:</strong> Si notas que el revoque bajo la mesada se ampolla o presenta manchas oscuras de humedad, es posible que el tapón haya generado tanta presión que provocó la fisura de una junta de PVC.</li>
         </ul>
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cómo eliminar el olor a cloaca definitivamente?</h2>
-        <p>Volcar químicos caseros termina derritiendo tubos de PVC. La verdadera solución radica en una limpieza técnica con equipos especializados que retiren físicamente la masa putrefacta.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">El Rol Vital del Sifón y la Trampa de Agua</h2>
+        <p>El segundo culpable más habitual de la invasión de olores es la falla del cierre hidráulico, comúnmente conocido como sifón. Este elemento en forma de "U" o de botella que se encuentra conectado justo debajo de la bacha tiene un único propósito: retener una pequeña porción de agua en su curva inferior en todo momento. Esta porción de agua limpia actúa como un "tapón líquido" hermético que impide que los gases de la red troncal cloacal suban y entren a tu ambiente.</p>
+        
+        <p>Sin embargo, en temporadas de mucho calor, si viajas y no usas la bacha por varios días, el agua de esa trampa puede evaporarse. Otra falla muy común en los departamentos modernos de zonas como Ramos Mejía o Vicente López, ocurre cuando hay problemas de ventilación en la columna general del edificio: al tirar la cadena de un inodoro en pisos superiores, se genera un efecto de succión (efecto sifonaje) que literalmente aspira el agua de tu sifón de la cocina, dejándolo vacío y permitiendo el paso libre de los gases pestilentes.</p>
+
+        <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 2rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Paso</th>
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">Acción a Realizar</th>
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Qué Observar y Evaluar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">1. Verificación visual</td>
+                <td style="padding: 1rem; color: #475569;">Vacía completamente el mueble bajo mesada e ilumina los caños.</td>
+                <td style="padding: 1rem; color: #475569;">Busca gotas, sarro blanco o manchas de agua negra en las roscas del sifón plástico.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">2. Prueba de la trampa</td>
+                <td style="padding: 1rem; color: #475569;">Deja correr agua fría por 10 segundos y luego cerra la canilla de golpe.</td>
+                <td style="padding: 1rem; color: #475569;">No debería gotear ni hacer ruidos de succión una vez cerrada la canilla.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">3. Inspección del fuelle</td>
+                <td style="padding: 1rem; color: #475569;">Revisá si tenés un caño corrugado estirado en lugar de un tubo liso.</td>
+                <td style="padding: 1rem; color: #475569;">Los corrugados atrapan toneladas de grasa; deben reemplazarse por PVC rígido para evitar hedores.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cómo Eliminar el Olor a Cloaca Definitivamente</h2>
+        <p>Cuando el olor se vuelve crónico y el agua baja con dificultad, la solución de ferretería ya no aplica. Volcar químicos cáusticos granulados suele ser el último y más costoso error. Al entrar en contacto con el agua estancada, estos químicos generan una reacción térmica exotérmica que puede superar los 80°C. Considerando que los caños de PVC domiciliarios de pared fina no están diseñados para resistir estas temperaturas, la junta pegada con adhesivo terminará por derretirse o despegarse, causándote una inundación bajo el piso.</p>
+        
+        <p>La verdadera y única solución garantizada radica en una limpieza técnica mecanizada. Mediante la intervención de profesionales, ya sea mediante sondas rotativas de acero que limpian la cara interna del tubo o, en casos extremos, con equipos que lavan a presión perimetral, es posible retirar físicamente el tapón de masa putrefacta. Si precisás un abordaje mayor por olor en todo el patio, solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> general a nuestra cuadrilla certificará el estado íntegro de la instalación sin utilizar una sola gota de químico destructivo.</p>
+
         ${getFaqHtml([
-          {q: "¿El vinagre y bicarbonato quitan el olor?", a: "Solo actúan a un nivel superficial por algunas horas. Si tenés sarro y grasa calcificada, no logran disolverla."},
-          {q: "¿Pueden cambiar el sifón si está roto?", a: "Por supuesto, evaluamos la integridad de los accesorios bajo mesada y procedemos a su limpieza hermética."},
-          {q: "¿En cuánto tiempo se va el olor?", a: "La ventilación del gas acumulado en la vivienda es inmediata una vez finalizado el trabajo de limpieza."}
+          {q: "¿El vinagre y bicarbonato sirven para quitar el olor de la cocina?", a: "Solo actúan a un nivel muy superficial y temporal. Esta mezcla limpia los primeros centímetros del desagüe, pero si tenés grasa calcificada a dos metros de profundidad en la pared, no lograrán disolverla ni penetrar el bloqueo."},
+          {q: "¿Por qué el olor empeora en los días de tormenta o humedad?", a: "Los días de baja presión atmosférica, comunes antes de llover en el GBA, impiden que los gases suban por la ventilación del techo. Al no poder escapar hacia arriba, los gases pesados buscan la salida interior: la bacha de tu cocina."},
+          {q: "¿Pueden reemplazar ustedes el sifón si descubren que está roto?", a: "Por supuesto. Nuestros técnicos evalúan inmediatamente la integridad de los accesorios bajo mesada. Si el material está fisurado o viejo, instalamos piezas de PVC de alta durabilidad para garantizar un sellado hermético."},
+          {q: "¿En cuánto tiempo desaparece el mal olor después del trabajo?", a: "La ventilación del gas acumulado en la vivienda es inmediata. Una vez que nuestras sondas retiran el foco bacteriano y restablecemos la trampa de agua, basta con ventilar durante 15 minutos para recuperar la frescura total."}
         ])}
-      
-        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
+
       `
     },
     {
@@ -66,24 +121,79 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Grasa petrificada en cañerías de edificios de zona norte - Openagua',
       excerpt: 'El método definitivo para limpiar bajadas en consorcios sin usar ácido.',
       content: `
-        <p>Cientos de edificios en <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong> cometen el mismo error: pedir a los inquilinos que vuelquen agua hirviendo para evitar tapones. Esto solo empuja temporalmente las masas de sebo.</p>
-        <p>Con el paso de los pisos, la grasa se enfría, se petrifica como cemento y reduce drásticamente el diámetro del caño principal.</p>
+
+        <p>Uno de los mitos urbanos más peligrosos y arraigados en el mantenimiento de consorcios de <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong> es la costumbre de volcar ollas de agua hirviendo por las cañerías para destapar bloqueos de grasa. Cientos de edificios, desde enormes torres en Belgrano hasta antiguos complejos en Vicente López y Recoleta, cometen este mismo error sistemático impulsados por consejos de pasillo o remedios caseros antiguos. Se le pide a todos los inquilinos de la columna que tiren agua hirviendo al mismo tiempo, bajo la falsa premisa de que el calor extremo logrará derretir el tapón y devolverle la salud a la red troncal.</p>
+        
+        <p>La realidad empírica y la física de fluidos demuestran exactamente lo contrario. Volcar agua a 100°C en la bacha del séptimo piso solo produce un alivio ilusorio y momentáneo. El agua caliente logra ablandar la grasa fresca que se encuentra en los primeros metros del conducto del departamento, la empuja hacia la columna central (la bajada o montante pluvial de cloaca) y allí es donde comienza el verdadero desastre. Con el paso de los pisos y el contacto con las frías paredes del caño de 110mm, el agua pierde su temperatura drásticamente. Al llegar a los pisos inferiores o a la cámara de inspección en la planta baja, la grasa se enfría de golpe.</p>
+        
+        <p>Este proceso continuo de derretimiento y enfriamiento convierte a las columnas principales del edificio en verdaderos infartos de colesterol arquitectónico. La grasa se petrifica, alcanzando una dureza similar a la del cemento rápido, reduciendo milímetro a milímetro el diámetro operativo del caño principal. Lo que debería prevenir una obstrucción termina siendo la causa número uno de desbordes masivos de líquidos cloacales que inundan los departamentos de Planta Baja, requiriendo <a href="/mantenimientos-preventivos" style="color:#16A34A;font-weight:bold;text-decoration:underline;">mantenimientos preventivos</a> de extrema urgencia y costos formidables para las expensas del consorcio.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">La Saponificación: Cómo la Grasa se Convierte en Piedra</h2>
+        <p>Para entender la magnitud del daño que el agua hirviendo causa en un edificio, hay que analizar el fenómeno químico llamado saponificación. En una columna de edificio confluyen los desagües de diez o más departamentos a un mismo tiempo. Esto significa que por ese mismo tubo vertical de PVC o hierro fundido desciende aceite de cocina caliente, restos de alimentos, pero también jabón frío de los lavarropas y detergente de manos.</p>
+
         ${getCtaHtml()}
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Por qué se tapan repetitivamente las columnas?</h2>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Por Qué el Agua Hirviendo Empeora la Situación</h2>
+        <p>Cuando el aceite caliente derretido por el agua hirviendo de un vecino se encuentra metros más abajo con los minerales del agua fría y la espuma de jabón de otro vecino, ocurre una reacción química instantánea y letal para la red. Esta mezcla forma una espuma sólida de color blanco amarillento, completamente impenetrable e insoluble en agua. Ya no es una sustancia resbaladiza; es un tapón petrificado que se adhiere fuertemente al perímetro del caño, estrangulando la red completa con el paso de los meses.</p>
+        
+        <p>A este gravísimo tapón se le suma el riesgo estructural de la presión térmica por fatiga de materiales. Si el edificio cuenta con cañerías tricapa de polipropileno modernas, o peor aún, conductos de plomo viejos o fibrocemento, el choque de temperatura entre el frío ambiental subterráneo y los 100°C del agua hirviendo genera una dilatación violenta en milisegundos. Si tu consorcio tiene la mala costumbre de hacer esto regularmente, están jugando a la ruleta rusa con las uniones y las juntas tóricas de goma de la montante, que terminarán resecándose, contrayéndose y provocando filtraciones de humedad invisibles dentro de la mampostería de los baños de cada propietario.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">5 Errores Fatales al Taparse la Montante</h2>
+        <p>La desesperación de ver el agua subir por las bachas o el inodoro lleva a administradores y propietarios a cometer actos imprudentes que solo multiplican el costo de la reparación. Estos son los 5 errores más comunes en edificios:</p>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Saponificación:</strong> Las grasas calientes se mezclan con jabón frío creando una espuma sólida impenetrable.</li>
-          <li><strong>Estrangulación de la red:</strong> El agua hirviendo o química perfora un hueco de apenas centímetros, dejando la pared del tubo sucia.</li>
-          <li><strong>Riesgo de presión térmica:</strong> Los cambios extremos de temperatura pueden rajar los ductos tricapa.</li>
+          <li><strong>El "Bombardeo" masivo de Químicos:</strong> Los vecinos de los pisos altos tiran ácido muriático o soda cáustica creyendo que limpiarán la columna. Estos químicos viajan diluidos y se asientan sobre el tapón duro del primer piso, corroyendo el plástico y generando un riesgo tóxico enorme sin destapar la base central.</li>
+          <li><strong>Introducir varillas de hierro pesadas:</strong> Desde la terraza, algunos encargados intentan "golpear" el tapón dejando caer hierros atados a sogas. Esto perfora invariablemente el codo de base de la columna, obligando a romper los pisos del hall de entrada para reemplazar el PVC roto.</li>
+          <li><strong>Ignorar los primeros avisos del sistema:</strong> Como mencionamos en nuestro post sobre <a href="/blog/5-senales-columna-edificio-tapada" style="color:#16A34A;font-weight:bold;text-decoration:underline;">las 5 señales de que la columna está tapada</a>, los ruidos en los sifones de los pisos bajos son el aviso temprano. Ignorarlos garantiza un desborde inminente en madrugadas o domingos.</li>
+          <li><strong>Contratar plomeros sin maquinaria industrial:</strong> Un plomero convencional con un resorte finito no puede limpiar una bajada de 30 metros de altura cubierta de sebo petrificado. Solo logrará hacer un pequeño agujero por donde pasará el agua que volverá a cerrarse en días.</li>
+          <li><strong>Falta de mantenimiento en locales comerciales:</strong> En CABA, muchos edificios tienen restaurantes o fábricas de pastas en planta baja. Si el local comercial no limpia mensualmente su trampa de grasa interceptora, todo el edificio sufre el estrangulamiento de la cámara cloacal compartida.</li>
         </ul>
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cómo limpiar la grasa dura de los edificios?</h2>
-        <p>Solo las <a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones con hidrojet</a> garantizan recuperar el diámetro original. Sus boquillas eyectan agua hiperpresurizada que rasquetea la pared plástica barriendo todo el sarro solidificado hacia la calle.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Consecuencias Desastrosas para la Planta Baja</h2>
+        <p>En la dinámica de fluidos gravitacional de un edificio alto, el punto más bajo sufre las peores consecuencias de la irresponsabilidad comunitaria. Cuando la columna general se bloquea a nivel de la losa de planta baja o en su trayecto subterráneo hacia la cámara de inspección de la vereda, todo el gigantesco volumen de agua de los pisos superiores no tiene adonde ir físicamente. Si el vecino del piso 10 vacía la bañera llena y el del piso 8 utiliza su lavarropas en modo enjuague, esos cientos de litros de agua retrocederán violentamente por la columna, buscando la salida de menor resistencia presurizada.</p>
+        
+        <p>Lamentablemente, esa vía de escape suele ser la rejilla del baño, el inodoro o la bacha del departamento de la Planta Baja o el Primer Piso. El resultado es un desastre sanitario absoluto: una inundación masiva de aguas servidas dentro de la propiedad habitada. Esto no solo destruye alfombras, muebles de madera y electrodomésticos que tocan el suelo, sino que establece un foco infeccioso bacteriano altísimo que requiere empresas de limpieza extrema posteriores al trabajo plomero.</p>
+
+        <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 2rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Característica y Resultado</th>
+                <th style="padding: 1rem; font-weight: 800; color: #dc2626;">El Mito: Agua Hirviendo</th>
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">La Solución: Tecnología Hidrojet</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Efectividad sobre la grasa</td>
+                <td style="padding: 1rem; color: #475569;">Ablanda superficialmente, la mueve unos metros abajo y la solidifica peor como una piedra base.</td>
+                <td style="padding: 1rem; color: #475569;">Pulveriza, tritura y arrastra por completo todo residuo saponificado adherido a la pared perimetral.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Cobertura de limpieza y diámetro</td>
+                <td style="padding: 1rem; color: #475569;">Apenas abre un hilo capilar mínimo dentro de la cañería estrangulada, un falso alivio momentáneo.</td>
+                <td style="padding: 1rem; color: #475569;">Los potentes chorros en 360 grados recuperan el diámetro original del tubo dejándolo totalmente pulido.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Riesgo material para el caño</td>
+                <td style="padding: 1rem; color: #475569;">Altísimo riesgo de fatiga térmica acumulada, rajaduras de PVC duro y derretimiento del pegamento en codos.</td>
+                <td style="padding: 1rem; color: #475569;">Riesgo nulo de roturas térmicas. Utiliza el corte natural del agua fresca a presión medida en 200 bares de fuerza inyectada.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">La Tecnología Hidrojet: La Única Solución Real</h2>
+        <p>Frente a una columna vertical de un complejo habitacional tapiada por jabón y grasa saponificada, las viejas herramientas manuales y los alambres quedan completamente obsoletos e inútiles. La única tecnología aprobada de forma unánime por ingenieros sanitarios a nivel mundial para recuperar la operatividad íntegra de los ductos principales es la avanzada técnica de <a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación con hidrojet</a> pesado. Esta maquinaria móvil no es una hidrolavadora casera, sino un sistema pesado de alta ingeniería montado en nuestros vehículos especiales.</p>
+        
+        <p>Este robusto sistema consiste en una gran bomba hidráulica de altísimo rendimiento impulsada a motor que inyecta agua purgada a presiones devastadoras que superan los 200 bar. En la punta de las mangueras de Kevlar se instalan boquillas propulsoras de acero inoxidable quirúrgico con salidas de agua retrocesivas dirigidas en ángulos perfectos de 45 grados. Esta configuración balística no solo tracciona la manguera autónomamente por la montante en contra de la gravedad, sino que sus chorros actúan como afiladas cuchillas hídricas. El potente hidrojet rasquetea de forma impecable y milimétrica toda la pared perimetral del conducto, barriendo literalmente el cemento de grasa sólida directamente hacia el afluente urbano final, evitando obras de albañilería carísimas al consorcio.</p>
+
         ${getFaqHtml([
-          {q: "¿El hidrojet sirve para caños de gastronomía?", a: "Es el estándar industrial obligatorio. Limpia de forma destructiva toda acumulación biológica o de frituras."},
-          {q: "¿La grasa tapona todo el caño?", a: "Así es, su acumulación es perimetral. Puede estrangular una cloaca de 110mm reduciéndola al tamaño de un dedo."},
-          {q: "¿Cubren servicios industriales en GBA?", a: "De hecho, contamos con furgones equipados y tanques para dar respuesta en fábricas industriales intensas."}
+          {q: "¿El hidrojet sirve para caños de gastronomía que tiran frituras constantemente en Planta Baja?", a: "Es absolutamente el estándar industrial obligatorio. Limpia de forma destructiva y ecológica toda acumulación biológica, evitando la clausura y garantizando que el local apruebe inspecciones sanitarias de bromatología vigentes."},
+          {q: "¿La grasa en serio puede taponar por completo un caño central tan grande?", a: "Completamente. La acumulación es perimetral y paulatina (como el colesterol en venas). Puede estrangular una cloaca de edificio de 110mm de espesor dejándola del tamaño del dedo meñique en cuestión de un par de años."},
+          {q: "¿Openagua cubre mantenimientos urgentes con equipos hidrojet grandes en el GBA?", a: "De hecho, contamos con inmensas flotas de furgones equipados con tanques de agua propios y bombas de gran caudal motorizadas para dar respuesta inmediata resolutiva en torres de barrios residenciales o fábricas inmensas del Gran Buenos Aires."},
+          {q: "¿Se puede realizar este trabajo pesado desde la terraza empujando hacia abajo?", a: "Dependiendo de los planos e infraestructura de cada torre, nuestros técnicos evalúan insitu. Usualmente operamos lanzando las sondas desde las bocas superiores del techo o impulsando desde la cámara central de calle hacia arriba para no ingresar en deptos privados."}
         ])}
-      
-        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
+
       `
     },
     {
@@ -93,26 +203,74 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Mantenimiento preventivo de columnas en consorcios de Gran Buenos Aires - Openagua',
       excerpt: 'Guía para administradores: cómo anticipar la inundación de planta baja.',
       content: `
-        <p>Para todo administrador en <strong>CABA</strong> o <strong>Gran Buenos Aires</strong>, el llamado nocturno de un inquilino inundado con aguas negras es terrorífico. Evitar el desborde preventivamente ahorra costos formidables a la administración y al consorcio entero.</p>
-        <p>Estas alertas te indican que necesitás <a href="/mantenimientos-preventivos" style="color:#16A34A;font-weight:bold;text-decoration:underline;">mantenimientos preventivos</a> inminentes en la montante.</p>
-        ${getCtaHtml()}
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Señales Claves de Alerta en Columnas Principales</h2>
+
+        <p>Para cualquier administrador de consorcios o encargado de edificio en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong>, recibir un llamado a las tres de la madrugada avisando que un departamento de la planta baja se está inundando con aguas negras es el peor escenario posible. Esta crisis, que suele desencadenar fuertes discusiones vecinales y gastos exorbitantes no planificados, rara vez ocurre de un minuto para el otro. Evitar este desborde catastrófico y actuar de manera preventiva ahorra costos formidables tanto a la administración general como al bolsillo particular de cada copropietario.</p>
+        
+        <p>La tubería central que recibe y evacúa todos los desechos de los departamentos, conocida técnicamente como montante cloacal o columna principal, es la vena yugular de la infraestructura sanitaria de cualquier edificio, ya sea una gigantesca torre de 20 pisos en Almagro o un pintoresco complejo de dúplex en el centro de San Isidro. Fabricada usualmente en caños de hierro fundido antiguo, asbesto cemento o PVC tricapa moderno de 110mm a 160mm, esta tubería sufre un estrés mecánico y químico diario incalculable. Por ella descienden a toda velocidad litros de grasa caliente, restos de jabón en polvo, papel higiénico, pelo y químicos abrasivos que, poco a poco, van conformando un recubrimiento interno letal e indestructible.</p>
+        
+        <p>Estas alertas silenciosas pero constantes te indican de manera irrefutable que el sistema central está llegando a su punto de quiebre absoluto y que necesitás coordinar <a href="/mantenimientos-preventivos" style="color:#16A34A;font-weight:bold;text-decoration:underline;">mantenimientos preventivos</a> inminentes antes de que el daño estructural sea irreversible. Si sabés leer detenidamente las señales que emite la red sanitaria profunda del edificio, podrás adelantarte con inteligencia a la emergencia y solucionarla en horario diurno, con presupuestos controlados y sin afectar la calidad de vida de los indefensos residentes de los pisos inferiores.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Las 5 Señales de Alerta Inminente en tu Edificio</h2>
+        <p>El diagnóstico técnico temprano es de importancia vital. Te detallamos sin rodeos las 5 alarmas críticas que indican un colapso inminente en la red del consorcio:</p>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Ruidos cavernosos repentinos:</strong> Las cámaras y las bateas "respiran" o hacen gorgoteos ("Gloops") violentos en varios pisos.</li>
-          <li><strong>Escurrimiento colectivo muy lento:</strong> Los primeros tres pisos demoran eternidades en vaciar el lavarropas.</li>
-          <li><strong>Agua retrocediendo en Planta Baja:</strong> El aviso final. El tapón en planta baja empuja hacia arriba el agua que tiran los del piso 10.</li>
-          <li><strong>Malos olores crónicos:</strong> Quejas unificadas de todos los departamentos orientados al pozo de aire y luz central.</li>
-          <li><strong>Cámaras de inspección al límite:</strong> La tapa frente a la propiedad se encharca y expulsa humedad viscosa.</li>
+          <li><strong>Gorgoteos y ruidos cavernosos repentinos:</strong> Las cámaras centrales y las bateas "respiran" o hacen ruidos fuertes tipo "gloops" en varios pisos a la vez. Esto ocurre porque el aire que desplaza el agua al caer no puede ventilar por el techo debido a una obstrucción y escapa violentamente por los sifones más débiles.</li>
+          <li><strong>Escurrimiento colectivo excesivamente lento:</strong> Si varios departamentos (por ejemplo, del 1ro, 2do y 3er piso) demoran una eternidad en vaciar sus piletas de cocina de manera simultánea durante la cena, el problema no es individual; la columna entera está perdiendo drásticamente su diámetro operativo real.</li>
+          <li><strong>Agua sucia retrocediendo en Planta Baja:</strong> Es el aviso final, irrefutable y más grave de todos. Si el inodoro de la planta baja sube su nivel de agua turbia sin que el inquilino lo haya usado, el tapón profundo en la base subterránea de la columna está empujando hacia arriba todo el inmenso volumen líquido de los vecinos del piso 10.</li>
+          <li><strong>Olores a gas metano crónicos:</strong> Quejas unificadas en los grupos de chat de todos los inquilinos que tienen ventanas orientadas al pozo de aire y luz central. El hedor a pantano constante significa que hay cientos de kilos de materia orgánica atascadas y pudriéndose a paso lento dentro del tubo vertical ciego.</li>
+          <li><strong>Cámaras de inspección saturadas y rebalsadas:</strong> Si al levantar la tapa de hierro de la vereda en Morón o en el patio central se observa que el líquido grisáceo está totalmente estancado o expulsa humedad viscosa sin llegar a drenar velozmente hacia el colector de la calle, la salida final del edificio ha claudicado ante los sedimentos duros petrificados.</li>
         </ul>
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cómo prevenir tapones en las columnas del consorcio?</h2>
-        <p>Una inspección inmediata e hidrolavado de las tuberías centrales liberará la congestión, eliminando meses de papeles húmedos, tierra y sedimento solidificado antes de que colapse.</p>
+
+        ${getCtaHtml()}
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Quién es Responsable: El Consorcio o el Propietario</h2>
+        <p>Uno de los mayores y más ásperos focos de conflicto en los consorcios de CABA ocurre cuando surge la duda económica de quién debe desembolsar el dinero para pagar por el desastre sanitario. Como analizamos profunda y detalladamente en nuestro artículo especial sobre <a href="/blog/problema-departamento-o-columna" style="color:#16A34A;font-weight:bold;text-decoration:underline;">cómo saber si el problema es de tu departamento o de la columna</a>, la jurisprudencia habitacional y los reglamentos de copropiedad estándar son sumamente claros. La cañería horizontal pequeña (de 40mm a 60mm) que corre dentro de la losa de tu vivienda privada es de tu absoluta responsabilidad civil y económica. Sin embargo, en el instante físico exacto en que tu ramal particular se conecta mediante una ramificación o un codo "Y" a la inmensa columna vertical principal del edificio, ese grueso ducto pasa a considerarse legalmente un "bien común" inalienable del edificio.</p>
+        
+        <p>Por lo tanto, si la costosa obstrucción se halla confirmada en el trayecto vertical compartido de la bajada cloacal pluvial, es el consorcio entero el que debe hacerse cargo sin demoras del alto costo de la desobstrucción, la urgente reparación civil de daños y roturas por la sucia inundación sufrida en los pisos bajos, y de las posteriores pero obligatorias tareas de desinfección bacteriológica integral, canalizando lógicamente todo el gasto extraordinario a través del fondo de reserva operativo o levantando cuotas de expensas extraordinarias aprobadas.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cómo se Realiza el Mantenimiento de la Columna Central</h2>
+        <p>Esperar sentados con los brazos cruzados a que la columna matriz se tape por completo para recién actuar es el pecado más costoso y el error más grave de cualquier administración moderna. Una inspección técnica inmediata respaldada en diagnóstico certero y el potente hidrolavado mecanizado de las tuberías centrales mediante camiones cisterna liberará toda la densa congestión que se encuentra adherida a los poros del material. Se trata de un procedimiento operativo estandarizado y seguro donde inyectamos chorros a altísima presión medida que eliminan eficientemente años de grasa calcificada dura, restos aglutinados de detergente lavavajillas, toneladas de papel higiénico apelmazado como cartón y grueso sedimento solidificado antes de que colapse la red, recuperando íntegramente la fluidez natural y la tan necesaria respiración atmosférica del complejo sistema.</p>
+        
+        <p>Este inteligente tipo de limpieza integral con frecuencia anual o semestral se convierte en el mejor seguro de vida operativo para la propiedad horizontal. Permite evitar inteligentemente la terrible rotura por fatiga de materiales de presión y asegura de forma fehaciente que las ruidosas asambleas anuales de copropietarios no tengan que lidiar jamás con presupuestos millonarios y dolorosos de albañilería pesada destinados simplemente a picar lozas, desenterrar y recambiar inmensos tramos de tuberías estalladas bajo los cimientos principales del edificio.</p>
+
+        <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 2rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Etapa del Proceso Preventivo</th>
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">Acción Técnica Especializada</th>
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Beneficio Real para el Consorcio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">1. Diagnóstico Inicial Preciso</td>
+                <td style="padding: 1rem; color: #475569;">Paso de sonda de video inspección robotizada a lo largo y ancho de todos los conductos verticales oscuros.</td>
+                <td style="padding: 1rem; color: #475569;">Permite detectar rajaduras previas microscópicas, codos desencajados y focos latentes de obstrucción sin romper ni una sola pared de mampostería en todo el predio.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">2. Hidrolavado Interno Severo</td>
+                <td style="padding: 1rem; color: #475569;">Inyección de miles de litros de agua pura a 200 bar de potencia constante mediante avanzado sistema motor hidrojet en bajante.</td>
+                <td style="padding: 1rem; color: #475569;">Arrastra inexorablemente y al 100% de su capacidad toda la grasa asquerosa saponificada adherida, dejando el diámetro original del caño inmaculadamente libre y limpio.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">3. Tratamiento Final de Cámaras</td>
+                <td style="padding: 1rem; color: #475569;">Succión por bomba de vacío y lavado hiper profundo a destajo de las cámaras de inspección subterráneas en cocheras y PB.</td>
+                <td style="padding: 1rem; color: #475569;">Elimina definitivamente los focos infecciosos, los oscuros nidos de repulsivas cucarachas y los gases venenosos sulfurosos que suelen afectar permanentemente al hall de entrada principal.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">El Impacto Financiero de Ignorar las Alertas</h2>
+        <p>Para proteger seriamente el millonario valor patrimonial de todo el inmueble en el mercado y para lograr evitar costosas tragedias de salubridad e higiene con los inquilinos, lo más sensato y maduro es coordinar de antemano tareas proactivas. Si el consejo de propietarios o el consorcio entero ha omitido o minimizado arrogantemente las cinco alarmas vitales mencionadas aquí durante meses enteros y hoy experimentan desgarradores bloqueos e inundaciones irreversibles a media tarde, será completamente indispensable y perentorio contratar una cuadrilla pesada que ejecute una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> general de urgencia inmediata. Esta elaborada maniobra técnica especializada romperá la petrificada base del tapón inmenso de forma quirúrgica y muy segura, evitando generar un estrés adicional perjudicial en las frágiles y envejecidas montantes del bloque.</p>
+
         ${getFaqHtml([
-          {q: "¿Ofrecen abonos fijos a consorcios?", a: "Sí, creamos planes a medida de Limpieza Preventiva que eliminan de raíz los problemas caros fuera de horario."},
-          {q: "¿Tienen alcance en los barrios cerrados de GBA?", a: "Damos mantenimiento programado en condominios desde Nordelta hasta Canning y CABA entero."},
-          {q: "¿Incluyen informes técnicos de estas revisiones?", a: "Otorgamos certificados detallados sobre el funcionamiento y salud estructural detectada para tranquilidad de asambleas."}
+          {q: "¿Ofrecen ustedes abonos fijos de cobertura anual para consorcios residenciales grandes?", a: "Absolutamente sí. Creamos planes integrales y abonos a medida corporativa de Limpieza Preventiva que eliminan de raíz los problemas carísimos y sorpresivos ocurridos fuera de horario hábil. Pautamos visitas cuatrimestrales o semestrales dependiendo estrictamente la antigüedad del complejo y su nivel de uso comercial o habitacional intensivo diario."},
+          {q: "¿Tienen cobertura y alcance logístico en los alejados barrios cerrados y grandes countries del GBA?", a: "Efectivamente. Damos asistencia rápida, preferencial y mantenimiento programado en inmensos condominios, barrios privados perimetrados y parques industriales lejanos desde el confín de la Zona Norte hasta los extremos más apartados de la Zona Sur y el Oeste bonaerense, incluyendo lógicamente toda la densa extensión de Capital Federal con cuadrillas rodantes exclusivas para cada área geográfica."},
+          {q: "¿Incluyen completos informes técnicos formales o certificados luego de realizar estas revisiones generales?", a: "Siempre. Es nuestra garantía y la suya. Otorgamos certificados escritos muy detallados y avalados sobre el nivel de funcionamiento real, los caudales milimétricos medidos y la salud estructural general detectada durante la incursión. Esto le brinda una inmensa tranquilidad y un respaldo legal vital comprobable ante litigios para las asambleas de copropietarios e inmobiliarias en el futuro."},
+          {q: "¿El seguro básico del edificio me cubre gratis una inesperada rotura de un caño vertical troncal por culpa de un tapón?", a: "La inmensa mayoría de las famosas pólizas integrales de consorcio cubren roturas de origen accidental repentino, pero cuidado: los peritos pueden llegar a rechazar contundentemente cualquier siniestro por inundación asquerosa si en sus fotos comprueban lo que denominan una 'falta de mantenimiento preventivo crónico y doloso'. De allí radica la importancia y el valor supremo de poseer y guardar los sellados certificados técnicos de nuestras rutinarias limpiezas al día, lo cual valida la cobertura de su póliza."}
         ])}
-      
-        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
+
       `
     },
     {
@@ -122,21 +280,77 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Comparativa técnica entre máquina de resortes y sistema hidrojet en CABA - Openagua',
       excerpt: 'Comparativa técnica para limpiar obstrucciones sin arruinar el material.',
       content: `
-        <p>La disyuntiva constante al cotizar un trabajo en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong> se resume a elegir entre una herramienta manual mecanizada y una bomba hipertensora de agua.</p>
-        <p>Ambas son <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones cloacales</a> válidas, pero su eficacia final y protección estructural difieren enormemente.</p>
+
+        <p>La disyuntiva constante al momento de solicitar una reparación técnica profunda en <strong>CABA</strong> o en el extenso cordón del <strong>Gran Buenos Aires</strong> se resume casi siempre a elegir entre dos opciones antagónicas: la tradicional herramienta manual mecanizada (resorte rotativo) y la tecnología de punta representada por la bomba hipertensora de agua. Frente a una cañería estancada, miles de propietarios se preguntan cuál es la metodología que garantiza una solución real sin arruinar su propiedad en el proceso.</p>
+        
+        <p>Ambas intervenciones se consideran <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones cloacales</a> válidas dentro del rubro sanitario, pero su eficacia a largo plazo, el nivel de higiene final que proporcionan y el grado de protección estructural que le brindan a la red de tuberías difieren abismalmente. La elección de una técnica sobre la otra puede significar la diferencia entre una solución definitiva de años y una reincidencia problemática al mes siguiente.</p>
+        
+        <p>La respuesta correcta no se basa en el costo inmediato, sino en la naturaleza física y química de la obstrucción que está sufriendo tu hogar. No es lo mismo perforar un bollo accidental de papel higiénico que triturar meses de manteca petrificada o intentar arrancar una enredadera intrusa. Entender la mecánica funcional de ambos sistemas te permitirá contratar el servicio adecuado y evitar fraudes operativos que solo enmascaran fallas crónicas subyacentes.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Análisis Mecánico: Resorte de Sondeo (El Método Convencional)</h2>
+        <p>La máquina fletera a resortes es el equipo estándar que lleva el 90% de los plomeros independientes. Funciona introduciendo un cable de acero espiralado de grueso calibre impulsado por un motor eléctrico rotativo. A medida que avanza por el ducto ciego, su punta dentada gira como un taladro veloz, enredando o perforando todo lo que encuentra a su paso.</p>
+
         ${getCtaHtml()}
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Qué método limpia mejor las cañerías incrustadas?</h2>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Análisis Hidráulico: Tecnología Hidrojet (El Estándar Industrial)</h2>
+        <p>En contraste directo, la limpieza hidrocinética representa el mayor salto tecnológico del sector en las últimas décadas. En lugar de metales rotativos que golpean las curvas de la cañería, el equipo Hidrojet utiliza una inmensa bomba motora que presuriza agua limpia a rangos industriales, alcanzando picos que superan los 200 bares de fuerza de inyección constante.</p>
+        
+        <p>Esta tecnología propulsa formidables chorros cortantes en 360 grados exactos. Como detallamos al analizar las <a href="/blog/raices-en-canerias-como-detectarlas-y-solucionarlo" style="color:#16A34A;font-weight:bold;text-decoration:underline;">raíces en cañerías</a>, el agua presurizada a este nivel actúa como cuchillas tangenciales: barre, lava, rasquetea y pulveriza toda adherencia sólida de manera perimetral. Su gigantesca fortaleza radica en que remueve al 100% todo el sarro mineral o el cemento de jabón.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Las 5 Claves para Elegir el Sistema Correcto en tu Hogar</h2>
+        <p>Dependiendo el diagnóstico situacional, la elección debe basarse en estos parámetros determinantes:</p>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Resorte de Sondeo (Cable de 10mm-16mm):</strong> Es excelente para atascos de materiales blandos y trapos. <strong>Su debilidad:</strong> no limpia, solo abre un "tunel" a través de la suciedad base. Si hay grasa, la obstrucción regreserá pronto.</li>
-          <li><strong>Limpieza Hidrocinética (<a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">Hidrojet</a>):</strong> Propulsa enormes chorros cortantes en 360 grados exactos. <strong>Su fortaleza:</strong> Remueve al 100% todo sarro, cemento o aceite petrificado adhiriéndose a las paredes, dejándolas totalmente pulidas.</li>
+          <li><strong>Atascos blandos y textiles:</strong> Si se tiró un trapo accidentalmente, el resorte de sondeo es excelente ya que su gancho final "pesca" la tela y la retrae con facilidad hacia la superficie del baño.</li>
+          <li><strong>Acumulación de grasas crónicas:</strong> La debilidad crítica del resorte es que no lava; solo abre un túnel estrecho en el medio de la grasa. El hidrojet disuelve y expulsa la totalidad del cilindro graso hacia la red troncal.</li>
+          <li><strong>Tuberías viejas y delicadas:</strong> El metal rotando a altas revoluciones choca violentamente en las curvas provocando desgarros. El agua a presión carece de filo sólido, protegiendo las viejas juntas domiciliarias.</li>
+          <li><strong>Extensión del tapón kilométrico:</strong> Los resortes mecánicos pierden fuerza pasados los 15 metros y se enroscan. Las mangueras hidráulicas viajan decenas de metros sin perder eficiencia de lavado.</li>
+          <li><strong>Corte y poda de raíces:</strong> Las raíces absorben resortes sin inmutarse. Solamente boquillas rotadoras en una <a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación con hidrojet</a> logran talar la biomasa invasiva arraigada.</li>
         </ul>
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cuál elegir para evitar romper pisos?</h2>
-        <p>Si tu casa es antigua y la cañería es frágil, el Hidrojet elimina los rebotes violentos del metal contra el PVC y los codos ciegos, evitando desgarros imprevistos. A nivel industrial y de hoteles, su utilización es la única opción higiénicamente aceptable a largo plazo.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cuál Elegir para Evitar Romper Pisos Carísimos?</h2>
+        <p>Si tu propiedad residencial ostenta terminaciones de alta gama o pisos de parquet importados, el cálculo de riesgo cambia drásticamente. En estos contextos críticos, el riesgo de que una punta de acero desgarre un conducto debajo del living y obligue a picar mampostería no es una opción viable bajo ninguna circunstancia. La prevención del daño estructural debe primar por sobre cualquier pequeño ahorro en el costo del servicio inicial.</p>
+        
+        <p>El sistema a presión hidráulica es verdaderamente la única opción higiénicamente aceptable a largo plazo y la más segura para la infraestructura. Al prescindir por completo de fierros rotativos, elimina de cuajo la causa principal de la obstrucción sin arriesgar ni rayar el contenedor plástico que la envuelve, logrando arrastres perfectos sin generar las dañinas vibraciones sísmicas que tanto perjudican a los antiguos caños de plomo o asbesto.</p>
+
+        <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 2rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Característica Analizada</th>
+                <th style="padding: 1rem; font-weight: 800; color: #f59e0b;">Sonda Mecánica (Resortes)</th>
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">Sistema Hidrojet</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Material removido</td>
+                <td style="padding: 1rem; color: #475569;">Trapos, textiles, papeles apelmazados superficiales.</td>
+                <td style="padding: 1rem; color: #475569;">Sarro duro, grasas calcificadas, raíces invasivas y escombros.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Impacto en Cañerías de PVC</td>
+                <td style="padding: 1rem; color: #475569;">Alto riesgo de perforación en codos a 90 grados por fatiga metálica.</td>
+                <td style="padding: 1rem; color: #475569;">Nulo riesgo estructural, los chorros solo lavan la pared interior suavemente.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Limpieza de paredes interiores</td>
+                <td style="padding: 1rem; color: #475569;">Mínima. Deja costras de sarro que propiciarán futuros tapones.</td>
+                <td style="padding: 1rem; color: #475569;">Máxima (100%). Recupera el diámetro inmaculado de la tubería sanitaria.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Conclusión Operativa: La Decisión Inteligente</h2>
+        <p>Invertir en una maquinaria u otra dependerá de lo que revele el diagnóstico inicial del técnico matriculado. Para lavaderos obstruidos por espuma básica, un fleje veloz es efectivo y económico. Sin embargo, cuando se trata de la integridad troncal de un inmueble que representa los ahorros de toda tu vida, optar por la contundencia absoluta de la presión hídrica es, sin lugar a dudas, la mejor y más sensata decisión preventiva que podés tomar frente a un inminente desastre subterráneo cloacal.</p>
+
         ${getFaqHtml([
-          {q: "¿El hidrojet saca las raíces subterráneas?", a: "Absolutamente, instalamos picos rotadores especiales que talan rápidamente raíces medianas y gruesas encalladas."},
-          {q: "¿Dejan olor en el ambiente post-trabajo?", a: "Ninguno de nuestros procedimientos es tóxico; al lavar directamente con caudal perimetral, higienizamos también el área tratada."},
-          {q: "¿Tienen cobertura veloz de Resorte convencional?", a: "Manejamos motos con equipos sonda ultra compactos en toda el área de microcentro CABA y zonas periféricas."}
+          {q: "¿El hidrojet tiene la potencia real de sacar raíces subterráneas sin romper el piso?", a: "Absolutamente, instalamos picos rotadores dentados que giran a miles de revoluciones por propulsión hídrica. Éstos talan rápidamente raíces medianas y gruesas encalladas provenientes de árboles añosos sin dañar la integridad del caño."},
+          {q: "¿Dejan mal olor en el ambiente interior post-trabajo de limpieza cloacal?", a: "Para nada. Ninguno de nuestros procedimientos técnicos es tóxico. Al lavar directamente con altísimo caudal perimetral, arrastramos la biomasa putrefacta e higienizamos de inmediato el área tratada, devolviendo el aroma neutral y fresco al baño."},
+          {q: "¿Tienen cobertura veloz de Resorte convencional para CABA?", a: "Sí, manejamos ágiles flotas de furgonetas con equipos de sonda electromecánica ultra compactos, garantizando cobertura extrema en toda el área del microcentro de CABA sin grandes demoras de tránsito."},
+          {q: "¿El servicio a presión de agua inunda mi casa si el caño no llega a bajar?", a: "No. Nuestros operadores expertos regulan los bares de potencia al milímetro con válvulas by-pass controladas, frenando y cortando el caudal al instante para impedir cualquier riesgo de desborde hacia el interior de sus pisos."}
         ])}
+
       `
     },
     {
@@ -193,35 +407,74 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Cómo destapar un inodoro rebalsado en CABA y GBA',
       excerpt: 'Guía de emergencia: pasos críticos para evitar una inundación sanitaria en tu baño.',
       content: `
-        <p>Entrar al baño y ver que el agua del inodoro sube peligrosamente después de tirar la cadena es una de las situaciones más estresantes que podés vivir en tu casa o departamento de <strong>CABA</strong> o <strong>GBA</strong>. Esos primeros 5 minutos son determinantes para evitar daños mayores, malos olores persistentes y filtraciones hacia los pisos inferiores.</p>
+
+        <p>Ver que el nivel de agua turbia sube peligrosamente en lugar de bajar después de tirar la cadena es, sin lugar a dudas, una de las emergencias domésticas más desesperantes que puede vivir una familia en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong>. Cuando el inodoro rebalsa, el pánico inicial suele llevar a cometer errores impulsivos que, lejos de solucionar el atasco, terminan empeorando el desastre sanitario en el piso del baño. La clave para mitigar los daños y recuperar el control es actuar con rapidez, conocimiento y, sobre todo, seguridad técnica.</p>
         
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Paso 1: ¡No vuelvas a tirar la cadena!</h2>
-        <p>Parece obvio, pero el instinto de muchas personas es presionar el botón de nuevo esperando que la presión del agua empuje la obstrucción. <strong>No lo hagas.</strong> Si el inodoro ya está lleno, el agua rebasará la loza y terminará en el piso. Si la mochila sigue recargando, cerrá la llave de paso que suele estar detrás del artefacto.</p>
+        <p>Este tipo de desbordes no ocurre por arte de magia. Un inodoro tapado que escupe agua hacia afuera indica que la gruesa cañería primaria de 110mm de diámetro (el caño colector principal de tu casa) se encuentra severamente obstruida. Esto significa que el enorme caudal de líquido que libera el depósito no encuentra la salida natural hacia la cámara de inspección o hacia la cloaca municipal. Si vivís en edificios de alta densidad, esta situación es aún más grave, ya que como explicamos en <a href="/blog/5-senales-columna-edificio-tapada" style="color:#16A34A;font-weight:bold;text-decoration:underline;">las 5 señales de que la columna está tapada</a>, el agua podría ni siquiera ser tuya, sino provenir de los departamentos superiores.</p>
+        
+        <p>Antes de agarrar una sopapa de goma, volcar litros de lavandina o intentar remedios de ferretería que terminarán estropeando la loza, es imperativo entender la mecánica de la obstrucción. Requiere una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> profunda que asegure que el tapón no se corra simplemente unos metros más abajo, sino que sea eliminado de forma permanente y definitiva hacia el colector externo de la red cloacal pública.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Primeros Auxilios: Qué Hacer en el Momento del Desborde</h2>
+        <p>Si acabás de presionar el botón y ves que la marea oscura sube hasta el borde de la taza, tus próximos diez segundos son vitales. Lo primero y más importante es frenar inmediatamente la entrada de agua limpia al depósito. Buscá la llave de paso esférica cromada que suele estar en la pared, justo al lado del inodoro, o debajo del mochila si tenés sistema exterior, y girala en sentido horario para cerrarla por completo. Si tenés válvula de pared (sistema de palanca), no intentes accionarla nuevamente.</p>
 
         ${getCtaHtml()}
 
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Causas comunes del desborde en baños modernos</h2>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Causas Frecuentes del Rebalse Cloacal</h2>
+        <p>Para evitar que este episodio repulsivo se repita en tu hogar de Caballito o Morón, tenés que conocer al enemigo. En el 80% de los casos residenciales, los tapones en la taza del inodoro se forman por un exceso brutal de papel higiénico utilizado de una sola vez, sumado al uso de papeles tissue de triple hoja que tardan semanas en biodegradarse en el agua.</p>
+        
+        <p>El restante 20% suele ser culpa de objetos sólidos arrojados por descuido, como juguetes pequeños de niños, piedras sanitarias de gatos, apósitos femeninos y las famosas y temidas toallitas húmedas para bebés. Estos materiales plásticos y textiles no se disuelven bajo ningún punto de vista y actúan como verdaderas redes de pesca subterráneas, atrapando materia fecal y papel hasta conformar un tapón impenetrable a un metro de profundidad bajo tu piso de cerámico.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">5 Errores Catastróficos al Intentar Destapar</h2>
+        <p>La ansiedad por resolver el desastre visual a menudo provoca decisiones muy costosas. Evitá a toda costa caer en estas 5 prácticas perjudiciales:</p>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Exceso de papel higiénico:</strong> Especialmente los de doble hoja que no se deshacen rápido.</li>
-          <li><strong>Objetos extraños:</strong> Juguetes, peines o incluso el soporte plástico del aromatizante.</li>
-          <li><strong>Toallitas húmedas:</strong> Nunca deben tirarse al inodoro, ya que no se degradan y forman tapones indestructibles.</li>
-          <li><strong>Problema en la columna:</strong> Si el agua sube sin que vos hayas usado el inodoro, el problema es una <a href="/blog/5-senales-columna-edificio-tapada" style="color:#16A34A;font-weight:bold;text-decoration:underline;">columna de edificio tapada</a>.</li>
+          <li><strong>Tirar la cadena otra vez:</strong> Es el instinto básico, pero es letal. Si el agua no bajó la primera vez, vaciar 10 litros adicionales garantizará un desborde instantáneo inundando todo tu piso.</li>
+          <li><strong>Volcar soda cáustica o ácidos:</strong> Estos químicos generan altísimas temperaturas y, al no poder bajar, se quedarán hirviendo dentro de la taza del inodoro, pudiendo agrietar y quebrar la delicada loza blanca para siempre.</li>
+          <li><strong>Meter alambres gruesos:</strong> Si introducís una percha de alambre casera, lo único que vas a lograr es rayar irreversiblemente el esmalte interior de la taza, dejando marcas negras profundas que arruinarán la estética del baño.</li>
+          <li><strong>Esperar que se "disuelva" solo:</strong> Un tapón sólido de plástico o pañales jamás desaparecerá con el paso de las horas. Cuanto más tiempo pase estancado, peor será el olor a gas metano en tu propiedad.</li>
+          <li><strong>Culpar al vecino equivocadamente:</strong> Si el problema ocurre en una casa, el bloqueo es tuyo. Si vivís en un edificio, leé nuestro informe para entender <a href="/blog/problema-departamento-o-columna" style="color:#16A34A;font-weight:bold;text-decoration:underline;">si el problema es del departamento o de la columna general</a> antes de llamar a la administración.</li>
         </ul>
 
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Métodos caseros seguros (y los peligrosos)</h2>
-        <p>Si el nivel del agua bajó un poco, podés intentar usar la <strong>sopapa tradicional</strong>. Asegurate de que haya suficiente agua para cubrir la ventosa y generar vacío. Lo que <strong>NUNCA</strong> debes usar son ácidos fuertes o soda cáustica; estos químicos generan calor excesivo que puede rajar la cerámica o derretir las juntas de goma de los caños de PVC.</p>
-        <p>En barrios como <strong>Palermo</strong>, <strong>Belgrano</strong> o <strong>San Isidro</strong>, donde las construcciones pueden ser antiguas, los caños de hierro fundido son propensos a acumular moho y sarro, haciendo que el inodoro rebalse ante el menor obstáculo.</p>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Procedimiento Seguro de Desobstrucción</h2>
+        <p>Cuando la sopapa tradicional no logra generar el vacío necesario para mover el atasco, es el momento de solicitar asistencia mecánica profesional. Las empresas sanitarias utilizamos sondas de acero especiales forradas en goma en sus puntas, diseñadas específicamente para sortear la pronunciada curva interior ("sifón") del inodoro sin dejar ni una sola raya en la porcelana brillante.</p>
 
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cuándo llamar a un profesional?</h2>
-        <p>Si después de tres intentos con la sopapa el agua no fluye, necesitás una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas profesional</a>. En <strong>Openagua</strong> utilizamos máquinas rotativas con resortes de acero que navegan por el sifón sin dañarlo, extrayendo el objeto que causa el problema.</p>
+        <p>Si la obstrucción se halla más lejos de la taza, por ejemplo en la misma cañería subterránea debajo del piso del baño o en la cámara de inspección de la vereda, nuestros técnicos retirarán el inodoro momentáneamente de su base de manera prolija y cuidadosa, limpiarán la red troncal con flejes electromecánicos a motor o con presión de hidrojet, y luego volverán a asentar y sellar herméticamente el artefacto para que puedas volver a usarlo el mismo día.</p>
+
+        <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 2rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Nivel de Severidad</th>
+                <th style="padding: 1rem; font-weight: 800; color: #f59e0b;">Síntomas Físicos</th>
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">Acción a Tomar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Atasco Leve (Blando)</td>
+                <td style="padding: 1rem; color: #475569;">El agua baja lentamente tras tirar la cadena y hace un remolino débil.</td>
+                <td style="padding: 1rem; color: #475569;">Podés intentar bombear vigorosamente con una sopapa grande de fuelle durante dos minutos seguidos.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Atasco Severo (Sólido)</td>
+                <td style="padding: 1rem; color: #475569;">El nivel de agua sube hasta el borde sin escurrir absolutamente nada.</td>
+                <td style="padding: 1rem; color: #475569;">Cerrar la llave de paso de agua urgente. Llamar a técnicos equipados con sondas manuales de goma.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Atasco de Columna (Edificios)</td>
+                <td style="padding: 1rem; color: #475569;">El inodoro rebalsa de aguas turbias por sí solo, sin que lo hayas usado.</td>
+                <td style="padding: 1rem; color: #475569;">Avisar de urgencia a todos los vecinos superiores para que dejen de usar agua y solicitar destapación general consorcial.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         ${getFaqHtml([
-          {q: "¿El agua del inodoro puede rebasar sola?", a: "Sí, si vivís en departamentos de PB o pisos bajos y la columna central está tapada, el agua de los vecinos superiores saldrá por tu inodoro."},
-          {q: "¿Es peligroso el agua que rebalsa?", a: "Absolutamente, es agua con carga bacteriana alta. Si rebalsa, desinfectá bien con lavandina al 10%."},
-          {q: "¿Pueden destapar sin sacar el inodoro?", a: "En el 90% de los casos sí, gracias a nuestras sondas flexibles de alta tecnología."}
+          {q: "¿El líquido destapacañerías comercial sirve si el inodoro rebalsó?", a: "Totalmente desaconsejado. Al estar inundado, el químico pesado no llegará al tapón; se diluirá en el exceso de agua y solo logrará emanar vapores tóxicos corrosivos, manchar la loza del fondo y poner en peligro a quien intente destaparlo luego."},
+          {q: "¿Es necesario romper el piso del baño si el inodoro no destapa con sopapa?", a: "Casi nunca. Nuestros técnicos retiran la masilla y levantan la estructura completa del inodoro sin romper un solo azulejo. Ingresamos directamente al caño inferior con sondas rotativas y luego lo volvemos a instalar sellado y operativo el mismo día."},
+          {q: "¿Qué pasa si mis hijos tiraron juguetes de plástico por el retrete?", a: "El plástico no se deshace ni reacciona con ácidos. Intentar empujarlo más abajo solo trabará la red externa. Utilizamos flejes recuperadores especiales para atrapar el juguete y extraerlo hacia afuera, salvando la funcionalidad del sistema principal."},
+          {q: "¿Ofrecen atención de guardia de urgencia en fin de semana por inodoros rebalsados en CABA?", a: "Sí, entendemos que es una emergencia sanitaria impostergable para la familia. Contamos con vehículos de guardia rápida desplegados por todos los barrios y el cordón de GBA, equipados para resolver este caos cualquier día de la semana."}
         ])}
-        
-        <p style="margin-top: 2rem;">Si estás en <strong>CABA</strong> o la <strong>Zona Norte</strong>, no arriesgues la higiene de tu hogar. Realizamos trabajos limpios, rápidos y con garantía escrita.</p>
+
       `
     },
     {
@@ -231,33 +484,67 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Destapación de rejilla de patio inundada tras tormenta - Openagua',
       excerpt: 'No esperes a la tormenta. Descubrí cómo mantener tus desagües pluviales libres de sedimentos.',
       content: `
-        <p>Las tormentas fuertes en <strong>Buenos Aires</strong> son cada vez más frecuentes, y para quienes tienen patios o terrazas, la rejilla es el único alivio. Sin embargo, cuando la rejilla del patio está tapada, el agua comienza a acumularse rápidamente, amenazando con entrar al living o al lavadero.</p>
+
+        <p>Una rejilla de patio colapsada durante una tormenta de verano es sinónimo de pánico asegurado. Con los repentinos y brutales temporales que azotan frecuentemente a <strong>CABA</strong> y gran parte de <strong>Zona Sur, Norte y Oeste</strong>, miles de propiedades sufren el rápido anegamiento de sus patios, terrazas y pasillos exteriores. Ver cómo el agua de lluvia deja de escurrir, se acumula velozmente y comienza a amenazar con ingresar por debajo de las puertas de la cocina o el living, requiere de una acción proactiva antes de que los daños a la mampostería y los muebles sean irreparables.</p>
         
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Por qué se tapan las rejillas pluviales?</h2>
-        <p>A diferencia de las cloacas internas, los <a href="/destapaciones-pluviales" style="color:#16A34A;font-weight:bold;text-decoration:underline;">desagües pluviales</a> reciben todo lo que el viento arrastra:</p>
-        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Hojas y ramas:</strong> Principalmente en otoño, pero las tormentas de verano arrancan follaje verde.</li>
-          <li><strong>Sedimento y tierra:</strong> El polvo acumulado en techos y pisos se convierte en barro denso.</li>
-          <li><strong>Pelo de mascotas:</strong> Si bañás a tu perro en el patio, el pelo se enreda en la trampa de la rejilla.</li>
-          <li><strong>Restos de obra:</strong> Si algún vecino está refaccionando, el polvillo de cemento puede solidificarse dentro del caño.</li>
-        </ul>
+        <p>La saturación de los desagües al aire libre no es un fenómeno espontáneo. Las <a href="/destapaciones-pluviales" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones pluviales</a> son, irónicamente, el servicio preventivo más ignorado en la época de sequía y el más demandado con desesperación cuando caen 50 milímetros de agua en media hora. La boca de tormenta de tu patio funciona como el embudo maestro de toda la superficie de techo de tu casa; si ese embudo está estrangulado, la inundación es simplemente una cuestión matemática de volumen e incapacidad de drenaje.</p>
+        
+        <p>Resolver un patio atascado bajo la lluvia no es un problema que se solucione barriendo frenéticamente el agua hacia un rincón. Requiere comprender qué está tapando el fondo de la tubería bajo tierra y solicitar asistencia profesional pesada, preferiblemente con equipos de inyección hídrica a gran escala, para lavar y evacuar todo el fango espeso que obstaculiza la bajada municipal antes de la próxima alerta meteorológica.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Causas Frecuentes del Bloqueo en Patios y Terrazas</h2>
+        <p>A diferencia de las cañerías interiores de la cocina que se tapan con grasa, las tuberías externas sufren el ataque implacable del medio ambiente. Durante las semanas o meses en que no llueve en Buenos Aires, una acumulación silenciosa de tierra voladora, hollín de escape vehicular, hojas secas de árboles cercanos, nidos de pájaros y arena se va depositando pacientemente dentro de las bocas de desagüe exteriores.</p>
 
         ${getCtaHtml()}
 
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Prevención: El mantenimiento estacional en GBA</h2>
-        <p>En zonas con arboleda densa como <strong>Ramos Mejía</strong>, <strong>Olivos</strong> o <strong>Adrogué</strong>, es vital levantar la tapa de la rejilla una vez al mes. Retirá manualmente la basura que queda en el canasto o sifón. Tirá un balde de agua con detergente para verificar que el flujo sea vigoroso.</p>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">El Lodo Pluvial: El Enemigo Subterráneo</h2>
+        <p>El verdadero problema ocurre cuando caen las primeras gotas. Ese colchón seco de tierra y hojas se moja, se compacta de forma inmediata y se convierte en un bloque sólido de barro arcilloso muy denso. Este "cemento biológico" tapia literalmente las curvas de la cañería pluvial e impide por completo que el agua corra. Y como detallamos en nuestro artículo técnico sobre las <a href="/blog/diferencias-canerias-cloacales-pluviales" style="color:#16A34A;font-weight:bold;text-decoration:underline;">diferencias entre cañerías cloacales y pluviales</a>, el sistema de lluvia no está diseñado para empujar sólidos pesados, por lo que el agua simplemente rebalsa hacia arriba y se queda estancada por horas y días.</p>
 
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">El peligro de los "caños ciegos"</h2>
-        <p>Muchas veces, la rejilla parece limpia pero el caño que va hacia la calle está obstruido por raíces de árboles cercanos. Esto se nota cuando el agua tarda minutos en bajar incluso después de una lluvia leve. En estos casos, la única solución efectiva son las <a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones con hidrojet</a>, que inyectan agua a altísima presión para barrer el barro y cortar raíces.</p>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">5 Señales de que tu Patio está a Punto de Inundarse</h2>
+        <p>Si querés evitar que tu living quede bajo el agua en la próxima sudestada, tenés que revisar y prestar atención a estas 5 alertas previas en la superficie exterior:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Burbujeo bajo la rejilla:</strong> Si al baldear el patio o cuando llueve suavemente escuchás ruidos sordos de aire queriendo salir por los agujeros del metal, es señal de que hay un tapón interno generando vacío profundo.</li>
+          <li><strong>Humedad crónica en las paredes del jardín:</strong> Un caño pluvial semitapado a menudo filtra agua sucia lentamente hacia la tierra o mampostería vecina, generando salitre crónico o revoque inflado a baja altura.</li>
+          <li><strong>Acumulación de barro espeso:</strong> Si al levantar la tapa metálica cuadrada de la pileta de patio ves varios centímetros de lodo negro en lugar de plástico limpio, la tubería está en su capacidad límite de absorción y retención de sólidos.</li>
+          <li><strong>Lentitud extrema tras la lluvia:</strong> Si después de un chaparrón el espejo de agua tarda más de 20 minutos en irse por completo, el diámetro útil de la salida de 110mm se ha reducido por sedimento a menos de la mitad.</li>
+          <li><strong>Raíces que asoman:</strong> A veces, pequeñísimos pelitos blancos o marrones emergen entre las ranuras del desagüe. Son raíces de árboles cercanos que han invadido el tubo en busca de humedad permanente.</li>
+        </ul>
 
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Qué hacer si ya se inundó</h2>
-        <p>Si el agua ya está subiendo, lo primero es cortar la electricidad si hay enchufes cerca del nivel del suelo. Intentá usar un alambre grueso para "pescar" basura de la boca de la rejilla. Si el tapón es profundo, llamanos. Atendemos emergencias por lluvia en todo <strong>GBA</strong> y <strong>Capital Federal</strong>.</p>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">El Peligro de las Herramientas Caseras</h2>
+        <p>En medio de la tormenta, la desesperación lleva a muchos vecinos de Adrogué o Lanús a introducir varillas de obra, mangueras de riego con la canilla abierta o palos de escoba por la rejilla para "empujar" el barro. Esto es un error garrafal por dos motivos: primero, compactás aún más el barro convirtiéndolo en una piedra impermeable en el codo; segundo, corrés el enorme riesgo de perforar y quebrar la cañería pluvial de PVC subterránea, ocasionando una filtración grave que requerirá romper todo el piso de cerámica exterior.</p>
+
+        <p>Frente a la tierra dura, el barro y las hojas podridas, la única solución real, rápida y segura la aporta una inminente <a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación con hidrojet</a>. Nuestro equipamiento de lavado a ultra alta presión pulveriza, disuelve, barre y expulsa el lodo en estado líquido hacia el cordón de la calle o cámara general en cuestión de pocos minutos, recuperando el flujo pluvial y devolviendo la tranquilidad bajo la lluvia a toda la familia de inmediato.</p>
+
+        <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 2rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Estación del Año</th>
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">Mantenimiento Recomendado del Patio</th>
+                <th style="padding: 1rem; font-weight: 800; color: #f59e0b;">Riesgo Pluvial Inminente</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Otoño / Invierno</td>
+                <td style="padding: 1rem; color: #475569;">Barrer hojas diariamente y colocar mallas plásticas mosquiteras sobre la rejilla exterior.</td>
+                <td style="padding: 1rem; color: #475569;">Alta acumulación de biomasa seca; las hojas se pudren y taponan los codos horizontales a ras de tierra.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Primavera / Verano</td>
+                <td style="padding: 1rem; color: #475569;">Hidrolavado preventivo a 200 bar de toda la cañería de 110mm hasta la salida municipal a calle.</td>
+                <td style="padding: 1rem; color: #475569;">Lluvias torrenciales cortas pero muy violentas que arrastran polvo y desbordan el sistema al instante.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         ${getFaqHtml([
-          {q: "¿Sirve tirar lavandina a la rejilla?", a: "La lavandina no disuelve tierra ni hojas. Sirve para el olor, pero no para destapar un pluvial."},
-          {q: "¿Hacen destapaciones en techos?", a: "Sí, limpiamos canaletas y bajadas verticales en casas y edificios de altura."},
-          {q: "¿Qué es mejor, resorte o agua a presión?", a: "Para pluviales con barro, el hidrojet es superior porque lava las paredes del caño por completo."}
+          {q: "¿Puedo poner ácido muriático en la rejilla para disolver el lodo del patio?", a: "Jamás. Los ácidos reaccionan con materias grasas, pero no disuelven bajo ningún concepto la arena, la tierra ni las hojas secas. Solo dañarás las tuberías, matarás las plantas cercanas y generarás gases muy tóxicos al aire libre."},
+          {q: "¿Atienden urgencias si el patio se está inundando en plena tormenta eléctrica?", a: "Sí, poseemos cuadrillas activas durante los temporales. El sistema de destapación con hidrojet nos permite actuar bajo la lluvia de forma veloz para drenar rápidamente la zona inundada antes de que el agua llegue al interior."},
+          {q: "¿Qué pasa si las raíces del jardín vecino rompieron mi caño pluvial por debajo?", a: "Usamos cabezales rotatorios dentados de hidrojet para podar, cortar y triturar las gruesas raíces intrusas de árboles o arbustos, limpiando todo el caño y permitiendo el paso del agua sin necesidad de destruir tu hermoso jardín."},
+          {q: "¿Es verdad que no deben mezclarse las rejillas pluviales con los líquidos cloacales?", a: "Exactamente. Normativamente, el sistema pluvial que absorbe lluvia debe salir libremente a la calle o cordón cuneta, mientras que el cloacal del baño va a la red pública entubada. Mezclarlos puede causar que excremento rebalse en tu patio abierto."}
         ])}
+
       `
     },
     {
@@ -267,34 +554,73 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Inspección profesional de cañerías en edificio',
       excerpt: 'Aprendé a identificar quién debe pagar la destapación en un consorcio de CABA.',
       content: `
-        <p>Vivir en un edificio en <strong>CABA</strong> tiene sus ventajas, pero las cañerías compartidas no son una de ellas. Cuando la bacha de la cocina o el inodoro se tapan, surge la gran duda: ¿Es un problema mío o es responsabilidad del consorcio? La respuesta define quién paga la factura de la destapación.</p>
-        
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Señales de que el problema es en TU departamento</h2>
-        <p>Si el agua solo se queda estancada cuando VOS abrís la canilla, lo más probable es que sea una obstrucción en el ramal individual del departamento. Las causas suelen ser grasa de cocina acumulada (muy común en edificios de más de 20 años en <strong>Recoleta</strong> o <strong>Caballito</strong>) o restos de jabón y pelo en el baño.</p>
 
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Señales de que el problema es la COLUMNA general</h2>
-        <p>Esto es lo que llamamos una "emergencia de consorcio". Prestá mucha atención a estas señales:</p>
-        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Agua que sube sola:</strong> Estás mirando la tele y escuchás que la rejilla del baño o la bacha de la cocina empieza a burbujear y sale agua, aunque no estés usando nada.</li>
-          <li><strong>Varios vecinos afectados:</strong> El vecino del 4to y el del 3ero tienen el mismo problema simultáneamente.</li>
-          <li><strong>Olor persistente en todo el piso:</strong> Los gases no pueden evacuar por la montante y escapan por los sifones de los departamentos.</li>
-        </ul>
+        <p>Vivir en un edificio de propiedad horizontal en <strong>CABA</strong> o en los grandes centros urbanos del <strong>Gran Buenos Aires</strong> significa compartir de manera invisible una inmensa y compleja red de infraestructura sanitaria. Cuando el agua sucia asoma por la rejilla del baño o la cocina se inunda repentinamente, la angustia de la emergencia casi siempre viene acompañada por una inevitable y amarga discusión vecinal: ¿quién tiene la culpa de esto y, lo más importante, quién debe pagar la abultada factura del plomero, el propietario afectado o la administración del consorcio?</p>
+        
+        <p>Esta disputa suele generar fuertes tensiones, demoras operativas letales y cruces de acusaciones en los grupos de WhatsApp del edificio. Mientras los inquilinos y el administrador debaten la responsabilidad legal amparándose en el reglamento de copropiedad, el agua negra cloacal sigue arruinando silenciosamente alfombras, zócalos de madera y muebles carísimos, propagando un olor sulfuroso que, como vimos en <a href="/blog/5-senales-columna-edificio-tapada" style="color:#16A34A;font-weight:bold;text-decoration:underline;">las 5 señales de la columna tapada</a>, afectará irremediablemente a toda la planta inferior.</p>
+        
+        <p>Para resolver este conflicto sin perder tiempo valioso, es fundamental saber diferenciar físicamente la anatomía de los caños de tu edificio. Reconocer si la obstrucción se aloja en el ramal privado de tu departamento o si el tapón se encuentra bloqueando la bajada principal (la columna maestra), te permitirá reclamar con fundamento técnico, acelerar la reparación de urgencia mediante <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cloacas</a> profesionales y exigir los reembolsos económicos correspondientes sin chicanas legales.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">La Regla de Oro: Ramales Horizontales vs. Tubería Vertical</h2>
+        <p>El código civil y comercial, junto con la mayoría de los reglamentos estándar de copropiedad en la Ciudad de Buenos Aires, establecen un límite físico extremadamente claro para dirimir esta eterna disputa. Todo el entramado de cañerías delgadas (generalmente de 40mm a 60mm de diámetro) que corren de manera <strong>horizontal</strong> por debajo del piso de tu departamento, conectando tu bacha, tu ducha y tu inodoro hasta salir de los límites de tu unidad funcional, son de tu absoluta y exclusiva responsabilidad económica.</p>
 
         ${getCtaHtml()}
 
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Qué hacer si es la columna?</h2>
-        <p>Debés avisar de inmediato al encargado o a la administración. Las columnas tapadas pueden inundar rápidamente los pisos inferiores (especialmente Planta Baja y 1ro). En <strong>Openagua</strong> trabajamos con administraciones de consorcios en todo <strong>CABA</strong> y <strong>GBA</strong> realizando <a href="/mantenimientos-preventivos" style="color:#16A34A;font-weight:bold;text-decoration:underline;">mantenimientos de columnas</a> para evitar estos desastres.</p>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Síntomas Clásicos de un Tapón Privado (Horizontal)</h2>
+        <p>Si la obstrucción se originó por malos hábitos de uso en tu propia vivienda, el consorcio se desentenderá del problema. Estos bloqueos suelen ser causados por volcar yerba, aceite caliente o exceso de papel. Vas a darte cuenta de que el problema es 100% tuyo si experimentás las siguientes 5 situaciones aisladas:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Problema aislado:</strong> Se tapa la pileta de tu cocina, pero el inodoro y la ducha del baño desagotan perfectamente bien, y además a tus vecinos no les pasa absolutamente nada.</li>
+          <li><strong>El agua sucia es exclusivamente tuya:</strong> El líquido que rebalsa es el mismo que vos acabás de tirar. Por ejemplo, al vaciar la bañera, el agua jabonosa sube inmediatamente por la rejilla del bidet.</li>
+          <li><strong>Olor localizado:</strong> El mal olor a podrido se restringe únicamente al mueble del bajo mesada o al perímetro de tu baño, sin afectar el pasillo central del edificio ni el palier.</li>
+          <li><strong>Cañería visible bajo mesada:</strong> Notás que el sifón de plástico o el caño corrugado que sale de tu bacha está completamente petrificado, endurecido y lleno de sarro blanco.</li>
+          <li><strong>Uso indebido reciente:</strong> Recordás haber tirado pintura de obra, restos de enduido, yerba mate húmeda o grasa animal caliente por la bacha pocas horas antes del gran atasco.</li>
+        </ul>
 
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Responsabilidad legal y costos</h2>
-        <p>Generalmente, el reglamento de copropiedad establece que las cañerías dentro de la pared hasta la conexión con la columna son del departamento, pero la columna principal es "bien común". Si se tapa la columna, el gasto corre por cuenta del consorcio. Si se tapa tu codo de salida por tirar pañales, te corresponde a vos.</p>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Síntomas Clásicos de un Tapón Consorcial (Vertical)</h2>
+        <p>Por el contrario, en el instante físico en que tu caño horizontal de 60mm se empalma y desemboca en la gran tubería vertical gruesa de 110mm que atraviesa todos los pisos de arriba hacia abajo (la bajada o montante cloacal pluvial), ese enorme ducto y todos sus problemas pasan a ser un "bien común" inalienable. Si el tapón de grasa y jabón se formó allí, la responsabilidad civil y financiera recae sobre todos los copropietarios y se paga con expensas. Te vas a dar cuenta porque ocurre lo siguiente:</p>
+        <p>El agua turbia comienza a burbujear y a subir por el inodoro o la rejilla de tu baño <strong>sin que vos hayas abierto ni una sola canilla</strong> en todo el día. Esto significa que el agua que te está inundando proviene de la descarga de los vecinos que viven en los pisos superiores al tuyo. El tapón en la columna no deja que el agua siga bajando hacia la calle, entonces retrocede e invade el primer departamento que encuentra en su camino (generalmente la planta baja o el primer piso).</p>
+
+        <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 2rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Característica Analizada</th>
+                <th style="padding: 1rem; font-weight: 800; color: #dc2626;">Falla Privada (Tu Departamento)</th>
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">Falla Común (Columna Consorcio)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Origen del agua estancada</td>
+                <td style="padding: 1rem; color: #475569;">Es tu propia agua. Solo sube cuando abrís tu canilla o tirás tu cadena.</td>
+                <td style="padding: 1rem; color: #475569;">Es agua ajena. Sube repentinamente aunque estés durmiendo.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Vecinos afectados</td>
+                <td style="padding: 1rem; color: #475569;">Solamente vos y tu familia.</td>
+                <td style="padding: 1rem; color: #475569;">Generalmente afecta a la planta baja o a varios pisos bajos a la vez.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Responsabilidad de pago</td>
+                <td style="padding: 1rem; color: #475569;">Corresponde al titular propietario o inquilino de la unidad funcional.</td>
+                <td style="padding: 1rem; color: #475569;">Administración central del edificio (pagadero con el fondo de expensas).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cómo Proceder Legal y Técnicamente ante el Administrador</h2>
+        <p>Cuando te enfrentás a un tapón de montante (columna), cada minuto cuenta. Notificá de manera fehaciente al encargado y a la administración exigiendo la intervención urgente. Muchos administradores demoran la decisión para "pedir presupuestos", mientras tu piso de madera se arruina. Para prevenir estos desastres, lo ideal es que el consorcio contrate <a href="/mantenimientos-preventivos" style="color:#16A34A;font-weight:bold;text-decoration:underline;">mantenimientos preventivos</a> anuales con camiones hidrojet, que lavan la columna perimetralmente evitando tapones sorpresivos.</p>
+        
+        <p>Si el administrador no responde un fin de semana, la ley te ampara para que contrates vos mismo a una empresa de destapaciones profesional que resuelva la urgencia sanitaria. Nuestros técnicos emitirán una factura legal y un certificado de diagnóstico preciso donde se detallará a cuántos metros de profundidad y en qué tipo de caño se hallaba el atasco (corroborando técnicamente que era la columna central), documento irrefutable con el cual podrás exigir el reintegro total del dinero a la administración del edificio.</p>
 
         ${getFaqHtml([
-          {q: "¿Qué pasa si vivo en PB?", a: "Los departamentos de PB son los más vulnerables a las columnas tapadas. Recomendamos siempre tener una válvula antirretorno si el edificio es viejo."},
-          {q: "¿Cómo destapan una columna de 10 pisos?", a: "Usamos máquinas con potentes motores y muchos metros de resorte, o hidrojet desde las cámaras de inspección en PB."},
-          {q: "¿Atienden urgencias de consorcios los domingos?", a: "Sí, tenemos guardias activas para casos de desbordes en edificios."}
+          {q: "¿Qué pasa si las raíces de un árbol de la vereda rompen mi caño de la casa?", a: "Si el árbol pertenece al municipio o está en la vía pública, el daño estructural es responsabilidad del estado o del consorcio (si es vereda común). Nosotros cortamos las raíces internamente con hidrojet para devolverte el servicio y te damos el informe para tu reclamo."},
+          {q: "¿Puedo exigirle al administrador que limpie la columna preventivamente cada año?", a: "Es tu derecho como copropietario exigirlo en asamblea. El mantenimiento preventivo anual con maquinaria a presión cuesta diez veces menos que pagar refacciones de albañilería, daños por inundaciones a terceros y desinfecciones de emergencia."},
+          {q: "¿Cómo prueba el técnico si el tapón era mío o de la columna general?", a: "Nuestros operarios miden exactamente la longitud de la sonda de acero ingresada. Si tu baño está a 2 metros de la pared troncal, y la sonda destapa el bloqueo recién a los 10 metros de profundidad bajando, es innegable que la falla residía en la bajada común consorcial."},
+          {q: "¿Tienen alcance y cobertura para urgencias de edificios en el GBA?", a: "Totalmente. Atendemos consorcios, torres y complejos habitacionales tanto en CABA como a lo largo y ancho de todo el Gran Buenos Aires, brindando facturación formal, presupuestos corporativos y certificaciones firmadas para la administración."}
         ])}
-      
-        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
+
       `
     },
     {
@@ -304,33 +630,74 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Limpieza de rejilla de ducha obstruida por cabellos y jabón - Openagua',
       excerpt: '¿Terminás de bañarte con el agua por los tobillos? Descubrí cómo limpiar tu drenaje de forma efectiva.',
       content: `
-        <p>Nada arruina más una ducha relajante que descubrir que estás parado en una pileta de agua estancada. Si la ducha desagota lento, el problema rara vez se soluciona solo; al contrario, empeora con cada uso hasta que el tapón es total.</p>
-        
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Los tres culpables del tapón en la ducha</h2>
-        <ol style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Pelo humano:</strong> Se enreda en la rejilla y forma una "red" que atrapa todo lo demás.</li>
-          <li><strong>Restos de jabón y shampoo:</strong> Los productos modernos tienen muchas grasas y aceites que se solidifican al enfriarse, pegándose a las paredes del caño.</li>
-          <li><strong>Biofilm (Bacterias):</strong> Esa baba rosada o negra que ves a veces es una colonia bacteriana que reduce el diámetro del conducto.</li>
-        </ol>
 
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Soluciones simples que podés probar</h2>
-        <p>Antes de desesperar, sacá el tornillo de la rejilla. Muchas veces el tapón está justo ahí. Con un guante, retirá el "nido" de pelos. También podés volcar agua hirviendo (con cuidado si los caños son muy viejos) mezclada con detergente desengrasante para platos.</p>
+        <p>Sentir que el agua caliente se estanca alrededor de tus tobillos mientras intentás disfrutar de una ducha relajante es una señal de alarma que no debe ignorarse. Este problema de drenaje, uno de los reclamos domiciliarios más frecuentes tanto en modernos departamentos de <strong>CABA</strong> como en antiguas casonas del <strong>Gran Buenos Aires</strong>, suele comenzar de manera silenciosa y empeorar semana a semana. Lo que al principio es solo una leve acumulación que tarda un par de minutos en irse, pronto se convierte en una verdadera pileta de aguas grises estancadas que dejan el piso de tu receptáculo de ducha cubierto de una película resbaladiza y sucia.</p>
+        
+        <p>Muchos usuarios cometen el error de pensar que, al igual que en la pileta de la cocina, el problema se origina por grandes sólidos atorados. Sin embargo, la dinámica en el cuarto de baño es biológicamente muy diferente. Si ya leíste nuestro informe sobre <a href="/blog/por-que-cocina-huele-a-cloaca" style="color:#16A34A;font-weight:bold;text-decoration:underline;">por qué la cocina huele a cloaca</a>, sabrás que allí la grasa animal es el enemigo. En la ducha, en cambio, los villanos son microscópicos pero igual de letales: el sarro del agua dura, los restos de cremas para el cuerpo, el jabón derretido y, fundamentalmente, la acumulación crónica de cabellos humanos y de mascotas.</p>
+        
+        <p>Abordar un desagüe de ducha lento requiere entender su delicada anatomía. La mayoría de los platos de ducha y bañeras desagotan a través de cañerías muy estrechas (usualmente tubos plásticos o de plomo de apenas 40 milímetros) que se conectan a una pileta de patio central oculta bajo la rejilla del piso del baño. Evitar daños en esta frágil red mientras se recupera la velocidad de caída del agua exige realizar <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cañerías</a> precisas, abandonando para siempre las peligrosas soluciones comerciales en gel que prometen milagros en televisión.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">El Enemigo Íntimo: Pelo y Jabón Saponificado</h2>
+        <p>El tapón que se forma bajo tu ducha tiene una consistencia muy particular, casi como el de una alfombra mojada de fieltro. Cada vez que te bañas, perdés decenas de cabellos. Estos largos hilos no viajan suavemente hacia la cloaca; se enredan cruelmente en las imperfecciones de las juntas de los caños, en los tornillos de la rejilla o en el fondo del sifón plástico. Sobre esta "red" biológica de pelos, comienza a decantar la espuma del shampoo y el acondicionador denso.</p>
 
         ${getCtaHtml()}
 
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">El error de la soda cáustica</h2>
-        <p>Es muy común en casas de <strong>Zona Sur</strong> o <strong>Zona Oeste</strong> comprar soda cáustica en la ferretería. <strong>Cuidado:</strong> Si el agua no corre, la soda se queda estancada, se enfría y se convierte en una piedra blanca dura como el mármol dentro del sifón. Terminás teniendo que romper el piso para cambiar el caño.</p>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Por Qué la Soda Cáustica Arruina tu Baño</h2>
+        <p>La desesperación ante el agua estancada empuja a la gente a la ferretería en busca de ácido muriático, soda cáustica granulada o líquidos destapacañerías en gel pesados. Como advertimos reiteradamente en nuestro artículo sobre <a href="/blog/que-no-tirar-en-la-pileta-de-cocina" style="color:#16A34A;font-weight:bold;text-decoration:underline;">qué no tirar jamás por las tuberías</a>, utilizar químicos corrosivos en la ducha es el camino más directo hacia una rotura carísima de plomería por un motivo fundamental: la temperatura y el diseño físico del caño bajo la losa.</p>
+        
+        <p>Al hacer contacto con el tapón húmedo de pelos, la soda cáustica genera una violenta reacción térmica exotérmica en una fracción de segundo. El caño de desagüe de la bañera suele ser de PVC de pared extremadamente delgada o, si tu casa es antigua, de plomo soldado. Esta inyección de calor de más de 80 grados derretirá literalmente la rosca plástica del sifón o resquebrajará el pegamento epoxi de las curvas ciegas. Al otro día, el agua de tu ducha se estará filtrando directamente al techo del departamento de tu vecino de abajo, obligándote a picar todo tu piso de porcelanato para cambiar un caño destrozado por un simple error.</p>
 
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Limpieza técnica con Openagua</h2>
-        <p>Si los métodos caseros fallan, es porque el problema está en el ramal que conecta con la cloaca principal. Realizamos <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cañerías de baño</a> con resortes finos de alta velocidad que limpian el sifón sin rayar el artefacto ni dañar las uniones.</p>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">5 Pasos para el Mantenimiento Preventivo Mensual</h2>
+        <p>Para evitar que el pelo logre consolidarse en un bloque duro de cemento blanco, podés aplicar estos 5 hábitos semanales súper sencillos y 100% seguros:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Malla atrapapelos de metal:</strong> Invertí mil pesos en un filtrito de acero inoxidable o silicona tipo sombrerito para colocar sobre la boca de desagüe de la bañera. Limpialo de pelos manualmente al finalizar cada ducha.</li>
+          <li><strong>Lavado semanal con agua a alta temperatura:</strong> Una vez a la semana, verté despacio una pava entera de agua muy caliente (no hirviendo, para cuidar el plástico) directamente por la sopapa para derretir la grasa fresca de los acondicionadores antes de que se pegue al fondo.</li>
+          <li><strong>Evitá bañar mascotas en exceso allí:</strong> El pelo corto y denso de los perros viaja rápidamente y se apelmaza en el sifón central del baño en cantidades monstruosas, creando bloqueos rapidísimos de drenar.</li>
+          <li><strong>Limpieza de la Pileta de Patio central:</strong> La rejilla cuadrada metálica en el piso de tu baño recibe el agua del bidet, del lavamanos y de la ducha. Levantá la tapa metálica mensualmente y retirá manualmente la mugre negra retenida en el fondo de ese pequeño recipiente plástico interno.</li>
+          <li><strong>Reemplazá jabones grasosos en barra:</strong> Los jabones de tocador tradicionales contienen grasas animales pesadas que se solidifican con el frío del caño. Optá por geles de ducha líquidos que son 100% hidrosolubles y amigables con las tuberías domiciliarias.</li>
+        </ul>
+
+        <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 2rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Método Casero</th>
+                <th style="padding: 1rem; font-weight: 800; color: #dc2626;">Riesgo para el Baño</th>
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">Eficacia Real Esperada</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Sopapa manual de goma</td>
+                <td style="padding: 1rem; color: #475569;">Riesgo nulo. Es el método más seguro siempre y cuando selles con trapos húmedos las otras rejillas (bidet, pileta) para generar vacío.</td>
+                <td style="padding: 1rem; color: #475569;">Baja/Media. Puede empujar un atasco flojo, pero el pelo denso y amasado a veces solo rebota sin desarmarse.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Percha o alambre duro</td>
+                <td style="padding: 1rem; color: #475569;">Riesgo Alto. Podés perforar el caño corrugado o rayar todo el enlozado brillante del desagüe.</td>
+                <td style="padding: 1rem; color: #475569;">Casi nula. Terminarás empujando el pelo más profundamente hacia el codo ciego e inalcanzable de la red general.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Líquidos destapacañerías</td>
+                <td style="padding: 1rem; color: #475569;">Riesgo Muy Alto. Emite gases venenosos y puede derretir las juntas pegadas de los codos plásticos.</td>
+                <td style="padding: 1rem; color: #475569;">Nula. Los ácidos diluidos no pueden cortar ni disolver grandes manojos de pelo humano resistente.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">La Intervención Profesional Definitiva</h2>
+        <p>Cuando el agua definitivamente rehúsa bajar y el olor a estanque podrido invade el cuarto de baño, la única alternativa lógica y segura es contratar a una cuadrilla experta. Los técnicos no utilizarán químicos. En su lugar, abordarán el problema introduciendo una delgada sonda electromecánica de acero articulado o, si el acceso lo permite, un sistema mini-hidrojet domiciliario a través de la caja sifónica de la pileta de patio central.</p>
+        
+        <p>Esta maquinaria liviana y moderna es capaz de navegar de forma suave por las curvas estrechas del conducto de 40mm de la bañera, enganchar rotativamente toda la gigantesca masa peluda pestilente y retraerla hacia la superficie como una sola pieza, o bien pulverizar el jabón duro hacia el ramal maestro, devolviéndole a tu ducha la velocidad de vaciado instantánea del primer día sin romper ni dañar un solo centímetro de tus valiosos cerámicos o porcelanatos.</p>
 
         ${getFaqHtml([
-          {q: "¿Cada cuánto hay que limpiar la rejilla de la ducha?", a: "Recomendamos una limpieza superficial semanal para retirar el pelo acumulado."},
-          {q: "¿Tienen cobertura en Zona Norte?", a: "Sí, cubrimos Vicente López, San Isidro, Tigre y alrededores con equipos móviles rápidos."},
-          {q: "¿El mal olor de la ducha es por el tapón?", a: "Sí, la acumulación orgánica en descomposición genera gases que huelen a alcantarilla."}
+          {q: "¿El vinagre y el bicarbonato sirven para destapar la bañera lenta?", a: "Solo funcionan como un mínimo mantenimiento higiénico desodorante superficial, pero si tenés 20 centímetros de pelo amarrado mezclado con crema de enjuague a un metro de profundidad, la efervescencia suave no le hará absolutamente nada."},
+          {q: "¿Es necesario romper la bañera o el piso si está muy tapada abajo?", a: "Prácticamente nunca. Nuestras sondas industriales flexibles en espiral están diseñadas en Alemania específicamente para sortear codos ciegos de 90 grados y tubos en 'U' sin necesidad de que el albañil deba picar ni romper nada a la vista."},
+          {q: "¿Cuánto tiempo demora el técnico en destapar la ducha de esta manera?", a: "El proceso es sumamente ágil, prolijo y limpio. Usualmente, una desobstrucción típica de cuarto de baño por pelo o jabón demora menos de 45 a 60 minutos desde que el operario localiza la pileta de patio hasta que prueba el libre escurrimiento final."},
+          {q: "¿Atienden este tipo de emergencias domiciliarias menores en el Gran Buenos Aires?", a: "Por supuesto. Nuestros vehículos plomeros rodantes asisten diariamente tanto atascos menores de hogares y departamentos, como bloqueos industriales masivos, cubriendo rápidamente CABA y todas las zonas neurálgicas de Zona Norte, Sur y Oeste del GBA."}
         ])}
-      
-        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
+
       `
     },
     {
@@ -340,31 +707,74 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Destapación de inodoro con máquina de sonda electromecánica - Openagua',
       excerpt: 'Conocé los métodos más efectivos para destapar tu inodoro tapado rápidamente y sin llamar a un plomero a la primera.',
       content: `
-        <p>Tener un inodoro tapado es la emergencia sanitaria más estresante que un hogar en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong> puede enfrentar. Un simple bollo de papel higiénico de más, restos sanitarios incorrectos, y de repente, el agua sube amenazantemente hacia los bordes del sanitario.</p>
+
+        <p>Encontrarse con el inodoro tapado es, indiscutiblemente, una de las situaciones domésticas más estresantes y paralizantes que cualquier propietario o inquilino en <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong> puede experimentar. El baño queda automáticamente inhabilitado, el olor comienza a esparcirse por el pasillo y el pánico a que todo se desborde al piso genera una ansiedad tremenda. Sin embargo, no todos los bloqueos son catástrofes irreversibles; entender la mecánica del atasco es el primer paso para no empeorar las cosas.</p>
         
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Causas más comunes por las que se tapa el inodoro</h2>
-        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Exceso de papel o toallas femeninas:</strong> Se apelmazan y forman un tapón elástico casi imbatible.</li>
-          <li><strong>Toallitas desmaquillantes (Wet Wipes):</strong> Están fabricadas en polímeros que nunca se degradan, creando tapones sintéticos que estrangulan el ducto entero.</li>
-          <li><strong>Juguetes o Plásticos:</strong> Un clásico si tienes niños pequeños, y muy difícil de solucionar con métodos caseros, ya que los plásticos se encallan a nivel sifón.</li>
-        </ul>
+        <p>Como detallamos en nuestra guía sobre qué hacer si el <a href="/blog/inodoro-rebalsa-que-hacer" style="color:#16A34A;font-weight:bold;text-decoration:underline;">inodoro rebalsa</a>, el retrete no es un agujero negro sin fondo. El agua viaja a través de una trampa de agua en forma de "S" invertida (el sifón interno de la loza) y luego desemboca en una cañería primaria de 110mm de diámetro. Cuando cometemos el error de arrojar grandes bolas de papel higiénico, toallas femeninas o plásticos, esta curva estrecha se bloquea herméticamente, impidiendo que el peso del agua logre empujar los residuos hacia la red general de la calle.</p>
         
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Pasos seguros y caseros para intentar solucionarlo</h2>
-        <p>Lo primero y crítico: <strong>No vuelvas a tirar del botón</strong>. Intentá primero usar una <strong>sopapa de goma tradicional</strong>: colócala sellando todo el perímetro y con agua cubriendo la copa de goma, ejerce movimientos rítmicos vigorosos hacia abajo y hacia arriba de 10 a 15 veces buscando soltar la presión en vacío del objeto.</p>
-        <p>Otra opción rápida para obstrucciones ligeras (sólo materiales orgánicos) es volcar 3 litros de agua bien caliente acompañada de detergente lavavajillas. El jabón empujará e intentará romper la tensíon del atasco leve.</p>
-        
+        <p>Saber distinguir entre un atasco superficial, que puede resolverse con técnica casera, y un tapón estructural profundo, que requerirá indefectiblemente una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> ejecutada por plomeros matriculados, te ahorrará muchísimo dinero en lozas rotas y evitará que tu baño termine convertido en un pantano bacteriológico.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Evaluando la Gravedad del Tapón en tu Inodoro</h2>
+        <p>Antes de salir corriendo a buscar un balde con agua o químicos corrosivos, tenés que mirar el nivel de agua estancada dentro de la taza. Si el nivel está muy alto, casi rozando el borde, no intentes bajo ninguna circunstancia tirar la cadena nuevamente. Hacerlo solo activará el tanque y arrojará 10 litros más al sistema colapsado, garantizando un derrame espantoso en el piso de cerámica.</p>
+
         ${getCtaHtml()}
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">El Uso Correcto de la Sopapa de Fuelle</h2>
+        <p>La herramienta por excelencia, económica y 100% segura para el inodoro, no es el alambre ni el ácido, sino la fiel sopapa de goma. Pero no sirve cualquier sopapa plana; necesitás una sopapa tipo "fuelle" o con campana extendida, diseñada específicamente para acoplarse al agujero inferior del retrete. El secreto no está en empujar con fuerza bruta hacia abajo, sino en el movimiento de succión rítmica.</p>
         
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuándo llamar urgentemente al servicio profesional</h2>
-        <p>Si luego de estos intentos el nivel del agua sigue igual y notas que si abres la bacha del lavamanos empuja aire y huele feo, la obstrucción ya bajó al troncal principal o ramal cruzado. Aquí es donde los plomeros certificados como nuestro servicio de <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">Destapaciones de Cloacas</a> intervienen. Usamos maquinaria de sondas que desarma y arranca por rotación todo el atasco de raíz, en minutos.</p>
+        <p>Para que la sopapa funcione, la goma debe estar sumergida en agua. Colocala firmemente sellando el orificio de salida. Empujá suavemente para sacar el aire y luego tirá hacia arriba con un movimiento brusco, sin despegar la goma del fondo. Este movimiento de "bombeo" genera un vacío hidráulico enorme que empuja y tira del tapón blando de papel, desarmándolo. Repetí este vaivén vigorosamente unas 15 o 20 veces continuas.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">5 Errores Comunes que Destruyen tu Baño</h2>
+        <p>La ansiedad por ver el agua sucia estancada lleva a cometer locuras. Evitá estos 5 errores que nuestros técnicos ven a diario en Capital Federal:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>El agua hirviendo:</strong> Volcar ollas de agua hirviendo puede causar un choque térmico instantáneo en la fría loza del inodoro, provocando una rajadura que parte el artefacto por la mitad en milisegundos.</li>
+          <li><strong>La percha de alambre:</strong> Introducir hierros o perchas dobladas rayará el fino y brillante esmalte blanco del fondo de manera permanente. Además, empujará el objeto atascado (como un juguete) más hacia adentro, encajándolo peor.</li>
+          <li><strong>Muriático o Soda Cáustica:</strong> Estos ácidos hervirán el agua estancada sin lograr cortar pañales o plásticos. Solo lograrás respirar vapores tóxicos mortales y arriesgarte a quemaduras químicas severas.</li>
+          <li><strong>Sellar con cinta adhesiva:</strong> El truco viral de tapar la taza con papel film y tirar la cadena confía en la presión de aire para destapar, pero si la cañería está débil, la sobrepresión reventará la junta inferior y te inundará el baño.</li>
+          <li><strong>Ignorar el contexto consorcial:</strong> Si vivís en un piso bajo de un edificio, asegurate leyendo nuestra nota <a href="/blog/problema-departamento-o-columna" style="color:#16A34A;font-weight:bold;text-decoration:underline;">cómo saber si el tapón es de tu departamento o de la columna central</a>, porque el agua que no baja podría ser un retroceso de las unidades superiores.</li>
+        </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuándo Llamar a una Empresa de Destapaciones</h2>
+        <p>Si estuviste bombeando con la sopapa durante media hora, intentaste volcar un balde desde altura y el agua sigue inamovible, el diagnóstico es innegable: el objeto bloqueador es un sólido grande encallado en el sifón (piedras sanitarias, plásticos) o bien el tapón no está en el inodoro, sino metros más abajo en la cañería subterránea de la propiedad.</p>
         
+        <p>En este punto, la insistencia casera es inútil y peligrosa. Nuestros equipos técnicos matriculados resolverán esto sin romper tus pisos. En casos severos, procedemos a desmontar prolijamente el inodoro desatornillándolo de su base, limpiamos la red gruesa inferior con flejes mecánicos industriales o hidrojet, y volvemos a asentar y sellar herméticamente el artefacto, devolviéndotelo listo para usar.</p>
+
+        <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 2rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Tipo de Atasco</th>
+                <th style="padding: 1rem; font-weight: 800; color: #f59e0b;">Origen Común</th>
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">Procedimiento Adecuado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Atasco Blando de Loza</td>
+                <td style="padding: 1rem; color: #475569;">Papel higiénico excesivo o materia fecal muy densa atorada en la curva.</td>
+                <td style="padding: 1rem; color: #475569;">Acción vigorosa de sopapa de fuelle por 5 minutos hasta romper el vacío.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Atasco Sólido (Obstrucción)</td>
+                <td style="padding: 1rem; color: #475569;">Toallitas húmedas, juguetes, envases plásticos de desodorantes.</td>
+                <td style="padding: 1rem; color: #475569;">Requiere desmonte del inodoro o uso de sonda fina para recuperar el objeto.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Atasco Profundo (Subterráneo)</td>
+                <td style="padding: 1rem; color: #475569;">Raíces en el patio, acumulación de sarro o bajada principal tapada.</td>
+                <td style="padding: 1rem; color: #475569;">Destapación profesional con máquina fletera o hidrojet pesado en la cámara.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         ${getFaqHtml([
-          {q: "¿Qué pasa si meto una percha metálica armada?", a: "Muy desaconsejado. Una percha rayará de forma permanente y muy notoria toda la porcelana cara de tu sanitario por la base interior u orificio de descarga."},
-          {q: "¿Por qué huelen a cloaca los otros desagües del baño?", a: "Es indicador de una columna obstruida o ramal completo saturado en tu casa afectando respiración pluvial de zonas comunes."},
-          {q: "¿Tienen visita de destapaciones el mismo día?", a: "Contamos con brigadas recorriendo incesantemente las rutas y asistencias con unidades móviles llegando rapidisimo a tu hogar en el dia."}
+          {q: "¿Tirar un balde de agua desde mucha altura sirve para empujar el tapón?", a: "Solo funciona si el tapón es blando y el inodoro está vacío. Si la taza ya está llena hasta el borde, arrojar un balde de agua generará un rebalse espantoso inmediato ensuciando todo tu baño."},
+          {q: "¿Por qué recomiendan no usar productos químicos en el inodoro destapado?", a: "Los químicos comerciales son pesados y corrosivos. Si no logran abrir paso, se quedarán estancados y quemarán el sellado inferior, la junta elástica y emitirán vapores venenosos al aire del cuarto cerrado."},
+          {q: "¿Es verdad que se puede recuperar un objeto atorado sin romper la loza?", a: "Sí, poseemos herramientas especializadas articuladas como ganchos recuperadores y cámaras endoscópicas que nos permiten enlazar y retirar juguetes plásticos u objetos sin provocarle ni un rasguño a tu artefacto sanitario."},
+          {q: "¿Cubren desobstrucciones de inodoros los fines de semana en el Gran Buenos Aires?", a: "Por supuesto. Nuestros equipos de emergencia están operativos de lunes a lunes abarcando todos los barrios de Zona Oeste, Norte y Sur, sabiendo que un baño inutilizado no puede esperar a un día hábil."}
         ])}
-      
-        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
+
       `
     },
     {
@@ -374,31 +784,74 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Destapación de rejilla bloqueada en patio o terraza - Openagua',
       excerpt: 'Hojas, tierra o cabellos bloquean tu rejilla. Pasos vitales para evitar inundaciones.',
       content: `
-        <p>El estancamiento crónico de agua superficial tras una lluvia ligera es el síntoma definitivo de que tu sistema pluvial tiene los días contados. Ya sea en un balcón, una terraza de edificio en <strong>CABA</strong> o la pileta de lavadero del fondo de una casa en todo el cordón de <strong>GBA</strong>.</p>
+
+        <p>Tener una o varias rejillas tapadas en tu hogar es una de esas molestias cotidianas que comienzan como un inconveniente menor y pueden transformarse en una urgencia sanitaria en cuestión de horas. Ya sea la pequeña rejilla metálica del baño que no deja bajar el agua de la ducha, o la gran boca de tormenta del jardín que amenaza con inundarte en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong> ante la primera lluvia, este problema indica que la red de desagües superficiales o profundos está saturada. Ignorarlo no es una opción si querés evitar daños graves en la mampostería.</p>
         
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Qué compone un tapón pluvial?</h2>
-        <p>A diferencia del drenaje interno, las rejillas de patio y terraza deben tragar:</p>
-        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Hojas, Polvillo y Escombros:</strong> Tras 4 o 5 tormentas fuertes arrastrando barro sucio, se conforma "cemento de hojas" debajo de las tapas y codos intermedios.</li>
-          <li><strong>Pelo y jabón en flor de ducha:</strong> Las rejillas de boxes de ducha aglutinan enjambres fibrosos casi impenetrables mezclados a esencias grasosas jabonosas.</li>
-          <li><strong>Raíces internas:</strong> Lo más grave. Las enredaderas se alimentan de la humedad rompiendo caños subterráneos y ahorcando la luz de caudal del caño pluvial por dentro.</li>
-        </ul>
+        <p>A diferencia de los inodoros, las rejillas pluviales y las piletas de patio funcionan como "nodos colectores". Son cajas receptoras subterráneas donde convergen múltiples ramales más chicos antes de dirigirse al colector general. Debido a este diseño de convergencia, una rejilla de baño tapada no solo inunda el piso cerámico, sino que también suele impedir que el lavamanos o el bidet descarguen correctamente el agua jabonosa que usás a diario.</p>
         
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Estrategia casera para mantenimiento leve</h2>
-        <p>Primero usa protección mecánica ocular básica (gafas), levanta la placa cromada / acrílico o reja metálica usando un destornillador por las ranuras. Si ves residuos superficiales, saca los restos podridos usando guantes largos plásticos con gancho simple, tirando en una bolsa para tirar a la calle en horas correspondientes a la recolección.</p>
-        <p>Aplica fuertes tiradas en "chorro limpio directo" con manguera a presión buscando desatascar la base del embudo pluvial. Si el agua se reitera a no bajar ni un nivel en minutos... es un diagnóstico de atasco profundo ciego.</p>
-        
+        <p>Para entender la gravedad del asunto, tenés que diferenciar si la falla es interna (cloacal/jabonosa) o externa (meteorológica/tierra). Si como explicamos en nuestro informe sobre qué hacer con tu <a href="/blog/rejilla-patio-tapada-lluvia" style="color:#16A34A;font-weight:bold;text-decoration:underline;">rejilla de patio tapada en plena tormenta</a>, el tapón se origina por exceso de barro, vas a necesitar obligadamente realizar <a href="/destapaciones-pluviales" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones pluviales</a> profundas. Si, por el contrario, es una simple maraña de pelos, podés intentar ciertos métodos manuales controlados.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Identificando el Tipo de Rejilla y su Función</h2>
+        <p>No todas las tapas perforadas del piso cumplen la misma tarea. La "pileta de patio" que tenés en el baño de tu departamento de Caballito cuenta con un sifón interno de plástico, cuya misión vital es retener agua limpia para frenar los malos olores provenientes de la columna central. Esta cámara suele taparse con una masa biológica de jabón endurecido y cabellos humanos enredados en los tornillos interiores.</p>
+
         ${getCtaHtml()}
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Las Rejillas Exteriores y el Lodo Petrificado</h2>
+        <p>Por otro lado, las enormes rejillas de hierro fundido ubicadas en balcones, patios traseros y veredas no poseen sifón. Estas son bocas directas de tormenta diseñadas para absorber caudales inmensos rápidamente. Su mayor enemigo no es la grasa, sino el polvo volador del asfalto urbano, las hojas de los árboles centenarios, la arena, las colillas de cigarrillos y las raíces vegetales intrusas que buscan humedad en los meses de verano seco.</p>
         
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Destapación mecanizada de cañerías para pluviales estancados</h2>
-        <p>Lamentablemente si el nido radica bajo metros incrustado cruzando el jardín hacia la calle o el pulmón ciego bajo pasto de su casa a calle final exterior, recomendamos que nos deriven su incidencia para un procedimiento de hidrojet en redes urbanas, brindado en nuestra solución de <a href="/destapaciones-pluviales" style="color:#16A34A;font-weight:bold;text-decoration:underline;">Destapaciones Pluviales</a>. Realizamos limpiezas completas de codo a codo destrozando tapones ciegos endurecidos de la cañería.</p>
+        <p>Cuando este sedimento inorgánico de la calle se moja con un simple chaparrón suave, no logra lavarse hacia la calle municipal. Por el contrario, se apelmaza, se sedimenta en el fondo del codo de bajada a nivel subterráneo y se seca conformando un bloque duro, impermeable e indestructible que ninguna manguera casera de riego o de canilla tradicional logrará empujar con éxito.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">5 Pasos para Intentar Destapar tu Rejilla Casera</h2>
+        <p>Antes de contratar a una cuadrilla, podés realizar un mantenimiento preventivo y de rescate seguro siguiendo este protocolo de 5 pasos en tu baño o lavadero:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Paso 1: Destornillar la tapa cromada:</strong> Con mucha precaución, quitá los dos tornillitos de la tapa visible. Limpiá con guantes la parte inferior de esa tapa que suele tener pelusas grises fuertemente adheridas.</li>
+          <li><strong>Paso 2: Retirar el cono plástico sifonado:</strong> Muchas rejillas tienen un embudo interior desmontable. Tirá suavemente hacia arriba. Ahí vas a encontrar el 90% del bloqueo de cabellos o jabón apelmazado estancado.</li>
+          <li><strong>Paso 3: Extracción manual de sólidos:</strong> Con la mano enguantada o una pinza de punta fina, sacá toda la masa biológica negra y densa. No la empujes hacia el caño; extraerla hacia arriba es el secreto del éxito.</li>
+          <li><strong>Paso 4: Limpieza con agua caliente focalizada:</strong> Una vez libre de pelos, arrojá lentamente dos litros de agua caliente a temperatura de mate (no hirviendo) para disolver y arrastrar los pequeños restos de crema o shampoo de las paredes plásticas.</li>
+          <li><strong>Paso 5: Armado y prueba hidráulica de rebalse:</strong> Volvé a colocar las piezas en su lugar, atornillá con firmeza y dejá correr la canilla del lavamanos un minuto. Si el nivel no sube, solucionaste un atasco primario y superficial con éxito absoluto.</li>
+        </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuándo Intervenir con Tecnología de Alta Presión</h2>
+        <p>Si la rejilla que desborda es externa (del patio pluvial o jardín) y está atestada de tierra arcillosa y escombros, o si en el baño el agua sube por la rejilla cada vez que usás el lavadero automático, el tapón ya no es superficial ni está a la vista. El bloqueo se alojó varios metros adentro de los ductos subterráneos ciegos del inmueble, y las acciones manuales caseras resultan totalmente obsoletas.</p>
         
+        <p>En este crítico nivel, la solución definitiva es indiscutida: necesitás coordinar una <a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación con hidrojet</a> mecanizada de nuestra flota. Mediante sondas especiales autopropulsadas, se inyectará agua a presiones industriales formidables en el interior oscuro de las cañerías. Este poderoso chorro rotativo, además de disolver y lavar íntegramente la arena calcificada o la gruesa grasa acumulada, expulsa implacablemente todo residuo pesado y tritura las raíces subterráneas, restaurando el drenaje perimetral al cien por ciento.</p>
+
+        <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 2rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Tipo de Rejilla</th>
+                <th style="padding: 1rem; font-weight: 800; color: #f59e0b;">Origen Frecuente del Tapón</th>
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">Intervención Técnica Recomendada</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Rejilla de Baño Interior</td>
+                <td style="padding: 1rem; color: #475569;">Pelos humanos y de mascotas, restos densos de acondicionador y jabón de tocador endurecido en el sifón plástico.</td>
+                <td style="padding: 1rem; color: #475569;">Extracción física manual, limpieza del embudo y uso de modernas sondas de acero flexible para recuperar el diámetro perdido.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Boca Pluvial de Patio/Jardín</td>
+                <td style="padding: 1rem; color: #475569;">Barro muy denso, hojas en descomposición total, finas raíces de árboles vecinos intrusivas y densa arena calcificada subterránea.</td>
+                <td style="padding: 1rem; color: #475569;">Hidrolavado a alta presión (Hidrojet industrial) que desintegre y barra el material pesado inorgánico por rebalse hacia el cordón de calle.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Rejilla Pluvial de Balcón</td>
+                <td style="padding: 1rem; color: #475569;">Pelusas de macetas, tierra de plantas aéreas arrastrada, pelos de barrido o heces sólidas esporádicas de palomas o murciélagos.</td>
+                <td style="padding: 1rem; color: #475569;">Sonda electromecánica delgada en la bajada pluvial para romper vacíos y empujar la masa arcillosa atascada a los niveles inferiores con precaución.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         ${getFaqHtml([
-          {q: "¿Tienen límite de largo de cañería pluvial al trabajar?", a: "Cubrimos caños de muchisimos metros de longitud de fondos extensos o loteos desde entrada cruzando hacia calle sin roturas hasta limpiar al máximo todo arrastre de elementos trabados en los empalmes subterráneos comunes."},
-          {q: "¿Destruyen los cables de raíce superficiales?", a: "Usamos punteras dentadas devoradoras por rotación y corte por choque hidráulico de las motobombas hasta limpiar y perforar los ovillos biológicos."}
+          {q: "¿Tirar un paquete entero de sal gruesa por la rejilla del patio destapa el barro?", a: "Absolutamente no. Es un falso mito antiguo. La sal no logrará bajo ningún término disolver hojas secas ni ablandar lodo petrificado por años. Solo se cristalizará arriba de este tapón, sumándole una dura costra blanca indeseable extra."},
+          {q: "¿Por qué el agua turbia sube por la rejilla de mi ducha cuando lavo ropa en el lavadero de al lado?", a: "El agua busca la salida desesperadamente. Si el colector general inferior subterráneo está colapsado y tapado con sedimento duro, el enorme caudal de tu moderno lavarropas retrocederá sin frenos hacia la primera boca más baja y expuesta libre: tu rejilla en el piso."},
+          {q: "¿Es muy riesgoso o perjudicial introducir por mi propia cuenta un palo largo, fierro o alambre de púas?", a: "Peligrosísimo. Las viejas piezas cónicas plásticas y los añejos empalmes epoxi ocultos estallan ante bruscos golpes físicos fuertes. Perforar el frágil fondo del tacho desencadenará filtraciones gigantescas que arruinarán para siempre el revoque húmedo y pintura del de abajo."},
+          {q: "¿Openagua repara esta clase general de tapones complejos en todo el área de GBA?", a: "Totalmente garantizado. Poseemos furgones equipados y maquinarias tecnológicas plomeras preparadas velozmente para solucionar desobstrucciones hogareñas en baños como formidables inundaciones externas urgentes en inmensas fábricas o patios con celeridad total en tu barrio."}
         ])}
-      
-        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
+
       `
     },
     {
@@ -408,32 +861,74 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Pileta de cocina tapada y llena de agua esperando ayuda técnica - Openagua',
       excerpt: 'Tu bacha expulsa mal olor y no traga el agua: descubrí por qué los palos de escoba rompen todo y cómo abordarlo seguro.',
       content: `
-        <p>La bacha tapada, agua estancada a mitad del escurridor y una baranda espantosa a cloaca inundando tu living... La pileta de la cocina colapsada es un freno catastrófico para la vida hogareña en toda gran ciudad moderna del <strong>AMBA</strong>.</p>
+
+        <p>Que el agua sucia empiece a tardar cada vez más tiempo en irse de la bacha y termines viendo un lago nauseabundo estancado en medio de tus ollas sucias, es sin duda uno de los problemas cotidianos más molestos en cualquier hogar de <strong>CABA</strong> o el cordón residencial del <strong>Gran Buenos Aires</strong>. Cuando enfrentamos el desafío de destapar correctamente la pileta de cocina, el error más fatal es usar químicos abrasivos basados en consejos dudosos.</p>
         
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Causas Críticas: Por qué se tapa la Bacha de Cocina</h2>
-        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Grasa Fría y Aceite:</strong> Aceite de frituras mezclado con jabón líquido frío de las ollas. Actúa como arterias saturadas por colesterol solidificado dentro de las paredes de los sifones debajo mesadas o curvas plásticas chicas iniciales.</li>
-          <li><strong>Café y Yerba:</strong> Extremadamente arenoso. Arrastra partículas sumamente minúsculas pesadas que se aposentan abajo y limitan la velocidad natural de declive, arrastrando a tapón general cruzado luego para aglutinamiento ciego.</li>
-          <li><strong>Fideos o Arroz:</strong> Todo carbohidrato se expande bajo el agua absorbiéndola, bloqueando caños instantáneamente.</li>
-        </ul>
+        <p>A diferencia innegable del cuarto de baño donde el pelo humano molesto y la espuma jabonosa reinan, la obstrucción profunda del lavaplatos o de la bacha doble en tu hogar posee una naturaleza netamente oleosa. Tal cual detallamos fuertemente en nuestras guías técnicas previas explicando exhaustivamente el preocupante tema sobre <a href="/blog/por-que-cocina-huele-a-cloaca" style="color:#16A34A;font-weight:bold;text-decoration:underline;">por qué tu cocina huele literalmente a cloaca</a>, y también en nuestro decálogo preventivo sobre <a href="/blog/que-no-tirar-en-la-pileta-de-cocina" style="color:#16A34A;font-weight:bold;text-decoration:underline;">qué no tirar jamás por la bacha</a>, el tapón aquí se constituye implacablemente por cientos de capas calcificadas superpuestas de gruesa grasa animal solidificada y restos orgánicos pesados.</p>
         
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Prácticas del Peligro Absoluto que NO debes hacer jamás</h2>
-        <p>Destruir el mueble del lavabo bajo mesada es muy sencillo. <strong>El error de meter el palo de escoba o alambres punzantes:</strong> Rompe, perfora las uniones frágiles o codos de plomo blando viejos obligando al uso destructivo y cambio de pieza total perdiendo garantías de material. Además desellando roscas provocándote perdidas fantasma microscópicas pudriendo pisos de muebles oscuros. El químico de "destapañeria magico", puede calentar a niveles que fracturen tu bajada y dañar terriblemente para el cuerpo (respiración tóxica). </p>
-        
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Método Seguro para tu Pileta Obstruida</h2>
-        <p>Vacia con jarras las aguas de la pileta para un secado superficial (hacia baldes cruzados). Luego puedes probar limpiar desenroscando por debajo, poniendo fuentones debajo de la trampa del sifón U. Allí se saca el vaso general atrapador para depurarlo a base simple física.</p>
-        
+        <p>Conseguir de una vez por todas liberar ese paso restringido sin la inoportuna rotura del caño y lograr anular olores putrefactos de forma perenne, requiere una inmediata limpieza profunda que no se supla con mágicas gotas efervescentes. Entender a la perfección la frágil anatomía del sifón inferior debajo de las cacerolas y comprender cuándo y cómo llamar para realizar urgentemente y sin demora importantes <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cañerías especializadas</a> es vital para la preservación absoluta de tu red.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Causas Inminentes: Grasa Solidificada y el Engañoso Sifón</h2>
+        <p>Todo enorme y desastroso problema cloacal comienza levemente con un ligero depósito de densos aceites de cocción arrojados irresponsablemente o restos de puré en los primeros centímetros profundos del caño. El famoso "sifón", esa pieza plástica usualmente blanca en forma de botella que podés observar visualmente debajo de los estantes de tus cacerolas, actúa reteniendo los olores cloacales. Pero esa misma curva en U es la trampa perfecta donde la grasa animal caliente se enfría súbitamente y comienza a cristalizarse y endurecerse en forma de cemento pálido impenetrable.</p>
+
         ${getCtaHtml()}
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">El Peligro y Fracaso de los Ácidos Destapacañerías en Gel</h2>
+        <p>Al encontrarse súbitamente frente a una bacha plateada completamente desbordada a medianoche, el reflejo instintivo suele llevarnos torpemente a volcar una botella negra entera de ácido muriático cáustico y denso. Esto no solo es inofensivo con grasas petrificadas duras que yacen a varios metros en la pared, sino que te expone a generar graves emanaciones asfixiantes y quemaduras químicas severas si el agua salpica de vuelta hacia tu rostro o brazos.</p>
         
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuando el tapón es de Pared Profunda</h2>
-        <p>Si debajo la bacha o la U baja fluye libremente pero se traba todo el canal interno o rebalsa por otra rejilla continua cruzada de planta, el estancamiento excede la reparación casera; necesita de asistencia seria y calificada provista en base firme con nuestras maquinarias de sistema para las <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">Destapaciones Cañerias</a> y ductos hogareños chicos. Un desparramador especial retira desde cocinas hacia exterior tramos ciegos imposibles.</p>
+        <p>Para peor aún, el brutal e inmediato calor exotérmico provocado como reacción por el líquido agresivo quemará inexorablemente al instante fundiendo por completo a todos los delgadísimos y frágiles tramos plásticos, quebrando de tajo letal toda junta o resina epoxi de soporte pegado en los codos. De repente te inunda sin previo aviso el bajo mesada, mojando la preciosa carpintería o el fino aglomerado laminado con asquerosos litros perdidos líquidos inmundos y apestosos.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">5 Tips Caseros Infalibles de Primeros Auxilios Seguros al Lavar Platos</h2>
+        <p>Frente a tapones incipientes en cocinas en pleno GBA y antes de levantar pánico, podés probar cuidadosamente a realizar de inmediato esta útil serie de vitales y medidos pasos de recuperación de flujo sin ocasionar un desastre peor:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>La pava de hirviente solución en la medida justa:</strong> Arrojá cuidadosamente apenas un litro de agua muy caliente con detergente fuerte neutro para intentar derretir puntualmente los depósitos más superficiales de grasas rancias de sartén cerca al codo bajo la rejilla tapada.</li>
+          <li><strong>Bombeo veloz pero contundente con sopapa grande:</strong> Llená levemente el agua con cuatro dedos el fondo sucio, asegurá el mango de una sopapa gruesa y realizá un vertiginoso enérgico bombeado cíclico vertical para agrietar bruscamente al molesto bloqueo suave gelatinoso.</li>
+          <li><strong>Limpieza periódica desarmando tu copita sifón:</strong> Colocá sin pereza un gran balde limpio de fondo directo bajo el mueble a la vista, desenroscá y aflojá muy suavemente las roscas plásticas visibles. Vaciá y barré con guantes toda biomasa de residuos atascados podridos y pelusas del tubo blanco extraíble.</li>
+          <li><strong>Filtros metálicos muy tupidos redondos:</strong> Para evitar esto mañana, instalá firmemente hoy mismo un finísimo barato pero útil sombrerito canasto de malla metálica en tu agujero de caída. Tirá toda diminuta partícula vegetal residual fina de arroz y café orgánico sólido a tu cesto de basura primero.</li>
+          <li><strong>Reciclá aceite viejo en botellas cerradas:</strong> Nunca viertas fluidos pesados, aceite vegetal o grasa tibia en la bacha. Usalo colado y embotellalo seguro para tirarlo a centros de reciclaje urbano de manera ecológica y protegiendo de forma inteligente tus tuberías caseras.</li>
+        </ul>
+
+        <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 2rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Método Casero Intentado</th>
+                <th style="padding: 1rem; font-weight: 800; color: #dc2626;">Riesgo para tu Hogar y Tuberías</th>
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">Eficacia Real e Inmediata Esperada</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Sopapa manual flexible de goma perimetral</td>
+                <td style="padding: 1rem; color: #475569;">Riesgo Nulo. No raya la bacha plateada brillante ni quiebra caños pegados herméticos de abajo del suelo de la red.</td>
+                <td style="padding: 1rem; color: #475569;">Baja a Útil. Empujará un tapón incipiente suelto blando gelatinoso corto, pero la grasa densa y gruesa endurecida del mes pasado opondrá gran resistencia.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Alambre, varilla de hierro de percha duro</td>
+                <td style="padding: 1rem; color: #475569;">Altísimo Riesgo. Terminarás sin remedio en desgarro perforando horadando de forma letal todo el frágil tubo corrugado espiral en PVC oculto en codos y bajada.</td>
+                <td style="padding: 1rem; color: #475569;">Totalmente Inútil. Empujarás peor el fétido residuo de barro hacia el lejano e inaccesible fondo del tubo ciego hondo, apretándolo más fuerte e inalcanzable.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Líquidos destapadores comerciales densos tóxicos</td>
+                <td style="padding: 1rem; color: #475569;">Muy Alto Riesgo. Emite nocivos vapores mortales asfixiantes y puede derretir las uniones de resina quemando con calor intenso los frágiles empalmes a 90 grados.</td>
+                <td style="padding: 1rem; color: #475569;">Casi Nula Eficacia Real. Los químicos rebajados ácidos no son capaces en realidad de disolver tapones endurecidos grandes masivos de grasa animal calcificada gruesa y resistente.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Por Qué la Limpieza Industrial Resuelve Tu Ansiedad</h2>
+        <p>Cuando absolutamente el agua se rehúsa y se niega a bajar por el embudo desbordando tu cocina, y un olor asqueroso a pozo fétido inunda todo tu living, la única solución sensata, valiosa y técnica inteligente es contactar a una cuadrilla experta. Nuestros operadores matriculados no utilizarán nocivos químicos en absoluto. Abordarán el problema introduciendo una delgada sonda electromecánica en acero espiralado rotativo u operando un equipo hidrojet potente de inyección hidráulica directa en agua limpia de red a alta presión perimetral dentro del diámetro de la caja sifónica ciega central debajo de la bacha.</p>
         
+        <p>Con potentes ráfagas o sondas metálicas giratorias de precisión inmensa y constante torrencial perimetral en 360 grados, logramos disolver, desintegrar y barrer la pesada marea estancada, desarmando de raíz la gruesa masa fétida pastosa y la grasa dura calcificada en poquísimos minutos, pulverizándola sin destruir jamás tu instalación domiciliaria empotrada. Al sanear y purificar por hidro-barrido interno continuo el diámetro perfecto de salida, recuperamos en el mismo acto la circulación original limpia del conducto sin romper absolutamente ni una sola mayólica visible ni generar suciedades adicionales al cliente apurado.</p>
+
         ${getFaqHtml([
-          {q: "¿Tiran acido muriático o industrial al limpiar para hacer desobstrucción?", a: "Jamás y prohibido terminantemente. Nuestras resoluciones técnicas abocan 100% de fuerza cinético o hìdrica con sondas acero, cortantes físicas o chorros hiperpresurizados cuidando tu estructura en su integridad absoluta libre de tóxicos químicos perennes."},
-          {q: "¿Cuánto demanda destapar una cocina estandar?", a: "Es veloz: diagnosticamos y en cuestion de pocos minutos de operación sobre rejillas o sifón limpiamos la pared interior tapada cruzada asegurando paso veloz y flujo sonoro natural (vuelve a tragar fuerte rápido)." }
+          {q: "¿El simple chorro de pava hirviendo y vinagre con bicarbonato sirven verdaderamente para destapar y disolver la grasa de una bacha tapada?", a: "Honestamente actúan solo como un muy leve mantenimiento higiénico desodorante superficial, pero si tenés amarrados veinte o treinta centímetros sólidos y duros de densa grasa animal fétida calcificada mezclada con yerba mate a un metro profundo inalcanzable y ciego, la espuma química suave efervescente inofensiva de vinagre no le hará absolutamente nada de efecto para diluirla."},
+          {q: "¿Es obligatoriamente necesario picar o romper la hermosa pared de azulejos si el tapón está estancado muy abajo de la cocina en los caños de piso?", a: "Prácticamente nunca. Nuestras flexibles e infalibles sondas articuladas industriales espiraladas modernas están diseñadas y fabricadas en acero templado exclusivamente para sortear codos ciegos a 90 grados y tubos cerrados curvos finos en U sin la inminente, forzosa o dolorosa necesidad de que tu albañil contratado deba golpear ni picar a mazo tu hermoso porcelanato a la vista en absoluto."},
+          {q: "¿Se pueden destapar caños muy antiguos de hierro fundido de cocina de restaurantes sin dañarlos ni reventarlos en el acto con presión excesiva?", a: "Absolutamente sí. El personal técnico controla la presión por manómetro para adaptarla al delicado e indispensable cuidado perimetral que requiere la estructura del fierro o fibrocemento, barriendo al sarro por pura fricción veloz líquida rotativa pero a salvo cien por cien, evitando la rotura destructiva interna catastrófica de mampostería comercial de abajo."},
+          {q: "¿Prestan servicios de atención para edificios y consorcios comerciales pesados ante desbordes en el GBA zona Norte, Sur y Oeste metropolitano de CABA?", a: "Siempre operativos. Brindamos soporte logístico integral veloz y corporativo tanto para unidades funcionales privadas monoambientes pequeñas afectadas por agua gris en sus mesadas como para administraciones grandes en complejos habitacionales o restaurantes gastronómicos desbordados durante horarios picos de urgencia."}
         ])}
-      
-        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
+
       `
     },
     {
