@@ -104,13 +104,20 @@
     margin-bottom: 60px;
   }
   
-  .hero-btn {
+  /* Usamos alta especificidad para vencer a globals.css */
+  .hero-section .hero-ctas a.hero-btn {
     width: 100% !important;
+    max-width: 100% !important;
     min-width: unset !important;
-    padding: 12px 18px !important;
-    font-size: 15px !important;
-    border-radius: 10px !important;
-    height: 54px !important;
+    margin: 0 !important; /* Resetea el margin: 16px auto 0 auto de globals.css */
+    padding: 14px 22px !important;
+    font-size: 1rem !important;
+    border-radius: 8px !important;
+    height: 56px !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
   }
 }
 
