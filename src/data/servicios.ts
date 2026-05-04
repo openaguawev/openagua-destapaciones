@@ -196,8 +196,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Tengo que desarmar el mueble bajo mesada?", a: "No es necesario. Nuestros técnicos trabajan con cuidado y solo necesitan acceso al sifón o a la boca de acceso más cercana." }
       ],
       {
-        seoTitle: "Destapaciones de cañerías en CABA y GBA | Openagua",
-        seoDescription: "Destapaciones de cañerías en CABA y GBA con herramientas profesionales. Solucionamos bloqueos sin romper. Contactanos al 11 5179-7649.",
+        seoTitle: "Destapaciones de Cañerías Sin Romper | Openagua",
+        seoDescription: "¿Cocina, baño o lavadero sin drenar? Destapamos con sonda e hidrojet sin romper pisos. Diagnóstico sin cargo. CABA y GBA. ☎ 11 5179-7649.",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
           { title: "Diagnóstico Técnico", desc: "Evaluamos el estado de las conexiones internas para aplicar el método de limpieza adecuado según el material del caño." },
@@ -250,8 +250,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Tienen equipos para trabajar en altura?", a: "Contamos con escaleras y herramientas de seguridad para acceder a canaletas en techos y balcones de difícil acceso." }
       ],
       {
-        seoTitle: "Destapaciones pluviales en CABA y GBA | Openagua",
-        seoDescription: "Destapaciones pluviales en CABA y GBA para patios, terrazas y desagües. Eliminamos obstrucciones sin dañar cañerías. Llamanos al 11 5179-7649.",
+        seoTitle: "Destapaciones Pluviales | Evitá Inundaciones | Openagua",
+        seoDescription: "¿Patio o terraza inundada cuando llueve? Destapamos rejillas, canaletas y desagües pluviales el mismo día. Sin romper. CABA y GBA. ☎ 11 5179-7649.",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
           { title: "Diagnóstico de Caída", desc: "Verificamos la pendiente y el estado de los desagües para asegurar que el agua de lluvia evacue correctamente." },
@@ -304,8 +304,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Elimina el sarro por completo?", a: "Sí, el hidrojet es el único método capaz de desprender las incrustaciones de sarro más duras en cañerías de hierro y cemento." }
       ],
       {
-        seoTitle: "Destapaciones con hidrojet en CABA y GBA | Openagua",
-        seoDescription: "Destapaciones con hidrojet en CABA y GBA para cañerías con grasa, sarro o raíces. Limpieza profunda y barrido total sin romper. Consultanos al 11 5179-7649.",
+        seoTitle: "Destapación con Hidrojet | Limpieza Profunda | Openagua",
+        seoDescription: "Eliminamos grasa, sarro y raíces con agua a alta presión. Sin químicos ni roturas. Solución definitiva para cañerías obstruidas. CABA y GBA. ☎ 11 5179-7649.",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
           { title: "Recuperación de Diámetro", desc: "El Hidrojet no solo destapa, sino que barre las paredes del conducto devolviéndole su capacidad de drenaje original." },
