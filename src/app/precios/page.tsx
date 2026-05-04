@@ -120,7 +120,10 @@ export default function PreciosPage() {
 
         {/* MEDIOS DE PAGO */}
         <section className="section-block compact" style={{ textAlign: 'center', backgroundColor: '#f8fafc', padding: '3rem 2rem', borderRadius: '16px', position: 'relative' }}>
-          <h2 className="section-title" style={{ marginBottom: '2rem', textAlign: 'center' }}>Formas de pago</h2>
+          <h2 style={{ fontSize: '2.75rem', fontWeight: 700, marginBottom: '2rem', textAlign: 'center', width: '100%', display: 'block', position: 'relative' }}>
+            Formas de pago
+            <span style={{ content: '', display: 'block', width: '80px', height: '4px', background: '#16A34A', borderRadius: '2px', margin: '12px auto 0 auto' }} />
+          </h2>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem', width: '100%', maxWidth: '300px', margin: '0 auto' }}>
             <div style={{ backgroundColor: '#ffffff', padding: '1rem 1.5rem', borderRadius: '8px', border: '1px solid #e2e8f0', color: '#334155', fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', boxShadow: '0 1px 2px 0 rgba(0,0,0,0.05)', width: '100%' }}>
               💵 Efectivo
