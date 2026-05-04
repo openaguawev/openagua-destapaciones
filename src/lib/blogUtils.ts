@@ -14,9 +14,9 @@ export function getRelatedBlogPosts(barrioName: string): Articulo[] {
 
   let keywords: string[] = [];
   if (altaDensidad.some(b => nameLower.includes(b))) {
-    keywords = ['edificio', 'columna', 'departamento', 'consorcio'];
+    keywords = ['edificio', 'columna', 'departamento', 'consorcio', 'cámara', 'inspección'];
   } else if (bajaDensidad.some(b => nameLower.includes(b))) {
-    keywords = ['casa', 'patio', 'rejilla', 'pluvial', 'raíces'];
+    keywords = ['casa', 'patio', 'rejilla', 'pluvial', 'raíces', 'caño'];
   }
 
   // Filtrar artículos que coincidan con las keywords
