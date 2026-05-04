@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Hero from '@/components/Hero';
 import Diferenciales from '@/components/Diferenciales';
 import Servicios from '@/components/Servicios';
@@ -8,6 +9,12 @@ import Resenas from '@/components/Resenas';
 import FAQ from '@/components/FAQ';
 import Contacto from '@/components/Contacto';
 import FadeIn from '@/components/FadeIn';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://www.destapacionesopenagua.com.ar',
+  },
+};
 
 export default function Home() {
   return (

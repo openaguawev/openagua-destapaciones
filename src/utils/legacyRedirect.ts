@@ -25,7 +25,8 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
     'limpieza-columnas-edificios': 'mantenimientos-preventivos',
     'zona-norte': 'zonas/zona-norte',
     'zona-sur': 'zonas/zona-sur',
-    'zona-oeste': 'zonas/zona-oeste'
+    'zona-oeste': 'zonas/zona-oeste',
+    'destapaciones-precio-por-metro': 'precios'
   };
   
   // Evitar bucles: si el path ya coincide con un slug de servicio de destino, no redirigir.

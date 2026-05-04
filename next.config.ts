@@ -5,6 +5,33 @@ const nextConfig: NextConfig = {
   trailingSlash: false,
   async redirects() {
     return [
+      // URLs legacy de WordPress — resuelven en UN solo salto (evita cadena trailing-slash + legacyRedirect)
+      {
+        source: '/diferencias-canerias-cloacales-pluviales/',
+        destination: '/blog/diferencias-canerias-cloacales-pluviales',
+        permanent: true,
+      },
+      {
+        source: '/como-destapar-rejillas/',
+        destination: '/blog/como-destapar-rejillas',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-precio-por-metro/',
+        destination: '/precios',
+        permanent: true,
+      },
+      {
+        source: '/solucion-problemas-cloacas-buenos-aires/',
+        destination: '/destapaciones-cloacas',
+        permanent: true,
+      },
+      {
+        source: '/zona-norte/',
+        destination: '/zonas/zona-norte',
+        permanent: true,
+      },
+      // Redirect no-www → www
       {
         source: '/:path*',
         has: [
