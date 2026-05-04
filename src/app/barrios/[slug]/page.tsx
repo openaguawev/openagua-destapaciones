@@ -28,10 +28,12 @@ export async function generateMetadata({ params }: Props) {
   // Descriptions variadas por hash del nombre
   const dHash = barrio.name.split('').reduce((a, c) => a + c.charCodeAt(0), 0);
   const descriptions = [
-    `Destapaciones en ${barrio.name} con diagnóstico preciso y sin romper. Sonda e hidrojet. 📞 11 5179-7649`,
-    `Solucionamos cloacas y cañerías en ${barrio.name} con herramientas profesionales. Visitas en el día. 📞 11 5179-7649`,
-    `Servicio de destapaciones en ${barrio.name} para casas y edificios. Trabajo limpio y efectivo. 📞 11 5179-7649`,
-    `Destapamos caños, cloacas y pluviales en ${barrio.name}. Presupuesto online y atención inmediata. 📞 11 5179-7649`,
+    `¿Necesitás destapaciones en ${barrio.name}? Resolvemos cloacas, cañerías y pluviales hoy mismo. Sin romper. ☎ 11 5179-7649`,
+    `Servicio de destapaciones en ${barrio.name} con sonda e hidrojet. Llegamos en el día. +332 clientes satisfechos. ☎ 11 5179-7649`,
+    `Destapaciones urgentes en ${barrio.name}. Cloacas, cañerías y pluviales sin romper pisos. Presupuesto sin cargo. ☎ 11 5179-7649`,
+    `Destapamos cloacas y cañerías en ${barrio.name}. Diagnóstico preciso, trabajo limpio y garantizado. ☎ 11 5179-7649`,
+    `Problemas de cloaca en ${barrio.name}? Solucionamos en el día con máquinas profesionales. 30 años de experiencia. ☎ 11 5179-7649`,
+    `Destapaciones en ${barrio.name} para casas, departamentos y edificios. Atención inmediata. Sin romper. ☎ 11 5179-7649`,
   ];
 
   const seoTitle = `Destapaciones en ${barrio.name} | Openagua`;
