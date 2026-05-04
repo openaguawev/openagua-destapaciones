@@ -126,7 +126,6 @@ export default async function BarrioPage({ params }: Props) {
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Inicio", item: "https://www.destapacionesopenagua.com.ar" },
-    { name: "Barrios", item: "https://www.destapacionesopenagua.com.ar/barrios" },
     { name: `Destapaciones en ${barrio.name}`, item: `https://www.destapacionesopenagua.com.ar/barrios/${barrio.slug}` }
   ]);
 
