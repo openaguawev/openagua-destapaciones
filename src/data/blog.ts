@@ -368,6 +368,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2024-05-10',
       updatedAt: '2024-05-10',
       title: 'Video Inspección: Cómo saber si tu caño está roto sin romper el piso',
+      seoTitle: 'Cómo Saber si un Caño Está Roto Sin Romper el Piso',
       image: '/img/video inspeccion.jpg',
       alt: 'Video inspección de cañerías rotas sin romper el piso en CABA y GBA - Openagua',
       excerpt: 'Evitá meses de albañilería cara usando cámaras cloacales.',
@@ -725,9 +726,10 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2024-10-10',
       updatedAt: '2026-05-04',
       title: 'Cómo destapar un inodoro: soluciones caseras y cuidados urgentes',
+      seoTitle: 'Cómo Destapar un Inodoro: Métodos Caseros Seguros',
       image: '/img/destapando_un_inodoro.jpg',
       alt: 'Destapación de inodoro con máquina de sonda electromecánica - Openagua',
-      excerpt: 'Conocé los métodos más efectivos para destapar tu inodoro tapado rápidamente y sin llamar a un plomero a la primera.',
+      excerpt: 'Guía paso a paso para destapar el inodoro en casa. Métodos seguros y cuándo necesitás un profesional.',
       content: `
 
         <p>Encontrarse con el inodoro tapado es, indiscutiblemente, una de las situaciones domésticas más estresantes y paralizantes que cualquier propietario o inquilino en <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong> puede experimentar. El baño queda automáticamente inhabilitado, el olor comienza a esparcirse por el pasillo y el pánico a que todo se desborde al piso genera una ansiedad tremenda. Sin embargo, no todos los bloqueos son catástrofes irreversibles; entender la mecánica del atasco es el primer paso para no empeorar las cosas.</p>
@@ -883,9 +885,10 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2024-12-10',
       updatedAt: '2026-05-04',
       title: 'Cómo destapar la pileta de cocina sin dañar los caños',
+      seoTitle: 'Cómo Destapar la Pileta de Cocina: Métodos Caseros',
       image: '/img/destapando cocina.jpg',
       alt: 'Pileta de cocina tapada y llena de agua esperando ayuda técnica - Openagua',
-      excerpt: 'Tu bacha expulsa mal olor y no traga el agua: descubrí por qué los palos de escoba rompen todo y cómo abordarlo seguro.',
+      excerpt: 'Métodos caseros seguros para destapar la bacha de cocina. Cuándo intentarlo vos mismo y cuándo llamar a un profesional.',
       content: `
 
         <p>Que el agua sucia empiece a tardar cada vez más tiempo en irse de la bacha y termines viendo un lago nauseabundo estancado en medio de tus ollas sucias, es sin duda uno de los problemas cotidianos más molestos en cualquier hogar de <strong>CABA</strong> o el cordón residencial del <strong>Gran Buenos Aires</strong>. Cuando enfrentamos el desafío de destapar correctamente la pileta de cocina, el error más fatal es usar químicos abrasivos basados en consejos dudosos.</p>
