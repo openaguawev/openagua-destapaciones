@@ -90,7 +90,42 @@ export default async function BlogPost({ params }: Props) {
         />
       </div>
       
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      {(() => {
+        const midIndex = Math.floor(post.content.length / 2);
+        let splitIndex = post.content.indexOf('</p>', midIndex);
+        if (splitIndex === -1) {
+          splitIndex = post.content.indexOf('</p>'); // fallback
+        }
+        if (splitIndex !== -1) {
+          splitIndex += 4; // include the </p>
+        } else {
+          splitIndex = midIndex;
+        }
+
+        const contentPart1 = post.content.substring(0, splitIndex);
+        const contentPart2 = post.content.substring(splitIndex);
+
+        const ctaMiddleHtml = `
+<div style="margin: 2.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, #f0fdf4, #dcfce7); border-radius: 12px; text-align: center;">
+  <p style="font-weight: 700; color: #166534; font-size: 1.1rem; margin-bottom: 0.75rem;">
+    ¿Tenés este problema ahora mismo?
+  </p>
+  <p style="color: #475569; margin-bottom: 1rem; font-size: 0.95rem;">
+    Te respondemos en minutos. Sin compromiso.
+  </p>
+  <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20necesito%20ayuda" target="_blank" rel="noopener noreferrer" style="background: #25D366; color: white; padding: 12px 28px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block;">
+    Consultá por WhatsApp ahora
+  </a>
+</div>`;
+
+        return (
+          <>
+            <div dangerouslySetInnerHTML={{ __html: contentPart1 }} />
+            <div dangerouslySetInnerHTML={{ __html: ctaMiddleHtml }} />
+            <div dangerouslySetInnerHTML={{ __html: contentPart2 }} />
+          </>
+        );
+      })()}
       
       <div style={{ marginTop: '3.5rem', paddingTop: '2.5rem', borderTop: '2px solid #e2e8f0', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
         <h3 style={{ fontSize: '1.35rem', color: '#0f172a', fontWeight: 800 }}>Soluciones profesionales recomendadas</h3>

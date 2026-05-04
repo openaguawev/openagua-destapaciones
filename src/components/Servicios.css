@@ -129,3 +129,16 @@
     font-size: 1.1rem;
   }
 }
+
+.servicios-mobile-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .servicios-mobile-toggle {
+    display: block;
+  }
+  .hidden-mobile {
+    display: none !important;
+  }
+}

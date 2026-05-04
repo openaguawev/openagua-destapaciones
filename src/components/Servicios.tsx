@@ -1,9 +1,11 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Script from 'next/script';
 import './Servicios.css';
 
 export default function Servicios() {
+  const [showAllMobile, setShowAllMobile] = useState(false);
   const servicios = [
     {
       title: "Destapaciones con máquinas",
@@ -78,8 +80,10 @@ export default function Servicios() {
           Realizamos destapaciones con máquinas, hidrojet y video inspección en CABA, Zona Oeste y alrededores.
         </p>
         <div className="servicios-grid">
-          {servicios.map((s, idx) => (
-            <Link href={s.link} key={idx} className="servicio-card">
+          {servicios.map((s, idx) => {
+            const isHiddenMobile = !showAllMobile && (s.title === "Desagote de Sótanos" || s.title === "Mantenimientos Preventivos" || s.title === "Limpieza de Cámaras Sépticas");
+            return (
+            <Link href={s.link} key={idx} className={`servicio-card ${isHiddenMobile ? 'hidden-mobile' : ''}`}>
               <div className="servicio-icon-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="servicio-icon">
                   {s.icon}
@@ -91,7 +95,15 @@ export default function Servicios() {
                 {s.btnText}
               </span>
             </Link>
-          ))}
+          )})}
+        </div>
+        <div className="servicios-mobile-toggle">
+          <button 
+            onClick={() => setShowAllMobile(!showAllMobile)}
+            style={{ backgroundColor: '#16A34A', color: 'white', padding: '12px 24px', borderRadius: '8px', border: 'none', fontWeight: 'bold', width: '100%', marginTop: '1rem', cursor: 'pointer' }}
+          >
+            {showAllMobile ? 'Ver menos ↑' : 'Ver todos los servicios ↓'}
+          </button>
         </div>
       </div>
       

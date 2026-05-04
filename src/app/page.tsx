@@ -7,18 +7,19 @@ import NuestrosTrabajos from '@/components/NuestrosTrabajos';
 import Resenas from '@/components/Resenas';
 import FAQ from '@/components/FAQ';
 import Contacto from '@/components/Contacto';
+import FadeIn from '@/components/FadeIn';
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <Diferenciales />
-      <Servicios />
-      <Zonas />
-      <ComoTrabajamos />
+      <FadeIn delay={0}><Servicios /></FadeIn>
+      <FadeIn delay={100}><Zonas /></FadeIn>
+      <FadeIn delay={0}><ComoTrabajamos /></FadeIn>
       <NuestrosTrabajos />
-      <Resenas />
-      <FAQ />
+      <FadeIn delay={100}><Resenas /></FadeIn>
+      <FadeIn delay={0}><FAQ /></FadeIn>
       <Contacto />
     </main>
   );

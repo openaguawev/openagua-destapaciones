@@ -1,7 +1,7 @@
 .floating-btn {
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -14,8 +14,8 @@
 }
 
 .floating-btn svg {
-  width: 26px !important;
-  height: 26px !important;
+  width: 31px !important;
+  height: 31px !important;
 }
 
 .floating-btn:hover {
@@ -35,8 +35,8 @@
 
 @media (max-width: 768px) {
   .floating-btn {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     bottom: 20px;
   }
   
