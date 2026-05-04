@@ -1,7 +1,7 @@
 /* Omitiremos tailwind ya que vamos con Vanilla CSS explícito como pidió el prompt: "Vanilla CSS para maximum flexibility" */
 :root {
   --color-primary: #0F172A; /* Azul oscuro */
-  --color-cta-green: #16A34A; /* Verde para botones */
+  --color-cta-green: #15803D; /* Verde para botones (accesible) */
   --color-cta-hover: #15803d;
   --color-bg-light: #F8FAFC;
   --color-bg-white: #FFFFFF;

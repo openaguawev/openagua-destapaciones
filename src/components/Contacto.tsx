@@ -62,22 +62,22 @@ export default function Contacto({ initialService = '' }: { initialService?: str
               <input type="hidden" name="_captcha" value="false" />
               <div className="form-group">
                 <label htmlFor="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+                <input type="text" id="nombre" name="nombre" required aria-required="true" placeholder="Tu nombre" />
               </div>
               
               <div className="form-group">
                 <label htmlFor="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de teléfono" />
+                <input type="tel" id="telefono" name="telefono" required aria-required="true" placeholder="Tu número de teléfono" />
               </div>
               
               <div className="form-group">
                 <label htmlFor="direccion">Dirección (Localidad)</label>
-                <input type="text" id="direccion" name="direccion" required placeholder="Ej: Palermo, CABA" />
+                <input type="text" id="direccion" name="direccion" required aria-required="true" placeholder="Ej: Palermo, CABA" />
               </div>
               
               <div className="form-group">
                 <label htmlFor="servicio">Servicio a consultar</label>
-                <select id="servicio" name="servicio" required defaultValue={initialService}>
+                <select id="servicio" name="servicio" required aria-required="true" defaultValue={initialService}>
                   <option value="" disabled>Seleccioná una opción...</option>
                   <option value="Destapación de Cloacas">Destapación de Cloacas</option>
                   <option value="Destapación de Cañerías">Destapaciones de Cañerías</option>
@@ -92,7 +92,7 @@ export default function Contacto({ initialService = '' }: { initialService?: str
               
               <div className="form-group">
                 <label htmlFor="descripcion">Descripción del problema</label>
-                <textarea id="descripcion" name="descripcion" rows={4} required placeholder="Contanos brevemente qué sucede..."></textarea>
+                <textarea id="descripcion" name="descripcion" rows={4} required aria-required="true" placeholder="Contanos brevemente qué sucede..."></textarea>
               </div>
               
               <button type="submit" className="btn-primary form-submit" disabled={status === 'sending'}>

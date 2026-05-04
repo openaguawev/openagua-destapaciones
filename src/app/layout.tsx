@@ -60,6 +60,7 @@ import Footer from '@/components/Footer';
 import FloatingButtons from '@/components/FloatingButtons';
 import Script from 'next/script';
 import LocalBusinessSchema from '@/components/LocalBusinessSchema';
+import SkipLink from '@/components/SkipLink';
 
 export default function RootLayout({
   children,
@@ -97,6 +98,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <SkipLink />
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-P8F23J7N"

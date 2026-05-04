@@ -11,7 +11,7 @@ import FadeIn from '@/components/FadeIn';
 
 export default function Home() {
   return (
-    <main>
+    <main id="main-content">
       <Hero />
       <Diferenciales />
       <FadeIn delay={0}><Servicios /></FadeIn>

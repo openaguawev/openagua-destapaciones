@@ -35,14 +35,21 @@ export default function Navbar() {
             </a>
           </div>
           
-          <div className="mobile-menu-btn" onClick={toggleMenu} role="button" aria-label="Open mobile menu">
+          <button 
+            type="button"
+            className="mobile-menu-btn" 
+            onClick={toggleMenu} 
+            aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
+          >
             <span>☰</span>
-          </div>
+          </button>
         </div>
       </header>
 
       {/* Full Screen Mobile Overlay Menu */}
-      <div className={`mobile-overlay ${isOpen ? 'open' : ''}`}>
+      <div id="mobile-menu" className={`mobile-overlay ${isOpen ? 'open' : ''}`}>
         <button className="mobile-close-btn" onClick={closeMenu} aria-label="Close mobile menu">
           ✕
         </button>

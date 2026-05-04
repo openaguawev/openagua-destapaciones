@@ -74,11 +74,12 @@ export default function FAQ() {
                 className="faq-question" 
                 onClick={() => toggleOpen(idx)}
                 aria-expanded={openIdx === idx}
+                aria-controls={`faq-answer-${idx}`}
               >
                 {faq.q}
                 <span className="faq-toggle">+</span>
               </button>
-              <div className="faq-answer">
+              <div id={`faq-answer-${idx}`} role="region" className="faq-answer">
                 <p>{faq.a}</p>
               </div>
             </div>
