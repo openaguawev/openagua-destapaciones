@@ -31,6 +31,7 @@ export default function Footer() {
             <li><Link href="/zonas/zona-norte" title="Cobertura en Zona Norte">Zona Norte</Link></li>
             <li><Link href="/zonas/zona-oeste" title="Cobertura en Zona Oeste">Zona Oeste</Link></li>
             <li><Link href="/zonas/zona-sur" title="Cobertura en Zona Sur">Zona Sur</Link></li>
+            <li><Link href="/nosotros" title="Quiénes somos - Openagua">Quiénes somos</Link></li>
           </ul>
         </div>
         <div className="footer-links">

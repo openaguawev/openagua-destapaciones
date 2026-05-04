@@ -28,7 +28,7 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     nombre: 'Caballito',
     tipo: 'barrio con perfil residencial y comercios sobre las avenidas principales',
     problemas: ['cloacas tapadas por raíces que ingresan en juntas', 'cañerías antiguas con pérdida de pendiente', 'inodoros con retorno de agua'],
-    propiedades: ['departamentos en edificios de más de 30 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
+    propiedades: ['departamentos en edificios de más de 10 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
   },
   'destapaciones-boedo': {
     nombre: 'Boedo',
@@ -52,7 +52,7 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     nombre: 'Parque Chacabuco',
     tipo: 'zona predominantemente residencial con edificios de mediana altura',
     problemas: ['obstrucciones en columnas principales de edificios', 'piletas de lavadero tapadas', 'rejillas intermedias con sedimento'],
-    propiedades: ['departamentos en edificios de más de 30 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
+    propiedades: ['departamentos en edificios de más de 10 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
   },
   'destapaciones-saavedra': {
     nombre: 'Saavedra',
@@ -76,7 +76,7 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     nombre: 'Almagro',
     tipo: 'barrio con perfil residencial y comercios sobre las avenidas principales',
     problemas: ['desbordes en baños por papeles y toallitas', 'bajadas pluviales con hojas y mugre', 'caños de cocina con grasa solidificada'],
-    propiedades: ['departamentos en edificios de más de 30 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
+    propiedades: ['departamentos en edificios de más de 10 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
   },
   'destapaciones-la-boca': {
     nombre: 'La Boca',
@@ -124,7 +124,7 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     nombre: 'Versalles',
     tipo: 'zona residencial consolidada con infraestructura sanitaria de larga data',
     problemas: ['pluviales obstruidos por hojas de árboles añosos', 'cañerías con contrapendiente por movimiento de suelo', 'rejillas de patio con barro compactado'],
-    propiedades: ['departamentos en edificios de más de 30 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
+    propiedades: ['departamentos en edificios de más de 10 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
   },
   'destapaciones-agronomia': {
     nombre: 'Agronomia',
@@ -148,7 +148,7 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     nombre: 'Parque Patricios',
     tipo: 'zona predominantemente residencial con edificios de mediana altura',
     problemas: ['cloacas tapadas por raíces que ingresan en juntas', 'cañerías antiguas con pérdida de pendiente', 'inodoros con retorno de agua'],
-    propiedades: ['departamentos en edificios de más de 30 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
+    propiedades: ['departamentos en edificios de más de 10 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
   },
   'destapaciones-san-nicolas': {
     nombre: 'San Nicolas',
@@ -172,7 +172,7 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     nombre: 'Coghlan',
     tipo: 'zona residencial consolidada con infraestructura sanitaria de larga data',
     problemas: ['sarro acumulado en columnas de bajada', 'rejillas de cocina bloqueadas por grasa', 'cañerías de plomo deterioradas'],
-    propiedades: ['departamentos en edificios de más de 30 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
+    propiedades: ['departamentos en edificios de más de 10 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
   },
   'destapaciones-liniers': {
     nombre: 'Liniers',
@@ -220,7 +220,7 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     nombre: 'Villa Crespo',
     tipo: 'zona residencial consolidada con infraestructura sanitaria de larga data',
     problemas: ['obstrucciones en columnas principales de edificios', 'piletas de lavadero tapadas', 'rejillas intermedias con sedimento'],
-    propiedades: ['departamentos en edificios de más de 30 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
+    propiedades: ['departamentos en edificios de más de 10 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
   },
   'destapaciones-mataderos': {
     nombre: 'Mataderos',
@@ -268,7 +268,7 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     nombre: 'Villa del Parque',
     tipo: 'zona residencial consolidada con infraestructura sanitaria de larga data',
     problemas: ['desbordes en baños por papeles y toallitas', 'bajadas pluviales con hojas y mugre', 'caños de cocina con grasa solidificada'],
-    propiedades: ['departamentos en edificios de más de 30 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
+    propiedades: ['departamentos en edificios de más de 10 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
   },
   'destapaciones-villa-pueyrredon': {
     nombre: 'Villa Pueyrredon',
@@ -292,7 +292,7 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     nombre: 'Balvanera',
     tipo: 'barrio con perfil residencial y comercios sobre las avenidas principales',
     problemas: ['cloacas tapadas por raíces que ingresan en juntas', 'cañerías antiguas con pérdida de pendiente', 'inodoros con retorno de agua'],
-    propiedades: ['departamentos en edificios de más de 30 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
+    propiedades: ['departamentos en edificios de más de 10 años', 'locales comerciales sobre avenidas', 'PH y casas tipo chorizo'],
   },
   'destapaciones-villa-riachuelo': {
     nombre: 'Villa Riachuelo',

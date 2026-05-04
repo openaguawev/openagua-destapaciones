@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props) {
     `Servicio de destapaciones en ${barrio.name} con sonda e hidrojet. Llegamos en el día. +332 clientes satisfechos. ☎ 11 5179-7649`,
     `Destapaciones urgentes en ${barrio.name}. Cloacas, cañerías y pluviales sin romper pisos. Presupuesto sin cargo. ☎ 11 5179-7649`,
     `Destapamos cloacas y cañerías en ${barrio.name}. Diagnóstico preciso, trabajo limpio y garantizado. ☎ 11 5179-7649`,
-    `Problemas de cloaca en ${barrio.name}? Solucionamos en el día con máquinas profesionales. 30 años de experiencia. ☎ 11 5179-7649`,
+    `Problemas de cloaca en ${barrio.name}? Solucionamos en el día con máquinas profesionales. más de 10 años de experiencia. ☎ 11 5179-7649`,
     `Destapaciones en ${barrio.name} para casas, departamentos y edificios. Atención inmediata. Sin romper. ☎ 11 5179-7649`,
   ];
 

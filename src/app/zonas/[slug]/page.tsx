@@ -52,7 +52,7 @@ const zonaSeoContent: Record<string, {
       'Las cañerías de esta zona son en su mayoría de PVC y polipropileno, pero en propiedades de más de 40 años es común encontrar ramales de plomo o hierro fundido que necesitan mantenimiento especial para no dañarlos durante la destapación.',
     ],
     servicios: 'Los servicios más solicitados en Zona Oeste son las destapaciones de cloacas y cañerías para uso doméstico, el mantenimiento de graseras para restaurantes y comercios gastronómicos, y la limpieza preventiva con hidrojet para consorcios y edificios. También somos el servicio de referencia para urgencias en toda la zona.',
-    clientes: 'Atendemos particulares, inquilinos, comercios, restaurantes, industrias livianas y administraciones de edificios en toda la Zona Oeste. Somos el servicio de destapaciones más conocido del corredor oeste gracias a más de 30 años de trabajo en la zona.',
+    clientes: 'Atendemos particulares, inquilinos, comercios, restaurantes, industrias livianas y administraciones de edificios en toda la Zona Oeste. Somos el servicio de destapaciones más conocido del corredor oeste gracias a más de 10 años de trabajo en la zona.',
     cierre: 'En Zona Oeste somos locales. Conocemos cada barrio, cada tipo de construcción y cada problema típico de la zona. Contactanos y te resolvemos el problema el mismo día.',
   },
   'zona-sur': {

@@ -155,7 +155,7 @@ export const getServicios = (): ServicioData[] => {
       ],
       {
         seoTitle: "Destapaciones de Cloacas Urgentes | Llegamos en 60 min | Openagua",
-        seoDescription: "¿Cloaca tapada o rebalsando? Resolvemos hoy mismo sin romper. Más de 30 años de experiencia. 332 reseñas con 4.9★. CABA y GBA. ☎ 11 5179-7649.",
+        seoDescription: "¿Cloaca tapada o rebalsando? Resolvemos hoy mismo sin romper. Más de 10 años de experiencia. 332 reseñas con 4.9★. CABA y GBA. ☎ 11 5179-7649.",
         benefitsTitle: "Especialistas en Destapaciones de Cloacas",
         benefits: [
           { title: "No esperes días. Lo resolvemos hoy.", desc: "Recuperá la normalidad de tu baño y cocina en pocas horas con nuestro servicio de urgencias 24hs." },
