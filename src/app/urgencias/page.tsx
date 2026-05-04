@@ -42,7 +42,7 @@ export default function UrgenciasPage() {
               Llamar ahora
             </a>
           </div>
-          <div style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center' }}>
+          <div className="urgencias-badge-container" style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center' }}>
             <span className="cta-badge" style={{ display: 'inline-block' }}>Lunes a Viernes 8-19hs | Sábados 8-13hs</span>
             <span style={{ fontSize: '0.85rem', color: '#cbd5e1' }}>Fuera de horario coordinamos tu turno para la primera salida disponible</span>
           </div>
@@ -110,7 +110,7 @@ export default function UrgenciasPage() {
         </section>
 
         {/* ZONAS */}
-        <section className="section-block compact" style={{ paddingBottom: '3rem' }}>
+        <section className="section-block compact zones-section-urgencias" style={{ paddingBottom: '3rem' }}>
           <h2 className="section-title">Llegamos rápido a toda la zona</h2>
           <p style={{ textAlign: 'center', lineHeight: '1.8' }}>
             <strong>CABA completa</strong> | <strong>Zona Oeste:</strong> Ramos Mejía, Morón, Castelar, Ituzaingó, Hurlingham | <strong>Zona Norte:</strong> San Isidro, Vicente López, Olivos, Martínez | <strong>Zona Sur:</strong> Avellaneda, Lanús, Lomas de Zamora

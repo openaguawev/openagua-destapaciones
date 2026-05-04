@@ -419,4 +419,56 @@ details[open] .faq-arrow {
   .cta-title {
     font-size: 1.75rem;
   }
+
+  /* 🚑 AJUSTES URGENCIAS */
+  .servicio-hero .hero-ctas {
+    flex-direction: column !important;
+    gap: 16px !important;
+    width: 100% !important;
+    max-width: 400px !important;
+    margin: 2rem auto 0 auto !important;
+  }
+
+  .servicio-hero .hero-btn {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: unset !important;
+    margin: 0 !important;
+    padding: 14px 22px !important;
+    font-size: 1rem !important;
+    border-radius: 8px !important;
+    height: 56px !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    font-weight: 700 !important;
+  }
+
+  .urgencias-badge-container {
+    margin-bottom: 2rem !important;
+  }
+
+  .zones-section-urgencias {
+    margin-top: 2rem !important;
+  }
+
+  /* 💰 AJUSTES PRECIOS */
+  .precios-detail-section {
+    margin-top: 2rem !important;
+  }
+  
+  .precios-detail-section .section-title {
+    text-align: center !important;
+  }
+
+  .precios-faq-section {
+    margin-top: 1rem !important; /* Reducido de 2.5rem/3.5rem por defecto */
+    padding-top: 0 !important;
+  }
+
+  .precios-faq-section .section-title {
+    text-align: center !important;
+    margin-top: 0 !important;
+  }
 }

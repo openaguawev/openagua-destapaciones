@@ -98,7 +98,7 @@ export default function PreciosPage() {
         </section>
 
         {/* INTERLINKING SERVICIOS — SEO */}
-        <section className="section-block compact" style={{ paddingBottom: '2rem' }}>
+        <section className="section-block compact precios-detail-section" style={{ paddingBottom: '2rem' }}>
           <h2 className="section-title" style={{ marginBottom: '1.5rem' }}>Ver detalle de cada servicio</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '0.75rem' }}>
             {[
@@ -177,7 +177,7 @@ export default function PreciosPage() {
         </section>
 
         {/* FAQ */}
-        <section className="section-block compact">
+        <section className="section-block compact precios-faq-section">
           <h2 className="section-title">Preguntas frecuentes sobre precios</h2>
           <div className="faq-list">
             <details className="faq-item">
