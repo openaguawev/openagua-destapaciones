@@ -120,15 +120,15 @@ export default function PreciosPage() {
 
         {/* MEDIOS DE PAGO */}
         <section className="section-block compact" style={{ textAlign: 'center', backgroundColor: '#f8fafc', padding: '3rem 2rem', borderRadius: '16px' }}>
-          <h2 className="section-title" style={{ marginBottom: '2rem' }}>Formas de pago</h2>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '1rem', maxWidth: '600px', margin: '0 auto' }}>
-            <div style={{ backgroundColor: '#ffffff', padding: '1rem 1.5rem', borderRadius: '8px', border: '1px solid #e2e8f0', color: '#334155', fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)', minWidth: '160px', flex: '1 1 160px' }}>
+          <h2 className="section-title" style={{ marginBottom: '2rem', textAlign: 'center' }}>Formas de pago</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem', width: '100%', maxWidth: '300px', margin: '0 auto' }}>
+            <div style={{ backgroundColor: '#ffffff', padding: '1rem 1.5rem', borderRadius: '8px', border: '1px solid #e2e8f0', color: '#334155', fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', boxShadow: '0 1px 2px 0 rgba(0,0,0,0.05)', width: '100%' }}>
               💵 Efectivo
             </div>
-            <div style={{ backgroundColor: '#ffffff', padding: '1rem 1.5rem', borderRadius: '8px', border: '1px solid #e2e8f0', color: '#334155', fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)', minWidth: '160px', flex: '1 1 160px' }}>
+            <div style={{ backgroundColor: '#ffffff', padding: '1rem 1.5rem', borderRadius: '8px', border: '1px solid #e2e8f0', color: '#334155', fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', boxShadow: '0 1px 2px 0 rgba(0,0,0,0.05)', width: '100%' }}>
               🏦 Transferencia
             </div>
-            <div style={{ backgroundColor: '#ffffff', padding: '1rem 1.5rem', borderRadius: '8px', border: '1px solid #e2e8f0', color: '#334155', fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)', minWidth: '160px', flex: '1 1 160px' }}>
+            <div style={{ backgroundColor: '#ffffff', padding: '1rem 1.5rem', borderRadius: '8px', border: '1px solid #e2e8f0', color: '#334155', fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', boxShadow: '0 1px 2px 0 rgba(0,0,0,0.05)', width: '100%' }}>
               💳 Tarjetas
             </div>
           </div>
