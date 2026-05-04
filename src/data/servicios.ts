@@ -154,8 +154,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Cómo ven el estado del caño?", a: "Si el problema es recurrente, realizamos una video inspección de cañerías para detectar roturas o fallas estructurales sin necesidad de excavar." }
       ],
       {
-        seoTitle: "Destapaciones de cloacas en CABA y GBA | Openagua",
-        seoDescription: "Destapaciones de cloacas en CABA y GBA con diagnóstico preciso y sin romper. Soluciones reales y rápidas. Llamanos al 11 5179-7649.",
+        seoTitle: "Destapaciones de Cloacas Urgentes | Llegamos en 60 min | Openagua",
+        seoDescription: "¿Cloaca tapada o rebalsando? Resolvemos hoy mismo sin romper. Más de 30 años de experiencia. 332 reseñas con 4.9★. CABA y GBA. ☎ 11 5179-7649.",
         benefitsTitle: "Especialistas en Destapaciones de Cloacas",
         benefits: [
           { title: "No esperes días. Lo resolvemos hoy.", desc: "Recuperá la normalidad de tu baño y cocina en pocas horas con nuestro servicio de urgencias 24hs." },
@@ -358,8 +358,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Hasta cuántos metros llega la cámara?", a: "Nuestros equipos tienen sondas de hasta 30 metros de longitud, cubriendo la mayoría de las redes domiciliarias y comerciales." }
       ],
       {
-        seoTitle: "Video inspección de cañerías en CABA y GBA | Openagua",
-        seoDescription: "Video inspección de cañerías en CABA y GBA para detectar problemas sin romper. Diagnóstico exacto en el momento. Llamanos al 11 5179-7649.",
+        seoTitle: "Video Inspección de Cañerías con Cámara HD | Sin Romper | Openagua",
+        seoDescription: "Inspeccionamos tus cañerías con cámara HD sin romper pisos ni paredes. Detectamos roturas, raíces y obstrucciones al instante. CABA y GBA. ☎ 11 5179-7649.",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
           { title: "Localización Exacta", desc: "Identificamos el punto preciso del problema para que, si hay que reparar, la intervención sea mínima y en el lugar correcto." },
