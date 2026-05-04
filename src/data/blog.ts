@@ -55,6 +55,8 @@ export const getArticulos = (): Articulo[] => {
           {q: "¿Pueden cambiar el sifón si está roto?", a: "Por supuesto, evaluamos la integridad de los accesorios bajo mesada y procedemos a su limpieza hermética."},
           {q: "¿En cuánto tiempo se va el olor?", a: "La ventilación del gas acumulado en la vivienda es inmediata una vez finalizado el trabajo de limpieza."}
         ])}
+      
+        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
       `
     },
     {
@@ -80,6 +82,8 @@ export const getArticulos = (): Articulo[] => {
           {q: "¿La grasa tapona todo el caño?", a: "Así es, su acumulación es perimetral. Puede estrangular una cloaca de 110mm reduciéndola al tamaño de un dedo."},
           {q: "¿Cubren servicios industriales en GBA?", a: "De hecho, contamos con furgones equipados y tanques para dar respuesta en fábricas industriales intensas."}
         ])}
+      
+        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
       `
     },
     {
@@ -107,6 +111,8 @@ export const getArticulos = (): Articulo[] => {
           {q: "¿Tienen alcance en los barrios cerrados de GBA?", a: "Damos mantenimiento programado en condominios desde Nordelta hasta Canning y CABA entero."},
           {q: "¿Incluyen informes técnicos de estas revisiones?", a: "Otorgamos certificados detallados sobre el funcionamiento y salud estructural detectada para tranquilidad de asambleas."}
         ])}
+      
+        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
       `
     },
     {
@@ -140,21 +146,43 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Video inspección de cañerías rotas sin romper el piso en CABA y GBA - Openagua',
       excerpt: 'Evitá meses de albañilería cara usando cámaras cloacales.',
       content: `
-        <p>Romper una docena de baldosas carísimas de un living ciegamente buscando la pérdida es una tragedia que ningún vecino de <strong>CABA</strong> ni del <strong>Gran Buenos Aires</strong> debería sufrir jamás.</p>
-        <p>Actualmente existe tecnología de <a href="/video-inspeccion-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">video inspección localizadora</a> que escanea tus metros de cloaca por dentro ahorrándote fortuna de refacciones y dolores de cabeza inmensos.</p>
+        <p>Romper una docena de baldosas carísimas de un living o excavar ciegamente buscando una pérdida es una tragedia que ningún vecino de <strong>CABA</strong> ni del <strong>Gran Buenos Aires</strong> debería sufrir jamás. En el pasado, diagnosticar problemas subterráneos era sinónimo de destrucción y gastos inmensos. Hoy, la realidad ha cambiado drásticamente.</p>
+        <p>Actualmente existe tecnología avanzada de <a href="/video-inspeccion-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">video inspección localizadora</a> que escanea tus metros de cloaca por dentro. Esta técnica no invasiva ahorra una verdadera fortuna en refacciones innecesarias y dolores de cabeza, permitiendo ver exactamente qué sucede en la oscuridad de tus cañerías.</p>
+        
         ${getCtaHtml()}
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Beneficios de inspeccionar tuberías con cámaras HD</h2>
+        
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Por qué las destapaciones recurrentes ocultan un problema mayor?</h2>
+        <p>Si te encontrás llamando al plomero cada mes para solicitar <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cloacas</a>, es altamente probable que estés enfrentando algo más grave que un simple tapón de papel. Las obstrucciones crónicas suelen ser el síntoma de una falla estructural grave, como:</p>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Detección Exacta:</strong> Una sonda con iluminación LED transmite visuales nítidas a un monitor, revelando exactamente la grieta, codo suelto o raíz que causó la fuga.</li>
-          <li><strong>Diagnóstico sin Estrés:</strong> Desmitifica engañosos "trabajos de picado y excavación a ciegas" de falsos plomeros. Cortará directamente sobre los 40cm cuadrados afectados.</li>
-          <li><strong>Grabación y Remito:</strong> Es una prueba visual indeleble invaluable para reclamos hacia la administración del barrio o consorcio.</li>
+          <li><strong>Caños aplastados o hundidos:</strong> El movimiento natural del suelo en el GBA a menudo desplaza o quiebra las conexiones de PVC.</li>
+          <li><strong>Invasión agresiva de raíces:</strong> Las raíces de los árboles buscan humedad, logrando perforar fisuras milimétricas hasta taponar por completo el diámetro del conducto.</li>
+          <li><strong>Juntas desplazadas:</strong> Mala praxis durante la instalación original que, con el tiempo, genera escalones donde la suciedad se estanca.</li>
         </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Beneficios exclusivos de inspeccionar tuberías con cámaras HD</h2>
+        <p>Optar por un diagnóstico digital antes de romper ofrece ventajas inmediatas que cambian por completo la dinámica de cualquier reparación:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Detección de precisión milimétrica:</strong> Una sonda sumergible con iluminación LED transmite visuales nítidas a un monitor en tiempo real. Revela exactamente si el problema es una grieta, un codo suelto, o un sedimento duro.</li>
+          <li><strong>Diagnóstico sin estrés ni escombros:</strong> Esta tecnología desmitifica los engañosos "trabajos de picado a ciegas" de falsos especialistas. Si hay que reparar, se cortará directamente sobre los 40 centímetros cuadrados afectados y no a lo largo de todo el pasillo.</li>
+          <li><strong>Mantenimiento preventivo inteligente:</strong> Si realizás <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cañerías</a> en la cocina y querés confirmar que el sarro se fue al 100%, la cámara es la única forma de auditar la limpieza.</li>
+          <li><strong>Evidencia en Video (Grabación y Remito):</strong> Resulta una prueba visual indeleble e invaluable para presentar en reclamos hacia la administración del consorcio o la empresa aseguradora.</li>
+        </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cómo se realiza el procedimiento técnico de video inspección?</h2>
+        <p>El proceso es metódico y rápido, tardando generalmente menos de una hora en propiedades promedio:</p>
+        <ol style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Acceso primario:</strong> El técnico identifica la cámara de inspección más cercana (suele estar en el patio, vereda o sótano) y prepara la sonda.</li>
+          <li><strong>Navegación controlada:</strong> Se introduce el cabezal de la cámara, que cuenta con estabilización de imagen. Mientras avanza, el técnico monitorea la pantalla registrando anomalías.</li>
+          <li><strong>Geolocalización externa:</strong> Si se encuentra una rotura a 8 metros de distancia, la sonda emite una señal de radio. El operador usa un receptor en la superficie (sobre el piso) para marcar con una tiza el punto exacto donde se debe excavar.</li>
+        </ol>
+
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cómo me ahorra plata pagar una cámara cloacal?</h2>
-        <p>Al identificar un bloqueo inmenso de escombros de una obra ajena, evitas hacer constantes e inútiles pagos temporales por destapaciones fallidas. Sabrás, a centímetros del problema, donde aplicar con precisión microscópica la única reparación seria necesaria.</p>
+        <p>Muchos clientes dudan al principio por el costo inicial del servicio de inspección. Sin embargo, al identificar de forma irrefutable un bloqueo inmenso o una fractura, evitas hacer constantes e inútiles pagos temporales por destapaciones fallidas semana tras semana. Sabrás, a centímetros del problema, dónde aplicar la única reparación seria necesaria, reduciendo el costo de albañilería en un 80%.</p>
+
         ${getFaqHtml([
-          {q: "¿La cámara puede navegar por caños finos de 40mm?", a: "Contamos con miniaturas robóticas HD lo bastante flexibles para recorrer caños desde 40 milímetros sin trabarse."},
-          {q: "¿Graba video para entregar a la aseguradora?", a: "Efectivamente, capturamos toda la incursión y generamos un archivo exportable legal con las coordenadas métricas del atasco."},
-          {q: "¿El servicio llega rápido al GBA rural?", a: "Nuestros vehículos viajan totalmente instrumentados diariamente y abarcan radios suburbanos largos."}
+          {q: "¿La cámara puede navegar por caños finos de 40mm?", a: "Sí, contamos con miniaturas robóticas HD lo bastante flexibles para recorrer caños internos de cocinas y lavaderos desde 40 milímetros sin trabarse en los codos."},
+          {q: "¿Graba video para entregar a la aseguradora?", a: "Efectivamente, capturamos toda la incursión en formato digital y generamos un archivo exportable legal con las coordenadas métricas del atasco para que lo presentes donde corresponda."},
+          {q: "¿El servicio llega rápido a mi barrio?", a: "Nuestros vehículos viajan totalmente instrumentados diariamente por CABA y GBA, abarcando tanto centros urbanos como radios suburbanos de Zona Norte, Sur y Oeste."}
         ])}
       `
     },
@@ -265,6 +293,8 @@ export const getArticulos = (): Articulo[] => {
           {q: "¿Cómo destapan una columna de 10 pisos?", a: "Usamos máquinas con potentes motores y muchos metros de resorte, o hidrojet desde las cámaras de inspección en PB."},
           {q: "¿Atienden urgencias de consorcios los domingos?", a: "Sí, tenemos guardias activas para casos de desbordes en edificios."}
         ])}
+      
+        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
       `
     },
     {
@@ -299,6 +329,8 @@ export const getArticulos = (): Articulo[] => {
           {q: "¿Tienen cobertura en Zona Norte?", a: "Sí, cubrimos Vicente López, San Isidro, Tigre y alrededores con equipos móviles rápidos."},
           {q: "¿El mal olor de la ducha es por el tapón?", a: "Sí, la acumulación orgánica en descomposición genera gases que huelen a alcantarilla."}
         ])}
+      
+        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
       `
     },
     {
@@ -331,6 +363,8 @@ export const getArticulos = (): Articulo[] => {
           {q: "¿Por qué huelen a cloaca los otros desagües del baño?", a: "Es indicador de una columna obstruida o ramal completo saturado en tu casa afectando respiración pluvial de zonas comunes."},
           {q: "¿Tienen visita de destapaciones el mismo día?", a: "Contamos con brigadas recorriendo incesantemente las rutas y asistencias con unidades móviles llegando rapidisimo a tu hogar en el dia."}
         ])}
+      
+        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
       `
     },
     {
@@ -363,6 +397,8 @@ export const getArticulos = (): Articulo[] => {
           {q: "¿Tienen límite de largo de cañería pluvial al trabajar?", a: "Cubrimos caños de muchisimos metros de longitud de fondos extensos o loteos desde entrada cruzando hacia calle sin roturas hasta limpiar al máximo todo arrastre de elementos trabados en los empalmes subterráneos comunes."},
           {q: "¿Destruyen los cables de raíce superficiales?", a: "Usamos punteras dentadas devoradoras por rotación y corte por choque hidráulico de las motobombas hasta limpiar y perforar los ovillos biológicos."}
         ])}
+      
+        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
       `
     },
     {
@@ -396,6 +432,8 @@ export const getArticulos = (): Articulo[] => {
           {q: "¿Tiran acido muriático o industrial al limpiar para hacer desobstrucción?", a: "Jamás y prohibido terminantemente. Nuestras resoluciones técnicas abocan 100% de fuerza cinético o hìdrica con sondas acero, cortantes físicas o chorros hiperpresurizados cuidando tu estructura en su integridad absoluta libre de tóxicos químicos perennes."},
           {q: "¿Cuánto demanda destapar una cocina estandar?", a: "Es veloz: diagnosticamos y en cuestion de pocos minutos de operación sobre rejillas o sifón limpiamos la pared interior tapada cruzada asegurando paso veloz y flujo sonoro natural (vuelve a tragar fuerte rápido)." }
         ])}
+      
+        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
       `
     },
     {
@@ -640,6 +678,8 @@ export const getArticulos = (): Articulo[] => {
           {q: "¿Qué materiales se recomiendan para las cámaras nuevas?", a: "Hoy en día el polipropileno inyectado es el estándar por su hermeticidad y resistencia a los químicos, reemplazando a la vieja mampostería de ladrillo."},
           {q: "¿Se puede sellar la tapa con cemento?", a: "Nunca se debe sellar de forma permanente. Debe quedar accesible. En su lugar, se usan marcos de bronce o acero con burletes de goma para asegurar la hermeticidad."}
         ])}
+      
+        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
       `
     },
     {
@@ -683,6 +723,8 @@ export const getArticulos = (): Articulo[] => {
           {q: "¿Qué hago si ya tiré soda cáustica y se tapó más?", a: "Dejá de tirar agua. No metas las manos. Abrí las ventanas y llamá a un servicio profesional aclarando que hay químicos presentes."},
           {q: "¿El vinagre y bicarbonato daña el caño?", a: "No, es una mezcla segura para mantenimiento preventivo, pero no tiene la fuerza necesaria para eliminar una obstrucción profunda de pelo o grasa petrificada."}
         ])}
+      
+        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
       `
     },
     {
@@ -727,6 +769,8 @@ export const getArticulos = (): Articulo[] => {
           {q: "¿Puedo tirar baldes de agua con lavandina para destapar?", a: "No. La lavandina no disuelve sólidos. Solo estarás agregando más líquido a un sistema que ya no puede evacuar."},
           {q: "¿Es peligroso el gas que sale de la cámara?", a: "Sí, el gas metano es inflamable y tóxico en altas concentraciones. Siempre ventilá bien el área antes de inspeccionar una cámara cerrada por mucho tiempo."}
         ])}
+      
+        <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
       `
     }
   ];

@@ -89,6 +89,14 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
     permanentRedirect('/destapaciones-cloacas');
   }
 
-  // 4. Muerte al Soft 404: Cualquier legacy string que llegue hasta este punto y no tenga matcheo, va a error duro.
+  // 4. Mapeo de barrios muertos de WP
+  const eliminatedBarrios = ['lopez-camelo', 'jauregui', 'pilar'];
+  for (const deleted of eliminatedBarrios) {
+    if (path.includes(deleted)) {
+      permanentRedirect('/zonas/zona-norte');
+    }
+  }
+
+  // 5. Muerte al Soft 404: Cualquier legacy string que llegue hasta este punto y no tenga matcheo, va a error duro.
   notFound();
 }

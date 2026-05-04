@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import { Metadata } from 'next'
 import { handleLegacyRedirect } from '@/utils/legacyRedirect'
+import { generateArticleSchema, generateFAQSchema } from '@/lib/schemaUtils'
 
 export async function generateStaticParams() {
   const posts = getArticulos()
@@ -49,41 +50,29 @@ export default async function BlogPost({ params }: Props) {
   const post = posts.find((p) => p.slug === slug)
   if (!post) return handleLegacyRedirect([slug])
   
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": post.h1 || post.title,
-    "image": [
-      `https://www.destapacionesopenagua.com.ar${post.image}`
-    ],
-    "description": post.excerpt,
-    "author": {
-      "@type": "Organization",
-      "name": "Openagua Destapaciones",
-      "url": "https://www.destapacionesopenagua.com.ar"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Openagua",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.destapacionesopenagua.com.ar/logo.svg"
-      }
-    },
-    "datePublished": "2026-04-13T08:00:00-03:00",
-    "dateModified": "2026-04-13T08:00:00-03:00",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": `https://www.destapacionesopenagua.com.ar/blog/${slug}`
-    }
-  };
+  const articleSchema = generateArticleSchema(post);
+
+  const faqs = [];
+  const regex = /<summary[^>]*>([\s\S]*?)<\/summary>\s*<p[^>]*>([\s\S]*?)<\/p>/g;
+  let match;
+  while ((match = regex.exec(post.content)) !== null) {
+    faqs.push({ q: match[1].trim(), a: match[2].trim() });
+  }
+
+  const faqSchema = faqs.length > 0 ? generateFAQSchema(faqs) : null;
 
   return (
     <main style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       
       <h1 style={{ marginBottom: '1.5rem', color: '#0f172a', lineHeight: 1.2 }}>{post.h1 || post.title}</h1>
       

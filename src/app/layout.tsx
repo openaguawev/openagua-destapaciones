@@ -19,9 +19,6 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.destapacionesopenagua.com.ar'),
   title: 'Openagua | Destapaciones de cañerías en CABA y GBA',
   description: 'Destapaciones de cañerías en CABA y GBA con atención profesional y soluciones reales. Diagnóstico claro y sin romper. Llamanos al 11 5179-7649.',
-  alternates: {
-    canonical: 'https://www.destapacionesopenagua.com.ar',
-  },
   icons: {
     icon: [
       { url: '/img/favicon16.png?v=4', sizes: '16x16', type: 'image/png' },
@@ -62,6 +59,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingButtons from '@/components/FloatingButtons';
 import Script from 'next/script';
+import LocalBusinessSchema from '@/components/LocalBusinessSchema';
 
 export default function RootLayout({
   children,
@@ -83,53 +81,6 @@ export default function RootLayout({
     ]
   };
 
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "PlumbingService",
-    "@id": "https://www.destapacionesopenagua.com.ar/#localbusiness",
-    "parentOrganization": { "@id": "https://www.destapacionesopenagua.com.ar/#organization" },
-    "name": "Openagua",
-    "image": "https://www.destapacionesopenagua.com.ar/img/home.jpg",
-    "logo": "https://www.destapacionesopenagua.com.ar/logo.svg",
-    "telephone": "+5491151797649",
-    "url": "https://www.destapacionesopenagua.com.ar",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Ciudad Autónoma de Buenos Aires",
-      "addressRegion": "CABA / GBA",
-      "addressCountry": "AR"
-    },
-    "areaServed": [
-      "Ciudad Autónoma de Buenos Aires",
-      "Zona Norte",
-      "Zona Oeste",
-      "Zona Sur"
-    ],
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "08:00",
-        "closes": "19:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Sunday"],
-        "opens": "08:00",
-        "closes": "19:00",
-        "description": "Urgencias disponibles las 24 horas, los 7 días de la semana"
-      }
-    ],
-    "sameAs": [
-      "https://facebook.com/openagua",
-      "https://www.instagram.com/destapaciones_openagua/",
-      "https://www.youtube.com/@openagua/videos",
-      "https://www.tiktok.com/@destapacionesopenagua"
-    ],
-    "hasMap": "https://www.google.com/maps/search/Openagua+Destapaciones"
-  };
-
   return (
     <html lang="es" className={`${inter.variable} ${poppins.variable}`}>
       <body>
@@ -142,11 +93,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-        <Script
-          id="local-business-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-        />
+        <LocalBusinessSchema />
       </body>
     </html>
   );

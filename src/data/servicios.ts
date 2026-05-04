@@ -144,7 +144,7 @@ export const getServicios = (): ServicioData[] => {
       'Destapaciones de Cloacas Urgentes',
       '/img/destapacion de cloaca.jpg',
       'Cloaca tapada o rebalsando. Solución rápida hoy mismo sin romper nada. Solución en el día. Llegamos en menos de 60 minutos.',
-      'Tener una cloaca tapada es una emergencia que no puede esperar. El riesgo de rebalse sanitario y los olores persistentes afectan tu salud y la de tu familia. En Openagua realizamos destapaciones de cloacas con maquinaria de última generación que elimina la obstrucción de raíz sin romper un solo piso. Atendemos en CABA, Morón, Ituzaingó y Hurlingham con respuesta inmediata las 24 horas.',
+      'Tener una cloaca tapada es una emergencia que no puede esperar. Si tu inodoro rebalsa, el riesgo sanitario y los olores persistentes afectan tu salud y la de tu familia. En Openagua realizamos destapaciones de cloacas con maquinaria de última generación que elimina la obstrucción de raíz sin romper un solo piso. Atendemos en CABA, Morón, Ituzaingó y Hurlingham con respuesta inmediata las 24 horas.',
       [
         { q: "¿Cuánto demoran en llegar?", a: "Llegamos en menos de 60 minutos a CABA, Ramos Mejía, Morón o Castelar. Nuestra prioridad es resolver tu urgencia hoy mismo." },
         { q: "¿Cuál es el costo del servicio?", a: "El precio depende de la obstrucción y los metros de cañería. Consultanos por WhatsApp para un presupuesto transparente y sin compromiso." },
@@ -186,7 +186,7 @@ export const getServicios = (): ServicioData[] => {
       'Destapación de Cañerías',
       '/img/destapacion maquina.jpg',
       'Soluciones para desagües de cocina, baño y lavadero. Eliminamos obstrucciones de grasa y sarro con tecnología de avanzada en CABA y GBA.',
-      'El uso diario de bañeras, duchas y piletas acumula restos de jabón, fango y materiales diversos que terminan obturando la bajada.',
+      'El uso diario de bañeras, duchas y piletas acumula restos de jabón, fango y materiales diversos que terminan obturando la bajada. Si tu cocina huele a cloaca, es una señal inequívoca de obstrucción interna.',
       [
         { q: "¿Pueden destapar sin romper paredes?", a: "Absolutamente, utilizamos maquinarias flexibles que circulan por los caños evitando grandes obras." },
         { q: "¿Qué causa las obstrucciones recurrentes en cañerías?", a: "Normalmente el jabón, el sarro, los pelos y la grasa acumulada a lo largo del tiempo van cerrando el diámetro progresivamente." },
@@ -240,7 +240,7 @@ export const getServicios = (): ServicioData[] => {
       'Destapación de Pluviales',
       '/img/caño pluvial.jpg',
       'Desobstrucción de rejillas, terrazas y desagües de lluvia. Evitá inundaciones y filtraciones con limpieza técnica en CABA y GBA.',
-      'Las hojas secas, el barro y la falta de supervisión logran que los balcones y terrazas colapsen repentinamente durante una tormenta.',
+      'Las hojas secas, el barro y la falta de supervisión logran que los balcones colapsen repentinamente durante una tormenta, especialmente si la rejilla del patio está tapada.',
       [
         { q: "¿Con qué frecuencia limpiar desagües pluviales?", a: "Lo ideal es dos veces al año, particularmente antes de la temporada de otoño y primavera pesada." },
         { q: "¿Trabajan en terrazas y balcones?", a: "Sí, realizamos trabajos de altura e intervenimos terrazas, balcones y canaletas altas." },
@@ -294,7 +294,7 @@ export const getServicios = (): ServicioData[] => {
       'Destapaciones con Hidrojet',
       '/img/hidrojet cloaca.jpg',
       'Limpieza técnica con agua a alta presión. La solución definitiva para eliminar sarro, grasa y sedimentos rebeldes en CABA y GBA.',
-      'El Hidrojet es una maravilla moderna; dispara un chorro radial que además de empujar al tapón, arranca de tajo la grasitud adherida por todo el diámetro y lo pule.',
+      'El Hidrojet es una maravilla moderna; dispara un chorro radial que además de empujar al tapón, arranca de tajo la grasa en cañerías de edificios adherida por todo el diámetro y lo pule.',
       [
         { q: "¿El hidrojet daña las cañerías?", a: "No, la presión de agua es graduada por nuestros especialistas calibrándola exacto según el material y antigüedad de su tubería." },
         { q: "¿Para qué tipo de obstrucciones es ideal el hidrojet?", a: "Es la solución definitiva contra el sarro petrificado, grandes acumulaciones de grasa en restaurantes y tapones barrosos crónicos." },
@@ -348,7 +348,7 @@ export const getServicios = (): ServicioData[] => {
       'Video Inspección de Cañerías',
       '/img/video inspeccion.jpg',
       'Diagnóstico preciso con cámaras HD. Localizamos roturas, raíces y obstrucciones sin romper pisos ni paredes en CABA y GBA.',
-      'Suelen existir roturas estructurales ocultas debajo del hormigón. En lugar de perforar el piso adivinando, optamos por introducir nuestra cámara CCTV sumergible.',
+      'Suelen existir roturas estructurales ocultas debajo del hormigón. Para saber si un caño está roto, en lugar de perforar el piso adivinando, optamos por introducir nuestra cámara CCTV sumergible.',
       [
         { q: "¿Qué problemas detecta la cámara de inspección?", a: "Detecta hundimientos del terreno, intrusión severa de raíces, fracturas a lo largo del encastre y objetos encallados." },
         { q: "¿Cuándo conviene hacer una video inspección?", a: "Cuando padecés destapaciones recurrentes mes a mes, garantizando que existe un daño estructural que debe visualizarse de raíz." },
@@ -514,7 +514,7 @@ export const getServicios = (): ServicioData[] => {
       'Mantenimientos Preventivos',
       '/img/manteniminto cloaca.jpg',
       'Mantenimiento programado para evitar problemas y desbordes. La solución más económica para consorcios, empresas y gastronomía en CABA y GBA.',
-      'Reaccionar solo cuando ha ocurrido el accidente significa enfrentar la furia de inquilinos y copropietarios con problemas mayúsculos. Ofrecemos mantenimientos preventivos periódicos.',
+      'Reaccionar solo cuando ha ocurrido el accidente significa enfrentar la furia de inquilinos y copropietarios con problemas mayúsculos, especialmente si hay una columna de edificio tapada. Ofrecemos mantenimientos preventivos periódicos.',
       [
         { q: "¿Qué incluye el plan de mantenimiento?", a: "Verificación de pluviales, sondeo mecánico de las salidas a colector principal y el hidrolavado base de cámaras cloacales." },
         { q: "¿Para qué tipo de edificios es el mantenimiento preventivo?", a: "Resulta ideal para complejos habitacionales extensos, edificios torre, condominios, hoteles y grandes restaurantes." },

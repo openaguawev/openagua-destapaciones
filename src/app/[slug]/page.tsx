@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Contacto from '@/components/Contacto';
 import { handleLegacyRedirect } from '@/utils/legacyRedirect';
 import { generarTextoServicio } from '@/utils/generarTextoServicio';
+import { generateBreadcrumbSchema } from '@/lib/schemaUtils';
 import '../servicio-page.css';
 
 interface Props {
@@ -52,9 +53,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 // Interlinking manual controlado (Máximo 2-3 links por página)
 const renderTextWithLinks = (text: string, slug: string) => {
   const links = [
+    // Servicios
     { kw: 'video inspección de cañerías', to: 'video-inspeccion-canerias' },
     { kw: 'destapaciones con hidrojet', to: 'destapaciones-hidrojet' },
     { kw: 'destapaciones de cañerías', to: 'destapaciones-canerias' },
+    { kw: 'destapaciones de cloacas', to: 'destapaciones-cloacas' },
+    // Blog (Interlinking Informacional)
+    { kw: 'saber si un caño está roto', to: 'blog/video-inspeccion-saber-cano-roto-sin-romper' },
+    { kw: 'columna de edificio tapada', to: 'blog/5-senales-columna-edificio-tapada' },
+    { kw: 'rejilla del patio está tapada', to: 'blog/rejilla-patio-tapada-lluvia' },
+    { kw: 'cocina huele a cloaca', to: 'blog/por-que-cocina-huele-a-cloaca' },
+    { kw: 'grasa en cañerías de edificios', to: 'blog/grasa-canerias-edificios-agua-hirviendo' },
+    { kw: 'inodoro rebalsa', to: 'blog/inodoro-rebalsa-que-hacer' },
   ];
 
   let result: (string | React.ReactNode)[] = [text];
@@ -93,6 +103,46 @@ const serviceMap: Record<string, string> = {
   'desagote-sotanos': 'Desagote de Sótanos',
   'mantenimientos-preventivos': 'Mantenimiento Preventivo',
   'destapaciones-maquinas': 'Destapación con Máquinas'
+};
+
+const relatedBlogPosts: Record<string, {slug: string, title: string}[]> = {
+  'destapaciones-cloacas': [
+    {slug: 'inodoro-rebalsa-que-hacer', title: 'Qué hacer si el inodoro rebalsa'},
+    {slug: 'problema-departamento-o-columna', title: '¿Problema en departamento o columna?'},
+    {slug: 'como-destapar-inodoro', title: 'Cómo destapar un inodoro de emergencia'}
+  ],
+  'destapaciones-canerias': [
+    {slug: 'por-que-cocina-huele-a-cloaca', title: 'Por qué la cocina huele a cloaca'},
+    {slug: 'ducha-desagota-lento', title: 'La ducha desagota lento'},
+    {slug: 'como-destapar-pileta-cocina', title: 'Cómo destapar pileta de cocina'},
+    {slug: 'que-no-tirar-en-la-pileta-de-cocina', title: 'Qué no tirar en la pileta de cocina'}
+  ],
+  'destapaciones-pluviales': [
+    {slug: 'rejilla-patio-tapada-lluvia', title: 'Rejilla del patio tapada por lluvia'},
+    {slug: 'como-destapar-rejillas', title: 'Cómo destapar rejillas correctamente'},
+    {slug: 'diferencias-canerias-cloacales-pluviales', title: 'Diferencias entre cloacal y pluvial'}
+  ],
+  'destapaciones-hidrojet': [
+    {slug: 'grasa-canerias-edificios-agua-hirviendo', title: 'Grasa en cañerías de edificios'},
+    {slug: 'que-productos-no-usar-para-destapar-canos', title: 'Qué productos no usar para destapar'}
+  ],
+  'video-inspeccion-canerias': [
+    {slug: 'video-inspeccion-saber-cano-roto-sin-romper', title: 'Saber si el caño está roto'},
+    {slug: 'raices-en-canerias-como-detectarlas-y-solucionarlo', title: 'Raíces en cañerías'}
+  ],
+  'limpieza-camaras-septicas': [
+    {slug: 'que-es-una-camara-cloacal-y-como-detectar-problemas', title: 'Qué es una cámara cloacal'},
+    {slug: 'como-detectar-una-camara-cloacal-tapada', title: 'Cómo detectar una cámara tapada'}
+  ],
+  'mantenimientos-preventivos': [
+    {slug: '5-senales-columna-edificio-tapada', title: '5 señales de columna tapada'}
+  ],
+  'destapaciones-maquinas': [
+    {slug: 'resorte-vs-hidrojet-cual-es-mejor', title: 'Resorte vs Hidrojet'}
+  ],
+  'desagote-sotanos': [
+    {slug: 'rejilla-patio-tapada-lluvia', title: 'Rejilla del patio tapada por lluvia'}
+  ]
 };
 
 export default async function ServicioPage({ params }: Props) {
@@ -286,6 +336,21 @@ export default async function ServicioPage({ params }: Props) {
           </div>
         </section>
 
+        {/* ARTÍCULOS RELACIONADOS (Interlinking) */}
+        {relatedBlogPosts[servicio.slug] && (
+          <section className="section-block compact">
+            <h2 className="section-title">Información Útil Relacionada</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
+              {relatedBlogPosts[servicio.slug].map((post, i) => (
+                <Link key={i} href={`/blog/${post.slug}`} className="benefit-card small" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                  <h3 className="benefit-title" style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: '#16A34A' }}>{post.title}</h3>
+                  <p style={{ fontSize: '0.9rem', margin: 0, fontWeight: 500 }}>Leer artículo completo →</p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Final CTA con Microcopy */}
         <div className="final-cta">
           <h3>¿Listo para empezar?</h3>
@@ -307,10 +372,19 @@ export default async function ServicioPage({ params }: Props) {
             "name": servicio.schemaTitle || servicio.title,
             "description": servicio.excerpt,
             "provider": {
-              "@type": "LocalBusiness",
-              "name": "Openagua"
+              "@id": "https://www.destapacionesopenagua.com.ar/#business"
             }
           })
+        }}
+      />
+      <Script
+        id={`breadcrumb-service-${servicio.slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generateBreadcrumbSchema([
+            { name: "Inicio", item: "https://www.destapacionesopenagua.com.ar" },
+            { name: servicio.schemaTitle || servicio.title, item: `https://www.destapacionesopenagua.com.ar/${servicio.slug}` }
+          ]))
         }}
       />
     </main>

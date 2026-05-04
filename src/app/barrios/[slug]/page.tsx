@@ -11,7 +11,8 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { barriosSeo } from '@/data/barriosSeo';
 import { generarTextoBarrio, generarTextoBarrioSecundario } from '@/utils/generarTextoBarrio';
 import { barriosCercanos } from '@/data/barriosCercanos';
-
+import RelatedBlogPosts from '@/components/RelatedBlogPosts';
+import { generateBreadcrumbSchema } from '@/lib/schemaUtils';
 export async function generateStaticParams() {
   return barrios.map((b) => ({ slug: b.slug }));
 }
@@ -110,16 +111,22 @@ export default async function BarrioPage({ params }: Props) {
 
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": `Openagua Destapaciones ${barrio.name}`,
-    "image": "https://destapacionesopenagua.com.ar/logo.svg",
-    "telephone": "+5491151797649",
-    "url": `https://destapacionesopenagua.com.ar/barrios/${barrio.slug}`,
+    "@type": "Service",
+    "name": `Destapaciones en ${barrio.name}`,
+    "provider": {
+      "@id": "https://www.destapacionesopenagua.com.ar/#business"
+    },
     "areaServed": {
       "@type": "Place",
       "name": barrio.name
     }
   };
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Inicio", item: "https://www.destapacionesopenagua.com.ar" },
+    { name: "Barrios", item: "https://www.destapacionesopenagua.com.ar/barrios" },
+    { name: `Destapaciones en ${barrio.name}`, item: `https://www.destapacionesopenagua.com.ar/barrios/${barrio.slug}` }
+  ]);
 
   // Pool de FAQs — se seleccionan 3 por barrio de forma determinista
   const faqPool = [
@@ -530,6 +537,8 @@ export default async function BarrioPage({ params }: Props) {
             </div>
           </div>
         </section>
+        
+        <RelatedBlogPosts barrioName={barrio.name} />
       </main>
 
       <Script
@@ -541,6 +550,11 @@ export default async function BarrioPage({ params }: Props) {
         id={`faq-barrio-${barrio.slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <Script
+        id={`breadcrumb-barrio-${barrio.slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
     </>
   );

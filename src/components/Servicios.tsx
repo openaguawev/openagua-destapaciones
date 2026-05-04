@@ -106,8 +106,7 @@ export default function Servicios() {
               "name": s.title,
               "description": s.desc,
               "provider": {
-                "@type": "LocalBusiness",
-                "name": "Openagua"
+                "@id": "https://www.destapacionesopenagua.com.ar/#business"
               }
             }))
           )

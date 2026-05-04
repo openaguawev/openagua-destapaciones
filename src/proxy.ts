@@ -20,7 +20,8 @@ export function proxy(request: NextRequest) {
   ];
 
   // Verificar si el pathname actual comienza con alguna de las rutas legacy
-  const isLegacyPath = wpLegacyPaths.some(path => pathname.startsWith(path));
+  const isHardLegacy = pathname.endsWith('.php') || pathname.includes('/uploads/') || pathname.includes('/author/');
+  const isLegacyPath = wpLegacyPaths.some(path => pathname.startsWith(path)) || isHardLegacy;
 
   if (isLegacyPath) {
     // Retornar una respuesta directa con estado 410 (Gone)
@@ -45,5 +46,6 @@ export const config = {
     '/feed/:path*',
     '/comments/:path*',
     '/trackback/:path*',
+    '/uploads/:path*',
   ],
 };

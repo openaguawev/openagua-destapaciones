@@ -8,7 +8,7 @@ export default function Hero() {
         src="/img/home.jpg" 
         alt="Maquinaria especializada para Destapaciones en CABA y GBA - Openagua" 
         fill 
-        priority 
+        priority={true}
         style={{ objectFit: 'cover', zIndex: 0 }} 
         quality={90}
       />
