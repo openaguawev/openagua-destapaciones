@@ -98,8 +98,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Entregan factura y garantía?", a: "Sí, emitimos factura por todos nuestros trabajos y brindamos garantía por escrito sobre la desobstrucción realizada." }
       ],
       {
-        seoTitle: "Destapaciones con máquinas en CABA y GBA | Openagua",
-        seoDescription: "Destapaciones con máquinas profesionales en CABA y GBA. Sonda rotativa, hidrojet y video inspección sin romper nada. Atendemos hoy mismo. Llamanos al 11 5179-7649.",
+        seoTitle: "Destapaciones con Máquinas | Sonda y Resorte | Openagua",
+        seoDescription: "Destapamos cloacas y cañerías con máquinas de sonda rotativa. Sin romper pisos ni paredes. Atendemos hoy. CABA y GBA. ☎ 11 5179-7649.",
         benefitsTitle: "Especialistas en Destapaciones con Máquinas",
         benefits: [
           { title: "Máquina con Resorte", desc: "Desobstrucción mecánica con resortes rotativos de acero que eliminan bloqueos rígidos en cocinas y baños." },
@@ -412,8 +412,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿El servicio incluye el retiro de los residuos?", a: "Sí, nos encargamos de la extracción y limpieza del sistema sanitario de forma higiénica." }
       ],
       {
-        seoTitle: "Limpieza de cámaras sépticas en CABA y GBA | Openagua",
-        seoDescription: "Limpieza de cámaras sépticas en CABA y GBA con equipos profesionales. Evitá desbordes y malos olores. Llamanos al 11 5179-7649.",
+        seoTitle: "Limpieza de Cámaras Sépticas | Sin Desbordes | Openagua",
+        seoDescription: "Limpiamos cámaras sépticas con equipos profesionales. Evitá desbordes, malos olores y daños estructurales. Presupuesto sin cargo. CABA y GBA. ☎ 11 5179-7649.",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
           { title: "Vaciado y Succión", desc: "Utilizamos equipos de alto vacío para la extracción completa de lodos y residuos acumulados en el fondo de la cámara." },
@@ -466,8 +466,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Tienen bombas para sacar mucha agua rápido?", a: "Contamos con bombas de alto caudal que evacuan hasta 10.000 litros por hora, resolviendo la inundación en tiempo récord." }
       ],
       {
-        seoTitle: "Desagote de sótanos en CABA y GBA | Openagua",
-        seoDescription: "Desagote de sótanos y espacios inundados en CABA y GBA. Intervención rápida con bombas profesionales. Llamanos al 11 5179-7649.",
+        seoTitle: "Desagote de Sótanos Inundados | Bombas Pro | Openagua",
+        seoDescription: "¿Sótano o espacio inundado? Extraemos el agua con bombas sumergibles profesionales. Intervención rápida el mismo día. CABA y GBA. ☎ 11 5179-7649.",
         schemaTitle: "Desagote de Sótanos y Subsuelos",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
@@ -524,8 +524,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Qué validez tiene el informe de estado que entregan?", a: "El informe sirve como auditoría técnica para la administración o dueño del inmueble, detallando el estado real de la red cloacal." }
       ],
       {
-        seoTitle: "Mantenimiento de cañerías en CABA y GBA | Openagua",
-        seoDescription: "Mantenimiento preventivo de cañerías en CABA y GBA para evitar obstrucciones. Ideal para edificios y comercios. Llamanos al 11 5179-7649.",
+        seoTitle: "Mantenimiento Preventivo de Cañerías | Openagua",
+        seoDescription: "Mantenimiento programado para edificios, consorcios y comercios. Evitá emergencias costosas con limpieza periódica. CABA y GBA. ☎ 11 5179-7649.",
         schemaTitle: "Mantenimientos Preventivos de Redes Cloacales y Pluviales",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
