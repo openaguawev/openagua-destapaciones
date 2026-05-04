@@ -97,6 +97,44 @@ export default function PreciosPage() {
           </p>
         </section>
 
+        {/* INTERLINKING SERVICIOS — SEO */}
+        <section className="section-block compact" style={{ paddingBottom: '2rem' }}>
+          <h2 className="section-title" style={{ marginBottom: '1.5rem' }}>Ver detalle de cada servicio</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '0.75rem' }}>
+            {[
+              { href: '/destapaciones-cloacas', label: 'Destapación de Cloaca' },
+              { href: '/destapaciones-canerias', label: 'Destapación de Cañería' },
+              { href: '/destapaciones-pluviales', label: 'Destapación Pluvial' },
+              { href: '/video-inspeccion-canerias', label: 'Video Inspección' },
+              { href: '/destapaciones-cloacas', label: 'Destapación de Columna Edificio' },
+              { href: '/desagote-sotanos', label: 'Desagote de Sótanos' },
+            ].map((s) => (
+              <Link
+                key={s.label}
+                href={s.href}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  padding: '0.9rem 1.25rem',
+                  backgroundColor: '#ffffff',
+                  border: '1px solid #e2e8f0',
+                  borderRadius: '8px',
+                  textDecoration: 'none',
+                  color: '#0f172a',
+                  fontWeight: 600,
+                  fontSize: '0.95rem',
+                  boxShadow: '0 1px 3px 0 rgba(0,0,0,0.06)',
+                  transition: 'border-color 0.2s, box-shadow 0.2s',
+                }}
+              >
+                {s.label}
+                <span style={{ color: '#16A34A', fontWeight: 700, marginLeft: '0.5rem' }}>→</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* DIFERENCIADOR Y QUÉ INCLUYE */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginBottom: '4rem' }}>
           <section className="benefit-card">

@@ -116,9 +116,42 @@ export default function UrgenciasPage() {
             <strong>CABA completa</strong> | <strong>Zona Oeste:</strong> Ramos Mejía, Morón, Castelar, Ituzaingó, Hurlingham | <strong>Zona Norte:</strong> San Isidro, Vicente López, Olivos, Martínez | <strong>Zona Sur:</strong> Avellaneda, Lanús, Lomas de Zamora
           </p>
         </section>
+
+        {/* SERVICIOS RELACIONADOS — Interlinking SEO */}
+        <section className="section-block compact" style={{ paddingBottom: '3rem' }}>
+          <h2 className="section-title">Nuestros servicios de urgencia</h2>
+          <div className="benefits-grid">
+            <Link href="/destapaciones-cloacas" className="benefit-card" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+              <div className="benefit-icon">🚽</div>
+              <h3 className="benefit-title">Destapación de Cloacas</h3>
+              <p>Cloacas tapadas o rebalsando</p>
+            </Link>
+            <Link href="/destapaciones-canerias" className="benefit-card" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+              <div className="benefit-icon">🔧</div>
+              <h3 className="benefit-title">Destapación de Cañerías</h3>
+              <p>Cocina, baño y lavadero</p>
+            </Link>
+            <Link href="/destapaciones-hidrojet" className="benefit-card" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+              <div className="benefit-icon">💦</div>
+              <h3 className="benefit-title">Destapación con Hidrojet</h3>
+              <p>Limpieza profunda de cañerías</p>
+            </Link>
+            <Link href="/video-inspeccion-canerias" className="benefit-card" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+              <div className="benefit-icon">📷</div>
+              <h3 className="benefit-title">Video Inspección</h3>
+              <p>Diagnóstico sin romper pisos</p>
+            </Link>
+            <Link href="/desagote-sotanos" className="benefit-card" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+              <div className="benefit-icon">🏚️</div>
+              <h3 className="benefit-title">Desagote de Sótanos</h3>
+              <p>Extracción de agua con bombas</p>
+            </Link>
+          </div>
+        </section>
       </div>
 
       <Contacto />
+
 
       <Script
         id="schema-urgencias"
