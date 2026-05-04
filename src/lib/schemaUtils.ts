@@ -27,8 +27,8 @@ export function generateArticleSchema(post: Articulo) {
     "headline": post.seoTitle || post.title,
     "description": post.excerpt,
     "image": `https://www.destapacionesopenagua.com.ar${post.image}`,
-    "datePublished": "2024-01-01T08:00:00+00:00", // Fallback fijo ya que el CMS no tiene fechas
-    "dateModified": new Date().toISOString(),
+    "datePublished": post.publishedAt || "2024-01-01",
+    "dateModified": post.updatedAt || post.publishedAt || "2024-01-01",
     "author": {
       "@type": "Organization",
       "name": "Openagua Destapaciones",

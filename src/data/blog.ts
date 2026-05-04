@@ -7,6 +7,8 @@ export interface Articulo {
   alt: string;
   excerpt: string;
   content: string;
+  publishedAt?: string;
+  updatedAt?: string;
 }
 
 const getCtaHtml = () => `
@@ -34,6 +36,8 @@ export const getArticulos = (): Articulo[] => {
   return [
     {
       slug: 'por-que-cocina-huele-a-cloaca',
+      publishedAt: '2024-01-10',
+      updatedAt: '2026-05-04',
       title: '¿Por qué mi cocina huele a cloaca? 3 causas y soluciones definitivas',
       image: '/img/cocina huele cloaca.jpg',
       alt: 'Destapación de cocina y solución a olores de cloaca en CABA - Openagua',
@@ -116,6 +120,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'grasa-canerias-edificios-agua-hirviendo',
+      publishedAt: '2024-02-10',
+      updatedAt: '2026-05-04',
       title: 'Grasa en cañerías de edificios: Por qué el agua hirviendo no sirve',
       image: '/img/caño con grasa.jpg',
       alt: 'Grasa petrificada en cañerías de edificios de zona norte - Openagua',
@@ -198,6 +204,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: '5-senales-columna-edificio-tapada',
+      publishedAt: '2024-03-10',
+      updatedAt: '2026-05-04',
       title: '5 señales de que la columna de tu edificio está por taparse',
       image: '/img/caño columna.jpg',
       alt: 'Mantenimiento preventivo de columnas en consorcios de Gran Buenos Aires - Openagua',
@@ -275,6 +283,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'resorte-vs-hidrojet-cual-es-mejor',
+      publishedAt: '2024-04-10',
+      updatedAt: '2026-05-04',
       title: 'Resorte vs. Hidrojet: ¿Cuál es mejor para tu destapación?',
       image: '/img/maquina resortes.jpg',
       alt: 'Comparativa técnica entre máquina de resortes y sistema hidrojet en CABA - Openagua',
@@ -355,6 +365,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'video-inspeccion-saber-cano-roto-sin-romper',
+      publishedAt: '2024-05-10',
+      updatedAt: '2024-05-10',
       title: 'Video Inspección: Cómo saber si tu caño está roto sin romper el piso',
       image: '/img/video inspeccion.jpg',
       alt: 'Video inspección de cañerías rotas sin romper el piso en CABA y GBA - Openagua',
@@ -402,6 +414,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'inodoro-rebalsa-que-hacer',
+      publishedAt: '2024-06-10',
+      updatedAt: '2026-05-04',
       title: 'El inodoro rebalsa: qué hacer en los primeros 5 minutos',
       image: '/img/inodoro tapado.jpg',
       alt: 'Cómo destapar un inodoro rebalsado en CABA y GBA',
@@ -479,6 +493,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'rejilla-patio-tapada-lluvia',
+      publishedAt: '2024-07-10',
+      updatedAt: '2026-05-04',
       title: 'Rejilla del patio tapada: cómo evitar inundaciones cuando llueve',
       image: '/img/rejilla patio.jpg',
       alt: 'Destapación de rejilla de patio inundada tras tormenta - Openagua',
@@ -549,6 +565,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'problema-departamento-o-columna',
+      publishedAt: '2024-08-10',
+      updatedAt: '2026-05-04',
       title: '¿El problema está en tu depto o en la columna del edificio?',
       image: '/img/edificio.jpg',
       alt: 'Inspección profesional de cañerías en edificio',
@@ -625,6 +643,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'ducha-desagota-lento',
+      publishedAt: '2024-09-10',
+      updatedAt: '2026-05-04',
       title: 'La ducha desagota lento: causas y cómo solucionarlo',
       image: '/img/rejilla.jpg',
       alt: 'Limpieza de rejilla de ducha obstruida por cabellos y jabón - Openagua',
@@ -702,6 +722,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'como-destapar-inodoro',
+      publishedAt: '2024-10-10',
+      updatedAt: '2026-05-04',
       title: 'Cómo destapar un inodoro: soluciones caseras y cuidados urgentes',
       image: '/img/destapando_un_inodoro.jpg',
       alt: 'Destapación de inodoro con máquina de sonda electromecánica - Openagua',
@@ -779,6 +801,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'como-destapar-rejillas',
+      publishedAt: '2024-11-10',
+      updatedAt: '2026-05-04',
       title: 'Cómo destapar rejillas de patio, baños y terrazas obstruidas',
       image: '/img/destapando rejilla.jpg',
       alt: 'Destapación de rejilla bloqueada en patio o terraza - Openagua',
@@ -856,6 +880,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'como-destapar-pileta-cocina',
+      publishedAt: '2024-12-10',
+      updatedAt: '2026-05-04',
       title: 'Cómo destapar la pileta de cocina sin dañar los caños',
       image: '/img/destapando cocina.jpg',
       alt: 'Pileta de cocina tapada y llena de agua esperando ayuda técnica - Openagua',
@@ -933,6 +959,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'diferencias-canerias-cloacales-pluviales',
+      publishedAt: '2025-01-10',
+      updatedAt: '2025-01-10',
       title: 'Diferencias entre cañerías cloacales y pluviales | Openagua',
       image: '/img/Cañerías cloacales vs pluviales .jpg',
       alt: 'Diferencias entre tuberías cloacales y pluviales - Openagua',
@@ -1019,6 +1047,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'raices-en-canerias-como-detectarlas-y-solucionarlo',
+      publishedAt: '2025-02-10',
+      updatedAt: '2025-02-10',
       title: 'Raíces en cañerías: cómo detectarlas y solucionarlo',
       seoTitle: 'Raíces en cañerías: cómo detectarlas y solucionarlo',
       h1: 'Raíces en cañerías: señales, causas y solución definitiva',
@@ -1078,6 +1108,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'que-no-tirar-en-la-pileta-de-cocina',
+      publishedAt: '2025-03-10',
+      updatedAt: '2025-03-10',
       title: 'Qué no tirar en la pileta de cocina para evitar obstrucciones',
       seoTitle: 'Qué no tirar en la pileta de cocina para evitar obstrucciones',
       h1: 'Qué no tirar en la pileta de cocina para evitar que se tape',
@@ -1128,6 +1160,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'que-es-una-camara-cloacal-y-como-detectar-problemas',
+      publishedAt: '2025-04-10',
+      updatedAt: '2025-04-10',
       title: 'Qué es una cámara cloacal y cómo detectar problemas',
       seoTitle: 'Qué es una cámara cloacal y cómo detectar problemas',
       h1: 'Qué es una cámara cloacal y cómo detectar problemas en tu casa o edificio',
@@ -1179,6 +1213,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'que-productos-no-usar-para-destapar-canos',
+      publishedAt: '2025-05-10',
+      updatedAt: '2025-05-10',
       title: 'Qué productos NO usar para destapar caños',
       seoTitle: 'Qué productos NO usar para destapar caños',
       h1: 'Qué productos NO usar para destapar caños sin dañar las cañerías',
@@ -1224,6 +1260,8 @@ export const getArticulos = (): Articulo[] => {
     },
     {
       slug: 'como-detectar-una-camara-cloacal-tapada',
+      publishedAt: '2025-06-10',
+      updatedAt: '2025-06-10',
       title: 'Cómo detectar una cámara cloacal tapada',
       seoTitle: 'Cómo detectar una cámara cloacal tapada',
       h1: 'Cómo detectar una cámara cloacal tapada antes de que rebalse',
