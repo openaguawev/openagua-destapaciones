@@ -120,10 +120,19 @@ export default function PreciosPage() {
 
         {/* MEDIOS DE PAGO */}
         <section className="section-block compact" style={{ textAlign: 'center', backgroundColor: '#f8fafc', padding: '3rem 2rem', borderRadius: '16px' }}>
-          <h2 className="section-title" style={{ marginBottom: '1.5rem' }}>Formas de pago</h2>
-          <p style={{ fontSize: '1.2rem', color: '#334155', fontWeight: 500 }}>
-            Efectivo | Transferencia bancaria | Tarjetas de crédito y débito (Visa, Mastercard, Amex)
-          </p>
+          <h2 className="section-title" style={{ marginBottom: '2rem' }}>Formas de pago</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem' }}>
+            <div style={{ backgroundColor: '#ffffff', padding: '1rem 1.5rem', borderRadius: '8px', border: '1px solid #e2e8f0', color: '#334155', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem', boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)' }}>
+              💵 Efectivo
+            </div>
+            <div style={{ backgroundColor: '#ffffff', padding: '1rem 1.5rem', borderRadius: '8px', border: '1px solid #e2e8f0', color: '#334155', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem', boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)' }}>
+              🏦 Transferencia bancaria
+            </div>
+            <div style={{ backgroundColor: '#ffffff', padding: '1rem 1.5rem', borderRadius: '8px', border: '1px solid #e2e8f0', color: '#334155', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem', boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)' }}>
+              💳 Tarjetas (Crédito/Débito)
+            </div>
+          </div>
+          <p style={{ marginTop: '1.5rem', fontSize: '0.9rem', color: '#64748b' }}>Aceptamos Visa, Mastercard y American Express.</p>
         </section>
 
         {/* FAQ */}
