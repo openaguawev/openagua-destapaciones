@@ -451,6 +451,12 @@ details[open] .faq-arrow {
 
   .zones-section-urgencias {
     margin-top: 2rem !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .steps-section-urgencias {
+    padding-bottom: 5rem !important;
   }
 
   /* 💰 AJUSTES PRECIOS */

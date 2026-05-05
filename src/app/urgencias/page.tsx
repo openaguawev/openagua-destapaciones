@@ -88,7 +88,7 @@ export default function UrgenciasPage() {
         </section>
 
         {/* PASOS */}
-        <section className="section-block compact">
+        <section className="section-block compact steps-section-urgencias">
           <h2 className="section-title">Cómo coordinamos tu urgencia</h2>
           <div className="steps-grid">
             <div className="step-card">
@@ -118,7 +118,7 @@ export default function UrgenciasPage() {
         </section>
 
         {/* SERVICIOS RELACIONADOS — Interlinking SEO */}
-        <section className="section-block compact" style={{ paddingBottom: '3rem' }}>
+        <section className="section-block compact related-services-urgencias" style={{ paddingBottom: '3rem' }}>
           <h2 className="section-title">Nuestros servicios de urgencia</h2>
           <div className="benefits-grid">
             <Link href="/destapaciones-cloacas" className="benefit-card" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
