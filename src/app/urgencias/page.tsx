@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function UrgenciasPage() {
   return (
-    <main className="servicio-detail-page">
+    <main className="servicio-detail-page urgencias-page">
       {/* HERO */}
       <div className="servicio-hero">
         <Image 
@@ -110,7 +110,7 @@ export default function UrgenciasPage() {
         </section>
 
         {/* ZONAS */}
-        <section className="section-block compact zones-section-urgencias" style={{ paddingBottom: '3rem' }}>
+        <section className="section-block compact zones-section-urgencias" style={{ paddingBottom: '1rem' }}>
           <h2 className="section-title">Llegamos rápido a toda la zona</h2>
           <p style={{ textAlign: 'center', lineHeight: '1.8' }}>
             <strong>CABA completa</strong> | <strong>Zona Oeste:</strong> Ramos Mejía, Morón, Castelar, Ituzaingó, Hurlingham | <strong>Zona Norte:</strong> San Isidro, Vicente López, Olivos, Martínez | <strong>Zona Sur:</strong> Avellaneda, Lanús, Lomas de Zamora
