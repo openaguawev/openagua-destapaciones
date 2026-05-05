@@ -471,4 +471,19 @@ details[open] .faq-arrow {
     text-align: center !important;
     margin-top: 0 !important;
   }
+
+  /* CORRECCIÓN 1 — urgencias: "Llegamos rápido a toda la zona" */
+  .zones-section-urgencias {
+    margin-top: 2rem !important;
+  }
+
+  /* CORRECCIÓN 2 — urgencias: "Cómo coordinamos tu urgencia" */
+  .steps-section-urgencias {
+    margin-top: 2rem !important;
+  }
+
+  /* CORRECCIÓN 3 — precios: "Formas de pago" */
+  .precios-pagos-section {
+    margin-top: 2rem !important;
+  }
 }

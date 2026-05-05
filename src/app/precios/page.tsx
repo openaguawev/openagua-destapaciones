@@ -157,7 +157,7 @@ export default function PreciosPage() {
         </div>
 
         {/* MEDIOS DE PAGO */}
-        <section className="section-block compact" style={{ textAlign: 'center', backgroundColor: '#f8fafc', padding: '3rem 2rem', borderRadius: '16px', position: 'relative' }}>
+        <section className="section-block compact precios-pagos-section" style={{ textAlign: 'center', backgroundColor: '#f8fafc', padding: '3rem 2rem', borderRadius: '16px', position: 'relative' }}>
           <h2 style={{ fontSize: '2.75rem', fontWeight: 700, marginBottom: '2rem', textAlign: 'center', width: '100%', display: 'block', position: 'relative' }}>
             Formas de pago
             <span style={{ content: '', display: 'block', width: '80px', height: '4px', background: '#16A34A', borderRadius: '2px', margin: '12px auto 0 auto' }} />
