@@ -44,6 +44,41 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/destapaciones-en-puerto-madero',
+        destination: '/barrios/destapaciones-puerto-madero',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-en-puerto-madero/',
+        destination: '/barrios/destapaciones-puerto-madero',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-barrios-capital-federal',
+        destination: '/zonas/caba',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-barrios-capital-federal/',
+        destination: '/zonas/caba',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-cocina',
+        destination: '/destapaciones-canerias',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-de-cocina',
+        destination: '/destapaciones-canerias',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-de-cocina/',
+        destination: '/destapaciones-canerias',
+        permanent: true,
+      },
+      {
         source: '/destapaciones-en-:slug',
         destination: '/barrios/destapaciones-:slug',
         permanent: true,

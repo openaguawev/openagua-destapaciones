@@ -47,7 +47,8 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
     'como-destapar-inodoro': 'como-destapar-inodoro',
     'como-destapar-rejillas': 'como-destapar-rejillas',
     'como-destapar-pileta-cocina': 'como-destapar-pileta-cocina',
-    'diferencias-canerias-cloacales-pluviales': 'diferencias-canerias-cloacales-pluviales'
+    'diferencias-canerias-cloacales-pluviales': 'diferencias-canerias-cloacales-pluviales',
+    'resorte-vs-hidrojet-destapacion': 'resorte-vs-hidrojet-cual-es-mejor'
   };
   for (const [key, slug] of Object.entries(blogMap)) {
     // Si ya estamos en una ruta de blog con este slug, ignorar para evitar bucle
@@ -83,6 +84,14 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
     if (cleanName.length > 3 && path.includes(cleanName.replace(/\s+/g, '-'))) {
       permanentRedirect(`/barrios/${barrio.slug}`);
     }
+  }
+
+  // Barrios sin cobertura: Manejar con notFound (410) en vez de redirigir a cloacas
+  if (path.includes('bosques') || 
+      path.includes('sourigues') || 
+      path.includes('pereyra') || 
+      path.includes('virreyes')) {
+    notFound();
   }
 
   // 3. Match generic 'destapaciones' for untreated zones
