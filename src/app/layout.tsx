@@ -61,6 +61,7 @@ import FloatingButtons from '@/components/FloatingButtons';
 import Script from 'next/script';
 import LocalBusinessSchema from '@/components/LocalBusinessSchema';
 import SkipLink from '@/components/SkipLink';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export default function RootLayout({
   children,
@@ -117,6 +118,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
         <LocalBusinessSchema />
+        <SpeedInsights />
       </body>
     </html>
   );
