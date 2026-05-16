@@ -480,6 +480,20 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     problemas: ['cloacas compartidas entre vecinos que colapsan', 'bajadas pluviales con sedimento y raíces', 'cañerías de cocina con grasa endurecida'],
     propiedades: ['consorcios pequeños', 'casas con ampliaciones sucesivas', 'locales gastronómicos de barrio'],
   },
+  'destapaciones-lomas-del-mirador': {
+    nombre: 'Lomas del Mirador',
+    tipo: 'barrio residencial de La Matanza con casas y edificios de mediana altura',
+    problemas: [
+      'obstrucciones en cañerías de PVC por acumulación de grasa y sarro',
+      'tapones en columnas de edificios por residuos sólidos',
+      'raíces en cámaras cloacales por arbolado urbano denso',
+    ],
+    propiedades: [
+      'casas de una y dos plantas',
+      'edificios de departamentos de 4 a 8 pisos',
+      'comercios y locales gastronómicos',
+    ],
+  },
   'destapaciones-escobar': {
     nombre: 'Escobar',
     tipo: 'zona residencial suburbana con casas amplias y jardines',

@@ -94,6 +94,13 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
     notFound();
   }
 
+  // Barrios sin cobertura adicionales (URLs con tráfico real de WordPress)
+  if (path.includes('ferrere') ||
+      path.includes('islas') ||
+      path.includes('burzaco')) {
+    notFound();
+  }
+
   // 3. Match generic 'destapaciones' for untreated zones
   if (path.includes('destapac')) {
     permanentRedirect('/destapaciones-cloacas');

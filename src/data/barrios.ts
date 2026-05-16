@@ -89,6 +89,7 @@ export const barrios: Barrio[] = [
   { slug: 'destapaciones-san-martin', name: 'San Martin', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Villa Ballester","San Andres","Villa Lynch","Caseros"] },
   { slug: 'destapaciones-ituzaingo', name: 'Ituzaingó', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Moron","Castelar","Merlo"] },
   { slug: 'destapaciones-merlo', name: 'Merlo', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Ituzaingo","Moreno","Paso del Rey"] },
+  { slug: 'destapaciones-lomas-del-mirador', name: 'Lomas del Mirador', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Villa Luzuriaga","Ramos Mejía","San Justo","Tapiales"], pois: ["Av. General Paz","Av. Vergara","Plaza Lomas del Mirador"] },
   // ZONA NORTE
   { slug: 'destapaciones-escobar', name: 'Escobar', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Garin","Vicente Lopez","San Isidro"] },
   { slug: 'destapaciones-san-isidro', name: 'San Isidro', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Martinez","Acassuso","Beccar","Boulogne"], pois: ["Av. Centenario", "Catedral de San Isidro", "Hipódromo de San Isidro", "Calle Belgrano"] },
