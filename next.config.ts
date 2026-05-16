@@ -78,11 +78,69 @@ const nextConfig: NextConfig = {
         destination: '/destapaciones-canerias',
         permanent: true,
       },
+      // Redirects explícitos URLs WordPress con tráfico real
+      {
+        source: '/destapaciones-general-san-martin',
+        destination: '/barrios/destapaciones-general-san-martin',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-general-san-martin/',
+        destination: '/barrios/destapaciones-general-san-martin',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-san-martin',
+        destination: '/barrios/destapaciones-san-martin',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-san-martin/',
+        destination: '/barrios/destapaciones-san-martin',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-ingeniero-maschwitz',
+        destination: '/barrios/destapaciones-ingeniero-maschwitz',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-ingeniero-maschwitz/',
+        destination: '/barrios/destapaciones-ingeniero-maschwitz',
+        permanent: true,
+      },
+      {
+        source: '/video-inspeccion',
+        destination: '/video-inspeccion-canerias',
+        permanent: true,
+      },
+      {
+        source: '/video-inspeccion/',
+        destination: '/video-inspeccion-canerias',
+        permanent: true,
+      },
+      {
+        source: '/diferencias-canerias-cloacales-pluviales',
+        destination: '/blog/diferencias-canerias-cloacales-pluviales',
+        permanent: true,
+      },
+      {
+        source: '/como-destapar-rejillas',
+        destination: '/blog/como-destapar-rejillas',
+        permanent: true,
+      },
+      {
+        source: '/solucion-problemas-cloacas-buenos-aires',
+        destination: '/destapaciones-cloacas',
+        permanent: true,
+      },
+      // Redirect genérico destapaciones-en-* (debe ir después de los explícitos)
       {
         source: '/destapaciones-en-:slug',
         destination: '/barrios/destapaciones-:slug',
         permanent: true,
       },
+
       {
         source: '/destapaciones-ezpeleta',
         destination: '/destapaciones-cloacas',
