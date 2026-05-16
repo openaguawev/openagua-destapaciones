@@ -136,6 +136,26 @@ const nextConfig: NextConfig = {
       },
       // Redirect genérico destapaciones-en-* (debe ir después de los explícitos)
       {
+        source: '/prevencion-obstrucciones-cloacas-pluviales',
+        destination: '/blog/diferencias-canerias-cloacales-pluviales',
+        permanent: true,
+      },
+      {
+        source: '/prevencion-obstrucciones-cloacas-pluviales/',
+        destination: '/blog/diferencias-canerias-cloacales-pluviales',
+        permanent: true,
+      },
+      {
+        source: '/desagotes',
+        destination: '/desagote-sotanos',
+        permanent: true,
+      },
+      {
+        source: '/desagotes/',
+        destination: '/desagote-sotanos',
+        permanent: true,
+      },
+      {
         source: '/destapaciones-en-:slug',
         destination: '/barrios/destapaciones-:slug',
         permanent: true,

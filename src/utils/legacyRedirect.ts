@@ -101,13 +101,19 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
     notFound();
   }
 
+  // Zonas sin cobertura — Search Console 410
+  if (path.includes('lopez-camelo') ||
+      path.includes('jauregui')) {
+    notFound();
+  }
+
   // 3. Match generic 'destapaciones' for untreated zones
   if (path.includes('destapac')) {
     permanentRedirect('/destapaciones-cloacas');
   }
 
   // 4. Mapeo de barrios muertos de WP
-  const eliminatedBarrios = ['lopez-camelo', 'jauregui', 'pilar'];
+  const eliminatedBarrios = ['pilar'];
   for (const deleted of eliminatedBarrios) {
     if (path.includes(deleted)) {
       permanentRedirect('/zonas/zona-norte');
