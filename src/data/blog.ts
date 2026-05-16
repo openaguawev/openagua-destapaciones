@@ -366,14 +366,15 @@ export const getArticulos = (): Articulo[] => {
     {
       slug: 'video-inspeccion-saber-cano-roto-sin-romper',
       publishedAt: '2024-05-10',
-      updatedAt: '2024-05-10',
+      updatedAt: '2026-05-16',
       title: 'Video Inspección: Cómo saber si tu caño está roto sin romper el piso',
       seoTitle: 'Cómo Saber si un Caño Está Roto Sin Romper el Piso',
       image: '/img/video inspeccion.jpg',
       alt: 'Video inspección de cañerías rotas sin romper el piso en CABA y GBA - Openagua',
-      excerpt: 'Evitá meses de albañilería cara usando cámaras cloacales.',
+      excerpt: 'Descubrí cómo la video inspección cañerías detecta roturas sin romper pisos. Ahorrá dinero y molestias. ¡Solicitá hoy diagnóstico en CABA y GBA!',
       content: `
         <p>Romper una docena de baldosas carísimas de un living o excavar ciegamente buscando una pérdida es una tragedia que ningún vecino de <strong>CABA</strong> ni del <strong>Gran Buenos Aires</strong> debería sufrir jamás. En el pasado, diagnosticar problemas subterráneos era sinónimo de destrucción y gastos inmensos. Hoy, la realidad ha cambiado drásticamente.</p>
+        
         <p>Actualmente existe tecnología avanzada de <a href="/video-inspeccion-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">video inspección localizadora</a> que escanea tus metros de cloaca por dentro. Esta técnica no invasiva ahorra una verdadera fortuna en refacciones innecesarias y dolores de cabeza, permitiendo ver exactamente qué sucede en la oscuridad de tus cañerías.</p>
         
         ${getCtaHtml()}
@@ -386,6 +387,23 @@ export const getArticulos = (): Articulo[] => {
           <li><strong>Juntas desplazadas:</strong> Mala praxis durante la instalación original que, con el tiempo, genera escalones donde la suciedad se estanca.</li>
         </ul>
 
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Tipos de cámaras cloacales utilizadas en CABA y GBA</h2>
+        <p>No todas las video inspecciones son iguales. Existen diferentes tipos de cámaras cloacales diseñadas para adaptarse a la complejidad y diámetro de cada red cloacal o pluvial, asegurando que ningún rincón quede sin revisar:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Cámaras de empuje manual (Push Cameras):</strong> Son las más comunes para el uso residencial. Cuentan con un cabezal de cámara reforzado en titanio y luces LED ultrapotentes, montado sobre una varilla de fibra de vidrio semirrígida. Son ideales para caños de entre 40mm y 160mm, permitiendo navegar por codos y curvas de cocinas y baños.</li>
+          <li><strong>Cámaras tractoras o robotizadas:</strong> Para colectores principales de consorcios o redes municipales que superan los 200mm de diámetro, se utilizan pequeños vehículos a control remoto. Estos robots poseen tracción propia, cabezales pan-and-tilt (que giran 360 grados) y sensores láser para medir la ovalización de la tubería.</li>
+          <li><strong>Microcámaras articuladas:</strong> Herramientas microscópicas de alta resolución que se emplean para explorar cañerías extremadamente finas y delicadas, o tramos de desagüe de equipos de aire acondicionado y bachas diminutas.</li>
+        </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Qué detecta exactamente una video inspección de cañerías?</h2>
+        <p>Una cámara cloacal no solo "ve" si hay agua estancada. La lente de zafiro anti-rayaduras y la resolución en alta definición permiten a nuestros técnicos certificar anomalías milimétricas. Al ingresar a la red, detectamos con absoluta precisión:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Fisuras capilares y roturas longitudinales:</strong> Grietas finas por donde el agua se filtra hacia la tierra, provocando el socavamiento del terreno o hundimientos en los pisos del hogar.</li>
+          <li><strong>Incrustaciones calcáreas y sarro:</strong> Depósitos endurecidos de minerales y grasa solidificada que reducen el diámetro interno de la cañería, disminuyendo dramáticamente el caudal de evacuación.</li>
+          <li><strong>Contrapendientes u ondulaciones:</strong> Zonas donde el caño ha perdido la caída natural necesaria para que el agua escurra por gravedad, generando piletones internos donde la materia fecal y el papel se estancan permanentemente.</li>
+          <li><strong>Infiltraciones de napa:</strong> En muchas zonas del conurbano, las napas freáticas altas ingresan a las cañerías cloacales a través de juntas en mal estado, saturando los pozos ciegos o las cámaras sépticas en cuestión de horas.</li>
+        </ul>
+
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Beneficios exclusivos de inspeccionar tuberías con cámaras HD</h2>
         <p>Optar por un diagnóstico digital antes de romper ofrece ventajas inmediatas que cambian por completo la dinámica de cualquier reparación:</p>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
@@ -395,21 +413,24 @@ export const getArticulos = (): Articulo[] => {
           <li><strong>Evidencia en Video (Grabación y Remito):</strong> Resulta una prueba visual indeleble e invaluable para presentar en reclamos hacia la administración del consorcio o la empresa aseguradora.</li>
         </ul>
 
-        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cómo se realiza el procedimiento técnico de video inspección?</h2>
-        <p>El proceso es metódico y rápido, tardando generalmente menos de una hora en propiedades promedio:</p>
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cómo se realiza el procedimiento paso a paso y cuánto tarda?</h2>
+        <p>El proceso es metódico, altamente profesional y sumamente rápido. En la gran mayoría de las propiedades residenciales de CABA y el Gran Buenos Aires, la inspección completa tarda menos de una hora y se desarrolla de la siguiente manera:</p>
         <ol style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Acceso primario:</strong> El técnico identifica la cámara de inspección más cercana (suele estar en el patio, vereda o sótano) y prepara la sonda.</li>
-          <li><strong>Navegación controlada:</strong> Se introduce el cabezal de la cámara, que cuenta con estabilización de imagen. Mientras avanza, el técnico monitorea la pantalla registrando anomalías.</li>
-          <li><strong>Geolocalización externa:</strong> Si se encuentra una rotura a 8 metros de distancia, la sonda emite una señal de radio. El operador usa un receptor en la superficie (sobre el piso) para marcar con una tiza el punto exacto donde se debe excavar.</li>
+          <li><strong>Preparación y acceso primario:</strong> El técnico identifica la boca de acceso más cercana y segura. Esto suele ser la cámara de inspección en el patio, un registro en la vereda, el colector del sótano o incluso desmotando el inodoro para ingresar directamente por el conducto de 110mm.</li>
+          <li><strong>Navegación controlada e inspección visual:</strong> Se introduce el cabezal de la cámara, que cuenta con autonivelación de imagen (la imagen siempre se ve derecha). A medida que el operario empuja la fibra de vidrio, monitorea la pantalla en tiempo real registrando cada anomalía, junta y cambio de dirección. Se miden los metros avanzados para saber la distancia exacta del recorrido.</li>
+          <li><strong>Geolocalización externa por radiofrecuencia:</strong> Este es el paso tecnológico clave. Si a los 8 metros de profundidad se encuentra una rotura o una raíz gigante, la punta de la sonda emite una señal de radio constante de 512 Hz. El operador camina por la superficie (sobre los pisos de tu casa, el pasto o el asfalto) portando un receptor de señales. El receptor emite un pitido que se intensifica al estar exactamente sobre la cámara enterrada. Así, se marca con una tiza o pintura el punto topográfico exacto (y la profundidad en centímetros) donde el albañil debe excavar.</li>
+          <li><strong>Emisión del informe técnico:</strong> Al finalizar, el cliente recibe un diagnóstico claro, el archivo de video en un pendrive o enlace digital, y un presupuesto exacto en caso de requerir una reparación localizada o una limpieza profunda con hidrojet.</li>
         </ol>
 
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cómo me ahorra plata pagar una cámara cloacal?</h2>
-        <p>Muchos clientes dudan al principio por el costo inicial del servicio de inspección. Sin embargo, al identificar de forma irrefutable un bloqueo inmenso o una fractura, evitas hacer constantes e inútiles pagos temporales por destapaciones fallidas semana tras semana. Sabrás, a centímetros del problema, dónde aplicar la única reparación seria necesaria, reduciendo el costo de albañilería en un 80%.</p>
+        <p>Muchos clientes dudan al principio por el costo inicial del servicio de inspección, asumiendo que es un gasto "extra". Sin embargo, al identificar de forma irrefutable un bloqueo inmenso o una fractura, evitas hacer constantes e inútiles pagos temporales por destapaciones fallidas semana tras semana. Sabrás, a centímetros del problema, dónde aplicar la única reparación seria necesaria, reduciendo el costo de albañilería en un 80% o más. En lugar de levantar todo el living buscando a ciegas, el albañil solo romperá una sola baldosa, ahorrando materiales, días de trabajo y la limpieza posterior.</p>
 
         ${getFaqHtml([
-          {q: "¿La cámara puede navegar por caños finos de 40mm?", a: "Sí, contamos con miniaturas robóticas HD lo bastante flexibles para recorrer caños internos de cocinas y lavaderos desde 40 milímetros sin trabarse en los codos."},
-          {q: "¿Graba video para entregar a la aseguradora?", a: "Efectivamente, capturamos toda la incursión en formato digital y generamos un archivo exportable legal con las coordenadas métricas del atasco para que lo presentes donde corresponda."},
-          {q: "¿El servicio llega rápido a mi barrio?", a: "Nuestros vehículos viajan totalmente instrumentados diariamente por CABA y GBA, abarcando tanto centros urbanos como radios suburbanos de Zona Norte, Sur y Oeste."}
+          {q: "¿La cámara puede navegar por caños finos de 40mm?", a: "Sí, contamos con miniaturas robóticas HD lo bastante flexibles para recorrer caños internos de cocinas y lavaderos desde 40 milímetros sin trabarse en los codos, adaptándonos a cualquier diámetro domiciliario."},
+          {q: "¿Graba video para entregar a la aseguradora?", a: "Efectivamente, capturamos toda la incursión en formato digital y generamos un archivo exportable legal con las coordenadas métricas del atasco para que lo presentes a tu compañía de seguros o administración."},
+          {q: "¿El servicio llega rápido a mi barrio?", a: "Nuestros vehículos viajan totalmente instrumentados diariamente por CABA y GBA, abarcando tanto centros urbanos como radios suburbanos de Zona Norte, Sur y Oeste, asegurando asistencia en pocas horas."},
+          {q: "¿Es necesario romper algo para hacer la inspección?", a: "No. La gran ventaja de la video inspección de cañerías es que ingresamos por bocas de acceso preexistentes, como rejillas, piletas de patio, cámaras de inspección o retirando momentáneamente el inodoro, sin dañar la estructura de tu casa."},
+          {q: "¿Pueden destapar el caño en el mismo momento que hacen la inspección?", a: "Sí. Nuestras camionetas están equipadas tanto con las cámaras de inspección como con sondas electromecánicas y bombas de hidrojet. Una vez que localizamos la obstrucción y evaluamos el estado del caño, procedemos a realizar la destapación definitiva en la misma visita si el cliente lo aprueba."}
         ])}
       `
     },
@@ -527,7 +548,7 @@ export const getArticulos = (): Articulo[] => {
         </ul>
 
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">El Peligro de las Herramientas Caseras</h2>
-        <p>En medio de la tormenta, la desesperación lleva a muchos vecinos de Adrogué o Lanús a introducir varillas de obra, mangueras de riego con la canilla abierta o palos de escoba por la rejilla para "empujar" el barro. Esto es un error garrafal por dos motivos: primero, compactás aún más el barro convirtiéndolo en una piedra impermeable en el codo; segundo, corrés el enorme riesgo de perforar y quebrar la cañería pluvial de PVC subterránea, ocasionando una filtración grave que requerirá romper todo el piso de cerámica exterior.</p>
+        <p>En medio de la tormenta, la desesperación lleva a muchos vecinos de Adrogué o Lanús a introducir varillas de obra, mangueras de riego con la canilla abierta o palos de escoba por la rejilla para "empujar" el barro. Esto es un error garrafal por dos motivos: primero, compactás aún más el barro convirtiéndolo en una piedra impermeable en el codo; segundo, corrés el enorme riesgo de perforar y quebrar la cañería pluvial de PVC subterránea, ocasionando una filtración grave. Si sospechás que ya causaste este tipo de daño, una <a href="/blog/video-inspeccion-saber-cano-roto-sin-romper" style="color:#16A34A;font-weight:bold;text-decoration:underline;">video inspección para saber si el caño está roto</a> te permitirá verificar el estado estructural sin tener que romper todo el piso de cerámica exterior a ciegas.</p>
 
         <p>Frente a la tierra dura, el barro y las hojas podridas, la única solución real, rápida y segura la aporta una inminente <a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación con hidrojet</a>. Nuestro equipamiento de lavado a ultra alta presión pulveriza, disuelve, barre y expulsa el lodo en estado líquido hacia el cordón de la calle o cámara general en cuestión de pocos minutos, recuperando el flujo pluvial y devolviendo la tranquilidad bajo la lluvia a toda la familia de inmediato.</p>
 
@@ -1504,7 +1525,7 @@ export const getArticulos = (): Articulo[] => {
         <p>En cambio, la columna vertical principal que recorre todos los pisos del edificio es un bien común del consorcio. Cuando el tapón se encuentra en esa bajada, el costo de la destapación debe ser afrontado por todos los copropietarios. Para identificar dónde está el problema conviene contratar <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cloacas</a> con técnicos que documenten el punto exacto de la obstrucción. Más detalle en nuestro artículo sobre <a href="/blog/5-senales-columna-edificio-tapada" style="color:#16A34A;font-weight:bold;text-decoration:underline;">las 5 señales de que la columna está por taparse</a>.</p>
 
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Los problemas más comunes en edificios y cómo detectarlos</h2>
-        <p>Los edificios en CABA y GBA tienen patrones de falla bastante predecibles. El más frecuente es la acumulación de grasa en las columnas cloacales, especialmente en edificios donde hay locales gastronómicos en planta baja. Si el local no tiene trampa de grasa o no la limpia periódicamente, toda esa grasa se deposita en las paredes del caño de todos los pisos. Como explica nuestro artículo sobre <a href="/blog/grasa-canerias-edificios-agua-hirviendo" style="color:#16A34A;font-weight:bold;text-decoration:underline;">grasa en cañerías de edificios</a>, intentar resolverlo con agua hirviendo suele empeorar el problema.</p>
+        <p>Los edificios en CABA y GBA tienen patrones de falla bastante predecibles. El más frecuente es la acumulación de grasa en las columnas cloacales, especialmente en edificios donde hay locales gastronómicos en planta baja. Si el local no tiene trampa de grasa o no la limpia periódicamente, toda esa grasa se deposita en las paredes del caño de todos los pisos. Como explica nuestro artículo sobre <a href="/blog/grasa-canerias-edificios-agua-hirviendo" style="color:#16A34A;font-weight:bold;text-decoration:underline;">grasa en cañerías de edificios</a>, intentar resolverlo con agua hirviendo suele empeorar el problema. Además, las roturas por movimientos del suelo son comunes; por eso, frente a filtraciones misteriosas, se recomienda una <a href="/blog/video-inspeccion-saber-cano-roto-sin-romper" style="color:#16A34A;font-weight:bold;text-decoration:underline;">video inspección para detectar el caño roto sin necesidad de picar el piso</a>.</p>
 
         <p>Las señales de alerta que el administrador debe atender son: quejas de varios vecinos del mismo lado del edificio sobre drenaje lento, olor a cloaca en el hall o en el patio de servicio, y gorgoteos en los inodoros de los pisos bajos cuando alguien usa agua en los pisos superiores. Actuar ante estas señales en lugar de esperar la inundación puede reducir el costo del servicio considerablemente.</p>
 
