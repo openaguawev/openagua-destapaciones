@@ -8,7 +8,7 @@ export interface BarrioSeoData {
 export const barriosSeo: Record<string, BarrioSeoData> = {
   'destapaciones-palermo': {
     nombre: 'Palermo',
-    tipo: 'zona gastronómica y comercial con alta rotación de locales',
+    tipo: 'barrio gastronómico y residencial de CABA con alta rotación de locales y edificios modernos',
     problemas: ['grasa industrial en bajadas de cocina comercial', 'desagües colapsados en subsuelos', 'columnas cloacales con incrustaciones de cal'],
     propiedades: ['torres residenciales modernas', 'casas antiguas con instalaciones originales', 'locales con cocina industrial'],
   },
@@ -20,7 +20,7 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
   },
   'destapaciones-belgrano': {
     nombre: 'Belgrano',
-    tipo: 'zona mixta con locales gastronómicos, departamentos y casas',
+    tipo: 'barrio residencial y comercial de CABA con alta demanda de destapaciones en edificios y consorcios',
     problemas: ['grasa industrial en bajadas de cocina comercial', 'desagües colapsados en subsuelos', 'columnas cloacales con incrustaciones de cal'],
     propiedades: ['torres residenciales modernas', 'casas antiguas con instalaciones originales', 'locales con cocina industrial'],
   },
@@ -326,7 +326,7 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
   },
   'destapaciones-moron': {
     nombre: 'Moron',
-    tipo: 'zona suburbana con napas altas y terrenos húmedos',
+    tipo: 'centro urbano de Zona Oeste con alta densidad de edificios de los años 70 y 80 y cañerías que requieren mantenimiento frecuente',
     problemas: ['caños con pérdida de pendiente por asentamiento del terreno', 'rejillas de patio obstruidas por barro', 'desagües de lavadero bloqueados por pelusa y jabón'],
     propiedades: ['casas con pozo ciego o cámara séptica', 'dúplex y tríplex', 'negocios sobre avenida principal'],
   },
@@ -452,7 +452,7 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
   },
   'destapaciones-san-justo': {
     nombre: 'San Justo',
-    tipo: 'zona en crecimiento con loteos nuevos y propiedades tradicionales',
+    tipo: 'centro comercial y residencial de La Matanza con alta densidad de edificios y comercios gastronómicos',
     problemas: ['cloacas compartidas entre vecinos que colapsan', 'bajadas pluviales con sedimento y raíces', 'cañerías de cocina con grasa endurecida'],
     propiedades: ['consorcios pequeños', 'casas con ampliaciones sucesivas', 'locales gastronómicos de barrio'],
   },
@@ -502,7 +502,7 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
   },
   'destapaciones-san-isidro': {
     nombre: 'San Isidro',
-    tipo: 'barrio de casas con terrenos grandes y abundante vegetación',
+    tipo: 'municipio residencial del norte del GBA con casas con jardín y problemas frecuentes de raíces en cañerías',
     problemas: ['desagües de pileta bloqueados por sedimento del jardín', 'cloacas obstruidas por raíces invasivas', 'bajadas de terraza con acumulación de musgo'],
     propiedades: ['viviendas unifamiliares con terreno grande', 'countries y barrios cerrados', 'casas quintas con parque'],
   },
@@ -736,7 +736,7 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
   },
   'destapaciones-quilmes': {
     nombre: 'Quilmes',
-    tipo: 'zona en crecimiento con loteos nuevos y propiedades tradicionales',
+    tipo: 'municipio del sur del GBA con mix de casas, edificios y zonas industriales con alta demanda de destapaciones',
     problemas: ['cloacas antiguas con juntas deterioradas', 'pozos ciegos saturados que requieren intervención', 'cañerías de barro cocido fisuradas por la edad'],
     propiedades: ['casas de barrio con patio y fondo', 'edificios de pocos pisos', 'comercios de cercanía'],
   },
