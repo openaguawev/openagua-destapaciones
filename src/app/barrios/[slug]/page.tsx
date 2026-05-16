@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props) {
     `Destapaciones en ${barrio.name} para casas, departamentos y edificios. Atención inmediata. Sin romper. ☎ 11 5179-7649`,
   ];
 
-  const seoTitle = `Destapaciones en ${barrio.name} | Openagua`;
+  const seoTitle = `Destapaciones en ${barrio.name} | CABA y GBA`;
   const seoDescription = descriptions[dHash % descriptions.length];
 
   return {
