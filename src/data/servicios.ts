@@ -154,7 +154,7 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Cómo ven el estado del caño?", a: "Si el problema es recurrente, realizamos una video inspección de cañerías para detectar roturas o fallas estructurales sin necesidad de excavar." }
       ],
       {
-        seoTitle: "Destapaciones de Cloacas Urgentes | Llegamos en 60 min | Openagua",
+        seoTitle: "Destapaciones de Cloacas en CABA y GBA | Openagua",
         seoDescription: "¿Cloaca tapada o rebalsando? Resolvemos hoy mismo sin romper. Más de 10 años de experiencia. 332 reseñas con 4.9★. CABA y GBA. ☎ 11 5179-7649.",
         benefitsTitle: "Especialistas en Destapaciones de Cloacas",
         benefits: [
