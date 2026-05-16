@@ -1316,7 +1316,7 @@ export const getArticulos = (): Articulo[] => {
       title: 'Sótano inundado: qué hacer paso a paso',
       seoTitle: 'Sótano Inundado: Qué Hacer Paso a Paso',
       h1: 'Sótano inundado: guía práctica para actuar sin errores',
-      image: '/img/desagote sotano.jpg',
+      image: '/img/sotano inundado.jpg',
       alt: 'Sótano con agua siendo desagotado con bomba profesional en GBA',
       excerpt: 'Guía práctica para actuar cuando el sótano se inunda. Pasos seguros, qué evitar y cómo prevenir que vuelva a pasar.',
       content: `
@@ -1403,7 +1403,7 @@ export const getArticulos = (): Articulo[] => {
       title: 'Diámetros de caños: guía para entender tu instalación',
       seoTitle: 'Diámetros de Caños Sanitarios: Guía Completa',
       h1: 'Diámetros de caños sanitarios: guía para entender tu instalación',
-      image: '/img/Cañerías cloacales vs pluviales .jpg',
+      image: '/img/medicion caños.jpg',
       alt: 'Diferentes diámetros de caños PVC para instalaciones sanitarias',
       excerpt: 'Guía técnica sobre los diámetros de caños más usados en Argentina. Cuál corresponde a cada artefacto y por qué importa.',
       content: `
@@ -1487,7 +1487,7 @@ export const getArticulos = (): Articulo[] => {
       title: 'Destapaciones en consorcios: guía para administradores',
       seoTitle: 'Destapaciones en Consorcios | Guía Práctica',
       h1: 'Destapaciones en consorcios: guía práctica para administradores',
-      image: '/img/edificio.jpg',
+      image: '/img/consorcio destapacion.jpg',
       alt: 'Edificio de consorcio en CABA donde se realizan trabajos de destapación',
       excerpt: 'Todo lo que un administrador necesita saber sobre destapaciones en edificios. Responsabilidades, mantenimiento y cómo evitar problemas costosos.',
       content: `
@@ -1561,7 +1561,7 @@ export const getArticulos = (): Articulo[] => {
       title: 'Cómo cambiar un flexible de cañería',
       seoTitle: 'Cómo Cambiar un Flexible de Cañería Paso a Paso',
       h1: 'Cómo cambiar un flexible de cañería: guía paso a paso',
-      image: '/img/caño con agua.jpg',
+      image: '/img/cambio flexible.jpg',
       alt: 'Flexible de cañería bajo mesada siendo reemplazado',
       excerpt: 'Guía práctica para cambiar un flexible de agua en casa. Qué herramientas necesitás, cómo hacerlo y cuándo conviene llamar a un profesional.',
       content: `
@@ -1638,7 +1638,7 @@ export const getArticulos = (): Articulo[] => {
       title: 'Cómo cambiar un cuerito de canilla',
       seoTitle: 'Cómo Cambiar un Cuerito de Canilla: Guía Fácil',
       h1: 'Cómo cambiar un cuerito de canilla paso a paso',
-      image: '/img/caño con agua.jpg',
+      image: '/img/cambio cuerito.jpg',
       alt: 'Canilla con goteo siendo reparada cambiando el cuerito',
       excerpt: 'La canilla gotea y no para. Aprendé a cambiar el cuerito vos mismo con herramientas básicas y sin llamar al plomero.',
       content: `
@@ -1691,7 +1691,7 @@ export const getArticulos = (): Articulo[] => {
       title: 'Cómo limpiar el sifón del desagüe de la cocina',
       seoTitle: 'Cómo Limpiar el Sifón de la Cocina: Paso a Paso',
       h1: 'Cómo limpiar el sifón del desagüe de la cocina sin llamar al plomero',
-      image: '/img/destapando cocina.jpg',
+      image: '/img/limpieza sifon.jpg',
       alt: 'Sifón bajo mesada de cocina siendo limpiado para eliminar olores',
       excerpt: 'El sifón de la cocina acumula grasa y genera mal olor. Aprendé a limpiarlo vos mismo en 15 minutos con herramientas básicas.',
       content: `
