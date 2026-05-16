@@ -1308,6 +1308,474 @@ export const getArticulos = (): Articulo[] => {
       
         <p style="margin-top:2rem;">Para más seguridad, siempre podés solicitar una <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cloacas</a> o <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional con nuestros equipos.</p>
       `
+    },
+    {
+      slug: 'que-hacer-cuando-se-inunda-el-sotano',
+      publishedAt: '2026-05-06',
+      updatedAt: '2026-05-06',
+      title: 'Sótano inundado: qué hacer paso a paso',
+      seoTitle: 'Sótano Inundado: Qué Hacer Paso a Paso',
+      h1: 'Sótano inundado: guía práctica para actuar sin errores',
+      image: '/img/desagote sotano.jpg',
+      alt: 'Sótano con agua siendo desagotado con bomba profesional en GBA',
+      excerpt: 'Guía práctica para actuar cuando el sótano se inunda. Pasos seguros, qué evitar y cómo prevenir que vuelva a pasar.',
+      content: `
+
+        <p>Bajar al sótano y encontrarlo con agua es una situación que cualquier propietario en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong> querría evitar. Sin embargo, es más común de lo que parece, especialmente después de lluvias intensas o cuando las napas freáticas suben en épocas de mucha humedad. La buena noticia es que, si actuás con orden y sin apresurarte, el daño puede limitarse considerablemente.</p>
+
+        <p>Un sótano inundado no siempre significa catástrofe, pero sí requiere una respuesta rápida y organizada. Antes de agarrar cualquier herramienta o intentar ingresar al espacio sin evaluar la situación, es fundamental entender qué generó el problema. Las causas más frecuentes son la lluvia intensa que supera la capacidad del desagüe pluvial, el ascenso de la napa freática, un caño roto dentro del subsuelo o una cañería de desagüe tapada que devuelve el agua hacia adentro en lugar de evacuarla hacia afuera. Cada causa tiene su propio abordaje técnico, y confundirlas puede llevar a gastar dinero sin resolver el problema de raíz.</p>
+
+        <p>Si la inundación proviene de lluvia, el problema suele estar en los desagües pluviales del perímetro o en la pendiente del terreno. Si ocurre sin lluvia y con cierta lentitud, probablemente la napa esté elevada o haya una pérdida en una cañería enterrada. En cualquier caso, el primer paso es siempre el mismo: evaluar la seguridad antes de actuar.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Primeros pasos seguros al encontrar el sótano inundado</h2>
+        <p>Lo primero que tenés que hacer es cortar la energía eléctrica del sector antes de entrar al sótano. El agua y la electricidad son una combinación mortal, y es un paso que no puede obviarse bajo ninguna circunstancia. Dirigite al tablero general y desconectá el disyuntor correspondiente al área inundada. Si no sabés cuál es, cortá la llave general del inmueble.</p>
+
+        ${getCtaHtml()}
+
+        <p>Una vez que la energía está cortada, podés evaluar visualmente desde la entrada el nivel del agua y el origen aparente. Buscá si hay caños rotos visibles, si el agua tiene color o olor a cloaca (lo que indicaría contaminación sanitaria), o si viene limpia (lo que sugiere origen pluvial o de napa). Esta información es clave para orientar bien el <a href="/desagote-sotanos" style="color:#16A34A;font-weight:bold;text-decoration:underline;">desagote del sótano</a> y evitar diagnósticos equivocados.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Qué NO hacer cuando el sótano está inundado</h2>
+        <p>Hay una serie de errores frecuentes que conviene evitar para no agravar la situación ni poner en riesgo la seguridad personal:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>No entrar con corriente eléctrica activa:</strong> Como ya mencionamos, es la prioridad absoluta. Nunca ingreses sin verificar que el circuito está cortado.</li>
+          <li><strong>No usar aspiradoras domésticas convencionales:</strong> Las aspiradoras de uso hogareño no están diseñadas para agua y pueden electrocultar al usuario o quemarse al instante.</li>
+          <li><strong>No mover muebles o cajas sin evaluar el peso:</strong> Los objetos mojados son mucho más pesados y pueden causar lesiones al intentar sacarlos.</li>
+          <li><strong>No abrir las canillas ni usar el baño mientras dure la inundación:</strong> Si el origen es un desagüe tapado, agregar más agua al sistema empeorará el retroceso.</li>
+          <li><strong>No esperar demasiado para actuar:</strong> El agua estancada genera humedad profunda en paredes, piso y estructura. Cuánto más tiempo pasa, mayor es el daño y el riesgo de hongos y deterioro.</li>
+        </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuándo el desagote necesita un profesional con bombas sumergibles</h2>
+        <p>Si el nivel del agua supera los 10 centímetros, si el sótano tiene una superficie grande o si el agua sigue ingresando mientras intentás sacarla, el trabajo excede lo que se puede hacer con baldes o pequeñas bombas domésticas. En estos casos, es necesario contratar un servicio profesional de <a href="/desagote-sotanos" style="color:#16A34A;font-weight:bold;text-decoration:underline;">desagote de sótanos</a> con bombas sumergibles de alto caudal.</p>
+
+        <p>Las bombas profesionales mueven cientos de litros por minuto y pueden evacuar un sótano estándar en menos de una hora, dependiendo del volumen de agua acumulada. Además, el técnico puede identificar simultáneamente el origen del problema: si hay que realizar <a href="/destapaciones-pluviales" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones pluviales</a> en el perímetro, cambiar un caño roto o instalar un sumidero adicional.</p>
+
+        <p>El tiempo estimado para un desagote profesional en un sótano estándar de una casa en GBA varía entre 45 minutos y 3 horas, según el volumen de agua, el acceso al espacio y si hay sedimentos o barro acumulado que dificulte el bombeo. Después del desagote, es fundamental secar y ventilar el espacio durante al menos 48 horas para evitar la aparición de humedad estructural y hongos.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cómo prevenir futuras inundaciones en el sótano</h2>
+        <p>Una vez resuelta la emergencia, el siguiente paso es la prevención. Entender por qué se inundó es la clave para que no vuelva a pasar. Si la causa fue un desagüe pluvial saturado, revisar y limpiar los sumideros y canaletas perimetrales al menos dos veces al año —especialmente antes del verano— es la medida más efectiva.</p>
+
+        <p>Si el problema fue la napa freática, puede ser necesario instalar una membrana hidrófuga en las paredes del sótano o colocar una bomba sumidero permanente que se active automáticamente cuando el nivel del agua supera un umbral. Para comprender mejor la diferencia entre los sistemas de drenaje, podés leer nuestro artículo sobre <a href="/blog/diferencias-canerias-cloacales-pluviales" style="color:#16A34A;font-weight:bold;text-decoration:underline;">diferencias entre cañerías cloacales y pluviales</a>.</p>
+
+        <p>Finalmente, verificar que las pendientes del piso del sótano estén correctamente orientadas hacia los desagües, y que las bocas de tormenta externas no estén tapadas con hojas o sedimento, es una tarea sencilla que puede evitar inundaciones completas durante tormentas intensas.</p>
+
+        <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 2rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Causa</th>
+                <th style="padding: 1rem; font-weight: 800; color: #f59e0b;">Señales</th>
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">Solución</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Desagüe pluvial tapado</td>
+                <td style="padding: 1rem; color: #475569;">El agua ingresa solo durante o después de la lluvia.</td>
+                <td style="padding: 1rem; color: #475569;">Destapación pluvial exterior y limpieza de sumideros.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Napa freática alta</td>
+                <td style="padding: 1rem; color: #475569;">El agua sube lentamente sin lluvia, por las juntas del piso.</td>
+                <td style="padding: 1rem; color: #475569;">Bomba sumidero permanente y membrana hidrófuga.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Caño roto o pérdida</td>
+                <td style="padding: 1rem; color: #475569;">Agua con olor a cloaca o manchas en pared antes de la lluvia.</td>
+                <td style="padding: 1rem; color: #475569;">Video inspección para localizar y reparar la rotura.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        ${getFaqHtml([
+          {q: "¿Cuánto tarda en desagotarse un sótano profesionalmente?", a: "Depende del volumen y el acceso, pero en la mayoría de los casos de viviendas del GBA el desagote completo se realiza en entre 1 y 3 horas con bombas sumergibles de alta potencia. Si hay mucho barro o sedimento, puede llevar algo más."},
+          {q: "¿El seguro del hogar cubre inundaciones en el sótano?", a: "Muchas pólizas cubren inundaciones por roturas internas, pero pueden rechazar siniestros si el origen es la napa freática o falta de mantenimiento. Conviene revisar las cláusulas antes de contratar y guardar los remitos de trabajos preventivos."},
+          {q: "¿Se puede bajar al sótano inundado?", a: "Solo si cortaste la energía eléctrica desde el tablero general. Si hay dudas sobre circuitos activos, no ingreses. El riesgo de electrocución en un ambiente con agua es extremadamente alto, incluso con pocos centímetros de nivel."},
+          {q: "¿Cómo evitar que el sótano se inunde de nuevo?", a: "Limpiá los desagües perimetrales dos veces al año, verificá que las pendientes del piso dirijan el agua hacia las bocas de tormenta, y considerá instalar una bomba sumidero automática si tu zona tiene napa freática alta o lluvias intensas frecuentes."}
+        ])}
+
+      `
+    },
+    {
+      slug: 'diametros-canos-instalacion-sanitaria',
+      publishedAt: '2026-05-06',
+      updatedAt: '2026-05-06',
+      title: 'Diámetros de caños: guía para entender tu instalación',
+      seoTitle: 'Diámetros de Caños Sanitarios: Guía Completa',
+      h1: 'Diámetros de caños sanitarios: guía para entender tu instalación',
+      image: '/img/Cañerías cloacales vs pluviales .jpg',
+      alt: 'Diferentes diámetros de caños PVC para instalaciones sanitarias',
+      excerpt: 'Guía técnica sobre los diámetros de caños más usados en Argentina. Cuál corresponde a cada artefacto y por qué importa.',
+      content: `
+
+        <p>Cuando llaman a Openagua por un caño tapado, una de las primeras preguntas que hacemos es: ¿sabés qué diámetro tiene ese caño? La mayoría de los propietarios en <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong> no lo saben, y es completamente normal. Sin embargo, entender los diámetros de la instalación sanitaria es una herramienta muy útil para comunicarse mejor con el técnico, entender por qué algunos caños se tapan más seguido que otros, y tomar mejores decisiones de mantenimiento.</p>
+
+        <p>El diámetro de un caño no es un dato arbitrario. Cada artefacto sanitario del hogar —la bacha de cocina, el inodoro, la ducha— genera un caudal de agua y un tipo de residuo específico. Los ingenieros sanitarios definieron estándares de diámetro para que el flujo sea suficiente para arrastrar los residuos, pero sin desperdiciar espacio ni material. Cuando esos estándares se incumplen —por ejemplo, conectando el inodoro a un caño de 50mm en lugar de 110mm— los problemas son inevitables.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Por qué el diámetro del caño importa tanto</h2>
+        <p>El diámetro determina cuánto caudal puede transportar una tubería en condiciones normales. Un caño demasiado angosto para el artefacto que conecta se tapa con mucha mayor frecuencia porque el flujo no tiene suficiente velocidad para arrastrar los residuos sólidos. Por el contrario, un caño sobredimensionado puede generar flujo lento que deposita sedimentos en el fondo.</p>
+
+        ${getCtaHtml()}
+
+        <p>Además, el diámetro determina qué herramienta de destapación corresponde usar. No se puede introducir una sonda de resorte grueso en un caño de 40mm, ni tiene sentido usar una sonda fina en una columna de 160mm. Conocer el diámetro permite al técnico seleccionar el equipo correcto desde el primer momento, evitando maniobras improductivas y posibles daños a la cañería. Para entender mejor las opciones técnicas, podés leer nuestra comparativa entre <a href="/blog/resorte-vs-hidrojet-cual-es-mejor" style="color:#16A34A;font-weight:bold;text-decoration:underline;">resorte vs. hidrojet</a>.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Tabla de diámetros más usados en Argentina</h2>
+        <p>En la instalación sanitaria domiciliaria argentina, los diámetros más frecuentes siguen un estándar que se repite en la mayoría de las construcciones de CABA y GBA:</p>
+
+        <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 1rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">Diámetro</th>
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Artefactos</th>
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Uso típico</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #16A34A;">40 mm</td>
+                <td style="padding: 1rem; color: #475569;">Lavatorio, ducha, bidet, bañera</td>
+                <td style="padding: 1rem; color: #475569;">Ramales internos de baño, aguas grises jabonosas sin sólidos.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #16A34A;">50 mm</td>
+                <td style="padding: 1rem; color: #475569;">Pileta de cocina, lavarropas</td>
+                <td style="padding: 1rem; color: #475569;">Mayor caudal y restos de grasa; necesita más diámetro que el baño.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #16A34A;">110 mm</td>
+                <td style="padding: 1rem; color: #475569;">Inodoro, cloaca principal</td>
+                <td style="padding: 1rem; color: #475569;">Transporte de sólidos; es el diámetro mínimo para inodoros.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #16A34A;">160 mm</td>
+                <td style="padding: 1rem; color: #475569;">Colector general, cámara de inspección</td>
+                <td style="padding: 1rem; color: #475569;">Salida final del inmueble hacia la red pública municipal.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Diferencia entre materiales: PVC, polipropileno, plomo y hierro fundido</h2>
+        <p>En edificios y casas construidos antes de los años 80 en CABA y el GBA, es frecuente encontrar cañerías de <strong>plomo</strong> (en ramales finos de 40mm) o de <strong>hierro fundido</strong> (en columnas principales). Estos materiales tienen una larga vida útil, pero son propensos a la corrosión interna que reduce el diámetro efectivo y genera superficies rugosas donde se adhiere la grasa. Para detectar su estado actual, la <a href="/video-inspeccion-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">video inspección de cañerías</a> es la herramienta más precisa.</p>
+
+        <p>El <strong>PVC</strong> es el material dominante en construcciones modernas. Es liso, liviano, resistente a la corrosión química y económico. Su superficie lisa facilita el flujo y dificulta la adherencia de grasa. Sin embargo, tolera mal los golpes físicos y el calor extremo. El <strong>polipropileno</strong> (PP) es similar al PVC pero con mayor resistencia térmica, por lo que se usa en tramos donde puede haber agua muy caliente. Las raíces prefieren las cañerías de cemento y hierro fundido antiguo por sus juntas, pero también pueden invadir PVC si hay fisuras. Si sospechás raíces en tus caños, leé nuestro artículo sobre <a href="/blog/raices-en-canerias-como-detectarlas-y-solucionarlo" style="color:#16A34A;font-weight:bold;text-decoration:underline;">raíces en cañerías</a>.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Por qué los caños angostos se tapan más seguido</h2>
+        <p>La física es simple: a menor diámetro, menor velocidad de flujo para el mismo caudal. Y a menor velocidad, mayor probabilidad de que los residuos sólidos o la grasa se depositen en las curvas y paredes. Los caños de 40mm son los que se tapan con mayor frecuencia porque conducen el agua de lavatorio y ducha, que tiene restos de jabón, pelo y cremas que se solidifican fácilmente.</p>
+
+        <p>Un caño de 40mm que pierde aunque sea 5mm de diámetro interno por acumulación de sarro tiene una sección efectiva un 25% menor. Ese diferencia es suficiente para que el pelo de la ducha ya no pase libremente y comience a acumularse. Por eso el mantenimiento preventivo en este tipo de ramales es especialmente importante: una limpieza técnica anual evita que el tapón se consolide y obligue a una intervención más agresiva.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Qué herramienta usar según el diámetro</h2>
+        <p>El equipo de destapación debe elegirse en función del diámetro del caño y del tipo de obstrucción. Para caños de 40mm con tapones de pelo y jabón, una sonda fina electromecánica es la herramienta adecuada. Para caños de 50mm con grasa de cocina, el hidrojet domiciliario de baja presión puede ser suficiente en casos leves. Para la columna de 110mm o el colector de 160mm, se requiere un <a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">sistema hidrojet industrial</a> con boquillas específicas para ese diámetro.</p>
+
+        <p>Usar la herramienta equivocada no solo es ineficiente; puede dañar el caño. Un resorte grueso introducido en un caño de 40mm puede perforar las curvas o dañar las juntas. Un resorte fino en una columna de 110mm apenas abrirá un agujero que se cerrará en días. El diagnóstico correcto del diámetro y el tipo de obstrucción es la base de cualquier intervención técnica exitosa.</p>
+
+        ${getFaqHtml([
+          {q: "¿Qué diámetro tiene el caño del inodoro?", a: "El inodoro siempre debe conectarse a un caño de 110mm como mínimo. Este es el diámetro estándar en toda Argentina para el transporte de sólidos fecales. Si se conecta a un caño de menor diámetro, los tapones serán frecuentes e inevitables."},
+          {q: "¿Se puede cambiar el diámetro de un caño existente?", a: "Sí, pero requiere trabajo de plomería. Se utilizan adaptadores o reducciones de PVC para transicionar entre diámetros distintos. En algunos casos conviene aprovechar la intervención para reemplazar un tramo completo por materiales modernos."},
+          {q: "¿Por qué se tapa siempre el mismo caño?", a: "Generalmente indica una condición estructural que favorece la acumulación: una curva muy cerrada, una pendiente insuficiente, un material rugoso como hierro oxidado, o un diámetro subdimensionado para el artefacto que conecta. La video inspección permite identificar exactamente el punto problemático."},
+          {q: "¿El hidrojet sirve para todos los diámetros?", a: "Sí, pero se usan boquillas y presiones distintas según el diámetro. Para caños de 40mm se usan boquillas pequeñas de baja presión; para columnas de 110mm o colectores de 160mm se usan boquillas grandes con presiones de hasta 200 bar. El técnico selecciona el equipo correcto según el relevamiento previo."}
+        ])}
+
+      `
+    },
+    {
+      slug: 'destapaciones-consorcios-administradores',
+      publishedAt: '2026-05-06',
+      updatedAt: '2026-05-06',
+      title: 'Destapaciones en consorcios: guía para administradores',
+      seoTitle: 'Destapaciones en Consorcios | Guía Práctica',
+      h1: 'Destapaciones en consorcios: guía práctica para administradores',
+      image: '/img/edificio.jpg',
+      alt: 'Edificio de consorcio en CABA donde se realizan trabajos de destapación',
+      excerpt: 'Todo lo que un administrador necesita saber sobre destapaciones en edificios. Responsabilidades, mantenimiento y cómo evitar problemas costosos.',
+      content: `
+
+        <p>Administrar un edificio en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong> implica lidiar con una cantidad de imprevistos, pero pocos generan tanta urgencia y conflicto vecinal como los problemas de desagüe. Una columna tapada a medianoche, un departamento de planta baja inundado con aguas negras o un olor permanente en el hall de entrada son situaciones que pueden evitarse en buena medida con información correcta y un plan de mantenimiento adecuado.</p>
+
+        <p>Esta guía está pensada para administradores y encargados que quieren entender el sistema sanitario de su edificio, conocer sus responsabilidades legales y tomar decisiones informadas antes de que llegue la emergencia. No hace falta ser plomero para gestionar bien este aspecto del consorcio; alcanza con conocer los conceptos básicos y saber a quién llamar y cuándo.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Responsabilidades del consorcio vs. el propietario individual</h2>
+        <p>La primera pregunta que aparece ante cualquier problema sanitario en un edificio es quién paga. La respuesta depende de dónde está la obstrucción. Los ramales horizontales que corren dentro de cada unidad funcional —los caños de 40mm a 60mm que conectan la bacha, el inodoro y la ducha con la pared— son responsabilidad exclusiva del propietario o inquilino de esa unidad.</p>
+
+        ${getCtaHtml()}
+
+        <p>En cambio, la columna vertical principal que recorre todos los pisos del edificio es un bien común del consorcio. Cuando el tapón se encuentra en esa bajada, el costo de la destapación debe ser afrontado por todos los copropietarios. Para identificar dónde está el problema conviene contratar <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cloacas</a> con técnicos que documenten el punto exacto de la obstrucción. Más detalle en nuestro artículo sobre <a href="/blog/5-senales-columna-edificio-tapada" style="color:#16A34A;font-weight:bold;text-decoration:underline;">las 5 señales de que la columna está por taparse</a>.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Los problemas más comunes en edificios y cómo detectarlos</h2>
+        <p>Los edificios en CABA y GBA tienen patrones de falla bastante predecibles. El más frecuente es la acumulación de grasa en las columnas cloacales, especialmente en edificios donde hay locales gastronómicos en planta baja. Si el local no tiene trampa de grasa o no la limpia periódicamente, toda esa grasa se deposita en las paredes del caño de todos los pisos. Como explica nuestro artículo sobre <a href="/blog/grasa-canerias-edificios-agua-hirviendo" style="color:#16A34A;font-weight:bold;text-decoration:underline;">grasa en cañerías de edificios</a>, intentar resolverlo con agua hirviendo suele empeorar el problema.</p>
+
+        <p>Las señales de alerta que el administrador debe atender son: quejas de varios vecinos del mismo lado del edificio sobre drenaje lento, olor a cloaca en el hall o en el patio de servicio, y gorgoteos en los inodoros de los pisos bajos cuando alguien usa agua en los pisos superiores. Actuar ante estas señales en lugar de esperar la inundación puede reducir el costo del servicio considerablemente.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Mantenimiento preventivo: qué incluye y cada cuánto hacerlo</h2>
+        <p>Un plan de <a href="/mantenimientos-preventivos" style="color:#16A34A;font-weight:bold;text-decoration:underline;">mantenimiento preventivo</a> para un edificio de mediano tamaño incluye tres componentes: limpieza de las columnas cloacales principales, limpieza de las cámaras de inspección subterráneas, y en algunos casos <a href="/video-inspeccion-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">video inspección</a> para evaluar el estado interno de las tuberías.</p>
+
+        <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 1rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Tipo de edificio</th>
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">Frecuencia recomendada</th>
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Trabajo incluido</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Menos de 20 años, sin gastronomía</td>
+                <td style="padding: 1rem; color: #475569;">Cada 18-24 meses</td>
+                <td style="padding: 1rem; color: #475569;">Limpieza de columnas y cámaras.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Más de 20 años o con local gastronómico</td>
+                <td style="padding: 1rem; color: #475569;">Cada 12 meses</td>
+                <td style="padding: 1rem; color: #475569;">Limpieza de columnas, cámaras y video inspección.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Edificios históricos o muy antiguos</td>
+                <td style="padding: 1rem; color: #475569;">Cada 6-8 meses</td>
+                <td style="padding: 1rem; color: #475569;">Limpieza completa con video inspección y diagnóstico estructural.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cómo elegir un servicio de mantenimiento confiable</h2>
+        <p>Para un consorcio, contratar un servicio de destapaciones no es lo mismo que llamar a un plomero de emergencia. Hay que considerar la formalidad del prestador: facturación, seguro de responsabilidad civil, y que el técnico sea matriculado. En caso de un siniestro con el seguro del edificio, la compañía aseguradora puede rechazar el reclamo si no se presentan remitos y certificados del mantenimiento realizado.</p>
+
+        <p>Aspectos clave que conviene preguntar antes de contratar: ¿Emiten certificado del trabajo realizado? ¿Tienen equipos propios de hidrojet o usan terceros? ¿Pueden hacer la video inspección en el mismo momento si detectan algo anómalo? ¿Tienen cobertura en horarios de urgencia? Un proveedor que puede responder afirmativamente a estas preguntas es un socio estratégico para la gestión del consorcio, no un gasto más.</p>
+
+        ${getFaqHtml([
+          {q: "¿Quién paga la destapación en un edificio?", a: "Depende de dónde está el tapón. Si está en el ramal horizontal dentro de una unidad, paga ese propietario. Si está en la columna vertical común, paga el consorcio con fondos de expensas. El técnico debe emitir un certificado indicando el punto exacto de la obstrucción."},
+          {q: "¿Cada cuánto hay que hacer mantenimiento en un edificio?", a: "La frecuencia ideal varía según la antigüedad y el uso, pero en términos generales se recomienda una limpieza anual de columnas y cámaras para edificios de más de 15 años. Los edificios con locales gastronómicos necesitan mayor frecuencia, idealmente cada 6 meses."},
+          {q: "¿Conviene tener un abono de mantenimiento con una empresa?", a: "Sí, es la opción más conveniente para consorcios. Los abonos permiten planificar el gasto, priorizar el edificio en situaciones de urgencia y obtener descuentos en trabajos adicionales. Además, el historial de mantenimiento es valioso ante aseguradoras."},
+          {q: "¿Qué información pedirle al técnico después del trabajo?", a: "Siempre pedí un remito detallado con la fecha, el trabajo realizado, el punto de intervención y la firma del técnico matriculado. Si se realizó video inspección, solicitá el archivo de video. Estos documentos son esenciales para el archivo del consorcio y para eventuales reclamos al seguro."}
+        ])}
+
+      `
+    },
+    {
+      slug: 'como-cambiar-flexible-caneria',
+      publishedAt: '2026-05-06',
+      updatedAt: '2026-05-06',
+      title: 'Cómo cambiar un flexible de cañería',
+      seoTitle: 'Cómo Cambiar un Flexible de Cañería Paso a Paso',
+      h1: 'Cómo cambiar un flexible de cañería: guía paso a paso',
+      image: '/img/caño con agua.jpg',
+      alt: 'Flexible de cañería bajo mesada siendo reemplazado',
+      excerpt: 'Guía práctica para cambiar un flexible de agua en casa. Qué herramientas necesitás, cómo hacerlo y cuándo conviene llamar a un profesional.',
+      content: `
+
+        <p>El flexible es una de las piezas más pequeñas y más ignoradas de la instalación de agua de un hogar en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong>. Sin embargo, cuando falla, lo hace de manera muy visible: una gotera bajo la mesada, una mancha de humedad en la pared del baño, o directamente un chorro de agua que inunda el mueble de abajo. La buena noticia es que cambiar un flexible es uno de los trabajos de plomería más accesibles para hacer por cuenta propia, siempre que se cuente con las herramientas correctas y se sigan los pasos en el orden adecuado.</p>
+
+        <p>Un flexible es un tubo corto y articulado, generalmente de acero inoxidable trenzado por fuera y goma o PTFE por dentro, que conecta la canilla o el inodoro con la llave de paso de la pared. Su flexibilidad permite absorber pequeñas diferencias de alineación entre la instalación fija y los artefactos. Aunque parezca robusto, el flexible tiene una vida útil de entre 5 y 10 años dependiendo de la calidad del agua y el uso.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Señales de que el flexible necesita cambio</h2>
+        <p>El desgaste de un flexible rara vez es repentino. Generalmente hay señales previas: la más evidente es la presencia de gotas de agua en las roscas de conexión. Otras señales son la oxidación en las tuercas de los extremos, que indica que el acero ya está comprometido por la humedad, y la deformación del tubo trenzado, especialmente si tiene algún aplastamiento o doblez forzado.</p>
+
+        ${getCtaHtml()}
+
+        <p>Si el flexible tiene más de 8 años, aunque no tenga ninguna señal visible de daño, conviene reemplazarlo de manera preventiva. Un flexible que falla de golpe puede soltar un chorro continuo de agua durante horas, hasta que alguien lo note. El costo del flexible es mínimo comparado con el daño que puede causar una inundación prolongada. Para más información sobre mantenimiento general de cañerías, consultá nuestro artículo sobre <a href="/blog/por-que-cocina-huele-a-cloaca" style="color:#16A34A;font-weight:bold;text-decoration:underline;">por qué la cocina huele a cloaca</a>.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Tipos de flexible y herramientas necesarias</h2>
+        <p>Para cambiar un flexible necesitás: una llave inglesa ajustable o dos llaves de caño, un trapo o recipiente para contener el agua residual, y el flexible nuevo. Antes de comprarlo, conocé la medida: los más comunes son de 30, 40 y 50 cm de largo, con rosca de 3/8" para lavatorios y canillas, y 1/2" para inodoros. Existen tres tipos principales: los de acero inoxidable trenzado sobre manguera de goma (económicos y comunes), los de acero sobre PTFE (mayor durabilidad), y los de cobre flexible (instalaciones antiguas). Para uso doméstico estándar, el de acero sobre PTFE es la mejor opción.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Paso a paso para cambiar el flexible</h2>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>1. Cerrar la llave de paso:</strong> Girá la llave hasta que el agua deje de fluir. Abrí la canilla para liberar la presión residual.</li>
+          <li><strong>2. Poner un trapo o recipiente:</strong> Siempre queda agua en el flexible viejo. Protegé el interior del mueble.</li>
+          <li><strong>3. Desconectar el flexible viejo:</strong> Usá una llave para sostener la llave de paso y otra para girar la tuerca en sentido antihorario. Repetí en el otro extremo.</li>
+          <li><strong>4. Revisar las roscas:</strong> Limpialas si tienen sarro. Si están dañadas, el problema excede el flexible.</li>
+          <li><strong>5. Colocar el flexible nuevo:</strong> Enroscá a mano primero para asegurar que entra derecho. Luego apretá con la llave sin excederte para no romper la tuerca de latón.</li>
+          <li><strong>6. Verificar:</strong> Abrí lentamente la llave de paso y revisá ambas conexiones durante un minuto completo.</li>
+        </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuándo necesitás un profesional</h2>
+        <p>Cambiar un flexible estándar está al alcance de cualquier persona. Sin embargo, si al sacar el flexible viejo notás que la llave de paso pierde agua aunque esté cerrada, o si la rosca del artefacto está dañada, el problema ya excede el flexible. Una llave de paso que no corta completamente el agua es una falla que requiere atención técnica. También si después de cambiar el flexible la gotita persiste, puede que el problema esté en el artefacto mismo. En ese caso podemos ayudarte con nuestro servicio de <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cañerías</a> y revisión general de la instalación.</p>
+
+        <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 2rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Tipo de flexible</th>
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">Vida útil aprox.</th>
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Uso recomendado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Acero inoxidable + goma</td>
+                <td style="padding: 1rem; color: #475569;">5-7 años</td>
+                <td style="padding: 1rem; color: #475569;">Uso general doméstico, agua fría y caliente.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Acero inoxidable + PTFE</td>
+                <td style="padding: 1rem; color: #475569;">8-12 años</td>
+                <td style="padding: 1rem; color: #475569;">Mayor resistencia química y térmica. Ideal para instalaciones expuestas.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Cobre flexible</td>
+                <td style="padding: 1rem; color: #475569;">Variable</td>
+                <td style="padding: 1rem; color: #475569;">Instalaciones antiguas. Se recomienda reemplazar por acero/PTFE.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        ${getFaqHtml([
+          {q: "¿Cada cuánto hay que cambiar un flexible?", a: "La vida útil promedio de un flexible de acero sobre goma es de 5 a 7 años. Los de PTFE pueden durar hasta 12 años. Si el flexible tiene más de 8 años y nunca fue reemplazado, conviene cambiarlo preventivamente aunque no muestre señales de daño visibles."},
+          {q: "¿Qué medida de flexible necesito?", a: "La medida más común en Argentina para canillas y lavatorios es 3/8 pulgadas en los extremos. Para inodoros y conexiones de mayor caudal, es 1/2 pulgada. La longitud varía: medí la distancia entre la llave de paso y el artefacto y elegí el flexible más cercano."},
+          {q: "¿Se puede usar teflón en un flexible?", a: "En las roscas macho (las que entran en otra pieza) se puede aplicar teflón como sellante adicional, aunque los flexibles modernos ya vienen con arandelas de goma que garantizan el sello. Usá pocas vueltas en el sentido del roscado y nunca en roscas hembra."},
+          {q: "¿Qué pasa si el flexible revienta?", a: "Un flexible que revienta bajo presión libera agua continuamente hasta que alguien cierre la llave de paso general. Por eso es clave conocer la ubicación de la llave general del inmueble y cambiar flexibles viejos de manera preventiva antes de que lleguen a ese punto."}
+        ])}
+
+      `
+    },
+    {
+      slug: 'como-cambiar-cuerito-canilla',
+      publishedAt: '2026-05-06',
+      updatedAt: '2026-05-06',
+      title: 'Cómo cambiar un cuerito de canilla',
+      seoTitle: 'Cómo Cambiar un Cuerito de Canilla: Guía Fácil',
+      h1: 'Cómo cambiar un cuerito de canilla paso a paso',
+      image: '/img/caño con agua.jpg',
+      alt: 'Canilla con goteo siendo reparada cambiando el cuerito',
+      excerpt: 'La canilla gotea y no para. Aprendé a cambiar el cuerito vos mismo con herramientas básicas y sin llamar al plomero.',
+      content: `
+
+        <p>La canilla que gotea es uno de esos problemas domésticos que, por pequeños, tendemos a ignorar. Sin embargo, una canilla que gotea una gota por segundo desperdicia unos 30 litros de agua por día, lo que en un mes representa casi 1.000 litros. Más allá del impacto en la factura del agua, ese goteo constante es también una señal de que el sistema necesita atención. La buena noticia es que en la mayoría de los casos, la solución es cambiar el cuerito: una pieza que cuesta unos pocos pesos y se cambia en menos de 20 minutos.</p>
+
+        <p>El cuerito es una pequeña pieza cilíndrica de goma o silicona que se ubica en el asiento de la canilla, justo en el punto donde el vástago de apertura hace contacto con la entrada de agua. Su función es sellar herméticamente ese punto cuando la canilla está cerrada. Con el uso y el paso del tiempo, la goma se endurece, se aplana o se desgasta, y el sello ya no es perfecto: ahí empieza el goteo. Esto ocurre en canillas de cuello de pato, de baño, de jardín y en las de tipo biberón de los pilones. En <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong>, donde el agua tiene un contenido mineral relativamente alto, el desgaste puede acelerarse por la acumulación de cal en las piezas internas.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Herramientas necesarias y cómo cerrar la llave de paso</h2>
+        <p>Para cambiar un cuerito necesitás herramientas mínimas: una llave inglesa ajustable o llave de caño, un destornillador de punta plana, el cuerito nuevo y, opcionalmente, un poco de vaselina técnica para lubricar el vástago. El cuerito nuevo cuesta muy poco y se consigue en cualquier ferretería o corralón de materiales.</p>
+
+        ${getCtaHtml()}
+
+        <p>Antes de empezar, cerrá la llave de paso del artefacto correspondiente. La mayoría de las canillas de cocina y baño tienen una llave de paso propia ubicada debajo del mueble o en la pared. Si no encontrás la llave individual, cerrá la llave general de agua del inmueble. Una vez cerrada, abrí la canilla para liberar la presión residual y verificar que el agua está cortada. Es un paso que nunca debe omitirse.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Paso a paso para cambiar el cuerito</h2>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>1. Retirar la tapa decorativa:</strong> Muchas canillas tienen una tapa de plástico o metal sobre el tornillo central. Abrila con una uña o un destornillador de punta plana con cuidado de no rayar el cromo.</li>
+          <li><strong>2. Retirar el tornillo central:</strong> Con el destornillador, aflojá el tornillo que sostiene la cabeza de la canilla. Guardalo en un lugar seguro.</li>
+          <li><strong>3. Retirar la cabeza (manija):</strong> Tirá hacia arriba con firmeza. Si está muy dura por el sarro, podés darle golpes suaves por los costados con la palma de la mano.</li>
+          <li><strong>4. Desatornillar el vástago:</strong> Con la llave inglesa, girá en sentido antihorario el cuerpo hexagonal del vástago hasta sacarlo completamente de la canilla.</li>
+          <li><strong>5. Retirar el cuerito viejo:</strong> En la punta del vástago encontrarás el cuerito fijado por un pequeño tornillo o simplemente retenido por fricción. Sacalo y comparalo con el nuevo para confirmar que son de la misma medida.</li>
+          <li><strong>6. Colocar el cuerito nuevo:</strong> Colocá el nuevo en la misma posición, asegurate de que quede bien asentado y, si tenía tornillo, apretalo sin pasarte.</li>
+          <li><strong>7. Rearmar y probar:</strong> Volvé a enroscar el vástago, colocá la manija, el tornillo y la tapa. Abrí la llave de paso lentamente y verificá que no haya más goteo.</li>
+        </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Tipos de cuerito y diferencia con el cartucho</h2>
+        <p>Los cueros tradicionales de goma negra son los más comunes y económicos. Se degradan más rápido con agua caliente, así que en canillas de agua caliente es preferible el cuerito de silicona, que tiene mayor resistencia térmica. También existen los de neopreno, que son una opción intermedia muy popular en ferreterías del GBA.</p>
+
+        <p>Es importante distinguir entre el cuerito y el cartucho cerámico. Las canillas modernas de una sola manija (monocomando) no tienen cuerito: su mecanismo de apertura es un cartucho cerámico que controla simultáneamente el caudal y la temperatura. Si tu canilla es monocomando y gotea, el cambio es del cartucho y no del cuerito. El procedimiento es diferente y algo más complejo, aunque también puede hacerse en casa si se identifica correctamente el modelo y se consigue el repuesto.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Qué hacer si la canilla sigue goteando después del cambio</h2>
+        <p>Si cambiaste el cuerito correctamente y la canilla sigue goteando, el problema puede estar en el asiento de la canilla. El asiento es la superficie metálica sobre la que apoya el cuerito para hacer el sello. Con el tiempo, el sarro y el desgaste pueden crear irregularidades en esa superficie, y por más nuevo que esté el cuerito, el sello no será perfecto. En ese caso, el asiento puede rectificarse con una herramienta especial (rectificador de asientos) o reemplazarse si es del tipo removible.</p>
+
+        <p>También puede ocurrir que la pérdida no sea del pico sino del empaquetado del vástago: el agua sale por la parte superior de la canilla cuando está abierta, no por el pico. En ese caso hay que cambiar el empaque o la estopada, que es otra pieza diferente. Si ninguna de estas soluciones resuelve el problema, puede ser el momento de evaluar si la canilla tiene reparación o conviene reemplazarla. Nuestro equipo puede asesorarte en cualquiera de estas situaciones con nuestro servicio de <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones y reparaciones de cañerías</a>.</p>
+
+        ${getFaqHtml([
+          {q: "¿Cuánto cuesta un cuerito?", a: "Un cuerito estándar de goma cuesta muy poco y se consigue en cualquier ferretería o corralón. Los de silicona o neopreno son algo más caros pero duran considerablemente más. Es una de las reparaciones más económicas de toda la plomería doméstica."},
+          {q: "¿Cada cuánto se cambia el cuerito?", a: "No hay un plazo fijo: el cuerito dura hasta que empieza el goteo. Con agua de buena calidad y uso normal, puede durar varios años. En zonas con agua muy calcárea o en canillas de agua muy caliente, el desgaste puede ser más rápido."},
+          {q: "¿Sirve el mismo cuerito para todas las canillas?", a: "No. Los cueros vienen en diferentes diámetros (los más comunes son de 12mm y 15mm) y alturas. Siempre llevá el cuerito viejo a la ferretería para comparar. Si no podés sacarlo, llevá la marca de la canilla o el vástago completo para que el vendedor te asesore."},
+          {q: "¿Qué pasa si no cambio el cuerito?", a: "El goteo se irá haciendo progresivamente mayor a medida que el cuerito se desgaste más. Además del desperdicio de agua y el mayor costo en la factura, el goteo constante puede manchar la bacha, oxidar las roscas y, en casos extremos, generar humedad en el mueble de abajo."}
+        ])}
+
+      `
+    },
+    {
+      slug: 'como-limpiar-sifon-desague-cocina',
+      publishedAt: '2026-05-06',
+      updatedAt: '2026-05-06',
+      title: 'Cómo limpiar el sifón del desagüe de la cocina',
+      seoTitle: 'Cómo Limpiar el Sifón de la Cocina: Paso a Paso',
+      h1: 'Cómo limpiar el sifón del desagüe de la cocina sin llamar al plomero',
+      image: '/img/destapando cocina.jpg',
+      alt: 'Sifón bajo mesada de cocina siendo limpiado para eliminar olores',
+      excerpt: 'El sifón de la cocina acumula grasa y genera mal olor. Aprendé a limpiarlo vos mismo en 15 minutos con herramientas básicas.',
+      content: `
+
+        <p>Si notás que la cocina empieza a oler raro —ese leve tufo a humedad o a alcantarilla que aparece cuando lavás los platos— la primera pieza que hay que revisar es el sifón. Este componente del desagüe, ubicado debajo de la bacha, es el responsable directo de bloquear los gases que vienen de la red cloacal. Cuando está sucio o mal armado, los olores se cuelan hacia el interior de la cocina.</p>
+
+        <p>La buena noticia es que limpiar el sifón es una tarea que cualquier persona puede hacer en su casa en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong> con herramientas mínimas y sin conocimientos técnicos especiales. No requiere romper nada, no implica usar químicos agresivos y puede completarse en 15 o 20 minutos. Es, de hecho, una de las tareas de mantenimiento preventivo más efectivas y más subestimadas del hogar.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Qué es el sifón y para qué sirve</h2>
+        <p>El sifón es la pieza plástica en forma de "S", "P" o de botella que se conecta justo debajo del desagüe de la bacha. Su diseño curvo tiene un propósito muy concreto: retener permanentemente una pequeña cantidad de agua limpia en su parte más baja. Esa agua actúa como barrera hidráulica que impide que los gases que circulan por la red de cloacas suban hacia la cocina. Es, en esencia, un sello de agua.</p>
+
+        ${getCtaHtml()}
+
+        <p>Cuando el sifón está muy sucio, la acumulación de grasa y residuos orgánicos genera olores propios por fermentación bacteriana. Cuando está dañado o mal armado, permite el paso de los gases cloacales. Y cuando está casi tapado, el agua de la bacha baja lentamente o hace burbujas. Para entender por qué la cocina puede oler a cloaca incluso con el sifón en buen estado, leé nuestro artículo sobre <a href="/blog/por-que-cocina-huele-a-cloaca" style="color:#16A34A;font-weight:bold;text-decoration:underline;">por qué la cocina huele a cloaca</a>.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Señales de que el sifón necesita limpieza</h2>
+        <p>No hace falta esperar a que la cocina huela mal para revisar el sifón. Hay señales previas que indican que la limpieza preventiva es oportuna:</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Olor a humedad o cloaca:</strong> Especialmente cuando se abre el mueble bajo mesada o durante o después de lavar los platos.</li>
+          <li><strong>Agua que baja lento:</strong> Si la bacha tarda más de 20-30 segundos en vaciarse, el sifón puede estar parcialmente obstruido por grasa acumulada.</li>
+          <li><strong>Burbujeo en la pileta:</strong> Las burbujas que aparecen en el desagüe mientras el agua baja indican que hay aire atrapado por una obstrucción parcial.</li>
+          <li><strong>No recordás cuándo lo limpiaste por última vez:</strong> Si pasaron más de 6 meses, ya es momento de abrirlo y revisarlo aunque no haya síntomas visibles.</li>
+        </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Paso a paso para limpiar el sifón</h2>
+        <p>El procedimiento es sencillo y lleva menos de 20 minutos. Necesitás: un fuentón o balde, guantes de goma, un cepillo de cerdas, un trapo y eventualmente una pinza para aflojar la rosca si está muy apretada.</p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>1. Colocar el fuentón:</strong> Ponelo debajo del sifón antes de aflojarlo. El sifón siempre tiene agua adentro (esa es su función) y va a salir en cuanto lo abras.</li>
+          <li><strong>2. Aflojar las roscas:</strong> El sifón tipo botella tiene dos roscas: una que lo conecta con el desagüe de la bacha y otra que lo une al caño de la pared. Girá ambas en sentido antihorario. La mayoría puede aflojarse a mano; si están muy apretadas, usá una pinza con un trapo para no rayar el plástico.</li>
+          <li><strong>3. Retirar el sifón:</strong> Con cuidado para no derramar el contenido fuera del fuentón.</li>
+          <li><strong>4. Limpiar el interior:</strong> Volcá el contenido al fuentón y cepillá el interior del sifón con el cepillo. La acumulación típica es una mezcla de grasa oscura, partículas de comida y biofilm bacteriano. No uses ácidos: agua caliente con detergente desengrasante es suficiente y mucho más seguro.</li>
+          <li><strong>5. Revisar las juntas:</strong> Antes de volver a armar, chequeá que las arandelas de goma estén en buen estado. Si están aplastadas o quebradas, es el momento de reemplazarlas. Una junta en mal estado es la causa más frecuente de goteos bajo la mesada.</li>
+          <li><strong>6. Volver a armar y verificar:</strong> Enroscá las dos roscas a mano, apretá con firmeza pero sin excederte. Abrí la canilla y dejá correr agua un minuto. Revisá que no haya goteos en ninguna de las uniones y que el agua baje con normalidad.</li>
+        </ul>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cada cuánto limpiar el sifón</h2>
+        <p>La frecuencia ideal depende del uso. En una cocina donde se cocina todos los días y se lavan muchos platos, limpiar el sifón cada 3 o 4 meses es una buena práctica preventiva. En cocinas de uso moderado, cada 6 meses es suficiente. El mejor indicador no es el calendario sino las señales: si el agua empieza a bajar más lento de lo habitual o aparece algo de olor, no esperes a la próxima limpieza programada.</p>
+
+        <p>Un hábito complementario muy eficiente es no tirar aceite ni grasa por la bacha. La grasa es la principal causa de acumulación en el sifón y en la cañería más allá de él. Para más detalles sobre qué no debe ir por la bacha, leé nuestro artículo sobre <a href="/blog/que-no-tirar-en-la-pileta-de-cocina" style="color:#16A34A;font-weight:bold;text-decoration:underline;">qué no tirar en la pileta de cocina</a>.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuándo el problema es más profundo que el sifón</h2>
+        <p>Si limpiaste el sifón y el olor persiste, o si el agua sigue bajando lento después de haberlo revisado, el problema está más adelante en la cañería, más allá del sifón. Puede ser una acumulación de grasa en el caño de la pared o en el ramal que lleva a la columna principal. En ese caso, la limpieza manual del sifón no es suficiente y se necesita una intervención técnica con sonda o hidrojet.</p>
+
+        <p>Del mismo modo, si al revisar el sifón notás que hay agua que llega con mal olor desde la red (y no es olor a grasa propia), el problema puede estar en la columna del edificio o en el tramo exterior. Estos casos requieren una <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> profesional para identificar el origen exacto. También podés revisar nuestro artículo sobre <a href="/blog/como-destapar-pileta-cocina" style="color:#16A34A;font-weight:bold;text-decoration:underline;">cómo destapar la pileta de cocina</a> para entender cuándo la intervención supera lo que se puede hacer desde el mueble.</p>
+
+        <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 2rem;">
+          <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
+            <thead>
+              <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 1rem; font-weight: 800; color: #0f172a;">Síntoma</th>
+                <th style="padding: 1rem; font-weight: 800; color: #f59e0b;">Causa probable</th>
+                <th style="padding: 1rem; font-weight: 800; color: #16A34A;">Acción recomendada</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Olor al abrir el mueble</td>
+                <td style="padding: 1rem; color: #475569;">Sifón sucio o junta en mal estado.</td>
+                <td style="padding: 1rem; color: #475569;">Limpiar el sifón y verificar las juntas.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Agua baja lento</td>
+                <td style="padding: 1rem; color: #475569;">Obstrucción en el sifón o en la cañería.</td>
+                <td style="padding: 1rem; color: #475569;">Limpiar el sifón; si persiste, llamar a un técnico.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 1rem; font-weight: 700; color: #334155;">Olor persiste después de limpiar</td>
+                <td style="padding: 1rem; color: #475569;">Tapón más profundo en la cañería o problema en columna.</td>
+                <td style="padding: 1rem; color: #475569;">Destapación técnica con sonda o hidrojet.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        ${getFaqHtml([
+          {q: "¿Cada cuánto hay que limpiar el sifón?", a: "En cocinas de uso diario, cada 3 o 4 meses es lo ideal como mantenimiento preventivo. Si hay síntomas como olor o drenaje lento, limpiarlo de inmediato sin esperar el turno programado. En cocinas de uso moderado, cada 6 meses es suficiente."},
+          {q: "¿Puedo usar productos químicos para limpiar el sifón?", a: "No es recomendable. Los productos químicos agresivos como soda cáustica o ácido muriático pueden dañar las juntas de goma del sifón, provocar goteos y generar vapores tóxicos en un espacio cerrado. Agua caliente con detergente desengrasante es suficiente y mucho más seguro."},
+          {q: "¿El sifón roto genera malos olores?", a: "Sí. Si el sifón tiene una fisura o una junta en mal estado, no retiene el agua y pierde su función de barrera hidráulica. Los gases de la red cloacal suben libremente por el desagüe. Revisá el estado de las juntas cada vez que desmontés el sifón para limpiarlo."},
+          {q: "¿Qué pasa si pierdo una junta al armar el sifón?", a: "Si falta una junta, el sifón va a gotear por esa unión y también puede perder su hermeticidad. Las juntas son piezas estándar que conseguís en cualquier ferretería por muy poco dinero. Siempre conviene tener un juego de repuesto en casa para estas situaciones."}
+        ])}
+
+      `
     }
   ];
 }
+
+
