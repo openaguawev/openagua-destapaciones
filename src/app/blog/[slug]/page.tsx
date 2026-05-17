@@ -140,6 +140,10 @@ export default async function BlogPost({ params }: Props) {
             <span style={{ fontSize: '1.5rem' }}>📹</span>
             <span style={{ fontWeight: 600 }}>Inspección por Cámara</span>
           </a>
+          <a href="/destapaciones-hidrojet" style={{ padding: '1rem', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', textDecoration: 'none', color: '#0f172a', transition: 'border-color 0.2s', display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <span style={{ fontSize: '1.5rem' }}>💦</span>
+            <span style={{ fontWeight: 600 }}>Destapaciones con Hidrojet</span>
+          </a>
           <a href="/zonas/caba" style={{ padding: '1rem', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', textDecoration: 'none', color: '#0f172a', transition: 'border-color 0.2s', display: 'flex', alignItems: 'center', gap: '12px' }}>
             <span style={{ fontSize: '1.5rem' }}>📍</span>
             <span style={{ fontWeight: 600 }}>Ver Coberturas en CABA</span>
