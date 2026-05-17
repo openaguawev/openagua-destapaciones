@@ -1857,7 +1857,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2026-05-17',
       updatedAt: '2026-05-17',
       title: 'Cómo cambiar el vástago de la canilla paso a paso',
-      image: '',
+      image: '/img/vastago canilla.jpg',
       alt: 'Cómo cambiar el vástago de la canilla paso a paso - Herramientas',
       excerpt: 'Aprende cómo cambiar el vástago de tu canilla. Guía paso a paso y cuándo llamar a un profesional por cañerías viejas. ¡Contactanos para un arreglo profesional!',
       content: `
@@ -1934,7 +1934,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2026-05-17',
       updatedAt: '2026-05-17',
       title: 'Por qué la mochila del inodoro pierde agua (y cómo solucionarlo)',
-      image: '',
+      image: '/img/mochila inodoro.jpg',
       alt: 'Mochila de inodoro pierde agua por válvula defectuosa',
       excerpt: '¿Tu mochila del inodoro pierde agua sin parar? Descubrí las causas comunes y cómo arreglarlo. Si la pérdida persiste, comunicate con nuestros técnicos.',
       content: `
@@ -2011,7 +2011,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2026-05-17',
       updatedAt: '2026-05-17',
       title: 'El fuelle del inodoro pierde agua: cómo detectarlo y cambiarlo',
-      image: '',
+      image: '/img/fuelle inodoro.jpg',
       alt: 'Cambio de fuelle averiado en inodoro en baño',
       excerpt: 'Detectá y cambiá el fuelle del inodoro si pierde agua. Diferencias entre goma y plástico. Si el problema sigue, ¡contactanos para revisión profesional!',
       content: `
@@ -2083,7 +2083,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2026-05-17',
       updatedAt: '2026-05-17',
       title: 'Caños pluviales o fluviales: cuál es la diferencia y por qué importa',
-      image: '',
+      image: '/img/cañeria pluvial.jpg',
       alt: 'Diferencia de desagües entre cañerías para lluvias en techo',
       excerpt: 'Conocé la diferencia entre caños pluviales y cloacales, y evitá inundaciones por obstrucciones. ¿Pluviales tapados con barro? ¡Escribinos para limpiarlos!',
       content: `
@@ -2127,7 +2127,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2026-05-17',
       updatedAt: '2026-05-17',
       title: 'Qué es una cámara de inspección de cañerías y para qué sirve',
-      image: '',
+      image: '/img/video inspeccion cañerias.jpg',
       alt: 'Pantalla de alta definición HD visualizando el centro oscuro de una cañería obstruida por sarro y raíces',
       excerpt: 'Descubrí qué es y cómo funciona la cámara de inspección de cañerías. Detectá problemas con tecnología HD. ¡Consultá precios y solicitá servicio hoy!',
       content: `
@@ -2189,7 +2189,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2026-05-17',
       updatedAt: '2026-05-17',
       title: 'Máquina destapa cañerías: cómo funciona y cuándo usarla',
-      image: '',
+      image: '/img/maquina destapa cañerias.jpg',
       alt: 'Máquina desobstructora rotativa a resorte espiral limpiando cañerías profundas industriales en empresa o vivienda unifamiliar',
       excerpt: 'Conocé cómo funciona una máquina destapa cañerías, tipos rotativos e hidrojet, y por qué evitar químicos. ¡Contactanos para un destape profesional rápido!',
       content: `
