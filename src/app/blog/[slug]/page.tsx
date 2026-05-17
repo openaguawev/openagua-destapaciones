@@ -147,7 +147,7 @@ export default async function BlogPost({ params }: Props) {
         </div>
       </div>
 
-      <div style={{ marginTop: '2.5rem' }}>
+      <div style={{ marginTop: '2.5rem', display: 'flex', justifyContent: 'center' }}>
         <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20quiero%20consultar%20por%20un%20presupuesto" style={{ background: '#16A34A', color: 'white', padding: '1rem 2rem', borderRadius: '8px', textDecoration: 'none', display: 'inline-block', fontWeight: 'bold', boxShadow: '0 4px 6px -1px rgba(22, 163, 74, 0.4)' }}>
           Consultar urgencia por WhatsApp
         </a>
