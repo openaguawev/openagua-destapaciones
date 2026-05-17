@@ -90,7 +90,7 @@ export const getArticulos = (): Articulo[] => {
       title: '¿Por qué mi cocina huele a cloaca? 3 causas y soluciones definitivas',
       image: '/img/cocina huele cloaca.jpg',
       alt: 'Destapación de cocina y solución a olores de cloaca en CABA - Openagua',
-      excerpt: 'Descubrí cómo eliminar definitivamente el mal olor de tus cañerías en CABA y GBA.',
+      excerpt: '¿Tu cocina huele a cloaca y no sabés por qué? Descubrí las causas más frecuentes del olor y cómo eliminar el problema de raíz. ¡Consultanos!',
       content: `
 
         <p>Sentir un fuerte olor a alcantarilla mientras cocinás o lavas los platos es una de las situaciones más desagradables que puede experimentar un hogar. Esta pesadilla, recurrente en miles de casas y departamentos a lo largo de todo <strong>CABA</strong> (especialmente en barrios de construcciones antiguas como Palermo, Belgrano o Caballito) y el <strong>Gran Buenos Aires</strong>, no es un simple problema de limpieza superficial que se solucione con desodorantes de ambiente. Detrás de ese tufo insoportable que inunda tu cocina se esconde una falla técnica o un bloqueo severo en tu red de desagüe primario, y realizar <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cañerías</a> profesionales suele ser el paso definitivo para recuperar la salubridad y la normalidad en tu vivienda.</p>
@@ -174,7 +174,7 @@ export const getArticulos = (): Articulo[] => {
       title: 'Grasa en cañerías de edificios: Por qué el agua hirviendo no sirve',
       image: '/img/caño con grasa.jpg',
       alt: 'Grasa petrificada en cañerías de edificios de zona norte - Openagua',
-      excerpt: 'El método definitivo para limpiar bajadas en consorcios sin usar ácido.',
+      excerpt: '¿Grasa acumulada en las bajadas del edificio? Conocé el método definitivo para limpiar cañerías en consorcios sin dañar los caños. ¡Llamanos!',
       content: `
 
         <p>Uno de los mitos urbanos más peligrosos y arraigados en el mantenimiento de consorcios de <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong> es la costumbre de volcar ollas de agua hirviendo por las cañerías para destapar bloqueos de grasa. Cientos de edificios, desde enormes torres en Belgrano hasta antiguos complejos en Vicente López y Recoleta, cometen este mismo error sistemático impulsados por consejos de pasillo o remedios caseros antiguos. Se le pide a todos los inquilinos de la columna que tiren agua hirviendo al mismo tiempo, bajo la falsa premisa de que el calor extremo logrará derretir el tapón y devolverle la salud a la red troncal.</p>
@@ -258,7 +258,7 @@ export const getArticulos = (): Articulo[] => {
       title: '5 señales de que la columna de tu edificio está por taparse',
       image: '/img/caño columna.jpg',
       alt: 'Mantenimiento preventivo de columnas en consorcios de Gran Buenos Aires - Openagua',
-      excerpt: 'Guía para administradores: cómo anticipar la inundación de planta baja.',
+      excerpt: '¿La columna del edificio está tapada? Conocé las 5 señales clave que todo administrador debe identificar antes de que haya una inundación. ¡Llamanos!',
       content: `
 
         <p>Para cualquier administrador de consorcios o encargado de edificio en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong>, recibir un llamado a las tres de la madrugada avisando que un departamento de la planta baja se está inundando con aguas negras es el peor escenario posible. Esta crisis, que suele desencadenar fuertes discusiones vecinales y gastos exorbitantes no planificados, rara vez ocurre de un minuto para el otro. Evitar este desborde catastrófico y actuar de manera preventiva ahorra costos formidables tanto a la administración general como al bolsillo particular de cada copropietario.</p>
@@ -337,7 +337,7 @@ export const getArticulos = (): Articulo[] => {
       title: 'Resorte vs. Hidrojet: ¿Cuál es mejor para tu destapación?',
       image: '/img/maquina resortes.jpg',
       alt: 'Comparativa técnica entre máquina de resortes y sistema hidrojet en CABA - Openagua',
-      excerpt: 'Comparativa técnica para limpiar obstrucciones sin arruinar el material.',
+      excerpt: '¿Resorte o hidrojet para destapar cañerías? Comparamos ambas técnicas, cuándo usar cada una y cuál conviene mejor para tu caso. ¡Consultanos!',
       content: `
 
         <p>La disyuntiva constante al momento de solicitar una reparación técnica profunda en <strong>CABA</strong> o en el extenso cordón del <strong>Gran Buenos Aires</strong> se resume casi siempre a elegir entre dos opciones antagónicas: la tradicional herramienta manual mecanizada (resorte rotativo) y la tecnología de punta representada por la bomba hipertensora de agua. Frente a una cañería estancada, miles de propietarios se preguntan cuál es la metodología que garantiza una solución real sin arruinar su propiedad en el proceso.</p>
@@ -492,7 +492,7 @@ export const getArticulos = (): Articulo[] => {
       title: 'El inodoro rebalsa: qué hacer en los primeros 5 minutos',
       image: '/img/inodoro tapado.jpg',
       alt: 'Cómo destapar un inodoro rebalsado en CABA y GBA',
-      excerpt: 'Guía de emergencia: pasos críticos para evitar una inundación sanitaria en tu baño.',
+      excerpt: '¿El inodoro rebalsa y el agua no baja? Seguí estos pasos de emergencia para evitar una inundación sanitaria en tu baño. ¡Escribinos por WhatsApp!',
       content: `
 
         <p>Ver que el nivel de agua turbia sube peligrosamente en lugar de bajar después de tirar la cadena es, sin lugar a dudas, una de las emergencias domésticas más desesperantes que puede vivir una familia en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong>. Cuando el inodoro rebalsa, el pánico inicial suele llevar a cometer errores impulsivos que, lejos de solucionar el atasco, terminan empeorando el desastre sanitario en el piso del baño. La clave para mitigar los daños y recuperar el control es actuar con rapidez, conocimiento y, sobre todo, seguridad técnica.</p>
@@ -571,7 +571,7 @@ export const getArticulos = (): Articulo[] => {
       title: 'Rejilla del patio tapada: cómo evitar inundaciones cuando llueve',
       image: '/img/rejilla patio.jpg',
       alt: 'Destapación de rejilla de patio inundada tras tormenta - Openagua',
-      excerpt: 'No esperes a la tormenta. Descubrí cómo mantener tus desagües pluviales libres de sedimentos.',
+      excerpt: '¿La rejilla del patio se tapa con cada lluvia? No esperés a la próxima tormenta: descubrí cómo mantener tus desagües pluviales libres. ¡Consultanos!',
       content: `
 
         <p>Una rejilla de patio colapsada durante una tormenta de verano es sinónimo de pánico asegurado. Con los repentinos y brutales temporales que azotan frecuentemente a <strong>CABA</strong> y gran parte de <strong>Zona Sur, Norte y Oeste</strong>, miles de propiedades sufren el rápido anegamiento de sus patios, terrazas y pasillos exteriores. Ver cómo el agua de lluvia deja de escurrir, se acumula velozmente y comienza a amenazar con ingresar por debajo de las puertas de la cocina o el living, requiere de una acción proactiva antes de que los daños a la mampostería y los muebles sean irreparables.</p>
@@ -643,7 +643,7 @@ export const getArticulos = (): Articulo[] => {
       title: '¿El problema está en tu depto o en la columna del edificio?',
       image: '/img/edificio.jpg',
       alt: 'Inspección profesional de cañerías en edificio',
-      excerpt: 'Aprendé a identificar quién debe pagar la destapación en un consorcio de CABA.',
+      excerpt: '¿El problema cloacal es de tu depto o de la columna del edificio? Aprendé a distinguirlo y quién paga el arreglo en el consorcio. ¡Llamanos!',
       content: `
 
         <p>Vivir en un edificio de propiedad horizontal en <strong>CABA</strong> o en los grandes centros urbanos del <strong>Gran Buenos Aires</strong> significa compartir de manera invisible una inmensa y compleja red de infraestructura sanitaria. Cuando el agua sucia asoma por la rejilla del baño o la cocina se inunda repentinamente, la angustia de la emergencia casi siempre viene acompañada por una inevitable y amarga discusión vecinal: ¿quién tiene la culpa de esto y, lo más importante, quién debe pagar la abultada factura del plomero, el propietario afectado o la administración del consorcio?</p>
@@ -721,7 +721,7 @@ export const getArticulos = (): Articulo[] => {
       title: 'La ducha desagota lento: causas y cómo solucionarlo',
       image: '/img/rejilla.jpg',
       alt: 'Limpieza de rejilla de ducha obstruida por cabellos y jabón - Openagua',
-      excerpt: '¿Terminás de bañarte con el agua por los tobillos? Descubrí cómo limpiar tu drenaje de forma efectiva.',
+      excerpt: '¿Terminás de bañarte con el agua por los tobillos? Descubrí por qué la ducha desagota lento y cómo limpiar el drenaje de forma efectiva. ¡Consultanos!',
       content: `
 
         <p>Sentir que el agua caliente se estanca alrededor de tus tobillos mientras intentás disfrutar de una ducha relajante es una señal de alarma que no debe ignorarse. Este problema de drenaje, uno de los reclamos domiciliarios más frecuentes tanto en modernos departamentos de <strong>CABA</strong> como en antiguas casonas del <strong>Gran Buenos Aires</strong>, suele comenzar de manera silenciosa y empeorar semana a semana. Lo que al principio es solo una leve acumulación que tarda un par de minutos en irse, pronto se convierte en una verdadera pileta de aguas grises estancadas que dejan el piso de tu receptáculo de ducha cubierto de una película resbaladiza y sucia.</p>
@@ -801,7 +801,7 @@ export const getArticulos = (): Articulo[] => {
       seoTitle: 'Cómo Destapar un Inodoro: Métodos Caseros Seguros',
       image: '/img/destapando_un_inodoro.jpg',
       alt: 'Destapación de inodoro con máquina de sonda electromecánica - Openagua',
-      excerpt: 'Guía paso a paso para destapar el inodoro en casa. Métodos seguros y cuándo necesitás un profesional.',
+      excerpt: 'Guía paso a paso para destapar el inodoro en casa usando métodos seguros. Cuándo podés hacerlo vos y cuándo necesitás un profesional. ¡Escribinos!',
       content: `
 
         <p>Encontrarse con el inodoro tapado es, indiscutiblemente, una de las situaciones domésticas más estresantes y paralizantes que cualquier propietario o inquilino en <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong> puede experimentar. El baño queda automáticamente inhabilitado, el olor comienza a esparcirse por el pasillo y el pánico a que todo se desborde al piso genera una ansiedad tremenda. Sin embargo, no todos los bloqueos son catástrofes irreversibles; entender la mecánica del atasco es el primer paso para no empeorar las cosas.</p>
@@ -880,7 +880,7 @@ export const getArticulos = (): Articulo[] => {
       title: 'Cómo destapar rejillas de patio, baños y terrazas obstruidas',
       image: '/img/destapando rejilla.jpg',
       alt: 'Destapación de rejilla bloqueada en patio o terraza - Openagua',
-      excerpt: 'Hojas, tierra o cabellos bloquean tu rejilla. Pasos vitales para evitar inundaciones.',
+      excerpt: '¿Hojas, tierra o cabellos bloquean tu rejilla? Seguí estos pasos para destaparla y evitar inundaciones en CABA y GBA. ¡Escribinos por WhatsApp!',
       content: `
 
         <p>Tener una o varias rejillas tapadas en tu hogar es una de esas molestias cotidianas que comienzan como un inconveniente menor y pueden transformarse en una urgencia sanitaria en cuestión de horas. Ya sea la pequeña rejilla metálica del baño que no deja bajar el agua de la ducha, o la gran boca de tormenta del jardín que amenaza con inundarte en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong> ante la primera lluvia, este problema indica que la red de desagües superficiales o profundos está saturada. Ignorarlo no es una opción si querés evitar daños graves en la mampostería.</p>
@@ -1857,9 +1857,9 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2026-05-17',
       updatedAt: '2026-05-17',
       title: 'Cómo cambiar el vástago de la canilla paso a paso',
-      image: '/img/vastago canilla.jpg',
+      image: '/img/vastago-canilla.jpg',
       alt: 'Cómo cambiar el vástago de la canilla paso a paso - Herramientas',
-      excerpt: 'Aprende cómo cambiar el vástago de tu canilla. Guía paso a paso y cuándo llamar a un profesional por cañerías viejas. ¡Contactanos para un arreglo profesional!',
+      excerpt: 'Aprendé cómo cambiar el vástago de tu canilla paso a paso. Cuándo es seguro hacerlo vos mismo y cuándo llamar a un plomero profesional. ¡Consultanos!',
       content: `
         <p>En el día a día de un hogar argentino, uno de los problemas de plomería más frecuentes y molestos es el goteo constante de una canilla. Ese sonido incesante no solo afecta el descanso, sino que representa un desperdicio altísimo de agua a lo largo del mes y un gasto innecesario en tu factura. Muchas personas piensan que deben reemplazar la grifería por completo cuando ven este problema. Sin embargo, en la enorme mayoría de los casos, el culpable es una pieza pequeña e indispensable conocida como vástago. Entender qué es esta pieza, cómo funciona y cómo cambiarla te va a ahorrar dolores de cabeza.</p>
 
@@ -1934,7 +1934,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2026-05-17',
       updatedAt: '2026-05-17',
       title: 'Por qué la mochila del inodoro pierde agua (y cómo solucionarlo)',
-      image: '/img/mochila inodoro.jpg',
+      image: '/img/mochila-inodoro.jpg',
       alt: 'Mochila de inodoro pierde agua por válvula defectuosa',
       excerpt: '¿Tu mochila del inodoro pierde agua sin parar? Descubrí las causas comunes y cómo arreglarlo. Si la pérdida persiste, comunicate con nuestros técnicos.',
       content: `
@@ -2011,7 +2011,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2026-05-17',
       updatedAt: '2026-05-17',
       title: 'El fuelle del inodoro pierde agua: cómo detectarlo y cambiarlo',
-      image: '/img/fuelle inodoro.jpg',
+      image: '/img/fuelle-inodoro.jpg',
       alt: 'Cambio de fuelle averiado en inodoro en baño',
       excerpt: 'Detectá y cambiá el fuelle del inodoro si pierde agua. Diferencias entre goma y plástico. Si el problema sigue, ¡contactanos para revisión profesional!',
       content: `
@@ -2083,7 +2083,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2026-05-17',
       updatedAt: '2026-05-17',
       title: 'Caños pluviales o fluviales: cuál es la diferencia y por qué importa',
-      image: '/img/cañeria pluvial.jpg',
+      image: '/img/caneria-pluvial.jpg',
       alt: 'Diferencia de desagües entre cañerías para lluvias en techo',
       excerpt: 'Conocé la diferencia entre caños pluviales y cloacales, y evitá inundaciones por obstrucciones. ¿Pluviales tapados con barro? ¡Escribinos para limpiarlos!',
       content: `
@@ -2127,7 +2127,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2026-05-17',
       updatedAt: '2026-05-17',
       title: 'Qué es una cámara de inspección de cañerías y para qué sirve',
-      image: '/img/video inspeccion cañerias.jpg',
+      image: '/img/video-inspeccion-canerias.jpg',
       alt: 'Pantalla de alta definición HD visualizando el centro oscuro de una cañería obstruida por sarro y raíces',
       excerpt: 'Descubrí qué es y cómo funciona la cámara de inspección de cañerías. Detectá problemas con tecnología HD. ¡Consultá precios y solicitá servicio hoy!',
       content: `
@@ -2189,7 +2189,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2026-05-17',
       updatedAt: '2026-05-17',
       title: 'Máquina destapa cañerías: cómo funciona y cuándo usarla',
-      image: '/img/maquina destapa cañerias.jpg',
+      image: '/img/maquina-destapa-canerias.jpg',
       alt: 'Máquina desobstructora rotativa a resorte espiral limpiando cañerías profundas industriales en empresa o vivienda unifamiliar',
       excerpt: 'Conocé cómo funciona una máquina destapa cañerías, tipos rotativos e hidrojet, y por qué evitar químicos. ¡Contactanos para un destape profesional rápido!',
       content: `
