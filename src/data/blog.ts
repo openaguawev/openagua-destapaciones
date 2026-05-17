@@ -40,7 +40,7 @@ export const getArticulos = (): Articulo[] => {
       updatedAt: '2026-05-17',
       title: '¿Cuánto cuesta una destapación de cloaca en 2026?',
       seoTitle: 'Precios de Destapación de Cloaca: Cuánto Cuesta en 2026',
-      image: '/img/destapacion de cloaca.jpg',
+      image: '/img/destapacion-de-cloaca.jpg',
       alt: 'Técnico realizando una destapacion de cloaca con máquina profesional en CABA',
       excerpt: '¿Tenés problemas en tu red sanitaria? Te contamos cuánto cuesta una destapacion de cloaca en 2026, los factores de precio y qué tener en cuenta.',
       content: `
@@ -88,7 +88,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2024-01-10',
       updatedAt: '2026-05-04',
       title: '¿Por qué mi cocina huele a cloaca? 3 causas y soluciones definitivas',
-      image: '/img/cocina huele cloaca.jpg',
+      image: '/img/cocina-huele-cloaca.jpg',
       alt: 'Destapación de cocina y solución a olores de cloaca en CABA - Openagua',
       excerpt: '¿Tu cocina huele a cloaca y no sabés por qué? Descubrí las causas más frecuentes del olor y cómo eliminar el problema de raíz. ¡Consultanos!',
       content: `
@@ -172,7 +172,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2024-02-10',
       updatedAt: '2026-05-04',
       title: 'Grasa en cañerías de edificios: Por qué el agua hirviendo no sirve',
-      image: '/img/caño con grasa.jpg',
+      image: '/img/cano-con-grasa.jpg',
       alt: 'Grasa petrificada en cañerías de edificios de zona norte - Openagua',
       excerpt: '¿Grasa acumulada en las bajadas del edificio? Conocé el método definitivo para limpiar cañerías en consorcios sin dañar los caños. ¡Llamanos!',
       content: `
@@ -256,7 +256,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2024-03-10',
       updatedAt: '2026-05-04',
       title: '5 señales de que la columna de tu edificio está por taparse',
-      image: '/img/caño columna.jpg',
+      image: '/img/cano-columna.jpg',
       alt: 'Mantenimiento preventivo de columnas en consorcios de Gran Buenos Aires - Openagua',
       excerpt: '¿La columna del edificio está tapada? Conocé las 5 señales clave que todo administrador debe identificar antes de que haya una inundación. ¡Llamanos!',
       content: `
@@ -335,7 +335,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2024-04-10',
       updatedAt: '2026-05-04',
       title: 'Resorte vs. Hidrojet: ¿Cuál es mejor para tu destapación?',
-      image: '/img/maquina resortes.jpg',
+      image: '/img/maquina-resortes.jpg',
       alt: 'Comparativa técnica entre máquina de resortes y sistema hidrojet en CABA - Openagua',
       excerpt: '¿Resorte o hidrojet para destapar cañerías? Comparamos ambas técnicas, cuándo usar cada una y cuál conviene mejor para tu caso. ¡Consultanos!',
       content: `
@@ -418,7 +418,7 @@ export const getArticulos = (): Articulo[] => {
       updatedAt: '2026-05-16',
       title: 'Video Inspección: Cómo saber si tu caño está roto sin romper el piso',
       seoTitle: 'Cómo Saber si un Caño Está Roto Sin Romper el Piso',
-      image: '/img/video inspeccion.jpg',
+      image: '/img/video-inspeccion.jpg',
       alt: 'Video inspección de cañerías rotas sin romper el piso en CABA y GBA - Openagua',
       excerpt: 'Descubrí cómo la video inspección cañerías detecta roturas sin romper pisos. Ahorrá dinero y molestias. ¡Solicitá hoy diagnóstico en CABA y GBA!',
       content: `
@@ -490,7 +490,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2024-06-10',
       updatedAt: '2026-05-04',
       title: 'El inodoro rebalsa: qué hacer en los primeros 5 minutos',
-      image: '/img/inodoro tapado.jpg',
+      image: '/img/inodoro-tapado.jpg',
       alt: 'Cómo destapar un inodoro rebalsado en CABA y GBA',
       excerpt: '¿El inodoro rebalsa y el agua no baja? Seguí estos pasos de emergencia para evitar una inundación sanitaria en tu baño. ¡Escribinos por WhatsApp!',
       content: `
@@ -569,7 +569,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2024-07-10',
       updatedAt: '2026-05-04',
       title: 'Rejilla del patio tapada: cómo evitar inundaciones cuando llueve',
-      image: '/img/rejilla patio.jpg',
+      image: '/img/rejilla-patio.jpg',
       alt: 'Destapación de rejilla de patio inundada tras tormenta - Openagua',
       excerpt: '¿La rejilla del patio se tapa con cada lluvia? No esperés a la próxima tormenta: descubrí cómo mantener tus desagües pluviales libres. ¡Consultanos!',
       content: `
@@ -799,7 +799,7 @@ export const getArticulos = (): Articulo[] => {
       updatedAt: '2026-05-04',
       title: 'Cómo destapar un inodoro: soluciones caseras y cuidados urgentes',
       seoTitle: 'Cómo Destapar un Inodoro: Métodos Caseros Seguros',
-      image: '/img/destapando_un_inodoro.jpg',
+      image: '/img/destapando-un-inodoro.jpg',
       alt: 'Destapación de inodoro con máquina de sonda electromecánica - Openagua',
       excerpt: 'Guía paso a paso para destapar el inodoro en casa usando métodos seguros. Cuándo podés hacerlo vos y cuándo necesitás un profesional. ¡Escribinos!',
       content: `
@@ -878,7 +878,7 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2024-11-10',
       updatedAt: '2026-05-04',
       title: 'Cómo destapar rejillas de patio, baños y terrazas obstruidas',
-      image: '/img/destapando rejilla.jpg',
+      image: '/img/destapando-rejilla.jpg',
       alt: 'Destapación de rejilla bloqueada en patio o terraza - Openagua',
       excerpt: '¿Hojas, tierra o cabellos bloquean tu rejilla? Seguí estos pasos para destaparla y evitar inundaciones en CABA y GBA. ¡Escribinos por WhatsApp!',
       content: `
@@ -958,9 +958,9 @@ export const getArticulos = (): Articulo[] => {
       updatedAt: '2026-05-04',
       title: 'Cómo destapar la pileta de cocina sin dañar los caños',
       seoTitle: 'Cómo Destapar la Pileta de Cocina: Métodos Caseros',
-      image: '/img/destapando cocina.jpg',
+      image: '/img/destapando-cocina.jpg',
       alt: 'Pileta de cocina tapada y llena de agua esperando ayuda técnica - Openagua',
-      excerpt: 'Métodos caseros seguros para destapar la bacha de cocina. Cuándo intentarlo vos mismo y cuándo llamar a un profesional.',
+      excerpt: '¿La bacha de la cocina no tira el agua? Conocé métodos caseros seguros para destaparla y cuándo es mejor llamar a un plomero profesional. ¡Consultanos!',
       content: `
 
         <p>Que el agua sucia empiece a tardar cada vez más tiempo en irse de la bacha y termines viendo un lago nauseabundo estancado en medio de tus ollas sucias, es sin duda uno de los problemas cotidianos más molestos en cualquier hogar de <strong>CABA</strong> o el cordón residencial del <strong>Gran Buenos Aires</strong>. Cuando enfrentamos el desafío de destapar correctamente la pileta de cocina, el error más fatal es usar químicos abrasivos basados en consejos dudosos.</p>
@@ -1037,9 +1037,9 @@ export const getArticulos = (): Articulo[] => {
       publishedAt: '2025-01-10',
       updatedAt: '2025-01-10',
       title: 'Diferencias entre cañerías cloacales y pluviales | Openagua',
-      image: '/img/Cañerías cloacales vs pluviales .jpg',
+      image: '/img/canerias-cloacales-vs-pluviales.jpg',
       alt: 'Diferencias entre tuberías cloacales y pluviales - Openagua',
-      excerpt: 'Descubrí qué transporta cada sistema, cómo detectar cuál está tapado y cuándo conviene llamar a un profesional.',
+      excerpt: '¿Sabés la diferencia entre cañerías cloacales y pluviales? Descubrí qué transporta cada sistema y cómo detectar cuál está tapado. ¡Consultanos!',
       content: `
         <p>Muchas veces el problema no está en la misma cañería. Sentir mal olor, presenciar un rebalse o notar agua estancada no siempre tiene el mismo origen. Las cloacales y las pluviales cumplen funciones completamente distintas, y entender la diferencia te ayudará a detectar mejor dónde está la obstrucción y solicitar la solución técnica correcta.</p>
         
@@ -1131,7 +1131,7 @@ export const getArticulos = (): Articulo[] => {
       h1: 'Raíces en cañerías: señales, causas y solución definitiva',
       image: '/img/raiz.jpg',
       alt: 'Raíces obstruyendo una cañería cloacal detectadas por video inspección',
-      excerpt: 'Descubrí cómo detectar raíces en cañerías y cloacas, síntomas comunes y cuál es la solución definitiva con video inspección e hidrojet.',
+      excerpt: '¿Cañerías que se tapan siempre en el mismo punto? Podría ser raíces. Descubrí los síntomas y la solución definitiva con video inspección. ¡Llamanos!',
       content: `
         <p>En barrios con arboledas frondosas como <strong>Palermo</strong>, <strong>Belgrano</strong>, <strong>Devoto</strong> o en las quintas de <strong>Zona Norte</strong>, el problema de las raíces en las cañerías es mucho más común de lo que se cree. Lo que comienza como un drenaje apenas lento puede terminar en un colapso total del sistema cloacal o pluvial, con consecuencias costosas tanto para la estructura como para la higiene del hogar.</p>
         
@@ -1192,7 +1192,7 @@ export const getArticulos = (): Articulo[] => {
       h1: 'Qué no tirar en la pileta de cocina para evitar que se tape',
       image: '/img/mugre.jpg',
       alt: 'Mugre y grasa acumulada tapando la pileta de cocina',
-      excerpt: 'Conocé qué elementos no debés tirar en la pileta de cocina para evitar cañerías tapadas, malos olores y destapaciones costosas.',
+      excerpt: '¿Qué no debés tirar en la pileta de cocina? Conocé los 7 elementos que tapan cañerías, generan mal olor y te cuestan caro. ¡Evitá el problema!',
       content: `
         <p>La cocina es el corazón de cualquier hogar en <strong>CABA</strong> y <strong>GBA</strong>, pero también es el lugar donde más abusamos de las cañerías. Muchas veces, por comodidad o desconocimiento, tratamos a la bacha de la cocina como si fuera un tacho de basura secundario. El problema es que las tuberías de desagüe no están diseñadas para transportar sólidos, grasas pesadas ni químicos agresivos.</p>
         
@@ -1242,9 +1242,9 @@ export const getArticulos = (): Articulo[] => {
       title: 'Qué es una cámara cloacal y cómo detectar problemas',
       seoTitle: 'Qué es una cámara cloacal y cómo detectar problemas',
       h1: 'Qué es una cámara cloacal y cómo detectar problemas en tu casa o edificio',
-      image: '/img/camara info.jpg',
+      image: '/img/camara-info.jpg',
       alt: 'Cámara cloacal con tapa abierta mostrando inspección de cañerías',
-      excerpt: 'Conocé qué es una cámara cloacal, para qué sirve y cómo identificar fallas antes de que afecten todo el sistema de desagüe.',
+      excerpt: '¿Sabés qué es una cámara cloacal y para qué sirve? Conocé su función y cómo detectar fallas antes de que colapsen tus desagües. ¡Consultanos!',
       content: `
         <p>En el complejo mundo de las instalaciones sanitarias de <strong>CABA</strong> y <strong>GBA</strong>, existe un elemento fundamental que suele pasar desapercibido hasta que algo falla: la <strong>cámara cloacal</strong> o cámara de inspección. Este componente es el nexo vital entre los desagües internos de tu vivienda y la red pública de alcantarillado.</p>
         
@@ -1342,9 +1342,9 @@ export const getArticulos = (): Articulo[] => {
       title: 'Cómo detectar una cámara cloacal tapada',
       seoTitle: 'Cómo detectar una cámara cloacal tapada',
       h1: 'Cómo detectar una cámara cloacal tapada antes de que rebalse',
-      image: '/img/camara tapada.jpg',
+      image: '/img/camara-tapada.jpg',
       alt: 'Cámara cloacal tapada con acumulación de agua y residuos',
-      excerpt: 'Evitá una inundación en tu hogar. Aprendé a identificar las señales de alerta de una cámara de inspección colapsada y cómo actuar a tiempo.',
+      excerpt: 'Evitá una inundación cloacal. Aprendé a identificar las señales de alerta de una cámara de inspección tapada y cómo actuar a tiempo. ¡Llamanos!',
       content: `
         <p>Una <strong>cámara cloacal tapada</strong> es probablemente la peor pesadilla para cualquier propietario en <strong>Buenos Aires</strong>. A diferencia de una bacha tapada, el colapso de la cámara principal afecta a todos los servicios de la casa: inodoros, duchas y cocinas dejan de funcionar simultáneamente, y el riesgo de retroceso de aguas negras hacia el interior de la vivienda es inminente.</p>
         
@@ -1390,9 +1390,9 @@ export const getArticulos = (): Articulo[] => {
       title: 'Sótano inundado: qué hacer paso a paso',
       seoTitle: 'Sótano Inundado: Qué Hacer Paso a Paso',
       h1: 'Sótano inundado: guía práctica para actuar sin errores',
-      image: '/img/sotano inundado.jpg',
+      image: '/img/sotano-inundado.jpg',
       alt: 'Sótano con agua siendo desagotado con bomba profesional en GBA',
-      excerpt: 'Guía práctica para actuar cuando el sótano se inunda. Pasos seguros, qué evitar y cómo prevenir que vuelva a pasar.',
+      excerpt: '¿Se inundó el sótano? Seguí esta guía para actuar sin cometer errores costosos, qué evitar y cómo prevenir que vuelva a pasar. ¡Consultanos!',
       content: `
 
         <p>Bajar al sótano y encontrarlo con agua es una situación que cualquier propietario en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong> querría evitar. Sin embargo, es más común de lo que parece, especialmente después de lluvias intensas o cuando las napas freáticas suben en épocas de mucha humedad. La buena noticia es que, si actuás con orden y sin apresurarte, el daño puede limitarse considerablemente.</p>
@@ -1477,9 +1477,9 @@ export const getArticulos = (): Articulo[] => {
       title: 'Diámetros de caños: guía para entender tu instalación',
       seoTitle: 'Diámetros de Caños Sanitarios: Guía Completa',
       h1: 'Diámetros de caños sanitarios: guía para entender tu instalación',
-      image: '/img/medicion caños.jpg',
+      image: '/img/medicion-canos.jpg',
       alt: 'Diferentes diámetros de caños PVC para instalaciones sanitarias',
-      excerpt: 'Guía técnica sobre los diámetros de caños más usados en Argentina. Cuál corresponde a cada artefacto y por qué importa.',
+      excerpt: '¿Sabés qué diámetro de caño corresponde a cada artefacto? Guía técnica sobre los tamaños más usados en Argentina y por qué importa conocerlos.',
       content: `
 
         <p>Cuando llaman a Openagua por un caño tapado, una de las primeras preguntas que hacemos es: ¿sabés qué diámetro tiene ese caño? La mayoría de los propietarios en <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong> no lo saben, y es completamente normal. Sin embargo, entender los diámetros de la instalación sanitaria es una herramienta muy útil para comunicarse mejor con el técnico, entender por qué algunos caños se tapan más seguido que otros, y tomar mejores decisiones de mantenimiento.</p>
@@ -1561,7 +1561,7 @@ export const getArticulos = (): Articulo[] => {
       title: 'Destapaciones en consorcios: guía para administradores',
       seoTitle: 'Destapaciones en Consorcios | Guía Práctica',
       h1: 'Destapaciones en consorcios: guía práctica para administradores',
-      image: '/img/consorcio destapacion.jpg',
+      image: '/img/consorcio-destapacion.jpg',
       alt: 'Edificio de consorcio en CABA donde se realizan trabajos de destapación',
       excerpt: 'Todo lo que un administrador necesita saber sobre destapaciones en edificios. Responsabilidades, mantenimiento y cómo evitar problemas costosos.',
       content: `
@@ -1637,9 +1637,9 @@ export const getArticulos = (): Articulo[] => {
       title: 'Cómo cambiar un flexible de cañería',
       seoTitle: 'Cómo Cambiar un Flexible de Cañería Paso a Paso',
       h1: 'Cómo cambiar un flexible de cañería: guía paso a paso',
-      image: '/img/cambio flexible.jpg',
+      image: '/img/cambio-flexible.jpg',
       alt: 'Flexible de cañería bajo mesada siendo reemplazado',
-      excerpt: 'Guía práctica para cambiar un flexible de agua en casa. Qué herramientas necesitás, cómo hacerlo y cuándo conviene llamar a un profesional.',
+      excerpt: '¿Un flexible de cañería gotea debajo de la mesada o en el baño? Guía paso a paso para cambiarlo en casa y cuándo llamar a un plomero. ¡Consultanos!',
       content: `
 
         <p>El flexible es una de las piezas más pequeñas y más ignoradas de la instalación de agua de un hogar en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong>. Sin embargo, cuando falla, lo hace de manera muy visible: una gotera bajo la mesada, una mancha de humedad en la pared del baño, o directamente un chorro de agua que inunda el mueble de abajo. La buena noticia es que cambiar un flexible es uno de los trabajos de plomería más accesibles para hacer por cuenta propia, siempre que se cuente con las herramientas correctas y se sigan los pasos en el orden adecuado.</p>
@@ -1714,9 +1714,9 @@ export const getArticulos = (): Articulo[] => {
       title: 'Cómo cambiar un cuerito de canilla',
       seoTitle: 'Cómo Cambiar un Cuerito de Canilla: Guía Fácil',
       h1: 'Cómo cambiar un cuerito de canilla paso a paso',
-      image: '/img/cambio cuerito.jpg',
+      image: '/img/cambio-cuerito.jpg',
       alt: 'Canilla con goteo siendo reparada cambiando el cuerito',
-      excerpt: 'La canilla gotea y no para. Aprendé a cambiar el cuerito vos mismo con herramientas básicas y sin llamar al plomero.',
+      excerpt: '¿La canilla gotea y no para? Aprendé a cambiar el cuerito vos mismo con herramientas básicas, ahorrá agua y evitá gastar de más. ¡Sin llamar al plomero!',
       content: `
 
         <p>La canilla que gotea es uno de esos problemas domésticos que, por pequeños, tendemos a ignorar. Sin embargo, una canilla que gotea una gota por segundo desperdicia unos 30 litros de agua por día, lo que en un mes representa casi 1.000 litros. Más allá del impacto en la factura del agua, ese goteo constante es también una señal de que el sistema necesita atención. La buena noticia es que en la mayoría de los casos, la solución es cambiar el cuerito: una pieza que cuesta unos pocos pesos y se cambia en menos de 20 minutos.</p>
@@ -1767,9 +1767,9 @@ export const getArticulos = (): Articulo[] => {
       title: 'Cómo limpiar el sifón del desagüe de la cocina',
       seoTitle: 'Cómo Limpiar el Sifón de la Cocina: Paso a Paso',
       h1: 'Cómo limpiar el sifón del desagüe de la cocina sin llamar al plomero',
-      image: '/img/limpieza sifon.jpg',
+      image: '/img/limpieza-sifon.jpg',
       alt: 'Sifón bajo mesada de cocina siendo limpiado para eliminar olores',
-      excerpt: 'El sifón de la cocina acumula grasa y genera mal olor. Aprendé a limpiarlo vos mismo en 15 minutos con herramientas básicas.',
+      excerpt: '¿La cocina huele raro o el agua baja lento? El sifón puede estar sucio. Aprendé a limpiarlo en 15 minutos con herramientas básicas. ¡Consultanos!',
       content: `
 
         <p>Si notás que la cocina empieza a oler raro —ese leve tufo a humedad o a alcantarilla que aparece cuando lavás los platos— la primera pieza que hay que revisar es el sifón. Este componente del desagüe, ubicado debajo de la bacha, es el responsable directo de bloquear los gases que vienen de la red cloacal. Cuando está sucio o mal armado, los olores se cuelan hacia el interior de la cocina.</p>
