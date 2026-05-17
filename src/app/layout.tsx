@@ -21,16 +21,16 @@ export const metadata: Metadata = {
   description: 'Destapaciones de cañerías en CABA y GBA con atención profesional y soluciones reales. Diagnóstico claro y sin romper. Llamanos al 11 5179-7649.',
   icons: {
     icon: [
-      { url: '/img/favicon16.png?v=4', sizes: '16x16', type: 'image/png' },
-      { url: '/img/favicon32.png?v=4', sizes: '32x32', type: 'image/png' },
-      { url: '/img/favicon48.png?v=4', sizes: '48x48', type: 'image/png' },
+      { url: '/img/favicon16.png?v=5', sizes: '16x16', type: 'image/png' },
+      { url: '/img/favicon32.png?v=5', sizes: '32x32', type: 'image/png' },
+      { url: '/img/favicon48.png?v=5', sizes: '48x48', type: 'image/png' },
     ],
-    shortcut: ['/img/favicon32.png?v=4'],
+    shortcut: ['/img/favicon32.png?v=5'],
     apple: [
-      { url: '/img/apple-touch-icon.png?v=4', sizes: '180x180' },
+      { url: '/img/apple-touch-icon.png?v=5', sizes: '180x180' },
     ],
   },
-  manifest: '/manifest.json?v=4',
+  manifest: '/manifest.json?v=5',
   openGraph: {
     title: 'Openagua | Destapaciones de cañerías en CABA y GBA',
     description: 'Destapaciones de cañerías en CABA y GBA con atención profesional y soluciones reales. Diagnóstico claro y sin romper. Llamanos al 11 5179-7649.',
