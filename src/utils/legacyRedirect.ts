@@ -89,8 +89,7 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
   // Barrios sin cobertura: Manejar con notFound (410) en vez de redirigir a cloacas
   if (path.includes('bosques') || 
       path.includes('sourigues') || 
-      path.includes('pereyra') || 
-      path.includes('virreyes')) {
+      path.includes('pereyra')) {
     notFound();
   }
 

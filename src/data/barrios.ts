@@ -90,6 +90,8 @@ export const barrios: Barrio[] = [
   { slug: 'destapaciones-ituzaingo', name: 'Ituzaingó', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Moron","Castelar","Merlo"] },
   { slug: 'destapaciones-merlo', name: 'Merlo', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Ituzaingo","Moreno","Paso del Rey"] },
   { slug: 'destapaciones-lomas-del-mirador', name: 'Lomas del Mirador', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Villa Luzuriaga","Ramos Mejía","San Justo","Tapiales"], pois: ["Av. General Paz","Av. Vergara","Plaza Lomas del Mirador"] },
+  { slug: 'destapaciones-tapiales', name: 'Tapiales', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Villa Madero", "Aldo Bonzi"] },
+  { slug: 'destapaciones-villa-bosch', name: 'Villa Bosch', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Caseros", "Martin Coronado"] },
   // ZONA NORTE
   { slug: 'destapaciones-escobar', name: 'Escobar', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Garin","Vicente Lopez","San Isidro"] },
   { slug: 'destapaciones-san-isidro', name: 'San Isidro', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Martinez","Acassuso","Beccar","Boulogne"], pois: ["Av. Centenario", "Catedral de San Isidro", "Hipódromo de San Isidro", "Calle Belgrano"] },
@@ -128,8 +130,13 @@ export const barrios: Barrio[] = [
   { slug: 'destapaciones-pablo-nogues', name: 'Pablo Nogues', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Rincon de Milberg","General San Martin","Ingeniero Maschwitz"] },
   { slug: 'destapaciones-villa-adelina', name: 'Villa Adelina', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Bella Vista","Loma Hermosa","Vicente Lopez"] },
   { slug: 'destapaciones-san-miguel', name: 'San Miguel', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Villa Martelli","Jose Leon Suarez","Benavidez"] },
-  { slug: 'destapaciones-don-torcuato', name: 'Don Torcuato', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Villa Ballester","Tortuguitas","Villa Martelli"] },
+  { slug: 'destapaciones-don-torcuato', name: 'Don Torcuato', zoneSlug: 'zona-oeste', zoneName: 'Zona Oeste', nearby: ["Villa Ballester","Tortuguitas","Villa Martelli"] },
   { slug: 'destapaciones-tigre', name: 'Tigre', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["San Fernando","Nordelta","General Pacheco"] },
+  { slug: 'destapaciones-carupa', name: 'Carupa', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["San Fernando", "Tigre"] },
+  { slug: 'destapaciones-general-lemos', name: 'General Lemos', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["San Miguel", "Los Polvorines"] },
+  { slug: 'destapaciones-marina-nueva', name: 'Marina Nueva', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["San Fernando", "Victoria"] },
+  { slug: 'destapaciones-vucetich', name: 'Vucetich', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Jose C. Paz", "San Miguel"] },
+  { slug: 'destapaciones-virreyes', name: 'Virreyes', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["San Fernando", "Victoria", "Beccar"] },
   // ZONA SUR
   { slug: 'destapaciones-adrogue', name: 'Adrogué', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Lanus","Burzaco","Longchamps"] },
   { slug: 'destapaciones-quilmes', name: 'Quilmes', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Adrogué","Avellaneda","Burzaco"], pois: ["Av. Mitre", "Peatonal Rivadavia", "Cervecería Quilmes", "Ribera de Quilmes"] },
@@ -139,4 +146,6 @@ export const barrios: Barrio[] = [
   { slug: 'destapaciones-temperley', name: 'Temperley', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Quilmes","Lanus","Banfield"] },
   { slug: 'destapaciones-avellaneda', name: 'Avellaneda', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Lanus","Quilmes","Wilde"] },
   { slug: 'destapaciones-banfield', name: 'Banfield', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Lomas de Zamora","Lanus","Temperley"] },
+  { slug: 'destapaciones-almirante-brown', name: 'Almirante Brown', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Adrogué", "Burzaco"] },
+  { slug: 'destapaciones-ezeiza', name: 'Ezeiza', zoneSlug: 'zona-sur', zoneName: 'Zona Sur', nearby: ["Canning", "Monte Grande"] },
 ];

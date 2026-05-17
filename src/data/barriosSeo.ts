@@ -3,6 +3,8 @@ export interface BarrioSeoData {
   tipo: string;
   problemas: string[];
   propiedades: string[];
+  seoTitle?: string;
+  seoDescription?: string;
 }
 
 export const barriosSeo: Record<string, BarrioSeoData> = {
@@ -347,6 +349,8 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     tipo: 'zona con casas tradicionales de barrio y algunos edificios recientes',
     problemas: ['obstrucciones por acumulación de grasa doméstica', 'cámaras sépticas colapsadas', 'pluviales de vereda tapados con escombros'],
     propiedades: ['viviendas familiares con instalaciones antiguas', 'fábricas y talleres', 'propiedades horizontales'],
+    seoTitle: 'Destapaciones en Villa Udaondo | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Villa Udaondo. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
   },
   'destapaciones-villa-madero': {
     nombre: 'Villa Madero',
@@ -395,6 +399,8 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     tipo: 'zona en crecimiento con loteos nuevos y propiedades tradicionales',
     problemas: ['obstrucciones por acumulación de grasa doméstica', 'cámaras sépticas colapsadas', 'pluviales de vereda tapados con escombros'],
     propiedades: ['viviendas familiares con instalaciones antiguas', 'fábricas y talleres', 'propiedades horizontales'],
+    seoTitle: 'Destapaciones en Paso del Rey | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Paso del Rey. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
   },
   'destapaciones-villa-tesei': {
     nombre: 'Villa Tesei',
@@ -425,18 +431,24 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     tipo: 'zona en crecimiento con loteos nuevos y propiedades tradicionales',
     problemas: ['caños con pérdida de pendiente por asentamiento del terreno', 'rejillas de patio obstruidas por barro', 'desagües de lavadero bloqueados por pelusa y jabón'],
     propiedades: ['casas con pozo ciego o cámara séptica', 'dúplex y tríplex', 'negocios sobre avenida principal'],
+    seoTitle: 'Destapaciones en Libertad | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Libertad. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
   },
   'destapaciones-pontevedra': {
     nombre: 'Pontevedra',
     tipo: 'barrio residencial con calles tranquilas y propiedades de mediano porte',
     problemas: ['cloacas compartidas entre vecinos que colapsan', 'bajadas pluviales con sedimento y raíces', 'cañerías de cocina con grasa endurecida'],
     propiedades: ['consorcios pequeños', 'casas con ampliaciones sucesivas', 'locales gastronómicos de barrio'],
+    seoTitle: 'Destapaciones en Pontevedra | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Pontevedra. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
   },
   'destapaciones-william-morris': {
     nombre: 'William Morris',
     tipo: 'zona con casas tradicionales de barrio y algunos edificios recientes',
     problemas: ['cloacas antiguas con juntas deterioradas', 'pozos ciegos saturados que requieren intervención', 'cañerías de barro cocido fisuradas por la edad'],
     propiedades: ['casas de barrio con patio y fondo', 'edificios de pocos pisos', 'comercios de cercanía'],
+    seoTitle: 'Destapaciones en William Morris | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en William Morris. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
   },
   'destapaciones-haedo': {
     nombre: 'Haedo',
@@ -523,6 +535,8 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     tipo: 'zona en crecimiento con loteos nuevos y propiedades tradicionales',
     problemas: ['raíces de árboles grandes que perforan cañerías', 'pluviales tapados por hojas y tierra', 'cámaras sépticas que necesitan limpieza periódica'],
     propiedades: ['casas con jardín amplio y pileta', 'chalets en barrios residenciales', 'complejos de duplex'],
+    seoTitle: 'Destapaciones en Rincon de Milberg | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Rincon de Milberg. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
   },
   'destapaciones-villa-ballester': {
     nombre: 'Villa Ballester',
@@ -721,6 +735,8 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     tipo: 'zona residencial con countries, barrios cerrados y chalets',
     problemas: ['desagües de pileta bloqueados por sedimento del jardín', 'cloacas obstruidas por raíces invasivas', 'bajadas de terraza con acumulación de musgo'],
     propiedades: ['viviendas unifamiliares con terreno grande', 'countries y barrios cerrados', 'casas quintas con parque'],
+    seoTitle: 'Destapaciones en Don Torcuato | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Don Torcuato. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
   },
   'destapaciones-tigre': {
     nombre: 'Tigre',
@@ -733,6 +749,8 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     tipo: 'zona suburbana con napas altas y terrenos húmedos',
     problemas: ['cloacas compartidas entre vecinos que colapsan', 'bajadas pluviales con sedimento y raíces', 'cañerías de cocina con grasa endurecida'],
     propiedades: ['consorcios pequeños', 'casas con ampliaciones sucesivas', 'locales gastronómicos de barrio'],
+    seoTitle: 'Destapaciones en Adrogué | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Adrogué. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
   },
   'destapaciones-quilmes': {
     nombre: 'Quilmes',
@@ -757,6 +775,8 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     tipo: 'localidad con perfil industrial y residencial combinado',
     problemas: ['cloacas compartidas entre vecinos que colapsan', 'bajadas pluviales con sedimento y raíces', 'cañerías de cocina con grasa endurecida'],
     propiedades: ['consorcios pequeños', 'casas con ampliaciones sucesivas', 'locales gastronómicos de barrio'],
+    seoTitle: 'Destapaciones en Longchamps | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Longchamps. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
   },
   'destapaciones-temperley': {
     nombre: 'Temperley',
@@ -775,5 +795,79 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     tipo: 'barrio residencial con calles tranquilas y propiedades de mediano porte',
     problemas: ['caños con pérdida de pendiente por asentamiento del terreno', 'rejillas de patio obstruidas por barro', 'desagües de lavadero bloqueados por pelusa y jabón'],
     propiedades: ['casas con pozo ciego o cámara séptica', 'dúplex y tríplex', 'negocios sobre avenida principal'],
+    seoTitle: 'Destapaciones en Banfield | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Banfield. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
+  },
+  'destapaciones-carupa': {
+    nombre: 'Carupa',
+    tipo: 'zona residencial de Zona Norte con propiedades de distinta antigüedad',
+    problemas: ['cloacas tapadas por raíces de árboles en veredas', 'pluviales obstruidos por sedimentos', 'desagües de cocina con grasa acumulada'],
+    propiedades: ['viviendas familiares con instalaciones clásicas', 'pequeños comercios de barrio', 'PHs con patios compartidos'],
+    seoTitle: 'Destapaciones en Carupa | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Carupa. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
+  },
+  'destapaciones-general-lemos': {
+    nombre: 'General Lemos',
+    tipo: 'barrio urbano mixto con sectores residenciales e industriales',
+    problemas: ['obstrucciones en desagües por residuos', 'caños con pérdida de nivel', 'cámaras de inspección rebalsadas por uso intensivo'],
+    propiedades: ['casas y dúplex nuevos', 'galpones industriales pequeños', 'locales comerciales sobre arterias principales'],
+    seoTitle: 'Destapaciones en General Lemos | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en General Lemos. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
+  },
+  'destapaciones-marina-nueva': {
+    nombre: 'Marina Nueva',
+    tipo: 'zona ribereña con características residenciales',
+    problemas: ['infiltración de raíces en cloacas', 'desbordes por sudestada o napas altas', 'acumulación de barro en rejillas de patio'],
+    propiedades: ['chalets y casas residenciales', 'clubes náuticos cercanos', 'viviendas de fin de semana'],
+    seoTitle: 'Destapaciones en Marina Nueva | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Marina Nueva. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
+  },
+  'destapaciones-vucetich': {
+    nombre: 'Vucetich',
+    tipo: 'barrio residencial suburbano',
+    problemas: ['pozos ciegos saturados', 'bajadas pluviales con hojas y sedimento', 'caños de desagüe de lavadero tapados'],
+    propiedades: ['casas con amplios jardines', 'loteos de desarrollo reciente', 'propiedades familiares amplias'],
+    seoTitle: 'Destapaciones en Vucetich | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Vucetich. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
+  },
+  'destapaciones-virreyes': {
+    nombre: 'Virreyes',
+    tipo: 'localidad urbana densamente poblada con alto tráfico comercial',
+    problemas: ['colapso de cloacas compartidas', 'obstrucción por grasa en cocinas', 'sarro acumulado en caños antiguos'],
+    propiedades: ['consorcios pequeños y medianos', 'viviendas antiguas refaccionadas', 'comercios gastronómicos'],
+    seoTitle: 'Destapaciones en Virreyes | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Virreyes. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
+  },
+  'destapaciones-tapiales': {
+    nombre: 'Tapiales',
+    tipo: 'barrio de Zona Oeste con mezcla de comercios y residencias',
+    problemas: ['cañerías de barro cocido fisuradas por la edad', 'desbordes pluviales en calles asfaltadas recientemente', 'sedimentos de jabón y pelo en baños'],
+    propiedades: ['edificios de pocos pisos', 'casas familiares tradicionales', 'comercios de cercanía'],
+    seoTitle: 'Destapaciones en Tapiales | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Tapiales. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
+  },
+  'destapaciones-villa-bosch': {
+    nombre: 'Villa Bosch',
+    tipo: 'zona residencial en crecimiento con nuevos proyectos inmobiliarios',
+    problemas: ['raíces en cámaras cloacales', 'obstrucciones en columnas principales de edificios nuevos', 'cámaras sépticas saturadas'],
+    propiedades: ['dúplex y tríplex modernos', 'casas con piletas y jardines', 'locales comerciales variados'],
+    seoTitle: 'Destapaciones en Villa Bosch | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Villa Bosch. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
+  },
+  'destapaciones-almirante-brown': {
+    nombre: 'Almirante Brown',
+    tipo: 'partido amplio de la Zona Sur con gran diversidad de propiedades',
+    problemas: ['caños de PVC deformados', 'inodoros con retorno de agua', 'pluviales tapados por hojarasca en otoño'],
+    propiedades: ['casas quintas con parques grandes', 'viviendas céntricas de estilo antiguo', 'clubes y asociaciones civiles'],
+    seoTitle: 'Destapaciones en Almirante Brown | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Almirante Brown. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
+  },
+  'destapaciones-ezeiza': {
+    nombre: 'Ezeiza',
+    tipo: 'zona suburbana de fuerte desarrollo y countries',
+    problemas: ['pozos ciegos que requieren intervención frecuente', 'raíces invasivas de pinos y eucaliptos en desagües', 'cañerías pluviales saturadas por tormentas fuertes'],
+    propiedades: ['casas en barrios cerrados y countries', 'propiedades amplias en loteos nuevos', 'centros logísticos e industriales'],
+    seoTitle: 'Destapaciones en Ezeiza | CABA y GBA',
+    seoDescription: 'Servicio rápido y garantizado de destapaciones en Ezeiza. Especialistas en cañerías, cloacas y pluviales con tecnología de punta. ¡Llamanos ahora!',
   },
 };
