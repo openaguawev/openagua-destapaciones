@@ -2028,8 +2028,7 @@ export const getArticulos = (): Articulo[] => {
     alt: 'Cambio de fuelle averiado en inodoro en baño',
     excerpt: '¿Tu fuelle inodoro pierde agua y te inunda el baño? Te enseño a cambiarlo paso a paso. Si el problema sigue, escribinos para una visita técnica.',
     content: `
-      <p>Hola. Soy Emmanuel. Llevo más de 10 años haciendo destapaciones y arreglos en Ciudadela y todo el Gran Buenos Aires.</p>
-      <p>Si encontrás agua en el piso del baño, es muy probable que el fuelle esté dañado. En esta guía te explico cómo solucionarlo.</p>
+      <p>Si encontrás agua en el piso del baño, es muy probable que el fuelle de tu inodoro esté dañado. Tener una pérdida en este sector no solo es molesto, sino que a la larga puede arruinar los revestimientos cerámicos o generar filtraciones hacia el techo de los vecinos de abajo. En esta guía te explicamos cómo solucionarlo y cambiarlo paso a paso.</p>
 
       <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Qué es el fuelle del inodoro y para qué sirve en tu baño</h2>
       <p>El fuelle es un tubo corto de material flexible que une la salida de agua del depósito con la parte de atrás de la loza. Se usa en inodoros donde la mochila no está pegada directamente a la taza, sino colgada a media altura o embutida en la pared.</p>
@@ -2109,8 +2108,7 @@ export const getArticulos = (): Articulo[] => {
     alt: 'Diferencia de desagües entre cañerías para lluvias en techo',
     excerpt: '¿Dudas entre caños pluviales o fluviales en tu casa? Aprendé las diferencias reales para evitar inundaciones. Si se tapan, contactanos hoy mismo.',
     content: `
-      <p>Hola. Soy Emmanuel. Tengo más de 10 años trabajando en el rubro de destapaciones en Ciudadela y distintas zonas del Gran Buenos Aires.</p>
-      <p>En este artículo te voy a explicar la diferencia entre caños pluviales o fluviales, un error muy común de nombre que escucho todos los días en la calle.</p>
+      <p>En este artículo te explicamos la diferencia entre caños pluviales o fluviales, un error muy común de nombre que se escucha a diario en las viviendas. Conocer sus diferencias reales es clave para mantener tus desagües sanos y evitar inundaciones molestas.</p>
 
       <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Aclaración definitiva de conceptos: ¿Pluvial o Fluvial?</h2>
       <p>Para empezar, te aclaro que el término caño fluvial no existe en la plomería de una casa. Cuando hablamos de fluvial, nos referimos al agua de los ríos en la naturaleza.</p>
@@ -2191,8 +2189,7 @@ export const getArticulos = (): Articulo[] => {
     alt: 'Pantalla de alta definición HD visualizando el centro oscuro de una cañería obstruida por sarro y raíces',
     excerpt: 'Descubrí qué es una cámara de inspección cañerías y cómo ayuda a detectar roturas de forma exacta. Ahorrá dinero y evitá romper todo. ¡Consultanos!',
     content: `
-      <p>Hola. Soy Emmanuel. Tengo más de 10 años en el rubro de las destapaciones y reparaciones en Ciudadela y zona oeste del GBA.</p>
-      <p>Hoy te voy a contar qué es una cámara de inspección de cañerías y cómo te ayuda a resolver problemas de plomería sin romper nada en tu hogar.</p>
+      <p>Una cámara de inspección de cañerías es una de las herramientas más valiosas para resolver atascos y roturas sin tener que picar paredes ni pisos a ciegas. En esta guía te contamos qué es, cómo funciona esta tecnología y de qué manera te ayuda a ahorrar tiempo y dinero en plomería.</p>
 
       <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Qué es una cámara de inspección cañerías?</h2>
       <p>Una cámara de inspección es una herramienta tecnológica que nos permite mirar el interior de los caños cloacales y pluviales en tiempo real. Se trata de un sistema que evita adivinar qué pasa bajo tierra.</p>
@@ -2251,8 +2248,7 @@ export const getArticulos = (): Articulo[] => {
     alt: 'Máquina desobstructora rotativa a resorte espiral limpiando cañerías',
     excerpt: '¿Querés saber cómo funciona una maquina destapa canerias profesional? Te explico las diferencias entre resortes e hidrojet. ¡Escribinos ahora!',
     content: `
-      <p>Hola. Soy Emmanuel. Tengo más de 10 años en el oficio de destapador profesional en Ciudadela y zona oeste del GBA.</p>
-      <p>Hoy te voy a explicar cómo funciona una maquina destapa canerias, qué tipos existen y por qué es la solución definitiva.</p>
+      <p>Una máquina destapa cañerías profesional es la solución definitiva para eliminar los atascos más difíciles y rebeldes del hogar. En esta guía te explicamos cómo funciona, qué tipos de tecnologías existen y por qué superan por completo a los productos químicos tradicionales.</p>
 
       <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Qué es una máquina desobstructora y para qué sirve?</h2>
       <p>Una máquina destapadora es un equipo eléctrico diseñado para eliminar obstrucciones duras en cañerías sanitarias. A diferencia de las cintas manuales, estas herramientas aplican fuerza mecánica continua para limpiar el caño de raíz.</p>
