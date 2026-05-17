@@ -112,7 +112,7 @@ export function handleLegacyRedirect(pathSegments: string[]): never {
   }
 
   // 4. Mapeo de barrios muertos de WP
-  const eliminatedBarrios = ['pilar'];
+  const eliminatedBarrios: string[] = [];
   for (const deleted of eliminatedBarrios) {
     if (path.includes(deleted)) {
       permanentRedirect('/zonas/zona-norte');

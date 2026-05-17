@@ -8,6 +8,14 @@ export interface BarrioSeoData {
 }
 
 export const barriosSeo: Record<string, BarrioSeoData> = {
+  'destapaciones-pilar': {
+    nombre: 'Pilar',
+    tipo: 'urbano-country',
+    seoTitle: 'Destapaciones en Pilar | CABA y GBA',
+    seoDescription: 'Destapaciones urgentes en Pilar y countries. Cobramos viático por distancia. Tiempos reales de llegada. Solucionamos hoy tu problema. ¡Consultanos!',
+    problemas: ['raíces en cañerías antiguas', 'pozos ciegos y cloacas desbordadas'],
+    propiedades: ['countries', 'barrios cerrados', 'viviendas residenciales'],
+  },
   'destapaciones-palermo': {
     nombre: 'Palermo',
     tipo: 'barrio gastronómico y residencial de CABA con alta rotación de locales y edificios modernos',

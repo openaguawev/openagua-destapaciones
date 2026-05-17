@@ -336,7 +336,23 @@ export default async function BarrioPage({ params }: Props) {
                     const isCabaRoute = barrio.zoneSlug === 'caba';
                     const nearbyStr = nearbyFinal.length > 0 ? nearbyFinal.map(b => b.name).join(', ') : 'barrios cercanos';
 
-                    if (isComercialRoute) {
+                    if (barrio.slug === 'destapaciones-pilar') {
+                      return (
+                        <>
+                          <div style={{ backgroundColor: '#fffbeb', borderLeft: '4px solid #f59e0b', padding: '1.5rem', marginBottom: '2rem', borderRadius: '0 8px 8px 0' }}>
+                            <p style={{ margin: 0, color: '#b45309', fontWeight: 600, fontSize: '1.05rem' }}>
+                              <strong>Aviso sobre nuestra cobertura en Pilar:</strong><br/> Llegamos a Pilar, zonas residenciales, barrios cerrados y countries. Por la distancia desde nuestras bases operativas principales, <strong>cobramos un viático adicional</strong> que te informamos con total transparencia al contactarnos por WhatsApp. Para ser 100% honestos: no prometemos tiempos exactos de llegada (dependemos del tráfico en Panamericana y accesos), pero te garantizamos que enviamos el técnico y resolvemos el problema en el día.
+                            </p>
+                          </div>
+                          <p style={{ marginBottom: '1.5rem' }}>
+                            En las casas y residencias de <strong>Pilar</strong> es súper común que los caños y desagües se tapen con raíces del jardín, barro o por la falta de mantenimiento profundo en cámaras sépticas.
+                          </p>
+                          <p style={{ marginBottom: '1.5rem' }}>
+                            Pasamos máquinas con resortes y mangueras a presión que cortan el problema de raíz, cuidando las instalaciones y dejando todo destapado.
+                          </p>
+                        </>
+                      );
+                    } else if (isComercialRoute) {
                       return (
                         <>
                           <p style={{ marginBottom: '1.5rem' }}>

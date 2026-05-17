@@ -134,6 +134,16 @@ const nextConfig: NextConfig = {
         destination: '/destapaciones-cloacas',
         permanent: true,
       },
+      {
+        source: '/destapaciones-pilar',
+        destination: '/barrios/destapaciones-pilar',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-pilar/',
+        destination: '/barrios/destapaciones-pilar',
+        permanent: true,
+      },
       // Redirect genérico destapaciones-en-* (debe ir después de los explícitos)
       {
         source: '/prevencion-obstrucciones-cloacas-pluviales',

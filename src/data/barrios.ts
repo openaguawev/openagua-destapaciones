@@ -9,6 +9,7 @@ export interface Barrio {
 
 export const barrios: Barrio[] = [
   // CABA
+  { slug: 'destapaciones-pilar', name: 'Pilar', zoneSlug: 'zona-norte', zoneName: 'Zona Norte', nearby: ["Del Viso","Manzanares","Grand Bourg","Tortuguitas"] },
   { slug: 'destapaciones-palermo', name: 'Palermo', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Belgrano","Recoleta","Villa Crespo","Almagro"], pois: ["Av. Santa Fe", "Av. Juan B. Justo", "Plaza Italia", "Bosques de Palermo", "Av. Córdoba"] },
   { slug: 'destapaciones-recoleta', name: 'Recoleta', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Caballito","Villa Real","Floresta"], pois: ["Av. Las Heras", "Av. Callao", "Cementerio de la Recoleta", "Facultad de Derecho"] },
   { slug: 'destapaciones-belgrano', name: 'Belgrano', zoneSlug: 'caba', zoneName: 'CABA', nearby: ["Nuñez","Colegiales","Palermo","Saavedra"], pois: ["Av. Cabildo", "Av. del Libertador", "Barrancas de Belgrano", "Barrio Chino"] },
