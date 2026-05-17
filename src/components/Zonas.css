@@ -62,3 +62,36 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Estilos responsivos y accesibilidad para el Hero de las páginas de Zonas */
+.zona-hero {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  color: #fff;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.zona-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .zona-hero {
+    min-height: 400px;
+    padding: 3.5rem 0 2.5rem 0;
+  }
+  .zona-hero h1 {
+    font-size: 2.1rem;
+  }
+  .zona-hero p {
+    font-size: 1.1rem !important;
+  }
+}

@@ -74,8 +74,26 @@ const serviciosZona = [
   { href: '/destapaciones-cloacas', icon: '🚽', label: 'Destapación de Cloacas', sub: 'Urgencias y columnas de edificios' },
   { href: '/destapaciones-canerias', icon: '🔧', label: 'Destapación de Cañerías', sub: 'Cocina, baño y lavadero' },
   { href: '/destapaciones-hidrojet', icon: '💦', label: 'Destapación con Hidrojet', sub: 'Limpieza profunda a alta presión' },
-  { href: '/video-inspeccion-canerias', icon: '📷', label: 'Video Inspección', sub: 'Diagnóstico sin romper pisos' },
 ];
+
+const imagenesHeroZona: Record<string, { src: string; alt: string }> = {
+  caba: {
+    src: '/img/edificio.jpg',
+    alt: 'Destapaciones profesionales en CABA - Edificios y consorcios'
+  },
+  'zona-norte': {
+    src: '/img/limpieza-cano-pluvial.jpg',
+    alt: 'Destapaciones en Zona Norte - Limpieza de caños pluviales'
+  },
+  'zona-oeste': {
+    src: '/img/destapacion-maquina.jpg',
+    alt: 'Destapaciones en Zona Oeste - Desobstrucción con máquina de resortes'
+  },
+  'zona-sur': {
+    src: '/img/hidrojet-cloaca.jpg',
+    alt: 'Destapaciones en Zona Sur - Limpieza técnica con sistema Hidrojet'
+  }
+};
 
 export async function generateStaticParams() {
   const zonas = getZonas()
@@ -92,10 +110,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const seoDescription = zona.seoDescription || `Destapaciones en ${zona.name} con atención profesional. Llamanos al 11 5179-7649.`;
 
   const imagenesZona: Record<string, string> = {
-    'caba': '/img/destapacion de cloaca.jpg',
-    'zona-norte': '/img/caño columna.jpg',
-    'zona-oeste': '/img/maquina destapa cloacas.jpg',
-    'zona-sur': '/img/rejilla patio.jpg',
+    'caba': '/img/edificio.jpg',
+    'zona-norte': '/img/limpieza-cano-pluvial.jpg',
+    'zona-oeste': '/img/destapacion-maquina.jpg',
+    'zona-sur': '/img/hidrojet-cloaca.jpg',
   };
 
   const imagenZona = imagenesZona[slug] || '/img/home.jpg';
@@ -137,6 +155,11 @@ export default async function ZonaPage({ params }: Props) {
   const barriosZona = barrios.filter((b) => b.zoneSlug === slug)
   const seoContent = zonaSeoContent[slug];
 
+  const heroImage = imagenesHeroZona[slug] || {
+    src: '/img/home.jpg',
+    alt: `Destapaciones profesionales en ${zona.name}`
+  };
+
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -158,24 +181,13 @@ export default async function ZonaPage({ params }: Props) {
 
   return (
     <main className="zona-page">
-      <header
-        style={{
-          position: 'relative',
-          minHeight: '50vh',
-          display: 'flex',
-          alignItems: 'center',
-          paddingTop: '80px',
-          color: '#fff',
-          padding: '4rem 0',
-          overflow: 'hidden'
-        }}
-      >
+      <header className="zona-hero">
         <Image
-          src="/img/limpieza de alcantarilla.jpg"
-          alt="Limpieza profesional de alcantarilla y desagües pluviales en zona urbana"
+          src={heroImage.src}
+          alt={heroImage.alt}
           fill
           priority
-          style={{ objectFit: 'cover', zIndex: 0 }}
+          style={{ objectFit: 'cover', objectPosition: 'center', zIndex: 0 }}
           quality={85}
           sizes="100vw"
         />
@@ -184,7 +196,7 @@ export default async function ZonaPage({ params }: Props) {
           <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
             <Breadcrumbs tipo="zona" zona={{ nombre: zona.name, slug: zona.slug }} />
           </div>
-          <h1 style={{ fontSize: '3rem', fontWeight: 700, marginBottom: '1rem', color: '#fff' }}>Destapaciones en {zona.name}</h1>
+          <h1>Destapaciones en {zona.name}</h1>
           <p style={{ fontSize: '1.25rem', color: '#e2e8f0', maxWidth: '700px', margin: '0 auto 2rem' }}>
             {zona.description}
           </p>
