@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="footer-heading" style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1.5rem', color: '#fff' }}>Servicios</div>
           <ul>
             <li><Link href="/urgencias" title="Urgencias 24hs" style={{ color: '#34d399', fontWeight: 600 }}>Urgencias</Link></li>
-            <li><Link href="/precios" title="Precios de Destapaciones">Precios</Link></li>
+            <li><Link href="/precios" title="Precios de Destapaciones" style={{ color: '#EAB308', fontWeight: 600 }}>Precios</Link></li>
             <li><Link href="/destapaciones-cloacas" title="Destapación de Cloacas">Destapación de Cloacas</Link></li>
             <li><Link href="/destapaciones-canerias" title="Destapaciones de Cañerías">Destapaciones de Cañerías</Link></li>
             <li><Link href="/destapaciones-pluviales" title="Destapaciones Pluviales">Destapaciones Pluviales</Link></li>
