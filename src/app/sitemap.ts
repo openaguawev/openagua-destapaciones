@@ -38,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const serviciosSitemaps: MetadataRoute.Sitemap = servicios.map((servicio) => ({
     url: `${baseUrl}/${servicio.slug}`,
     lastModified: new Date(),
-    changeFrequency: 'monthly',
+    changeFrequency: servicio.slug === 'destapaciones-canerias' ? 'weekly' : 'monthly',
     priority: 0.9,
   }));
 

@@ -66,6 +66,11 @@ const renderTextWithLinks = (text: string, slug: string) => {
     { kw: 'destapaciones con hidrojet', to: 'destapaciones-hidrojet' },
     { kw: 'destapaciones de cañerías', to: 'destapaciones-canerias' },
     { kw: 'destapaciones de cloacas', to: 'destapaciones-cloacas' },
+    // Zonas (Interlinking Local)
+    { kw: 'Zona Norte', to: 'zonas/zona-norte' },
+    { kw: 'Zona Oeste', to: 'zonas/zona-oeste' },
+    { kw: 'Zona Sur', to: 'zonas/zona-sur' },
+    { kw: 'CABA', to: 'zonas/caba' },
     // Blog (Interlinking Informacional)
     { kw: 'saber si un caño está roto', to: 'blog/video-inspeccion-saber-cano-roto-sin-romper' },
     { kw: 'columna de edificio tapada', to: 'blog/5-senales-columna-edificio-tapada' },
@@ -154,6 +159,26 @@ const relatedBlogPosts: Record<string, {slug: string, title: string}[]> = {
   ]
 };
 
+const renderIntroContent = (intro: string, slug: string) => {
+  const parts = intro.split('\n\n').filter(p => p.trim() !== '');
+  return parts.map((part, index) => {
+    const trimmed = part.trim();
+    if (trimmed.startsWith('## ')) {
+      const title = trimmed.replace('## ', '');
+      return (
+        <h2 key={index} className="section-title" style={{ textAlign: 'left', marginTop: '2.5rem', marginBottom: '1.25rem', fontSize: '1.75rem' }}>
+          {renderTextWithLinks(title, slug)}
+        </h2>
+      );
+    }
+    return (
+      <p key={index} style={{ marginBottom: '1.25rem', textAlign: 'left', fontSize: '1.15rem', lineHeight: '1.7', color: '#334155' }}>
+        {renderTextWithLinks(trimmed, slug)}
+      </p>
+    );
+  });
+};
+
 export default async function ServicioPage({ params }: Props) {
   const resolvedParams = await params;
   const servicios = getServicios();
@@ -187,8 +212,8 @@ export default async function ServicioPage({ params }: Props) {
 
       <div className="container servicio-content">
         {/* Intro */}
-        <section className="intro-section compact">
-          <p>{renderTextWithLinks(servicio.intro, servicio.slug)}</p>
+        <section className="intro-section compact" style={{ textAlign: 'left', maxWidth: '850px', marginLeft: 'auto', marginRight: 'auto' }}>
+          {renderIntroContent(servicio.intro, servicio.slug)}
           <div className="section-divider" />
         </section>
 
@@ -382,7 +407,9 @@ export default async function ServicioPage({ params }: Props) {
             "description": servicio.excerpt,
             "provider": {
               "@id": "https://www.destapacionesopenagua.com.ar/#business"
-            }
+            },
+            ...(servicio.serviceType ? { "serviceType": servicio.serviceType } : {}),
+            ...(servicio.areaServed ? { "areaServed": servicio.areaServed.map(area => ({ "@type": "AdministrativeArea", "name": area })) } : {})
           })
         }}
       />
@@ -396,6 +423,45 @@ export default async function ServicioPage({ params }: Props) {
           ]))
         }}
       />
+      <Script
+        id={`local-business-service-schema-${servicio.slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "@id": "https://www.destapacionesopenagua.com.ar/#business",
+            "name": "Openagua Destapaciones",
+            "telephone": "+54-9-11-5179-7649",
+            "priceRange": "$$",
+            "url": "https://www.destapacionesopenagua.com.ar",
+            "image": "https://www.destapacionesopenagua.com.ar/logo.svg",
+            ...(servicio.serviceType ? { "serviceType": servicio.serviceType } : {}),
+            ...(servicio.areaServed ? { "areaServed": servicio.areaServed.map(area => ({ "@type": "AdministrativeArea", "name": area })) } : {}),
+            ...(servicio.updatedAt ? { "dateModified": servicio.updatedAt } : {})
+          })
+        }}
+      />
+      {servicio.faqs && servicio.faqs.length > 0 && (
+        <Script
+          id={`faq-service-schema-${servicio.slug}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": servicio.faqs.map((f) => ({
+                "@type": "Question",
+                "name": f.q,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": f.a
+                }
+              }))
+            })
+          }}
+        />
+      )}
     </main>
   );
 }
