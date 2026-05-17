@@ -26,6 +26,7 @@ export default function Navbar() {
               <li><Link href="/#como-trabajamos" title="Cómo Trabajamos" onClick={closeMenu}>Cómo Trabajamos</Link></li>
               <li><Link href="/#trabajos" title="Galería de Nuestros Trabajos" onClick={closeMenu}>Nuestros Trabajos</Link></li>
               <li><Link href="/blog" title="Blog de Consejos y Destapaciones" onClick={closeMenu}>Blog</Link></li>
+              <li><Link href="/precios" title="Precios de Destapaciones" onClick={closeMenu}>Precios</Link></li>
               <li><Link href="/#contacto" title="Formulario de Contacto" onClick={closeMenu}>Contacto</Link></li>
             </ul>
           </nav>
@@ -61,6 +62,7 @@ export default function Navbar() {
             <li><Link href="/#como-trabajamos" onClick={closeMenu}>Cómo Trabajamos</Link></li>
             <li><Link href="/#trabajos" onClick={closeMenu}>Nuestros Trabajos</Link></li>
             <li><Link href="/blog" onClick={closeMenu}>Blog</Link></li>
+            <li><Link href="/precios" onClick={closeMenu}>Precios</Link></li>
             <li><Link href="/#contacto" onClick={closeMenu}>Contacto</Link></li>
           </ul>
         </nav>

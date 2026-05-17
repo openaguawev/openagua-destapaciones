@@ -35,6 +35,55 @@ const getFaqHtml = (faqs: {q:string, a:string}[]) => `
 export const getArticulos = (): Articulo[] => {
   return [
     {
+      slug: 'cuanto-cuesta-destapacion-de-cloaca',
+      publishedAt: '2026-05-17',
+      updatedAt: '2026-05-17',
+      title: '¿Cuánto cuesta una destapación de cloaca en 2026?',
+      seoTitle: 'Precios de Destapación de Cloaca: Cuánto Cuesta en 2026',
+      image: '/img/destapacion de cloaca.jpg',
+      alt: 'Técnico realizando una destapacion de cloaca con máquina profesional en CABA',
+      excerpt: '¿Tenés problemas en tu red sanitaria? Te contamos cuánto cuesta una destapacion de cloaca en 2026, los factores de precio y qué tener en cuenta.',
+      content: `
+        <p>Cuando el baño rebalsa o el patio se inunda con olores insoportables, la primera pregunta que se nos viene a la cabeza, además del estrés del momento, es: <em>¿cuánto me va a salir este arreglo?</em> Una <strong>destapacion de cloaca</strong> no es el tipo de servicio que uno planifica en el presupuesto familiar, pero cuando toca, toca.</p>
+
+        <p>En este artículo, desde la experiencia de estar todos los días en la calle viendo caños tapados en todo CABA y el conurbano, te vamos a contar los precios reales que se manejan en el rubro, qué factores te pueden encarecer el trabajo y por qué a veces lo barato sale muy caro.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Precios de referencia para destapaciones en 2026</h2>
+        <p>Vamos a los números concretos. Hoy en día, una destapacion de cloaca estándar, que implique destapar el tramo principal de una casa desde la cámara de inspección hasta la vereda usando maquinaria electromecánica (los famosos resortes rotativos), tiene un valor que arranca desde los <strong>$180.000 pesos argentinos</strong>. Este es el valor base por un trabajo profesional que resuelve el 80% de los problemas comunes, como acumulación de papel, restos orgánicos o tapones de jabón y sarro viejo.</p>
+
+        <p>Es importante entender que este precio corresponde al servicio de la maquinaria específica y la mano de obra del técnico matriculado. Si lo que se tapó es algo más sencillo y de menor diámetro, los valores cambian. Podés revisar todos nuestros valores fijos actualizados y sin letra chica en nuestra sección para <a href="/precios" style="color:#16A34A;font-weight:bold;text-decoration:underline;">ver precios</a> de los servicios de plomería.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Factores que pueden encarecer una destapacion de cloaca</h2>
+        <p>A veces, el problema no se soluciona metiendo la máquina quince minutos. Hay situaciones donde el tapón está a 20 metros de profundidad, o la cañería está invadida por raíces inmensas de un árbol viejo del jardín. En esos casos, el trabajo lleva mucho más tiempo, desgaste de equipos y esfuerzo. Acá te contamos qué cosas pueden hacer que el presupuesto suba:</p>
+        
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Distancia del tapón:</strong> Si la obstrucción está más allá de los metros estipulados en el servicio base (generalmente más de 10 o 15 metros), se suele cobrar un adicional por metro extra de sonda introducida.</li>
+          <li><strong>Raíces o cemento:</strong> Cortar raíces gruesas que rompieron el caño de PVC requiere cabezales especiales con cuchillas dentadas. Es un trabajo mucho más duro que empujar un bollo de papel.</li>
+          <li><strong>Ubicación de la cámara:</strong> Si la cámara de inspección principal está bajo tierra, tapada por baldosas o bajo una maceta gigante que hay que correr, el trabajo de "acceso" suma tiempo y complejidad.</li>
+          <li><strong>Horarios de urgencia extrema:</strong> Los trabajos nocturnos, de madrugada, domingos o feriados suelen tener un recargo lógico por disponibilidad fuera de hora comercial.</li>
+        </ul>
+
+        <p>Si la máquina de resorte se frena de golpe y no avanza, a veces no queda otra que hacer una revisión con cámaras de video para ver si el caño directamente está roto bajo tierra. Esto implica un servicio distinto, pero te salva de tener que picar todo el piso a ciegas probando suerte.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuidado con lo "demasiado barato"</h2>
+        <p>Seguro entraste a buscar en internet o viste pegatinas en los postes de luz que ofrecen "destapaciones por $20.000". Seamos honestos: nadie mueve una camioneta, paga nafta, seguros, herramientas que valen miles de dólares y la mano de obra de dos personas por esa plata. Esa clase de "ofertas" suelen ser un gancho. Llegan a tu casa, meten una cinta pasacables manual por cinco minutos, te dicen que "el caño está roto y hay que romper el piso", y te terminan cobrando una fortuna en albañilería que capaz ni necesitabas.</p>
+        
+        <p>O peor, tiran ácido muriático puro que te termina derritiendo las juntas de plástico del desagüe, generándote filtraciones y humedad en las paredes a los pocos meses.</p>
+
+        <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cuándo llamar a un profesional?</h2>
+        <p>La regla de oro es: si tiraste un balde de agua y el nivel sube y no baja por horas, o si notas que al descargar el inodoro brota agua sucia por la rejilla de la ducha, el problema ya no es para la sopapa. El tapón está firme en la línea principal. Ahí necesitás una máquina con fuerza suficiente para romper esa barrera sin lastimar la tubería.</p>
+
+        <p>Si querés informarte más sobre este servicio en particular o necesitas agendar una visita técnica, podés visitar nuestra sección específica de <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cloacas</a> para ver en detalle cómo trabajamos.</p>
+
+        ${getFaqHtml([
+          {q: "¿Cobran la visita o el presupuesto si decido no hacer el trabajo?", a: "Los presupuestos por WhatsApp en base a los síntomas que nos cuentes son totalmente gratuitos. Si precisamos ir al domicilio a destapar la cámara para darte un diagnóstico y luego decidís no realizar el servicio, se cobra un cargo mínimo por la visita técnica y la apertura."},
+          {q: "¿Qué medios de pago se aceptan para estos servicios?", a: "Para que no tengas que salir corriendo al cajero en medio de la inundación, aceptamos efectivo, transferencias bancarias y todas las tarjetas a través de Mercado Pago."},
+          {q: "¿El precio varía si el caño es de plomo viejo o de plástico nuevo?", a: "El precio base del servicio no cambia por el material del caño. Sin embargo, en cañerías muy antiguas (como fibrocemento o barro cocido), el técnico debe trabajar con más lentitud y cuidado para no fisurar la estructura, lo que puede requerir más tiempo de trabajo."}
+        ])}
+
+      `
+    },
+    {
       slug: 'por-que-cocina-huele-a-cloaca',
       publishedAt: '2024-01-10',
       updatedAt: '2026-05-04',
@@ -424,6 +473,8 @@ export const getArticulos = (): Articulo[] => {
 
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cómo me ahorra plata pagar una cámara cloacal?</h2>
         <p>Muchos clientes dudan al principio por el costo inicial del servicio de inspección, asumiendo que es un gasto "extra". Sin embargo, al identificar de forma irrefutable un bloqueo inmenso o una fractura, evitas hacer constantes e inútiles pagos temporales por destapaciones fallidas semana tras semana. Sabrás, a centímetros del problema, dónde aplicar la única reparación seria necesaria, reduciendo el costo de albañilería en un 80% o más. En lugar de levantar todo el living buscando a ciegas, el albañil solo romperá una sola baldosa, ahorrando materiales, días de trabajo y la limpieza posterior.</p>
+
+        <p>Si necesitás ayuda profesional, podés <a href="/precios" style="color:#16A34A;font-weight:bold;text-decoration:underline;">ver precios</a> de nuestros servicios de destapación en CABA y GBA, con valores fijos y sin sorpresas.</p>
 
         ${getFaqHtml([
           {q: "¿La cámara puede navegar por caños finos de 40mm?", a: "Sí, contamos con miniaturas robóticas HD lo bastante flexibles para recorrer caños internos de cocinas y lavaderos desde 40 milímetros sin trabarse en los codos, adaptándonos a cualquier diámetro domiciliario."},
@@ -1063,6 +1114,8 @@ export const getArticulos = (): Articulo[] => {
         
         <p style="margin-top: 2rem;">Contamos con diagnósticos avanzados por <a href="/video-inspeccion-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">video inspección</a> que radiografían interiormente para certificar si precisás <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">asistencia cloacal</a> técnica o depuración estacional de <a href="/destapaciones-pluviales" style="color:#16A34A;font-weight:bold;text-decoration:underline;">redes pluviales</a>.</p>
 
+        <p>Si necesitás ayuda profesional, podés <a href="/precios" style="color:#16A34A;font-weight:bold;text-decoration:underline;">ver precios</a> de nuestros servicios de destapación en CABA y GBA, con valores fijos y sin sorpresas.</p>
+
         ${getFaqHtml([
           {q: "¿Qué sucede si el problema persiste luego de limpieza superficial?", a: "Usualmente indica fallas en las curvas del ramal central lejos del alcance superficial, lo que demanda destapaciones mecánicas con resortes rotativos de alta resistencia para triturar los tapones."},
           {q: "¿Tirar aceites puede afectar a la vía pluvial?", a: "No debería. Sin embargo, en edificaciones no reglamentarias el aceite puede derivar a conductos no procesados agravando la contaminación general." }
@@ -1565,6 +1618,8 @@ export const getArticulos = (): Articulo[] => {
         <p>Para un consorcio, contratar un servicio de destapaciones no es lo mismo que llamar a un plomero de emergencia. Hay que considerar la formalidad del prestador: facturación, seguro de responsabilidad civil, y que el técnico sea matriculado. En caso de un siniestro con el seguro del edificio, la compañía aseguradora puede rechazar el reclamo si no se presentan remitos y certificados del mantenimiento realizado.</p>
 
         <p>Aspectos clave que conviene preguntar antes de contratar: ¿Emiten certificado del trabajo realizado? ¿Tienen equipos propios de hidrojet o usan terceros? ¿Pueden hacer la video inspección en el mismo momento si detectan algo anómalo? ¿Tienen cobertura en horarios de urgencia? Un proveedor que puede responder afirmativamente a estas preguntas es un socio estratégico para la gestión del consorcio, no un gasto más.</p>
+
+        <p>Si necesitás ayuda profesional, podés <a href="/precios" style="color:#16A34A;font-weight:bold;text-decoration:underline;">ver precios</a> de nuestros servicios de destapación en CABA y GBA, con valores fijos y sin sorpresas.</p>
 
         ${getFaqHtml([
           {q: "¿Quién paga la destapación en un edificio?", a: "Depende de dónde está el tapón. Si está en el ramal horizontal dentro de una unidad, paga ese propietario. Si está en la columna vertical común, paga el consorcio con fondos de expensas. El técnico debe emitir un certificado indicando el punto exacto de la obstrucción."},

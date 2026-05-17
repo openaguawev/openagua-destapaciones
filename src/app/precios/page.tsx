@@ -6,8 +6,8 @@ import Contacto from '@/components/Contacto';
 import '../servicio-page.css';
 
 export const metadata: Metadata = {
-  title: 'Precios de Destapaciones en CABA y GBA | Openagua',
-  description: '¿Cuánto cuesta destapar una cloaca en Buenos Aires? Precios orientativos por servicio. Presupuesto sin cargo. Sin sorpresas.',
+  title: 'Destapaciones: Precios y Costos 2026 | Openagua',
+  description: '¿Buscás precios destapaciones? Conocé nuestras tarifas transparentes. Inodoro, cloacas y pluviales a precio fijo. ¡Consultá por WhatsApp!',
   alternates: {
     canonical: 'https://www.destapacionesopenagua.com.ar/precios',
   },

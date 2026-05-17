@@ -73,6 +73,7 @@ const renderTextWithLinks = (text: string, slug: string) => {
     { kw: 'cocina huele a cloaca', to: 'blog/por-que-cocina-huele-a-cloaca' },
     { kw: 'grasa en cañerías de edificios', to: 'blog/grasa-canerias-edificios-agua-hirviendo' },
     { kw: 'inodoro rebalsa', to: 'blog/inodoro-rebalsa-que-hacer' },
+    { kw: 'ver precios', to: 'precios' },
   ];
 
   let result: (string | React.ReactNode)[] = [text];
