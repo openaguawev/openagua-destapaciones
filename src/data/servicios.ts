@@ -95,7 +95,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'destapaciones-maquinas',
       'Destapaciones con máquinas en CABA y Zona Oeste',
-      '/img/maquina destapa cloacas.jpg',
+      '/img/maquina-destapa-cloacas.jpg',
       'Servicio profesional de destapaciones con máquinas de última generación. Destapación con máquina de resortes, hidrojet y video inspección para hogares y empresas.',
       'En Openagua somos especialistas en destapaciones con máquinas. Contamos con tecnología de punta para resolver cualquier obstrucción en cloacas, pluviales y cañerías internas sin necesidad de romper pisos ni paredes. Podés ver precios fijos por servicio en nuestra web.',
       [
@@ -151,7 +151,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'destapaciones-cloacas',
       'Destapaciones de Cloacas Urgentes',
-      '/img/destapacion de cloaca.jpg',
+      '/img/destapacion-de-cloaca.jpg',
       'Cloaca tapada o rebalsando. Solución rápida hoy mismo sin romper nada. Solución en el día. Llegamos en menos de 60 minutos.',
       'Tener una cloaca tapada es una emergencia que no puede esperar. Una destapacion de cloaca a tiempo previene desbordes y problemas sanitarios. Si tu inodoro rebalsa, el riesgo sanitario y los olores persistentes afectan tu salud. En Openagua realizamos cada destapacion de cloaca con maquinaria de última generación que elimina la obstrucción de raíz sin romper un solo piso. Atendemos en CABA y Zona Oeste con respuesta inmediata. Podés ver precios fijos por servicio en nuestra web.',
       [
@@ -193,7 +193,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'destapaciones-canerias',
       'Destapación de Cañerías',
-      '/img/destapacion maquina.jpg',
+      '/img/destapacion-maquina.jpg',
       'Soluciones para desagües de cocina, baño y lavadero. Eliminamos obstrucciones de grasa y sarro con tecnología de avanzada en CABA y GBA.',
       'Cuando las tuberías de tu hogar, local comercial o edificio colapsan, contar con una respuesta idónea y veloz es fundamental para evitar inundaciones o desbordes molestos. En Openagua ofrecemos un equipo profesional y experimentado que destapa cañerías en el día, combinando herramientas de avanzada con un trato honesto y transparente. Olvidate de soluciones provisorias que no duran: nuestro servicio de destapaciones remueve de raíz la acumulación de residuos para devolverle la fluidez total a tu sistema sanitario sin vueltas ni sorpresas.\n\nContamos con más de 10 años de trayectoria atendiendo emergencias y mantenimientos preventivos. Entendemos perfectamente la frustración que genera una cocina inhabilitada o un baño fuera de servicio, por lo que nos enfocamos en brindar soluciones definitivas. Además, mantenemos una política transparente: cobramos precio por trabajo no por metro de cable ingresado, de manera que sabés de antemano el valor final sin cargos ocultos de último momento.\n\n## ¿Cómo destapa cañerías Openagua?\n\nPara limpiar y destapar cañerías de forma segura, descartamos por completo el uso de ácidos corrosivos que dañan los plásticos y las uniones. En su lugar, aplicamos maquinaria especializada con sondas de acero templado. Estas herramientas flexibles son capaces de transitar las curvas y codos más complejos del tendido, triturando el sarro calcáreo, restos de jabón o cabellos acumulados.\n\nEn los casos más complejos, como desobstrucciones industriales o cocinas con grasas endurecidas, implementamos el sistema hidrojet de alta presión. Esta tecnología inyecta agua a presión radial para barrer la cara interna del ducto, realizando una limpieza perimetral completa que deja el caño impecable. Con este doble enfoque mecánico, Openagua destapa cañerías garantizando un resultado duradero sin comprometer la integridad estructural de la instalación.\n\n## ¿Cuándo llamar a un profesional que destapa cañerías?\n\nEs común intentar resolver una obstrucción leve mediante sopapas manuales o cintas pasacables domésticas. Sin embargo, cuando el problema es crónico o el agua regresa por otras rejillas, los métodos caseros resultan inútiles y peligrosos. Utilizar un destapa caños químico comercial suele empeorar la situación, ya que el producto tiende a cristalizarse en contacto con la grasa fría, formando un tapón casi impenetrable.\n\nEs imprescindible solicitar un servicio profesional en presencia de ruidos extraños al desagotar, cuando la bacha de la cocina despide olores nauseabundos o si la rejilla de la ducha rebalsa al usar el lavarropas. Nuestro equipo técnico evalúa el estado real de la red, y si el trabajo se complica o detectamos problemas mayores (como caños colapsados o roturas subterráneas), te avisamos antes de proceder para que tomes la mejor decisión sin sorpresas.\n\n## Cobertura del servicio destapa cañerías\n\nPara tu tranquilidad, nuestro servicio de destapaciones cuenta con unidades móviles totalmente equipadas para dar cobertura inmediata en tu localidad. Brindamos servicios rápidos y profesionales de destapación de cañerías en toda la Ciudad Autónoma de Buenos Aires (CABA), la Zona Norte, la Zona Oeste y la Zona Sur del Gran Buenos Aires.\n\nSi te encontrás en CABA, atendemos de manera prioritaria en barrios como Caballito, Palermo, Belgrano, Almagro y Flores. En Zona Norte, resolvemos urgencias en San Isidro, Vicente López, Martínez y countries de Pilar. Por su parte, nuestra flota en Zona Oeste cubre Ramos Mejía, Morón, Castelar e Ituzaingó; mientras que en Zona Sur asistimos de forma regular a clientes en Lanús, Lomas de Zamora, Quilmes y Avellaneda. No importa dónde estés: tu red de desagüe volverá a fluir perfectamente hoy mismo.',
       [
@@ -251,7 +251,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'destapaciones-pluviales',
       'Destapación de Pluviales',
-      '/img/caño pluvial.jpg',
+      '/img/cano-pluvial.jpg',
       'Desobstrucción de rejillas, terrazas y desagües de lluvia. Evitá inundaciones y filtraciones con limpieza técnica en CABA y GBA.',
       'Las hojas secas, el barro y la falta de supervisión logran que los balcones colapsen repentinamente durante una tormenta, especialmente si la rejilla del patio está tapada. Podés ver precios fijos por servicio en nuestra web.',
       [
@@ -305,7 +305,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'destapaciones-hidrojet',
       'Destapaciones con Hidrojet',
-      '/img/hidrojet cloaca.jpg',
+      '/img/hidrojet-cloaca.jpg',
       'Limpieza técnica con agua a alta presión. La solución definitiva para eliminar sarro, grasa y sedimentos rebeldes en CABA y GBA.',
       'El Hidrojet es una maravilla moderna; dispara un chorro radial que además de empujar al tapón, arranca de tajo la grasa en cañerías de edificios adherida por todo el diámetro y lo pule. Podés ver precios fijos por servicio en nuestra web.',
       [
@@ -359,7 +359,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'video-inspeccion-canerias',
       'Video Inspección de Cañerías',
-      '/img/video inspeccion.jpg',
+      '/img/video-inspeccion.jpg',
       'Diagnóstico preciso con cámaras HD. Localizamos roturas, raíces y obstrucciones sin romper pisos ni paredes en CABA y GBA.',
       'Suelen existir roturas estructurales ocultas debajo del hormigón. Para saber si un caño está roto, en lugar de perforar el piso adivinando, optamos por introducir nuestra cámara CCTV sumergible. Podés ver precios fijos por servicio en nuestra web.',
       [
@@ -413,7 +413,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'limpieza-camaras-septicas',
       'Limpieza de Cámaras Sépticas',
-      '/img/destapacion camara septica.jpg',
+      '/img/destapacion-camara-septica.jpg',
       'Vaciado y desobstrucción de sistemas de tratamiento primario. Servicio técnico especializado para hogares, quintas e industrias en CABA y GBA.',
       'La cámara de inspección es el núcleo del sistema sanitario en planta baja. Si la misma colapsa, todas las unidades del piso padecen el desborde. Podés ver precios fijos por servicio en nuestra web.',
       [
@@ -467,7 +467,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'desagote-sotanos',
       'Desagote de Sótanos',
-      '/img/desagote sotano.jpg',
+      '/img/desagote-sotano.jpg',
       'Extracción de agua por inundación en subsuelos, huecos de ascensor y cocheras. Servicio de emergencia con bombas de alto caudal en CABA y GBA.',
       'Una rotura accidental o una tormenta súbita pueden convertir tus huecos subterráneos como sótanos o fosos de ascensores en auténticos embalses. Podés ver precios fijos por servicio en nuestra web.',
       [
@@ -525,7 +525,7 @@ export const getServicios = (): ServicioData[] => {
     buildServicio(
       'mantenimientos-preventivos',
       'Mantenimientos Preventivos',
-      '/img/manteniminto cloaca.jpg',
+      '/img/manteniminto-cloaca.jpg',
       'Mantenimiento programado para evitar problemas y desbordes. La solución más económica para consorcios, empresas y gastronomía en CABA y GBA.',
       'Reaccionar solo cuando ha ocurrido el accidente significa enfrentar la furia de inquilinos y copropietarios con problemas mayúsculos, especialmente si hay una columna de edificio tapada. Ofrecemos mantenimientos preventivos periódicos. Podés ver precios fijos por servicio en nuestra web.',
       [

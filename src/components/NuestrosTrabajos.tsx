@@ -5,12 +5,12 @@ import './NuestrosTrabajos.css';
 export default function NuestrosTrabajos() {
   const trabajos = [
     {
-      src: '/img/limpieza de alcantarilla.jpg',
+      src: '/img/limpieza-de-alcantarilla.jpg',
       title: 'Limpieza en Vía Pública',
       alt: 'Limpieza de cloacas en vía pública en CABA y GBA - Openagua'
     },
     {
-      src: '/img/video inspeccion.jpg',
+      src: '/img/video-inspeccion.jpg',
       title: 'Detección con Cámara',
       alt: 'Video inspección de cañerías con cámara en CABA y GBA - Openagua'
     },
@@ -20,17 +20,17 @@ export default function NuestrosTrabajos() {
       alt: 'Vehículos y equipamiento móvil para destapaciones en CABA y GBA - Openagua'
     },
     {
-      src: '/img/destapacion maquina.jpg',
+      src: '/img/destapacion-maquina.jpg',
       title: 'Destapación Mecánica',
       alt: 'Máquina de destapación mecánica con resortes en CABA y GBA - Openagua'
     },
     {
-      src: '/img/hidrojet cloaca.jpg',
+      src: '/img/hidrojet-cloaca.jpg',
       title: 'Servicio a Domicilio',
       alt: 'Manguera de hidrojet y maquinaria para urgencia cloacal a domicilio - Openagua'
     },
     {
-      src: '/img/maquina resortes.jpg',
+      src: '/img/maquina-resortes.jpg',
       title: 'Herramientas Profesionales',
       alt: 'Herramientas profesionales para mantenimiento cloacal preventivo - Openagua'
     }
