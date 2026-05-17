@@ -74,6 +74,7 @@ const serviciosZona = [
   { href: '/destapaciones-cloacas', icon: '🚽', label: 'Destapación de Cloacas', sub: 'Urgencias y columnas de edificios' },
   { href: '/destapaciones-canerias', icon: '🔧', label: 'Destapación de Cañerías', sub: 'Cocina, baño y lavadero' },
   { href: '/destapaciones-hidrojet', icon: '💦', label: 'Destapación con Hidrojet', sub: 'Limpieza profunda a alta presión' },
+  { href: '/servicios/video-inspeccion', icon: '📹', label: 'Video Inspección', sub: 'Diagnóstico sin romper' },
 ];
 
 const imagenesHeroZona: Record<string, { src: string; alt: string }> = {
@@ -257,7 +258,7 @@ export default async function ZonaPage({ params }: Props) {
           <h2 className="section-title" style={{ marginBottom: '2rem' }}>
             Servicios disponibles en {zona.name}
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '1.25rem' }}>
+          <div className="zona-servicios-grid">
             {serviciosZona.map((s) => (
               <Link
                 key={s.label}
