@@ -181,7 +181,7 @@ export const getArticulos = (): Articulo[] => {
         
         <p>La realidad empírica y la física de fluidos demuestran exactamente lo contrario. Volcar agua a 100°C en la bacha del séptimo piso solo produce un alivio ilusorio y momentáneo. El agua caliente logra ablandar la grasa fresca que se encuentra en los primeros metros del conducto del departamento, la empuja hacia la columna central (la bajada o montante pluvial de cloaca) y allí es donde comienza el verdadero desastre. Con el paso de los pisos y el contacto con las frías paredes del caño de 110mm, el agua pierde su temperatura drásticamente. Al llegar a los pisos inferiores o a la cámara de inspección en la planta baja, la grasa se enfría de golpe.</p>
         
-        <p>Este proceso continuo de derretimiento y enfriamiento convierte a las columnas principales del edificio en verdaderos infartos de colesterol arquitectónico. La grasa se petrifica, alcanzando una dureza similar a la del cemento rápido, reduciendo milímetro a milímetro el diámetro operativo del caño principal. Lo que debería prevenir una obstrucción termina siendo la causa número uno de desbordes masivos de líquidos cloacales que inundan los departamentos de Planta Baja, requiriendo <a href="/mantenimientos-preventivos" style="color:#16A34A;font-weight:bold;text-decoration:underline;">mantenimientos preventivos</a> de extrema urgencia y costos formidables para las expensas del consorcio.</p>
+        <p>Este proceso continuo de derretimiento y enfriamiento convierte a las columnas principales del edificio en verdaderos infartos de colesterol arquitectónico. La grasa se petrifica, alcanzando una dureza similar a la del cemento rápido, reduciendo milímetro a milímetro el diámetro operativo del caño principal. Lo que debería prevenir una obstrucción termina siendo la causa número uno de desbordes masivos de líquidos cloacales que inundan los departamentos de Planta Baja, requiriendo <a href="/mantenimientos-preventivos" style="color:#16A34A;font-weight:bold;text-decoration:underline;">mantenimientos preventivos</a> de extrema urgencia y costos enormes para las expensas del consorcio.</p>
 
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">La Saponificación: Cómo la Grasa se Convierte en Piedra</h2>
         <p>Para entender la magnitud del daño que el agua hirviendo causa en un edificio, hay que analizar el fenómeno químico llamado saponificación. En una columna de edificio confluyen los desagües de diez o más departamentos a un mismo tiempo. Esto significa que por ese mismo tubo vertical de PVC o hierro fundido desciende aceite de cocina caliente, restos de alimentos, pero también jabón frío de los lavarropas y detergente de manos.</p>
@@ -261,7 +261,7 @@ export const getArticulos = (): Articulo[] => {
       excerpt: '¿La columna del edificio está tapada? Conocé las 5 señales clave que todo administrador debe identificar antes de que haya una inundación. ¡Llamanos!',
       content: `
 
-        <p>Para cualquier administrador de consorcios o encargado de edificio en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong>, recibir un llamado a las tres de la madrugada avisando que un departamento de la planta baja se está inundando con aguas negras es el peor escenario posible. Esta crisis, que suele desencadenar fuertes discusiones vecinales y gastos exorbitantes no planificados, rara vez ocurre de un minuto para el otro. Evitar este desborde catastrófico y actuar de manera preventiva ahorra costos formidables tanto a la administración general como al bolsillo particular de cada copropietario.</p>
+        <p>Para cualquier administrador de consorcios o encargado de edificio en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong>, recibir un llamado a las tres de la madrugada avisando que un departamento de la planta baja se está inundando con aguas negras es el peor escenario posible. Esta crisis, que suele desencadenar fuertes discusiones vecinales y gastos exorbitantes no planificados, rara vez ocurre de un minuto para el otro. Evitar este desborde catastrófico y actuar de manera preventiva ahorra costos altísimos tanto a la administración general como al bolsillo particular de cada copropietario.</p>
         
         <p>La tubería central que recibe y evacúa todos los desechos de los departamentos, conocida técnicamente como montante cloacal o columna principal, es la vena yugular de la infraestructura sanitaria de cualquier edificio, ya sea una gigantesca torre de 20 pisos en Almagro o un pintoresco complejo de dúplex en el centro de San Isidro. Fabricada usualmente en caños de hierro fundido antiguo, asbesto cemento o PVC tricapa moderno de 110mm a 160mm, esta tubería sufre un estrés mecánico y químico diario incalculable. Por ella descienden a toda velocidad litros de grasa caliente, restos de jabón en polvo, papel higiénico, pelo y químicos abrasivos que, poco a poco, van conformando un recubrimiento interno letal e indestructible.</p>
         
@@ -354,7 +354,7 @@ export const getArticulos = (): Articulo[] => {
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Análisis Hidráulico: Tecnología Hidrojet (El Estándar Industrial)</h2>
         <p>En contraste directo, la limpieza hidrocinética representa el mayor salto tecnológico del sector en las últimas décadas. En lugar de metales rotativos que golpean las curvas de la cañería, el equipo Hidrojet utiliza una inmensa bomba motora que presuriza agua limpia a rangos industriales, alcanzando picos que superan los 200 bares de fuerza de inyección constante.</p>
         
-        <p>Esta tecnología propulsa formidables chorros cortantes en 360 grados exactos. Como detallamos al analizar las <a href="/blog/raices-en-canerias-como-detectarlas-y-solucionarlo" style="color:#16A34A;font-weight:bold;text-decoration:underline;">raíces en cañerías</a>, el agua presurizada a este nivel actúa como cuchillas tangenciales: barre, lava, rasquetea y pulveriza toda adherencia sólida de manera perimetral. Su gigantesca fortaleza radica en que remueve al 100% todo el sarro mineral o el cemento de jabón.</p>
+        <p>Esta tecnología propulsa potentes chorros cortantes en 360 grados exactos. Como detallamos al analizar las <a href="/blog/raices-en-canerias-como-detectarlas-y-solucionarlo" style="color:#16A34A;font-weight:bold;text-decoration:underline;">raíces en cañerías</a>, el agua presurizada a este nivel actúa como cuchillas tangenciales: barre, lava, rasquetea y pulveriza toda adherencia sólida de manera perimetral. Su gigantesca fortaleza radica en que remueve al 100% todo el sarro mineral o el cemento de jabón.</p>
 
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Las 5 Claves para Elegir el Sistema Correcto en tu Hogar</h2>
         <p>Dependiendo el diagnóstico situacional, la elección debe basarse en estos parámetros determinantes:</p>
@@ -406,7 +406,7 @@ export const getArticulos = (): Articulo[] => {
         ${getFaqHtml([
           {q: "¿El hidrojet tiene la potencia real de sacar raíces subterráneas sin romper el piso?", a: "Absolutamente, instalamos picos rotadores dentados que giran a miles de revoluciones por propulsión hídrica. Éstos talan rápidamente raíces medianas y gruesas encalladas provenientes de árboles añosos sin dañar la integridad del caño."},
           {q: "¿Dejan mal olor en el ambiente interior post-trabajo de limpieza cloacal?", a: "Para nada. Ninguno de nuestros procedimientos técnicos es tóxico. Al lavar directamente con altísimo caudal perimetral, arrastramos la biomasa putrefacta e higienizamos de inmediato el área tratada, devolviendo el aroma neutral y fresco al baño."},
-          {q: "¿Tienen cobertura veloz de Resorte convencional para CABA?", a: "Sí, manejamos ágiles flotas de furgonetas con equipos de sonda electromecánica ultra compactos, garantizando cobertura extrema en toda el área del microcentro de CABA sin grandes demoras de tránsito."},
+          {q: "¿Tienen cobertura veloz de Resorte convencional para CABA?", a: "Sí, manejamos ágiles vehículos de intervención con equipos de sonda electromecánica ultra compactos, garantizando cobertura extrema en toda el área del microcentro de CABA sin grandes demoras de tránsito."},
           {q: "¿El servicio a presión de agua inunda mi casa si el caño no llega a bajar?", a: "No. Nuestros operadores expertos regulan los bares de potencia al milímetro con válvulas by-pass controladas, frenando y cortando el caudal al instante para impedir cualquier riesgo de desborde hacia el interior de sus pisos."}
         ])}
 
@@ -581,7 +581,7 @@ export const getArticulos = (): Articulo[] => {
         <p>Resolver un patio atascado bajo la lluvia no es un problema que se solucione barriendo frenéticamente el agua hacia un rincón. Requiere comprender qué está tapando el fondo de la tubería bajo tierra y solicitar asistencia profesional pesada, preferiblemente con equipos de inyección hídrica a gran escala, para lavar y evacuar todo el fango espeso que obstaculiza la bajada municipal antes de la próxima alerta meteorológica.</p>
 
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Causas Frecuentes del Bloqueo en Patios y Terrazas</h2>
-        <p>A diferencia de las cañerías interiores de la cocina que se tapan con grasa, las tuberías externas sufren el ataque implacable del medio ambiente. Durante las semanas o meses en que no llueve en Buenos Aires, una acumulación silenciosa de tierra voladora, hollín de escape vehicular, hojas secas de árboles cercanos, nidos de pájaros y arena se va depositando pacientemente dentro de las bocas de desagüe exteriores.</p>
+        <p>A diferencia de las cañerías interiores de la cocina que se tapan con grasa, las tuberías externas sufren el ataque severo del medio ambiente. Durante las semanas o meses en que no llueve en Buenos Aires, una acumulación silenciosa de tierra voladora, hollín de escape vehicular, hojas secas de árboles cercanos, nidos de pájaros y arena se va depositando pacientemente dentro de las bocas de desagüe exteriores.</p>
 
         ${getCtaHtml()}
 
@@ -912,7 +912,7 @@ export const getArticulos = (): Articulo[] => {
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuándo Intervenir con Tecnología de Alta Presión</h2>
         <p>Si la rejilla que desborda es externa (del patio pluvial o jardín) y está atestada de tierra arcillosa y escombros, o si en el baño el agua sube por la rejilla cada vez que usás el lavadero automático, el tapón ya no es superficial ni está a la vista. El bloqueo se alojó varios metros adentro de los ductos subterráneos ciegos del inmueble, y las acciones manuales caseras resultan totalmente obsoletas. En estos casos, se requiere realizar una <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> técnica para limpiar los ramales internos y evitar desbordes mayores.</p>
         
-        <p>En este crítico nivel, la solución definitiva es indiscutida: necesitás coordinar una <a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación con hidrojet</a> mecanizada de nuestra flota. Mediante sondas especiales autopropulsadas, se inyectará agua a presiones industriales formidables en el interior oscuro de las cañerías. Este poderoso chorro rotativo, además de disolver y lavar íntegramente la arena calcificada o la gruesa grasa acumulada, expulsa implacablemente todo residuo pesado y tritura las raíces subterráneas, restaurando el drenaje perimetral al cien por ciento.</p>
+        <p>En este crítico nivel, la solución definitiva es indiscutida: necesitás coordinar una <a href="/destapaciones-hidrojet" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación con hidrojet</a> mecanizada de nuestra flota. Mediante sondas especiales autopropulsadas, se inyectará agua a presiones industriales altísimas en el interior oscuro de las cañerías. Este poderoso chorro rotativo, además de disolver y lavar íntegramente la arena calcificada o la gruesa grasa acumulada, expulsa completamente todo residuo pesado y tritura las raíces subterráneas, restaurando el drenaje perimetral al cien por ciento.</p>
 
         <div style="overflow-x: auto; margin-bottom: 2rem; margin-top: 2rem;">
           <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
@@ -965,7 +965,7 @@ export const getArticulos = (): Articulo[] => {
 
         <p>Que el agua sucia empiece a tardar cada vez más tiempo en irse de la bacha y termines viendo un lago nauseabundo estancado en medio de tus ollas sucias, es sin duda uno de los problemas cotidianos más molestos en cualquier hogar de <strong>CABA</strong> o el cordón residencial del <strong>Gran Buenos Aires</strong>. Cuando enfrentamos el desafío de destapar correctamente la pileta de cocina, el error más fatal es usar químicos abrasivos basados en consejos dudosos.</p>
         
-        <p>A diferencia innegable del cuarto de baño donde el pelo humano molesto y la espuma jabonosa reinan, la obstrucción profunda del lavaplatos o de la bacha doble en tu hogar posee una naturaleza netamente oleosa. Tal cual detallamos fuertemente en nuestras guías técnicas previas explicando exhaustivamente el preocupante tema sobre <a href="/blog/por-que-cocina-huele-a-cloaca" style="color:#16A34A;font-weight:bold;text-decoration:underline;">por qué tu cocina huele literalmente a cloaca</a>, y también en nuestro decálogo preventivo sobre <a href="/blog/que-no-tirar-en-la-pileta-de-cocina" style="color:#16A34A;font-weight:bold;text-decoration:underline;">qué no tirar jamás por la bacha</a>, el tapón aquí se constituye implacablemente por cientos de capas calcificadas superpuestas de gruesa grasa animal solidificada y restos orgánicos pesados.</p>
+        <p>A diferencia innegable del cuarto de baño donde el pelo humano molesto y la espuma jabonosa reinan, la obstrucción profunda del lavaplatos o de la bacha doble en tu hogar posee una naturaleza netamente oleosa. Tal cual detallamos fuertemente en nuestras guías técnicas previas explicando exhaustivamente el preocupante tema sobre <a href="/blog/por-que-cocina-huele-a-cloaca" style="color:#16A34A;font-weight:bold;text-decoration:underline;">por qué tu cocina huele literalmente a cloaca</a>, y también en nuestro decálogo preventivo sobre <a href="/blog/que-no-tirar-en-la-pileta-de-cocina" style="color:#16A34A;font-weight:bold;text-decoration:underline;">qué no tirar jamás por la bacha</a>, el tapón aquí se constituye inevitablemente por cientos de capas calcificadas superpuestas de gruesa grasa animal solidificada y restos orgánicos pesados.</p>
         
         <p>Conseguir de una vez por todas liberar ese paso restringido sin la inoportuna rotura del caño y lograr anular olores putrefactos de forma perenne, requiere una inmediata limpieza profunda que no se supla con mágicas gotas efervescentes. Entender a la perfección la frágil anatomía del sifón inferior debajo de las cacerolas y comprender cuándo y cómo llamar para realizar urgentemente y sin demora importantes <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapa cañerías</a> es vital para la preservación absoluta de tu red.</p>
 
@@ -1041,25 +1041,29 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Diferencias entre tuberías cloacales y pluviales - Openagua',
       excerpt: '¿Sabés la diferencia entre cañerías cloacales y pluviales? Descubrí qué transporta cada sistema y cómo detectar cuál está tapado. ¡Consultanos!',
       content: `
-        <p>Muchas veces el problema no está en la misma cañería. Sentir mal olor, presenciar un rebalse o notar agua estancada no siempre tiene el mismo origen. Las cloacales y las pluviales cumplen funciones completamente distintas, y entender la diferencia te ayudará a detectar mejor dónde está la obstrucción y solicitar la solución técnica correcta.</p>
+        <p>Muchas veces el problema no está en la misma cañería. Sentir mal olor, presenciar un rebalse o notar agua estancada no siempre tiene el mismo origen. Las cloacales y las pluviales cumplen funciones completamente distintas en cualquier propiedad de CABA y GBA, y entender la diferencia te ayudará a detectar mejor dónde está la obstrucción y solicitar la solución técnica correcta.</p>
+
+        <p>Es muy común que en casas antiguas o en reformas mal hechas se terminen mezclando las redes por error o comodidad del albañil de turno. Esto no solo está prohibido por reglamento sanitario, sino que es una bomba de tiempo para los cimientos y la salubridad de tu hogar. Mantener cada sistema canalizado de forma independiente es vital para evitar dolores de cabeza crónicos y humedades insalubres.</p>
         
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Qué transportan las cañerías cloacales?</h2>
-        <p>El sistema cloacal o "aguas negras y grises" está diseñado estrictamente para evacuar fluidos y materia de las instalaciones internas del hogar. Transporta:</p>
+        <p>El sistema cloacal o "aguas negras y grises" está diseñado estrictamente para evacuar fluidos y materia de las instalaciones internas del hogar. Este tipo de red requiere diámetros normalizados (generalmente 110 mm para desagües principales y de 40 a 50 mm para conexiones secundarias) y pendientes sumamente precisas para evitar que los sólidos sedimenten. Transporta:</p>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li>El agua de descarga del inodoro y el bidet.</li>
-          <li>Los fluidos llenos de restos orgánicos, grasa y jabón provenientes de la pileta de cocina.</li>
-          <li>El líquido jabonoso y restos capilares o corporales de la ducha o bañera.</li>
-          <li>El agua con detergentes proveniente del lavarropas.</li>
+          <li>El agua de descarga del inodoro y el bidet, arrastrando materia orgánica y papel higiénico.</li>
+          <li>Los fluidos llenos de restos orgánicos, aceites emulsionados y grasa provenientes de la pileta de cocina.</li>
+          <li>El líquido jabonoso, restos capilares y grasa corporal de la ducha o la bañera.</li>
+          <li>El agua con detergentes químicos y fibras de ropa proveniente del lavarropas o pileta de lavar.</li>
         </ul>
+        <p>Debido a la fermentación constante de estos residuos orgánicos, la red cloacal genera gases altamente tóxicos y corrosivos (como el sulfuro de hidrógeno). Por esta razón, todas las bocas de acceso internas de tu baño o cocina deben contar obligatoriamente con sifones hidráulicos o trampas de agua que actúen como un tapón físico contra el mal olor.</p>
 
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Qué transportan las cañerías pluviales?</h2>
-        <p>Por otro lado, la red pluvial está pensada enteramente para capturar y derivar el exceso de agua proveniente de precipitaciones hacia la calle, evitando la saturación del suelo. Transporta:</p>
+        <p>Por otro lado, la red pluvial está pensada enteramente para capturar y derivar el exceso de agua de lluvia de precipitaciones hacia la calle, evitando la saturación de los cimientos y el anegamiento del suelo. A diferencia de las cloacas, esta red suele ventilar libremente a la atmósfera y desemboca en la vereda. Transporta:</p>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li>Agua de lluvia pura recolectada de los techos y terrazas.</li>
-          <li>El agua capturada por canaletas y bajadas verticales aéreas.</li>
-          <li>El caudal acumulado en las rejillas de patio exteriores.</li>
-          <li>Desagües perimetrales de parques o pulmones de manzana.</li>
+          <li>Agua de lluvia limpia recolectada en la superficie de techos de chapa, losa o tejas.</li>
+          <li>El agua capturada por canaletas de chapa y bajadas verticales aéreas de PVC o zinc.</li>
+          <li>El caudal de lluvia acumulado en las rejillas y pileta de patio abiertas de tu jardín.</li>
+          <li>Desagües perimetrales de parques, cocheras descubiertas o pulmones de manzana.</li>
         </ul>
+        <p>Aunque el agua de lluvia ingresa limpia, el arrastre de hojas secas, polvo atmosférico acumulado en techos, arena y ramitas de árboles convierte el flujo pluvial en una mezcla densa de sedimento mineral. Si este sedimento no se limpia periódicamente, se asienta en las curvas de las tuberías formando un lodo duro muy difícil de remover de forma manual.</p>
 
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Tabla Comparativa de Sistemas</h2>
         <div style="overflow-x: auto; margin-bottom: 2rem;">
@@ -1074,7 +1078,7 @@ export const getArticulos = (): Articulo[] => {
             <tbody>
               <tr style="border-bottom: 1px solid #e2e8f0;">
                 <td style="padding: 1rem; font-weight: 700; color: #334155;">Qué transporta</td>
-                <td style="padding: 1rem; color: #475569;">Aguas negras, jabón, materia u orgánica, grasa</td>
+                <td style="padding: 1rem; color: #475569;">Aguas negras, jabón, materia orgánica, grasa</td>
                 <td style="padding: 1rem; color: #475569;">Exclusivamente agua de lluvia, hojas y tierra</td>
               </tr>
               <tr style="border-bottom: 1px solid #e2e8f0; background-color: #f8fafc;">
@@ -1096,21 +1100,22 @@ export const getArticulos = (): Articulo[] => {
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cómo identificar cuál sistema se tapó</h2>
         <p>El diagnóstico rápido se reduce a asociar el evento que detona el problema:</p>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Si rebalsa el inodoro o el bidet:</strong> la obstrucción recae indiscutiblemente sobre la línea cloacal primaria. (<a href="/blog/como-destapar-inodoro" style="color:#16A34A;text-decoration:underline;">Ver post sobre inodoros</a>).</li>
-          <li><strong>Si se inunda el patio o terraza cada vez que llueve:</strong> el cuello de botella vive en el ramal pluvial, probablemente obturado por hojas o tierra.</li>
-          <li><strong>Si el ambiente de la cocina o baño apesta a gas de pantano (olor a alcantarilla):</strong> el problema es casi siempre cloacal debido a fermentación de grasas o pérdida del sifón. (<a href="/blog/por-que-cocina-huele-a-cloaca" style="color:#16A34A;text-decoration:underline;">Saber más de olores</a>).</li>
+          <li><strong>Si rebalsa el inodoro o el bidet:</strong> la obstrucción recae indiscutiblemente sobre la línea cloacal primaria. Esto requiere intervención inmediata para evitar contaminación biológica. (<a href="/blog/como-destapar-inodoro" style="color:#16A34A;text-decoration:underline;">Ver post sobre inodoros</a>).</li>
+          <li><strong>Si se inunda el patio o la terraza cada vez que llueve:</strong> el cuello de botella vive en el ramal pluvial, probablemente obturado por hojas secas, tierra compactada o raíces invasoras que obstruyen el paso del agua de tormenta.</li>
+          <li><strong>Si el ambiente de la cocina o el baño apesta a gas de pantano (olor a alcantarilla):</strong> el problema es casi siempre cloacal debido a fermentación de grasas acumuladas o pérdida del sello de agua en los sifones. (<a href="/blog/por-que-cocina-huele-a-cloaca" style="color:#16A34A;text-decoration:underline;">Saber más de olores</a>).</li>
         </ul>
+        <p>Una prueba sencilla de descarte en casas con patio consiste en manguerear la rejilla pluvial exterior durante unos 5 minutos. Si el agua se acumula allí pero el resto de las bachas de la cocina o inodoros de la casa drenan perfectamente, podés tener la total tranquilidad de que tu ramal cloacal está sano, y que el bloqueo se limita únicamente a la salida de lluvia.</p>
 
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Problemas compartidos en CABA y GBA</h2>
-        <p>Las redes de los edificios antiguos suelen compartir la antigüedad de sus materiales. Las cañerías de ambas redes de vez en cuando sufren obstrucciones severas:</p>
+        <p>Las redes de los edificios antiguos suelen compartir la antigüedad de sus materiales. Las cañerías de ambas redes de vez en cuando sufren obstrucciones severas por los siguientes factores:</p>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
-          <li><strong>Raíces usurpadoras:</strong> Comunes en fondos del GBA y frentes de CABA, aplastan y fisuran ductos ciegos buscando humedad pluvial o cloacal.</li>
-          <li><strong>Grasa acumulada:</strong> El colesterol letal de la columna cloacal del consorcio.</li>
-          <li><strong>Hojas, barro y sedimentos:</strong> Los enemigos silenciosos del pluvial y dueños absolutos de la rejilla empantanada.</li>
+          <li><strong>Raíces usurpadoras:</strong> Comunes en fondos del GBA y frentes de CABA. Los árboles de la calle o de jardines linderos aplastan y fisuran ductos ciegos buscando humedad pluvial o nutrientes cloacales, colonizando el interior del caño.</li>
+          <li><strong>Grasa acumulada:</strong> El colesterol letal de la columna cloacal del consorcio. Se endurece formando jabón de calcio duro y obstruye por completo los diámetros de cañerías de cocinas.</li>
+          <li><strong>Hojas, barro y sedimentos:</strong> Los enemigos silenciosos del pluvial y dueños absolutos de la rejilla empantanada tras cada sudestada en Buenos Aires.</li>
         </ul>
 
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cuándo conviene solicitar evaluación profesional</h2>
-        <p>Si no sabés a ciencia cierta si el problema recae sobre la red cloacal o pluvial —ya que en infraestructura rústica a veces corren paralelamente o poseen conexiones erróneas mixtas—, nuestro equipo puede identificar la anomalía y resolverla sin efectuar roturas agresivas.</p>
+        <p>Si no sabés a ciencia cierta si el problema recae sobre la red cloacal o pluvial —ya que en infraestructura rústica a veces corren paralelamente o poseen conexiones erróneas mixtas que se cruzan bajo los pisos—, nuestro equipo puede identificar la anomalía y resolverla sin efectuar roturas agresivas en tus cerámicas.</p>
         
         <p style="margin-top: 2rem;">Contamos con diagnósticos avanzados por <a href="/video-inspeccion-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">video inspección</a> que radiografían interiormente para certificar si precisás <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">asistencia cloacal</a> técnica o depuración estacional de <a href="/destapaciones-pluviales" style="color:#16A34A;font-weight:bold;text-decoration:underline;">redes pluviales</a>.</p>
 
@@ -1118,10 +1123,12 @@ export const getArticulos = (): Articulo[] => {
 
         ${getFaqHtml([
           {q: "¿Qué sucede si el problema persiste luego de limpieza superficial?", a: "Usualmente indica fallas en las curvas del ramal central lejos del alcance superficial, lo que demanda destapaciones mecánicas con resortes rotativos de alta resistencia para triturar los tapones."},
-          {q: "¿Tirar aceites puede afectar a la vía pluvial?", a: "No debería. Sin embargo, en edificaciones no reglamentarias el aceite puede derivar a conductos no procesados agravando la contaminación general." }
+          {q: "¿Tirar aceites puede afectar a la vía pluvial?", a: "No debería. Sin embargo, en edificaciones no reglamentarias el aceite puede derivar a conductos no procesados agravando la contaminación general."},
+          {q: "¿Qué consecuencias o sanciones tiene conectar la red pluvial al sistema cloacal?", a: "Está estrictamente prohibido por la normativa de Aysa y los códigos de edificación de CABA y GBA. Conectar los desagües de lluvia a la cloaca sobrecarga la red pública durante tormentas fuertes, provocando desbordes de aguas servidas en las casas vecinas y en la tuya propia. Las municipalidades aplican multas severas si detectan conexiones cruzadas no declaradas."},
+          {q: "¿Cómo puedo saber si en mi casa hay una conexión cruzada entre cloaca y pluvial?", a: "Una forma de verificarlo es tirando agua teñida con colorante vegetal en la rejilla del patio exterior y observar si aparece color en la pileta de patio del baño o si fluye de forma directa hacia la cámara cloacal de inspección. Si el agua con colorante sale directamente hacia el cordón cuneta de la calle, la conexión es correcta."},
+          {q: "¿Se puede usar la rejilla cloacal del baño para drenar el patio si se inunda?", a: "No te lo recomiendo para nada. La cañería cloacal interna tiene un diámetro menor de evacuación y está equipada con sifones que limitan el caudal de paso. Si intentás drenar un patio inundado hacia el interior del baño, la cañería se saturará en segundos y el agua sucia brotará por el inodoro o el bidet, inundando tu casa con desechos."}
         ])}
-      `
-    },
+      `},
     {
       slug: 'raices-en-canerias-como-detectarlas-y-solucionarlo',
       publishedAt: '2025-02-10',
@@ -2304,7 +2311,7 @@ export const getArticulos = (): Articulo[] => {
       <p>Utilizar herramientas de precisión nos permite resolver la obstrucción en menos de una hora sin generar suciedad ni desorden en el baño de tu casa.</p>
       <p>Si querés ver nuestros precios detallados, visitá la sección de <a href="/servicios/destapaciones-maquinas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones con máquinas</a> en nuestra web oficial.</p>
       <p>Para solucionar urgencias domésticas comunes de cloacas de forma duradera, te aconsejo delegar la tarea en técnicos que sepan cómo <a href="/servicios/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapa cañerías</a> con seguridad.</p>
-      <p>Te garantizamos un price por trabajo no por metro, dándote total claridad antes de empezar. Si vemos que el trabajo se complica, te avisamos de antemano para tu tranquilidad.</p>
+      <p>Te aseguramos un precio fijo por trabajo no por metro, dándote total claridad antes de empezar. Si vemos que el trabajo se complica, te avisamos de antemano para tu tranquilidad.</p>
 
       ${getFaqHtml([
         {q: "¿La máquina de resortes rotativos puede romper mis caños viejos de plástico?", a: "No, los cables y resortes que usamos en las destapaciones son flexibles y están diseñados para copiar las curvas de los caños sin golpearlos. La sonda avanza girando sobre su propio eje, lo que permite romper el tapón sin dañar las uniones ni el PVC. Es un método sumamente seguro si es manejado por un técnico idóneo con experiencia."},
