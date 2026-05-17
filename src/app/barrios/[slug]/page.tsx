@@ -214,13 +214,13 @@ export default async function BarrioPage({ params }: Props) {
           }}
         >
           <Image 
-            src="/img/destapacion de cloaca.jpg" 
+            src="/img/destapacion-de-cloaca.jpg" 
             alt={`Servicio de destapaciones en ${barrio.name} - Openagua`} 
             fill 
-            priority 
+            priority={false} 
             style={{ objectFit: 'cover', zIndex: 0 }} 
-            quality={85}
-            sizes="100vw"
+            quality={70}
+            sizes="(max-width: 768px) 100vw, 1200px"
           />
           <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(15, 23, 42, 0.85)', zIndex: 1 }}></div>
           <div className="container" style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
