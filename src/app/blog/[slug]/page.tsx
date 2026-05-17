@@ -84,7 +84,7 @@ export default async function BlogPost({ params }: Props) {
           height={630}
           sizes="(max-width: 768px) 100vw, 800px"
           priority={true}
-          style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} 
+          style={{ width: '100%', height: 'auto', maxHeight: '400px', display: 'block', objectFit: 'cover' }} 
           quality={85}
           title={post.title}
         />
@@ -120,9 +120,9 @@ export default async function BlogPost({ params }: Props) {
 
         return (
           <>
-            <div dangerouslySetInnerHTML={{ __html: contentPart1 }} />
+            <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: contentPart1 }} />
             <div dangerouslySetInnerHTML={{ __html: ctaMiddleHtml }} />
-            <div dangerouslySetInnerHTML={{ __html: contentPart2 }} />
+            <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: contentPart2 }} />
           </>
         );
       })()}

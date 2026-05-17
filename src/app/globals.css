@@ -187,3 +187,13 @@ main > section:nth-child(even) {
     margin-bottom: 0.75rem !important;
   }
 }
+
+/* Estilos de espaciado y legibilidad para el contenido de los artículos del blog */
+.blog-post-content h2 {
+  margin-top: 2.5rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.blog-post-content p {
+  margin-bottom: 1.25rem !important;
+}
