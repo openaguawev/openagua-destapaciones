@@ -9,7 +9,8 @@ export default function Resenas() {
     { text: "Muy correctos. Coordinamos la visita, llegaron y resolvieron todo. Rápido y funcional. Los súper recomendamos.", author: "María Luz Schiaffino", rating: 5 },
     { text: "Quedé muy satisfecha. Muy buen trato y pudimos determinar dónde estaba la rotura del caño.", author: "Gloria Sallés", rating: 5 },
     { text: "Excelente servicio, muy prolijos y limpios para trabajar, dejando todo en orden.", author: "Cecilia Campos Rojas", rating: 5 },
-    { text: "Muy eficientes, prolijos y amables. Super recomendables.", author: "Yolanda Maschio", rating: 5 }
+    { text: "Muy eficientes, prolijos y amables. Super recomendables.", author: "Yolanda Maschio", rating: 5 },
+    { text: "Hablé a las 10am y a las 15hs estaba en el domicilio. Super profesional, trabajo impecable, te explica todo lo que hace y te cobra lo pactado en el presupuesto, sin sorpresas.", author: "Roberto Silva", rating: 5, onlyDesktop: true }
   ];
 
   return (
@@ -18,7 +19,7 @@ export default function Resenas() {
         <h2 className="section-title">Lo que dicen nuestros clientes</h2>
         <div className="resenas-grid">
           {reviews.map((review, idx) => (
-            <div className="resena-card" key={idx}>
+            <div className={`resena-card${review.onlyDesktop ? ' only-desktop' : ''}`} key={idx}>
               <div className="stars">
                 {"★".repeat(review.rating)}
               </div>

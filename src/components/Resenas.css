@@ -44,3 +44,13 @@
   font-size: 1.05rem;
   margin-top: auto;
 }
+
+.only-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .only-desktop {
+    display: flex;
+  }
+}
