@@ -40,7 +40,7 @@ export default function Footer() {
             <li><Link href="/blog/por-que-cocina-huele-a-cloaca">Por qué la cocina huele a cloaca</Link></li>
             <li><Link href="/blog/5-senales-columna-edificio-tapada">Cómo detectar obstrucción en columna</Link></li>
             <li><Link href="/blog/resorte-vs-hidrojet-cual-es-mejor">Sonda vs Hidrojet</Link></li>
-            <li><Link href="/blog/video-inspeccion-saber-cano-roto-sin-romper">Video Inspección de cañerías</Link></li>
+            <li><Link href="/blog/video-inspeccion-canerias-como-funciona">Video Inspección de cañerías</Link></li>
             <li><Link href="/blog/inodoro-rebalsa-que-hacer">Inodoro rebalsa: qué hacer</Link></li>
             <li><Link href="/blog/rejilla-patio-tapada-lluvia">Rejilla del patio tapada</Link></li>
             <li><Link href="/blog/problema-departamento-o-columna">¿El problema está en tu depto o columna?</Link></li>

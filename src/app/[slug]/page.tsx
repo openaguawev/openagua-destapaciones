@@ -72,7 +72,7 @@ const renderTextWithLinks = (text: string, slug: string) => {
     { kw: 'Zona Sur', to: 'zonas/zona-sur' },
     { kw: 'CABA', to: 'zonas/caba' },
     // Blog (Interlinking Informacional)
-    { kw: 'saber si un caño está roto', to: 'blog/video-inspeccion-saber-cano-roto-sin-romper' },
+    { kw: 'saber si un caño está roto', to: 'blog/video-inspeccion-canerias-como-funciona' },
     { kw: 'columna de edificio tapada', to: 'blog/5-senales-columna-edificio-tapada' },
     { kw: 'rejilla del patio está tapada', to: 'blog/rejilla-patio-tapada-lluvia' },
     { kw: 'cocina huele a cloaca', to: 'blog/por-que-cocina-huele-a-cloaca' },
@@ -141,7 +141,7 @@ const relatedBlogPosts: Record<string, {slug: string, title: string}[]> = {
     {slug: 'que-productos-no-usar-para-destapar-canos', title: 'Qué productos no usar para destapar'}
   ],
   'video-inspeccion-canerias': [
-    {slug: 'video-inspeccion-saber-cano-roto-sin-romper', title: 'Saber si el caño está roto'},
+    {slug: 'video-inspeccion-canerias-como-funciona', title: 'Saber si el caño está roto'},
     {slug: 'raices-en-canerias-como-detectarlas-y-solucionarlo', title: 'Raíces en cañerías'}
   ],
   'limpieza-camaras-septicas': [

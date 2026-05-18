@@ -195,6 +195,11 @@ const nextConfig: NextConfig = {
         source: '/barrios/destapaciones-capital-federal',
         destination: '/zonas/caba',
         permanent: true,
+      },
+      {
+        source: '/blog/video-inspeccion-saber-cano-roto-sin-romper',
+        destination: '/blog/video-inspeccion-canerias-como-funciona',
+        permanent: true,
       }
     ];
   },
