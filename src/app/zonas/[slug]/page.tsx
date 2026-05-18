@@ -377,6 +377,28 @@ export default async function ZonaPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+
+      <Script
+        id="service-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": `Destapaciones en ${zona.name}`,
+            "description": zona.seoDescription || zona.description,
+            "provider": {
+              "@type": "LocalBusiness",
+              "@id": "https://www.destapacionesopenagua.com.ar/#business"
+            },
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": zona.name
+            },
+            "url": `https://www.destapacionesopenagua.com.ar/zonas/${zona.slug}`
+          })
+        }}
+      />
     </main>
   )
 }

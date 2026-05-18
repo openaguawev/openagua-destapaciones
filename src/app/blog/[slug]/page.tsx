@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Metadata } from 'next'
 import { handleLegacyRedirect } from '@/utils/legacyRedirect'
 import { generateArticleSchema, generateFAQSchema } from '@/lib/schemaUtils'
+import Script from 'next/script'
 
 export async function generateStaticParams() {
   const posts = getArticulos()
@@ -63,14 +64,29 @@ export default async function BlogPost({ params }: Props) {
 
   return (
     <main style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
-      <script
+      <Script
+        id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
-      {faqSchema && (
-        <script
+      {faqs.length > 0 && (
+        <Script
+          id="faq-schema"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": faqs.map((faq: {q: string, a: string}) => ({
+                "@type": "Question",
+                "name": faq.q,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": faq.a
+                }
+              }))
+            })
+          }}
         />
       )}
       
