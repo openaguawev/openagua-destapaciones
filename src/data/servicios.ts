@@ -371,7 +371,7 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Hasta cuántos metros llega la cámara?", a: "Nuestros equipos tienen sondas de hasta 30 metros de longitud, cubriendo la mayoría de las redes domiciliarias y comerciales." }
       ],
       {
-        seoTitle: "Video Inspección de Cañerías con Cámara HD | Sin Romper | Openagua",
+        seoTitle: "Video Inspección de Cañerías con Cámara HD | Openagua",
         seoDescription: "Inspeccionamos tus cañerías con cámara HD sin romper pisos ni paredes. Detectamos roturas, raíces y obstrucciones al instante. CABA y GBA. ☎ 11 5179-7649.",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
