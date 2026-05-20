@@ -1665,7 +1665,7 @@ export const getArticulos = (): Articulo[] => {
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cómo elegir un servicio de mantenimiento confiable</h2>
         <p>Para un consorcio, contratar un servicio de destapaciones no es lo mismo que llamar a un plomero de emergencia. Hay que considerar la formalidad del prestador: facturación, seguro de responsabilidad civil, y que el técnico sea matriculado. En caso de un siniestro con el seguro del edificio, la compañía aseguradora puede rechazar el reclamo si no se presentan remitos y certificados del mantenimiento realizado.</p>
 
-        <p>Aspectos clave que conviene preguntar antes de contratar: ¿Emiten certificado del trabajo realizado? ¿Tienen equipos propios de hidrojet o usan terceros? ¿Pueden hacer la video inspección en el mismo momento si detectan algo anómalo? ¿Tienen cobertura en horarios de urgencia? Un proveedor que puede responder afirmativamente a estas preguntas es un socio estratégico para la gestión del consorcio, no un gasto más.</p>
+        <p>Aspectos clave que conviene preguntar antes de contratar: ¿Emiten certificado del trabajo realizado? ¿Tienen equipo propio de hidrojet? ¿Pueden hacer la video inspección en el mismo momento si detectan algo anómalo? ¿Tienen cobertura en horarios de urgencia? Un proveedor que puede responder afirmativamente a estas preguntas es un socio estratégico para la gestión del consorcio, no un gasto más.</p>
 
         <p>Si necesitás ayuda profesional, podés <a href="/precios" style="color:#16A34A;font-weight:bold;text-decoration:underline;">ver precios</a> de nuestros servicios de destapación en CABA y GBA, con valores fijos y sin sorpresas.</p>
 
