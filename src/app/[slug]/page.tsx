@@ -411,6 +411,7 @@ export default async function ServicioPage({ params }: Props) {
             "name": servicio.schemaTitle || servicio.title,
             "description": servicio.excerpt,
             "provider": {
+              "@type": "LocalBusiness",
               "@id": "https://www.destapacionesopenagua.com.ar/#business"
             },
             ...(servicio.serviceType ? { "serviceType": servicio.serviceType } : {}),
@@ -426,25 +427,6 @@ export default async function ServicioPage({ params }: Props) {
             { name: "Inicio", item: "https://www.destapacionesopenagua.com.ar" },
             { name: servicio.schemaTitle || servicio.title, item: `https://www.destapacionesopenagua.com.ar/${servicio.slug}` }
           ]))
-        }}
-      />
-      <Script
-        id={`local-business-service-schema-${servicio.slug}`}
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "@id": "https://www.destapacionesopenagua.com.ar/#business",
-            "name": "Openagua Destapaciones",
-            "telephone": "+54-9-11-5179-7649",
-            "priceRange": "$$",
-            "url": "https://www.destapacionesopenagua.com.ar",
-            "image": "https://www.destapacionesopenagua.com.ar/logo.svg",
-            ...(servicio.serviceType ? { "serviceType": servicio.serviceType } : {}),
-            ...(servicio.areaServed ? { "areaServed": servicio.areaServed.map(area => ({ "@type": "AdministrativeArea", "name": area })) } : {}),
-            ...(servicio.updatedAt ? { "dateModified": servicio.updatedAt } : {})
-          })
         }}
       />
       {servicio.faqs && servicio.faqs.length > 0 && (
