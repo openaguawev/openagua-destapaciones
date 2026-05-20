@@ -2068,7 +2068,7 @@ export const getArticulos = (): Articulo[] => {
       <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Qué es el fuelle del inodoro y para qué sirve en tu baño</h2>
       <p>El fuelle es un tubo corto de material flexible que une la salida de agua del depósito con la parte de atrás de la loza. Se usa en inodoros donde la mochila no está pegada directamente a la taza, sino colgada a media altura o embutida en la pared.</p>
       <p>Su función principal es hacer de puente elástico para que el agua de descarga pase sin filtraciones. Como los caños rígidos no siempre quedan perfectamente alineados, el fuelle compensa esa distancia y evita que la junta se rompa por las vibraciones.</p>
-      <p>En mi experiencia de trabajo diario, veo que muchos propietarios subestiman esta pequeña pieza y la dejan perder agua por semanas. Sin embargo, una pérdida constante acá puede dañar los revestimientos cerámicos y generar filtraciones molestas hacia el techo de tus vecinos de abajo.</p>
+      <p>En el día a día vemos que muchos propietarios subestiman esta pequeña pieza y la dejan perder agua por semanas. Sin embargo, una pérdida constante acá puede dañar los revestimientos cerámicos y generar filtraciones molestas hacia el techo de tus vecinos de abajo.</p>
 
       <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Cómo detectar si tu fuelle inodoro pierde agua</h2>
       <p>Si ves agua detrás del inodoro, tenés que confirmar de dónde sale antes de comprar cualquier repuesto. Para esto, secá bien toda la zona con un trapo o un pedazo de papel higiénico.</p>
