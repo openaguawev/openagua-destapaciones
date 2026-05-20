@@ -9,6 +9,8 @@ import { generarTextoServicio } from '@/utils/generarTextoServicio';
 import { generateBreadcrumbSchema } from '@/lib/schemaUtils';
 import '../servicio-page.css';
 
+export const dynamicParams = false;
+
 interface Props {
   params: Promise<{ slug: string }>;
 }

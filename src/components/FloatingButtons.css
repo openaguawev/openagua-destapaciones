@@ -48,3 +48,10 @@
     left: 20px;
   }
 }
+
+@supports (bottom: env(safe-area-inset-bottom)) {
+  .floating-whatsapp,
+  .floating-phone {
+    bottom: calc(20px + env(safe-area-inset-bottom));
+  }
+}

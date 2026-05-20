@@ -166,12 +166,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/destapaciones-en-:slug',
-        destination: '/barrios/destapaciones-:slug',
-        permanent: true,
-      },
-
-      {
         source: '/destapaciones-ezpeleta',
         destination: '/destapaciones-cloacas',
         permanent: true,
@@ -179,6 +173,11 @@ const nextConfig: NextConfig = {
       {
         source: '/destapaciones-en-ezpeleta',
         destination: '/destapaciones-cloacas',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-en-:slug',
+        destination: '/barrios/destapaciones-:slug',
         permanent: true,
       },
       {
