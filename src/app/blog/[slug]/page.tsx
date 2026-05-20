@@ -51,6 +51,9 @@ export default async function BlogPost({ params }: Props) {
   const post = posts.find((p) => p.slug === slug)
   if (!post) return handleLegacyRedirect([slug])
   
+  const waMsg = encodeURIComponent(`Hola Openagua, leí el artículo "${post.title}" y quiero consultar.`);
+  const waUrl = `https://wa.me/5491151797649?text=${waMsg}`;
+
   const articleSchema = generateArticleSchema(post);
 
   const faqs = [];
@@ -129,7 +132,7 @@ export default async function BlogPost({ params }: Props) {
   <p style="color: #475569; margin-bottom: 1rem; font-size: 0.95rem;">
     Te respondemos en minutos. Sin compromiso.
   </p>
-  <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20necesito%20ayuda" target="_blank" rel="noopener noreferrer" style="background: #25D366; color: white; padding: 12px 28px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block;">
+  <a href="${waUrl}" target="_blank" rel="noopener noreferrer" style="background: #25D366; color: white; padding: 12px 28px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block;">
     Consultá por WhatsApp ahora
   </a>
 </div>`;
@@ -168,7 +171,7 @@ export default async function BlogPost({ params }: Props) {
       </div>
 
       <div style={{ marginTop: '2.5rem', display: 'flex', justifyContent: 'center' }}>
-        <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20quiero%20consultar%20por%20un%20presupuesto" style={{ background: '#16A34A', color: 'white', padding: '1rem 2rem', borderRadius: '8px', textDecoration: 'none', display: 'inline-block', fontWeight: 'bold', boxShadow: '0 4px 6px -1px rgba(22, 163, 74, 0.4)' }}>
+        <a href={waUrl} style={{ background: '#16A34A', color: 'white', padding: '1rem 2rem', borderRadius: '8px', textDecoration: 'none', display: 'inline-block', fontWeight: 'bold', boxShadow: '0 4px 6px -1px rgba(22, 163, 74, 0.4)' }}>
           Consultar urgencia por WhatsApp
         </a>
       </div>

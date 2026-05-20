@@ -187,6 +187,9 @@ export default async function ServicioPage({ params }: Props) {
   const foundServicio = servicios.find((s) => s.slug === resolvedParams.slug);
   const servicio = foundServicio || servicios[0];
 
+  const waMsg = encodeURIComponent(`Hola Openagua, necesito información sobre ${servicio.title}. ¿Pueden ayudarme?`);
+  const waUrl = `https://wa.me/5491151797649?text=${waMsg}`;
+
   if (!foundServicio) {
     handleLegacyRedirect([resolvedParams.slug]);
   }
@@ -349,7 +352,7 @@ export default async function ServicioPage({ params }: Props) {
           <span className="cta-badge">Urgencias 24hs</span>
           <h2 className="cta-title">¿Necesitás una solución urgente?</h2>
           <p className="cta-desc">Resolución inmediata por WhatsApp. Atendemos emergencias hoy mismo.</p>
-          <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20necesito%20resolver%20una%20urgencia%20ahora" target="_blank" rel="noopener noreferrer" className="cta-button">
+          <a href={waUrl} target="_blank" rel="noopener noreferrer" className="cta-button">
             Escribinos ahora y lo resolvemos hoy
           </a>
         </section>

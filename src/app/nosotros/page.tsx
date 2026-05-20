@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function NosotrosPage() {
-  const whatsappLink = "https://wa.me/5491151797649?text=Hola%20Openagua%2C%20estaba%20leyendo%20sobre%20ustedes%20y%20necesito%20un%20presupuesto";
+  const whatsappLink = `https://wa.me/5491151797649?text=${encodeURIComponent('Hola Openagua, los encontré en la web y quiero consultar un servicio.')}`;
 
   const schemaData = {
     "@context": "https://schema.org",

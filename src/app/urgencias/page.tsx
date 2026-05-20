@@ -35,7 +35,7 @@ export default function UrgenciasPage() {
             ¿Cloaca rebalsando? ¿Inundación en el sótano? Llamanos ahora. Atendemos consultas a cualquier hora y coordinamos la solución para el primer turno disponible.
           </p>
           <div className="hero-ctas" style={{ marginTop: '2rem', display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="https://wa.me/5491151797649" target="_blank" rel="noopener noreferrer" className="btn-primary hero-btn" style={{ margin: 0 }}>
+            <a href={`https://wa.me/5491151797649?text=${encodeURIComponent('Hola Openagua, tengo una urgencia ahora. ¿Pueden venir?')}`} target="_blank" rel="noopener noreferrer" className="btn-primary hero-btn" style={{ margin: 0 }}>
               Consultar por WhatsApp
             </a>
             <a href="tel:+5491151797649" className="btn-outline hero-btn" style={{ margin: 0, borderColor: '#2563EB', color: '#fff', backgroundColor: '#2563EB' }}>
