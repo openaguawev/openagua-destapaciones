@@ -406,8 +406,8 @@ export const getArticulos = (): Articulo[] => {
         ${getFaqHtml([
           {q: "¿El hidrojet tiene la potencia real de sacar raíces subterráneas sin romper el piso?", a: "Absolutamente, instalamos picos rotadores dentados que giran a miles de revoluciones por propulsión hídrica. Éstos talan rápidamente raíces medianas y gruesas encalladas provenientes de árboles añosos sin dañar la integridad del caño."},
           {q: "¿Dejan mal olor en el ambiente interior post-trabajo de limpieza cloacal?", a: "Para nada. Ninguno de nuestros procedimientos técnicos es tóxico. Al lavar directamente con altísimo caudal perimetral, arrastramos la biomasa putrefacta e higienizamos de inmediato el área tratada, devolviendo el aroma neutral y fresco al baño."},
-          {q: "¿Tienen cobertura veloz de Resorte convencional para CABA?", a: "Sí, manejamos ágiles vehículos de intervención con equipos de sonda electromecánica ultra compactos, garantizando cobertura extrema en toda el área del microcentro de CABA sin grandes demoras de tránsito."},
-          {q: "¿El servicio a presión de agua inunda mi casa si el caño no llega a bajar?", a: "No. Nuestros operadores expertos regulan los bares de potencia al milímetro con válvulas by-pass controladas, frenando y cortando el caudal al instante para impedir cualquier riesgo de desborde hacia el interior de sus pisos."}
+          {q: "¿Tienen cobertura veloz de Resorte convencional para CABA?", a: "Sí, trabajamos con nuestro vehículo equipado con sonda electromecánica en toda el área de CABA y GBA."},
+          {q: "¿El servicio a presión de agua inunda mi casa si el caño no llega a bajar?", a: "No. regulamos los bares de potencia al milímetro con válvulas by-pass controladas, frenando y cortando el caudal al instante para impedir cualquier riesgo de desborde hacia el interior de sus pisos."}
         ])}
 
       `
@@ -472,16 +472,16 @@ export const getArticulos = (): Articulo[] => {
         </ol>
 
         <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Cómo me ahorra plata pagar una cámara cloacal?</h2>
-        <p>Muchos clientes dudan al principio por el costo inicial del servicio de inspección, asumiendo que es un gasto "extra". Sin embargo, al identificar de forma irrefutable un bloqueo inmenso o una fractura, evitas hacer constantes e inútiles pagos temporales por destapaciones fallidas semana tras semana. Sabrás, a centímetros del problema, dónde aplicar la única reparación seria necesaria, reduciendo el costo de albañilería en un 80% o más. En lugar de levantar todo el living buscando a ciegas, el albañil solo romperá una sola baldosa, ahorrando materiales, días de trabajo y la limpieza posterior.</p>
+        <p>Muchos clientes dudan al principio por el costo inicial del servicio de inspección, asumiendo que es un gasto "extra". Sin embargo, al identificar de forma irrefutable un bloqueo inmenso o una fractura, evitas hacer constantes e inútiles pagos temporales por destapaciones fallidas semana tras semana. Sabrás, a centímetros del problema, dónde aplicar la única reparación seria necesaria, reduciendo considerablemente el costo de albañilería. En lugar de levantar todo el living buscando a ciegas, el albañil solo romperá una sola baldosa, ahorrando materiales, días de trabajo y la limpieza posterior.</p>
 
         <p>Si necesitás ayuda profesional, podés <a href="/precios" style="color:#16A34A;font-weight:bold;text-decoration:underline;">ver precios</a> de nuestros servicios de destapación en CABA y GBA, con valores fijos y sin sorpresas.</p>
 
         ${getFaqHtml([
           {q: "¿La cámara puede navegar por caños finos de 40mm?", a: "Sí, contamos con miniaturas robóticas HD lo bastante flexibles para recorrer caños internos de cocinas y lavaderos desde 40 milímetros sin trabarse en los codos, adaptándonos a cualquier diámetro domiciliario."},
           {q: "¿Graba video para entregar a la aseguradora?", a: "Efectivamente, capturamos toda la incursión en formato digital y generamos un archivo exportable legal con las coordenadas métricas del atasco para que lo presentes a tu compañía de seguros o administración."},
-          {q: "¿El servicio llega rápido a mi barrio?", a: "Nuestros vehículos viajan totalmente instrumentados diariamente por CABA y GBA, abarcando tanto centros urbanos como radios suburbanos de Zona Norte, Sur y Oeste, asegurando asistencia en pocas horas."},
+          {q: "¿El servicio llega rápido a mi barrio?", a: "Trabajamos en CABA y GBA, Zona Norte, Sur y Oeste. Consultá disponibilidad según tu zona."},
           {q: "¿Es necesario romper algo para hacer la inspección?", a: "No. La gran ventaja de la video inspección de cañerías es que ingresamos por bocas de acceso preexistentes, como rejillas, piletas de patio, cámaras de inspección o retirando momentáneamente el inodoro, sin dañar la estructura de tu casa."},
-          {q: "¿Pueden destapar el caño en el mismo momento que hacen la inspección?", a: "Sí. Nuestras camionetas están equipadas tanto con las cámaras de inspección como con sondas electromecánicas y bombas de hidrojet. Una vez que localizamos la obstrucción y evaluamos el estado del caño, procedemos a realizar la destapación definitiva en la misma visita si el cliente lo aprueba."}
+          {q: "¿Pueden destapar el caño en el mismo momento que hacen la inspección?", a: "Sí. Nuestro vehículo está equipado tanto con cámaras de inspección como con sondas electromecánicas y bombas de hidrojet. Una vez que localizamos la obstrucción y evaluamos el estado del caño, procedemos a realizar la destapación definitiva en la misma visita si el cliente lo aprueba."}
         ])}
       `
     },
@@ -559,7 +559,7 @@ export const getArticulos = (): Articulo[] => {
           {q: "¿El líquido destapacañerías comercial sirve si el inodoro rebalsó?", a: "Totalmente desaconsejado. Al estar inundado, el químico pesado no llegará al tapón; se diluirá en el exceso de agua y solo logrará emanar vapores tóxicos corrosivos, manchar la loza del fondo y poner en peligro a quien intente destaparlo luego."},
           {q: "¿Es necesario romper el piso del baño si el inodoro no destapa con sopapa?", a: "Casi nunca. Nuestros técnicos retiran la masilla y levantan la estructura completa del inodoro sin romper un solo azulejo. Ingresamos directamente al caño inferior con sondas rotativas y luego lo volvemos a instalar sellado y operativo el mismo día."},
           {q: "¿Qué pasa si mis hijos tiraron juguetes de plástico por el retrete?", a: "El plástico no se deshace ni reacciona con ácidos. Intentar empujarlo más abajo solo trabará la red externa. Utilizamos flejes recuperadores especiales para atrapar el juguete y extraerlo hacia afuera, salvando la funcionalidad del sistema principal."},
-          {q: "¿Ofrecen atención de guardia de urgencia en fin de semana por inodoros rebalsados en CABA?", a: "Sí, entendemos que es una emergencia sanitaria impostergable para la familia. Contamos con vehículos de guardia rápida desplegados por todos los barrios y el cordón de GBA, equipados para resolver este caos cualquier día de la semana."}
+          {q: "¿Ofrecen atención de guardia de urgencia en fin de semana por inodoros rebalsados en CABA?", a: "Sí, entendemos que es una emergencia sanitaria impostergable para la familia. Atendemos urgencias de lunes a sábado en CABA y GBA con nuestro vehículo equipado. Los domingos coordinamos turno para el día siguiente."}
         ])}
 
       `
