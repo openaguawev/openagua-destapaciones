@@ -361,7 +361,17 @@ export const getServicios = (): ServicioData[] => {
       'Video Inspección de Cañerías',
       '/img/video-inspeccion.jpg',
       'Diagnóstico preciso con cámaras HD. Localizamos roturas, raíces y obstrucciones sin romper pisos ni paredes en CABA y GBA.',
-      'Suelen existir roturas estructurales ocultas debajo del hormigón. Para saber si un caño está roto, en lugar de perforar el piso adivinando, optamos por introducir nuestra cámara CCTV sumergible. Podés ver precios fijos por servicio en nuestra web.',
+      `Romper una docena de baldosas o excavar a ciegas buscando una pérdida ya no es necesario. La video inspección con cámara HD permite ver exactamente qué pasa dentro de tus cañerías sin romper nada.
+
+¿Por qué las destapaciones recurrentes ocultan un problema mayor? Si llamás al plomero cada mes, es probable que haya una falla estructural: caños aplastados por el movimiento del suelo, invasión de raíces, o juntas desplazadas por mala instalación original.
+
+¿Qué detecta exactamente? La cámara revela fisuras capilares y roturas longitudinales, incrustaciones de sarro que reducen el diámetro, contrapendientes donde se acumula materia, infiltraciones de napa freática, y objetos encallados como juguetes o trapos.
+
+¿Cómo se realiza? El técnico introduce una sonda flexible con cámara HD y luces LED por la cámara de inspección o rejilla existente. La imagen se transmite en vivo a una pantalla. Si se encuentra una falla, un transmisor de radiofrecuencia en el cabezal permite marcar el punto exacto en la superficie sin excavar a ciegas.
+
+¿Cuándo conviene hacerla? Cuando tenés destapaciones recurrentes, antes de comprar una propiedad, o cuando querés confirmar que una limpieza con hidrojet quedó completa.
+
+¿Cuánto ahorra? En lugar de levantar todo el living buscando a ciegas, el albañil solo rompe donde la cámara marcó el problema. Eso reduce el costo de albañilería considerablemente. El servicio arranca desde $150.000.`,
       [
         { q: "¿Qué problemas detecta la cámara de inspección?", a: "Detecta hundimientos del terreno, intrusión severa de raíces, fracturas a lo largo del encastre y objetos encallados." },
         { q: "¿Cuándo conviene hacer una video inspección?", a: "Cuando padecés destapaciones recurrentes mes a mes, garantizando que existe un daño estructural que debe visualizarse de raíz." },

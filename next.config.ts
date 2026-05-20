@@ -197,7 +197,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/blog/video-inspeccion-saber-cano-roto-sin-romper',
-        destination: '/blog/video-inspeccion-canerias-como-funciona',
+        destination: '/video-inspeccion-canerias',
+        permanent: true,
+      },
+      {
+        source: '/blog/video-inspeccion-canerias-como-funciona',
+        destination: '/video-inspeccion-canerias',
         permanent: true,
       }
     ];
