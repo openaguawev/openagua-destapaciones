@@ -9,6 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         '/wp-admin/',
         '/wp-content/',
         '/wp-includes/',
+        '/wp-*.php',
         '/category/',
         '/tag/',
         '/author/',

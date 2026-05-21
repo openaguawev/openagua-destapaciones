@@ -5,6 +5,12 @@ const nextConfig: NextConfig = {
   trailingSlash: false,
   async redirects() {
     return [
+      { source: '/destapaciones-en-la-ferrere', destination: '/zonas/zona-oeste', permanent: true },
+      { source: '/destapaciones-en-la-ferrere/', destination: '/zonas/zona-oeste', permanent: true },
+      { source: '/prevencion-obstrucciones-cloacas-pluviales', destination: '/blog/diferencias-canerias-cloacales-pluviales', permanent: true },
+      { source: '/prevencion-obstrucciones-cloacas-pluviales/', destination: '/blog/diferencias-canerias-cloacales-pluviales', permanent: true },
+      { source: '/desagotes', destination: '/desagote-sotanos', permanent: true },
+      { source: '/desagotes/', destination: '/desagote-sotanos', permanent: true },
       { source: '/blog/mantenimiento-preventivo-edificios-caba', destination: '/blog/destapaciones-consorcios-administradores', permanent: true },
       { source: '/blog/resorte-vs-hidrojet-destapacion', destination: '/blog/resorte-vs-hidrojet-cual-es-mejor', permanent: true },
       { source: '/blog/cocina-huele-a-cloaca', destination: '/blog/por-que-cocina-huele-a-cloaca', permanent: true },
