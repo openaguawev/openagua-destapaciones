@@ -5,6 +5,12 @@ const nextConfig: NextConfig = {
   trailingSlash: false,
   async redirects() {
     return [
+      { source: '/blog/mantenimiento-preventivo-edificios-caba', destination: '/blog/destapaciones-consorcios-administradores', permanent: true },
+      { source: '/blog/resorte-vs-hidrojet-destapacion', destination: '/blog/resorte-vs-hidrojet-cual-es-mejor', permanent: true },
+      { source: '/blog/cocina-huele-a-cloaca', destination: '/blog/por-que-cocina-huele-a-cloaca', permanent: true },
+      { source: '/blog/grasa-canerias-agua-hirviendo', destination: '/blog/grasa-canerias-edificios-agua-hirviendo', permanent: true },
+      { source: '/destapaciones-de-pluviales', destination: '/destapaciones-pluviales', permanent: true },
+      { source: '/destapaciones-de-pluviales/', destination: '/destapaciones-pluviales', permanent: true },
       // URLs legacy de WordPress — resuelven en UN solo salto (evita cadena trailing-slash + legacyRedirect)
       {
         source: '/diferencias-canerias-cloacales-pluviales/',
