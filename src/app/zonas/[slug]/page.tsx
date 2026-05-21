@@ -74,7 +74,7 @@ const serviciosZona = [
   { href: '/destapaciones-cloacas', icon: '🚽', label: 'Destapación de Cloacas', sub: 'Urgencias y columnas de edificios' },
   { href: '/destapaciones-canerias', icon: '🔧', label: 'Destapación de Cañerías', sub: 'Cocina, baño y lavadero' },
   { href: '/destapaciones-hidrojet', icon: '💦', label: 'Destapación con Hidrojet', sub: 'Limpieza profunda a alta presión' },
-  { href: '/servicios/video-inspeccion', icon: '📹', label: 'Video Inspección', sub: 'Diagnóstico sin romper' },
+  { href: '/video-inspeccion-canerias', icon: '📹', label: 'Video Inspección', sub: 'Diagnóstico sin romper' },
 ];
 
 const imagenesHeroZona: Record<string, { src: string; alt: string }> = {
