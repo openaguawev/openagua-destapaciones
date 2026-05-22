@@ -18,8 +18,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.destapacionesopenagua.com.ar'),
-  title: 'Openagua | Destapaciones de cañerías en CABA y GBA',
-  description: 'Destapaciones de cañerías en CABA y GBA con atención profesional y soluciones reales. Diagnóstico claro y sin romper. Llamanos al 11 5179-7649.',
+  title: 'Destapaciones en CABA y GBA | Openagua — Más de 10 años',
+  description: 'Destapaciones de cloacas, cañerías e hidrojet en CABA y GBA. Más de 10 años de experiencia. 332 reseñas con 4.9★. Sin romper pisos. ☎ 11 5179-7649.',
   icons: {
     icon: [
       { url: '/img/favicon16.png?v=5', sizes: '16x16', type: 'image/png' },
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json?v=5',
   openGraph: {
-    title: 'Openagua | Destapaciones de cañerías en CABA y GBA',
-    description: 'Destapaciones de cañerías en CABA y GBA con atención profesional y soluciones reales. Diagnóstico claro y sin romper. Llamanos al 11 5179-7649.',
+    title: 'Destapaciones en CABA y GBA | Openagua — Más de 10 años',
+    description: 'Destapaciones de cloacas, cañerías e hidrojet en CABA y GBA. Más de 10 años de experiencia. 332 reseñas con 4.9★. Sin romper pisos. ☎ 11 5179-7649.',
     url: 'https://www.destapacionesopenagua.com.ar',
     siteName: 'Openagua',
     images: [
@@ -50,8 +50,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Openagua | Destapaciones de cañerías en CABA y GBA',
-    description: 'Destapaciones de cañerías en CABA y GBA con atención profesional y soluciones reales. Diagnóstico claro y sin romper. Llamanos al 11 5179-7649.',
+    title: 'Destapaciones en CABA y GBA | Openagua — Más de 10 años',
+    description: 'Destapaciones de cloacas, cañerías e hidrojet en CABA y GBA. Más de 10 años de experiencia. 332 reseñas con 4.9★. Sin romper pisos. ☎ 11 5179-7649.',
     images: ['https://www.destapacionesopenagua.com.ar/img/home.jpg'],
   },
 };
