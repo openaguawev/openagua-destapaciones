@@ -36,7 +36,19 @@ export async function generateMetadata({ params }: Props) {
     `Destapaciones en ${barrio.name} para hogares, comercios y consorcios. Sin romper pisos. Más de 332 reseñas con 4.9★. ☎ 11 5179-7649`,
   ];
 
-  const seoTitle = `Destapaciones en ${barrio.name} | CABA y GBA`;
+  const titleMap: Record<string, string> = {
+    'destapaciones-belgrano': 'Destapaciones en Belgrano | Cloacas y Cañerías CABA',
+    'destapaciones-palermo': 'Destapaciones en Palermo | Cloacas e Hidrojet CABA',
+    'destapaciones-san-isidro': 'Destapaciones en San Isidro | Zona Norte GBA',
+    'destapaciones-avellaneda': 'Destapaciones en Avellaneda | Zona Sur GBA',
+    'destapaciones-zona-norte': 'Destapaciones Zona Norte GBA | Openagua',
+    'destapaciones-caballito': 'Destapaciones en Caballito | Cloacas y Cañerías',
+    'destapaciones-flores': 'Destapaciones en Flores | Cloacas y Cañerías CABA',
+    'destapaciones-ramos-mejia': 'Destapaciones en Ramos Mejía | Zona Oeste GBA',
+    'destapaciones-lomas-de-zamora': 'Destapaciones en Lomas de Zamora | Zona Sur GBA',
+    'destapaciones-quilmes': 'Destapaciones en Quilmes | Zona Sur GBA',
+  };
+  const seoTitle = titleMap[barrio.slug] || `Destapaciones en ${barrio.name} | CABA y GBA`;
   const seoDescription = descriptions[dHash % descriptions.length];
 
   return {
