@@ -28,12 +28,12 @@ export async function generateMetadata({ params }: Props) {
   // Descriptions variadas por hash del nombre
   const dHash = barrio.name.split('').reduce((a, c) => a + c.charCodeAt(0), 0);
   const descriptions = [
-    `¿Necesitás destapaciones en ${barrio.name}? Resolvemos cloacas, cañerías y pluviales hoy mismo. Sin romper. ☎ 11 5179-7649`,
-    `Servicio de destapaciones en ${barrio.name} con sonda e hidrojet. Llegamos en el día. +332 clientes satisfechos. ☎ 11 5179-7649`,
-    `Destapaciones urgentes en ${barrio.name}. Cloacas, cañerías y pluviales sin romper pisos. Presupuesto sin cargo. ☎ 11 5179-7649`,
-    `Destapamos cloacas y cañerías en ${barrio.name}. Diagnóstico preciso, trabajo limpio y garantizado. ☎ 11 5179-7649`,
-    `Problemas de cloaca en ${barrio.name}? Solucionamos en el día con máquinas profesionales. más de 10 años de experiencia. ☎ 11 5179-7649`,
-    `Destapaciones en ${barrio.name} para casas, departamentos y edificios. Atención inmediata. Sin romper. ☎ 11 5179-7649`,
+    `Destapaciones en ${barrio.name}: cloacas, cañerías y pluviales con sonda e hidrojet. Más de 10 años de experiencia. ☎ 11 5179-7649`,
+    `Servicio de destapaciones en ${barrio.name} para casas, departamentos y edificios. Diagnóstico preciso sin romper pisos. ☎ 11 5179-7649`,
+    `Destapaciones en ${barrio.name} con máquinas profesionales. Cloacas, cañerías e hidrojet. Más de 332 reseñas con 4.9★. ☎ 11 5179-7649`,
+    `Destapamos cloacas y cañerías en ${barrio.name}. Diagnóstico preciso y trabajo limpio. Más de 10 años en CABA y GBA. ☎ 11 5179-7649`,
+    `¿Problemas de cloaca en ${barrio.name}? Trabajamos con sonda electromecánica e hidrojet. Más de 10 años de experiencia. ☎ 11 5179-7649`,
+    `Destapaciones en ${barrio.name} para hogares, comercios y consorcios. Sin romper pisos. Más de 332 reseñas con 4.9★. ☎ 11 5179-7649`,
   ];
 
   const seoTitle = `Destapaciones en ${barrio.name} | CABA y GBA`;

@@ -19,7 +19,7 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
   'destapaciones-palermo': {
     nombre: 'Palermo',
     tipo: 'barrio gastronómico y residencial de CABA con alta rotación de locales y edificios modernos',
-    problemas: ['grasa industrial en bajadas de cocina comercial', 'desagües colapsados en subsuelos', 'columnas cloacales con incrustaciones de cal'],
+    problemas: ['grasa acumulada en bajadas de restaurantes y bares', 'cañerías antiguas en edificios de pre-guerra', 'obstrucciones en desagües de patios internos de PH'],
     propiedades: ['torres residenciales modernas', 'casas antiguas con instalaciones originales', 'locales con cocina industrial'],
   },
   'destapaciones-recoleta': {
