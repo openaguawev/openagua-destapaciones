@@ -5,6 +5,16 @@ const nextConfig: NextConfig = {
   trailingSlash: false,
   async redirects() {
     return [
+      { source: '/destapaciones-sourigues', destination: '/zonas/zona-sur', permanent: true },
+      { source: '/destapaciones-sourigues/', destination: '/zonas/zona-sur', permanent: true },
+      { source: '/destapaciones-bosques', destination: '/zonas/zona-sur', permanent: true },
+      { source: '/destapaciones-bosques/', destination: '/zonas/zona-sur', permanent: true },
+      { source: '/destapaciones-de-terrazas', destination: '/destapaciones-pluviales', permanent: true },
+      { source: '/destapaciones-de-terrazas/', destination: '/destapaciones-pluviales', permanent: true },
+      { source: '/destapaciones-inodoros', destination: '/destapaciones-canerias', permanent: true },
+      { source: '/destapaciones-inodoros/', destination: '/destapaciones-canerias', permanent: true },
+      { source: '/limpieza-columnas-edificios', destination: '/destapaciones-cloacas', permanent: true },
+      { source: '/limpieza-columnas-edificios/', destination: '/destapaciones-cloacas', permanent: true },
       { source: '/destapaciones-en-la-ferrere', destination: '/zonas/zona-oeste', permanent: true },
       { source: '/destapaciones-en-la-ferrere/', destination: '/zonas/zona-oeste', permanent: true },
       { source: '/prevencion-obstrucciones-cloacas-pluviales', destination: '/blog/diferencias-canerias-cloacales-pluviales', permanent: true },
