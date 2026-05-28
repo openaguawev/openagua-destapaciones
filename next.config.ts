@@ -5,6 +5,8 @@ const nextConfig: NextConfig = {
   trailingSlash: false,
   async redirects() {
     return [
+      { source: '/servicios/destapaciones', destination: '/destapaciones-canerias', permanent: true },
+      { source: '/servicios/destapaciones/', destination: '/destapaciones-canerias', permanent: true },
       { source: '/destapaciones-sourigues', destination: '/zonas/zona-sur', permanent: true },
       { source: '/destapaciones-sourigues/', destination: '/zonas/zona-sur', permanent: true },
       { source: '/destapaciones-bosques', destination: '/zonas/zona-sur', permanent: true },
