@@ -1461,6 +1461,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Sótano con agua siendo desagotado con bomba profesional en GBA',
       excerpt: '¿Se inundó el sótano? Seguí esta guía para actuar sin cometer errores costosos, qué evitar y cómo prevenir que vuelva a pasar. ¡Consultanos!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Si el sótano se inunda, lo primero es cortar la electricidad del sector desde el tablero antes de entrar — agua y corriente es una combinación mortal. Luego evaluar el origen: si el agua viene con olor a cloaca hay una cañería rota, si viene limpia es napa freática o pluvial. Con más de 10cm de agua se necesitan bombas sumergibles profesionales.</p>
 
         <p>Bajar al sótano y encontrarlo con agua es una situación que cualquier propietario en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong> querría evitar. Sin embargo, es más común de lo que parece, especialmente después de lluvias intensas o cuando las napas freáticas suben en épocas de mucha humedad. La buena noticia es que, si actuás con orden y sin apresurarte, el daño puede limitarse considerablemente.</p>
 
@@ -1548,6 +1549,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Diferentes diámetros de caños PVC para instalaciones sanitarias',
       excerpt: '¿Sabés qué diámetro de caño corresponde a cada artefacto? Guía técnica sobre los tamaños más usados en Argentina y por qué importa conocerlos.',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Los diámetros estándar en Argentina son: 40mm para ducha, lavatorio y bidet; 50mm para pileta de cocina y lavarropas; 110mm para inodoro y cloaca principal; 160mm para el colector general hacia la red pública. Conectar el inodoro a un caño de 50mm en lugar de 110mm genera tapones frecuentes e inevitables.</p>
 
         <p>Cuando llaman a Openagua por un caño tapado, una de las primeras preguntas que hacemos es: ¿sabés qué diámetro tiene ese caño? La mayoría de los propietarios en <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong> no lo saben, y es completamente normal. Sin embargo, entender los diámetros de la instalación sanitaria es una herramienta muy útil para comunicarse mejor con el técnico, entender por qué algunos caños se tapan más seguido que otros, y tomar mejores decisiones de mantenimiento.</p>
 
@@ -1632,6 +1634,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Edificio de consorcio en CABA donde se realizan trabajos de destapación',
       excerpt: 'Todo lo que un administrador necesita saber sobre destapaciones en edificios. Responsabilidades, mantenimiento y cómo evitar problemas costosos.',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> En un edificio, si el tapón está en el ramal horizontal dentro de tu unidad lo pagás vos. Si está en la columna vertical que recorre todos los pisos, lo paga el consorcio con expensas. El técnico determina la responsabilidad midiendo la longitud de sonda introducida hasta encontrar el tapón y emite un certificado del diagnóstico.</p>
 
         <p>Administrar un edificio en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong> implica lidiar con una cantidad de imprevistos, pero pocos generan tanta urgencia y conflicto vecinal como los problemas de desagüe. Una columna tapada a medianoche, un departamento de planta baja inundado con aguas negras o un olor permanente en el hall de entrada son situaciones que pueden evitarse en buena medida con información correcta y un plan de mantenimiento adecuado.</p>
 
@@ -1708,6 +1711,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Flexible de cañería bajo mesada siendo reemplazado',
       excerpt: '¿Un flexible de cañería gotea debajo de la mesada o en el baño? Guía paso a paso para cambiarlo en casa y cuándo llamar a un plomero. ¡Consultanos!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Para cambiar un flexible de cañería: cerrar la llave de paso, desconectar el flexible viejo con llave inglesa girando en sentido antihorario, colocar el nuevo enroscando a mano primero y luego con llave sin pasarse. Los flexibles de acero sobre PTFE duran 8-12 años. Si el flexible tiene más de 8 años conviene cambiarlo preventivamente aunque no gotee.</p>
 
         <p>El flexible es una de las piezas más pequeñas y más ignoradas de la instalación de agua de un hogar en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong>. Sin embargo, cuando falla, lo hace de manera muy visible: una gotera bajo la mesada, una mancha de humedad en la pared del baño, o directamente un chorro de agua que inunda el mueble de abajo. La buena noticia es que cambiar un flexible es uno de los trabajos de plomería más accesibles para hacer por cuenta propia, siempre que se cuente con las herramientas correctas y se sigan los pasos en el orden adecuado.</p>
 
@@ -1785,6 +1789,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Canilla con goteo siendo reparada cambiando el cuerito',
       excerpt: '¿La canilla gotea y no para? Aprendé a cambiar el cuerito vos mismo con herramientas básicas, ahorrá agua y evitá gastar de más. ¡Sin llamar al plomero!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Para cambiar el cuerito de una canilla: cerrar la llave de paso, retirar la tapa decorativa y el tornillo central, sacar la manija, desatornillar el vástago con llave inglesa y reemplazar el cuerito en la punta. El cuerito cuesta muy poco en cualquier ferretería. Si la canilla sigue goteando después del cambio, el problema es el asiento o el vástago.</p>
 
         <p>La canilla que gotea es uno de esos problemas domésticos que, por pequeños, tendemos a ignorar. Sin embargo, una canilla que gotea una gota por segundo desperdicia unos 30 litros de agua por día, lo que en un mes representa casi 1.000 litros. Más allá del impacto en la factura del agua, ese goteo constante es también una señal de que el sistema necesita atención. La buena noticia es que en la mayoría de los casos, la solución es cambiar el cuerito: una pieza que cuesta unos pocos pesos y se cambia en menos de 20 minutos.</p>
 
