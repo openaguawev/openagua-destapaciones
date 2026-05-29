@@ -341,6 +341,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Comparativa técnica entre máquina de resortes y sistema hidrojet en CABA - Openagua',
       excerpt: '¿Resorte o hidrojet para destapar cañerías? Comparamos ambas técnicas, cuándo usar cada una y cuál conviene mejor para tu caso. ¡Consultanos!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> El resorte es mejor para tapones blandos de papel, trapos o textiles. El hidrojet es mejor para grasa acumulada, raíces y limpieza profunda de paredes internas. Para cañerías viejas o delicadas, el hidrojet es más seguro porque no tiene metal rotativo que pueda perforar el caño.</p>
 
         <p>La disyuntiva constante al momento de solicitar una reparación técnica profunda en <strong>CABA</strong> o en el extenso cordón del <strong>Gran Buenos Aires</strong> se resume casi siempre a elegir entre dos opciones antagónicas: la tradicional herramienta manual mecanizada (resorte rotativo) y la tecnología de punta representada por la bomba hipertensora de agua. Frente a una cañería estancada, miles de propietarios se preguntan cuál es la metodología que garantiza una solución real sin arruinar su propiedad en el proceso.</p>
         
@@ -424,6 +425,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Video inspección de cañerías rotas sin romper el piso en CABA y GBA - Openagua',
       excerpt: 'Descubrí cómo la video inspección cañerías detecta roturas sin romper pisos. Ahorrá dinero y molestias. ¡Solicitá hoy diagnóstico en CABA y GBA!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> La video inspección de cañerías consiste en introducir una cámara HD con luces LED por la boca de inspección para ver el interior del caño en tiempo real. Detecta roturas, raíces, contrapendientes y objetos encallados sin romper pisos ni paredes. El técnico marca el punto exacto del problema desde la superficie con un localizador de radiofrecuencia.</p>
         <p>Romper una docena de baldosas carísimas de un living o excavar ciegamente buscando una pérdida es una tragedia que ningún vecino de <strong>CABA</strong> ni del <strong>Gran Buenos Aires</strong> debería sufrir jamás. En el pasado, diagnosticar problemas subterráneos era sinónimo de destrucción y gastos inmensos. Hoy, la realidad ha cambiado drásticamente.</p>
         
         <p>Actualmente existe tecnología avanzada de <a href="/video-inspeccion-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">video inspección localizadora</a> que escanea tus metros de cloaca por dentro. Esta técnica no invasiva ahorra una verdadera fortuna en refacciones innecesarias y dolores de cabeza, permitiendo ver exactamente qué sucede en la oscuridad de tus cañerías.</p>
@@ -496,6 +498,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Cómo destapar un inodoro rebalsado en CABA y GBA',
       excerpt: '¿El inodoro rebalsa y el agua no baja? Seguí estos pasos de emergencia para evitar una inundación sanitaria en tu baño. ¡Escribinos por WhatsApp!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Si el inodoro rebalsa, lo primero es cerrar la llave de paso para que no entre más agua al tanque. No tirar la cadena de nuevo. Si el agua no baja en 10 minutos con la sopapa, el tapón está en la cañería principal y necesita sonda profesional. No usar químicos — con el agua estancada son peligrosos.</p>
 
         <p>Ver que el nivel de agua turbia sube peligrosamente en lugar de bajar después de tirar la cadena es, sin lugar a dudas, una de las emergencias domésticas más desesperantes que puede vivir una familia en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong>. Cuando el inodoro rebalsa, el pánico inicial suele llevar a cometer errores impulsivos que, lejos de solucionar el atasco, terminan empeorando el desastre sanitario en el piso del baño. La clave para mitigar los daños y recuperar el control es actuar con rapidez, conocimiento y, sobre todo, seguridad técnica.</p>
         
@@ -725,6 +728,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Limpieza de rejilla de ducha obstruida por cabellos y jabón - Openagua',
       excerpt: '¿Terminás de bañarte con el agua por los tobillos? Descubrí por qué la ducha desagota lento y cómo limpiar el drenaje de forma efectiva. ¡Consultanos!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> La ducha desagota lento casi siempre por acumulación de pelos y jabón en el sifón o en los primeros metros del caño. La solución preventiva es retirar los pelos manualmente de la rejilla después de cada ducha. Si ya hay tapón, se puede desmontar el sifón y limpiarlo a mano. Los químicos no cortan pelos y pueden dañar los caños.</p>
 
         <p>Sentir que el agua caliente se estanca alrededor de tus tobillos mientras intentás disfrutar de una ducha relajante es una señal de alarma que no debe ignorarse. Este problema de drenaje, uno de los reclamos domiciliarios más frecuentes tanto en modernos departamentos de <strong>CABA</strong> como en antiguas casonas del <strong>Gran Buenos Aires</strong>, suele comenzar de manera silenciosa y empeorar semana a semana. Lo que al principio es solo una leve acumulación que tarda un par de minutos en irse, pronto se convierte en una verdadera pileta de aguas grises estancadas que dejan el piso de tu receptáculo de ducha cubierto de una película resbaladiza y sucia.</p>
         
@@ -805,6 +809,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Destapación de inodoro con máquina de sonda electromecánica - Openagua',
       excerpt: 'Guía paso a paso para destapar el inodoro en casa usando métodos seguros. Cuándo podés hacerlo vos y cuándo necesitás un profesional. ¡Escribinos!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Para destapar un inodoro usar una sopapa tipo fuelle con la bacha llena de agua — no una sopapa plana. Sellar el orificio y bombear con movimiento de succión rítmica 15-20 veces. Si no cede, el tapón es sólido o está en la cañería subterránea y necesita sonda profesional. Nunca usar ácido muriático ni agua hirviendo.</p>
 
         <p>Encontrarse con el inodoro tapado es, indiscutiblemente, una de las situaciones domésticas más estresantes y paralizantes que cualquier propietario o inquilino en <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong> puede experimentar. El baño queda automáticamente inhabilitado, el olor comienza a esparcirse por el pasillo y el pánico a que todo se desborde al piso genera una ansiedad tremenda. Sin embargo, no todos los bloqueos son catástrofes irreversibles; entender la mecánica del atasco es el primer paso para no empeorar las cosas.</p>
         
