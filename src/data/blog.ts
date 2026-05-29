@@ -178,6 +178,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Grasa petrificada en cañerías de edificios de zona norte - Openagua',
       excerpt: '¿Grasa acumulada en las bajadas del edificio? Conocé el método definitivo para limpiar cañerías en consorcios sin dañar los caños. ¡Llamanos!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> El agua hirviendo no sirve para destapar grasa en edificios — al enfriarse en los pisos inferiores la grasa se solidifica peor y forma un tapón más duro. La única solución efectiva para columnas con grasa acumulada es el hidrojet industrial, que barre perimetralmente toda la pared del caño a presión.</p>
 
         <p>Uno de los mitos urbanos más peligrosos y arraigados en el mantenimiento de consorcios de <strong>CABA</strong> y el <strong>Gran Buenos Aires</strong> es la costumbre de volcar ollas de agua hirviendo por las cañerías para destapar bloqueos de grasa. Cientos de edificios, desde enormes torres en Belgrano hasta antiguos complejos en Vicente López y Recoleta, cometen este mismo error sistemático impulsados por consejos de pasillo o remedios caseros antiguos. Se le pide a todos los inquilinos de la columna que tiren agua hirviendo al mismo tiempo, bajo la falsa premisa de que el calor extremo logrará derretir el tapón y devolverle la salud a la red troncal.</p>
         
@@ -262,6 +263,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Mantenimiento preventivo de columnas en consorcios de Gran Buenos Aires - Openagua',
       excerpt: '¿La columna del edificio está tapada? Conocé las 5 señales clave que todo administrador debe identificar antes de que haya una inundación. ¡Llamanos!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Las 5 señales de que la columna del edificio está por taparse son: gorgoteos en varios pisos a la vez, drenaje lento colectivo, agua turbia que sube por el inodoro de planta baja sin haberlo usado, olor a metano crónico en el patio, y cámara de inspección rebalsada. Si aparecen 2 o más señales juntas, hay que actuar antes de que haya desborde.</p>
 
         <p>Para cualquier administrador de consorcios o encargado de edificio en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong>, recibir un llamado a las tres de la madrugada avisando que un departamento de la planta baja se está inundando con aguas negras es el peor escenario posible. Esta crisis, que suele desencadenar fuertes discusiones vecinales y gastos exorbitantes no planificados, rara vez ocurre de un minuto para el otro. Evitar este desborde catastrófico y actuar de manera preventiva ahorra costos altísimos tanto a la administración general como al bolsillo particular de cada copropietario.</p>
         
@@ -578,6 +580,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Destapación de rejilla de patio inundada tras tormenta - Openagua',
       excerpt: '¿La rejilla del patio se tapa con cada lluvia? No esperés a la próxima tormenta: descubrí cómo mantener tus desagües pluviales libres. ¡Consultanos!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> La rejilla del patio se tapa por acumulación de hojas, tierra y barro que se compactan en el codo subterráneo. La solución preventiva es limpiarla dos veces al año antes de la temporada de lluvias. Si ya está tapada con barro duro, necesita hidrojet — las mangueras caseras solo compactan más el barro.</p>
 
         <p>Una rejilla de patio colapsada durante una tormenta de verano es sinónimo de pánico asegurado. Con los repentinos y brutales temporales que azotan frecuentemente a <strong>CABA</strong> y gran parte de <strong>Zona Sur, Norte y Oeste</strong>, miles de propiedades sufren el rápido anegamiento de sus patios, terrazas y pasillos exteriores. Ver cómo el agua de lluvia deja de escurrir, se acumula velozmente y comienza a amenazar con ingresar por debajo de las puertas de la cocina o el living, requiere de una acción proactiva antes de que los daños a la mampostería y los muebles sean irreparables.</p>
         
@@ -650,6 +653,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Inspección profesional de cañerías en edificio',
       excerpt: '¿El problema cloacal es de tu depto o de la columna del edificio? Aprendé a distinguirlo y quién paga el arreglo en el consorcio. ¡Llamanos!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Si el agua sucia sube por tu rejilla sin que hayas abierto ninguna canilla, el problema es de la columna del edificio y lo paga el consorcio. Si solo se tapa tu bacha o tu inodoro cuando vos los usás, el problema es de tu ramal privado y lo pagás vos. La diferencia la determina la longitud de sonda que el técnico introduce para encontrar el tapón.</p>
 
         <p>Vivir en un edificio de propiedad horizontal en <strong>CABA</strong> o en los grandes centros urbanos del <strong>Gran Buenos Aires</strong> significa compartir de manera invisible una inmensa y compleja red de infraestructura sanitaria. Cuando el agua sucia asoma por la rejilla del baño o la cocina se inunda repentinamente, la angustia de la emergencia casi siempre viene acompañada por una inevitable y amarga discusión vecinal: ¿quién tiene la culpa de esto y, lo más importante, quién debe pagar la abultada factura del plomero, el propietario afectado o la administración del consorcio?</p>
         
@@ -1149,6 +1153,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Raíces obstruyendo una cañería cloacal detectadas por video inspección',
       excerpt: '¿Cañerías que se tapan siempre en el mismo punto? Podría ser raíces. Descubrí los síntomas y la solución definitiva con video inspección. ¡Llamanos!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Las raíces en cañerías se detectan por drenaje lento progresivo, gorgoteos constantes y retroceso de agua entre artefactos. La confirmación definitiva es con video inspección. La solución es hidrojet con boquillas corta-raíces que talan la intrusión sin dañar el caño. El resorte solo abre un agujero temporal — las raíces vuelven a crecer.</p>
         <p>En barrios con arboledas frondosas como <strong>Palermo</strong>, <strong>Belgrano</strong>, <strong>Devoto</strong> o en las quintas de <strong>Zona Norte</strong>, el problema de las raíces en las cañerías es mucho más común de lo que se cree. Lo que comienza como un drenaje apenas lento puede terminar en un colapso total del sistema cloacal o pluvial, con consecuencias costosas tanto para la estructura como para la higiene del hogar.</p>
         
         <p>Las raíces tienen una capacidad asombrosa para detectar la humedad y los nutrientes. Incluso la fisura más microscópica en un caño de cemento antiguo o una unión mal sellada en PVC moderno es suficiente para que una raíz capilar ingrese. Una vez adentro, la raíz encuentra un ambiente ideal: agua constante, temperatura estable y nutrientes en abundancia. Lo que sigue es un crecimiento exponencial que termina por estrangular el conducto.</p>
