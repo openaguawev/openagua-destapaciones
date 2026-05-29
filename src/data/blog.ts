@@ -44,6 +44,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Técnico realizando una destapacion de cloaca con máquina profesional en CABA',
       excerpt: '¿Tenés problemas en tu red sanitaria? Te contamos cuánto cuesta una destapación de cloaca en 2026, los factores de precio y qué tener en cuenta.',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Una destapación de cloaca cuesta desde $180.000 en CABA y GBA. El precio varía según la profundidad del tapón, el tipo de obstrucción y la distancia. Si hay raíces o el trabajo se complica, el técnico avisa antes de continuar. Se cobra por trabajo, no por metro de sonda.</p>
         <p>Cuando el baño rebalsa o el patio se inunda con olores insoportables, la primera pregunta que se nos viene a la cabeza, además del estrés del momento, es: <em>¿cuánto me va a salir este arreglo?</em> Una <strong>destapacion de cloaca</strong> no es el tipo de servicio que uno planifica en el presupuesto familiar, pero cuando toca, toca.</p>
 
         <p>En este artículo, desde la experiencia de estar todos los días en la calle viendo caños tapados en todo CABA y el conurbano, te vamos a contar los precios reales que se manejan en el rubro, qué factores te pueden encarecer el trabajo y por qué a veces lo barato sale muy caro.</p>
@@ -92,6 +93,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Destapación de cocina y solución a olores de cloaca en CABA - Openagua',
       excerpt: '¿Tu cocina huele a cloaca y no sabés por qué? Descubrí las causas más frecuentes del olor y cómo eliminar el problema de raíz. ¡Consultanos!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> La cocina huele a cloaca principalmente por tres causas: el sifón seco o tapado debajo de la bacha, grasa acumulada en los primeros metros del caño, o una falla en el cierre hidráulico. La solución más común es limpiar el sifón y verter agua caliente con detergente. Si el olor persiste, hay una obstrucción más profunda que requiere sonda profesional.</p>
 
         <p>Sentir un fuerte olor a alcantarilla mientras cocinás o lavas los platos es una de las situaciones más desagradables que puede experimentar un hogar. Esta pesadilla, recurrente en miles de casas y departamentos a lo largo de todo <strong>CABA</strong> (especialmente en barrios de construcciones antiguas como Palermo, Belgrano o Caballito) y el <strong>Gran Buenos Aires</strong>, no es un simple problema de limpieza superficial que se solucione con desodorantes de ambiente. Detrás de ese tufo insoportable que inunda tu cocina se esconde una falla técnica o un bloqueo severo en tu red de desagüe primario, y realizar <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cañerías</a> profesionales suele ser el paso definitivo para recuperar la salubridad y la normalidad en tu vivienda.</p>
         
@@ -882,6 +884,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Destapación de rejilla bloqueada en patio o terraza - Openagua',
       excerpt: '¿Hojas, tierra o cabellos bloquean tu rejilla? Seguí estos pasos para destaparla y evitar inundaciones en CABA y GBA. ¡Escribinos por WhatsApp!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Para destapar una rejilla de baño o patio hay que retirar la tapa, sacar el cono plástico interior y extraer manualmente los pelos y residuos acumulados. Si el tapón está más profundo en la cañería, se necesita sonda electromecánica o hidrojet. Los químicos no sirven para tapones de pelo y pueden dañar los caños de PVC.</p>
 
         <p>Tener una o varias rejillas tapadas en tu hogar es una de esas molestias cotidianas que comienzan como un inconveniente menor y pueden transformarse en una urgencia sanitaria en cuestión de horas. Ya sea la pequeña rejilla metálica del baño que no deja bajar el agua de la ducha, o la gran boca de tormenta del jardín que amenaza con inundarte en <strong>CABA</strong> o el <strong>Gran Buenos Aires</strong> ante la primera lluvia, este problema indica que la red de desagües superficiales o profundos está saturada. Ignorarlo no es una opción si querés evitar daños graves en la mampostería.</p>
         
