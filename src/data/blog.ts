@@ -1843,6 +1843,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Sifón bajo mesada de cocina siendo limpiado para eliminar olores',
       excerpt: '¿La cocina huele raro o el agua baja lento? El sifón puede estar sucio. Aprendé a limpiarlo en 15 minutos con herramientas básicas. ¡Consultanos!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Para limpiar el sifón del desagüe de cocina: poner un balde debajo, aflojar las dos roscas del sifón girando en sentido antihorario, vaciarlo y limpiar toda la mugre acumulada con un cepillo. Volver a armarlo asegurando que las juntas de goma queden bien asentadas. Hacerlo cada 6 meses evita olores y tapones.</p>
 
         <p>Si notás que la cocina empieza a oler raro —ese leve tufo a humedad o a alcantarilla que aparece cuando lavás los platos— la primera pieza que hay que revisar es el sifón. Este componente del desagüe, ubicado debajo de la bacha, es el responsable directo de bloquear los gases que vienen de la red cloacal. Cuando está sucio o mal armado, los olores se cuelan hacia el interior de la cocina.</p>
 
@@ -1933,6 +1934,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Cómo cambiar el vástago de la canilla paso a paso - Herramientas',
       excerpt: 'Aprendé cómo cambiar el vástago de tu canilla paso a paso. Cuándo es seguro hacerlo vos mismo y cuándo llamar a un plomero profesional. ¡Consultanos!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Para cambiar el vástago de una canilla: cerrar la llave de paso, retirar la tapa decorativa y el tornillo central, sacar la manija, desatornillar el vástago con llave francesa y llevar el vástago viejo a la ferretería para conseguir el repuesto exacto. Las canillas monocomando no tienen vástago — tienen cartucho cerámico.</p>
         <p>En el día a día de un hogar argentino, uno de los problemas de plomería más frecuentes y molestos es el goteo constante de una canilla. Ese sonido incesante no solo afecta el descanso, sino que representa un desperdicio altísimo de agua a lo largo del mes y un gasto innecesario en tu factura. Muchas personas piensan que deben reemplazar la grifería por completo cuando ven este problema. Sin embargo, en la enorme mayoría de los casos, el culpable es una pieza pequeña e indispensable conocida como vástago. Entender qué es esta pieza, cómo funciona y cómo cambiarla te va a ahorrar dolores de cabeza.</p>
 
         <p>A lo largo de este extenso artículo, te explicaremos paso a paso todo lo que necesitás saber para hacer el reemplazo del vástago de la canilla en tu cocina, baño o lavadero. Te contaremos qué herramientas vas a necesitar, los tipos de mecanismos que hay en el mercado y algunos trucos para que el trabajo quede perfecto. Pero tené mucho cuidado: como expertos con más de 10 años de trayectoria, sabemos que meter mano en las instalaciones antiguas tiene sus riesgos. Por eso también te explicaremos cuándo es el momento de frenar y buscar ayuda profesional, ya que forzar una tuerca atascada puede terminar en un desastre y, lo más importante, siempre cobramos un precio por trabajo no por metro, dándote previsibilidad total en los costos. Siempre avisamos antes si se complica la tarea para que estés al tanto.</p>
@@ -2169,6 +2171,7 @@ export const getArticulos = (): Articulo[] => {
     alt: 'Diferencia de desagües entre cañerías para lluvias en techo',
     excerpt: '¿Dudas entre caños pluviales o fluviales en tu casa? Aprendé las diferencias reales para evitar inundaciones. Si se tapan, contactanos.',
     content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> El término correcto es caño pluvial, no fluvial. Pluvial viene de lluvia — son los caños que llevan el agua de lluvia desde techos y patios al cordón de la calle. Fluvial hace referencia a ríos y no existe en plomería doméstica. Mezclar el sistema pluvial con el cloacal está prohibido por normativa.</p>
       <p>En este artículo te explicamos la diferencia entre caños pluviales o fluviales, un error muy común de nombre que se escucha a diario en las viviendas. Conocer sus diferencias reales es clave para mantener tus desagües sanos y evitar inundaciones molestas.</p>
 
       <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">Aclaración definitiva de conceptos: ¿Pluvial o Fluvial?</h2>
@@ -2250,6 +2253,7 @@ export const getArticulos = (): Articulo[] => {
     alt: 'Pantalla de alta definición HD visualizando el centro oscuro de una cañería obstruida por sarro y raíces',
     excerpt: 'Descubrí qué es una cámara de inspección cañerías y cómo ayuda a detectar roturas de forma exacta. Ahorrá dinero y evitá romper todo. ¡Consultanos!',
     content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Una cámara de inspección de cañerías es una sonda flexible con cámara HD y luces LED que se introduce por la boca de acceso para ver el interior del caño en tiempo real. Detecta roturas, raíces, obstrucciones y contrapendientes sin romper nada. Un transmisor de radiofrecuencia en el cabezal permite marcar el punto exacto del problema desde la superficie.</p>
       <p>Una cámara de inspección de cañerías es una de las herramientas más valiosas para resolver atascos y roturas sin tener que picar paredes ni pisos a ciegas. En esta guía te contamos qué es, cómo funciona esta tecnología y de qué manera te ayuda a ahorrar tiempo y dinero en plomería.</p>
 
       <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Qué es una cámara de inspección cañerías?</h2>
@@ -2309,6 +2313,7 @@ export const getArticulos = (): Articulo[] => {
     alt: 'Máquina desobstructora rotativa a resorte espiral limpiando cañerías',
     excerpt: '¿Querés saber cómo funciona una maquina destapa canerias profesional? Te explico las diferencias entre resortes e hidrojet. ¡Escribinos ahora!',
     content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Una máquina destapa cañerías profesional funciona con cables de acero flexibles que giran a alta velocidad triturando la obstrucción. Existen dos tipos: sonda rotativa de resortes para tapones sólidos y raíces, e hidrojet de alta presión para grasa acumulada y limpieza perimetral. La elección depende del tipo de obstrucción y el material del caño.</p>
       <p>Una máquina destapa cañerías profesional es la solución definitiva para eliminar los atascos más difíciles y rebeldes del hogar. En esta guía te explicamos cómo funciona, qué tipos de tecnologías existen y por qué superan por completo a los productos químicos tradicionales.</p>
 
       <h2 style="color:#0f172a;margin-bottom:1rem;font-size:1.5rem;">¿Qué es una máquina desobstructora y para qué sirve?</h2>
