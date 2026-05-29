@@ -974,6 +974,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Pileta de cocina tapada y llena de agua esperando ayuda técnica - Openagua',
       excerpt: '¿La bacha de la cocina no tira el agua? Conocé métodos caseros seguros para destaparla y cuándo es mejor llamar a un plomero profesional. ¡Consultanos!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Para destapar la pileta de cocina sin dañar los caños: primero probar con sopapa con agua en la bacha, luego desmontar y limpiar el sifón debajo de la mesada. Si el tapón está más profundo, usar sonda manual de ferretería con movimientos giratorios suaves. Nunca usar ácido muriático — derrite las uniones de PVC y no disuelve grasa dura.</p>
 
         <p>Que el agua sucia empiece a tardar cada vez más tiempo en irse de la bacha y termines viendo un lago nauseabundo estancado en medio de tus ollas sucias, es sin duda uno de los problemas cotidianos más molestos en cualquier hogar de <strong>CABA</strong> o el cordón residencial del <strong>Gran Buenos Aires</strong>. Cuando enfrentamos el desafío de destapar correctamente la pileta de cocina, el error más fatal es usar químicos abrasivos basados en consejos dudosos.</p>
         
@@ -1215,6 +1216,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Mugre y grasa acumulada tapando la pileta de cocina',
       excerpt: '¿Qué no debés tirar en la pileta de cocina? Conocé los 7 elementos que tapan cañerías, generan mal olor y te cuestan caro. ¡Evitá el problema!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Los 5 elementos que más tapan la pileta de cocina son: aceite y grasa animal, yerba mate y borra de café, arroz y pasta cocida, harina, y cáscaras de huevo. El aceite es el peor — se solidifica en el caño y atrapa todo lo demás. Nunca tirar aceite por la bacha, aunque sea poco.</p>
         <p>La cocina es el corazón de cualquier hogar en <strong>CABA</strong> y <strong>GBA</strong>, pero también es el lugar donde más abusamos de las cañerías. Muchas veces, por comodidad o desconocimiento, tratamos a la bacha de la cocina como si fuera un tacho de basura secundario. El problema es que las tuberías de desagüe no están diseñadas para transportar sólidos, grasas pesadas ni químicos agresivos.</p>
         
         <p>Una pileta tapada no solo es una molestia logística que nos impide lavar los platos; es un foco de bacterias y malos olores que pueden contaminar el ambiente donde preparamos nuestros alimentos. Evitar una <a href="/destapaciones-canerias" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapación de cañerías</a> de urgencia es posible si cambiamos algunos hábitos fundamentales.</p>
@@ -1267,6 +1269,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Cámara cloacal con tapa abierta mostrando inspección de cañerías',
       excerpt: '¿Sabés qué es una cámara cloacal y para qué sirve? Conocé su función y cómo detectar fallas antes de que colapsen tus desagües. ¡Consultanos!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> La cámara cloacal es un receptáculo de mampostería u hormigón que conecta los desagües internos de la casa con la red pública. Es el punto de acceso para limpiar y desobstruir la red. Se recomienda inspeccionarla una vez al año en casas familiares y cada 6 meses en edificios o locales con cocina.</p>
         <p>En el complejo mundo de las instalaciones sanitarias de <strong>CABA</strong> y <strong>GBA</strong>, existe un elemento fundamental que suele pasar desapercibido hasta que algo falla: la <strong>cámara cloacal</strong> o cámara de inspección. Este componente es el nexo vital entre los desagües internos de tu vivienda y la red pública de alcantarillado.</p>
         
         <p>Entender su funcionamiento no es solo una cuestión técnica; es una herramienta de prevención que puede ahorrarte miles de pesos en reparaciones de emergencia y evitarte momentos de estrés extremo por desbordes sanitarios. En <strong>Openagua</strong>, vemos a diario cómo un mantenimiento preventivo de la cámara puede extender por décadas la vida útil de toda la instalación.</p>
@@ -1322,6 +1325,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Producto químico ácido para destapar caños que puede dañar las cañerías',
       excerpt: 'Descubrí los peligros ocultos de los químicos agresivos y por qué la soda cáustica o el ácido muriático pueden ser el fin de tu instalación sanitaria.',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Los productos que no hay que usar para destapar caños son el ácido muriático, la soda cáustica y los líquidos destapacañerías en gel. Generan temperaturas de más de 80°C que derriten las uniones de PVC, emiten vapores tóxicos y si el tapón es de pelo o plástico no lo disuelven. La alternativa segura es la sopapa o desmontar el sifón.</p>
         <p>Frente a una pileta de cocina que no traga agua o un baño tapado, la desesperación suele llevarnos a la ferretería más cercana en busca de una "solución mágica". Sin embargo, lo que parece un remedio rápido en <strong>CABA</strong> y <strong>GBA</strong> puede terminar en una catástrofe económica y estructural para tu hogar.</p>
         
         <p>En <strong>Openagua</strong>, realizamos cientos de reparaciones al año donde el problema original (un simple tapón de grasa) se convirtió en una rotura total de cañerías debido al uso irresponsable de químicos. Saber qué productos NO usar es tan importante como saber cuándo llamar a un profesional.</p>
@@ -1387,6 +1391,7 @@ export const getArticulos = (): Articulo[] => {
       alt: 'Cámara cloacal tapada con acumulación de agua y residuos',
       excerpt: 'Evitá una inundación cloacal. Aprendé a identificar las señales de alerta de una cámara de inspección tapada y cómo actuar a tiempo. ¡Llamanos!',
       content: `
+<p style="background:#f0fdf4;border-left:4px solid #16A34A;padding:1rem;border-radius:4px;margin-bottom:1.5rem;"><strong>Respuesta directa:</strong> Una cámara cloacal tapada se detecta levantando la tapa de inspección: si ves agua estancada sin ver el fondo, el caño de salida está tapado. Otras señales son gorgoteos en varios artefactos a la vez, mal olor persistente cerca de la tapa y drenaje lento en toda la casa simultáneamente.</p>
         <p>Una <strong>cámara cloacal tapada</strong> es probablemente la peor pesadilla para cualquier propietario en <strong>Buenos Aires</strong>. A diferencia de una bacha tapada, el colapso de la cámara principal afecta a todos los servicios de la casa: inodoros, duchas y cocinas dejan de funcionar simultáneamente, y el riesgo de retroceso de aguas negras hacia el interior de la vivienda es inminente.</p>
         
         <p>Saber identificar las señales de alerta antes del desborde final puede ahorrarte días de limpieza profunda y roturas de cañerías. En <strong>Openagua</strong>, somos especialistas en <a href="/destapaciones-cloacas" style="color:#16A34A;font-weight:bold;text-decoration:underline;">destapaciones de cloacas</a> y diagnóstico por video inspección, lo que nos permite resolver estos problemas de raíz.</p>
