@@ -89,7 +89,7 @@ export default function Servicios() {
                   {s.icon}
                 </svg>
               </div>
-              <div className="servicio-title" style={{ fontWeight: 'bold' }}>{s.title}</div>
+              <h3 className="servicio-title" style={{ fontWeight: 'bold', fontSize: 'inherit', margin: 0 }}>{s.title}</h3>
               <p className="servicio-desc">{s.desc}</p>
               <span className="servicio-btn">
                 {s.btnText}
