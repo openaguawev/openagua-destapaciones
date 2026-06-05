@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = posts.find((p) => p.slug === slug)
   if (!post) return { title: 'Artículo no encontrado | Openagua' }
 
-  const seoTitle = `${post.seoTitle || post.title} | Openagua`
+  const seoTitle = post.seoTitle || post.title
   return {
     title: seoTitle,
     description: post.excerpt,

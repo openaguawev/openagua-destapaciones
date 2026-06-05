@@ -3,7 +3,7 @@ import Script from 'next/script'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Preguntas Frecuentes sobre Destapaciones | Openagua',
+  title: 'Preguntas Frecuentes sobre Destapaciones',
   description: 'Respondemos las dudas más comunes sobre destapaciones de cloacas, cañerías y pluviales en CABA y GBA. Precios, métodos, zonas y emergencias.',
   alternates: {
     canonical: 'https://www.destapacionesopenagua.com.ar/faq',
