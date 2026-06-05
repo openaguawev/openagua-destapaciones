@@ -286,7 +286,7 @@ export default async function ServicioPage({ params }: Props) {
             <div className="benefit-card">
               <div className="benefit-icon">📍</div>
               <h3 className="benefit-title">CABA</h3>
-              <p style={{ fontSize: '0.9rem' }}>Servicio de destapaciones en CABA con atención inmediata, sin romper y garantía por escrito.</p>
+              <p style={{ fontSize: '0.9rem' }}>Servicio de destapaciones en CABA con atención inmediata y más de 12 años de experiencia.</p>
               <div className="links-barrios">
                 <strong><Link href="/barrios/destapaciones-palermo" className="link-barrio">Palermo</Link></strong>
                 <strong><Link href="/barrios/destapaciones-caballito" className="link-barrio">Caballito</Link></strong>
@@ -351,7 +351,7 @@ export default async function ServicioPage({ params }: Props) {
         <section className="cta-block compact-top">
           <span className="cta-badge">Urgencias 24hs</span>
           <h2 className="cta-title">¿Necesitás una solución urgente?</h2>
-          <p className="cta-desc">Resolución inmediata por WhatsApp. Atendemos emergencias hoy mismo.</p>
+          <p className="cta-desc">Respondemos por WhatsApp en minutos. Trabajamos de lunes a sábado.</p>
           <a href={waUrl} target="_blank" rel="noopener noreferrer" className="cta-button">
             Escribinos ahora y lo resolvemos hoy
           </a>

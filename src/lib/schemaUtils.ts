@@ -30,9 +30,14 @@ export function generateArticleSchema(post: Articulo) {
     "datePublished": post.publishedAt || "2024-01-01",
     "dateModified": post.updatedAt || post.publishedAt || "2024-01-01",
     "author": {
-      "@type": "Organization",
-      "name": "Openagua Destapaciones",
-      "@id": "https://www.destapacionesopenagua.com.ar/#business"
+      "@type": "Person",
+      "name": "Emmanuel",
+      "jobTitle": "Técnico especialista en destapaciones",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Openagua Destapaciones",
+        "@id": "https://www.destapacionesopenagua.com.ar/#business"
+      }
     },
     "publisher": {
       "@type": "Organization",

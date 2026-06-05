@@ -14,6 +14,7 @@ export default function Footer() {
           <ul>
             <li><Link href="/urgencias" title="Urgencias 24hs" style={{ color: '#34d399', fontWeight: 600 }}>Urgencias</Link></li>
             <li><Link href="/precios" title="Precios de Destapaciones" style={{ color: '#EAB308', fontWeight: 600 }}>Precios</Link></li>
+            <li><Link href="/faq">Preguntas frecuentes</Link></li>
             <li><Link href="/destapaciones-cloacas" title="Destapación de Cloacas">Destapación de Cloacas</Link></li>
             <li><Link href="/destapaciones-canerias" title="Destapaciones de Cañerías">Destapaciones de Cañerías</Link></li>
             <li><Link href="/destapaciones-pluviales" title="Destapaciones Pluviales">Destapaciones Pluviales</Link></li>
@@ -50,8 +51,8 @@ export default function Footer() {
         <div className="footer-contact">
           <div className="footer-heading" style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1.5rem', color: '#fff' }}>Contacto</div>
           <p>Teléfono: <a href="tel:+5491151797649">15-5179-7649</a></p>
-          <p>Horario: Lunes a Domingo 8 a 19 hs</p>
-          <p style={{ fontSize: '0.85rem', color: '#94a3b8', marginTop: '0.25rem' }}>Urgencias 24hs los 7 días</p>
+          <p>Lunes a viernes 8–19hs · Sábados 8–13hs</p>
+          <p style={{ fontSize: '0.85rem', color: '#94a3b8', marginTop: '0.25rem' }}>Domingos: solo consultas por WhatsApp</p>
           <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#cbd5e1' }}>
             <strong>Base operativa:</strong> Zona Oeste, Buenos Aires<br />
             <strong>Cobertura:</strong> CABA y Gran Buenos Aires
