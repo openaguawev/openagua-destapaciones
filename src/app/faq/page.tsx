@@ -181,33 +181,88 @@ export default function FaqPage() {
       <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Script id="breadcrumb-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      <main style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem 1.5rem' }}>
-
-        <h1 style={{ fontSize: '2rem', fontWeight: 700, color: '#0f172a', marginBottom: '0.75rem', lineHeight: 1.2 }}>
+      {/* Hero */}
+      <div style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)', padding: '3rem 1.5rem 2.5rem', textAlign: 'center' }}>
+        <h1 style={{ fontSize: '2rem', fontWeight: 700, color: '#ffffff', marginBottom: '0.75rem', lineHeight: 1.2 }}>
           Preguntas frecuentes sobre destapaciones
         </h1>
-        <p style={{ color: '#475569', fontSize: '1.1rem', marginBottom: '2.5rem', lineHeight: 1.6 }}>
-          Respondemos las dudas más comunes sobre nuestros servicios, precios, métodos de trabajo y zonas de cobertura en CABA y GBA.
+        <p style={{ color: '#94a3b8', fontSize: '1.05rem', maxWidth: '600px', margin: '0 auto', lineHeight: 1.6 }}>
+          Respondemos las dudas más comunes sobre precios, métodos, zonas y emergencias en CABA y GBA.
         </p>
+      </div>
+
+      <main style={{ maxWidth: '800px', margin: '0 auto', padding: '2.5rem 1.5rem' }}>
 
         {faqs.map((categoria, ci) => (
           <section key={ci} style={{ marginBottom: '2.5rem' }}>
-            <h2 style={{ fontSize: '1.25rem', fontWeight: 600, color: '#0f172a', marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '2px solid #16a34a' }}>
+            <h2 style={{
+              fontSize: '1.1rem',
+              fontWeight: 700,
+              color: '#ffffff',
+              background: '#16a34a',
+              padding: '0.6rem 1.25rem',
+              borderRadius: '8px',
+              marginBottom: '1rem',
+              display: 'inline-block',
+            }}>
               {categoria.categoria}
             </h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
               {categoria.items.map((faq, fi) => (
-                <details key={fi} style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', overflow: 'hidden' }}>
-                  <summary style={{ padding: '1rem 1.25rem', fontWeight: 600, cursor: 'pointer', color: '#0f172a', fontSize: '1rem', listStyle: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <details key={fi} style={{
+                  background: '#ffffff',
+                  border: '1px solid #e2e8f0',
+                  borderRadius: '10px',
+                  overflow: 'hidden',
+                  boxShadow: '0 1px 3px rgba(0,0,0,0.06)',
+                }}>
+                  <summary style={{
+                    padding: '1rem 1.25rem',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    color: '#0f172a',
+                    fontSize: '0.975rem',
+                    listStyle: 'none',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    gap: '1rem',
+                  }}>
                     {faq.q}
-                    <span style={{ color: '#16a34a', fontSize: '1.25rem', flexShrink: 0, marginLeft: '1rem' }}>+</span>
+                    <span style={{
+                      background: '#f0fdf4',
+                      color: '#16a34a',
+                      borderRadius: '50%',
+                      width: '24px',
+                      height: '24px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: '1.1rem',
+                      flexShrink: 0,
+                      fontWeight: 700,
+                    }}>+</span>
                   </summary>
-                  <div style={{ padding: '0 1.25rem 1rem', color: '#475569', lineHeight: 1.7, fontSize: '0.975rem' }}>
-                    <p style={{ margin: '0 0 0.75rem' }}>{faq.a}</p>
+                  <div style={{
+                    padding: '0.25rem 1.25rem 1rem',
+                    color: '#475569',
+                    lineHeight: 1.7,
+                    fontSize: '0.95rem',
+                    borderTop: '1px solid #f1f5f9',
+                  }}>
+                    <p style={{ margin: '0.75rem 0' }}>{faq.a}</p>
                     {faq.link && (
                       <Link
                         href={faq.link.href}
-                        style={{ color: '#16a34a', fontWeight: 600, fontSize: '0.9rem', textDecoration: 'none' }}
+                        style={{
+                          color: '#16a34a',
+                          fontWeight: 600,
+                          fontSize: '0.875rem',
+                          textDecoration: 'none',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                        }}
                       >
                         {faq.link.texto} →
                       </Link>
@@ -219,11 +274,18 @@ export default function FaqPage() {
           </section>
         ))}
 
-        <div style={{ marginTop: '3rem', padding: '1.5rem', background: '#f0fdf4', borderRadius: '12px', textAlign: 'center' }}>
-          <p style={{ fontWeight: 700, color: '#166534', fontSize: '1.1rem', marginBottom: '0.5rem' }}>
+        {/* CTA final */}
+        <div style={{
+          marginTop: '2rem',
+          padding: '2rem 1.5rem',
+          background: 'linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)',
+          borderRadius: '16px',
+          textAlign: 'center',
+        }}>
+          <p style={{ fontWeight: 700, color: '#ffffff', fontSize: '1.15rem', marginBottom: '0.5rem' }}>
             ¿No encontraste lo que buscabas?
           </p>
-          <p style={{ color: '#475569', marginBottom: '1rem', fontSize: '0.95rem' }}>
+          <p style={{ color: '#94a3b8', marginBottom: '1.25rem', fontSize: '0.95rem' }}>
             Escribinos por WhatsApp y te respondemos en minutos.
           </p>
           
@@ -231,7 +293,16 @@ export default function FaqPage() {
             href="https://wa.me/5491151797649"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ background: '#16a34a', color: 'white', padding: '0.75rem 1.75rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 700, display: 'inline-block', fontSize: '0.975rem' }}
+            style={{
+              background: '#25D366',
+              color: 'white',
+              padding: '0.875rem 2rem',
+              borderRadius: '8px',
+              textDecoration: 'none',
+              fontWeight: 700,
+              display: 'inline-block',
+              fontSize: '1rem',
+            }}
           >
             Consultar por WhatsApp
           </a>
