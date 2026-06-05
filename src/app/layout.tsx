@@ -72,10 +72,11 @@ export default function RootLayout({
         <Script
           id="organization-schema"
           type="application/ld+json"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
         <LocalBusinessSchema />
-        <SpeedInsights />
+        <SpeedInsights sampleRate={0.1} />
       </body>
     </html>
   );
