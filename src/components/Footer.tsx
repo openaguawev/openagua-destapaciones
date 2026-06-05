@@ -14,7 +14,6 @@ export default function Footer() {
           <ul>
             <li><Link href="/urgencias" title="Urgencias 24hs" style={{ color: '#34d399', fontWeight: 600 }}>Urgencias</Link></li>
             <li><Link href="/precios" title="Precios de Destapaciones" style={{ color: '#EAB308', fontWeight: 600 }}>Precios</Link></li>
-            <li><Link href="/faq">Preguntas frecuentes</Link></li>
             <li><Link href="/destapaciones-cloacas" title="Destapación de Cloacas">Destapación de Cloacas</Link></li>
             <li><Link href="/destapaciones-canerias" title="Destapaciones de Cañerías">Destapaciones de Cañerías</Link></li>
             <li><Link href="/destapaciones-pluviales" title="Destapaciones Pluviales">Destapaciones Pluviales</Link></li>
@@ -33,6 +32,7 @@ export default function Footer() {
             <li><Link href="/zonas/zona-oeste" title="Cobertura en Zona Oeste">Zona Oeste</Link></li>
             <li><Link href="/zonas/zona-sur" title="Cobertura en Zona Sur">Zona Sur</Link></li>
             <li><Link href="/nosotros" title="Quiénes somos - Openagua">Quiénes somos</Link></li>
+            <li><Link href="/faq" style={{ color: '#EAB308', fontWeight: 600 }}>Preguntas frecuentes</Link></li>
           </ul>
         </div>
         <div className="footer-links">
