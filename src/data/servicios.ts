@@ -164,7 +164,7 @@ export const getServicios = (): ServicioData[] => {
       ],
       {
         seoTitle: "Destapaciones de Cloacas en CABA y GBA | Openagua",
-        seoDescription: "¿Cloaca tapada o rebalsando? Solución profesional sin romper. Más de 10 años de experiencia. 332 reseñas con 4.9★. CABA y GBA. ☎ 11 5179-7649.",
+        seoDescription: 'Destapamos cloacas en CABA y GBA con hidrojet y resorte. Más de 12 años, 333 reseñas 4.9★. Diagnóstico en el día. Llamá al 11 5179-7649.',
         benefitsTitle: "Especialistas en Destapaciones de Cloacas",
         benefits: [
           { title: "No esperes días. Lo resolvemos hoy.", desc: "Recuperá la normalidad de tu baño y cocina en pocas horas con nuestro servicio de urgencias 24hs." },
@@ -206,8 +206,8 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Cuánto cuesta el servicio de destapa cañerías en CABA y GBA?", a: "En Openagua mantenemos una filosofía clara y honesta: cobramos un precio cerrado por trabajo y no por metro de cable ingresado por la cañería. Esto significa que sabés con exactitud cuánto vas a abonar antes de empezar el servicio, sin cargos sorpresa ni presupuestos que se inflan a mitad del proceso. El valor final depende únicamente del tipo de conducto a desobstruir (bacha de cocina, rejilla de patio, inodoro o cloaca principal) y la complejidad del tapón. Si el trabajo se complica durante la visita o detectamos alguna falla estructural mayor, te avisamos antes para acordar los pasos a seguir. Escribinos ahora por WhatsApp y te damos una tarifa plana acorde a tu problema." }
       ],
       {
-        seoTitle: "Destapa Cañerías en CABA y GBA | Openagua",
-        seoDescription: "¿Red de desagüe lenta? Nuestro equipo destapa cañerías con precio por trabajo, más de 10 años de trayectoria y rapidez en CABA y GBA. ¡Escribinos ahora!",
+        seoTitle: 'Destapamos Cañerías en CABA y GBA | Openagua',
+        seoDescription: 'Destapación de cañerías a domicilio en CABA y GBA. Resorte e hidrojet. Precios desde $95.000. 333 reseñas 4.9★. Llamá al 11 5179-7649.',
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
           { title: "Diagnóstico Técnico", desc: "Evaluamos el estado de las conexiones internas para aplicar el método de limpieza adecuado según el material del caño." },
