@@ -83,7 +83,7 @@ export default function LocalBusinessSchema({ additionalData }: LocalBusinessSch
     <Script
       id="local-business-schema"
       type="application/ld+json"
-      strategy="afterInteractive"
+      strategy="beforeInteractive"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(finalSchema) }}
     />
   );
