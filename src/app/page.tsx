@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.destapacionesopenagua.com.ar',
   },
   openGraph: {
-    title: 'Destapaciones en CABA y GBA | Openagua',
+    title: 'Destapaciones de Cloacas y Cañerías en CABA y GBA | Openagua',
     description: 'Destapaciones de cloacas, cañerías y pluviales en CABA y GBA. Más de 12 años de experiencia, 333 reseñas con 4.9★.',
     url: 'https://www.destapacionesopenagua.com.ar',
     siteName: 'Openagua',
