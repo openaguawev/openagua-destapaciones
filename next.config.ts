@@ -199,6 +199,43 @@ const nextConfig: NextConfig = {
         destination: '/destapaciones-cloacas',
         permanent: true,
       },
+      // 410s zonas que no cubrimos
+      {
+        source: '/barrios/destapaciones-burzaco',
+        destination: '/zonas/zona-sur',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-lopez-camelo',
+        destination: '/zonas/zona-norte',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-lopez-camelo/',
+        destination: '/zonas/zona-norte',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-jauregui',
+        destination: '/zonas/zona-norte',
+        permanent: true,
+      },
+      {
+        source: '/destapaciones-jauregui/',
+        destination: '/zonas/zona-norte',
+        permanent: true,
+      },
+      // WordPress legacy
+      {
+        source: '/wp-content/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/wp-:file',
+        destination: '/',
+        permanent: true,
+      },
       {
         source: '/destapaciones-en-:slug',
         destination: '/barrios/destapaciones-:slug',
