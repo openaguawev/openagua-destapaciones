@@ -58,13 +58,13 @@ const faqs = [
         link: { href: '/blog/diferencias-canerias-cloacales-pluviales', texto: 'Leer artículo completo' },
       },
       {
-        q: '¿Por qué el inodoro rebalsa cuando uso la ducha?',
-        a: 'Cuando el inodoro rebalsa al usar otro artefacto, la obstrucción casi siempre está en la red cloacal general, no en el inodoro en sí. Es señal de que la columna o la salida principal está tapada. Requiere intervención profesional con máquina.',
-        link: { href: '/blog/inodoro-rebalsa-que-hacer', texto: 'Qué hacer si el inodoro rebalsa' },
+        q: '¿Cómo sé si el problema está en el troncal principal?',
+        a: 'Cuando el troncal principal está tapado, los síntomas aparecen en los puntos más bajos de la instalación: la rejilla de patio o la pileta de piso rebalsan al usar la ducha, el bidet, el lavamanos o al tirar la mochila del inodoro. En algunos casos, si no hay rejilla, el agua puede burbujear o salir por debajo del inodoro. El inodoro queda más alto en la instalación, por lo que raramente rebalsa — lo que se ve afectado primero son siempre los desagües más bajos. Si notás cualquiera de estas señales, es indicativo de una obstrucción en el caño principal y requiere intervención profesional.',
+        link: { href: '/blog/inodoro-rebalsa-que-hacer', texto: 'Ver qué hacer en ese caso' },
       },
       {
         q: '¿Por qué la cocina huele a cloaca?',
-        a: 'El olor a cloaca en la cocina suele tener dos causas: el sifón seco por falta de uso (se resuelve tirando agua) o una obstrucción parcial en la cañería que genera gases. Si el olor persiste, lo mejor es hacer una inspección.',
+        a: 'El olor a cloaca en la cocina puede tener varias causas: una cañería parcialmente tapada que no permite la ventilación correcta, el sifón sucio o seco por falta de uso, o un caño que conecta directamente a la cloaca sin el sello hidráulico adecuado, lo que permite que los gases suban libremente. No siempre hay una sola causa — a veces se combinan varios factores. Si el olor persiste después de limpiar el sifón y tirar agua, lo mejor es hacer una inspección para identificar el origen exacto.',
         link: { href: '/blog/por-que-cocina-huele-a-cloaca', texto: 'Ver causas y soluciones' },
       },
       {
@@ -124,7 +124,7 @@ const faqs = [
       },
       {
         q: '¿Dan garantía por los trabajos realizados?',
-        a: 'No damos garantía por escrito, pero sí nos hacemos cargo si el problema que tratamos reaparece en el corto plazo. Si el inconveniente persiste o vuelve, coordinamos una revisión. Trabajamos con honestidad: si el trabajo se complica, avisamos antes de seguir.',
+        a: 'No damos garantía por escrito. En las destapaciones trabajamos sobre instalaciones que muchas veces son antiguas y están deterioradas, y el resultado también depende del uso que se le dé después: toallitas femeninas, restos de comida, trapos y otros elementos que no deben tirarse por las cañerías son causa frecuente de nuevas obstrucciones. Lo que sí hacemos es trabajar con honestidad: si durante el trabajo el problema resulta más complejo de lo esperado, avisamos antes de continuar y acordamos el precio extra.',
         link: null,
       },
     ],
