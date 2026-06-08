@@ -1,284 +1,119 @@
 .hero-section {
-  display: flex;
+  position: relative;
   min-height: 80vh;
-  background-color: #0a1628;
+  display: flex;
+  align-items: center;
   color: #fff;
   overflow: hidden;
-  position: relative;
-  /* Add subtle background pattern as seen in mockup */
-  background-image: radial-gradient(circle at 80% 20%, rgba(22, 163, 74, 0.1) 0%, transparent 40%),
-                    radial-gradient(circle at 20% 80%, rgba(29, 78, 216, 0.1) 0%, transparent 40%);
 }
 
-.hero-left {
-  flex: 1;
-  padding: 80px 40px 100px 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 2;
-  position: relative;
-}
-
-/* Curve divider between left and right */
-.hero-left::after {
-  content: '';
+.hero-overlay {
   position: absolute;
   top: 0;
-  right: -50px;
-  width: 100px;
+  left: 0;
+  width: 100%;
   height: 100%;
-  background: #0a1628;
-  border-radius: 50% 0 0 50%;
-  z-index: -1;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 58, 95, 0.8) 100%);
+  z-index: 1;
 }
 
-.hero-right {
-  flex: 1;
+.hero-content {
   position: relative;
-  min-height: 500px;
+  z-index: 2;
+  max-width: 800px;
+  transform: translateY(-24px);
 }
 
-/* Badge Top */
-.hero-badge-top {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background-color: rgba(22, 163, 74, 0.15);
-  color: #16A34A;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  width: fit-content;
-  margin-bottom: 24px;
-  letter-spacing: 0.5px;
-}
-
-.icon-drop {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Typography */
-.hero-left h1 {
-  font-size: 4rem;
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 24px;
+.hero-content h1 {
   color: #fff;
-}
-
-.text-green {
-  color: #16A34A;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.1;
 }
 
 .hero-subtitle {
-  font-size: 1.15rem;
-  color: #cbd5e1;
-  margin-bottom: 32px;
-  max-width: 600px;
-  line-height: 1.6;
-}
-
-/* Features */
-.hero-features-inline {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  font-size: 1.25rem;
   margin-bottom: 40px;
+  color: #e2e8f0;
+  max-width: 600px;
 }
 
-.hero-feature {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 0;
-  font-size: 0.95rem;
-  color: #f1f5f9;
-  font-weight: 500;
-}
-
-.feature-icon {
-  color: #16A34A;
-  display: flex;
-}
-
-/* Buttons */
 .hero-ctas {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 
 .hero-btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 16px 28px;
+  gap: 0.75rem;
+  padding: 14px 22px;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 1rem;
   transition: all 0.3s ease;
+  min-width: 220px;
+  justify-content: center;
   text-decoration: none;
-  min-width: 200px;
 }
 
+.hero-btn .icon svg {
+  width: 26px !important;
+  height: 26px !important;
+}
+
+/* FASE 3 - Botón Llamar global usando azul */
 .hero-btn-call {
-  background-color: #1D4ED8;
-  color: #fff;
-  border: none;
+  background-color: #1D4ED8 !important;
+  border-color: #1D4ED8 !important;
+  color: #ffffff !important;
 }
 
 .hero-btn-call:hover {
-  background-color: #1e40af;
-  transform: translateY(-2px);
-}
-
-.btn-primary {
-  background-color: #16A34A;
-  color: #fff;
-  border: none;
-}
-
-.btn-primary:hover {
-  background-color: #15803d;
-  transform: translateY(-2px);
-}
-
-/* Stats Card */
-.hero-stats-card {
-  position: absolute;
-  bottom: 40px;
-  left: -80px; /* Overlap with the left section */
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 24px 32px;
-  display: flex;
-  gap: 32px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-  z-index: 10;
-}
-
-.stat-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #0f172a;
-}
-
-.stat-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background: rgba(22, 163, 74, 0.1);
-  color: #16A34A;
-  border-radius: 50%;
-}
-
-.stat-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.stat-text strong {
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-
-.stat-text span {
-  font-size: 0.85rem;
-  color: #64748b;
-}
-
-/* Responsive */
-@media (max-width: 1200px) {
-  .hero-left h1 {
-    font-size: 3.5rem;
-  }
-  .hero-stats-card {
-    left: -40px;
-    padding: 20px 24px;
-    gap: 20px;
-  }
-  .stat-text strong {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .hero-section {
-    flex-direction: column;
-  }
-  
-  .hero-left {
-    padding: 60px 40px;
-    text-align: left;
-  }
-
-  .hero-left::after {
-    display: none;
-  }
-  
-  .hero-right {
-    min-height: 400px;
-    width: 100%;
-  }
-
-  .hero-stats-card {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    margin: -40px 40px 40px 40px;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  }
+  background-color: #1e40af !important;
+  border-color: #1e40af !important;
 }
 
 @media (max-width: 768px) {
-  .hero-left {
-    padding: 40px 24px;
+  .hero-section {
+    min-height: auto;
+    padding: 5rem 0 7rem 0;
   }
-
-  .hero-left h1 {
-    font-size: 2.5rem;
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.125rem;
+    margin: 0 auto 32px auto;
   }
   
   .hero-ctas {
     flex-direction: column;
-    width: 100%;
-  }
-  
-  .hero-btn {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  
-  .hero-stats-card {
-    margin: -40px 20px 40px 20px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 16px;
+    width: 100%;
+    margin-bottom: 60px;
   }
-
-  /* Fix for previous generic styles */
+  
+  /* Usamos alta especificidad para vencer a globals.css */
   .hero-section .hero-ctas a.hero-btn {
     width: 100% !important;
     max-width: 100% !important;
     min-width: unset !important;
-    margin: 0 !important;
-    padding: 16px 28px !important;
-    font-size: 1.05rem !important;
+    margin: 0 !important; /* Resetea el margin: 16px auto 0 auto de globals.css */
+    padding: 14px 22px !important;
+    font-size: 1rem !important;
     border-radius: 8px !important;
-    height: auto !important;
+    height: 56px !important;
     display: inline-flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -286,8 +121,25 @@
   }
 }
 
-@media (max-width: 480px) {
-  .hero-stats-card {
-    grid-template-columns: 1fr;
+/* iPhone SE y pantallas muy pequeñas */
+@media (max-width: 375px) {
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+  
+  .hero-btn {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+/* FASE 1 y 2 - Ajustes exclusivos para Desktop */
+@media (min-width: 769px) {
+  .hero-content {
+    transform: translateY(24px);
+  }
+  .hero-ctas {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
 }
