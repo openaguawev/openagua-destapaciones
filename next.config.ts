@@ -236,6 +236,27 @@ const nextConfig: NextConfig = {
         destination: '/',
         permanent: true,
       },
+      // Fix 404s Search Console
+      {
+        source: '/blog/raices-en-canerias',
+        destination: '/blog/raices-en-canerias-como-detectarlas-y-solucionarlo',
+        permanent: true,
+      },
+      {
+        source: '/mantenimiento-canerias-buenos-aires',
+        destination: '/mantenimientos-preventivos',
+        permanent: true,
+      },
+      {
+        source: '/mantenimiento-canerias-buenos-aires/',
+        destination: '/mantenimientos-preventivos',
+        permanent: true,
+      },
+      {
+        source: '/barrios/destapaciones-burzaco',
+        destination: '/zonas/zona-sur',
+        permanent: true,
+      },
       {
         source: '/destapaciones-en-:slug',
         destination: '/barrios/destapaciones-:slug',
