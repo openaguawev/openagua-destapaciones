@@ -49,7 +49,21 @@ export async function generateMetadata({ params }: Props) {
     'destapaciones-quilmes': 'Destapaciones en Quilmes | Zona Sur GBA',
   };
   const seoTitle = titleMap[barrio.slug] || `Destapaciones en ${barrio.name} | CABA y GBA`;
-  const seoDescription = descriptions[dHash % descriptions.length];
+
+  const descriptionMap: Record<string, string> = {
+    'destapaciones-belgrano': 'Destapaciones en Belgrano para edificios, consorcios y casas antiguas. Cloacas, cañerías y columnas con cal. Hidrojet y sonda. ☎ 11 5179-7649',
+    'destapaciones-palermo': 'Destapaciones en Palermo: cloacas, cañerías y pluviales en casas, PHs y edificios. Diagnóstico con cámara sin romper pisos. ☎ 11 5179-7649',
+    'destapaciones-san-isidro': 'Destapaciones en San Isidro y Zona Norte. Cloacas, cañerías e hidrojet para casas y countries. +10 años de experiencia. ☎ 11 5179-7649',
+    'destapaciones-avellaneda': 'Destapaciones en Avellaneda y Zona Sur. Cloacas, cañerías y pluviales con sonda e hidrojet. Presupuesto por WhatsApp. ☎ 11 5179-7649',
+    'destapaciones-zona-norte': 'Destapaciones en toda la Zona Norte: San Isidro, Vicente López, Tigre y más. Cloacas, cañerías e hidrojet. ☎ 11 5179-7649',
+    'destapaciones-caballito': 'Destapaciones en Caballito para casas y edificios sobre avenida. Cloacas, cañerías y pluviales con hidrojet. ☎ 11 5179-7649',
+    'destapaciones-flores': 'Destapaciones en Flores: cloacas, cañerías y pluviales para casas, PHs y comercios. Diagnóstico con cámara y sonda. ☎ 11 5179-7649',
+    'destapaciones-ramos-mejia': 'Destapaciones en Ramos Mejía y Zona Oeste. Cloacas, cañerías y pluviales con sonda e hidrojet para casas y consorcios. ☎ 11 5179-7649',
+    'destapaciones-lomas-de-zamora': 'Destapaciones en Lomas de Zamora y Zona Sur. Cloacas, cañerías y pluviales con sonda electromecánica e hidrojet. ☎ 11 5179-7649',
+    'destapaciones-quilmes': 'Destapaciones en Quilmes y Zona Sur. Cloacas, cañerías y pluviales con máquinas profesionales, sonda e hidrojet. ☎ 11 5179-7649',
+  };
+
+  const seoDescription = descriptionMap[barrio.slug] || descriptions[dHash % descriptions.length];
 
   return {
     title: seoTitle,
