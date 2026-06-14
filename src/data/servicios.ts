@@ -64,7 +64,7 @@ const buildServicio = (
     benefits: custom?.benefits || [
       { title: "Rapidez y Eficiencia", desc: "Respuesta inmediata con tecnología puntera sin demoras." },
       { title: "Cero Roturas Innecesarias", desc: "Soluciones focalizadas que preservan tus instalaciones." },
-      { title: "Seguridad Garantizada", desc: "Técnicos calificados que operan bajo normativas estrictas." }
+      { title: "Trabajo Seguro", desc: "Técnicos calificados que operan bajo normativas estrictas." }
     ],
     equipment: custom?.equipment,
     steps: custom?.steps || [
@@ -104,7 +104,7 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Realizan trabajos en Zona Oeste?", a: "Sí, brindamos servicios de destapaciones con máquinas en toda la Zona Oeste, CABA y alrededores con atención inmediata." },
         { q: "¿Cuánto tiempo demoran en llegar?", a: "Contamos con unidades móviles equipadas para llegar a tu domicilio en menos de 60 minutos en casos de urgencia." },
         { q: "¿Qué formas de pago aceptan?", a: "Podés abonar el servicio en efectivo, por transferencia bancaria o a través de Mercado Pago con todas las tarjetas." },
-        { q: "¿Entregan factura y garantía?", a: "Sí, emitimos factura por todos nuestros trabajos y brindamos garantía por escrito sobre la desobstrucción realizada." }
+        { q: "¿Entregan factura y garantía?", a: "Sí, emitimos factura por todos nuestros trabajos. No damos garantía por escrito porque trabajamos sobre instalaciones muchas veces antiguas y el resultado también depende del uso posterior. Si el problema se complica durante el trabajo, te avisamos antes de continuar." }
       ],
       {
         seoTitle: "Destapaciones con Máquinas | Sonda y Resorte | Openagua",
@@ -387,7 +387,7 @@ export const getServicios = (): ServicioData[] => {
         benefits: [
           { title: "Localización Exacta", desc: "Identificamos el punto preciso del problema para que, si hay que reparar, la intervención sea mínima y en el lugar correcto." },
           { title: "Informe con Evidencia", desc: "Te entregamos las fotos o el video del estado interno de la cañería para que tengas una prueba real del diagnóstico." },
-          { title: "Ahorro Garantizado", desc: "Evitamos excavaciones innecesarias. Conocer el estado del caño te permite planificar la solución más económica y eficiente." }
+          { title: "Ahorro Real", desc: "Evitamos excavaciones innecesarias. Conocer el estado del caño te permite planificar la solución más económica y eficiente." }
         ],
         equipment: [
           { title: "Cámaras de Alta Resolución", desc: "Equipos sumergibles con iluminación LED que permiten ver con total claridad el interior de conductos de diversos diámetros." },
