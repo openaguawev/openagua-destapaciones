@@ -47,6 +47,8 @@ export async function generateMetadata({ params }: Props) {
     'destapaciones-ramos-mejia': 'Destapaciones en Ramos Mejía | Zona Oeste GBA',
     'destapaciones-lomas-de-zamora': 'Destapaciones en Lomas de Zamora | Zona Sur GBA',
     'destapaciones-quilmes': 'Destapaciones en Quilmes | Zona Sur GBA',
+    'destapaciones-san-justo': 'Destapaciones en San Justo | Zona Oeste GBA',
+    'destapaciones-martinez': 'Destapaciones en Martínez | Zona Norte GBA',
   };
   const seoTitle = titleMap[barrio.slug] || `Destapaciones en ${barrio.name} | CABA y GBA`;
 
@@ -61,6 +63,8 @@ export async function generateMetadata({ params }: Props) {
     'destapaciones-ramos-mejia': 'Destapaciones en Ramos Mejía y Zona Oeste. Cloacas, cañerías y pluviales con sonda e hidrojet para casas y consorcios. ☎ 11 5179-7649',
     'destapaciones-lomas-de-zamora': 'Destapaciones en Lomas de Zamora y Zona Sur. Cloacas, cañerías y pluviales con sonda electromecánica e hidrojet. ☎ 11 5179-7649',
     'destapaciones-quilmes': 'Destapaciones en Quilmes y Zona Sur. Cloacas, cañerías y pluviales con máquinas profesionales, sonda e hidrojet. ☎ 11 5179-7649',
+    'destapaciones-san-justo': 'Destapaciones en San Justo y Zona Oeste. Cloacas, cañerías y pluviales con sonda e hidrojet para casas y consorcios. ☎ 11 5179-7649',
+    'destapaciones-martinez': 'Destapaciones en Martínez, cerca de Unicenter. Cloacas, cañerías y pluviales con sonda e hidrojet. Diagnóstico con cámara. ☎ 11 5179-7649',
   };
 
   const seoDescription = descriptionMap[barrio.slug] || descriptions[dHash % descriptions.length];
