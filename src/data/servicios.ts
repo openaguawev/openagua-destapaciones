@@ -101,8 +101,8 @@ export const getServicios = (): ServicioData[] => {
       [
         { q: "¿Cuándo se debe usar una máquina de resortes?", a: "La máquina de resortes es ideal para la destapación con máquina en obstrucciones sólidas como restos de comida, pelos o pequeños objetos en baños y cocinas." },
         { q: "¿Qué beneficios tiene la máquina de resortes contra el hidrojet?", a: "La máquina de resortes es perfecta para espacios reducidos y cañerías internas, mientras que el hidrojet se recomienda para destapaciones de cloacas con máquina donde hay grasa o raíces." },
-        { q: "¿Realizan trabajos en Zona Oeste?", a: "Sí, brindamos servicios de destapaciones con máquinas en toda la Zona Oeste, CABA y alrededores con atención inmediata." },
-        { q: "¿Cuánto tiempo demoran en llegar?", a: "Contamos con unidades móviles equipadas para llegar a tu domicilio en menos de 60 minutos en casos de urgencia." },
+        { q: "¿Realizan trabajos en Zona Oeste?", a: "Sí, brindamos servicios de destapaciones con máquinas en toda la Zona Oeste, CABA y alrededores." },
+        { q: "¿Cuánto tiempo demoran en llegar?", a: "El tiempo depende de la zona y la disponibilidad del día. Coordinamos el horario por WhatsApp y te confirmamos antes de salir." },
         { q: "¿Qué formas de pago aceptan?", a: "Podés abonar el servicio en efectivo, por transferencia bancaria o a través de Mercado Pago con todas las tarjetas." },
         { q: "¿Entregan factura y garantía?", a: "Sí, emitimos factura por todos nuestros trabajos. No damos garantía por escrito porque trabajamos sobre instalaciones muchas veces antiguas y el resultado también depende del uso posterior. Si el problema se complica durante el trabajo, te avisamos antes de continuar." }
       ],
