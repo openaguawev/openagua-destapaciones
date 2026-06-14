@@ -485,7 +485,7 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Cuánto tarda el desagote de un sótano?", a: "Dependerá enteramente de los litros acumulados, pero nuestro equipamiento bombea miles de litros por hora asegurando máxima velocidad." },
         { q: "¿Qué hacer mientras esperan que llegue el equipo?", a: "Principalmente desconectar y aislar la energía eléctrica principal del sótano para resguardar la vida y prevenir electrocuciones." },
         { q: "¿El desagote incluye la limpieza del barro?", a: "Sí, tras retirar el agua, procedemos a succionar los sedimentos y lodos que suelen quedar acumulados en el piso." },
-        { q: "¿Atienden inundaciones por lluvia en la madrugada?", a: "Nuestro servicio de emergencias por inundación se coordina a la brevedad para casos críticos de sótanos y cocheras." },
+        { q: "¿Atienden inundaciones por lluvia en la madrugada?", a: "No trabajamos de madrugada. Si nos escribís fuera de horario, coordinamos la visita para el día siguiente o lo antes posible según la disponibilidad." },
         { q: "¿Tienen bombas para sacar mucha agua rápido?", a: "Contamos con bombas de alto caudal que evacuan hasta 10.000 litros por hora, resolviendo la inundación en tiempo récord." }
       ],
       {
