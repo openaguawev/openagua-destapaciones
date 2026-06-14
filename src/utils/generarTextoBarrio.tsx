@@ -50,7 +50,7 @@ export function generarTextoBarrio(
   // Cierres CON link (1 o 2 links)
   const cierresConLink: React.ReactNode[] = [
     <>Realizamos <Link href="/destapaciones-cloacas" style={linkStyle}>destapaciones de cloacas</Link> con equipos profesionales de última generación.</>,
-    <>Ofrecemos <Link href="/destapaciones-canerias" style={linkStyle}>limpieza de cañerías</Link> garantizada para todo tipo de diámetros.</>,
+    <>Ofrecemos <Link href="/destapaciones-canerias" style={linkStyle}>limpieza de cañerías</Link> para todo tipo de diámetros.</>,
     <>Nuestro servicio de <Link href="/destapaciones-pluviales" style={linkStyle}>destapaciones pluviales</Link> previene inundaciones en temporada de lluvias.</>,
     <>Aplicamos hidrojet y sonda para <Link href="/destapaciones-cloacas" style={linkStyle}>destapaciones de cloacas</Link> y <Link href="/destapaciones-canerias" style={linkStyle}>cañerías internas</Link>.</>,
     <>Resolvemos obstrucciones en <Link href="/destapaciones-canerias" style={linkStyle}>cañerías</Link> y <Link href="/destapaciones-pluviales" style={linkStyle}>bajadas pluviales</Link> con diagnóstico preciso.</>,
