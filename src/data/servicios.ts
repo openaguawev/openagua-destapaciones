@@ -133,13 +133,13 @@ export const getServicios = (): ServicioData[] => {
           { title: "Objetos Extraños", desc: "Juguetes, trapos o restos de obra que caen accidentalmente y obstruyen el flujo." }
         ],
         comoTrabajamos: [
-          { title: "Despacho Inmediato", desc: "Salimos hacia tu domicilio en menos de 60 minutos.", icon: "🚗" },
+          { title: "Coordinación Rápida", desc: "Coordinamos el turno por WhatsApp y confirmamos el horario de llegada.", icon: "🚗" },
           { title: "Sondeo Mecánico", desc: "Introducimos máquinas de resortes para romper el tapón.", icon: "⚙️" },
           { title: "Limpieza Final", desc: "Aseguramos que el conducto quede libre de sedimentos.", icon: "✨" }
         ],
         tiposDeDestapacion: [
           { title: "Destapación Preventiva", desc: "Mantenimiento periódico para evitar urgencias inesperadas." },
-          { title: "Destapación de Urgencia", desc: "Atención inmediata las 24 horas para desbordes cloacales." }
+          { title: "Destapación de Urgencia", desc: "Coordinamos a la brevedad para desbordes cloacales." }
         ],
         zonas: ["CABA", "Ramos Mejía", "Morón", "Castelar", "Ituzaingó", "Lomas del Mirador", "Haedo"],
         casosReales: [
@@ -485,7 +485,7 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Cuánto tarda el desagote de un sótano?", a: "Dependerá enteramente de los litros acumulados, pero nuestro equipamiento bombea miles de litros por hora asegurando máxima velocidad." },
         { q: "¿Qué hacer mientras esperan que llegue el equipo?", a: "Principalmente desconectar y aislar la energía eléctrica principal del sótano para resguardar la vida y prevenir electrocuciones." },
         { q: "¿El desagote incluye la limpieza del barro?", a: "Sí, tras retirar el agua, procedemos a succionar los sedimentos y lodos que suelen quedar acumulados en el piso." },
-        { q: "¿Atienden inundaciones por lluvia en la madrugada?", a: "Nuestro servicio de emergencias por inundación está disponible las 24 horas para casos críticos de sótanos y cocheras." },
+        { q: "¿Atienden inundaciones por lluvia en la madrugada?", a: "Nuestro servicio de emergencias por inundación se coordina a la brevedad para casos críticos de sótanos y cocheras." },
         { q: "¿Tienen bombas para sacar mucha agua rápido?", a: "Contamos con bombas de alto caudal que evacuan hasta 10.000 litros por hora, resolviendo la inundación en tiempo récord." }
       ],
       {

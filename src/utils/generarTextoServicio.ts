@@ -34,7 +34,7 @@ export function generarTextoServicio(servicio: ServicioSeoData): string {
   const cierres = [
     'Consultanos por WhatsApp al 11 5179-7649 y coordinamos la visita en el día, sin compromiso y con presupuesto transparente.',
     'Envianos tu consulta al 11 5179-7649 y recibí un presupuesto sin cargo. Atendemos urgencias y servicios programados.',
-    'Pedí tu presupuesto sin compromiso al 11 5179-7649. Llegamos en menos de 60 minutos para urgencias en CABA y GBA.',
+    'Pedí tu presupuesto sin compromiso al 11 5179-7649. Coordinamos el turno por WhatsApp para tu zona en CABA y GBA.',
   ];
 
   const apertura = aperturas[h(0, aperturas.length)];

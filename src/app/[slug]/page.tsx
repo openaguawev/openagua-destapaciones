@@ -278,7 +278,7 @@ export default async function ServicioPage({ params }: Props) {
         {/* ZONAS DE COBERTURA: Unificado y Optimizado SEO */}
         <section className="section-block compact">
           <p style={{ textAlign: 'center', marginBottom: '1rem', color: '#475569', fontWeight: '500' }}>
-            También trabajamos en distintas zonas del Gran Buenos Aires con atención inmediata y soluciones en el día.
+            También trabajamos en distintas zonas del Gran Buenos Aires con turnos coordinados y soluciones rápidas.
           </p>
           <h2 className="section-title">Zonas de Cobertura</h2>
           <div className="zones-grid">
@@ -286,7 +286,7 @@ export default async function ServicioPage({ params }: Props) {
             <div className="benefit-card">
               <div className="benefit-icon">📍</div>
               <h3 className="benefit-title">CABA</h3>
-              <p style={{ fontSize: '0.9rem' }}>Servicio de destapaciones en CABA con atención inmediata y más de 12 años de experiencia.</p>
+              <p style={{ fontSize: '0.9rem' }}>Servicio de destapaciones en CABA con turno coordinado y más de 12 años de experiencia.</p>
               <div className="links-barrios">
                 <strong><Link href="/barrios/destapaciones-palermo" className="link-barrio">Palermo</Link></strong>
                 <strong><Link href="/barrios/destapaciones-caballito" className="link-barrio">Caballito</Link></strong>
