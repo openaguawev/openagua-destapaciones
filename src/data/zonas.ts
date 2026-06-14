@@ -29,9 +29,9 @@ export const getZonas = (): ZonaData[] => {
       slug: "zona-oeste",
       name: "Zona Oeste",
       barrios: ["Ramos Mejía", "Haedo", "Castelar", "Morón", "Ciudadela", "San Martín", "Hurlingham", "Ituzaingó", "Tres de Febrero", "Caseros", "El Palomar", "Villa Tesei", "Tapiales", "Isidro Casanova", "Rafael Castillo"],
-      description: "Nuestra flota atiende servicios programados en toda la Zona Oeste. Destapación con máquina de sonda y limpieza a alta presión garantizada.",
-      seoTitle: "Destapaciones en Zona Oeste GBA | Openagua",
-      seoDescription: "Destapaciones en Ramos Mejía, Morón, Castelar, Haedo y todo el Oeste GBA. 333 reseñas 4.9★. Llamá al 11 5179-7649."
+      description: "Atendemos servicios programados en toda la Zona Oeste con máquina de sonda y limpieza a alta presión.",
+      seoTitle: "Destapaciones Zona Oeste: Cloacas y Cañerías | GBA",
+      seoDescription: "Destapaciones de cloacas y cañerías en Ramos Mejía, Morón, Castelar, Haedo y todo el Oeste GBA. Sonda e hidrojet. ☎ 11 5179-7649."
     },
     {
       slug: "zona-sur",
