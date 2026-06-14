@@ -11,8 +11,8 @@ import Contacto from '@/components/Contacto';
 import FadeIn from '@/components/FadeIn';
 
 export const metadata: Metadata = {
-  title: 'Destapaciones en CABA y GBA | Openagua',
-  description: 'Destapaciones de cloacas, cañerías y pluviales en CABA y GBA. Más de 12 años de experiencia, 333 reseñas con 4.9★. Llamá al 11 5179-7649.',
+  title: 'Destapa Cañerías y Cloacas en CABA y GBA | Openagua',
+  description: 'Destapamos cañerías, cloacas y pluviales en CABA y GBA. Diagnóstico con cámara, hidrojet y sonda. +12 años, 333 reseñas 4.9★. Presupuesto por WhatsApp.',
   alternates: {
     canonical: 'https://www.destapacionesopenagua.com.ar',
   },

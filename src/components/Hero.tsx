@@ -14,7 +14,7 @@ export default function Hero() {
       />
       <div className="hero-overlay"></div>
       <div className="container hero-content">
-        <h1>Destapaciones en CABA y Gran Buenos Aires | Openagua</h1>
+        <h1>Destapa Cañerías y Cloacas en CABA y Gran Buenos Aires</h1>
         <p className="hero-subtitle">Servicio de destapación con diagnóstico preciso y presupuesto transparente. Recuperamos el drenaje de tu red con equipos especializados. Atendemos casas, consorcios y comercios en toda la zona.</p>
         <div className="hero-ctas">
           <a href="https://wa.me/5491151797649?text=Hola%20Openagua%2C%20quiero%20consultar%20por%20un%20presupuesto" target="_blank" rel="noopener noreferrer" className="btn-primary hero-btn" title="Contactanos por WhatsApp">
