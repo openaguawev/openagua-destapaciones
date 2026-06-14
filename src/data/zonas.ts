@@ -13,7 +13,7 @@ export const getZonas = (): ZonaData[] => {
       slug: "caba",
       name: "CABA",
       barrios: ["Palermo", "Caballito", "Belgrano", "Recoleta", "Villa Urquiza", "Flores", "Villa Devoto", "Liniers", "Almagro", "Boedo", "Chacarita", "Colegiales", "Floresta", "La Boca", "Mataderos", "Núñez", "Saavedra", "San Telmo", "Villa Crespo", "Villa del Parque", "Villa Luro", "Villa Pueyrredón", "Villa Santa Rita"],
-      description: "Servicio rápido y garantizado en todos los barrios de CABA. Conocemos a la perfección las infraestructuras de edificios, consorcios y PH porteños.",
+      description: "Trabajamos en todos los barrios de CABA. Conocemos a la perfección las infraestructuras de edificios, consorcios y PH porteños.",
       seoTitle: "Destapaciones en CABA | Capital Federal | Openagua",
       seoDescription: "Destapaciones de cloacas y cañerías en todos los barrios de CABA. Más de 12 años, 333 reseñas 4.9★. Llamá al 11 5179-7649."
     },
