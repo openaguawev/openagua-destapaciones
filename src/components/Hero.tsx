@@ -9,8 +9,9 @@ export default function Hero() {
         alt="Maquinaria especializada para Destapaciones en CABA y GBA - Openagua" 
         fill 
         priority={true}
+        sizes="100vw"
         style={{ objectFit: 'cover', zIndex: 0 }} 
-        quality={90}
+        quality={75}
       />
       <div className="hero-overlay"></div>
       <div className="container hero-content">
