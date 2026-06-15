@@ -167,7 +167,7 @@ export const getServicios = (): ServicioData[] => {
         seoDescription: 'Destapamos cloacas en CABA y GBA con hidrojet y resorte. Más de 12 años, 333 reseñas 4.9★. Diagnóstico en el día. Llamá al 11 5179-7649.',
         benefitsTitle: "Especialistas en Destapaciones de Cloacas",
         benefits: [
-          { title: "No esperes días. Lo resolvemos hoy.", desc: "Recuperá la normalidad de tu baño y cocina en pocas horas con nuestro servicio de urgencias 24hs." },
+          { title: "Coordinación rápida", desc: "Recuperá la normalidad de tu baño y cocina coordinando el turno por WhatsApp según disponibilidad." },
           { title: "Solución definitiva sin romper.", desc: "Olvidate de las obras costosas. Nuestras destapaciones de cañerías cuidan tus instalaciones y tu bolsillo." },
           { title: "Resultados con diagnóstico preciso.", desc: "Limpieza total de conductos con certificación de trabajo. Si detectamos algo que complica el trabajo, avisamos antes de continuar." }
         ],
@@ -179,7 +179,7 @@ export const getServicios = (): ServicioData[] => {
           { title: "Contacto Inmediato", desc: "Escribinos y recibí prioridad técnica al instante.", iconStr: "📞" },
           { title: "Diagnóstico en el Momento", desc: "Evaluamos el tapón y te damos la solución exacta.", iconStr: "📍" },
           { title: "Solución en el Día", desc: "Limpiamos el conducto con maquinaria profesional.", iconStr: "⚙️" },
-          { title: "Garantía Final", desc: "Comprobamos el drenaje y te entregamos tu garantía.", iconStr: "✅" }
+          { title: "Verificación Final", desc: "Comprobamos el drenaje y te explicamos el trabajo realizado.", iconStr: "✅" }
         ],
         problemasComunes: [
           { title: "Cloaca rebalsada", desc: "Emergencia crítica: el agua retrocede por inodoros o rejillas inundando el ambiente." },
