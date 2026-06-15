@@ -349,7 +349,7 @@ export default async function ServicioPage({ params }: Props) {
 
         {/* CTA OPTIMIZADO */}
         <section className="cta-block compact-top">
-          <span className="cta-badge">Urgencias 24hs</span>
+          <span className="cta-badge">Atención profesional</span>
           <h2 className="cta-title">¿Necesitás una solución urgente?</h2>
           <p className="cta-desc">Respondemos por WhatsApp en minutos. Trabajamos de lunes a sábado.</p>
           <a href={waUrl} target="_blank" rel="noopener noreferrer" className="cta-button">
