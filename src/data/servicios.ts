@@ -150,7 +150,7 @@ export const getServicios = (): ServicioData[] => {
     ),
     buildServicio(
       'destapaciones-cloacas',
-      'Destapaciones de Cloacas Urgentes',
+      'Destapaciones de Cloacas en CABA y GBA',
       '/img/destapacion-de-cloaca.jpg',
       'Cloaca tapada o rebalsando. Solución profesional sin romper. Más de 10 años de experiencia en CABA y GBA.',
       'Tener una cloaca tapada es una emergencia que no puede esperar. Una destapacion de cloaca a tiempo previene desbordes y problemas sanitarios. Si tu inodoro rebalsa, el riesgo sanitario y los olores persistentes afectan tu salud. En Openagua realizamos cada destapacion de cloaca con maquinaria de última generación que elimina la obstrucción de raíz sin romper un solo piso. Atendemos en CABA y Zona Oeste con respuesta inmediata. Podés ver precios fijos por servicio en nuestra web.',
