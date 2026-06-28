@@ -153,12 +153,12 @@ export const getServicios = (): ServicioData[] => {
       'Destapaciones de Cloacas en CABA y GBA',
       '/img/destapacion-de-cloaca.jpg',
       'Cloaca tapada o rebalsando. Solución profesional sin romper. Más de 10 años de experiencia en CABA y GBA.',
-      'Tener una cloaca tapada es una emergencia que no puede esperar. Una destapacion de cloaca a tiempo previene desbordes y problemas sanitarios. Si tu inodoro rebalsa, el riesgo sanitario y los olores persistentes afectan tu salud. En Openagua realizamos cada destapacion de cloaca con maquinaria de última generación que elimina la obstrucción de raíz sin romper un solo piso. Atendemos en CABA y Zona Oeste con respuesta inmediata. Podés ver precios fijos por servicio en nuestra web.',
+      'Tener una cloaca tapada es una emergencia que no puede esperar. Una destapacion de cloaca a tiempo previene desbordes y problemas sanitarios. Si tu inodoro rebalsa, el riesgo sanitario y los olores persistentes afectan tu salud. En Openagua realizamos cada destapacion de cloaca con maquinaria de última generación que elimina la obstrucción de raíz sin romper un solo piso. Atendemos en CABA, Zona Oeste, Zona Norte y Zona Sur del GBA. Podés ver precios fijos por servicio en nuestra web.',
       [
-        { q: "¿Cuánto demoran en llegar?", a: "El tiempo de llegada depende de la zona y la disponibilidad del momento. Cubrimos CABA, Zona Oeste, Norte y Sur del GBA. Nuestra prioridad es resolver tu urgencia lo antes posible." },
+        { q: "¿Cuánto demoran en llegar?", a: "El tiempo de llegada depende de la zona y la disponibilidad del momento. Cubrimos CABA, Zona Oeste, Norte y Sur del GBA. Coordinamos el turno por WhatsApp y confirmamos el horario antes de salir." },
         { q: "¿Cuál es el costo del servicio?", a: "El precio depende de la obstrucción y los metros de cañería. Consultanos por WhatsApp para un presupuesto transparente y sin compromiso." },
         { q: "¿Es necesario romper para destapar?", a: "No. En el 98% de los casos usamos máquinas de resortes o destapaciones con hidrojet que limpian el caño a través de las bocas de acceso existentes." },
-        { q: "¿Dan garantía por el trabajo?", a: "Sí, entregamos garantía real por escrito. Verificamos el flujo de agua junto a vos para asegurar que la cañería quedó 100% limpia." },
+        { q: "¿Dan garantía por el trabajo?", a: "No damos garantía escrita. Trabajamos sobre instalaciones que muchas veces son antiguas y el resultado también depende del uso posterior. Lo que sí hacemos es verificar el flujo de agua junto a vos antes de irnos y avisar si el trabajo se complica antes de continuar." },
         { q: "¿Qué pasa si hay raíces?", a: "Nuestras sondas rotativas eliminan raíces y sedimentos duros que bloquean el paso del agua cloacal de forma definitiva." },
         { q: "¿Cómo ven el estado del caño?", a: "Si el problema es recurrente, realizamos una video inspección de cañerías para detectar roturas o fallas estructurales sin necesidad de excavar." }
       ],
