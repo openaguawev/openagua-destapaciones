@@ -139,7 +139,7 @@ export function generarTextoBarrioSecundario(
   ];
 
   const confianza: React.ReactNode[] = [
-    <>Cada trabajo incluye diagnóstico previo, presupuesto transparente y garantía escrita sobre la intervención realizada.</>,
+    <>Cada trabajo incluye diagnóstico previo, presupuesto transparente y la verificación de la fluidez del conducto ante el cliente.</>,
     <>No cobramos viáticos adicionales y emitimos factura para consorcios, administraciones y comercios que lo requieran.</>,
     <>Nuestro compromiso es resolver el problema de raíz, no aplicar parches temporales. Por eso garantizamos cada destapación.</>,
     <>Trabajamos con transparencia: primero diagnosticamos, explicamos el problema y recién después intervenimos con el equipo adecuado.</>,
