@@ -26,8 +26,8 @@ const zonaSeoContent: Record<string, {
       'En edificios de más de 10 pisos, el diagnóstico correcto requiere saber si el problema es del ramal individual del departamento o de la columna general del consorcio. Esta distinción determina quién paga y qué herramienta usar. Nuestra experiencia con consorcios de CABA nos permite hacer ese diagnóstico sin necesidad de romper ni una sola baldosa.',
     ],
     servicios: 'Los servicios más solicitados en CABA son las destapaciones de cloacas urgentes, la limpieza de columnas con hidrojet para edificios y consorcios, y la video inspección de cañerías para detectar roturas sin obra. También realizamos mantenimientos preventivos programados para administraciones de consorcios que quieren evitar emergencias costosas.',
-    clientes: 'Atendemos particulares, inquilinos, propietarios, administradores de consorcios, comercios gastronómicos, hoteles y empresas en toda CABA. Nuestro tiempo de respuesta promedio en Capital Federal es de 45 a 90 minutos desde el primer contacto.',
-    cierre: 'Si tenés un problema cloacal en CABA, no esperes a que se agrave. Contactanos por WhatsApp y te damos un diagnóstico inicial sin cargo. Llegamos el mismo día.',
+    clientes: 'Atendemos particulares, inquilinos, propietarios, administradores de consorcios, comercios gastronómicos, hoteles y empresas en toda CABA.',
+    cierre: 'Si tenés un problema cloacal en CABA, no esperes a que se agrave. Contactanos por WhatsApp y coordinamos la visita según disponibilidad.',
   },
   'zona-norte': {
     intro: [
@@ -36,15 +36,15 @@ const zonaSeoContent: Record<string, {
     ],
     problemas: [
       'Además de las raíces, en Zona Norte es frecuente encontrar cámaras sépticas colapsadas en propiedades más antiguas que no están conectadas a la red de AySA. Estas cámaras necesitan limpieza periódica y muchas veces reparación estructural cuando las paredes de ladrillo se fisuran por la presión del suelo.',
-      'Otro problema característico de la zona son los desagotes de sótanos y espacios inundados después de las tormentas. Las propiedades con jardín y subsuelo acumulan agua rápidamente cuando el sistema pluvial se satura, generando emergencias que requieren respuesta inmediata con bombas sumergibles.',
+      'Otro problema característico de la zona son los desagotes de sótanos y espacios inundados después de las tormentas. Las propiedades con jardín y subsuelo acumulan agua rápidamente cuando el sistema pluvial se satura, generando emergencias que se coordinan a la brevedad con bombas sumergibles.',
     ],
     servicios: 'En Zona Norte nuestros servicios más demandados son la video inspección y limpieza con hidrojet para detectar y eliminar raíces, el desagote de sótanos y espacios inundados, y la limpieza de cámaras sépticas. También realizamos mantenimientos preventivos anuales para propiedades con árboles grandes cerca de las líneas de servicio.',
     clientes: 'Atendemos familias, countries, clubes de campo, empresas y comercios en toda la Zona Norte. Cubrimos desde Vicente López hasta Pilar y desde la costa del Río de la Plata hasta el segundo cordón del GBA.',
-    cierre: 'Si vivís en Zona Norte y notás que el drenaje es cada vez más lento o hay olores extraños en el jardín, puede ser señal de raíces en la cañería. Contactanos para una inspección sin cargo.',
+    cierre: 'Si vivís en Zona Norte y notás que el drenaje es cada vez más lento o hay olores extraños en el jardín, puede ser señal de raíces en la cañería. Contactanos para coordinar una inspección.',
   },
   'zona-oeste': {
     intro: [
-      'La Zona Oeste del Gran Buenos Aires es nuestra área de operación principal. Con base en Ciudadela, cubrimos Ramos Mejía, Haedo, Castelar, Morón, Hurlingham, Ituzaingó, San Martín y todos los municipios del corredor oeste con tiempos de respuesta de 20 a 45 minutos.',
+      'La Zona Oeste del Gran Buenos Aires es nuestra área de operación principal. Con base en Ciudadela, cubrimos Ramos Mejía, Haedo, Castelar, Morón, Hurlingham, Ituzaingó, San Martín y todos los municipios del corredor oeste.',
       'Esta zona combina barrios residenciales tradicionales con alta densidad de comercios, industrias livianas y edificios de departamentos. Esa combinación genera una demanda constante de servicios de destapación tanto para uso doméstico como para establecimientos gastronómicos y comerciales.',
     ],
     problemas: [
@@ -53,7 +53,7 @@ const zonaSeoContent: Record<string, {
     ],
     servicios: 'Los servicios más solicitados en Zona Oeste son las destapaciones de cloacas y cañerías para uso doméstico, el mantenimiento de graseras para restaurantes y comercios gastronómicos, y la limpieza preventiva con hidrojet para consorcios y edificios. También somos el servicio de referencia para urgencias en toda la zona.',
     clientes: 'Atendemos particulares, inquilinos, comercios, restaurantes, industrias livianas y administraciones de edificios en toda la Zona Oeste. Somos el servicio de destapaciones más conocido del corredor oeste gracias a más de 10 años de trabajo en la zona.',
-    cierre: 'En Zona Oeste somos locales. Conocemos cada barrio, cada tipo de construcción y cada problema típico de la zona. Contactanos y te resolvemos el problema el mismo día.',
+    cierre: 'En Zona Oeste somos locales. Conocemos cada barrio, cada tipo de construcción y cada problema típico de la zona. Contactanos por WhatsApp y coordinamos la visita según disponibilidad.',
   },
   'zona-sur': {
     intro: [
@@ -65,8 +65,8 @@ const zonaSeoContent: Record<string, {
       'También es característica de esta zona la alta demanda de destapaciones en locales industriales y depósitos, donde los sistemas cloacales reciben cargas muy superiores a las domésticas y requieren mantenimiento más frecuente.',
     ],
     servicios: 'En Zona Sur los servicios más demandados son la video inspección para detectar roturas en cañerías antiguas, la destapación con hidrojet para limpiar conductos industriales, y la destapación de cloacas urgentes para uso doméstico. También realizamos diagnósticos completos para propiedades en venta o alquiler.',
-    clientes: 'Atendemos particulares, inquilinos, comercios, industrias y administraciones de edificios en toda la Zona Sur. Nuestro tiempo de respuesta en esta zona es de 60 a 90 minutos desde el contacto inicial.',
-    cierre: 'Si tenés un problema cloacal en Zona Sur, contactanos por WhatsApp. Te damos presupuesto sin cargo y llegamos el mismo día para resolver.',
+    clientes: 'Atendemos particulares, inquilinos, comercios, industrias y administraciones de edificios en toda la Zona Sur.',
+    cierre: 'Si tenés un problema cloacal en Zona Sur, contactanos por WhatsApp para coordinar la visita según disponibilidad.',
   },
 };
 
