@@ -114,7 +114,7 @@ export default function NosotrosPage() {
               Operamos desde Ciudadela, en el corazón de la Zona Oeste. Desde ahí cubrimos CABA completa, Zona Oeste (Ramos Mejía, Morón, Castelar, Ituzaingó, Hurlingham), Zona Norte (San Isidro, Vicente López, Olivos) y Zona Sur (Avellaneda, Lanús, Lomas de Zamora).
             </p>
             <p>
-              Nuestro tiempo de respuesta promedio en Zona Oeste es de 20 a 45 minutos. En CABA y otras zonas coordinamos el turno más cercano disponible.
+              Con bases operativas estratégicas, logramos un acceso rápido a todo el corredor. En Zona Oeste, CABA y otras zonas coordinamos el turno más cercano disponible.
             </p>
           </div>
         </section>

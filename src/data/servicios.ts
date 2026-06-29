@@ -62,7 +62,7 @@ const buildServicio = (
     intro,
     benefitsTitle: custom?.benefitsTitle || "Beneficios del Servicio",
     benefits: custom?.benefits || [
-      { title: "Rapidez y Eficiencia", desc: "Respuesta inmediata con tecnología puntera sin demoras." },
+      { title: "Rapidez y Eficiencia", desc: "Atención ágil con tecnología puntera sin demoras." },
       { title: "Cero Roturas Innecesarias", desc: "Soluciones focalizadas que preservan tus instalaciones." },
       { title: "Trabajo Seguro", desc: "Técnicos calificados que operan bajo normativas estrictas." }
     ],
@@ -104,7 +104,7 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Realizan trabajos en Zona Oeste?", a: "Sí, brindamos servicios de destapaciones con máquinas en toda la Zona Oeste, CABA y alrededores." },
         { q: "¿Cuánto tiempo demoran en llegar?", a: "El tiempo depende de la zona y la disponibilidad del día. Coordinamos el horario por WhatsApp y te confirmamos antes de salir." },
         { q: "¿Qué formas de pago aceptan?", a: "Podés abonar el servicio en efectivo, por transferencia bancaria o a través de Mercado Pago con todas las tarjetas." },
-        { q: "¿Entregan factura y garantía?", a: "Sí, emitimos factura por todos nuestros trabajos. No damos garantía por escrito porque trabajamos sobre instalaciones muchas veces antiguas y el resultado también depende del uso posterior. Si el problema se complica durante el trabajo, te avisamos antes de continuar." }
+        { q: "¿Entregan factura y garantía?", a: "Sí, emitimos factura por todos nuestros trabajos. No damos garantía escrita porque trabajamos sobre instalaciones muchas veces antiguas y el resultado también depende del uso posterior. Si el problema se complica durante el trabajo, te avisamos antes de continuar." }
       ],
       {
         seoTitle: "Destapaciones con Máquinas | Sonda y Resorte | Openagua",
@@ -200,7 +200,7 @@ export const getServicios = (): ServicioData[] => {
         { q: "¿Pueden destapar sin romper paredes?", a: "Absolutamente. Nuestro equipo utiliza maquinaria electromecánica de última generación equipada con sondas flexibles que se introducen por las bocas de acceso o sifones existentes. Esto nos permite recorrer todo el tendido interno de la casa, eliminando el tapón de grasa o sarro de raíz sin necesidad de romper paredes, pisos ni cerámicos. Cuidamos la integridad estructural de tu hogar mientras restablecemos el flujo de agua." },
         { q: "¿Qué causa las obstrucciones recurrentes en cañerías?", a: "La principal causa es el depósito progresivo de restos orgánicos, jabón de ducha, cabellos y, sobre todo, grasas o aceites en las cocinas. Con el tiempo, estos elementos se adhieren a las paredes internas del caño, reduciendo su diámetro útil. Las obstrucciones recurrentes suelen indicar que se quitó el tapón pero no se limpiaron las paredes del caño, por lo que la suciedad vuelve a acumularse rápidamente." },
         { q: "¿Trabajan en cocinas y baños?", a: "Sí, resolvemos obstrucciones en todos los ambientes del hogar, consorcio o comercio. Intervenimos de manera rápida en bachas de cocina tapadas, lavaderos, bidets, lavatorios de baño, rejillas de ducha y pluviales. Contamos con resortes de diferentes diámetros y puntas específicas para adaptarnos al tamaño y material de cada conducto, asegurando una desobstrucción completa y prolija." },
-        { q: "¿Cuánto demoran en destapar una bacha de cocina?", a: "La mayoría de las destapaciones estándar en bachas de cocina se resuelven en un lapso de 30 a 60 minutos de trabajo técnico. No obstante, el tiempo exacto puede variar según la dureza y antigüedad del tapón de grasa, y la distancia a la que se encuentre la obstrucción principal en el ramal. Nuestros operarios trabajan de manera limpia y ordenada para no alterar la rutina de tu casa." },
+        { q: "¿Cuánto demoran en destapar una bacha de cocina?", a: "La mayoría de las destapaciones estándar en bachas de cocina se resuelven en un lapso de menos de una hora de trabajo técnico. No obstante, el tiempo exacto puede variar según la dureza y antigüedad del tapón de grasa, y la distancia a la que se encuentre la obstrucción principal en el ramal. Nuestros operarios trabajan de manera limpia y ordenada para no alterar la rutina de tu casa." },
         { q: "¿Tengo que desarmar el mueble bajo mesada?", a: "Para nada. Nuestros técnicos están habituados a trabajar en espacios reducidos y con sumo cuidado. Solo necesitamos retirar el contenido del bajo mesada para tener acceso cómodo al sifón de la bacha o a la boca de acceso correspondiente. Trabajamos de forma muy limpia, protegiendo tus muebles y el piso de la cocina en todo momento para dejar el ambiente impecable." },
         { q: "¿Por qué no usar productos químicos que prometen destapa cañerías mágico?", a: "Volcar ácidos fuertes o soda cáustica comercial en las cañerías tapadas suele ser una decisión contraproducente y peligrosa. Estos líquidos químicos pesados generan una reacción exotérmica que levanta altas temperaturas en los conductos, logrando deformar o derretir las tuberías de plástico y PVC termofusionado. Además, cuando entran en contacto con tapones de grasa fría, se produce una reacción química que solidifica la grasa convirtiéndola en una masa dura como el jabón de lavar. Esto genera una obstrucción definitiva que solo puede removerse con maquinaria de resortes profesional, encareciendo un problema que podría haberse resuelto de forma rápida y sencilla." },
         { q: "¿Cuánto cuesta el servicio de destapa cañerías en CABA y GBA?", a: "En Openagua mantenemos una filosofía clara y honesta: cobramos un precio cerrado por trabajo y no por metro de cable ingresado por la cañería. Esto significa que sabés con exactitud cuánto vas a abonar antes de empezar el servicio, sin cargos sorpresa ni presupuestos que se inflan a mitad del proceso. El valor final depende únicamente del tipo de conducto a desobstruir (bacha de cocina, rejilla de patio, inodoro o cloaca principal) y la complejidad del tapón. Si el trabajo se complica durante la visita o detectamos alguna falla estructural mayor, te avisamos antes para acordar los pasos a seguir. Escribinos ahora por WhatsApp y te damos una tarifa plana acorde a tu problema." }
@@ -264,7 +264,7 @@ export const getServicios = (): ServicioData[] => {
       ],
       {
         seoTitle: "Destapaciones Pluviales | Evitá Inundaciones | Openagua",
-        seoDescription: "¿Patio o terraza inundada cuando llueve? Destapamos rejillas, canaletas y desagües pluviales el mismo día. Sin romper. CABA y GBA. ☎ 11 5179-7649.",
+        seoDescription: "¿Patio o terraza inundada cuando llueve? Destapamos rejillas, canaletas y desagües pluviales sin romper. CABA y GBA. ☎ 11 5179-7649.",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
           { title: "Diagnóstico de Caída", desc: "Verificamos la pendiente y el estado de los desagües para asegurar que el agua de lluvia evacue correctamente." },
@@ -436,7 +436,7 @@ export const getServicios = (): ServicioData[] => {
       ],
       {
         seoTitle: "Limpieza de Cámaras Sépticas | Sin Desbordes | Openagua",
-        seoDescription: "Limpiamos cámaras sépticas con equipos profesionales. Evitá desbordes, malos olores y daños estructurales. Presupuesto sin cargo. CABA y GBA. ☎ 11 5179-7649.",
+        seoDescription: "Limpiamos cámaras sépticas con equipos profesionales. Evitá desbordes, malos olores y daños estructurales. CABA y GBA. ☎ 11 5179-7649.",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
           { title: "Vaciado y Succión", desc: "Utilizamos equipos de alto vacío para la extracción completa de lodos y residuos acumulados en el fondo de la cámara." },
@@ -490,11 +490,11 @@ export const getServicios = (): ServicioData[] => {
       ],
       {
         seoTitle: "Desagote de Sótanos Inundados | Bombas Pro | Openagua",
-        seoDescription: "¿Sótano o espacio inundado? Extraemos el agua con bombas sumergibles profesionales. Intervención rápida el mismo día. CABA y GBA. ☎ 11 5179-7649.",
+        seoDescription: "¿Sótano o espacio inundado? Extraemos el agua con bombas sumergibles profesionales. CABA y GBA. ☎ 11 5179-7649.",
         schemaTitle: "Desagote de Sótanos y Subsuelos",
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
-          { title: "Respuesta Inmediata", desc: "Entendemos que una inundación no puede esperar. Priorizamos estos servicios para minimizar los daños materiales en tu propiedad." },
+          { title: "Atención Prioritaria", desc: "Entendemos que una inundación es una emergencia. Atendemos estos servicios con máxima prioridad para minimizar daños." },
           { title: "Equipos de Alto Caudal", desc: "Utilizamos bombas sumergibles de gran potencia que permiten evacuar grandes volúmenes de agua en tiempo récord." },
           { title: "Vaciado y Limpieza", desc: "No solo sacamos el agua; nos aseguramos de retirar los sedimentos y lodos que quedan tras la inundación para higienizar el área." }
         ],
@@ -553,7 +553,7 @@ export const getServicios = (): ServicioData[] => {
         benefitsTitle: "Nuestro Compromiso Profesional",
         benefits: [
           { title: "Planificación Cíclica", desc: "Realizamos visitas periódicas para limpiar la red antes de que se produzca una obstrucción, garantizando un flujo constante." },
-          { title: "Prioridad de Atención", desc: "Los clientes con mantenimiento preventivo cuentan con respuesta inmediata y prioridad absoluta ante cualquier eventualidad fuera de agenda." },
+          { title: "Prioridad de Atención", desc: "Los clientes con mantenimiento preventivo cuentan con atención prioritaria y prioridad absoluta ante cualquier eventualidad fuera de agenda." },
           { title: "Informes de Estado", desc: "Tras cada visita, entregamos un reporte sobre el estado de la red para anticipar reparaciones estructurales necesarias." }
         ],
         equipmentTitle: "¿A quiénes está dirigido?",

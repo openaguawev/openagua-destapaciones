@@ -820,7 +820,7 @@ export const barriosSeo: Record<string, BarrioSeoData> = {
     problemas: ['obstrucciones en desagües por residuos', 'caños con pérdida de nivel', 'cámaras de inspección rebalsadas por uso intensivo'],
     propiedades: ['casas y dúplex nuevos', 'galpones industriales pequeños', 'locales comerciales sobre arterias principales'],
     seoTitle: 'Destapaciones en General Lemos | CABA y GBA',
-    seoDescription: 'Destapaciones urgentes en General Lemos. Expertos en cloacas colapsadas y limpieza de pluviales. Cotización sin cargo por WhatsApp. ¡Contactanos!',
+    seoDescription: 'Destapaciones urgentes en General Lemos. Expertos en cloacas colapsadas y limpieza de pluviales. Cotización transparente por WhatsApp. ¡Contactanos!',
   },
   'destapaciones-marina-nueva': {
     nombre: 'Marina Nueva',

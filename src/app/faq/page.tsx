@@ -124,7 +124,7 @@ const faqs = [
       },
       {
         q: '¿Dan garantía por los trabajos realizados?',
-        a: 'No damos garantía por escrito. En las destapaciones trabajamos sobre instalaciones que muchas veces son antiguas y están deterioradas, y el resultado también depende del uso que se le dé después: toallitas femeninas, restos de comida, trapos y otros elementos que no deben tirarse por las cañerías son causa frecuente de nuevas obstrucciones. Lo que sí hacemos es trabajar con honestidad: si durante el trabajo el problema resulta más complejo de lo esperado, avisamos antes de continuar y acordamos el precio extra.',
+        a: 'No damos garantía escrita. En las destapaciones trabajamos sobre instalaciones que muchas veces son antiguas y están deterioradas, y el resultado también depende del uso que se le dé después: toallitas femeninas, restos de comida, trapos y otros elementos que no deben tirarse por las cañerías son causa frecuente de nuevas obstrucciones. Lo que sí hacemos es trabajar con honestidad: si durante el trabajo el problema resulta más complejo de lo esperado, avisamos antes de continuar y acordamos el precio extra.',
         link: null,
       },
     ],
@@ -133,13 +133,13 @@ const faqs = [
     categoria: 'Emergencias',
     items: [
       {
-        q: '¿Atienden urgencias el mismo día?',
-        a: 'Durante el horario de atención (lunes a viernes 8-19hs, sábados 8-13hs) hacemos todo lo posible por atender urgencias en el día según disponibilidad. Fuera de ese horario coordinamos para el día siguiente a primera hora.',
+        q: '¿Cómo coordinan la atención de urgencias?',
+        a: 'Durante el horario de atención (lunes a viernes 8-19hs, sábados 8-13hs) coordinamos la visita según disponibilidad. Fuera de ese horario coordinamos para el día siguiente a primera hora.',
         link: null,
       },
       {
         q: '¿Qué hago si se me inunda el sótano?',
-        a: 'Primero cortá el acceso al agua si podés identificar la fuente. Después escribinos por WhatsApp con fotos o descripción de la situación para evaluar si podemos ir ese mismo día. Tenemos equipos de desagote para sótanos e inundaciones.',
+        a: 'Primero cortá el acceso al agua si podés identificar la fuente. Después escribinos por WhatsApp con fotos o descripción de la situación para coordinar la visita a la brevedad. Tenemos equipos de desagote para sótanos e inundaciones.',
         link: { href: '/desagote-sotanos', texto: 'Ver servicio de desagote de sótanos' },
       },
       {

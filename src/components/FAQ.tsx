@@ -36,7 +36,7 @@ export default function FAQ() {
     },
     {
       q: "¿Dan garantía por los trabajos realizados?",
-      a: "No damos garantía por escrito. En las destapaciones trabajamos sobre instalaciones que muchas veces son antiguas y están deterioradas, y el resultado también depende del uso que se le dé después: toallitas femeninas, restos de comida, trapos y otros elementos que no deben tirarse por las cañerías son causa frecuente de nuevas obstrucciones. Lo que sí hacemos es trabajar con honestidad: si durante el trabajo el problema resulta más complejo de lo esperado, avisamos antes de continuar y acordamos el precio extra."
+      a: "No damos garantía escrita. En las destapaciones trabajamos sobre instalaciones que muchas veces son antiguas y están deterioradas, y el resultado también depende del uso que se le dé después: toallitas femeninas, restos de comida, trapos y otros elementos que no deben tirarse por las cañerías son causa frecuente de nuevas obstrucciones. Lo que sí hacemos es trabajar con honestidad: si durante el trabajo el problema resulta más complejo de lo esperado, avisamos antes de continuar y acordamos el precio extra."
     },
     {
       q: "¿En qué zonas trabajan?",

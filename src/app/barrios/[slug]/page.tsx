@@ -188,8 +188,8 @@ export default async function BarrioPage({ params }: Props) {
     },
     {
       q: `¿Cuánto cuesta una destapación en ${barrio.name}?`,
-      a: `El presupuesto depende del tipo de obstrucción y el acceso. Ofrecemos diagnóstico previo sin cargo y precios competitivos.`,
-      aJsx: <>El presupuesto depende del tipo de obstrucción y el acceso. Ofrecemos diagnóstico previo sin cargo y precios competitivos.</>
+      a: `El presupuesto depende del tipo de obstrucción y el acceso. Ofrecemos diagnóstico previo sin compromiso y precios competitivos.`,
+      aJsx: <>El presupuesto depende del tipo de obstrucción y el acceso. Ofrecemos diagnóstico previo sin compromiso y precios competitivos.</>
     },
     {
       q: `¿Hacen mantenimiento preventivo en ${barrio.name}?`,
