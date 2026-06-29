@@ -81,7 +81,7 @@
 }
 
 .faq-item.open .faq-answer {
-  max-height: 500px; 
+  max-height: 2000px; 
   padding: 0 20px 24px 20px;
   opacity: 1;
 }
