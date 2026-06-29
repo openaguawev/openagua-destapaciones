@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props) {
   const titleMap: Record<string, string> = {
     'destapaciones-belgrano': 'Destapaciones en Belgrano | Cloacas y Cañerías CABA',
     'destapaciones-palermo': 'Destapaciones en Palermo | Cloacas e Hidrojet CABA',
-    'destapaciones-san-isidro': 'Destapaciones en San Isidro | Zona Norte GBA',
+    'destapaciones-san-isidro': 'Destapaciones en San Isidro | Cloacas y Raíces GBA',
     'destapaciones-avellaneda': 'Destapaciones en Avellaneda | Zona Sur GBA',
     'destapaciones-zona-norte': 'Destapaciones Zona Norte GBA | Openagua',
     'destapaciones-caballito': 'Destapaciones en Caballito | Cloacas y Cañerías',
@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: Props) {
   const descriptionMap: Record<string, string> = {
     'destapaciones-belgrano': 'Destapaciones en Belgrano para edificios, consorcios y casas antiguas. Cloacas, cañerías y columnas con cal. Hidrojet y sonda. ☎ 11 5179-7649',
     'destapaciones-palermo': 'Destapaciones en Palermo: cloacas, cañerías y pluviales en casas, PHs y edificios. Diagnóstico con cámara sin romper pisos. ☎ 11 5179-7649',
-    'destapaciones-san-isidro': 'Destapaciones en San Isidro y Zona Norte. Cloacas, cañerías e hidrojet para casas y countries. +10 años de experiencia. ☎ 11 5179-7649',
+    'destapaciones-san-isidro': 'Destapaciones en San Isidro: cloacas, raíces en cañerías e hidrojet para casas con jardín y countries. +12 años. ☎ 11 5179-7649',
     'destapaciones-avellaneda': 'Destapaciones en Avellaneda y Zona Sur. Cloacas, cañerías y pluviales con sonda e hidrojet. Presupuesto por WhatsApp. ☎ 11 5179-7649',
     'destapaciones-zona-norte': 'Destapaciones en toda la Zona Norte: San Isidro, Vicente López, Tigre y más. Cloacas, cañerías e hidrojet. ☎ 11 5179-7649',
     'destapaciones-caballito': 'Destapaciones en Caballito para casas y edificios sobre avenida. Cloacas, cañerías y pluviales con hidrojet. ☎ 11 5179-7649',
