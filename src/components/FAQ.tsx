@@ -35,8 +35,8 @@ export default function FAQ() {
       a: "El olor a cloaca en la cocina puede tener varias causas: una cañería parcialmente tapada que no permite la ventilación correcta, el sifón sucio o seco por falta de uso, o un caño que conecta directamente a la cloaca sin el sello hidráulico adecuado, lo que permite que los gases suban libremente. No siempre hay una sola causa — a veces se combinan varios factores. Si el olor persiste después de limpiar el sifón y tirar agua, lo mejor es hacer una inspección para identificar el origen exacto."
     },
     {
-      q: "¿Dan garantía por los trabajos realizados?",
-      a: "No damos garantía escrita. En las destapaciones trabajamos sobre instalaciones que muchas veces son antiguas y están deterioradas, y el resultado también depende del uso que se le dé después: toallitas femeninas, restos de comida, trapos y otros elementos que no deben tirarse por las cañerías son causa frecuente de nuevas obstrucciones. Lo que sí hacemos es trabajar con honestidad: si durante el trabajo el problema resulta más complejo de lo esperado, avisamos antes de continuar y acordamos el precio extra."
+      q: "¿Cómo se aseguran de que el trabajo quedó bien hecho?",
+      a: "Verificamos el flujo de agua junto a vos antes de irnos. Si durante el trabajo el problema resulta más complejo de lo esperado, te avisamos antes de continuar y acordamos el precio. Trabajamos con honestidad y transparencia en cada trabajo."
     },
     {
       q: "¿En qué zonas trabajan?",
