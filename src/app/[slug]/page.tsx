@@ -7,7 +7,8 @@ import Contacto from '@/components/Contacto';
 import { handleLegacyRedirect } from '@/utils/legacyRedirect';
 import { generarTextoServicio } from '@/utils/generarTextoServicio';
 import { generateBreadcrumbSchema } from '@/lib/schemaUtils';
-import ServicioFAQ from '@/components/ServicioFAQ';
+import dynamic from 'next/dynamic';
+const ServicioFAQ = dynamic(() => import('@/components/ServicioFAQ'), { ssr: false });
 import { renderTextWithLinks } from '@/utils/renderTextWithLinks';
 import '../servicio-page.css';
 
