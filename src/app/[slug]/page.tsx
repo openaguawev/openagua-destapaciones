@@ -18,7 +18,7 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
-export const dynamic = "auto";
+
 
 export async function generateStaticParams() {
   const servicios = getServicios();
