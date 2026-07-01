@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface FAQItem {
   q: string;
@@ -13,6 +13,38 @@ interface ServicioFAQProps {
 
 export default function ServicioFAQ({ faqs, slug = '' }: ServicioFAQProps) {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
+  const [hydrated, setHydrated] = useState(false);
+
+  useEffect(() => {
+    setHydrated(true);
+  }, []);
+
+  if (!hydrated) {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', maxWidth: '850px', margin: '0 auto' }}>
+        {faqs.map((f, i) => (
+          <div key={i} style={{
+            background: '#f8fafc',
+            borderRadius: '12px',
+            border: '1px solid #e2e8f0',
+            padding: '1.25rem 1.5rem',
+          }}>
+            <div style={{
+              fontSize: '1.1rem',
+              fontWeight: 700,
+              color: '#0f172a',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+            }}>
+              <span>{f.q}</span>
+              <span style={{ color: '#16a34a', flexShrink: 0, marginLeft: '12px' }}>+</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', maxWidth: '850px', margin: '0 auto' }}>
@@ -20,8 +52,8 @@ export default function ServicioFAQ({ faqs, slug = '' }: ServicioFAQProps) {
         <div key={i} style={{
           background: '#f8fafc',
           borderRadius: '12px',
-          border: '1px solid #e2e8f0',
-          overflow: 'hidden',
+          border: openIdx === i ? '1px solid #16a34a' : '1px solid #e2e8f0',
+          padding: '1.25rem 1.5rem',
         }}>
           <button
             onClick={() => setOpenIdx(openIdx === i ? null : i)}
@@ -29,12 +61,12 @@ export default function ServicioFAQ({ faqs, slug = '' }: ServicioFAQProps) {
               width: '100%',
               background: 'none',
               border: 'none',
-              padding: '1.25rem 1.5rem',
+              padding: 0,
               textAlign: 'left',
               fontFamily: 'inherit',
               fontSize: '1.1rem',
               fontWeight: 700,
-              color: '#0f172a',
+              color: openIdx === i ? '#16a34a' : '#0f172a',
               cursor: 'pointer',
               display: 'flex',
               justifyContent: 'space-between',
@@ -45,7 +77,7 @@ export default function ServicioFAQ({ faqs, slug = '' }: ServicioFAQProps) {
             <span>{f.q}</span>
             <span style={{
               color: '#16a34a',
-              fontSize: '1.2rem',
+              fontSize: '1.4rem',
               flexShrink: 0,
               transform: openIdx === i ? 'rotate(45deg)' : 'rotate(0deg)',
               transition: 'transform 0.2s',
@@ -54,7 +86,7 @@ export default function ServicioFAQ({ faqs, slug = '' }: ServicioFAQProps) {
           </button>
           {openIdx === i && (
             <div style={{
-              padding: '0 1.5rem 1.25rem 1.5rem',
+              marginTop: '1rem',
               color: '#475569',
               lineHeight: 1.7,
               fontSize: '1rem',
