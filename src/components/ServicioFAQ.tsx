@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { renderTextWithLinks } from '@/utils/renderTextWithLinks';
 
 interface FAQItem {
@@ -14,8 +14,14 @@ interface ServicioFAQProps {
 
 export default function ServicioFAQ({ faqs, slug = '' }: ServicioFAQProps) {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const toggleOpen = (idx: number) => {
+    if (!mounted) return;
     setOpenIdx(openIdx === idx ? null : idx);
   };
 
@@ -36,7 +42,8 @@ export default function ServicioFAQ({ faqs, slug = '' }: ServicioFAQProps) {
               border: 'none',
               textAlign: 'left',
               padding: 0,
-              fontFamily: 'inherit'
+              fontFamily: 'inherit',
+              cursor: mounted ? 'pointer' : 'default'
             }}
           >
             {f.q}
