@@ -368,19 +368,14 @@
 }
 
 .faq-answer {
-  margin-top: 1rem;
   color: #475569;
   line-height: 1.7;
+  margin: 0;
 }
 
-.faq-arrow {
-  color: #16a34a;
-  font-size: 0.85rem;
-  transition: transform 0.2s;
-}
-
-details[open] .faq-arrow {
-  transform: rotate(180deg);
+.faq-answer p {
+  margin: 0;
+  padding: 0;
 }
 
 /* Final CTA */
